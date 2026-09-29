@@ -1,0 +1,251 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- மூடு திரை padukkaiyarai2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- திற திரை padukkaiyarai2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- அமை திரை padukkaiyarai2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- அமை விசிறி padukkaiyarai2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- அணை விசிறி padukkaiyarai2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- ஏற்று விசிறி padukkaiyarai2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- அமை எல்லாம் விளக்கு padukkaiyarai2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- அமை எல்லாம் விளக்கு padukkaiyarai2 pink
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- அணை எல்லாம் விளக்கு padukkaiyarai2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு padukkaiyarai2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- மூடு திரை padukkaiyarai3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- திற திரை padukkaiyarai3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- அமை திரை padukkaiyarai3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- அமை எல்லாம் விளக்கு padukkaiyarai3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- அமை எல்லாம் விளக்கு padukkaiyarai3 blue
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- அணை எல்லாம் விளக்கு padukkaiyarai3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு padukkaiyarai3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- அமை எல்லாம் விளக்கு padukkaiyarai4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- அமை எல்லாம் விளக்கு padukkaiyarai4 green
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- அணை எல்லாம் விளக்கு padukkaiyarai4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு padukkaiyarai4
+area/dining_lights::dining_lights_change_brightness:
+- அமை எல்லாம் விளக்கு kutumbamess 54
+area/dining_lights::dining_lights_change_color:
+- அமை எல்லாம் விளக்கு kutumbamess blue
+area/dining_lights::dining_lights_turn_off:
+- அணை எல்லாம் விளக்கு kutumbamess
+area/dining_lights::dining_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு kutumbamess
+area/entryway_lights::entryway_lights_change_brightness:
+- அமை எல்லாம் விளக்கு nuzhaivu 72
+area/entryway_lights::entryway_lights_change_color:
+- அமை எல்லாம் விளக்கு nuzhaivu black
+area/entryway_lights::entryway_lights_turn_off:
+- அணை எல்லாம் விளக்கு nuzhaivu
+area/entryway_lights::entryway_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு nuzhaivu
+area/entryway_locks::entryway_locks_lock:
+- பூட்டு பூட்டு nuzhaivu
+area/entryway_locks::entryway_locks_unlock:
+- திற பூட்டு nuzhaivu
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- அமை எல்லாம் விளக்கு kutumbam 39 matrum அமை எல்லாம் விளக்கு சமையல் 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- அமை எல்லாம் விளக்கு kutumbam purple matrum அமை எல்லாம் விளக்கு சமையல் purple
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- அணை எல்லாம் விளக்கு kutumbam matrum அணை எல்லாம் விளக்கு சமையல்
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு kutumbam matrum ஏற்று எல்லாம் விளக்கு சமையல்
+area/family_room_fans::family_room_fans_set_fan_speed:
+- அமை விசிறி kutumbam 32
+area/family_room_fans::family_room_fans_turn_off:
+- அணை விசிறி kutumbam
+area/family_room_fans::family_room_fans_turn_on:
+- ஏற்று விசிறி kutumbam
+area/family_room_lights::family_room_lights_change_brightness:
+- அமை எல்லாம் விளக்கு kutumbam 44
+area/family_room_lights::family_room_lights_change_color:
+- அமை எல்லாம் விளக்கு kutumbam green
+area/family_room_lights::family_room_lights_turn_off:
+- அணை எல்லாம் விளக்கு kutumbam
+area/family_room_lights::family_room_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு kutumbam
+area/garage_covers::garage_covers_close:
+- மூடு திரை garage
+area/garage_covers::garage_covers_open:
+- திற திரை garage
+area/garage_covers::garage_covers_set_position:
+- அமை திரை garage 86
+area/garage_lights::garage_lights_change_brightness:
+- அமை எல்லாம் விளக்கு garage 16
+area/garage_lights::garage_lights_change_color:
+- அமை எல்லாம் விளக்கு garage blue
+area/garage_lights::garage_lights_turn_off:
+- அணை எல்லாம் விளக்கு garage
+area/garage_lights::garage_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு garage
+area/garage_locks::garage_locks_lock:
+- பூட்டு பூட்டு garage
+area/garage_locks::garage_locks_unlock:
+- திற பூட்டு garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- அமை எல்லாம் விளக்கு nuzhaivugang 26 matrum அமை எல்லாம் விளக்கு kazhivarai 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- அமை எல்லாம் விளக்கு nuzhaivugang purple matrum அமை எல்லாம் விளக்கு kazhivarai purple
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- அணை எல்லாம் விளக்கு nuzhaivugang matrum அணை எல்லாம் விளக்கு kazhivarai
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு nuzhaivugang matrum ஏற்று எல்லாம் விளக்கு kazhivarai
+area/hallway_lights::hallway_lights_change_brightness:
+- அமை எல்லாம் விளக்கு nuzhaivugang 61
+area/hallway_lights::hallway_lights_change_color:
+- அமை எல்லாம் விளக்கு nuzhaivugang orange
+area/hallway_lights::hallway_lights_turn_off:
+- அணை எல்லாம் விளக்கு nuzhaivugang
+area/hallway_lights::hallway_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு nuzhaivugang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- அமை எல்லாம் விளக்கு சமையல் 45
+area/kitchen_lights::kitchen_lights_change_color:
+- அமை எல்லாம் விளக்கு சமையல் pink
+area/kitchen_lights::kitchen_lights_turn_off:
+- அணை எல்லாம் விளக்கு சமையல்
+area/kitchen_lights::kitchen_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு சமையல்
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- அணை எல்லாம் karuvi சமையல்
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- ஏற்று எல்லாம் karuvi சமையல்
+area/laundry_lights::laundry_lights_change_brightness:
+- அமை எல்லாம் விளக்கு salavai 62
+area/laundry_lights::laundry_lights_change_color:
+- அமை எல்லாம் விளக்கு salavai yellow
+area/laundry_lights::laundry_lights_turn_off:
+- அணை எல்லாம் விளக்கு salavai
+area/laundry_lights::laundry_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு salavai
+area/laundry_switchs::laundry_switchs_turn_off:
+- அணை எல்லாம் karuvi salavai
+area/laundry_switchs::laundry_switchs_turn_on:
+- ஏற்று எல்லாம் karuvi salavai
+area/living_climates::living_climates_set_temperature:
+- அமை வெப்பம் அறை 20
+area/living_covers::living_covers_close:
+- மூடு திரை அறை
+area/living_covers::living_covers_open:
+- திற திரை அறை
+area/living_covers::living_covers_set_position:
+- அமை திரை அறை 46
+area/living_lights::living_lights_change_brightness:
+- அமை எல்லாம் விளக்கு அறை 84
+area/living_lights::living_lights_change_color:
+- அமை எல்லாம் விளக்கு அறை blue
+area/living_lights::living_lights_turn_off:
+- அணை எல்லாம் விளக்கு அறை
+area/living_lights::living_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு அறை
+area/main_bath_lights::main_bath_lights_change_brightness:
+- அமை எல்லாம் விளக்கு main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- அமை எல்லாம் விளக்கு main bath pink
+area/main_bath_lights::main_bath_lights_turn_off:
+- அணை எல்லாம் விளக்கு main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- அணை எல்லாம் karuvi main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- ஏற்று எல்லாம் karuvi main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- அமை எல்லாம் விளக்கு muthanmaikuliyal 60
+area/master_bath_lights::master_bath_lights_change_color:
+- அமை எல்லாம் விளக்கு muthanmaikuliyal black
+area/master_bath_lights::master_bath_lights_turn_off:
+- அணை எல்லாம் விளக்கு muthanmaikuliyal
+area/master_bath_lights::master_bath_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு muthanmaikuliyal
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- அணை எல்லாம் karuvi muthanmaikuliyal
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- ஏற்று எல்லாம் karuvi muthanmaikuliyal
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- அமை வெப்பம் padukkaiyaraimaster 20 matrum அமை வெப்பம் அறை 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- மூடு திரை padukkaiyaraimaster matrum மூடு திரை அறை
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- திற திரை padukkaiyaraimaster matrum திற திரை அறை
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- அமை திரை padukkaiyaraimaster 19 matrum அமை திரை அறை 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- அமை எல்லாம் விளக்கு padukkaiyaraimaster 25 matrum அமை எல்லாம் விளக்கு அறை 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- அமை எல்லாம் விளக்கு padukkaiyaraimaster white matrum அமை எல்லாம் விளக்கு அறை white
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- அணை எல்லாம் விளக்கு padukkaiyaraimaster matrum அணை எல்லாம் விளக்கு அறை
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு padukkaiyaraimaster matrum ஏற்று எல்லாம் விளக்கு அறை
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- அமை எல்லாம் விளக்கு padukkaiyaraimaster 57 matrum அமை எல்லாம் விளக்கு main bath
+  57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- அமை எல்லாம் விளக்கு padukkaiyaraimaster pink matrum அமை எல்லாம் விளக்கு main bath
+  pink
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- அணை எல்லாம் விளக்கு padukkaiyaraimaster matrum அணை எல்லாம் விளக்கு main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு padukkaiyaraimaster matrum ஏற்று எல்லாம் விளக்கு main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- அமை வெப்பம் padukkaiyaraimaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- மூடு திரை padukkaiyaraimaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- திற திரை padukkaiyaraimaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- அமை திரை padukkaiyaraimaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- அமை விசிறி padukkaiyaraimaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- அணை விசிறி padukkaiyaraimaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- ஏற்று விசிறி padukkaiyaraimaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- அமை எல்லாம் விளக்கு padukkaiyaraimaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- அமை எல்லாம் விளக்கு padukkaiyaraimaster pink
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- அணை எல்லாம் விளக்கு padukkaiyaraimaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு padukkaiyaraimaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- அமை எல்லாம் விளக்கு kazhivarai 52
+area/powder_room_lights::powder_room_lights_change_color:
+- அமை எல்லாம் விளக்கு kazhivarai purple
+area/powder_room_lights::powder_room_lights_turn_off:
+- அணை எல்லாம் விளக்கு kazhivarai
+area/powder_room_lights::powder_room_lights_turn_on:
+- ஏற்று எல்லாம் விளக்கு kazhivarai
+area/spoken_lights::spoken_bedroom_inflection:
+- அமை எல்லாம் விளக்கு padukkaiyaraimaster red
+area/spoken_lights::spoken_except_island:
+- அணை எல்லாம் விளக்கு thavira theevu
+area/spoken_lights::spoken_except_kitchen:
+- அணை எல்லாம் விளக்கு thavira சமையல்
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- அணை எல்லாம் விளக்கு அறை matrum அணை எல்லாம் விளக்கு kutumbamess matrum அணை எல்லாம்
+  விளக்கு சமையல்
+area/spoken_lights::spoken_stt_kitchen_off:
+- அணை எல்லாம் விளக்கு சமையல்
+area/spoken_lights::spoken_stt_living_off:
+- அணை எல்லாம் விளக்கு அறை

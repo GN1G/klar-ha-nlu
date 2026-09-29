@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- बंद chhat shayankaksh
+devices/geraete::device_arbeitszimmer_an:
+- चालू दिवा office
+devices/geraete::device_esszimmer_an:
+- चालू दिवा kutumbess
+devices/geraete::device_kuche_kuche_an:
+- चालू दिवा स्वयंपाक
+devices/geraete::device_wohnzimmer_an:
+- चालू दिवा बैठक
+devices/geraete::filmabend:
+- चालू दृश्य filmabend
+devices/geraete::kugel_an:
+- चालू gol
+devices/geraete::luefter_50:
+- सेट पंखा office 50
+devices/geraete::pc_an:
+- चालू pc
+devices/geraete::r2d2_saugen:
+- चालू झाडू बैठक
+devices/geraete::rollo_zu:
+- बंदकर पडदा बैठक
+devices/geraete::spuelmaschine_aus:
+- बंद bhandi
+devices/geraete::tuer_abschliessen:
+- कुलूप कुलूप pravesh
+devices/geraete::waschmaschine_an:
+- चालू washing
+devices/klima::klima_schlaf_21:
+- सेट ac shayankaksh 21
+devices/spoken::deckenlampe_an:
+- चालू chhat shayankaksh
+devices/spoken::kugel_aus:
+- बंद gol
+devices/spoken::luefter_aus:
+- बंद पंखा office
+devices/spoken::rollo_auf:
+- उघड पडदा बैठक
+devices/spoken::trockner_an:
+- चालू dryer
+devices/spoken::tv_aus:
+- बंद tv
+devices/spoken_more::decke_aus_casual:
+- बंद chhat shayankaksh
+devices/spoken_more::kugel_casual:
+- चालू gol
+devices/spoken_more::pc_aus:
+- बंद pc
+devices/spoken_more::spuelmaschine_an:
+- चालू bhandi
+devices/spoken_more::waschmaschine_aus:
+- बंद washing

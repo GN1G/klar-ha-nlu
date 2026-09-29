@@ -1,0 +1,321 @@
+- name: cover.living_blinds_open
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    state: open
+  sentences:
+  - გახსენი ფარდა მისაღები
+  - ფარდა მისაღები გახსენი
+- name: cover.living_blinds_close
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    state: closed
+  sentences:
+  - დახურე ფარდა მისაღები
+  - ფარდა მისაღები დახურე
+- name: cover.living_blinds_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 0
+  sentences:
+  - დააყენე ფარდა მისაღები 0
+  - ფარდა მისაღები 0
+- name: cover.living_blinds_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 25
+  sentences:
+  - დააყენე ფარდა მისაღები 25
+  - ფარდა მისაღები 25
+- name: cover.living_blinds_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 40
+  sentences:
+  - დააყენე ფარდა მისაღები 40
+  - ფარდა მისაღები 40
+- name: cover.living_blinds_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 75
+  sentences:
+  - დააყენე ფარდა მისაღები 75
+  - ფარდა მისაღები 75
+- name: cover.living_blinds_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 100
+  sentences:
+  - დააყენე ფარდა მისაღები 100
+  - ფარდა მისაღები 100
+- name: cover.master_blinds_open
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    state: open
+  sentences:
+  - გახსენი ფარდა sadzinebelimaster
+  - ფარდა sadzinebelimaster გახსენი
+- name: cover.master_blinds_close
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    state: closed
+  sentences:
+  - დახურე ფარდა sadzinebelimaster
+  - ფარდა sadzinebelimaster დახურე
+- name: cover.master_blinds_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 0
+  sentences:
+  - დააყენე ფარდა sadzinebelimaster 0
+  - ფარდა sadzinebelimaster 0
+- name: cover.master_blinds_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 25
+  sentences:
+  - დააყენე ფარდა sadzinebelimaster 25
+  - ფარდა sadzinebelimaster 25
+- name: cover.master_blinds_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 40
+  sentences:
+  - დააყენე ფარდა sadzinebelimaster 40
+  - ფარდა sadzinebelimaster 40
+- name: cover.master_blinds_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 75
+  sentences:
+  - დააყენე ფარდა sadzinebelimaster 75
+  - ფარდა sadzinebelimaster 75
+- name: cover.master_blinds_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 100
+  sentences:
+  - დააყენე ფარდა sadzinebelimaster 100
+  - ფარდა sadzinebelimaster 100
+- name: cover.bedroom2_blinds_open
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    state: open
+  sentences:
+  - გახსენი ფარდა sadzinebeli2
+  - ფარდა sadzinebeli2 გახსენი
+- name: cover.bedroom2_blinds_close
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    state: closed
+  sentences:
+  - დახურე ფარდა sadzinebeli2
+  - ფარდა sadzinebeli2 დახურე
+- name: cover.bedroom2_blinds_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 0
+  sentences:
+  - დააყენე ფარდა sadzinebeli2 0
+  - ფარდა sadzinebeli2 0
+- name: cover.bedroom2_blinds_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 25
+  sentences:
+  - დააყენე ფარდა sadzinebeli2 25
+  - ფარდა sadzinebeli2 25
+- name: cover.bedroom2_blinds_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 40
+  sentences:
+  - დააყენე ფარდა sadzinebeli2 40
+  - ფარდა sadzinebeli2 40
+- name: cover.bedroom2_blinds_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 75
+  sentences:
+  - დააყენე ფარდა sadzinebeli2 75
+  - ფარდა sadzinebeli2 75
+- name: cover.bedroom2_blinds_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 100
+  sentences:
+  - დააყენე ფარდა sadzinebeli2 100
+  - ფარდა sadzinebeli2 100
+- name: cover.bedroom3_blinds_open
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    state: open
+  sentences:
+  - გახსენი ფარდა sadzinebeli3
+  - ფარდა sadzinebeli3 გახსენი
+- name: cover.bedroom3_blinds_close
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    state: closed
+  sentences:
+  - დახურე ფარდა sadzinebeli3
+  - ფარდა sadzinebeli3 დახურე
+- name: cover.bedroom3_blinds_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 0
+  sentences:
+  - დააყენე ფარდა sadzinebeli3 0
+  - ფარდა sadzinebeli3 0
+- name: cover.bedroom3_blinds_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 25
+  sentences:
+  - დააყენე ფარდა sadzinebeli3 25
+  - ფარდა sadzinebeli3 25
+- name: cover.bedroom3_blinds_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 40
+  sentences:
+  - დააყენე ფარდა sadzinebeli3 40
+  - ფარდა sadzinebeli3 40
+- name: cover.bedroom3_blinds_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 75
+  sentences:
+  - დააყენე ფარდა sadzinebeli3 75
+  - ფარდა sadzinebeli3 75
+- name: cover.bedroom3_blinds_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 100
+  sentences:
+  - დააყენე ფარდა sadzinebeli3 100
+  - ფარდა sadzinebeli3 100
+- name: cover.garage_door_open
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    state: open
+  sentences:
+  - გახსენი ფარდა garage
+  - ფარდა garage გახსენი
+- name: cover.garage_door_close
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    state: closed
+  sentences:
+  - დახურე ფარდა garage
+  - ფარდა garage დახურე
+- name: cover.garage_door_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 0
+  sentences:
+  - დააყენე ფარდა garage 0
+  - ფარდა garage 0
+- name: cover.garage_door_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 25
+  sentences:
+  - დააყენე ფარდა garage 25
+  - ფარდა garage 25
+- name: cover.garage_door_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 40
+  sentences:
+  - დააყენე ფარდა garage 40
+  - ფარდა garage 40
+- name: cover.garage_door_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 75
+  sentences:
+  - დააყენე ფარდა garage 75
+  - ფარდა garage 75
+- name: cover.garage_door_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 100
+  sentences:
+  - დააყენე ფარდა garage 100
+  - ფარდა garage 100
+- name: cover.living_blinds_open_extra
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    state: open
+  sentences:
+  - გახსენი ფარდა მისაღები
+  - ფარდა მისაღები გახსენი
+- name: cover.master_blinds_open_extra
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    state: open
+  sentences:
+  - გახსენი ფარდა sadzinebelimaster
+  - ფარდა sadzinebelimaster გახსენი

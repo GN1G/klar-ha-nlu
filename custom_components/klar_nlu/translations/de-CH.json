@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "Die Integration redet mit Assist. D'Engine lauft als Klar-NLU-App, mitglieferte Prozess oder Docker. Uf Home Assistant OS d App installiere und Klar-NLU-App wähle. Ohni App Mitglieferte Engine starte. Nöd beides. De Release-Kanal cha mer spöter wächsle.",
+        "data": {
+          "mode": "Engine",
+          "channel": "Release-Kanal",
+          "url": "URL vo de Klar-API",
+          "token": "Write-Token"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "D URL mues http(s) si, ohni Benutzername."
+    },
+    "abort": {
+      "already_configured": "Klar NLU isch scho ygrichtet"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "Stimm, Assist-Sprache und s LLM liged i de Klar-Operator-UI (Istellige). Das Formular verbindet nur d Engine: URL, Token und Kanal. {apps}",
+        "data": {
+          "mode": "Engine",
+          "url": "URL vo de Klar-API",
+          "token": "Write-Token",
+          "assist_filter": "Nur für Assist freigebeni Entitäte stüre",
+          "channel": "Release-Kanal"
+        },
+        "data_description": {
+          "mode": "App oder mitglieferte Engine. Jederzit umstelle. D Integrations-Sidebar git s nur bi de mitglieferte Engine.",
+          "token": "Glyche Token wie im Klar-Addon.",
+          "assist_filter": "Aa: nur was Assist gseht. Us: au versteckti Entitäte.",
+          "channel": "Stable oder Staging für de Host obe. App nutzt s Add-on; mitglieferte Engine ladet s GitHub-Release."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "D URL mues http(s) si, ohni Benutzername."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "Mitglieferte Engine starte (nur HACS)",
+        "remote": "Klar-NLU-App oder Docker bruche"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (Produktion)",
+        "staging": "Staging (Release Candidate)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "Systemsprach",
+        "all": "Alli Sprache"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "Normal",
+        "butler": "Butler",
+        "locker": "Locker",
+        "fuersorglich": "Fürsorglich",
+        "party": "Party",
+        "grantig": "Grantig",
+        "sarkastisch": "Sarkastisch",
+        "pirat": "Pirat",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "Persönlichkeit",
+        "state": {
+          "default": "Normal",
+          "butler": "Butler",
+          "locker": "Locker",
+          "fuersorglich": "Fürsorglich",
+          "party": "Party",
+          "grantig": "Grantig",
+          "sarkastisch": "Sarkastisch",
+          "pirat": "Pirat",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "Churzi Bestätigung"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "KI-Ufgaab"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "Zletzt ghört"
+      },
+      "last_decision": {
+        "name": "Letschti Entscheidig"
+      },
+      "last_speech": {
+        "name": "Letschti Antwort"
+      },
+      "last_area": {
+        "name": "Ghört in"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Klar-Engine gstoppt",
+      "description": "De mitglieferte Klar-Prozess lauft nöd. Lad Klar NLU under Istellige → Grät und Dienst neu."
+    }
+  }
+}

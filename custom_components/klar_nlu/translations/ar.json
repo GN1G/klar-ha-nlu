@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "هذا التكامل يتحدث مع Assist. محرك منفصل يحلل الكلام: تطبيق Klar NLU أو العملية المرفقة أو Docker. على Home Assistant OS ثبّت التطبيق واختر استخدام تطبيق Klar NLU. بدون التطبيق شغّل المحرك المرفق. لا تشغّلهما معاً.",
+        "data": {
+          "mode": "المحرك",
+          "channel": "قناة الإصدار",
+          "url": "عنوان واجهة Klar",
+          "token": "رمز الكتابة"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "يجب أن يكون العنوان http(s) دون اسم مستخدم."
+    },
+    "abort": {
+      "already_configured": "Klar NLU مضبوط مسبقاً"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "الصوت ولغات Assist ونموذج اللغة موجودة في واجهة مشغّل Klar (الإعدادات). هذا النموذج يربط المحرك فقط: العنوان والرمز والقناة. {apps}",
+        "data": {
+          "mode": "المحرك",
+          "url": "عنوان واجهة Klar",
+          "token": "رمز الكتابة",
+          "assist_filter": "التحكم فقط بالكيانات الظاهرة لـ Assist",
+          "channel": "قناة الإصدار"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "نفس الرمز المستخدم في تطبيق Klar.",
+          "assist_filter": "تشغيل: ما يراه Assist فقط. إيقاف: يشمل الكيانات المخفية.",
+          "channel": "في أي وقت. Staging يشير إلى Klar NLU (Staging)."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "يجب أن يكون العنوان http(s) دون اسم مستخدم."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "تشغيل المحرك المرفق (HACS فقط)",
+        "remote": "استخدام تطبيق Klar NLU أو Docker"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (إنتاج)",
+        "staging": "Staging (مرشح)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "لغة النظام",
+        "all": "كل اللغات"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "عادي",
+        "butler": "Butler",
+        "locker": "عفوي",
+        "fuersorglich": "حنون",
+        "party": "Party",
+        "grantig": "متذمر",
+        "sarkastisch": "ساخر",
+        "pirat": "قرصان",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "الشخصية",
+        "state": {
+          "default": "عادي",
+          "butler": "Butler",
+          "locker": "عفوي",
+          "fuersorglich": "حنون",
+          "party": "Party",
+          "grantig": "متذمر",
+          "sarkastisch": "ساخر",
+          "pirat": "قرصان",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "تأكيد قصير"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "مهمة ذكاء اصطناعي"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "آخر ما سُمع"
+      },
+      "last_decision": {
+        "name": "آخر قرار"
+      },
+      "last_speech": {
+        "name": "آخر رد"
+      },
+      "last_area": {
+        "name": "سُمع في"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "توقف محرك Klar",
+      "description": "عملية Klar المرفقة لا تعمل. أعد تحميل Klar NLU من الإعدادات ← الأجهزة والخدمات."
+    }
+  }
+}

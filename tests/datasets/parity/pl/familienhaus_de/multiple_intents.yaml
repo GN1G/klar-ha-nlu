@@ -1,0 +1,34 @@
+multiple_intents/multiple_intents::multi_0:
+- wylacz swiatlo toaleta then wlacz scena good_morning
+multiple_intents/multiple_intents::multi_1:
+- co zmywarka then wlacz scena leaving_home
+multiple_intents/multiple_intents::multi_10:
+- ustaw wentylator sypialnia2 50 then co zaslona sypialnia2 then co zaslona sypialniamaster
+multiple_intents/multiple_intents::multi_12:
+- wylacz noca left sypialniamaster then wlacz wszystko swiatlo pralnia
+multiple_intents/multiple_intents::multi_14:
+- wylacz wszystko swiatlo kuchnia then co swiatlo przedpokojgang
+multiple_intents/multiple_intents::multi_15:
+- co zaslona sypialnia2 then wylacz wszystko swiatlo kuchnia
+multiple_intents/multiple_intents::multi_16:
+- wlacz sufit kuchnia then co swiatlo przedpokojgang
+multiple_intents/multiple_intents::multi_18:
+- wylacz wentylator salonfam then ustaw wyspa kuchnia 20
+multiple_intents/multiple_intents::multi_19:
+- co wentylator sypialnia2 then wlacz swiatlo pralnia
+multiple_intents/multiple_intents::multi_2:
+- co swiatlo garage then zamknij zaslona salon
+multiple_intents/multiple_intents::multi_3:
+- co ogrzewanie salon then wylacz sufit salon
+multiple_intents/multiple_intents::multi_4:
+- zamknij zaslona sypialnia3 then zamknij zaslona garage then wlacz sufit sypialnia2
+multiple_intents/multiple_intents::multi_5:
+- wylacz swiatlo salonfamess then ustaw wentylator sypialnia2 50
+multiple_intents/multiple_intents::multi_6:
+- wlacz sufit sypialnia3 then wylacz swiatlo przedpokoj
+multiple_intents/multiple_intents::multi_7:
+- wlacz scena movie_night then wylacz zmywarka
+multiple_intents/multiple_intents::multi_8:
+- otworz zamek garage then co swiatlo garage
+multiple_intents/multiple_intents::multi_9:
+- pause telewizor salon then wylacz sufit salon

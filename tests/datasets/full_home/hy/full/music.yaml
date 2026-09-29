@@ -1,0 +1,529 @@
+- name: play_queen
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: queen
+  sentences:
+  - նվագիր queen հյուրասենյակ
+  - նվագիր queen հեռուստացույց հյուրասենյակ
+- name: play_album
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: rumours
+      media_type: album
+      artist: fleetwood mac
+  sentences:
+  - նվագիր album rumours by fleetwood mac հյուրասենյակ
+- name: play_radio
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - նվագիր queen radio mode հյուրասենյակ
+- name: queue_song
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: bohemian rhapsody
+      enqueue: add
+  sentences:
+  - նվագիր bohemian rhapsody queue հյուրասենյակ
+- name: now_playing
+  conditions:
+  - type: query
+    entity_id: media_player.living_music
+  sentences:
+  - ինչ հեռուստացույց հյուրասենյակ
+  - ինչ track հյուրասենյակ
+- name: music_volume_10
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 10
+  sentences:
+  - դիր հեռուստացույց հյուրասենյակ 10
+  - հեռուստացույց հյուրասենյակ 10
+- name: music_volume_20
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 20
+  sentences:
+  - դիր հեռուստացույց հյուրասենյակ 20
+  - հեռուստացույց հյուրասենյակ 20
+- name: music_volume_30
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 30
+  sentences:
+  - դիր հեռուստացույց հյուրասենյակ 30
+  - հեռուստացույց հյուրասենյակ 30
+- name: music_volume_50
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 50
+  sentences:
+  - դիր հեռուստացույց հյուրասենյակ 50
+  - հեռուստացույց հյուրասենյակ 50
+- name: music_volume_80
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 80
+  sentences:
+  - դիր հեռուստացույց հյուրասենյակ 80
+  - հեռուստացույց հյուրասենյակ 80
+- name: music_next
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    state: next
+  sentences:
+  - next track հյուրասենյակ
+- name: music_prev
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    state: previous
+  sentences:
+  - previous track հյուրասենյակ
+- name: kitchen_play
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: queen
+  sentences:
+  - նվագիր queen խոհանոց
+  - նվագիր queen հեռուստացույց խոհանոց
+- name: play_beatles_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - նվագիր beatles հյուրասենյակ
+  - նվագիր beatles հեռուստացույց հյուրասենյակ
+- name: play_radiohead_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - նվագիր radiohead հյուրասենյակ
+  - նվագիր radiohead հեռուստացույց հյուրասենյակ
+- name: play_abba_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: abba
+  sentences:
+  - նվագիր abba հյուրասենյակ
+  - նվագիր abba հեռուստացույց հյուրասենյակ
+- name: play_coldplay_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - նվագիր coldplay հյուրասենյակ
+  - նվագիր coldplay հեռուստացույց հյուրասենյակ
+- name: play_adele_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: adele
+  sentences:
+  - նվագիր adele հյուրասենյակ
+  - նվագիր adele հեռուստացույց հյուրասենյակ
+- name: play_prince_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: prince
+  sentences:
+  - նվագիր prince հյուրասենյակ
+  - նվագիր prince հեռուստացույց հյուրասենյակ
+- name: play_bowie_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - նվագիր bowie հյուրասենյակ
+  - նվագիր bowie հեռուստացույց հյուրասենյակ
+- name: play_nirvana_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - նվագիր nirvana հյուրասենյակ
+  - նվագիր nirvana հեռուստացույց հյուրասենյակ
+- name: play_eagles_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - նվագիր eagles հյուրասենյակ
+  - նվագիր eagles հեռուստացույց հյուրասենյակ
+- name: play_madonna_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - նվագիր madonna հյուրասենյակ
+  - նվագիր madonna հեռուստացույց հյուրասենյակ
+- name: play_mozart_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - նվագիր mozart հյուրասենյակ
+  - նվագիր mozart հեռուստացույց հյուրասենյակ
+- name: play_daft punk_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - նվագիր daft punk հյուրասենյակ
+  - նվագիր daft punk հեռուստացույց հյուրասենյակ
+- name: play_biafra_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - նվագիր biafra հյուրասենյակ
+  - նվագիր biafra հեռուստացույց հյուրասենյակ
+- name: play_queen_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: queen
+  sentences:
+  - նվագիր queen խոհանոց
+  - նվագիր queen հեռուստացույց խոհանոց
+- name: play_beatles_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - նվագիր beatles խոհանոց
+  - նվագիր beatles հեռուստացույց խոհանոց
+- name: play_radiohead_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - նվագիր radiohead խոհանոց
+  - նվագիր radiohead հեռուստացույց խոհանոց
+- name: play_abba_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: abba
+  sentences:
+  - նվագիր abba խոհանոց
+  - նվագիր abba հեռուստացույց խոհանոց
+- name: play_coldplay_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - նվագիր coldplay խոհանոց
+  - նվագիր coldplay հեռուստացույց խոհանոց
+- name: play_adele_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: adele
+  sentences:
+  - նվագիր adele խոհանոց
+  - նվագիր adele հեռուստացույց խոհանոց
+- name: play_prince_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: prince
+  sentences:
+  - նվագիր prince խոհանոց
+  - նվագիր prince հեռուստացույց խոհանոց
+- name: play_bowie_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - նվագիր bowie խոհանոց
+  - նվագիր bowie հեռուստացույց խոհանոց
+- name: play_nirvana_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - նվագիր nirvana խոհանոց
+  - նվագիր nirvana հեռուստացույց խոհանոց
+- name: play_eagles_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - նվագիր eagles խոհանոց
+  - նվագիր eagles հեռուստացույց խոհանոց
+- name: play_madonna_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - նվագիր madonna խոհանոց
+  - նվագիր madonna հեռուստացույց խոհանոց
+- name: play_mozart_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - նվագիր mozart խոհանոց
+  - նվագիր mozart հեռուստացույց խոհանոց
+- name: play_daft punk_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - նվագիր daft punk խոհանոց
+  - նվագիր daft punk հեռուստացույց խոհանոց
+- name: play_biafra_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - նվագիր biafra խոհանոց
+  - նվագիր biafra հեռուստացույց խոհանոց
+- name: play_queen_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: queen
+  sentences:
+  - նվագիր queen office
+  - նվագիր queen հեռուստացույց office
+- name: play_beatles_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - նվագիր beatles office
+  - նվագիր beatles հեռուստացույց office
+- name: play_radiohead_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - նվագիր radiohead office
+  - նվագիր radiohead հեռուստացույց office
+- name: play_abba_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: abba
+  sentences:
+  - նվագիր abba office
+  - նվագիր abba հեռուստացույց office
+- name: play_coldplay_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - նվագիր coldplay office
+  - նվագիր coldplay հեռուստացույց office
+- name: play_adele_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: adele
+  sentences:
+  - նվագիր adele office
+  - նվագիր adele հեռուստացույց office
+- name: play_prince_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: prince
+  sentences:
+  - նվագիր prince office
+  - նվագիր prince հեռուստացույց office
+- name: play_bowie_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - նվագիր bowie office
+  - նվագիր bowie հեռուստացույց office
+- name: play_nirvana_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - նվագիր nirvana office
+  - նվագիր nirvana հեռուստացույց office
+- name: play_eagles_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - նվագիր eagles office
+  - նվագիր eagles հեռուստացույց office
+- name: play_madonna_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - նվագիր madonna office
+  - նվագիր madonna հեռուստացույց office
+- name: play_mozart_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - նվագիր mozart office
+  - նվագիր mozart հեռուստացույց office
+- name: play_daft punk_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - նվագիր daft punk office
+  - նվագիր daft punk հեռուստացույց office
+- name: play_biafra_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - նվագիր biafra office
+  - նվագիր biafra հեռուստացույց office
+- name: radio_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - նվագիր queen radio mode հյուրասենյակ
+- name: now_living
+  conditions:
+  - type: query
+    entity_id: media_player.living_music
+  sentences:
+  - ինչ հեռուստացույց հյուրասենյակ
+  - ինչ track հյուրասենյակ
+- name: radio_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - նվագիր queen radio mode խոհանոց
+- name: now_kitchen
+  conditions:
+  - type: query
+    entity_id: media_player.kitchen_music
+  sentences:
+  - ինչ հեռուստացույց խոհանոց
+  - ինչ track խոհանոց
+- name: radio_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - նվագիր queen radio mode office
+- name: now_office
+  conditions:
+  - type: query
+    entity_id: media_player.office_music
+  sentences:
+  - ինչ հեռուստացույց office
+  - ինչ track office

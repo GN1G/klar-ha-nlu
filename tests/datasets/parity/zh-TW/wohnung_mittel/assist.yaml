@@ -1,0 +1,6 @@
+assist/ha_queries::ha_status_kueche:
+- 什麼 燈 廚房
+assist/ha_queries::ha_status_kugel:
+- 什麼 qiudeng
+assist/ha_queries::ha_status_lichter:
+- 什麼 全部 燈

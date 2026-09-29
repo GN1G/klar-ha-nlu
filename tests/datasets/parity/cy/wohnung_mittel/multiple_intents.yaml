@@ -1,0 +1,28 @@
+multiple_intents/multi::alle_ausser_schlaf_und_kueche:
+- diffodd pob golau heblaw llofft heblaw cegin
+multiple_intents/multi::licht_und_heizung:
+- tro pob golau ystafell then gosod gwres ystafell 23
+multiple_intents/multi::wohn_und_ess_aus:
+- diffodd pob golau ystafell then diffodd pob golau ystafellteuluess
+multiple_intents/multi::wohn_und_ess_rot:
+- gosod pob golau ystafell red then gosod pob golau ystafellteuluess red
+multiple_intents/multi::wz_und_kuche_licht:
+- tro pob golau ystafell then tro pob golau cegin
+multiple_intents/multi::zwei_raeume_und_heizung:
+- tro pob golau ystafell then tro pob golau cegin then gosod gwres ystafell 23
+multiple_intents/spoken::drei_raeume_an:
+- tro pob golau ystafell then tro pob golau ystafellteuluess then tro pob golau cegin
+multiple_intents/spoken::drei_raeume_aus:
+- diffodd pob golau ystafell then diffodd pob golau ystafellteuluess then diffodd
+  pob golau cegin
+multiple_intents/spoken::ess_und_wohn_aus:
+- diffodd pob golau ystafell then diffodd pob golau ystafellteuluess
+multiple_intents/spoken::kugel_und_decke_aus:
+- pelen a nenfwd llofft diffodd
+multiple_intents/spoken_more::kuche_und_ess_an:
+- tro pob golau cegin then tro pob golau ystafellteuluess
+multiple_intents/spoken_more::wz_ess_arbeit_aus:
+- diffodd pob golau ystafell then diffodd pob golau ystafellteuluess then diffodd
+  pob golau office
+multiple_intents/spoken_more::wz_und_arbeit_aus:
+- diffodd pob golau ystafell then diffodd pob golau office

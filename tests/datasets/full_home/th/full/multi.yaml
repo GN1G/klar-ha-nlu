@@ -1,0 +1,142 @@
+- name: multi_living_kitchen
+  conditions:
+  - type: action
+    area: living
+    domain: light
+    state: 'on'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'on'
+  sentences:
+  - เปิด ไฟ ห้องนั่งเล่น และ ห้องครัว
+  - ไฟ ห้องนั่งเล่น และ ห้องครัว เปิด
+- name: multi_off_lock
+  conditions:
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    entity_id: lock.front_door
+    state: locked
+  sentences:
+  - ปิด ไฟ ห้องนั่งเล่น และ กุญแจ ประตู
+  - ปิด ห้องนั่งเล่น และ กุญแจ ประตู
+- name: multi_kitchen_dining
+  conditions:
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'on'
+  - type: action
+    area: dining
+    domain: light
+    state: 'on'
+  sentences:
+  - เปิด ไฟ ห้องครัว และ hongkhropkhruaess
+  - ไฟ ห้องครัว และ hongkhropkhruaess เปิด
+- name: multi_office_hallway
+  conditions:
+  - type: action
+    area: office
+    domain: light
+    state: 'on'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'on'
+  sentences:
+  - เปิด ไฟ office และ hallway
+  - ไฟ office และ hallway เปิด
+- name: multi_garage_garden
+  conditions:
+  - type: action
+    area: garage
+    domain: light
+    state: 'on'
+  - type: action
+    area: garden
+    domain: light
+    state: 'on'
+  sentences:
+  - เปิด ไฟ garage และ garden
+  - ไฟ garage และ garden เปิด
+- name: multi_master_bedroom_main_bath
+  conditions:
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'on'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'on'
+  sentences:
+  - เปิด ไฟ hongnonmaster และ main bath
+  - ไฟ hongnonmaster และ main bath เปิด
+- name: multi_family_room_living
+  conditions:
+  - type: action
+    area: family_room
+    domain: light
+    state: 'on'
+  - type: action
+    area: living
+    domain: light
+    state: 'on'
+  sentences:
+  - เปิด ไฟ hongkhropkhrua และ ห้องนั่งเล่น
+  - ไฟ hongkhropkhrua และ ห้องนั่งเล่น เปิด
+- name: multi_basement_garden
+  conditions:
+  - type: action
+    area: basement
+    domain: light
+    state: 'on'
+  - type: action
+    area: garden
+    domain: light
+    state: 'on'
+  sentences:
+  - เปิด ไฟ basement และ garden
+  - ไฟ basement และ garden เปิด
+- name: multi_hallway_office
+  conditions:
+  - type: action
+    area: hallway
+    domain: light
+    state: 'on'
+  - type: action
+    area: office
+    domain: light
+    state: 'on'
+  sentences:
+  - เปิด ไฟ hallway และ office
+  - ไฟ hallway และ office เปิด
+- name: multi_dining_kitchen
+  conditions:
+  - type: action
+    area: dining
+    domain: light
+    state: 'on'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'on'
+  sentences:
+  - เปิด ไฟ hongkhropkhruaess และ ห้องครัว
+  - ไฟ hongkhropkhruaess และ ห้องครัว เปิด
+- name: multi_bedroom_2_bedroom_3
+  conditions:
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'on'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'on'
+  sentences:
+  - เปิด ไฟ hongnon2 และ hongnon3
+  - ไฟ hongnon2 และ hongnon3 เปิด

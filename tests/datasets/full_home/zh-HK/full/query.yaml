@@ -1,0 +1,287 @@
+- name: query_light.living_ceiling
+  conditions:
+  - type: query
+    entity_id: light.living_ceiling
+  sentences:
+  - 咩 燈 客廳
+  - 咩 客廳 燈
+- name: query_cover.living_blinds
+  conditions:
+  - type: query
+    entity_id: cover.living_blinds
+  sentences:
+  - 咩 簾子 客廳
+  - 咩 客廳 簾子
+- name: query_lock.front_door
+  conditions:
+  - type: query
+    entity_id: lock.front_door
+  sentences:
+  - 咩 鎖 xuanguan
+  - 咩 xuanguan 鎖
+- name: query_climate.ground_thermostat
+  conditions:
+  - type: query
+    entity_id: climate.ground_thermostat
+  sentences:
+  - 咩 空調 客廳
+  - 咩 客廳 空調
+- name: query_media_player.living_tv
+  conditions:
+  - type: query
+    entity_id: media_player.living_tv
+  sentences:
+  - 咩 dianshi 客廳
+  - 咩 客廳 dianshi
+- name: query_binary_sensor.front_door_sensor
+  conditions:
+  - type: query
+    entity_id: binary_sensor.front_door_sensor
+  sentences:
+  - 咩 doorsensor xuanguan
+  - 咩 xuanguan doorsensor
+- name: query_binary_sensor.living_window
+  conditions:
+  - type: query
+    entity_id: binary_sensor.living_window
+  sentences:
+  - 咩 windowsensor 客廳
+  - 咩 客廳 windowsensor
+- name: query_sensor.living_temperature
+  conditions:
+  - type: query
+    entity_id: sensor.living_temperature
+  sentences:
+  - 咩 tempsensor 客廳
+  - 咩 客廳 tempsensor
+- name: query_light.kitchen_ceiling
+  conditions:
+  - type: query
+    entity_id: light.kitchen_ceiling
+  sentences:
+  - 咩 燈 廚房
+  - 咩 廚房 燈
+- name: query_light.office_ceiling
+  conditions:
+  - type: query
+    entity_id: light.office_ceiling
+  sentences:
+  - 咩 燈 office
+  - 咩 office 燈
+- name: query_light.garden
+  conditions:
+  - type: query
+    entity_id: light.garden
+  sentences:
+  - 咩 燈 garden
+  - 咩 garden 燈
+- name: query_light.basement
+  conditions:
+  - type: query
+    entity_id: light.basement
+  sentences:
+  - 咩 燈 basement
+  - 咩 basement 燈
+- name: query_cover.master_blinds
+  conditions:
+  - type: query
+    entity_id: cover.master_blinds
+  sentences:
+  - 咩 簾子 woshimaster
+  - 咩 woshimaster 簾子
+- name: query_cover.garage_door
+  conditions:
+  - type: query
+    entity_id: cover.garage_door
+  sentences:
+  - 咩 簾子 garage
+  - 咩 garage 簾子
+- name: query_lock.garage_entry
+  conditions:
+  - type: query
+    entity_id: lock.garage_entry
+  sentences:
+  - 咩 鎖 garage
+  - 咩 garage 鎖
+- name: query_climate.upper_thermostat
+  conditions:
+  - type: query
+    entity_id: climate.upper_thermostat
+  sentences:
+  - 咩 空調 woshimaster
+  - 咩 woshimaster 空調
+- name: query_climate.master_ac
+  conditions:
+  - type: query
+    entity_id: climate.master_ac
+  sentences:
+  - 咩 kongtiao woshimaster
+  - 咩 woshimaster kongtiao
+- name: query_media_player.family_tv
+  conditions:
+  - type: query
+    entity_id: media_player.family_tv
+  sentences:
+  - 咩 dianshi jiatingfang
+  - 咩 jiatingfang dianshi
+- name: query_media_player.living_music
+  conditions:
+  - type: query
+    entity_id: media_player.living_music
+  sentences:
+  - 咩 電視 客廳
+  - 咩 客廳 電視
+- name: query_binary_sensor.kitchen_motion
+  conditions:
+  - type: query
+    entity_id: binary_sensor.kitchen_motion
+  sentences:
+  - 咩 motion 廚房
+  - 咩 廚房 motion
+- name: query_sensor.living_humidity
+  conditions:
+  - type: query
+    entity_id: sensor.living_humidity
+  sentences:
+  - 咩 humidity 客廳
+  - 咩 客廳 humidity
+- name: query_fan.master_fan
+  conditions:
+  - type: query
+    entity_id: fan.master_fan
+  sentences:
+  - 咩 風扇 woshimaster
+  - 咩 woshimaster 風扇
+- name: query_vacuum.robot
+  conditions:
+  - type: query
+    entity_id: vacuum.robot
+  sentences:
+  - 咩 掃地 客廳
+  - 咩 客廳 掃地
+- name: query_light.living_lamp
+  conditions:
+  - type: query
+    entity_id: light.living_lamp
+  sentences:
+  - 咩 燈 客廳
+  - 咩 客廳 燈
+- name: query_light.kitchen_island
+  conditions:
+  - type: query
+    entity_id: light.kitchen_island
+  sentences:
+  - 咩 燈 廚房
+  - 咩 廚房 燈
+- name: query_light.master_ceiling
+  conditions:
+  - type: query
+    entity_id: light.master_ceiling
+  sentences:
+  - 咩 燈 woshimaster
+  - 咩 woshimaster 燈
+- name: query_light.master_bedside_left
+  conditions:
+  - type: query
+    entity_id: light.master_bedside_left
+  sentences:
+  - 咩 燈 woshimaster
+  - 咩 woshimaster 燈
+- name: query_light.hallway_light
+  conditions:
+  - type: query
+    entity_id: light.hallway_light
+  sentences:
+  - 咩 燈 zoulang
+  - 咩 zoulang 燈
+- name: query_light.family_ceiling
+  conditions:
+  - type: query
+    entity_id: light.family_ceiling
+  sentences:
+  - 咩 燈 jiatingfang
+  - 咩 jiatingfang 燈
+- name: query_light.dining_pendant
+  conditions:
+  - type: query
+    entity_id: light.dining_pendant
+  sentences:
+  - 咩 燈 jiatingfangess
+  - 咩 jiatingfangess 燈
+- name: query_light.garage_light
+  conditions:
+  - type: query
+    entity_id: light.garage_light
+  sentences:
+  - 咩 燈 garage
+  - 咩 garage 燈
+- name: query_light.bedroom2_ceiling
+  conditions:
+  - type: query
+    entity_id: light.bedroom2_ceiling
+  sentences:
+  - 咩 燈 woshi2
+  - 咩 woshi2 燈
+- name: query_light.bedroom3_ceiling
+  conditions:
+  - type: query
+    entity_id: light.bedroom3_ceiling
+  sentences:
+  - 咩 燈 woshi3
+  - 咩 woshi3 燈
+- name: query_light.bedroom4_ceiling
+  conditions:
+  - type: query
+    entity_id: light.bedroom4_ceiling
+  sentences:
+  - 咩 燈 woshi4
+  - 咩 woshi4 燈
+- name: query_light.entryway_light
+  conditions:
+  - type: query
+    entity_id: light.entryway_light
+  sentences:
+  - 咩 燈 xuanguan
+  - 咩 xuanguan 燈
+- name: query_light.laundry_light
+  conditions:
+  - type: query
+    entity_id: light.laundry_light
+  sentences:
+  - 咩 燈 xiyifang
+  - 咩 xiyifang 燈
+- name: query_light.main_bath_light
+  conditions:
+  - type: query
+    entity_id: light.main_bath_light
+  sentences:
+  - 咩 燈 main bath
+  - 咩 main bath 燈
+- name: query_light.powder_room_light
+  conditions:
+  - type: query
+    entity_id: light.powder_room_light
+  sentences:
+  - 咩 燈 kewei
+  - 咩 kewei 燈
+- name: query_light.master_ensuite
+  conditions:
+  - type: query
+    entity_id: light.master_ensuite
+  sentences:
+  - 咩 ensuite woshimaster
+  - 咩 woshimaster ensuite
+- name: query_light.master_bedside_right
+  conditions:
+  - type: query
+    entity_id: light.master_bedside_right
+  sentences:
+  - 咩 燈 woshimaster
+  - 咩 woshimaster 燈
+- name: query_light.master_bath_light
+  conditions:
+  - type: query
+    entity_id: light.master_bath_light
+  sentences:
+  - 咩 燈 zhuwei
+  - 咩 zhuwei 燈

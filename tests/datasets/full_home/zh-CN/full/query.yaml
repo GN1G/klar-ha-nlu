@@ -1,0 +1,287 @@
+- name: query_light.living_ceiling
+  conditions:
+  - type: query
+    entity_id: light.living_ceiling
+  sentences:
+  - 什么 灯 客厅
+  - 什么 客厅 灯
+- name: query_cover.living_blinds
+  conditions:
+  - type: query
+    entity_id: cover.living_blinds
+  sentences:
+  - 什么 帘子 客厅
+  - 什么 客厅 帘子
+- name: query_lock.front_door
+  conditions:
+  - type: query
+    entity_id: lock.front_door
+  sentences:
+  - 什么 锁 xuanguan
+  - 什么 xuanguan 锁
+- name: query_climate.ground_thermostat
+  conditions:
+  - type: query
+    entity_id: climate.ground_thermostat
+  sentences:
+  - 什么 空调 客厅
+  - 什么 客厅 空调
+- name: query_media_player.living_tv
+  conditions:
+  - type: query
+    entity_id: media_player.living_tv
+  sentences:
+  - 什么 dianshi 客厅
+  - 什么 客厅 dianshi
+- name: query_binary_sensor.front_door_sensor
+  conditions:
+  - type: query
+    entity_id: binary_sensor.front_door_sensor
+  sentences:
+  - 什么 mensuoqi xuanguan
+  - 什么 xuanguan mensuoqi
+- name: query_binary_sensor.living_window
+  conditions:
+  - type: query
+    entity_id: binary_sensor.living_window
+  sentences:
+  - 什么 chuangsuoqi 客厅
+  - 什么 客厅 chuangsuoqi
+- name: query_sensor.living_temperature
+  conditions:
+  - type: query
+    entity_id: sensor.living_temperature
+  sentences:
+  - 什么 wenshidu 客厅
+  - 什么 客厅 wenshidu
+- name: query_light.kitchen_ceiling
+  conditions:
+  - type: query
+    entity_id: light.kitchen_ceiling
+  sentences:
+  - 什么 灯 厨房
+  - 什么 厨房 灯
+- name: query_light.office_ceiling
+  conditions:
+  - type: query
+    entity_id: light.office_ceiling
+  sentences:
+  - 什么 灯 office
+  - 什么 office 灯
+- name: query_light.garden
+  conditions:
+  - type: query
+    entity_id: light.garden
+  sentences:
+  - 什么 灯 garden
+  - 什么 garden 灯
+- name: query_light.basement
+  conditions:
+  - type: query
+    entity_id: light.basement
+  sentences:
+  - 什么 灯 basement
+  - 什么 basement 灯
+- name: query_cover.master_blinds
+  conditions:
+  - type: query
+    entity_id: cover.master_blinds
+  sentences:
+  - 什么 帘子 woshimaster
+  - 什么 woshimaster 帘子
+- name: query_cover.garage_door
+  conditions:
+  - type: query
+    entity_id: cover.garage_door
+  sentences:
+  - 什么 帘子 garage
+  - 什么 garage 帘子
+- name: query_lock.garage_entry
+  conditions:
+  - type: query
+    entity_id: lock.garage_entry
+  sentences:
+  - 什么 锁 garage
+  - 什么 garage 锁
+- name: query_climate.upper_thermostat
+  conditions:
+  - type: query
+    entity_id: climate.upper_thermostat
+  sentences:
+  - 什么 空调 woshimaster
+  - 什么 woshimaster 空调
+- name: query_climate.master_ac
+  conditions:
+  - type: query
+    entity_id: climate.master_ac
+  sentences:
+  - 什么 kongtiao woshimaster
+  - 什么 woshimaster kongtiao
+- name: query_media_player.family_tv
+  conditions:
+  - type: query
+    entity_id: media_player.family_tv
+  sentences:
+  - 什么 dianshi jiatingfang
+  - 什么 jiatingfang dianshi
+- name: query_media_player.living_music
+  conditions:
+  - type: query
+    entity_id: media_player.living_music
+  sentences:
+  - 什么 电视 客厅
+  - 什么 客厅 电视
+- name: query_binary_sensor.kitchen_motion
+  conditions:
+  - type: query
+    entity_id: binary_sensor.kitchen_motion
+  sentences:
+  - 什么 yundong 厨房
+  - 什么 厨房 yundong
+- name: query_sensor.living_humidity
+  conditions:
+  - type: query
+    entity_id: sensor.living_humidity
+  sentences:
+  - 什么 shidu 客厅
+  - 什么 客厅 shidu
+- name: query_fan.master_fan
+  conditions:
+  - type: query
+    entity_id: fan.master_fan
+  sentences:
+  - 什么 风扇 woshimaster
+  - 什么 woshimaster 风扇
+- name: query_vacuum.robot
+  conditions:
+  - type: query
+    entity_id: vacuum.robot
+  sentences:
+  - 什么 扫地 客厅
+  - 什么 客厅 扫地
+- name: query_light.living_lamp
+  conditions:
+  - type: query
+    entity_id: light.living_lamp
+  sentences:
+  - 什么 灯 客厅
+  - 什么 客厅 灯
+- name: query_light.kitchen_island
+  conditions:
+  - type: query
+    entity_id: light.kitchen_island
+  sentences:
+  - 什么 灯 厨房
+  - 什么 厨房 灯
+- name: query_light.master_ceiling
+  conditions:
+  - type: query
+    entity_id: light.master_ceiling
+  sentences:
+  - 什么 灯 woshimaster
+  - 什么 woshimaster 灯
+- name: query_light.master_bedside_left
+  conditions:
+  - type: query
+    entity_id: light.master_bedside_left
+  sentences:
+  - 什么 灯 woshimaster
+  - 什么 woshimaster 灯
+- name: query_light.hallway_light
+  conditions:
+  - type: query
+    entity_id: light.hallway_light
+  sentences:
+  - 什么 灯 zoulang
+  - 什么 zoulang 灯
+- name: query_light.family_ceiling
+  conditions:
+  - type: query
+    entity_id: light.family_ceiling
+  sentences:
+  - 什么 灯 jiatingfang
+  - 什么 jiatingfang 灯
+- name: query_light.dining_pendant
+  conditions:
+  - type: query
+    entity_id: light.dining_pendant
+  sentences:
+  - 什么 灯 jiatingfangess
+  - 什么 jiatingfangess 灯
+- name: query_light.garage_light
+  conditions:
+  - type: query
+    entity_id: light.garage_light
+  sentences:
+  - 什么 灯 garage
+  - 什么 garage 灯
+- name: query_light.bedroom2_ceiling
+  conditions:
+  - type: query
+    entity_id: light.bedroom2_ceiling
+  sentences:
+  - 什么 灯 woshi2
+  - 什么 woshi2 灯
+- name: query_light.bedroom3_ceiling
+  conditions:
+  - type: query
+    entity_id: light.bedroom3_ceiling
+  sentences:
+  - 什么 灯 woshi3
+  - 什么 woshi3 灯
+- name: query_light.bedroom4_ceiling
+  conditions:
+  - type: query
+    entity_id: light.bedroom4_ceiling
+  sentences:
+  - 什么 灯 woshi4
+  - 什么 woshi4 灯
+- name: query_light.entryway_light
+  conditions:
+  - type: query
+    entity_id: light.entryway_light
+  sentences:
+  - 什么 灯 xuanguan
+  - 什么 xuanguan 灯
+- name: query_light.laundry_light
+  conditions:
+  - type: query
+    entity_id: light.laundry_light
+  sentences:
+  - 什么 灯 xiyifang
+  - 什么 xiyifang 灯
+- name: query_light.main_bath_light
+  conditions:
+  - type: query
+    entity_id: light.main_bath_light
+  sentences:
+  - 什么 灯 main bath
+  - 什么 main bath 灯
+- name: query_light.powder_room_light
+  conditions:
+  - type: query
+    entity_id: light.powder_room_light
+  sentences:
+  - 什么 灯 kewei
+  - 什么 kewei 灯
+- name: query_light.master_ensuite
+  conditions:
+  - type: query
+    entity_id: light.master_ensuite
+  sentences:
+  - 什么 ensuite woshimaster
+  - 什么 woshimaster ensuite
+- name: query_light.master_bedside_right
+  conditions:
+  - type: query
+    entity_id: light.master_bedside_right
+  sentences:
+  - 什么 灯 woshimaster
+  - 什么 woshimaster 灯
+- name: query_light.master_bath_light
+  conditions:
+  - type: query
+    entity_id: light.master_bath_light
+  sentences:
+  - 什么 灯 zhuwei
+  - 什么 zhuwei 灯

@@ -1,0 +1,36 @@
+timers/timers::abstract_start:
+- taend timer abstract 45 min
+timers/timers::abstract_start_hours_minutes:
+- taend timer abstract 20 min
+timers/timers::abstract_start_seconds:
+- taend timer abstract 45 sec
+timers/timers::cancel_all_timers:
+- sluk alle timer
+timers/timers::timer_laundry_cancel:
+- sluk timer laundry
+timers/timers::timer_laundry_decrease:
+- taend timer laundry 5 min
+timers/timers::timer_laundry_increase:
+- taend timer laundry 16 min
+timers/timers::timer_laundry_pause:
+- pause timer laundry
+timers/timers::timer_laundry_start:
+- taend timer laundry 90 sec
+timers/timers::timer_laundry_status:
+- hvad timer laundry
+timers/timers::timer_laundry_unpause:
+- spil timer laundry
+timers/timers::timer_oven_cancel:
+- sluk timer oven
+timers/timers::timer_oven_decrease:
+- taend timer oven 44 min
+timers/timers::timer_oven_increase:
+- taend timer oven 30 min
+timers/timers::timer_oven_pause:
+- pause timer oven
+timers/timers::timer_oven_start:
+- taend timer oven 2 min
+timers/timers::timer_oven_status:
+- hvad timer oven
+timers/timers::timer_oven_unpause:
+- spil timer oven

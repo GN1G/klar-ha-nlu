@@ -1,0 +1,34 @@
+multiple_intents/multiple_intents::multi_0:
+- გამორთე სინათლე wc da ჩართე სႪენა good_morning
+multiple_intents/multiple_intents::multi_1:
+- რა jamtchebi da ჩართე სႪენა leaving_home
+multiple_intents/multiple_intents::multi_10:
+- დააყენე ვენტილატორი sadzinebeli2 50 da რა ფარდა sadzinebeli2 da რა ფარდა sadzinebelimaster
+multiple_intents/multiple_intents::multi_12:
+- გამორთე sagamise left sadzinebelimaster da ჩართე ყველა სინათლე samretskhao
+multiple_intents/multiple_intents::multi_14:
+- გამორთე ყველა სინათლე სამზარეულო da რა სინათლე shemosasvleligang
+multiple_intents/multiple_intents::multi_15:
+- რა ფარდა sadzinebeli2 da გამორთე ყველა სინათლე სამზარეულო
+multiple_intents/multiple_intents::multi_16:
+- ჩართე potoloni სამზარეულო da რა სინათლე shemosasvleligang
+multiple_intents/multiple_intents::multi_18:
+- გამორთე ვენტილატორი ojakhisotakhi da დააყენე kuntkhuli სამზარეულო 20
+multiple_intents/multiple_intents::multi_19:
+- რა ვენტილატორი sadzinebeli2 da ჩართე სინათლე samretskhao
+multiple_intents/multiple_intents::multi_2:
+- რა სინათლე garage da დახურე ფარდა მისაღები
+multiple_intents/multiple_intents::multi_3:
+- რა გათბობა მისაღები da გამორთე potoloni მისაღები
+multiple_intents/multiple_intents::multi_4:
+- დახურე ფარდა sadzinebeli3 da დახურე ფარდა garage da ჩართე potoloni sadzinebeli2
+multiple_intents/multiple_intents::multi_5:
+- გამორთე სინათლე ojakhisotakhiess da დააყენე ვენტილატორი sadzinebeli2 50
+multiple_intents/multiple_intents::multi_6:
+- ჩართე potoloni sadzinebeli3 da გამორთე სინათლე shemosasvleli
+multiple_intents/multiple_intents::multi_7:
+- ჩართე სႪენა movie_night da გამორთე jamtchebi
+multiple_intents/multiple_intents::multi_8:
+- გახსენი საკეტი garage da რა სინათლე garage
+multiple_intents/multiple_intents::multi_9:
+- პაუზა tv მისაღები da გამორთე potoloni მისაღები

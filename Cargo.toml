@@ -1,0 +1,46 @@
+[package]
+name = "klar-nlu"
+version = "2026.9.11"
+edition = "2021"
+rust-version = "1.85"
+description = "Deterministic NLU for Home Assistant — 67 languages, Assist alternative"
+license = "MIT"
+default-run = "klar"
+
+[[bin]]
+name = "klar"
+path = "src/main.rs"
+
+[dependencies]
+axum = { version = "0.8", features = ["json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+tokio-stream = { version = "0.1", default-features = false, features = ["sync"] }
+reqwest = { version = "0.12.12", default-features = false, features = ["json", "rustls-tls", "stream"] }
+futures-util = { version = "0.3", default-features = false, features = ["std"] }
+# url 2.5.4 + idna 1.0.3 fix RUSTSEC-2024-0421. idna_adapter 1.1 is the
+# unicode-rs back end so rustc 1.85 does not pull ICU4X (MSRV 1.86+).
+url = "=2.5.4"
+idna = "=1.0.3"
+idna_adapter = "=1.1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+clap = { version = "4", features = ["derive"] }
+thiserror = "2"
+strsim = "0.11"
+uuid = { version = "1", features = ["v4"] }
+serde_yaml = "0.9"
+tower-http = { version = "0.7.0", features = ["fs"] }
+tar = "0.4"
+flate2 = { version = "1", default-features = false, features = ["rust_backend"] }
+
+[profile.test]
+opt-level = 1
+debug = "line-tables-only"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = "z"
+strip = true

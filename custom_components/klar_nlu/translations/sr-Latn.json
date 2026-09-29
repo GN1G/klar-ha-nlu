@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "Ova integracija razgovara sa Assist-om. Poseban motor tumači govor: aplikacija Klar NLU, uključeni proces ili Docker. Na Home Assistant OS instalirajte i aplikaciju pa izaberite Koristi aplikaciju Klar NLU. Bez aplikacije pokrenite uključeni motor. Ne pokrećite oba.",
+        "data": {
+          "mode": "Motor",
+          "channel": "Kanal izdanja",
+          "url": "URL Klar API-ja",
+          "token": "Token za upis"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL mora biti http(s), bez korisničkog imena."
+    },
+    "abort": {
+      "already_configured": "Klar NLU je već podešen"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "Glas, jezici Assist-a i LLM su u Klar operatorskom UI-ju (Podešavanja). Ovaj obrazac samo povezuje motor: URL, token i kanal. {apps}",
+        "data": {
+          "mode": "Motor",
+          "url": "URL Klar API-ja",
+          "token": "Token za upis",
+          "assist_filter": "Upravljaj samo entitetima izloženim Assist-u",
+          "channel": "Kanal izdanja"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "Isti token kao u aplikaciji Klar.",
+          "assist_filter": "Uključeno: samo što Assist vidi. Isključeno: i skriveni entiteti.",
+          "channel": "Bilo kada. Staging pokazuje na Klar NLU (Staging)."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL mora biti http(s), bez korisničkog imena."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "Pokreni uključeni motor (samo HACS)",
+        "remote": "Koristi aplikaciju Klar NLU ili Docker"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (produkcija)",
+        "staging": "Staging (kandidat)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "Jezik sistema",
+        "all": "Svi jezici"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "Obično",
+        "butler": "Butler",
+        "locker": "Opušteno",
+        "fuersorglich": "Brižno",
+        "party": "Party",
+        "grantig": "Mrzovoljno",
+        "sarkastisch": "Sarkastično",
+        "pirat": "Pirat",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "Ličnost",
+        "state": {
+          "default": "Obično",
+          "butler": "Butler",
+          "locker": "Opušteno",
+          "fuersorglich": "Brižno",
+          "party": "Party",
+          "grantig": "Mrzovoljno",
+          "sarkastisch": "Sarkastično",
+          "pirat": "Pirat",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "Kratka potvrda"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "AI zadatak"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "Poslednje čuto"
+      },
+      "last_decision": {
+        "name": "Poslednja odluka"
+      },
+      "last_speech": {
+        "name": "Poslednji odgovor"
+      },
+      "last_area": {
+        "name": "Čuto u"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Klar motor je stao",
+      "description": "Uključeni Klar proces ne radi. Ponovo učitajte Klar NLU u Podešavanja → Uređaji i usluge."
+    }
+  }
+}

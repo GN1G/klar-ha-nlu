@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "Muunganisho huu unazungumza na Assist. Injini tofauti huchambua usemi: programu ya Klar NLU, mchakato uliojumuishwa au Docker. Kwenye Home Assistant OS sakinisha pia programu kisha chagua Tumia programu ya Klar NLU. Bila programu anzisha injini iliyojumuishwa. Usiendeshe zote mbili.",
+        "data": {
+          "mode": "Injini",
+          "channel": "Kituo cha toleo",
+          "url": "URL ya API ya Klar",
+          "token": "Tokeni ya kuandika"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL lazima iwe http(s) bila jina la mtumiaji."
+    },
+    "abort": {
+      "already_configured": "Klar NLU tayari imewekwa"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "Sauti, lugha za Assist na LLM ziko kwenye UI ya opereta ya Klar (Mipangilio). Fomu hii inaunganisha injini tu: URL, tokeni na kituo. {apps}",
+        "data": {
+          "mode": "Injini",
+          "url": "URL ya API ya Klar",
+          "token": "Tokeni ya kuandika",
+          "assist_filter": "Dhibiti tu huluki zilizoonekana kwa Assist",
+          "channel": "Kituo cha toleo"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "Tokeni ileile kama katika programu ya Klar.",
+          "assist_filter": "Washa: tu kile Assist inaona. Zima: hata huluki zilizofichwa.",
+          "channel": "Wakati wowote. Staging inaelekeza Klar NLU (Staging)."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL lazima iwe http(s) bila jina la mtumiaji."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "Anzisha injini iliyojumuishwa (HACS tu)",
+        "remote": "Tumia programu ya Klar NLU au Docker"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (uzalishaji)",
+        "staging": "Staging (mgombea)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "Lugha ya mfumo",
+        "all": "Lugha zote"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "Kawaida",
+        "butler": "Butler",
+        "locker": "Rahisi",
+        "fuersorglich": "Mwenye kujali",
+        "party": "Party",
+        "grantig": "Mwenye hasira",
+        "sarkastisch": "Mzaha mkali",
+        "pirat": "Haramia",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "Tabia",
+        "state": {
+          "default": "Kawaida",
+          "butler": "Butler",
+          "locker": "Rahisi",
+          "fuersorglich": "Mwenye kujali",
+          "party": "Party",
+          "grantig": "Mwenye hasira",
+          "sarkastisch": "Mzaha mkali",
+          "pirat": "Haramia",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "Uthibitisho mfupi"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "Kazi ya AI"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "Kilichosikika mwisho"
+      },
+      "last_decision": {
+        "name": "Uamuzi wa mwisho"
+      },
+      "last_speech": {
+        "name": "Jibu la mwisho"
+      },
+      "last_area": {
+        "name": "Ilisikika katika"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Injini ya Klar imesimama",
+      "description": "Mchakato wa Klar uliojumuishwa hauendi. Pakia tena Klar NLU katika Mipangilio → Vifaa na huduma."
+    }
+  }
+}

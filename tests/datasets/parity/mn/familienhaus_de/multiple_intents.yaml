@@ -1,0 +1,34 @@
+multiple_intents/multiple_intents::multi_0:
+- унтраа гэрэл oroon ba асаа үзэгдэл good_morning
+multiple_intents/multiple_intents::multi_1:
+- юу sav ba асаа үзэгдэл leaving_home
+multiple_intents/multiple_intents::multi_10:
+- тохируул сэнс untlagiin2 50 ba юу хөшиг untlagiin2 ba юу хөшиг untlagiinmaster
+multiple_intents/multiple_intents::multi_12:
+- унтраа oronii left untlagiinmaster ba асаа бүгд гэрэл ugaalga
+multiple_intents/multiple_intents::multi_14:
+- унтраа бүгд гэрэл галтогоо ba юу гэрэл orolgang
+multiple_intents/multiple_intents::multi_15:
+- юу хөшиг untlagiin2 ba унтраа бүгд гэрэл галтогоо
+multiple_intents/multiple_intents::multi_16:
+- асаа taaz галтогоо ba юу гэрэл orolgang
+multiple_intents/multiple_intents::multi_18:
+- унтраа сэнс gerbul ba тохируул aran галтогоо 20
+multiple_intents/multiple_intents::multi_19:
+- юу сэнс untlagiin2 ba асаа гэрэл ugaalga
+multiple_intents/multiple_intents::multi_2:
+- юу гэрэл garage ba хаа хөшиг зочны
+multiple_intents/multiple_intents::multi_3:
+- юу халаалт зочны ba унтраа taaz зочны
+multiple_intents/multiple_intents::multi_4:
+- хаа хөшиг untlagiin3 ba хаа хөшиг garage ba асаа taaz untlagiin2
+multiple_intents/multiple_intents::multi_5:
+- унтраа гэрэл gerbuless ba тохируул сэнс untlagiin2 50
+multiple_intents/multiple_intents::multi_6:
+- асаа taaz untlagiin3 ba унтраа гэрэл orol
+multiple_intents/multiple_intents::multi_7:
+- асаа үзэгдэл movie_night ba унтраа sav
+multiple_intents/multiple_intents::multi_8:
+- нээ түгжээ garage ba юу гэрэл garage
+multiple_intents/multiple_intents::multi_9:
+- зогсоо tv зочны ba унтраа taaz зочны

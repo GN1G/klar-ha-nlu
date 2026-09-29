@@ -1,0 +1,287 @@
+- name: query_light.living_ceiling
+  conditions:
+  - type: query
+    entity_id: light.living_ceiling
+  sentences:
+  - ಏನು ಬೆಳಕು ಹಾಲ್
+  - ಏನು ಹಾಲ್ ಬೆಳಕು
+- name: query_cover.living_blinds
+  conditions:
+  - type: query
+    entity_id: cover.living_blinds
+  sentences:
+  - ಏನು ಪರದೆ ಹಾಲ್
+  - ಏನು ಹಾಲ್ ಪರದೆ
+- name: query_lock.front_door
+  conditions:
+  - type: query
+    entity_id: lock.front_door
+  sentences:
+  - ಏನು ಬೀಗ pravesha
+  - ಏನು pravesha ಬೀಗ
+- name: query_climate.ground_thermostat
+  conditions:
+  - type: query
+    entity_id: climate.ground_thermostat
+  sentences:
+  - ಏನು ಬಿಸಿ ಹಾಲ್
+  - ಏನು ಹಾಲ್ ಬಿಸಿ
+- name: query_media_player.living_tv
+  conditions:
+  - type: query
+    entity_id: media_player.living_tv
+  sentences:
+  - ಏನು tv ಹಾಲ್
+  - ಏನು ಹಾಲ್ tv
+- name: query_binary_sensor.front_door_sensor
+  conditions:
+  - type: query
+    entity_id: binary_sensor.front_door_sensor
+  sentences:
+  - ಏನು doorsensor pravesha
+  - ಏನು pravesha doorsensor
+- name: query_binary_sensor.living_window
+  conditions:
+  - type: query
+    entity_id: binary_sensor.living_window
+  sentences:
+  - ಏನು windowsensor ಹಾಲ್
+  - ಏನು ಹಾಲ್ windowsensor
+- name: query_sensor.living_temperature
+  conditions:
+  - type: query
+    entity_id: sensor.living_temperature
+  sentences:
+  - ಏನು tempsensor ಹಾಲ್
+  - ಏನು ಹಾಲ್ tempsensor
+- name: query_light.kitchen_ceiling
+  conditions:
+  - type: query
+    entity_id: light.kitchen_ceiling
+  sentences:
+  - ಏನು ಬೆಳಕು ಅಡುಗೆ
+  - ಏನು ಅಡುಗೆ ಬೆಳಕು
+- name: query_light.office_ceiling
+  conditions:
+  - type: query
+    entity_id: light.office_ceiling
+  sentences:
+  - ಏನು ಬೆಳಕು office
+  - ಏನು office ಬೆಳಕು
+- name: query_light.garden
+  conditions:
+  - type: query
+    entity_id: light.garden
+  sentences:
+  - ಏನು ಬೆಳಕು garden
+  - ಏನು garden ಬೆಳಕು
+- name: query_light.basement
+  conditions:
+  - type: query
+    entity_id: light.basement
+  sentences:
+  - ಏನು ಬೆಳಕು basement
+  - ಏನು basement ಬೆಳಕು
+- name: query_cover.master_blinds
+  conditions:
+  - type: query
+    entity_id: cover.master_blinds
+  sentences:
+  - ಏನು ಪರದೆ shayanakonemaster
+  - ಏನು shayanakonemaster ಪರದೆ
+- name: query_cover.garage_door
+  conditions:
+  - type: query
+    entity_id: cover.garage_door
+  sentences:
+  - ಏನು ಪರದೆ garage
+  - ಏನು garage ಪರದೆ
+- name: query_lock.garage_entry
+  conditions:
+  - type: query
+    entity_id: lock.garage_entry
+  sentences:
+  - ಏನು ಬೀಗ garage
+  - ಏನು garage ಬೀಗ
+- name: query_climate.upper_thermostat
+  conditions:
+  - type: query
+    entity_id: climate.upper_thermostat
+  sentences:
+  - ಏನು ಬಿಸಿ shayanakonemaster
+  - ಏನು shayanakonemaster ಬಿಸಿ
+- name: query_climate.master_ac
+  conditions:
+  - type: query
+    entity_id: climate.master_ac
+  sentences:
+  - ಏನು bisi shayanakonemaster
+  - ಏನು shayanakonemaster bisi
+- name: query_media_player.family_tv
+  conditions:
+  - type: query
+    entity_id: media_player.family_tv
+  sentences:
+  - ಏನು tv kutumba
+  - ಏನು kutumba tv
+- name: query_media_player.living_music
+  conditions:
+  - type: query
+    entity_id: media_player.living_music
+  sentences:
+  - ಏನು ಟಿವಿ ಹಾಲ್
+  - ಏನು ಹಾಲ್ ಟಿವಿ
+- name: query_binary_sensor.kitchen_motion
+  conditions:
+  - type: query
+    entity_id: binary_sensor.kitchen_motion
+  sentences:
+  - ಏನು motion ಅಡುಗೆ
+  - ಏನು ಅಡುಗೆ motion
+- name: query_sensor.living_humidity
+  conditions:
+  - type: query
+    entity_id: sensor.living_humidity
+  sentences:
+  - ಏನು humidity ಹಾಲ್
+  - ಏನು ಹಾಲ್ humidity
+- name: query_fan.master_fan
+  conditions:
+  - type: query
+    entity_id: fan.master_fan
+  sentences:
+  - ಏನು ಫ್ಯಾನ್ shayanakonemaster
+  - ಏನು shayanakonemaster ಫ್ಯಾನ್
+- name: query_vacuum.robot
+  conditions:
+  - type: query
+    entity_id: vacuum.robot
+  sentences:
+  - ಏನು ಗುಡಿಸು ಹಾಲ್
+  - ಏನು ಹಾಲ್ ಗುಡಿಸು
+- name: query_light.living_lamp
+  conditions:
+  - type: query
+    entity_id: light.living_lamp
+  sentences:
+  - ಏನು ಬೆಳಕು ಹಾಲ್
+  - ಏನು ಹಾಲ್ ಬೆಳಕು
+- name: query_light.kitchen_island
+  conditions:
+  - type: query
+    entity_id: light.kitchen_island
+  sentences:
+  - ಏನು ಬೆಳಕು ಅಡುಗೆ
+  - ಏನು ಅಡುಗೆ ಬೆಳಕು
+- name: query_light.master_ceiling
+  conditions:
+  - type: query
+    entity_id: light.master_ceiling
+  sentences:
+  - ಏನು ಬೆಳಕು shayanakonemaster
+  - ಏನು shayanakonemaster ಬೆಳಕು
+- name: query_light.master_bedside_left
+  conditions:
+  - type: query
+    entity_id: light.master_bedside_left
+  sentences:
+  - ಏನು ಬೆಳಕು shayanakonemaster
+  - ಏನು shayanakonemaster ಬೆಳಕು
+- name: query_light.hallway_light
+  conditions:
+  - type: query
+    entity_id: light.hallway_light
+  sentences:
+  - ಏನು ಬೆಳಕು hallway
+  - ಏನು hallway ಬೆಳಕು
+- name: query_light.family_ceiling
+  conditions:
+  - type: query
+    entity_id: light.family_ceiling
+  sentences:
+  - ಏನು ಬೆಳಕು kutumba
+  - ಏನು kutumba ಬೆಳಕು
+- name: query_light.dining_pendant
+  conditions:
+  - type: query
+    entity_id: light.dining_pendant
+  sentences:
+  - ಏನು ಬೆಳಕು kutumbaess
+  - ಏನು kutumbaess ಬೆಳಕು
+- name: query_light.garage_light
+  conditions:
+  - type: query
+    entity_id: light.garage_light
+  sentences:
+  - ಏನು ಬೆಳಕು garage
+  - ಏನು garage ಬೆಳಕು
+- name: query_light.bedroom2_ceiling
+  conditions:
+  - type: query
+    entity_id: light.bedroom2_ceiling
+  sentences:
+  - ಏನು ಬೆಳಕು shayanakone2
+  - ಏನು shayanakone2 ಬೆಳಕು
+- name: query_light.bedroom3_ceiling
+  conditions:
+  - type: query
+    entity_id: light.bedroom3_ceiling
+  sentences:
+  - ಏನು ಬೆಳಕು shayanakone3
+  - ಏನು shayanakone3 ಬೆಳಕು
+- name: query_light.bedroom4_ceiling
+  conditions:
+  - type: query
+    entity_id: light.bedroom4_ceiling
+  sentences:
+  - ಏನು ಬೆಳಕು shayanakone4
+  - ಏನು shayanakone4 ಬೆಳಕು
+- name: query_light.entryway_light
+  conditions:
+  - type: query
+    entity_id: light.entryway_light
+  sentences:
+  - ಏನು ಬೆಳಕು pravesha
+  - ಏನು pravesha ಬೆಳಕು
+- name: query_light.laundry_light
+  conditions:
+  - type: query
+    entity_id: light.laundry_light
+  sentences:
+  - ಏನು ಬೆಳಕು ogeyuva
+  - ಏನು ogeyuva ಬೆಳಕು
+- name: query_light.main_bath_light
+  conditions:
+  - type: query
+    entity_id: light.main_bath_light
+  sentences:
+  - ಏನು ಬೆಳಕು main bath
+  - ಏನು main bath ಬೆಳಕು
+- name: query_light.powder_room_light
+  conditions:
+  - type: query
+    entity_id: light.powder_room_light
+  sentences:
+  - ಏನು ಬೆಳಕು shauchalaya
+  - ಏನು shauchalaya ಬೆಳಕು
+- name: query_light.master_ensuite
+  conditions:
+  - type: query
+    entity_id: light.master_ensuite
+  sentences:
+  - ಏನು ensuite shayanakonemaster
+  - ಏನು shayanakonemaster ensuite
+- name: query_light.master_bedside_right
+  conditions:
+  - type: query
+    entity_id: light.master_bedside_right
+  sentences:
+  - ಏನು ಬೆಳಕು shayanakonemaster
+  - ಏನು shayanakonemaster ಬೆಳಕು
+- name: query_light.master_bath_light
+  conditions:
+  - type: query
+    entity_id: light.master_bath_light
+  sentences:
+  - ಏನು ಬೆಳಕು mukhyasnana
+  - ಏನು mukhyasnana ಬೆಳಕು

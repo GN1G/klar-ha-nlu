@@ -1,0 +1,231 @@
+- name: climate.ground_thermostat_18
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 18
+  sentences:
+  - դիր ջեռուցում հյուրասենյակ 18
+  - ջեռուցում հյուրասենյակ 18
+- name: climate.ground_thermostat_19
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 19
+  sentences:
+  - դիր ջեռուցում հյուրասենյակ 19
+  - ջեռուցում հյուրասենյակ 19
+- name: climate.ground_thermostat_20
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 20
+  sentences:
+  - դիր ջեռուցում հյուրասենյակ 20
+  - ջեռուցում հյուրասենյակ 20
+- name: climate.ground_thermostat_21
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 21
+  sentences:
+  - դիր ջեռուցում հյուրասենյակ 21
+  - ջեռուցում հյուրասենյակ 21
+- name: climate.ground_thermostat_22
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 22
+  sentences:
+  - դիր ջեռուցում հյուրասենյակ 22
+  - ջեռուցում հյուրասենյակ 22
+- name: climate.ground_thermostat_23
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 23
+  sentences:
+  - դիր ջեռուցում հյուրասենյակ 23
+  - ջեռուցում հյուրասենյակ 23
+- name: climate.ground_thermostat_24
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 24
+  sentences:
+  - դիր ջեռուցում հյուրասենյակ 24
+  - ջեռուցում հյուրասենյակ 24
+- name: climate.ground_thermostat_get
+  conditions:
+  - type: query
+    entity_id: climate.ground_thermostat
+  sentences:
+  - ինչ ջեռուցում հյուրասենյակ
+  - ջեռուցում հյուրասենյակ
+- name: climate.upper_thermostat_18
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 18
+  sentences:
+  - դիր ջեռուցում qnakaranmaster 18
+  - ջեռուցում qnakaranmaster 18
+- name: climate.upper_thermostat_19
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 19
+  sentences:
+  - դիր ջեռուցում qnakaranmaster 19
+  - ջեռուցում qnakaranmaster 19
+- name: climate.upper_thermostat_20
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 20
+  sentences:
+  - դիր ջեռուցում qnakaranmaster 20
+  - ջեռուցում qnakaranmaster 20
+- name: climate.upper_thermostat_21
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 21
+  sentences:
+  - դիր ջեռուցում qnakaranmaster 21
+  - ջեռուցում qnakaranmaster 21
+- name: climate.upper_thermostat_22
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 22
+  sentences:
+  - դիր ջեռուցում qnakaranmaster 22
+  - ջեռուցում qnakaranmaster 22
+- name: climate.upper_thermostat_23
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 23
+  sentences:
+  - դիր ջեռուցում qnakaranmaster 23
+  - ջեռուցում qnakaranmaster 23
+- name: climate.upper_thermostat_24
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 24
+  sentences:
+  - դիր ջեռուցում qnakaranmaster 24
+  - ջեռուցում qnakaranmaster 24
+- name: climate.upper_thermostat_get
+  conditions:
+  - type: query
+    entity_id: climate.upper_thermostat
+  sentences:
+  - ինչ ջեռուցում qnakaranmaster
+  - ջեռուցում qnakaranmaster
+- name: climate.master_ac_18
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 18
+  sentences:
+  - դիր jerutsum qnakaranmaster 18
+  - jerutsum qnakaranmaster 18
+- name: climate.master_ac_19
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 19
+  sentences:
+  - դիր jerutsum qnakaranmaster 19
+  - jerutsum qnakaranmaster 19
+- name: climate.master_ac_20
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 20
+  sentences:
+  - դիր jerutsum qnakaranmaster 20
+  - jerutsum qnakaranmaster 20
+- name: climate.master_ac_21
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 21
+  sentences:
+  - դիր jerutsum qnakaranmaster 21
+  - jerutsum qnakaranmaster 21
+- name: climate.master_ac_22
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 22
+  sentences:
+  - դիր jerutsum qnakaranmaster 22
+  - jerutsum qnakaranmaster 22
+- name: climate.master_ac_23
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 23
+  sentences:
+  - դիր jerutsum qnakaranmaster 23
+  - jerutsum qnakaranmaster 23
+- name: climate.master_ac_24
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 24
+  sentences:
+  - դիր jerutsum qnakaranmaster 24
+  - jerutsum qnakaranmaster 24
+- name: climate.master_ac_get
+  conditions:
+  - type: query
+    entity_id: climate.master_ac
+  sentences:
+  - ինչ jerutsum qnakaranmaster
+  - jerutsum qnakaranmaster
+- name: climate.ground_thermostat_get_full
+  conditions:
+  - type: query
+    entity_id: climate.ground_thermostat
+  sentences:
+  - ինչ ջեռուցում հյուրասենյակ
+  - ջեռուցում հյուրասենյակ
+- name: climate.upper_thermostat_get_full
+  conditions:
+  - type: query
+    entity_id: climate.upper_thermostat
+  sentences:
+  - ինչ ջեռուցում qnakaranmaster
+  - ջեռուցում qnakaranmaster
+- name: climate.master_ac_get_full
+  conditions:
+  - type: query
+    entity_id: climate.master_ac
+  sentences:
+  - ինչ jerutsum qnakaranmaster
+  - jerutsum qnakaranmaster

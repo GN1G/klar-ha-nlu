@@ -1,0 +1,248 @@
+query_area/bedroom_2_covers::bedroom_2_covers_get_position:
+- ಏನು ಪರದೆ shayanakone2
+query_area/bedroom_2_covers::bedroom_2_covers_get_state:
+- ಏನು ಪರದೆ shayanakone2
+query_area/bedroom_2_covers::bedroom_2_covers_list_closed_covers:
+- ಏನು ಪರದೆ shayanakone2
+query_area/bedroom_2_covers::bedroom_2_covers_list_open_covers:
+- ಏನು ಪರದೆ shayanakone2
+query_area/bedroom_2_fans::bedroom_2_fans_get_fan_speed:
+- ಏನು ಫ್ಯಾನ್ shayanakone2
+query_area/bedroom_2_fans::bedroom_2_fans_get_state:
+- ಏನು ಫ್ಯಾನ್ shayanakone2
+query_area/bedroom_2_fans::bedroom_2_fans_list_off_fans:
+- ಏನು ಫ್ಯಾನ್ shayanakone2
+query_area/bedroom_2_fans::bedroom_2_fans_list_on_fans:
+- ಏನು ಫ್ಯಾನ್ shayanakone2
+query_area/bedroom_2_lights::bedroom_2_lights_get_brightness:
+- ಏನು ಬೆಳಕು shayanakone2
+query_area/bedroom_2_lights::bedroom_2_lights_get_state:
+- ಏನು ಬೆಳಕು shayanakone2
+query_area/bedroom_2_lights::bedroom_2_lights_list_off_lights:
+- ಏನು ಬೆಳಕು shayanakone2
+query_area/bedroom_2_lights::bedroom_2_lights_list_on_lights:
+- ಏನು ಬೆಳಕು shayanakone2
+query_area/bedroom_3_covers::bedroom_3_covers_get_position:
+- ಏನು ಪರದೆ shayanakone3
+query_area/bedroom_3_covers::bedroom_3_covers_get_state:
+- ಏನು ಪರದೆ shayanakone3
+query_area/bedroom_3_covers::bedroom_3_covers_list_closed_covers:
+- ಏನು ಪರದೆ shayanakone3
+query_area/bedroom_3_covers::bedroom_3_covers_list_open_covers:
+- ಏನು ಪರದೆ shayanakone3
+query_area/bedroom_3_lights::bedroom_3_lights_get_brightness:
+- ಏನು ಬೆಳಕು shayanakone3
+query_area/bedroom_3_lights::bedroom_3_lights_get_state:
+- ಏನು ಬೆಳಕು shayanakone3
+query_area/bedroom_3_lights::bedroom_3_lights_list_off_lights:
+- ಏನು ಬೆಳಕು shayanakone3
+query_area/bedroom_3_lights::bedroom_3_lights_list_on_lights:
+- ಏನು ಬೆಳಕು shayanakone3
+query_area/bedroom_4_lights::bedroom_4_lights_get_brightness:
+- ಏನು ಬೆಳಕು shayanakone4
+query_area/bedroom_4_lights::bedroom_4_lights_get_state:
+- ಏನು ಬೆಳಕು shayanakone4
+query_area/bedroom_4_lights::bedroom_4_lights_list_off_lights:
+- ಏನು ಬೆಳಕು shayanakone4
+query_area/bedroom_4_lights::bedroom_4_lights_list_on_lights:
+- ಏನು ಬೆಳಕು shayanakone4
+query_area/dining_lights::dining_lights_get_brightness:
+- ಏನು ಬೆಳಕು kutumbaess
+query_area/dining_lights::dining_lights_get_state:
+- ಏನು ಬೆಳಕು kutumbaess
+query_area/dining_lights::dining_lights_list_off_lights:
+- ಏನು ಬೆಳಕು kutumbaess
+query_area/dining_lights::dining_lights_list_on_lights:
+- ಏನು ಬೆಳಕು kutumbaess
+query_area/entryway_lights::entryway_lights_get_brightness:
+- ಏನು ಬೆಳಕು pravesha
+query_area/entryway_lights::entryway_lights_get_state:
+- ಏನು ಬೆಳಕು pravesha
+query_area/entryway_lights::entryway_lights_list_off_lights:
+- ಏನು ಬೆಳಕು pravesha
+query_area/entryway_lights::entryway_lights_list_on_lights:
+- ಏನು ಬೆಳಕು pravesha
+query_area/entryway_locks::entryway_locks_get_state:
+- ಏನು ಬೀಗ pravesha
+query_area/entryway_locks::entryway_locks_list_locked_locks:
+- ಏನು ಬೀಗ pravesha
+query_area/entryway_locks::entryway_locks_list_unlocked_locks:
+- ಏನು ಬೀಗ pravesha
+query_area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_get_brightness:
+- ಏನು ಬೆಳಕು kutumba mattu ಏನು ಬೆಳಕು ಅಡುಗೆ
+query_area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_get_state:
+- ಏನು ಬೆಳಕು kutumba mattu ಏನು ಬೆಳಕು ಅಡುಗೆ
+query_area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_list_off_lights:
+- ಏನು ಬೆಳಕು kutumba mattu ಏನು ಬೆಳಕು ಅಡುಗೆ
+query_area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_list_on_lights:
+- ಏನು ಬೆಳಕು kutumba mattu ಏನು ಬೆಳಕು ಅಡುಗೆ
+query_area/family_room_fans::family_room_fans_get_fan_speed:
+- ಏನು ಫ್ಯಾನ್ kutumba
+query_area/family_room_fans::family_room_fans_get_state:
+- ಏನು ಫ್ಯಾನ್ kutumba
+query_area/family_room_fans::family_room_fans_list_off_fans:
+- ಏನು ಫ್ಯಾನ್ kutumba
+query_area/family_room_fans::family_room_fans_list_on_fans:
+- ಏನು ಫ್ಯಾನ್ kutumba
+query_area/family_room_lights::family_room_lights_get_brightness:
+- ಏನು ಬೆಳಕು kutumba
+query_area/family_room_lights::family_room_lights_get_state:
+- ಏನು ಬೆಳಕು kutumba
+query_area/family_room_lights::family_room_lights_list_off_lights:
+- ಏನು ಬೆಳಕು kutumba
+query_area/family_room_lights::family_room_lights_list_on_lights:
+- ಏನು ಬೆಳಕು kutumba
+query_area/garage_covers::garage_covers_get_position:
+- ಏನು ಪರದೆ garage
+query_area/garage_covers::garage_covers_get_state:
+- ಏನು ಪರದೆ garage
+query_area/garage_covers::garage_covers_list_closed_covers:
+- ಏನು ಪರದೆ garage
+query_area/garage_covers::garage_covers_list_open_covers:
+- ಏನು ಪರದೆ garage
+query_area/garage_lights::garage_lights_get_brightness:
+- ಏನು ಬೆಳಕು garage
+query_area/garage_lights::garage_lights_get_state:
+- ಏನು ಬೆಳಕು garage
+query_area/garage_lights::garage_lights_list_off_lights:
+- ಏನು ಬೆಳಕು garage
+query_area/garage_lights::garage_lights_list_on_lights:
+- ಏನು ಬೆಳಕು garage
+query_area/garage_locks::garage_locks_get_state:
+- ಏನು ಬೀಗ garage
+query_area/garage_locks::garage_locks_list_locked_locks:
+- ಏನು ಬೀಗ garage
+query_area/garage_locks::garage_locks_list_unlocked_locks:
+- ಏನು ಬೀಗ garage
+query_area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_get_brightness:
+- ಏನು ಬೆಳಕು praveshagang mattu ಏನು ಬೆಳಕು shauchalaya
+query_area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_get_state:
+- ಏನು ಬೆಳಕು praveshagang mattu ಏನು ಬೆಳಕು shauchalaya
+query_area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_list_off_lights:
+- ಏನು ಬೆಳಕು praveshagang mattu ಏನು ಬೆಳಕು shauchalaya
+query_area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_list_on_lights:
+- ಏನು ಬೆಳಕು praveshagang mattu ಏನು ಬೆಳಕು shauchalaya
+query_area/hallway_lights::hallway_lights_get_brightness:
+- ಏನು ಬೆಳಕು praveshagang
+query_area/hallway_lights::hallway_lights_get_state:
+- ಏನು ಬೆಳಕು praveshagang
+query_area/hallway_lights::hallway_lights_list_off_lights:
+- ಏನು ಬೆಳಕು praveshagang
+query_area/hallway_lights::hallway_lights_list_on_lights:
+- ಏನು ಬೆಳಕು praveshagang
+query_area/kitchen_lights::kitchen_lights_get_brightness:
+- ಏನು ಬೆಳಕು ಅಡುಗೆ
+query_area/kitchen_lights::kitchen_lights_get_state:
+- ಏನು ಬೆಳಕು ಅಡುಗೆ
+query_area/kitchen_lights::kitchen_lights_list_off_lights:
+- ಏನು ಬೆಳಕು ಅಡುಗೆ
+query_area/kitchen_lights::kitchen_lights_list_on_lights:
+- ಏನು ಬೆಳಕು ಅಡುಗೆ
+query_area/kitchen_switchs::kitchen_switchs_get_state:
+- ಏನು upakarana ಅಡುಗೆ
+query_area/kitchen_switchs::kitchen_switchs_list_off_switchs:
+- ಏನು upakarana ಅಡುಗೆ
+query_area/kitchen_switchs::kitchen_switchs_list_on_switchs:
+- ಏನು upakarana ಅಡುಗೆ
+query_area/laundry_lights::laundry_lights_get_brightness:
+- ಏನು ಬೆಳಕು ogeyuva
+query_area/laundry_lights::laundry_lights_get_state:
+- ಏನು ಬೆಳಕು ogeyuva
+query_area/laundry_lights::laundry_lights_list_off_lights:
+- ಏನು ಬೆಳಕು ogeyuva
+query_area/laundry_lights::laundry_lights_list_on_lights:
+- ಏನು ಬೆಳಕು ogeyuva
+query_area/laundry_switchs::laundry_switchs_get_state:
+- ಏನು upakarana ogeyuva
+query_area/laundry_switchs::laundry_switchs_list_off_switchs:
+- ಏನು upakarana ogeyuva
+query_area/laundry_switchs::laundry_switchs_list_on_switchs:
+- ಏನು upakarana ogeyuva
+query_area/living_climates::living_climates_get_temperature:
+- ಏನು ಬಿಸಿ ಹಾಲ್
+query_area/living_covers::living_covers_get_position:
+- ಏನು ಪರದೆ ಹಾಲ್
+query_area/living_covers::living_covers_get_state:
+- ಏನು ಪರದೆ ಹಾಲ್
+query_area/living_covers::living_covers_list_closed_covers:
+- ಏನು ಪರದೆ ಹಾಲ್
+query_area/living_covers::living_covers_list_open_covers:
+- ಏನು ಪರದೆ ಹಾಲ್
+query_area/living_lights::living_lights_get_brightness:
+- ಏನು ಬೆಳಕು ಹಾಲ್
+query_area/living_lights::living_lights_get_state:
+- ಏನು ಬೆಳಕು ಹಾಲ್
+query_area/living_lights::living_lights_list_off_lights:
+- ಏನು ಬೆಳಕು ಹಾಲ್
+query_area/living_lights::living_lights_list_on_lights:
+- ಏನು ಬೆಳಕು ಹಾಲ್
+query_area/main_bath_lights::main_bath_lights_get_brightness:
+- ಏನು ಬೆಳಕು main bath
+query_area/main_bath_lights::main_bath_lights_get_state:
+- ಏನು ಬೆಳಕು main bath
+query_area/main_bath_lights::main_bath_lights_list_off_lights:
+- ಏನು ಬೆಳಕು main bath
+query_area/main_bath_lights::main_bath_lights_list_on_lights:
+- ಏನು ಬೆಳಕು main bath
+query_area/main_bath_switchs::main_bath_switchs_get_state:
+- ಏನು upakarana main bath
+query_area/main_bath_switchs::main_bath_switchs_list_off_switchs:
+- ಏನು upakarana main bath
+query_area/main_bath_switchs::main_bath_switchs_list_on_switchs:
+- ಏನು upakarana main bath
+query_area/master_bath_lights::master_bath_lights_get_brightness:
+- ಏನು ಬೆಳಕು mukhyasnana
+query_area/master_bath_lights::master_bath_lights_get_state:
+- ಏನು ಬೆಳಕು mukhyasnana
+query_area/master_bath_lights::master_bath_lights_list_off_lights:
+- ಏನು ಬೆಳಕು mukhyasnana
+query_area/master_bath_lights::master_bath_lights_list_on_lights:
+- ಏನು ಬೆಳಕು mukhyasnana
+query_area/master_bath_switchs::master_bath_switchs_get_state:
+- ಏನು upakarana mukhyasnana
+query_area/master_bath_switchs::master_bath_switchs_list_off_switchs:
+- ಏನು upakarana mukhyasnana
+query_area/master_bath_switchs::master_bath_switchs_list_on_switchs:
+- ಏನು upakarana mukhyasnana
+query_area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_get_position:
+- ಏನು ಪರದೆ shayanakonemaster mattu ಏನು ಪರದೆ ಹಾಲ್
+query_area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_get_state:
+- ಏನು ಪರದೆ shayanakonemaster mattu ಏನು ಪರದೆ ಹಾಲ್
+query_area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_list_closed_covers:
+- ಏನು ಪರದೆ shayanakonemaster mattu ಏನು ಪರದೆ ಹಾಲ್
+query_area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_list_open_covers:
+- ಏನು ಪರದೆ shayanakonemaster mattu ಏನು ಪರದೆ ಹಾಲ್
+query_area/master_bedroom_climates::master_bedroom_climates_get_temperature:
+- ಏನು ಬಿಸಿ shayanakonemaster
+query_area/master_bedroom_covers::master_bedroom_covers_get_position:
+- ಏನು ಪರದೆ shayanakonemaster
+query_area/master_bedroom_covers::master_bedroom_covers_get_state:
+- ಏನು ಪರದೆ shayanakonemaster
+query_area/master_bedroom_covers::master_bedroom_covers_list_closed_covers:
+- ಏನು ಪರದೆ shayanakonemaster
+query_area/master_bedroom_covers::master_bedroom_covers_list_open_covers:
+- ಏನು ಪರದೆ shayanakonemaster
+query_area/master_bedroom_fans::master_bedroom_fans_get_fan_speed:
+- ಏನು ಫ್ಯಾನ್ shayanakonemaster
+query_area/master_bedroom_fans::master_bedroom_fans_get_state:
+- ಏನು ಫ್ಯಾನ್ shayanakonemaster
+query_area/master_bedroom_fans::master_bedroom_fans_list_off_fans:
+- ಏನು ಫ್ಯಾನ್ shayanakonemaster
+query_area/master_bedroom_fans::master_bedroom_fans_list_on_fans:
+- ಏನು ಫ್ಯಾನ್ shayanakonemaster
+query_area/master_bedroom_lights::master_bedroom_lights_get_brightness:
+- ಏನು ಬೆಳಕು shayanakonemaster
+query_area/master_bedroom_lights::master_bedroom_lights_get_state:
+- ಏನು ಬೆಳಕು shayanakonemaster
+query_area/master_bedroom_lights::master_bedroom_lights_list_off_lights:
+- ಏನು ಬೆಳಕು shayanakonemaster
+query_area/master_bedroom_lights::master_bedroom_lights_list_on_lights:
+- ಏನು ಬೆಳಕು shayanakonemaster
+query_area/powder_room_lights::powder_room_lights_get_brightness:
+- ಏನು ಬೆಳಕು shauchalaya
+query_area/powder_room_lights::powder_room_lights_get_state:
+- ಏನು ಬೆಳಕು shauchalaya
+query_area/powder_room_lights::powder_room_lights_list_off_lights:
+- ಏನು ಬೆಳಕು shauchalaya
+query_area/powder_room_lights::powder_room_lights_list_on_lights:
+- ಏನು ಬೆಳಕು shauchalaya

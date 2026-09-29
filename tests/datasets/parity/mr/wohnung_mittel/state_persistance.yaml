@@ -1,0 +1,15 @@
+state_persistance/followup::heizung_dann_grad:
+- - चालू उष्णता बैठक
+  - ' 21'
+state_persistance/followup::wohnzimmer_dann_aus:
+- - चालू दिवा बैठक
+  - बंद
+state_persistance/spoken::kugel_dann_aus:
+- - चालू gol
+  - बंद
+state_persistance/spoken::wohnzimmer_dann_kueche:
+- - चालू दिवा बैठक
+  - चालू दिवा स्वयंपाक
+state_persistance/spoken::wohnzimmer_dann_rot:
+- - चालू सर्व दिवा बैठक
+  - red

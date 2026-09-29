@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "ეს ინტეგრაცია Assist-თან საუბრობს. ცალკე ძრავა აანალიზებს მეტყველებას: Klar NLU აპი, ჩართული პროცესი ან Docker. Home Assistant OS-ზე დააყენეთ აპიც და აირჩიეთ Klar NLU აპის გამოყენება. აპის გარეშე გაუშვით ჩართული ძრავა. ორივე ერთად ნუ გაუშვებთ.",
+        "data": {
+          "mode": "ძრავა",
+          "channel": "გამოშვების არხი",
+          "url": "Klar API URL",
+          "token": "ჩაწერის ტოკენი"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL უნდა იყოს http(s) მომხმარებლის სახელის გარეშე."
+    },
+    "abort": {
+      "already_configured": "Klar NLU უკვეა კონფიგურირებული"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "ხმა, Assist-ის ენები და LLM Klar-ის ოპერატორის UI-შია (პარამეტრები). ეს ფორმა მხოლოდ ძრავს აკავშირებს: URL, ტოკენი და არხი. {apps}",
+        "data": {
+          "mode": "ძრავა",
+          "url": "Klar API URL",
+          "token": "ჩაწერის ტოკენი",
+          "assist_filter": "მართე მხოლოდ Assist-ისთვის გამოჩენილი ერთეულები",
+          "channel": "გამოშვების არხი"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "იგივე ტოკენი, რაც Klar აპში.",
+          "assist_filter": "ჩართული: მხოლოდ ის, რასაც Assist ხედავს. გამორთული: დამალული ერთეულებიც.",
+          "channel": "ნებისმიერ დროს. Staging მიუთითებს Klar NLU (Staging)."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL უნდა იყოს http(s) მომხმარებლის სახელის გარეშე."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "ჩართული ძრავის გაშვება (მხოლოდ HACS)",
+        "remote": "Klar NLU აპის ან Docker-ის გამოყენება"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (წარმოება)",
+        "staging": "Staging (კანდიდატი)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "სისტემის ენა",
+        "all": "ყველა ენა"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "ჩვეულებრივი",
+        "butler": "Butler",
+        "locker": "მშვიდი",
+        "fuersorglich": "მზრუნველი",
+        "party": "Party",
+        "grantig": "გაბრაზებული",
+        "sarkastisch": "სარკასტული",
+        "pirat": "მეკობრე",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "პიროვნება",
+        "state": {
+          "default": "ჩვეულებრივი",
+          "butler": "Butler",
+          "locker": "მშვიდი",
+          "fuersorglich": "მზრუნველი",
+          "party": "Party",
+          "grantig": "გაბრაზებული",
+          "sarkastisch": "სარკასტული",
+          "pirat": "მეკობრე",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "მოკლე დადასტურება"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "ხელოვნური ინტელექტის ამოცანა"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "ბოლოს გაგონილი"
+      },
+      "last_decision": {
+        "name": "ბოლო გადაწყვეტილება"
+      },
+      "last_speech": {
+        "name": "ბოლო პასუხი"
+      },
+      "last_area": {
+        "name": "გაიგო"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Klar ძრავა გაჩერდა",
+      "description": "ჩართული Klar პროცესი არ მუშაობს. გადატვირთეთ Klar NLU პარამეტრები → მოწყობილობები და სერვისები."
+    }
+  }
+}

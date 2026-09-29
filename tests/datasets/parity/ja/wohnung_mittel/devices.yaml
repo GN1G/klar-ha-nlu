@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- 消して tenjo shinshitsu
+devices/geraete::device_arbeitszimmer_an:
+- つけて 電気 office
+devices/geraete::device_esszimmer_an:
+- つけて 電気 famiriiess
+devices/geraete::device_kuche_kuche_an:
+- つけて 電気 キッチン
+devices/geraete::device_wohnzimmer_an:
+- つけて 電気 リビング
+devices/geraete::filmabend:
+- つけて シーン filmabend
+devices/geraete::kugel_an:
+- つけて tama
+devices/geraete::luefter_50:
+- セット ファン office 50
+devices/geraete::pc_an:
+- つけて pc
+devices/geraete::r2d2_saugen:
+- つけて 掃除機 リビング
+devices/geraete::rollo_zu:
+- 閉めて カーテン リビング
+devices/geraete::spuelmaschine_aus:
+- 消して shokkaiki
+devices/geraete::tuer_abschliessen:
+- 鍵 鍵 genkan
+devices/geraete::waschmaschine_an:
+- つけて sentakuki
+devices/klima::klima_schlaf_21:
+- セット ac shinshitsu 21
+devices/spoken::deckenlampe_an:
+- つけて tenjo shinshitsu
+devices/spoken::kugel_aus:
+- 消して tama
+devices/spoken::luefter_aus:
+- 消して ファン office
+devices/spoken::rollo_auf:
+- 開けて カーテン リビング
+devices/spoken::trockner_an:
+- つけて kansouki
+devices/spoken::tv_aus:
+- 消して tv
+devices/spoken_more::decke_aus_casual:
+- 消して tenjo shinshitsu
+devices/spoken_more::kugel_casual:
+- つけて tama
+devices/spoken_more::pc_aus:
+- 消して pc
+devices/spoken_more::spuelmaschine_an:
+- つけて shokkaiki
+devices/spoken_more::waschmaschine_aus:
+- 消して sentakuki

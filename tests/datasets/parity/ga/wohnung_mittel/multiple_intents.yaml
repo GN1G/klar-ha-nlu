@@ -1,0 +1,29 @@
+multiple_intents/multi::alle_ausser_schlaf_und_kueche:
+- much uile solas ach seomraleong ach cistin
+multiple_intents/multi::licht_und_heizung:
+- cas uile solas seomra then socraigh teas seomra 23
+multiple_intents/multi::wohn_und_ess_aus:
+- much uile solas seomra then much uile solas seomrateaghlaighess
+multiple_intents/multi::wohn_und_ess_rot:
+- socraigh uile solas seomra red then socraigh uile solas seomrateaghlaighess red
+multiple_intents/multi::wz_und_kuche_licht:
+- cas uile solas seomra then cas uile solas cistin
+multiple_intents/multi::zwei_raeume_und_heizung:
+- cas uile solas seomra then cas uile solas cistin then socraigh teas seomra 23
+multiple_intents/spoken::drei_raeume_an:
+- cas uile solas seomra then cas uile solas seomrateaghlaighess then cas uile solas
+  cistin
+multiple_intents/spoken::drei_raeume_aus:
+- much uile solas seomra then much uile solas seomrateaghlaighess then much uile solas
+  cistin
+multiple_intents/spoken::ess_und_wohn_aus:
+- much uile solas seomra then much uile solas seomrateaghlaighess
+multiple_intents/spoken::kugel_und_decke_aus:
+- liathroid agus uasteorainn seomraleong much
+multiple_intents/spoken_more::kuche_und_ess_an:
+- cas uile solas cistin then cas uile solas seomrateaghlaighess
+multiple_intents/spoken_more::wz_ess_arbeit_aus:
+- much uile solas seomra then much uile solas seomrateaghlaighess then much uile solas
+  office
+multiple_intents/spoken_more::wz_und_arbeit_aus:
+- much uile solas seomra then much uile solas office

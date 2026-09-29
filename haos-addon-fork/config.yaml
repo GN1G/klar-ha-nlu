@@ -1,0 +1,39 @@
+name: Klar NLU (Fork LLM)
+version: "2026.9.11-fork.1"
+slug: klar_nlu_fork
+stage: experimental
+description: Klar-Fork — Weltfragen gehen an das konfigurierte LLM (LM Studio etc.).
+url: https://github.com/REPLACE_GITHUB_USER/klar-ha-nlu
+arch:
+  - amd64
+  - aarch64
+init: false
+startup: services
+boot: auto
+hostname: klar-nlu-fork
+host_network: false
+ingress: true
+ingress_port: 10520
+panel_icon: mdi:brain
+panel_title: Klar NLU Fork
+ports:
+  10520/tcp: null
+  10500/tcp: null
+ports_description:
+  10520/tcp: Web-UI und Parse-API
+  10500/tcp: Wyoming Intent
+map:
+  - type: homeassistant_config
+    read_only: true
+    path: /config
+options:
+  token: ""
+  support_bundle: false
+  ui_locale: ""
+schema:
+  token: str?
+  support_bundle: bool?
+  ui_locale: str?
+# Nach dem GitHub-Actions-Build: Package public machen oder GHCR-Login im Supervisor.
+# Tag fork-llm kommt aus .github/workflows/fork-image.yml
+image: ghcr.io/REPLACE_GITHUB_USER/klar-nlu-{arch}

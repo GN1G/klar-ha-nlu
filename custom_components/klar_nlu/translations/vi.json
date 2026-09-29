@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "Tích hợp này nói chuyện với Assist. Một động cơ riêng phân tích giọng nói: ứng dụng Klar NLU, tiến trình kèm theo hoặc Docker. Trên Home Assistant OS hãy cài ứng dụng và chọn Dùng ứng dụng Klar NLU. Không có ứng dụng thì khởi động động cơ kèm theo. Đừng chạy cả hai.",
+        "data": {
+          "mode": "Động cơ",
+          "channel": "Kênh phát hành",
+          "url": "URL API Klar",
+          "token": "Token ghi"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL phải là http(s), không có tên người dùng."
+    },
+    "abort": {
+      "already_configured": "Klar NLU đã được thiết lập"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "Giọng nói, ngôn ngữ Assist và LLM nằm trong UI vận hành Klar (Cài đặt). Biểu mẫu này chỉ kết nối máy: URL, token và kênh. {apps}",
+        "data": {
+          "mode": "Động cơ",
+          "url": "URL API Klar",
+          "token": "Token ghi",
+          "assist_filter": "Chỉ điều khiển thực thể đã mở cho Assist",
+          "channel": "Kênh phát hành"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "Cùng token với ứng dụng Klar.",
+          "assist_filter": "Bật: chỉ những gì Assist thấy. Tắt: cả thực thể ẩn.",
+          "channel": "Đổi bất cứ lúc nào. Staging trỏ tới Klar NLU (Staging)."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL phải là http(s), không có tên người dùng."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "Khởi động động cơ kèm theo (chỉ HACS)",
+        "remote": "Dùng ứng dụng Klar NLU hoặc Docker"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (sản xuất)",
+        "staging": "Staging (ứng viên)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "Ngôn ngữ hệ thống",
+        "all": "Mọi ngôn ngữ"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "Bình thường",
+        "butler": "Butler",
+        "locker": "Thoải mái",
+        "fuersorglich": "Ân cần",
+        "party": "Party",
+        "grantig": "Cáu kỉnh",
+        "sarkastisch": "Châm biếm",
+        "pirat": "Hải tặc",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "Tính cách",
+        "state": {
+          "default": "Bình thường",
+          "butler": "Butler",
+          "locker": "Thoải mái",
+          "fuersorglich": "Ân cần",
+          "party": "Party",
+          "grantig": "Cáu kỉnh",
+          "sarkastisch": "Châm biếm",
+          "pirat": "Hải tặc",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "Xác nhận ngắn"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "Tác vụ AI"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "Nghe gần nhất"
+      },
+      "last_decision": {
+        "name": "Quyết định gần nhất"
+      },
+      "last_speech": {
+        "name": "Trả lời gần nhất"
+      },
+      "last_area": {
+        "name": "Nghe tại"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Động cơ Klar đã dừng",
+      "description": "Tiến trình Klar kèm theo không chạy. Tải lại Klar NLU trong Cài đặt → Thiết bị và dịch vụ."
+    }
+  }
+}

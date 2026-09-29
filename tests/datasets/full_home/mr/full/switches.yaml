@@ -1,0 +1,96 @@
+- name: switch.dishwasher_on
+  conditions:
+  - type: action
+    entity_id: switch.dishwasher
+    state: 'on'
+  sentences:
+  - चालू bhandi स्वयंपाक
+  - bhandi स्वयंपाक चालू
+- name: switch.dishwasher_off
+  conditions:
+  - type: action
+    entity_id: switch.dishwasher
+    state: 'off'
+  sentences:
+  - बंद bhandi स्वयंपाक
+  - bhandi स्वयंपाक बंद
+- name: switch.washing_machine_on
+  conditions:
+  - type: action
+    entity_id: switch.washing_machine
+    state: 'on'
+  sentences:
+  - चालू washing dhune
+  - washing dhune चालू
+- name: switch.washing_machine_off
+  conditions:
+  - type: action
+    entity_id: switch.washing_machine
+    state: 'off'
+  sentences:
+  - बंद washing dhune
+  - washing dhune बंद
+- name: switch.dryer_on
+  conditions:
+  - type: action
+    entity_id: switch.dryer
+    state: 'on'
+  sentences:
+  - चालू dryer dhune
+  - dryer dhune चालू
+- name: switch.dryer_off
+  conditions:
+  - type: action
+    entity_id: switch.dryer
+    state: 'off'
+  sentences:
+  - बंद dryer dhune
+  - dryer dhune बंद
+- name: switch.rangehood_on
+  conditions:
+  - type: action
+    entity_id: switch.rangehood
+    state: 'on'
+  sentences:
+  - चालू rangehood स्वयंपाक
+  - rangehood स्वयंपाक चालू
+- name: switch.rangehood_off
+  conditions:
+  - type: action
+    entity_id: switch.rangehood
+    state: 'off'
+  sentences:
+  - बंद rangehood स्वयंपाक
+  - rangehood स्वयंपाक बंद
+- name: switch.master_bath_fan_on
+  conditions:
+  - type: action
+    entity_id: switch.master_bath_fan
+    state: 'on'
+  sentences:
+  - चालू पंखाbad mukhyasnan
+  - पंखाbad mukhyasnan चालू
+- name: switch.master_bath_fan_off
+  conditions:
+  - type: action
+    entity_id: switch.master_bath_fan
+    state: 'off'
+  sentences:
+  - बंद पंखाbad mukhyasnan
+  - पंखाbad mukhyasnan बंद
+- name: switch.main_bath_fan_on
+  conditions:
+  - type: action
+    entity_id: switch.main_bath_fan
+    state: 'on'
+  sentences:
+  - चालू पंखाbad main bath
+  - पंखाbad main bath चालू
+- name: switch.main_bath_fan_off
+  conditions:
+  - type: action
+    entity_id: switch.main_bath_fan
+    state: 'off'
+  sentences:
+  - बंद पंखाbad main bath
+  - पंखाbad main bath बंद

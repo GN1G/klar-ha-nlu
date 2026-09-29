@@ -1,0 +1,507 @@
+name: Full Home ka
+language: ka
+difficulty: full
+policy:
+  preferred_climate: climate.upper_thermostat
+  timer_hints:
+    90: laundry
+floors:
+- id: ground
+  name: qveda
+  level: 0
+  aliases:
+  - qveda
+  - pirveli
+- id: upper
+  name: zeda
+  level: 1
+  aliases:
+  - zeda
+  - sartuli
+- id: basement
+  name: basement
+  level: -1
+  aliases:
+  - basement
+  - keller
+areas:
+- id: entryway
+  name: Shemosasvleli
+  floor: ground
+  aliases:
+  - shemosasvleli
+- id: living
+  name: მისაღები
+  floor: ground
+  aliases:
+  - მისაღები
+  - misagebi
+- id: dining
+  name: Ojakhisotakhiess
+  floor: ground
+  aliases:
+  - ojakhisotakhiess
+- id: kitchen
+  name: სამზარეულო
+  floor: ground
+  aliases:
+  - სამზარეულო
+  - samzareulo
+- id: family_room
+  name: Ojakhisotakhi
+  floor: ground
+  aliases:
+  - ojakhisotakhi
+- id: laundry
+  name: Samretskhao
+  floor: ground
+  aliases:
+  - samretskhao
+- id: powder_room
+  name: Wc
+  floor: ground
+  aliases:
+  - wc
+- id: garage
+  name: Garage
+  floor: ground
+  aliases:
+  - garage
+- id: office
+  name: Office
+  floor: ground
+  aliases:
+  - office
+- id: garden
+  name: Garden
+  floor: ground
+  aliases:
+  - garden
+- id: master_bedroom
+  name: Sadzinebelimaster
+  floor: upper
+  aliases:
+  - sadzinebelimaster
+  - sadzinebeli
+- id: bedroom_2
+  name: Sadzinebeli2
+  floor: upper
+  aliases:
+  - sadzinebeli2
+- id: bedroom_3
+  name: Sadzinebeli3
+  floor: upper
+  aliases:
+  - sadzinebeli3
+- id: bedroom_4
+  name: Sadzinebeli4
+  floor: upper
+  aliases:
+  - sadzinebeli4
+- id: master_bath
+  name: Abazanamaster
+  floor: upper
+  aliases:
+  - abazanamaster
+- id: main_bath
+  name: Main Bath
+  floor: upper
+  aliases:
+  - main bath
+- id: hallway
+  name: Hallway
+  floor: upper
+  aliases:
+  - hallway
+- id: basement
+  name: Basement
+  floor: basement
+  aliases:
+  - basement
+devices:
+- id: light.entryway_light
+  area_id: entryway
+  name: shemosasvleli სინათლე
+  aliases:
+  - shemosasvleli სინათლე
+  - სინათლე
+- id: light.living_ceiling
+  area_id: living
+  name: მისაღები potoloni
+  aliases:
+  - მისაღები potoloni
+  - potoloni
+- id: light.living_lamp
+  area_id: living
+  name: მისაღები sinatle
+  aliases:
+  - მისაღები sinatle
+  - sinatle
+- id: light.dining_pendant
+  area_id: dining
+  name: ojakhisotakhiess სინათლე
+  aliases:
+  - ojakhisotakhiess სინათლე
+  - სინათლე
+- id: light.kitchen_ceiling
+  area_id: kitchen
+  name: სამზარეულო potoloni
+  aliases:
+  - სამზარეულო potoloni
+  - potoloni
+- id: light.kitchen_island
+  area_id: kitchen
+  name: სამზარეულო kuntkhuli
+  aliases:
+  - სამზარეულო kuntkhuli
+  - kuntkhuli
+- id: light.family_ceiling
+  area_id: family_room
+  name: ojakhisotakhi potoloni
+  aliases:
+  - ojakhisotakhi potoloni
+  - potoloni
+- id: light.laundry_light
+  area_id: laundry
+  name: samretskhao სინათლე
+  aliases:
+  - samretskhao სინათლე
+  - სინათლე
+- id: light.powder_room_light
+  area_id: powder_room
+  name: wc სინათლე
+  aliases:
+  - wc სინათლე
+  - სინათლე
+- id: light.garage_light
+  area_id: garage
+  name: garage სინათლე
+  aliases:
+  - garage სინათლე
+  - სინათლე
+- id: light.office_ceiling
+  area_id: office
+  name: office potoloni
+  aliases:
+  - office potoloni
+  - potoloni
+- id: light.garden
+  area_id: garden
+  name: garden სინათლე
+  aliases:
+  - garden სინათლე
+  - სინათლე
+- id: light.master_ceiling
+  area_id: master_bedroom
+  name: sadzinebelimaster potoloni
+  aliases:
+  - sadzinebelimaster potoloni
+  - potoloni
+- id: light.master_ensuite
+  area_id: master_bedroom
+  name: sadzinebelimaster ensuite
+  aliases:
+  - sadzinebelimaster ensuite
+  - ensuite
+  tags:
+  - ensuite
+- id: light.master_bedside_left
+  area_id: master_bedroom
+  name: sadzinebelimaster left sagamise
+  aliases:
+  - sadzinebelimaster left sagamise
+  - sagamise
+- id: light.master_bedside_right
+  area_id: master_bedroom
+  name: sadzinebelimaster right sagamise
+  aliases:
+  - sadzinebelimaster right sagamise
+  - sagamise
+- id: light.bedroom2_ceiling
+  area_id: bedroom_2
+  name: sadzinebeli2 potoloni
+  aliases:
+  - sadzinebeli2 potoloni
+  - potoloni
+- id: light.bedroom3_ceiling
+  area_id: bedroom_3
+  name: sadzinebeli3 potoloni
+  aliases:
+  - sadzinebeli3 potoloni
+  - potoloni
+- id: light.bedroom4_ceiling
+  area_id: bedroom_4
+  name: sadzinebeli4 potoloni
+  aliases:
+  - sadzinebeli4 potoloni
+  - potoloni
+- id: light.master_bath_light
+  area_id: master_bath
+  name: abazanamaster სინათლე
+  aliases:
+  - abazanamaster სინათლე
+  - სინათლე
+- id: light.main_bath_light
+  area_id: main_bath
+  name: main bath სინათლე
+  aliases:
+  - main bath სინათლე
+  - სინათლე
+- id: light.hallway_light
+  area_id: hallway
+  name: hallway სინათლე
+  aliases:
+  - hallway სინათლე
+  - სინათლე
+- id: light.basement
+  area_id: basement
+  name: basement სინათლე
+  aliases:
+  - basement სინათლე
+  - სინათლე
+- id: cover.living_blinds
+  area_id: living
+  name: მისაღები ფარდა
+  aliases:
+  - მისაღები ფარდა
+  - ფარდა
+- id: cover.master_blinds
+  area_id: master_bedroom
+  name: sadzinebelimaster ფარდა
+  aliases:
+  - sadzinebelimaster ფარდა
+  - ფარდა
+- id: cover.bedroom2_blinds
+  area_id: bedroom_2
+  name: sadzinebeli2 ფარდა
+  aliases:
+  - sadzinebeli2 ფარდა
+  - ფარდა
+- id: cover.bedroom3_blinds
+  area_id: bedroom_3
+  name: sadzinebeli3 ფარდა
+  aliases:
+  - sadzinebeli3 ფარდა
+  - ფარდა
+- id: cover.garage_door
+  area_id: garage
+  name: garage ფარდა
+  aliases:
+  - garage ფარდა
+  - ფარდა
+- id: climate.ground_thermostat
+  area_id: living
+  name: მისაღები გათბობა
+  aliases:
+  - მისაღები გათბობა
+  - გათბობა
+- id: climate.upper_thermostat
+  area_id: master_bedroom
+  name: sadzinebelimaster გათბობა
+  aliases:
+  - sadzinebelimaster გათბობა
+  - გათბობა
+- id: climate.master_ac
+  area_id: master_bedroom
+  name: gatboba sadzinebelimaster
+  aliases:
+  - gatboba sadzinebelimaster
+  - gatboba
+  - ac
+  tags:
+  - gatboba
+- id: fan.family_fan
+  area_id: family_room
+  name: ojakhisotakhi ვენტილატორი
+  aliases:
+  - ojakhisotakhi ვენტილატორი
+  - ვენტილატორი
+- id: fan.master_fan
+  area_id: master_bedroom
+  name: sadzinebelimaster ვენტილატორი
+  aliases:
+  - sadzinebelimaster ვენტილატორი
+  - ვენტილატორი
+- id: fan.bedroom2_fan
+  area_id: bedroom_2
+  name: sadzinebeli2 ვენტილატორი
+  aliases:
+  - sadzinebeli2 ვენტილატორი
+  - ვენტილატორი
+- id: lock.front_door
+  area_id: entryway
+  name: front კარი
+  aliases:
+  - front კარი
+  tags:
+  - front
+- id: lock.garage_entry
+  area_id: garage
+  name: garage კარი
+  aliases:
+  - garage კარი
+  tags:
+  - garage
+- id: switch.dishwasher
+  area_id: kitchen
+  name: სამზარეულო jamtchebi
+  aliases:
+  - სამზარეულო jamtchebi
+  - jamtchebi
+- id: switch.rangehood
+  area_id: kitchen
+  name: სამზარეულო rangehood
+  aliases:
+  - სამზარეულო rangehood
+  - rangehood
+  tags:
+  - rangehood
+- id: switch.washing_machine
+  area_id: laundry
+  name: samretskhao saretskhave
+  aliases:
+  - samretskhao saretskhave
+  - saretskhave
+  - washer
+  tags:
+  - washer
+  - saretskhave
+- id: switch.dryer
+  area_id: laundry
+  name: samretskhao dryer
+  aliases:
+  - samretskhao dryer
+  - dryer
+  tags:
+  - dryer
+- id: switch.master_bath_fan
+  area_id: master_bath
+  name: abazanamaster ვენტილატორიbad
+  aliases:
+  - abazanamaster ვენტილატორიbad
+  - ვენტილატორიbad
+  tags:
+  - ვენტილატორიbad
+- id: switch.main_bath_fan
+  area_id: main_bath
+  name: main bath ვენტილატორიbad
+  aliases:
+  - main bath ვენტილატორიbad
+  - ვენტილატორიbad
+  tags:
+  - ვენტილატორიbad
+- id: media_player.living_tv
+  area_id: living
+  name: მისაღები tv
+  aliases:
+  - მისაღები tv
+  - tv
+- id: media_player.family_tv
+  area_id: family_room
+  name: ojakhisotakhi tv
+  aliases:
+  - ojakhisotakhi tv
+  - tv
+- id: media_player.living_music
+  area_id: living
+  name: მისაღები ტელევიზორი
+  aliases:
+  - მისაღები ტელევიზორი
+  - ტელევიზორი
+  platform: music_assistant
+  tags:
+  - ტელევიზორი
+- id: media_player.kitchen_music
+  area_id: kitchen
+  name: სამზარეულო ტელევიზორი
+  aliases:
+  - სამზარეულო ტელევიზორი
+  - ტელევიზორი
+  platform: music_assistant
+  tags:
+  - ტელევიზორი
+- id: media_player.office_music
+  area_id: office
+  name: office ტელევიზორი
+  aliases:
+  - office ტელევიზორი
+  - ტელევიზორი
+  platform: music_assistant
+  tags:
+  - ტელევიზორი
+- id: vacuum.robot
+  area_id: living
+  name: მისაღები მტვერსასრუტი
+  aliases:
+  - მისაღები მტვერსასრუტი
+  - მტვერსასრუტი
+- id: binary_sensor.front_door_sensor
+  area_id: entryway
+  name: shemosasvleli doorsensor
+  aliases:
+  - shemosasvleli doorsensor
+  - doorsensor
+  tags:
+  - doorsensor
+- id: binary_sensor.living_window
+  area_id: living
+  name: მისაღები windowsensor
+  aliases:
+  - მისაღები windowsensor
+  - windowsensor
+  tags:
+  - windowsensor
+- id: binary_sensor.kitchen_motion
+  area_id: kitchen
+  name: სამზარეულო motion
+  aliases:
+  - სამზარეულო motion
+  - motion
+  tags:
+  - motion
+- id: sensor.living_temperature
+  area_id: living
+  name: მისაღები tempsensor
+  aliases:
+  - მისაღები tempsensor
+  - tempsensor
+  tags:
+  - tempsensor
+- id: sensor.living_humidity
+  area_id: living
+  name: მისაღები humidity
+  aliases:
+  - მისაღები humidity
+  - humidity
+  tags:
+  - humidity
+- id: weather.home
+  area_id: garden
+  name: garden weather
+  aliases:
+  - garden weather
+  - weather
+scenes:
+- id: movie_night
+  name: filmi
+- id: dinner_time
+  name: dinner
+- id: kids_bedtime
+  name: kids
+- id: good_morning
+  name: morning
+scripts:
+- id: good_night
+  name: ghame
+- id: leaving_home
+  name: gasvla
+timers:
+- id: oven
+  name: oven ტაიმერი
+- id: laundry
+  name: laundry ტაიმერი
+- id: abstract
+  name: abstract ტაიმერი
+lists:
+- id: shopping
+  name: სია

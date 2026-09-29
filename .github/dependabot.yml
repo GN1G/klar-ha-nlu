@@ -1,0 +1,72 @@
+version: 2
+updates:
+  - package-ecosystem: cargo
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 10
+    groups:
+      rust-patch:
+        update-types:
+          - patch
+      rust-minor:
+        update-types:
+          - minor
+    # Pinned in Cargo.toml for MSRV 1.85: newer idna/idna_adapter pull ICU4X
+    # (rustc 1.86+ / 1.88). See #235.
+    ignore:
+      - dependency-name: url
+      - dependency-name: idna
+      - dependency-name: idna_adapter
+    commit-message:
+      prefix: cargo
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    commit-message:
+      prefix: ci
+
+  - package-ecosystem: npm
+    directory: /web
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 10
+    groups:
+      npm-patch:
+        update-types:
+          - patch
+      npm-minor:
+        update-types:
+          - minor
+    commit-message:
+      prefix: npm
+
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      docker-patch:
+        update-types:
+          - patch
+    commit-message:
+      prefix: docker
+
+  - package-ecosystem: docker
+    directory: /docker
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      docker-patch:
+        update-types:
+          - patch
+    commit-message:
+      prefix: docker
+

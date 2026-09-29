@@ -1,0 +1,321 @@
+- name: cover.living_blinds_open
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    state: open
+  sentences:
+  - բացիր վարագույր հյուրասենյակ
+  - վարագույր հյուրասենյակ բացիր
+- name: cover.living_blinds_close
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    state: closed
+  sentences:
+  - փակիր վարագույր հյուրասենյակ
+  - վարագույր հյուրասենյակ փակիր
+- name: cover.living_blinds_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 0
+  sentences:
+  - դիր վարագույր հյուրասենյակ 0
+  - վարագույր հյուրասենյակ 0
+- name: cover.living_blinds_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 25
+  sentences:
+  - դիր վարագույր հյուրասենյակ 25
+  - վարագույր հյուրասենյակ 25
+- name: cover.living_blinds_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 40
+  sentences:
+  - դիր վարագույր հյուրասենյակ 40
+  - վարագույր հյուրասենյակ 40
+- name: cover.living_blinds_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 75
+  sentences:
+  - դիր վարագույր հյուրասենյակ 75
+  - վարագույր հյուրասենյակ 75
+- name: cover.living_blinds_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 100
+  sentences:
+  - դիր վարագույր հյուրասենյակ 100
+  - վարագույր հյուրասենյակ 100
+- name: cover.master_blinds_open
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    state: open
+  sentences:
+  - բացիր վարագույր qnakaranmaster
+  - վարագույր qnakaranmaster բացիր
+- name: cover.master_blinds_close
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    state: closed
+  sentences:
+  - փակիր վարագույր qnakaranmaster
+  - վարագույր qnakaranmaster փակիր
+- name: cover.master_blinds_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 0
+  sentences:
+  - դիր վարագույր qnakaranmaster 0
+  - վարագույր qnakaranmaster 0
+- name: cover.master_blinds_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 25
+  sentences:
+  - դիր վարագույր qnakaranmaster 25
+  - վարագույր qnakaranmaster 25
+- name: cover.master_blinds_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 40
+  sentences:
+  - դիր վարագույր qnakaranmaster 40
+  - վարագույր qnakaranmaster 40
+- name: cover.master_blinds_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 75
+  sentences:
+  - դիր վարագույր qnakaranmaster 75
+  - վարագույր qnakaranmaster 75
+- name: cover.master_blinds_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 100
+  sentences:
+  - դիր վարագույր qnakaranmaster 100
+  - վարագույր qnakaranmaster 100
+- name: cover.bedroom2_blinds_open
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    state: open
+  sentences:
+  - բացիր վարագույր qnakaran2
+  - վարագույր qnakaran2 բացիր
+- name: cover.bedroom2_blinds_close
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    state: closed
+  sentences:
+  - փակիր վարագույր qnakaran2
+  - վարագույր qnakaran2 փակիր
+- name: cover.bedroom2_blinds_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 0
+  sentences:
+  - դիր վարագույր qnakaran2 0
+  - վարագույր qnakaran2 0
+- name: cover.bedroom2_blinds_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 25
+  sentences:
+  - դիր վարագույր qnakaran2 25
+  - վարագույր qnakaran2 25
+- name: cover.bedroom2_blinds_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 40
+  sentences:
+  - դիր վարագույր qnakaran2 40
+  - վարագույր qnakaran2 40
+- name: cover.bedroom2_blinds_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 75
+  sentences:
+  - դիր վարագույր qnakaran2 75
+  - վարագույր qnakaran2 75
+- name: cover.bedroom2_blinds_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 100
+  sentences:
+  - դիր վարագույր qnakaran2 100
+  - վարագույր qnakaran2 100
+- name: cover.bedroom3_blinds_open
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    state: open
+  sentences:
+  - բացիր վարագույր qnakaran3
+  - վարագույր qnakaran3 բացիր
+- name: cover.bedroom3_blinds_close
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    state: closed
+  sentences:
+  - փակիր վարագույր qnakaran3
+  - վարագույր qnakaran3 փակիր
+- name: cover.bedroom3_blinds_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 0
+  sentences:
+  - դիր վարագույր qnakaran3 0
+  - վարագույր qnakaran3 0
+- name: cover.bedroom3_blinds_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 25
+  sentences:
+  - դիր վարագույր qnakaran3 25
+  - վարագույր qnakaran3 25
+- name: cover.bedroom3_blinds_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 40
+  sentences:
+  - դիր վարագույր qnakaran3 40
+  - վարագույր qnakaran3 40
+- name: cover.bedroom3_blinds_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 75
+  sentences:
+  - դիր վարագույր qnakaran3 75
+  - վարագույր qnakaran3 75
+- name: cover.bedroom3_blinds_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 100
+  sentences:
+  - դիր վարագույր qnakaran3 100
+  - վարագույր qnakaran3 100
+- name: cover.garage_door_open
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    state: open
+  sentences:
+  - բացիր վարագույր garage
+  - վարագույր garage բացիր
+- name: cover.garage_door_close
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    state: closed
+  sentences:
+  - փակիր վարագույր garage
+  - վարագույր garage փակիր
+- name: cover.garage_door_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 0
+  sentences:
+  - դիր վարագույր garage 0
+  - վարագույր garage 0
+- name: cover.garage_door_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 25
+  sentences:
+  - դիր վարագույր garage 25
+  - վարագույր garage 25
+- name: cover.garage_door_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 40
+  sentences:
+  - դիր վարագույր garage 40
+  - վարագույր garage 40
+- name: cover.garage_door_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 75
+  sentences:
+  - դիր վարագույր garage 75
+  - վարագույր garage 75
+- name: cover.garage_door_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 100
+  sentences:
+  - դիր վարագույր garage 100
+  - վարագույր garage 100
+- name: cover.living_blinds_open_extra
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    state: open
+  sentences:
+  - բացիր վարագույր հյուրասենյակ
+  - վարագույր հյուրասենյակ բացիր
+- name: cover.master_blinds_open_extra
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    state: open
+  sentences:
+  - բացիր վարագույր qnakaranmaster
+  - վարագույր qnakaranmaster բացիր

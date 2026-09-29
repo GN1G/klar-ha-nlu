@@ -1,0 +1,6 @@
+assist/ha_queries::ha_status_kueche:
+- શું પ્રકાશ રસોડું
+assist/ha_queries::ha_status_kugel:
+- શું gol
+assist/ha_queries::ha_status_lichter:
+- શું બધું પ્રકાશ

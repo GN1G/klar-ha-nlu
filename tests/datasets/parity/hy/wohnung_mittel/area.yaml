@@ -1,0 +1,82 @@
+area/heizung::heizung_badezimmer_23:
+- դիր ջեռուցում lvacaranmaster 23
+area/heizung::heizung_esszimmer_23:
+- դիր ջեռուցում yntaniqess 23
+area/heizung::heizung_schlafzimmer_23:
+- դիր ջեռուցում qnakaran 23
+area/heizung::heizung_wohnzimmer_23:
+- դիր ջեռուցում հյուրասենյակ 23
+area/lichter::alle_an_ausser_kugel:
+- միացրու բոլոր լույս batsi gundayin
+area/lichter::alle_an_ausser_schlafzimmer:
+- միացրու բոլոր լույս batsi qnakaran
+area/lichter::alle_auf_20_ausser_schlafzimmer:
+- դիր բոլոր լույս batsi qnakaran 20
+area/lichter::alle_auf_rot_ausser_kugel:
+- դիր բոլոր լույս batsi gundayin red
+area/lichter::alle_ausser_kugel:
+- անջատիր բոլոր լույս batsi gundayin
+area/lichter::alle_ausser_schlafzimmer:
+- անջատիր բոլոր լույս batsi qnakaran
+area/lichter::alle_lichter_an:
+- միացրու բոլոր լույս
+area/lichter::alle_lichter_aus:
+- անջատիր բոլոր լույս
+area/lichter::arbeitszimmer_lichter_an:
+- միացրու բոլոր լույս office
+area/lichter::arbeitszimmer_lichter_aus:
+- անջատիր բոլոր լույս office
+area/lichter::esszimmer_lichter_an:
+- միացրու բոլոր լույս yntaniqess
+area/lichter::esszimmer_lichter_aus:
+- անջատիր բոլոր լույս yntaniqess
+area/lichter::kuche_lichter_an:
+- միացրու բոլոր լույս խոհանոց
+area/lichter::kuche_lichter_aus:
+- անջատիր բոլոր լույս խոհանոց
+area/lichter::schlafzimmer_auf_blau:
+- դիր բոլոր լույս qnakaran blue
+area/lichter::schlafzimmer_auf_rot:
+- դիր բոլոր լույս qnakaran red
+area/lichter::wohnzimmer_helligkeit:
+- դիր բոլոր լույս հյուրասենյակ 45
+area/lichter::wohnzimmer_lichter_an:
+- միացրու բոլոր լույս հյուրասենյակ
+area/lichter::wohnzimmer_lichter_aus:
+- անջատիր բոլոր լույս հյուրասենյակ
+area/spoken::alle_ausser_kugel_stt:
+- անջատիր բոլոր լույս batsi gundayin
+area/spoken::alle_ausser_schlaf_stt:
+- անջատիր բոլոր լույս batsi qnakaran
+area/spoken::alle_ganzen_an:
+- միացրու բոլոր լույս
+area/spoken::alle_lampen_aus:
+- անջատիր բոլոր լույս
+area/spoken::esszimmer_weiss:
+- դիր բոլոր լույս yntaniqess white
+area/spoken::stt_kuche_lichte:
+- անջատիր բոլոր լույս խոհանոց
+area/spoken::stt_licht_wohnzimmer_an:
+- միացրու բոլոր լույս հյուրասենյակ
+area/spoken::stt_licht_wohnzimmer_aus:
+- անջատիր բոլոր լույս հյուրասենյակ
+area/spoken::stt_schlafzimmer_dativ:
+- անջատիր բոլոր լույս qnakaran
+area/spoken::wohnzimmer_gruen:
+- դիր բոլոր լույս հյուրասենյակ green
+area/spoken_more::alle_ausser_arbeitszimmer:
+- անջատիր բոլոր լույս batsi office
+area/spoken_more::arbeitszimmer_lampen_aus:
+- անջատիր բոլոր լույս office
+area/spoken_more::esszimmer_30:
+- դիր բոլոր լույս yntaniqess 30
+area/spoken_more::esszimmer_lichte_an:
+- միացրու բոլոր լույս yntaniqess
+area/spoken_more::kuche_80:
+- դիր բոլոր լույս խոհանոց 80
+area/spoken_more::kuche_blau:
+- դիր բոլոր լույս խոհանոց blue
+area/spoken_more::ueberall_ausser_schlaf_stt:
+- անջատիր բոլոր լույս batsi qnakaran
+area/spoken_more::wohnzimmer_gelb:
+- դիր բոլոր լույս հյուրասենյակ yellow

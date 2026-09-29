@@ -1,0 +1,19 @@
+m0_exact/representative::exact_clarify:
+- ચાલુ બધું પ્રકાશ ઓરડો
+m0_exact/representative::exact_list_complete_from_setup:
+- થયું bread aufgabenliste
+m0_exact/representative::exact_multi_intent:
+- ચાલુ chhat shayankhand3 ane બંધ પ્રકાશ pravesh
+m0_exact/representative::exact_reject:
+- weather france
+m0_exact/representative::exact_shopping_list:
+- add milk યાદી
+m0_exact/representative::exact_state_persistence:
+- - શું પ્રકાશ pravesh
+  - '12'
+m0_exact/representative::exact_timer:
+- ચાલુ ટાઈમર oven 2 min
+m0_exact/representative::exact_timer_resume_preserves_duration:
+- ચાલુ ટાઈમર oven
+m0_exact/representative::exact_todo_list:
+- add apples aufgabenliste

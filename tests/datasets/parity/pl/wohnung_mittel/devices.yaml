@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- wylacz sufit sypialnia
+devices/geraete::device_arbeitszimmer_an:
+- wlacz swiatlo office
+devices/geraete::device_esszimmer_an:
+- wlacz swiatlo salonfamess
+devices/geraete::device_kuche_kuche_an:
+- wlacz swiatlo kuchnia
+devices/geraete::device_wohnzimmer_an:
+- wlacz swiatlo salon
+devices/geraete::filmabend:
+- wlacz scena filmabend
+devices/geraete::kugel_an:
+- wlacz kula
+devices/geraete::luefter_50:
+- ustaw wentylator office 50
+devices/geraete::pc_an:
+- wlacz pc
+devices/geraete::r2d2_saugen:
+- wlacz odkurzacz salon
+devices/geraete::rollo_zu:
+- zamknij zaslona salon
+devices/geraete::spuelmaschine_aus:
+- wylacz zmywarka
+devices/geraete::tuer_abschliessen:
+- zamek zamek przedpokoj
+devices/geraete::waschmaschine_an:
+- wlacz pralka
+devices/klima::klima_schlaf_21:
+- ustaw ac sypialnia 21
+devices/spoken::deckenlampe_an:
+- wlacz sufit sypialnia
+devices/spoken::kugel_aus:
+- wylacz kula
+devices/spoken::luefter_aus:
+- wylacz wentylator office
+devices/spoken::rollo_auf:
+- otworz zaslona salon
+devices/spoken::trockner_an:
+- wlacz suszarka
+devices/spoken::tv_aus:
+- wylacz tv
+devices/spoken_more::decke_aus_casual:
+- wylacz sufit sypialnia
+devices/spoken_more::kugel_casual:
+- wlacz kula
+devices/spoken_more::pc_aus:
+- wylacz pc
+devices/spoken_more::spuelmaschine_an:
+- wlacz zmywarka
+devices/spoken_more::waschmaschine_aus:
+- wylacz pralka

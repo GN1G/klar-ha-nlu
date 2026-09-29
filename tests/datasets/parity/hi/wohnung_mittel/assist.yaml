@@ -1,0 +1,6 @@
+assist/ha_queries::ha_status_kueche:
+- क्या बत्ती रसोई
+assist/ha_queries::ha_status_kugel:
+- क्या gola
+assist/ha_queries::ha_status_lichter:
+- क्या सब बत्ती

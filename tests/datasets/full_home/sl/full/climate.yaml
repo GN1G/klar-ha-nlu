@@ -1,0 +1,231 @@
+- name: climate.ground_thermostat_18
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 18
+  sentences:
+  - nastavi ogrevanje dnevna 18
+  - ogrevanje dnevna 18
+- name: climate.ground_thermostat_19
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 19
+  sentences:
+  - nastavi ogrevanje dnevna 19
+  - ogrevanje dnevna 19
+- name: climate.ground_thermostat_20
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 20
+  sentences:
+  - nastavi ogrevanje dnevna 20
+  - ogrevanje dnevna 20
+- name: climate.ground_thermostat_21
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 21
+  sentences:
+  - nastavi ogrevanje dnevna 21
+  - ogrevanje dnevna 21
+- name: climate.ground_thermostat_22
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 22
+  sentences:
+  - nastavi ogrevanje dnevna 22
+  - ogrevanje dnevna 22
+- name: climate.ground_thermostat_23
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 23
+  sentences:
+  - nastavi ogrevanje dnevna 23
+  - ogrevanje dnevna 23
+- name: climate.ground_thermostat_24
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 24
+  sentences:
+  - nastavi ogrevanje dnevna 24
+  - ogrevanje dnevna 24
+- name: climate.ground_thermostat_get
+  conditions:
+  - type: query
+    entity_id: climate.ground_thermostat
+  sentences:
+  - kaj ogrevanje dnevna
+  - ogrevanje dnevna
+- name: climate.upper_thermostat_18
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 18
+  sentences:
+  - nastavi ogrevanje spalnicamaster 18
+  - ogrevanje spalnicamaster 18
+- name: climate.upper_thermostat_19
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 19
+  sentences:
+  - nastavi ogrevanje spalnicamaster 19
+  - ogrevanje spalnicamaster 19
+- name: climate.upper_thermostat_20
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 20
+  sentences:
+  - nastavi ogrevanje spalnicamaster 20
+  - ogrevanje spalnicamaster 20
+- name: climate.upper_thermostat_21
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 21
+  sentences:
+  - nastavi ogrevanje spalnicamaster 21
+  - ogrevanje spalnicamaster 21
+- name: climate.upper_thermostat_22
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 22
+  sentences:
+  - nastavi ogrevanje spalnicamaster 22
+  - ogrevanje spalnicamaster 22
+- name: climate.upper_thermostat_23
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 23
+  sentences:
+  - nastavi ogrevanje spalnicamaster 23
+  - ogrevanje spalnicamaster 23
+- name: climate.upper_thermostat_24
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 24
+  sentences:
+  - nastavi ogrevanje spalnicamaster 24
+  - ogrevanje spalnicamaster 24
+- name: climate.upper_thermostat_get
+  conditions:
+  - type: query
+    entity_id: climate.upper_thermostat
+  sentences:
+  - kaj ogrevanje spalnicamaster
+  - ogrevanje spalnicamaster
+- name: climate.master_ac_18
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 18
+  sentences:
+  - nastavi temperatura spalnicamaster 18
+  - temperatura spalnicamaster 18
+- name: climate.master_ac_19
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 19
+  sentences:
+  - nastavi temperatura spalnicamaster 19
+  - temperatura spalnicamaster 19
+- name: climate.master_ac_20
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 20
+  sentences:
+  - nastavi temperatura spalnicamaster 20
+  - temperatura spalnicamaster 20
+- name: climate.master_ac_21
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 21
+  sentences:
+  - nastavi temperatura spalnicamaster 21
+  - temperatura spalnicamaster 21
+- name: climate.master_ac_22
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 22
+  sentences:
+  - nastavi temperatura spalnicamaster 22
+  - temperatura spalnicamaster 22
+- name: climate.master_ac_23
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 23
+  sentences:
+  - nastavi temperatura spalnicamaster 23
+  - temperatura spalnicamaster 23
+- name: climate.master_ac_24
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 24
+  sentences:
+  - nastavi temperatura spalnicamaster 24
+  - temperatura spalnicamaster 24
+- name: climate.master_ac_get
+  conditions:
+  - type: query
+    entity_id: climate.master_ac
+  sentences:
+  - kaj temperatura spalnicamaster
+  - temperatura spalnicamaster
+- name: climate.ground_thermostat_get_full
+  conditions:
+  - type: query
+    entity_id: climate.ground_thermostat
+  sentences:
+  - kaj ogrevanje dnevna
+  - ogrevanje dnevna
+- name: climate.upper_thermostat_get_full
+  conditions:
+  - type: query
+    entity_id: climate.upper_thermostat
+  sentences:
+  - kaj ogrevanje spalnicamaster
+  - ogrevanje spalnicamaster
+- name: climate.master_ac_get_full
+  conditions:
+  - type: query
+    entity_id: climate.master_ac
+  sentences:
+  - kaj temperatura spalnicamaster
+  - temperatura spalnicamaster

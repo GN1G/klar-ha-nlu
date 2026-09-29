@@ -1,0 +1,6 @@
+assist/ha_queries::ha_status_kueche:
+- อะไร ไฟ ห้องครัว
+assist/ha_queries::ha_status_kugel:
+- อะไร luk
+assist/ha_queries::ha_status_lichter:
+- อะไร ทั้งหมด ไฟ

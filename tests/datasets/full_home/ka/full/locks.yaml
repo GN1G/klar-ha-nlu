@@ -1,0 +1,48 @@
+- name: lock.front_door_lock
+  conditions:
+  - type: action
+    entity_id: lock.front_door
+    state: locked
+  sentences:
+  - საკეტი საკეტი shemosasvleli
+  - საკეტი shemosasvleli საკეტი
+- name: lock.front_door_unlock
+  conditions:
+  - type: action
+    entity_id: lock.front_door
+    state: unlocked
+  sentences:
+  - გახსენი საკეტი shemosasvleli
+  - საკეტი shemosasvleli გახსენი
+- name: lock.garage_entry_lock
+  conditions:
+  - type: action
+    entity_id: lock.garage_entry
+    state: locked
+  sentences:
+  - საკეტი საკეტი garage
+  - საკეტი garage საკეტი
+- name: lock.garage_entry_unlock
+  conditions:
+  - type: action
+    entity_id: lock.garage_entry
+    state: unlocked
+  sentences:
+  - გახსენი საკეტი garage
+  - საკეტი garage გახსენი
+- name: lock.front_door_lock_extra
+  conditions:
+  - type: action
+    entity_id: lock.front_door
+    state: locked
+  sentences:
+  - საკეტი საკეტი shemosasvleli
+  - საკეტი shemosasvleli საკეტი
+- name: lock.garage_entry_lock_extra
+  conditions:
+  - type: action
+    entity_id: lock.garage_entry
+    state: locked
+  sentences:
+  - საკეტი საკეტი garage
+  - საკეტი garage საკეტი

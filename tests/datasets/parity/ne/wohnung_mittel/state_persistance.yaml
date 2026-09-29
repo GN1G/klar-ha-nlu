@@ -1,0 +1,15 @@
+state_persistance/followup::heizung_dann_grad:
+- - बाल तातो बैठक
+  - ' 21'
+state_persistance/followup::wohnzimmer_dann_aus:
+- - बाल बत्ती बैठक
+  - निभाऊ
+state_persistance/spoken::kugel_dann_aus:
+- - बाल gola
+  - निभाऊ
+state_persistance/spoken::wohnzimmer_dann_kueche:
+- - बाल बत्ती बैठक
+  - बाल बत्ती भान्सा
+state_persistance/spoken::wohnzimmer_dann_rot:
+- - बाल सबै बत्ती बैठक
+  - red

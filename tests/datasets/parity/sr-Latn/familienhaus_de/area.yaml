@@ -1,0 +1,249 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- zatvori zavesa spavaca2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- otvori zavesa spavaca2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- stavi zavesa spavaca2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- stavi ventilator spavaca2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- iskljuci ventilator spavaca2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- ukljuci ventilator spavaca2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- stavi sve svetlo spavaca2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- stavi sve svetlo spavaca2 pink
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- iskljuci sve svetlo spavaca2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- ukljuci sve svetlo spavaca2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- zatvori zavesa spavaca3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- otvori zavesa spavaca3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- stavi zavesa spavaca3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- stavi sve svetlo spavaca3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- stavi sve svetlo spavaca3 blue
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- iskljuci sve svetlo spavaca3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- ukljuci sve svetlo spavaca3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- stavi sve svetlo spavaca4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- stavi sve svetlo spavaca4 green
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- iskljuci sve svetlo spavaca4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- ukljuci sve svetlo spavaca4
+area/dining_lights::dining_lights_change_brightness:
+- stavi sve svetlo dnevnafamess 54
+area/dining_lights::dining_lights_change_color:
+- stavi sve svetlo dnevnafamess blue
+area/dining_lights::dining_lights_turn_off:
+- iskljuci sve svetlo dnevnafamess
+area/dining_lights::dining_lights_turn_on:
+- ukljuci sve svetlo dnevnafamess
+area/entryway_lights::entryway_lights_change_brightness:
+- stavi sve svetlo ulaz 72
+area/entryway_lights::entryway_lights_change_color:
+- stavi sve svetlo ulaz black
+area/entryway_lights::entryway_lights_turn_off:
+- iskljuci sve svetlo ulaz
+area/entryway_lights::entryway_lights_turn_on:
+- ukljuci sve svetlo ulaz
+area/entryway_locks::entryway_locks_lock:
+- brava brava ulaz
+area/entryway_locks::entryway_locks_unlock:
+- otvori brava ulaz
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- stavi sve svetlo dnevnafam 39 then stavi sve svetlo kuhinja 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- stavi sve svetlo dnevnafam purple then stavi sve svetlo kuhinja purple
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- iskljuci sve svetlo dnevnafam then iskljuci sve svetlo kuhinja
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- ukljuci sve svetlo dnevnafam then ukljuci sve svetlo kuhinja
+area/family_room_fans::family_room_fans_set_fan_speed:
+- stavi ventilator dnevnafam 32
+area/family_room_fans::family_room_fans_turn_off:
+- iskljuci ventilator dnevnafam
+area/family_room_fans::family_room_fans_turn_on:
+- ukljuci ventilator dnevnafam
+area/family_room_lights::family_room_lights_change_brightness:
+- stavi sve svetlo dnevnafam 44
+area/family_room_lights::family_room_lights_change_color:
+- stavi sve svetlo dnevnafam green
+area/family_room_lights::family_room_lights_turn_off:
+- iskljuci sve svetlo dnevnafam
+area/family_room_lights::family_room_lights_turn_on:
+- ukljuci sve svetlo dnevnafam
+area/garage_covers::garage_covers_close:
+- zatvori zavesa garage
+area/garage_covers::garage_covers_open:
+- otvori zavesa garage
+area/garage_covers::garage_covers_set_position:
+- stavi zavesa garage 86
+area/garage_lights::garage_lights_change_brightness:
+- stavi sve svetlo garage 16
+area/garage_lights::garage_lights_change_color:
+- stavi sve svetlo garage blue
+area/garage_lights::garage_lights_turn_off:
+- iskljuci sve svetlo garage
+area/garage_lights::garage_lights_turn_on:
+- ukljuci sve svetlo garage
+area/garage_locks::garage_locks_lock:
+- brava brava garage
+area/garage_locks::garage_locks_unlock:
+- otvori brava garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- stavi sve svetlo ulazgang 26 then stavi sve svetlo wc 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- stavi sve svetlo ulazgang purple then stavi sve svetlo wc purple
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- iskljuci sve svetlo ulazgang then iskljuci sve svetlo wc
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- ukljuci sve svetlo ulazgang then ukljuci sve svetlo wc
+area/hallway_lights::hallway_lights_change_brightness:
+- stavi sve svetlo ulazgang 61
+area/hallway_lights::hallway_lights_change_color:
+- stavi sve svetlo ulazgang orange
+area/hallway_lights::hallway_lights_turn_off:
+- iskljuci sve svetlo ulazgang
+area/hallway_lights::hallway_lights_turn_on:
+- ukljuci sve svetlo ulazgang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- stavi sve svetlo kuhinja 45
+area/kitchen_lights::kitchen_lights_change_color:
+- stavi sve svetlo kuhinja pink
+area/kitchen_lights::kitchen_lights_turn_off:
+- iskljuci sve svetlo kuhinja
+area/kitchen_lights::kitchen_lights_turn_on:
+- ukljuci sve svetlo kuhinja
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- iskljuci sve uredjaj kuhinja
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- ukljuci sve uredjaj kuhinja
+area/laundry_lights::laundry_lights_change_brightness:
+- stavi sve svetlo vesernica 62
+area/laundry_lights::laundry_lights_change_color:
+- stavi sve svetlo vesernica yellow
+area/laundry_lights::laundry_lights_turn_off:
+- iskljuci sve svetlo vesernica
+area/laundry_lights::laundry_lights_turn_on:
+- ukljuci sve svetlo vesernica
+area/laundry_switchs::laundry_switchs_turn_off:
+- iskljuci sve uredjaj vesernica
+area/laundry_switchs::laundry_switchs_turn_on:
+- ukljuci sve uredjaj vesernica
+area/living_climates::living_climates_set_temperature:
+- stavi grejanje dnevna 20
+area/living_covers::living_covers_close:
+- zatvori zavesa dnevna
+area/living_covers::living_covers_open:
+- otvori zavesa dnevna
+area/living_covers::living_covers_set_position:
+- stavi zavesa dnevna 46
+area/living_lights::living_lights_change_brightness:
+- stavi sve svetlo dnevna 84
+area/living_lights::living_lights_change_color:
+- stavi sve svetlo dnevna blue
+area/living_lights::living_lights_turn_off:
+- iskljuci sve svetlo dnevna
+area/living_lights::living_lights_turn_on:
+- ukljuci sve svetlo dnevna
+area/main_bath_lights::main_bath_lights_change_brightness:
+- stavi sve svetlo main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- stavi sve svetlo main bath pink
+area/main_bath_lights::main_bath_lights_turn_off:
+- iskljuci sve svetlo main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- ukljuci sve svetlo main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- iskljuci sve uredjaj main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- ukljuci sve uredjaj main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- stavi sve svetlo kupatilomaster 60
+area/master_bath_lights::master_bath_lights_change_color:
+- stavi sve svetlo kupatilomaster black
+area/master_bath_lights::master_bath_lights_turn_off:
+- iskljuci sve svetlo kupatilomaster
+area/master_bath_lights::master_bath_lights_turn_on:
+- ukljuci sve svetlo kupatilomaster
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- iskljuci sve uredjaj kupatilomaster
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- ukljuci sve uredjaj kupatilomaster
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- stavi grejanje spavacamaster 20 then stavi grejanje dnevna 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- zatvori zavesa spavacamaster then zatvori zavesa dnevna
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- otvori zavesa spavacamaster then otvori zavesa dnevna
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- stavi zavesa spavacamaster 19 then stavi zavesa dnevna 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- stavi sve svetlo spavacamaster 25 then stavi sve svetlo dnevna 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- stavi sve svetlo spavacamaster white then stavi sve svetlo dnevna white
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- iskljuci sve svetlo spavacamaster then iskljuci sve svetlo dnevna
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- ukljuci sve svetlo spavacamaster then ukljuci sve svetlo dnevna
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- stavi sve svetlo spavacamaster 57 then stavi sve svetlo main bath 57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- stavi sve svetlo spavacamaster pink then stavi sve svetlo main bath pink
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- iskljuci sve svetlo spavacamaster then iskljuci sve svetlo main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- ukljuci sve svetlo spavacamaster then ukljuci sve svetlo main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- stavi grejanje spavacamaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- zatvori zavesa spavacamaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- otvori zavesa spavacamaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- stavi zavesa spavacamaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- stavi ventilator spavacamaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- iskljuci ventilator spavacamaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- ukljuci ventilator spavacamaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- stavi sve svetlo spavacamaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- stavi sve svetlo spavacamaster pink
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- iskljuci sve svetlo spavacamaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- ukljuci sve svetlo spavacamaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- stavi sve svetlo wc 52
+area/powder_room_lights::powder_room_lights_change_color:
+- stavi sve svetlo wc purple
+area/powder_room_lights::powder_room_lights_turn_off:
+- iskljuci sve svetlo wc
+area/powder_room_lights::powder_room_lights_turn_on:
+- ukljuci sve svetlo wc
+area/spoken_lights::spoken_bedroom_inflection:
+- stavi sve svetlo spavacamaster red
+area/spoken_lights::spoken_except_island:
+- iskljuci sve svetlo osim ostrvo
+area/spoken_lights::spoken_except_kitchen:
+- iskljuci sve svetlo osim kuhinja
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- iskljuci sve svetlo dnevna then iskljuci sve svetlo dnevnafamess then iskljuci sve
+  svetlo kuhinja
+area/spoken_lights::spoken_stt_kitchen_off:
+- iskljuci sve svetlo kuhinja
+area/spoken_lights::spoken_stt_living_off:
+- iskljuci sve svetlo dnevna

@@ -1,0 +1,529 @@
+- name: play_queen
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: queen
+  sentences:
+  - ચલાવો queen ઓરડો
+  - ચલાવો queen ટીવી ઓરડો
+- name: play_album
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: rumours
+      media_type: album
+      artist: fleetwood mac
+  sentences:
+  - ચલાવો album rumours by fleetwood mac ઓરડો
+- name: play_radio
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - ચલાવો queen radio mode ઓરડો
+- name: queue_song
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: bohemian rhapsody
+      enqueue: add
+  sentences:
+  - ચલાવો bohemian rhapsody queue ઓરડો
+- name: now_playing
+  conditions:
+  - type: query
+    entity_id: media_player.living_music
+  sentences:
+  - શું ટીવી ઓરડો
+  - શું track ઓરડો
+- name: music_volume_10
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 10
+  sentences:
+  - સેટ ટીવી ઓરડો 10
+  - ટીવી ઓરડો 10
+- name: music_volume_20
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 20
+  sentences:
+  - સેટ ટીવી ઓરડો 20
+  - ટીવી ઓરડો 20
+- name: music_volume_30
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 30
+  sentences:
+  - સેટ ટીવી ઓરડો 30
+  - ટીવી ઓરડો 30
+- name: music_volume_50
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 50
+  sentences:
+  - સેટ ટીવી ઓરડો 50
+  - ટીવી ઓરડો 50
+- name: music_volume_80
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 80
+  sentences:
+  - સેટ ટીવી ઓરડો 80
+  - ટીવી ઓરડો 80
+- name: music_next
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    state: next
+  sentences:
+  - next track ઓરડો
+- name: music_prev
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    state: previous
+  sentences:
+  - previous track ઓરડો
+- name: kitchen_play
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: queen
+  sentences:
+  - ચલાવો queen રસોડું
+  - ચલાવો queen ટીવી રસોડું
+- name: play_beatles_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - ચલાવો beatles ઓરડો
+  - ચલાવો beatles ટીવી ઓરડો
+- name: play_radiohead_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - ચલાવો radiohead ઓરડો
+  - ચલાવો radiohead ટીવી ઓરડો
+- name: play_abba_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: abba
+  sentences:
+  - ચલાવો abba ઓરડો
+  - ચલાવો abba ટીવી ઓરડો
+- name: play_coldplay_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - ચલાવો coldplay ઓરડો
+  - ચલાવો coldplay ટીવી ઓરડો
+- name: play_adele_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: adele
+  sentences:
+  - ચલાવો adele ઓરડો
+  - ચલાવો adele ટીવી ઓરડો
+- name: play_prince_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: prince
+  sentences:
+  - ચલાવો prince ઓરડો
+  - ચલાવો prince ટીવી ઓરડો
+- name: play_bowie_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - ચલાવો bowie ઓરડો
+  - ચલાવો bowie ટીવી ઓરડો
+- name: play_nirvana_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - ચલાવો nirvana ઓરડો
+  - ચલાવો nirvana ટીવી ઓરડો
+- name: play_eagles_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - ચલાવો eagles ઓરડો
+  - ચલાવો eagles ટીવી ઓરડો
+- name: play_madonna_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - ચલાવો madonna ઓરડો
+  - ચલાવો madonna ટીવી ઓરડો
+- name: play_mozart_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - ચલાવો mozart ઓરડો
+  - ચલાવો mozart ટીવી ઓરડો
+- name: play_daft punk_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - ચલાવો daft punk ઓરડો
+  - ચલાવો daft punk ટીવી ઓરડો
+- name: play_biafra_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - ચલાવો biafra ઓરડો
+  - ચલાવો biafra ટીવી ઓરડો
+- name: play_queen_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: queen
+  sentences:
+  - ચલાવો queen રસોડું
+  - ચલાવો queen ટીવી રસોડું
+- name: play_beatles_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - ચલાવો beatles રસોડું
+  - ચલાવો beatles ટીવી રસોડું
+- name: play_radiohead_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - ચલાવો radiohead રસોડું
+  - ચલાવો radiohead ટીવી રસોડું
+- name: play_abba_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: abba
+  sentences:
+  - ચલાવો abba રસોડું
+  - ચલાવો abba ટીવી રસોડું
+- name: play_coldplay_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - ચલાવો coldplay રસોડું
+  - ચલાવો coldplay ટીવી રસોડું
+- name: play_adele_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: adele
+  sentences:
+  - ચલાવો adele રસોડું
+  - ચલાવો adele ટીવી રસોડું
+- name: play_prince_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: prince
+  sentences:
+  - ચલાવો prince રસોડું
+  - ચલાવો prince ટીવી રસોડું
+- name: play_bowie_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - ચલાવો bowie રસોડું
+  - ચલાવો bowie ટીવી રસોડું
+- name: play_nirvana_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - ચલાવો nirvana રસોડું
+  - ચલાવો nirvana ટીવી રસોડું
+- name: play_eagles_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - ચલાવો eagles રસોડું
+  - ચલાવો eagles ટીવી રસોડું
+- name: play_madonna_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - ચલાવો madonna રસોડું
+  - ચલાવો madonna ટીવી રસોડું
+- name: play_mozart_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - ચલાવો mozart રસોડું
+  - ચલાવો mozart ટીવી રસોડું
+- name: play_daft punk_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - ચલાવો daft punk રસોડું
+  - ચલાવો daft punk ટીવી રસોડું
+- name: play_biafra_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - ચલાવો biafra રસોડું
+  - ચલાવો biafra ટીવી રસોડું
+- name: play_queen_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: queen
+  sentences:
+  - ચલાવો queen office
+  - ચલાવો queen ટીવી office
+- name: play_beatles_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - ચલાવો beatles office
+  - ચલાવો beatles ટીવી office
+- name: play_radiohead_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - ચલાવો radiohead office
+  - ચલાવો radiohead ટીવી office
+- name: play_abba_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: abba
+  sentences:
+  - ચલાવો abba office
+  - ચલાવો abba ટીવી office
+- name: play_coldplay_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - ચલાવો coldplay office
+  - ચલાવો coldplay ટીવી office
+- name: play_adele_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: adele
+  sentences:
+  - ચલાવો adele office
+  - ચલાવો adele ટીવી office
+- name: play_prince_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: prince
+  sentences:
+  - ચલાવો prince office
+  - ચલાવો prince ટીવી office
+- name: play_bowie_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - ચલાવો bowie office
+  - ચલાવો bowie ટીવી office
+- name: play_nirvana_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - ચલાવો nirvana office
+  - ચલાવો nirvana ટીવી office
+- name: play_eagles_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - ચલાવો eagles office
+  - ચલાવો eagles ટીવી office
+- name: play_madonna_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - ચલાવો madonna office
+  - ચલાવો madonna ટીવી office
+- name: play_mozart_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - ચલાવો mozart office
+  - ચલાવો mozart ટીવી office
+- name: play_daft punk_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - ચલાવો daft punk office
+  - ચલાવો daft punk ટીવી office
+- name: play_biafra_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - ચલાવો biafra office
+  - ચલાવો biafra ટીવી office
+- name: radio_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - ચલાવો queen radio mode ઓરડો
+- name: now_living
+  conditions:
+  - type: query
+    entity_id: media_player.living_music
+  sentences:
+  - શું ટીવી ઓરડો
+  - શું track ઓરડો
+- name: radio_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - ચલાવો queen radio mode રસોડું
+- name: now_kitchen
+  conditions:
+  - type: query
+    entity_id: media_player.kitchen_music
+  sentences:
+  - શું ટીવી રસોડું
+  - શું track રસોડું
+- name: radio_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - ચલાવો queen radio mode office
+- name: now_office
+  conditions:
+  - type: query
+    entity_id: media_player.office_music
+  sentences:
+  - શું ટીવી office
+  - શું track office

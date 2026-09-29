@@ -1,0 +1,6 @@
+assist/ha_queries::ha_status_kueche:
+- কি আলো রান্না
+assist/ha_queries::ha_status_kugel:
+- কি gola
+assist/ha_queries::ha_status_lichter:
+- কি সব আলো

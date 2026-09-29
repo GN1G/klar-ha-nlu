@@ -1,0 +1,138 @@
+state_persistance/area_bedroom_2_covers::bedroom_2_covers_set_position:
+- - ಏನು ಪರದೆ shayanakone2
+  - ' 51'
+state_persistance/area_bedroom_2_lights::bedroom_2_lights_set_brightness:
+- - ಏನು chavani shayanakone2
+  - ' 20'
+state_persistance/area_bedroom_3_covers::bedroom_3_covers_set_position:
+- - ಏನು ಪರದೆ shayanakone3
+  - ' 67'
+state_persistance/area_bedroom_3_lights::bedroom_3_lights_set_brightness:
+- - ಏನು chavani shayanakone3
+  - ' 63'
+state_persistance/area_bedroom_4_lights::bedroom_4_lights_set_brightness:
+- - ಏನು chavani shayanakone4
+  - ' 80'
+state_persistance/area_dining_lights::dining_lights_set_brightness:
+- - ಏನು ಬೆಳಕು kutumbaess
+  - ' 68'
+state_persistance/area_entryway_lights::entryway_lights_set_brightness:
+- - ಏನು ಬೆಳಕು pravesha
+  - ' 54'
+state_persistance/area_family_room_lights::family_room_lights_set_brightness:
+- - ಏನು chavani kutumba
+  - ' 94'
+state_persistance/area_garage_covers::garage_covers_set_position:
+- - ಏನು ಪರದೆ garage
+  - ' 18'
+state_persistance/area_garage_lights::garage_lights_set_brightness:
+- - ಏನು ಬೆಳಕು garage
+  - ' 27'
+state_persistance/area_hallway_and_powder_room_lights::hallway_and_powder_room_lights_set_brightness:
+- - ಏನು ಬೆಳಕು praveshagang mattu ಏನು ಬೆಳಕು shauchalaya
+  - ' 100'
+state_persistance/area_hallway_lights::hallway_lights_set_brightness:
+- - ಏನು ಬೆಳಕು praveshagang
+  - ' 69'
+state_persistance/area_kitchen_lights::kitchen_lights_set_brightness:
+- - ಏನು ಬೆಳಕು ಅಡುಗೆ
+  - ' 46'
+state_persistance/area_laundry_lights::laundry_lights_set_brightness:
+- - ಏನು ಬೆಳಕು ogeyuva
+  - ' 62'
+state_persistance/area_living_climates::living_climates_set_temperature:
+- - ಏನು ಬಿಸಿ ಹಾಲ್
+  - ' 95'
+state_persistance/area_living_covers::living_covers_set_position:
+- - ಏನು ಪರದೆ ಹಾಲ್
+  - ' 86'
+state_persistance/area_living_lights::living_lights_set_brightness:
+- - ಏನು ಬೆಳಕು ಹಾಲ್
+  - ' 55'
+state_persistance/area_main_bath_lights::main_bath_lights_set_brightness:
+- - ಏನು ಬೆಳಕು main bath
+  - ' 96'
+state_persistance/area_master_bath_lights::master_bath_lights_set_brightness:
+- - ಏನು ಬೆಳಕು mukhyasnana
+  - ' 50'
+state_persistance/area_master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- - ಏನು ಬಿಸಿ shayanakonemaster mattu ಏನು ಬಿಸಿ ಹಾಲ್
+  - ' 69'
+state_persistance/area_master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- - ಏನು ಪರದೆ shayanakonemaster mattu ಏನು ಪರದೆ ಹಾಲ್
+  - ' 15'
+state_persistance/area_master_bedroom_climates::master_bedroom_climates_set_temperature:
+- - ಏನು ಬಿಸಿ shayanakonemaster
+  - ' 44'
+state_persistance/area_master_bedroom_covers::master_bedroom_covers_set_position:
+- - ಏನು ಪರದೆ shayanakonemaster
+  - ' 88'
+state_persistance/area_powder_room_lights::powder_room_lights_set_brightness:
+- - ಏನು ಬೆಳಕು shauchalaya
+  - ' 70'
+state_persistance/device_cover_garage_door::cover_garage_door_close:
+- - ಏನು ಪರದೆ garage
+  - ಮುಚ್ಚು
+state_persistance/device_cover_garage_door::cover_garage_door_open:
+- - ಏನು ಪರದೆ garage
+  - ತೆರೆ
+state_persistance/device_cover_garage_door::cover_garage_door_persistance_position:
+- - ಏನು ಪರದೆ garage
+  - '23'
+state_persistance/device_cover_living_blinds::cover_living_blinds_close:
+- - ಏನು ಪರದೆ ಹಾಲ್
+  - ಮುಚ್ಚು
+state_persistance/device_cover_living_blinds::cover_living_blinds_open:
+- - ಏನು ಪರದೆ ಹಾಲ್
+  - ತೆರೆ
+state_persistance/device_cover_living_blinds::cover_living_blinds_persistance_position:
+- - ಏನು ಪರದೆ ಹಾಲ್
+  - '85'
+state_persistance/device_fan_family_fan::fan_family_fan_persistance_percentage:
+- - ಏನು ಫ್ಯಾನ್ kutumba
+  - ' 43'
+state_persistance/device_fan_family_fan::fan_family_fan_turn_off:
+- - ಏನು ಫ್ಯಾನ್ kutumba
+  - ಆರಿಸು
+state_persistance/device_fan_family_fan::fan_family_fan_turn_on:
+- - ಏನು ಫ್ಯಾನ್ kutumba
+  - ಹಚ್ಚು
+state_persistance/device_light_entryway_light::light_entryway_light_persistance_brightness:
+- - ಏನು ಬೆಳಕು pravesha
+  - '12'
+state_persistance/device_light_entryway_light::light_entryway_light_turn_off:
+- - ಏನು ಬೆಳಕು pravesha
+  - ಆರಿಸು
+state_persistance/device_light_entryway_light::light_entryway_light_turn_on:
+- - ಏನು ಬೆಳಕು pravesha
+  - ಹಚ್ಚು
+state_persistance/device_lock_front_door::lock_front_door_lock:
+- - ಏನು ಬೀಗ pravesha
+  - ಬೀಗ
+state_persistance/device_lock_front_door::lock_front_door_unlock:
+- - ಏನು ಬೀಗ pravesha
+  - ತೆರೆ
+state_persistance/device_lock_garage_entry::lock_garage_entry_lock:
+- - ಏನು ಬೀಗ garage
+  - ಬೀಗ
+state_persistance/device_lock_garage_entry::lock_garage_entry_unlock:
+- - ಏನು ಬೀಗ garage
+  - ತೆರೆ
+state_persistance/device_media_player_family_tv::media_player_family_tv_persistance_volume_level:
+- - ಏನು tv kutumba
+  - ' 21'
+state_persistance/device_media_player_family_tv::media_player_family_tv_turn_off:
+- - ಏನು tv kutumba
+  - ಆರಿಸು
+state_persistance/device_media_player_family_tv::media_player_family_tv_turn_on:
+- - ಏನು tv kutumba
+  - ಹಚ್ಚು
+state_persistance/device_media_player_living_tv::media_player_living_tv_persistance_volume_level:
+- - ಏನು tv ಹಾಲ್
+  - ' 21'
+state_persistance/device_media_player_living_tv::media_player_living_tv_turn_off:
+- - ಏನು tv ಹಾಲ್
+  - ಆರಿಸು
+state_persistance/device_media_player_living_tv::media_player_living_tv_turn_on:
+- - ಏನು tv ಹಾಲ್
+  - ಹಚ್ಚು

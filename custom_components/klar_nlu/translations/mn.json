@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "Энэ нэгтгэл Assist-тэй ярина. Тусдаа хөдөлгүүр яриаг задлана: Klar NLU апп, багц процесс эсвэл Docker. Home Assistant OS дээр аппыг суулгаад Klar NLU апп ашиглах-ыг сонгоно. Аппгүй бол багц хөдөлгүүрийг асаана. Хоёуланг нь бүү ажиллуул.",
+        "data": {
+          "mode": "Хөдөлгүүр",
+          "channel": "Гаргалтын суваг",
+          "url": "Klar API хаяг",
+          "token": "Бичих токен"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Хаяг http(s) байх ёстой, хэрэглэгчийн нэргүй."
+    },
+    "abort": {
+      "already_configured": "Klar NLU аль хэдийн тохируулагдсан"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "Дуу хоолой, Assist хэл, LLM Klar операторын UI (Тохиргоо)-д байна. Энэ маягт зөвхөн хөдөлгүүрийг холбоно: URL, токен, суваг. {apps}",
+        "data": {
+          "mode": "Хөдөлгүүр",
+          "url": "Klar API хаяг",
+          "token": "Бичих токен",
+          "assist_filter": "Зөвхөн Assist-д харагдсан нэгжүүдийг удирдах",
+          "channel": "Гаргалтын суваг"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "Klar апптай ижил токен.",
+          "assist_filter": "Асаалттай: зөвхөн Assist харахыг. Унтраалттай: нуугдсан нэгж ч багтана.",
+          "channel": "Хэзээ ч. Staging нь Klar NLU (Staging) руу заана."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Хаяг http(s) байх ёстой, хэрэглэгчийн нэргүй."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "Багц хөдөлгүүрийг эхлүүлэх (зөвхөн HACS)",
+        "remote": "Klar NLU апп эсвэл Docker ашиглах"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (үйлдвэрлэл)",
+        "staging": "Staging (нэр дэвшигч)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "Системийн хэл",
+        "all": "Бүх хэл"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "Энгийн",
+        "butler": "Butler",
+        "locker": "Суларсан",
+        "fuersorglich": "Халамжтай",
+        "party": "Party",
+        "grantig": "Ууртай",
+        "sarkastisch": "Егөөтэй",
+        "pirat": "Далайн дээрэмчин",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "Зан чанар",
+        "state": {
+          "default": "Энгийн",
+          "butler": "Butler",
+          "locker": "Суларсан",
+          "fuersorglich": "Халамжтай",
+          "party": "Party",
+          "grantig": "Ууртай",
+          "sarkastisch": "Егөөтэй",
+          "pirat": "Далайн дээрэмчин",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "Богино баталгаа"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "Хиймэл оюуны даалгавар"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "Сүүлд сонссон"
+      },
+      "last_decision": {
+        "name": "Сүүлийн шийдвэр"
+      },
+      "last_speech": {
+        "name": "Сүүлийн хариу"
+      },
+      "last_area": {
+        "name": "Сонссон газар"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Klar хөдөлгүүр зогссон",
+      "description": "Багц Klar процесс ажиллахгүй байна. Тохиргоо → Төхөөрөмж ба үйлчилгээнээс Klar NLU-г дахин ачаална уу."
+    }
+  }
+}

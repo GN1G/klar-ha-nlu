@@ -1,0 +1,4606 @@
+- name: lights_entryway_on
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ dakhla
+  - ਰੋਸ਼ਨੀ dakhla ਚਾਲੂ
+- name: lights_entryway_off
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ dakhla
+  - ਰੋਸ਼ਨੀ dakhla ਬੰਦ
+- name: lights_living_on
+  conditions:
+  - type: action
+    area: living
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ ਬੈਠਕ
+  - ਰੋਸ਼ਨੀ ਬੈਠਕ ਚਾਲੂ
+- name: lights_living_off
+  conditions:
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ ਬੈਠਕ
+  - ਰੋਸ਼ਨੀ ਬੈਠਕ ਬੰਦ
+- name: lights_dining_on
+  conditions:
+  - type: action
+    area: dining
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ parivarakess
+  - ਰੋਸ਼ਨੀ parivarakess ਚਾਲੂ
+- name: lights_dining_off
+  conditions:
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ parivarakess
+  - ਰੋਸ਼ਨੀ parivarakess ਬੰਦ
+- name: lights_kitchen_on
+  conditions:
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ ਰਸੋਈ
+  - ਰੋਸ਼ਨੀ ਰਸੋਈ ਚਾਲੂ
+- name: lights_kitchen_off
+  conditions:
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ ਰਸੋਈ
+  - ਰੋਸ਼ਨੀ ਰਸੋਈ ਬੰਦ
+- name: lights_family_room_on
+  conditions:
+  - type: action
+    area: family_room
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ parivarak
+  - ਰੋਸ਼ਨੀ parivarak ਚਾਲੂ
+- name: lights_family_room_off
+  conditions:
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ parivarak
+  - ਰੋਸ਼ਨੀ parivarak ਬੰਦ
+- name: lights_laundry_on
+  conditions:
+  - type: action
+    area: laundry
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ dhon
+  - ਰੋਸ਼ਨੀ dhon ਚਾਲੂ
+- name: lights_laundry_off
+  conditions:
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ dhon
+  - ਰੋਸ਼ਨੀ dhon ਬੰਦ
+- name: lights_powder_room_on
+  conditions:
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ toilet
+  - ਰੋਸ਼ਨੀ toilet ਚਾਲੂ
+- name: lights_powder_room_off
+  conditions:
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ toilet
+  - ਰੋਸ਼ਨੀ toilet ਬੰਦ
+- name: lights_garage_on
+  conditions:
+  - type: action
+    area: garage
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ garage
+  - ਰੋਸ਼ਨੀ garage ਚਾਲੂ
+- name: lights_garage_off
+  conditions:
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ garage
+  - ਰੋਸ਼ਨੀ garage ਬੰਦ
+- name: lights_office_on
+  conditions:
+  - type: action
+    area: office
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ office
+  - ਰੋਸ਼ਨੀ office ਚਾਲੂ
+- name: lights_office_off
+  conditions:
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ office
+  - ਰੋਸ਼ਨੀ office ਬੰਦ
+- name: lights_garden_on
+  conditions:
+  - type: action
+    area: garden
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ garden
+  - ਰੋਸ਼ਨੀ garden ਚਾਲੂ
+- name: lights_garden_off
+  conditions:
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ garden
+  - ਰੋਸ਼ਨੀ garden ਬੰਦ
+- name: lights_master_bedroom_on
+  conditions:
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ bedroommaster
+  - ਰੋਸ਼ਨੀ bedroommaster ਚਾਲੂ
+- name: lights_master_bedroom_off
+  conditions:
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ bedroommaster
+  - ਰੋਸ਼ਨੀ bedroommaster ਬੰਦ
+- name: lights_bedroom_2_on
+  conditions:
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ bedroom2
+  - ਰੋਸ਼ਨੀ bedroom2 ਚਾਲੂ
+- name: lights_bedroom_2_off
+  conditions:
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ bedroom2
+  - ਰੋਸ਼ਨੀ bedroom2 ਬੰਦ
+- name: lights_bedroom_3_on
+  conditions:
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ bedroom3
+  - ਰੋਸ਼ਨੀ bedroom3 ਚਾਲੂ
+- name: lights_bedroom_3_off
+  conditions:
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ bedroom3
+  - ਰੋਸ਼ਨੀ bedroom3 ਬੰਦ
+- name: lights_bedroom_4_on
+  conditions:
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ bedroom4
+  - ਰੋਸ਼ਨੀ bedroom4 ਚਾਲੂ
+- name: lights_bedroom_4_off
+  conditions:
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ bedroom4
+  - ਰੋਸ਼ਨੀ bedroom4 ਬੰਦ
+- name: lights_master_bath_on
+  conditions:
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ masterbath
+  - ਰੋਸ਼ਨੀ masterbath ਚਾਲੂ
+- name: lights_master_bath_off
+  conditions:
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ masterbath
+  - ਰੋਸ਼ਨੀ masterbath ਬੰਦ
+- name: lights_main_bath_on
+  conditions:
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ main bath
+  - ਰੋਸ਼ਨੀ main bath ਚਾਲੂ
+- name: lights_main_bath_off
+  conditions:
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ main bath
+  - ਰੋਸ਼ਨੀ main bath ਬੰਦ
+- name: lights_hallway_on
+  conditions:
+  - type: action
+    area: hallway
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ hallway
+  - ਰੋਸ਼ਨੀ hallway ਚਾਲੂ
+- name: lights_hallway_off
+  conditions:
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ hallway
+  - ਰੋਸ਼ਨੀ hallway ਬੰਦ
+- name: lights_basement_on
+  conditions:
+  - type: action
+    area: basement
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ basement
+  - ਰੋਸ਼ਨੀ basement ਚਾਲੂ
+- name: lights_basement_off
+  conditions:
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ basement
+  - ਰੋਸ਼ਨੀ basement ਬੰਦ
+- name: light.living_ceiling_on
+  conditions:
+  - type: action
+    entity_id: light.living_ceiling
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ chhat ਬੈਠਕ
+  - chhat ਬੈਠਕ ਚਾਲੂ
+- name: light.living_ceiling_off
+  conditions:
+  - type: action
+    entity_id: light.living_ceiling
+    state: 'off'
+  sentences:
+  - ਬੰਦ chhat ਬੈਠਕ
+  - chhat ਬੈਠਕ ਬੰਦ
+- name: light.living_ceiling_bright_20
+  conditions:
+  - type: action
+    entity_id: light.living_ceiling
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ chhat ਬੈਠਕ 20
+  - chhat ਬੈਠਕ 20
+- name: light.living_ceiling_bright_40
+  conditions:
+  - type: action
+    entity_id: light.living_ceiling
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ chhat ਬੈਠਕ 40
+  - chhat ਬੈਠਕ 40
+- name: light.living_ceiling_bright_50
+  conditions:
+  - type: action
+    entity_id: light.living_ceiling
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ chhat ਬੈਠਕ 50
+  - chhat ਬੈਠਕ 50
+- name: light.living_ceiling_bright_60
+  conditions:
+  - type: action
+    entity_id: light.living_ceiling
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ chhat ਬੈਠਕ 60
+  - chhat ਬੈਠਕ 60
+- name: light.living_ceiling_bright_80
+  conditions:
+  - type: action
+    entity_id: light.living_ceiling
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ chhat ਬੈਠਕ 80
+  - chhat ਬੈਠਕ 80
+- name: light.living_ceiling_bright_100
+  conditions:
+  - type: action
+    entity_id: light.living_ceiling
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ chhat ਬੈਠਕ 100
+  - chhat ਬੈਠਕ 100
+- name: light.living_lamp_on
+  conditions:
+  - type: action
+    entity_id: light.living_lamp
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ roshni ਬੈਠਕ
+  - roshni ਬੈਠਕ ਚਾਲੂ
+- name: light.living_lamp_off
+  conditions:
+  - type: action
+    entity_id: light.living_lamp
+    state: 'off'
+  sentences:
+  - ਬੰਦ roshni ਬੈਠਕ
+  - roshni ਬੈਠਕ ਬੰਦ
+- name: light.living_lamp_bright_20
+  conditions:
+  - type: action
+    entity_id: light.living_lamp
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ roshni ਬੈਠਕ 20
+  - roshni ਬੈਠਕ 20
+- name: light.living_lamp_bright_40
+  conditions:
+  - type: action
+    entity_id: light.living_lamp
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ roshni ਬੈਠਕ 40
+  - roshni ਬੈਠਕ 40
+- name: light.living_lamp_bright_50
+  conditions:
+  - type: action
+    entity_id: light.living_lamp
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ roshni ਬੈਠਕ 50
+  - roshni ਬੈਠਕ 50
+- name: light.living_lamp_bright_60
+  conditions:
+  - type: action
+    entity_id: light.living_lamp
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ roshni ਬੈਠਕ 60
+  - roshni ਬੈਠਕ 60
+- name: light.living_lamp_bright_80
+  conditions:
+  - type: action
+    entity_id: light.living_lamp
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ roshni ਬੈਠਕ 80
+  - roshni ਬੈਠਕ 80
+- name: light.living_lamp_bright_100
+  conditions:
+  - type: action
+    entity_id: light.living_lamp
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ roshni ਬੈਠਕ 100
+  - roshni ਬੈਠਕ 100
+- name: light.kitchen_ceiling_on
+  conditions:
+  - type: action
+    entity_id: light.kitchen_ceiling
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ chhat ਰਸੋਈ
+  - chhat ਰਸੋਈ ਚਾਲੂ
+- name: light.kitchen_ceiling_off
+  conditions:
+  - type: action
+    entity_id: light.kitchen_ceiling
+    state: 'off'
+  sentences:
+  - ਬੰਦ chhat ਰਸੋਈ
+  - chhat ਰਸੋਈ ਬੰਦ
+- name: light.kitchen_ceiling_bright_20
+  conditions:
+  - type: action
+    entity_id: light.kitchen_ceiling
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ chhat ਰਸੋਈ 20
+  - chhat ਰਸੋਈ 20
+- name: light.kitchen_ceiling_bright_40
+  conditions:
+  - type: action
+    entity_id: light.kitchen_ceiling
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ chhat ਰਸੋਈ 40
+  - chhat ਰਸੋਈ 40
+- name: light.kitchen_ceiling_bright_50
+  conditions:
+  - type: action
+    entity_id: light.kitchen_ceiling
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ chhat ਰਸੋਈ 50
+  - chhat ਰਸੋਈ 50
+- name: light.kitchen_ceiling_bright_60
+  conditions:
+  - type: action
+    entity_id: light.kitchen_ceiling
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ chhat ਰਸੋਈ 60
+  - chhat ਰਸੋਈ 60
+- name: light.kitchen_ceiling_bright_80
+  conditions:
+  - type: action
+    entity_id: light.kitchen_ceiling
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ chhat ਰਸੋਈ 80
+  - chhat ਰਸੋਈ 80
+- name: light.kitchen_ceiling_bright_100
+  conditions:
+  - type: action
+    entity_id: light.kitchen_ceiling
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ chhat ਰਸੋਈ 100
+  - chhat ਰਸੋਈ 100
+- name: light.kitchen_island_on
+  conditions:
+  - type: action
+    entity_id: light.kitchen_island
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ tapu ਰਸੋਈ
+  - tapu ਰਸੋਈ ਚਾਲੂ
+- name: light.kitchen_island_off
+  conditions:
+  - type: action
+    entity_id: light.kitchen_island
+    state: 'off'
+  sentences:
+  - ਬੰਦ tapu ਰਸੋਈ
+  - tapu ਰਸੋਈ ਬੰਦ
+- name: light.kitchen_island_bright_20
+  conditions:
+  - type: action
+    entity_id: light.kitchen_island
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ tapu ਰਸੋਈ 20
+  - tapu ਰਸੋਈ 20
+- name: light.kitchen_island_bright_40
+  conditions:
+  - type: action
+    entity_id: light.kitchen_island
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ tapu ਰਸੋਈ 40
+  - tapu ਰਸੋਈ 40
+- name: light.kitchen_island_bright_50
+  conditions:
+  - type: action
+    entity_id: light.kitchen_island
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ tapu ਰਸੋਈ 50
+  - tapu ਰਸੋਈ 50
+- name: light.kitchen_island_bright_60
+  conditions:
+  - type: action
+    entity_id: light.kitchen_island
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ tapu ਰਸੋਈ 60
+  - tapu ਰਸੋਈ 60
+- name: light.kitchen_island_bright_80
+  conditions:
+  - type: action
+    entity_id: light.kitchen_island
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ tapu ਰਸੋਈ 80
+  - tapu ਰਸੋਈ 80
+- name: light.kitchen_island_bright_100
+  conditions:
+  - type: action
+    entity_id: light.kitchen_island
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ tapu ਰਸੋਈ 100
+  - tapu ਰਸੋਈ 100
+- name: light.master_ceiling_on
+  conditions:
+  - type: action
+    entity_id: light.master_ceiling
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ chhat bedroommaster
+  - chhat bedroommaster ਚਾਲੂ
+- name: light.master_ceiling_off
+  conditions:
+  - type: action
+    entity_id: light.master_ceiling
+    state: 'off'
+  sentences:
+  - ਬੰਦ chhat bedroommaster
+  - chhat bedroommaster ਬੰਦ
+- name: light.master_ceiling_bright_20
+  conditions:
+  - type: action
+    entity_id: light.master_ceiling
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ chhat bedroommaster 20
+  - chhat bedroommaster 20
+- name: light.master_ceiling_bright_40
+  conditions:
+  - type: action
+    entity_id: light.master_ceiling
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ chhat bedroommaster 40
+  - chhat bedroommaster 40
+- name: light.master_ceiling_bright_50
+  conditions:
+  - type: action
+    entity_id: light.master_ceiling
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ chhat bedroommaster 50
+  - chhat bedroommaster 50
+- name: light.master_ceiling_bright_60
+  conditions:
+  - type: action
+    entity_id: light.master_ceiling
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ chhat bedroommaster 60
+  - chhat bedroommaster 60
+- name: light.master_ceiling_bright_80
+  conditions:
+  - type: action
+    entity_id: light.master_ceiling
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ chhat bedroommaster 80
+  - chhat bedroommaster 80
+- name: light.master_ceiling_bright_100
+  conditions:
+  - type: action
+    entity_id: light.master_ceiling
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ chhat bedroommaster 100
+  - chhat bedroommaster 100
+- name: light.master_bedside_left_on
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_left
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ palang bedroommaster
+  - palang bedroommaster ਚਾਲੂ
+- name: light.master_bedside_left_off
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_left
+    state: 'off'
+  sentences:
+  - ਬੰਦ palang bedroommaster
+  - palang bedroommaster ਬੰਦ
+- name: light.master_bedside_left_bright_20
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_left
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ palang bedroommaster 20
+  - palang bedroommaster 20
+- name: light.master_bedside_left_bright_40
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_left
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ palang bedroommaster 40
+  - palang bedroommaster 40
+- name: light.master_bedside_left_bright_50
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_left
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ palang bedroommaster 50
+  - palang bedroommaster 50
+- name: light.master_bedside_left_bright_60
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_left
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ palang bedroommaster 60
+  - palang bedroommaster 60
+- name: light.master_bedside_left_bright_80
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_left
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ palang bedroommaster 80
+  - palang bedroommaster 80
+- name: light.master_bedside_left_bright_100
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_left
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ palang bedroommaster 100
+  - palang bedroommaster 100
+- name: light.office_ceiling_on
+  conditions:
+  - type: action
+    entity_id: light.office_ceiling
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ chhat office
+  - chhat office ਚਾਲੂ
+- name: light.office_ceiling_off
+  conditions:
+  - type: action
+    entity_id: light.office_ceiling
+    state: 'off'
+  sentences:
+  - ਬੰਦ chhat office
+  - chhat office ਬੰਦ
+- name: light.office_ceiling_bright_20
+  conditions:
+  - type: action
+    entity_id: light.office_ceiling
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ chhat office 20
+  - chhat office 20
+- name: light.office_ceiling_bright_40
+  conditions:
+  - type: action
+    entity_id: light.office_ceiling
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ chhat office 40
+  - chhat office 40
+- name: light.office_ceiling_bright_50
+  conditions:
+  - type: action
+    entity_id: light.office_ceiling
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ chhat office 50
+  - chhat office 50
+- name: light.office_ceiling_bright_60
+  conditions:
+  - type: action
+    entity_id: light.office_ceiling
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ chhat office 60
+  - chhat office 60
+- name: light.office_ceiling_bright_80
+  conditions:
+  - type: action
+    entity_id: light.office_ceiling
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ chhat office 80
+  - chhat office 80
+- name: light.office_ceiling_bright_100
+  conditions:
+  - type: action
+    entity_id: light.office_ceiling
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ chhat office 100
+  - chhat office 100
+- name: light.garden_on
+  conditions:
+  - type: action
+    entity_id: light.garden
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ garden
+  - ਰੋਸ਼ਨੀ garden ਚਾਲੂ
+- name: light.garden_off
+  conditions:
+  - type: action
+    entity_id: light.garden
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ garden
+  - ਰੋਸ਼ਨੀ garden ਬੰਦ
+- name: light.garden_bright_20
+  conditions:
+  - type: action
+    entity_id: light.garden
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garden 20
+  - ਰੋਸ਼ਨੀ garden 20
+- name: light.garden_bright_40
+  conditions:
+  - type: action
+    entity_id: light.garden
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garden 40
+  - ਰੋਸ਼ਨੀ garden 40
+- name: light.garden_bright_50
+  conditions:
+  - type: action
+    entity_id: light.garden
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garden 50
+  - ਰੋਸ਼ਨੀ garden 50
+- name: light.garden_bright_60
+  conditions:
+  - type: action
+    entity_id: light.garden
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garden 60
+  - ਰੋਸ਼ਨੀ garden 60
+- name: light.garden_bright_80
+  conditions:
+  - type: action
+    entity_id: light.garden
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garden 80
+  - ਰੋਸ਼ਨੀ garden 80
+- name: light.garden_bright_100
+  conditions:
+  - type: action
+    entity_id: light.garden
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garden 100
+  - ਰੋਸ਼ਨੀ garden 100
+- name: light.basement_on
+  conditions:
+  - type: action
+    entity_id: light.basement
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ basement
+  - ਰੋਸ਼ਨੀ basement ਚਾਲੂ
+- name: light.basement_off
+  conditions:
+  - type: action
+    entity_id: light.basement
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ basement
+  - ਰੋਸ਼ਨੀ basement ਬੰਦ
+- name: light.basement_bright_20
+  conditions:
+  - type: action
+    entity_id: light.basement
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ basement 20
+  - ਰੋਸ਼ਨੀ basement 20
+- name: light.basement_bright_40
+  conditions:
+  - type: action
+    entity_id: light.basement
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ basement 40
+  - ਰੋਸ਼ਨੀ basement 40
+- name: light.basement_bright_50
+  conditions:
+  - type: action
+    entity_id: light.basement
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ basement 50
+  - ਰੋਸ਼ਨੀ basement 50
+- name: light.basement_bright_60
+  conditions:
+  - type: action
+    entity_id: light.basement
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ basement 60
+  - ਰੋਸ਼ਨੀ basement 60
+- name: light.basement_bright_80
+  conditions:
+  - type: action
+    entity_id: light.basement
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ basement 80
+  - ਰੋਸ਼ਨੀ basement 80
+- name: light.basement_bright_100
+  conditions:
+  - type: action
+    entity_id: light.basement
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ basement 100
+  - ਰੋਸ਼ਨੀ basement 100
+- name: light.hallway_light_on
+  conditions:
+  - type: action
+    entity_id: light.hallway_light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ hallway
+  - ਰੋਸ਼ਨੀ hallway ਚਾਲੂ
+- name: light.hallway_light_off
+  conditions:
+  - type: action
+    entity_id: light.hallway_light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ hallway
+  - ਰੋਸ਼ਨੀ hallway ਬੰਦ
+- name: light.hallway_light_bright_20
+  conditions:
+  - type: action
+    entity_id: light.hallway_light
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ hallway 20
+  - ਰੋਸ਼ਨੀ hallway 20
+- name: light.hallway_light_bright_40
+  conditions:
+  - type: action
+    entity_id: light.hallway_light
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ hallway 40
+  - ਰੋਸ਼ਨੀ hallway 40
+- name: light.hallway_light_bright_50
+  conditions:
+  - type: action
+    entity_id: light.hallway_light
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ hallway 50
+  - ਰੋਸ਼ਨੀ hallway 50
+- name: light.hallway_light_bright_60
+  conditions:
+  - type: action
+    entity_id: light.hallway_light
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ hallway 60
+  - ਰੋਸ਼ਨੀ hallway 60
+- name: light.hallway_light_bright_80
+  conditions:
+  - type: action
+    entity_id: light.hallway_light
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ hallway 80
+  - ਰੋਸ਼ਨੀ hallway 80
+- name: light.hallway_light_bright_100
+  conditions:
+  - type: action
+    entity_id: light.hallway_light
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ hallway 100
+  - ਰੋਸ਼ਨੀ hallway 100
+- name: light.family_ceiling_on
+  conditions:
+  - type: action
+    entity_id: light.family_ceiling
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ chhat parivarak
+  - chhat parivarak ਚਾਲੂ
+- name: light.family_ceiling_off
+  conditions:
+  - type: action
+    entity_id: light.family_ceiling
+    state: 'off'
+  sentences:
+  - ਬੰਦ chhat parivarak
+  - chhat parivarak ਬੰਦ
+- name: light.family_ceiling_bright_20
+  conditions:
+  - type: action
+    entity_id: light.family_ceiling
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ chhat parivarak 20
+  - chhat parivarak 20
+- name: light.family_ceiling_bright_40
+  conditions:
+  - type: action
+    entity_id: light.family_ceiling
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ chhat parivarak 40
+  - chhat parivarak 40
+- name: light.family_ceiling_bright_50
+  conditions:
+  - type: action
+    entity_id: light.family_ceiling
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ chhat parivarak 50
+  - chhat parivarak 50
+- name: light.family_ceiling_bright_60
+  conditions:
+  - type: action
+    entity_id: light.family_ceiling
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ chhat parivarak 60
+  - chhat parivarak 60
+- name: light.family_ceiling_bright_80
+  conditions:
+  - type: action
+    entity_id: light.family_ceiling
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ chhat parivarak 80
+  - chhat parivarak 80
+- name: light.family_ceiling_bright_100
+  conditions:
+  - type: action
+    entity_id: light.family_ceiling
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ chhat parivarak 100
+  - chhat parivarak 100
+- name: light.dining_pendant_on
+  conditions:
+  - type: action
+    entity_id: light.dining_pendant
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ parivarakess
+  - ਰੋਸ਼ਨੀ parivarakess ਚਾਲੂ
+- name: light.dining_pendant_off
+  conditions:
+  - type: action
+    entity_id: light.dining_pendant
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ parivarakess
+  - ਰੋਸ਼ਨੀ parivarakess ਬੰਦ
+- name: light.dining_pendant_bright_20
+  conditions:
+  - type: action
+    entity_id: light.dining_pendant
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarakess 20
+  - ਰੋਸ਼ਨੀ parivarakess 20
+- name: light.dining_pendant_bright_40
+  conditions:
+  - type: action
+    entity_id: light.dining_pendant
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarakess 40
+  - ਰੋਸ਼ਨੀ parivarakess 40
+- name: light.dining_pendant_bright_50
+  conditions:
+  - type: action
+    entity_id: light.dining_pendant
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarakess 50
+  - ਰੋਸ਼ਨੀ parivarakess 50
+- name: light.dining_pendant_bright_60
+  conditions:
+  - type: action
+    entity_id: light.dining_pendant
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarakess 60
+  - ਰੋਸ਼ਨੀ parivarakess 60
+- name: light.dining_pendant_bright_80
+  conditions:
+  - type: action
+    entity_id: light.dining_pendant
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarakess 80
+  - ਰੋਸ਼ਨੀ parivarakess 80
+- name: light.dining_pendant_bright_100
+  conditions:
+  - type: action
+    entity_id: light.dining_pendant
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarakess 100
+  - ਰੋਸ਼ਨੀ parivarakess 100
+- name: light.garage_light_on
+  conditions:
+  - type: action
+    entity_id: light.garage_light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ garage
+  - ਰੋਸ਼ਨੀ garage ਚਾਲੂ
+- name: light.garage_light_off
+  conditions:
+  - type: action
+    entity_id: light.garage_light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ garage
+  - ਰੋਸ਼ਨੀ garage ਬੰਦ
+- name: light.garage_light_bright_20
+  conditions:
+  - type: action
+    entity_id: light.garage_light
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garage 20
+  - ਰੋਸ਼ਨੀ garage 20
+- name: light.garage_light_bright_40
+  conditions:
+  - type: action
+    entity_id: light.garage_light
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garage 40
+  - ਰੋਸ਼ਨੀ garage 40
+- name: light.garage_light_bright_50
+  conditions:
+  - type: action
+    entity_id: light.garage_light
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garage 50
+  - ਰੋਸ਼ਨੀ garage 50
+- name: light.garage_light_bright_60
+  conditions:
+  - type: action
+    entity_id: light.garage_light
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garage 60
+  - ਰੋਸ਼ਨੀ garage 60
+- name: light.garage_light_bright_80
+  conditions:
+  - type: action
+    entity_id: light.garage_light
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garage 80
+  - ਰੋਸ਼ਨੀ garage 80
+- name: light.garage_light_bright_100
+  conditions:
+  - type: action
+    entity_id: light.garage_light
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garage 100
+  - ਰੋਸ਼ਨੀ garage 100
+- name: light.bedroom2_ceiling_on
+  conditions:
+  - type: action
+    entity_id: light.bedroom2_ceiling
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ chhat bedroom2
+  - chhat bedroom2 ਚਾਲੂ
+- name: light.bedroom2_ceiling_off
+  conditions:
+  - type: action
+    entity_id: light.bedroom2_ceiling
+    state: 'off'
+  sentences:
+  - ਬੰਦ chhat bedroom2
+  - chhat bedroom2 ਬੰਦ
+- name: light.bedroom2_ceiling_bright_20
+  conditions:
+  - type: action
+    entity_id: light.bedroom2_ceiling
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ chhat bedroom2 20
+  - chhat bedroom2 20
+- name: light.bedroom2_ceiling_bright_40
+  conditions:
+  - type: action
+    entity_id: light.bedroom2_ceiling
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ chhat bedroom2 40
+  - chhat bedroom2 40
+- name: light.bedroom2_ceiling_bright_50
+  conditions:
+  - type: action
+    entity_id: light.bedroom2_ceiling
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ chhat bedroom2 50
+  - chhat bedroom2 50
+- name: light.bedroom2_ceiling_bright_60
+  conditions:
+  - type: action
+    entity_id: light.bedroom2_ceiling
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ chhat bedroom2 60
+  - chhat bedroom2 60
+- name: light.bedroom2_ceiling_bright_80
+  conditions:
+  - type: action
+    entity_id: light.bedroom2_ceiling
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ chhat bedroom2 80
+  - chhat bedroom2 80
+- name: light.bedroom2_ceiling_bright_100
+  conditions:
+  - type: action
+    entity_id: light.bedroom2_ceiling
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ chhat bedroom2 100
+  - chhat bedroom2 100
+- name: light.bedroom3_ceiling_on
+  conditions:
+  - type: action
+    entity_id: light.bedroom3_ceiling
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ chhat bedroom3
+  - chhat bedroom3 ਚਾਲੂ
+- name: light.bedroom3_ceiling_off
+  conditions:
+  - type: action
+    entity_id: light.bedroom3_ceiling
+    state: 'off'
+  sentences:
+  - ਬੰਦ chhat bedroom3
+  - chhat bedroom3 ਬੰਦ
+- name: light.bedroom3_ceiling_bright_20
+  conditions:
+  - type: action
+    entity_id: light.bedroom3_ceiling
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ chhat bedroom3 20
+  - chhat bedroom3 20
+- name: light.bedroom3_ceiling_bright_40
+  conditions:
+  - type: action
+    entity_id: light.bedroom3_ceiling
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ chhat bedroom3 40
+  - chhat bedroom3 40
+- name: light.bedroom3_ceiling_bright_50
+  conditions:
+  - type: action
+    entity_id: light.bedroom3_ceiling
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ chhat bedroom3 50
+  - chhat bedroom3 50
+- name: light.bedroom3_ceiling_bright_60
+  conditions:
+  - type: action
+    entity_id: light.bedroom3_ceiling
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ chhat bedroom3 60
+  - chhat bedroom3 60
+- name: light.bedroom3_ceiling_bright_80
+  conditions:
+  - type: action
+    entity_id: light.bedroom3_ceiling
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ chhat bedroom3 80
+  - chhat bedroom3 80
+- name: light.bedroom3_ceiling_bright_100
+  conditions:
+  - type: action
+    entity_id: light.bedroom3_ceiling
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ chhat bedroom3 100
+  - chhat bedroom3 100
+- name: light.bedroom4_ceiling_on
+  conditions:
+  - type: action
+    entity_id: light.bedroom4_ceiling
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ chhat bedroom4
+  - chhat bedroom4 ਚਾਲੂ
+- name: light.bedroom4_ceiling_off
+  conditions:
+  - type: action
+    entity_id: light.bedroom4_ceiling
+    state: 'off'
+  sentences:
+  - ਬੰਦ chhat bedroom4
+  - chhat bedroom4 ਬੰਦ
+- name: light.bedroom4_ceiling_bright_20
+  conditions:
+  - type: action
+    entity_id: light.bedroom4_ceiling
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ chhat bedroom4 20
+  - chhat bedroom4 20
+- name: light.bedroom4_ceiling_bright_40
+  conditions:
+  - type: action
+    entity_id: light.bedroom4_ceiling
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ chhat bedroom4 40
+  - chhat bedroom4 40
+- name: light.bedroom4_ceiling_bright_50
+  conditions:
+  - type: action
+    entity_id: light.bedroom4_ceiling
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ chhat bedroom4 50
+  - chhat bedroom4 50
+- name: light.bedroom4_ceiling_bright_60
+  conditions:
+  - type: action
+    entity_id: light.bedroom4_ceiling
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ chhat bedroom4 60
+  - chhat bedroom4 60
+- name: light.bedroom4_ceiling_bright_80
+  conditions:
+  - type: action
+    entity_id: light.bedroom4_ceiling
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ chhat bedroom4 80
+  - chhat bedroom4 80
+- name: light.bedroom4_ceiling_bright_100
+  conditions:
+  - type: action
+    entity_id: light.bedroom4_ceiling
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ chhat bedroom4 100
+  - chhat bedroom4 100
+- name: light.entryway_light_on
+  conditions:
+  - type: action
+    entity_id: light.entryway_light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ dakhla
+  - ਰੋਸ਼ਨੀ dakhla ਚਾਲੂ
+- name: light.entryway_light_off
+  conditions:
+  - type: action
+    entity_id: light.entryway_light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ dakhla
+  - ਰੋਸ਼ਨੀ dakhla ਬੰਦ
+- name: light.entryway_light_bright_20
+  conditions:
+  - type: action
+    entity_id: light.entryway_light
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dakhla 20
+  - ਰੋਸ਼ਨੀ dakhla 20
+- name: light.entryway_light_bright_40
+  conditions:
+  - type: action
+    entity_id: light.entryway_light
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dakhla 40
+  - ਰੋਸ਼ਨੀ dakhla 40
+- name: light.entryway_light_bright_50
+  conditions:
+  - type: action
+    entity_id: light.entryway_light
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dakhla 50
+  - ਰੋਸ਼ਨੀ dakhla 50
+- name: light.entryway_light_bright_60
+  conditions:
+  - type: action
+    entity_id: light.entryway_light
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dakhla 60
+  - ਰੋਸ਼ਨੀ dakhla 60
+- name: light.entryway_light_bright_80
+  conditions:
+  - type: action
+    entity_id: light.entryway_light
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dakhla 80
+  - ਰੋਸ਼ਨੀ dakhla 80
+- name: light.entryway_light_bright_100
+  conditions:
+  - type: action
+    entity_id: light.entryway_light
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dakhla 100
+  - ਰੋਸ਼ਨੀ dakhla 100
+- name: light.laundry_light_on
+  conditions:
+  - type: action
+    entity_id: light.laundry_light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ dhon
+  - ਰੋਸ਼ਨੀ dhon ਚਾਲੂ
+- name: light.laundry_light_off
+  conditions:
+  - type: action
+    entity_id: light.laundry_light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ dhon
+  - ਰੋਸ਼ਨੀ dhon ਬੰਦ
+- name: light.laundry_light_bright_20
+  conditions:
+  - type: action
+    entity_id: light.laundry_light
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dhon 20
+  - ਰੋਸ਼ਨੀ dhon 20
+- name: light.laundry_light_bright_40
+  conditions:
+  - type: action
+    entity_id: light.laundry_light
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dhon 40
+  - ਰੋਸ਼ਨੀ dhon 40
+- name: light.laundry_light_bright_50
+  conditions:
+  - type: action
+    entity_id: light.laundry_light
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dhon 50
+  - ਰੋਸ਼ਨੀ dhon 50
+- name: light.laundry_light_bright_60
+  conditions:
+  - type: action
+    entity_id: light.laundry_light
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dhon 60
+  - ਰੋਸ਼ਨੀ dhon 60
+- name: light.laundry_light_bright_80
+  conditions:
+  - type: action
+    entity_id: light.laundry_light
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dhon 80
+  - ਰੋਸ਼ਨੀ dhon 80
+- name: light.laundry_light_bright_100
+  conditions:
+  - type: action
+    entity_id: light.laundry_light
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dhon 100
+  - ਰੋਸ਼ਨੀ dhon 100
+- name: light.main_bath_light_on
+  conditions:
+  - type: action
+    entity_id: light.main_bath_light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ main bath
+  - ਰੋਸ਼ਨੀ main bath ਚਾਲੂ
+- name: light.main_bath_light_off
+  conditions:
+  - type: action
+    entity_id: light.main_bath_light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ main bath
+  - ਰੋਸ਼ਨੀ main bath ਬੰਦ
+- name: light.main_bath_light_bright_20
+  conditions:
+  - type: action
+    entity_id: light.main_bath_light
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ main bath 20
+  - ਰੋਸ਼ਨੀ main bath 20
+- name: light.main_bath_light_bright_40
+  conditions:
+  - type: action
+    entity_id: light.main_bath_light
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ main bath 40
+  - ਰੋਸ਼ਨੀ main bath 40
+- name: light.main_bath_light_bright_50
+  conditions:
+  - type: action
+    entity_id: light.main_bath_light
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ main bath 50
+  - ਰੋਸ਼ਨੀ main bath 50
+- name: light.main_bath_light_bright_60
+  conditions:
+  - type: action
+    entity_id: light.main_bath_light
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ main bath 60
+  - ਰੋਸ਼ਨੀ main bath 60
+- name: light.main_bath_light_bright_80
+  conditions:
+  - type: action
+    entity_id: light.main_bath_light
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ main bath 80
+  - ਰੋਸ਼ਨੀ main bath 80
+- name: light.main_bath_light_bright_100
+  conditions:
+  - type: action
+    entity_id: light.main_bath_light
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ main bath 100
+  - ਰੋਸ਼ਨੀ main bath 100
+- name: light.powder_room_light_on
+  conditions:
+  - type: action
+    entity_id: light.powder_room_light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ toilet
+  - ਰੋਸ਼ਨੀ toilet ਚਾਲੂ
+- name: light.powder_room_light_off
+  conditions:
+  - type: action
+    entity_id: light.powder_room_light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ toilet
+  - ਰੋਸ਼ਨੀ toilet ਬੰਦ
+- name: light.powder_room_light_bright_20
+  conditions:
+  - type: action
+    entity_id: light.powder_room_light
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ toilet 20
+  - ਰੋਸ਼ਨੀ toilet 20
+- name: light.powder_room_light_bright_40
+  conditions:
+  - type: action
+    entity_id: light.powder_room_light
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ toilet 40
+  - ਰੋਸ਼ਨੀ toilet 40
+- name: light.powder_room_light_bright_50
+  conditions:
+  - type: action
+    entity_id: light.powder_room_light
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ toilet 50
+  - ਰੋਸ਼ਨੀ toilet 50
+- name: light.powder_room_light_bright_60
+  conditions:
+  - type: action
+    entity_id: light.powder_room_light
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ toilet 60
+  - ਰੋਸ਼ਨੀ toilet 60
+- name: light.powder_room_light_bright_80
+  conditions:
+  - type: action
+    entity_id: light.powder_room_light
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ toilet 80
+  - ਰੋਸ਼ਨੀ toilet 80
+- name: light.powder_room_light_bright_100
+  conditions:
+  - type: action
+    entity_id: light.powder_room_light
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ toilet 100
+  - ਰੋਸ਼ਨੀ toilet 100
+- name: light.master_ensuite_on
+  conditions:
+  - type: action
+    entity_id: light.master_ensuite
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ensuite bedroommaster
+  - ensuite bedroommaster ਚਾਲੂ
+- name: light.master_ensuite_off
+  conditions:
+  - type: action
+    entity_id: light.master_ensuite
+    state: 'off'
+  sentences:
+  - ਬੰਦ ensuite bedroommaster
+  - ensuite bedroommaster ਬੰਦ
+- name: light.master_ensuite_bright_20
+  conditions:
+  - type: action
+    entity_id: light.master_ensuite
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ ensuite bedroommaster 20
+  - ensuite bedroommaster 20
+- name: light.master_ensuite_bright_40
+  conditions:
+  - type: action
+    entity_id: light.master_ensuite
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ ensuite bedroommaster 40
+  - ensuite bedroommaster 40
+- name: light.master_ensuite_bright_50
+  conditions:
+  - type: action
+    entity_id: light.master_ensuite
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ ensuite bedroommaster 50
+  - ensuite bedroommaster 50
+- name: light.master_ensuite_bright_60
+  conditions:
+  - type: action
+    entity_id: light.master_ensuite
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ ensuite bedroommaster 60
+  - ensuite bedroommaster 60
+- name: light.master_ensuite_bright_80
+  conditions:
+  - type: action
+    entity_id: light.master_ensuite
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ ensuite bedroommaster 80
+  - ensuite bedroommaster 80
+- name: light.master_ensuite_bright_100
+  conditions:
+  - type: action
+    entity_id: light.master_ensuite
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ ensuite bedroommaster 100
+  - ensuite bedroommaster 100
+- name: light.master_bedside_right_on
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_right
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ palang bedroommaster
+  - palang bedroommaster ਚਾਲੂ
+- name: light.master_bedside_right_off
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_right
+    state: 'off'
+  sentences:
+  - ਬੰਦ palang bedroommaster
+  - palang bedroommaster ਬੰਦ
+- name: light.master_bedside_right_bright_20
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_right
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ palang bedroommaster 20
+  - palang bedroommaster 20
+- name: light.master_bedside_right_bright_40
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_right
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ palang bedroommaster 40
+  - palang bedroommaster 40
+- name: light.master_bedside_right_bright_50
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_right
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ palang bedroommaster 50
+  - palang bedroommaster 50
+- name: light.master_bedside_right_bright_60
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_right
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ palang bedroommaster 60
+  - palang bedroommaster 60
+- name: light.master_bedside_right_bright_80
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_right
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ palang bedroommaster 80
+  - palang bedroommaster 80
+- name: light.master_bedside_right_bright_100
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_right
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ palang bedroommaster 100
+  - palang bedroommaster 100
+- name: light.master_bath_light_on
+  conditions:
+  - type: action
+    entity_id: light.master_bath_light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ masterbath
+  - ਰੋਸ਼ਨੀ masterbath ਚਾਲੂ
+- name: light.master_bath_light_off
+  conditions:
+  - type: action
+    entity_id: light.master_bath_light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਰੋਸ਼ਨੀ masterbath
+  - ਰੋਸ਼ਨੀ masterbath ਬੰਦ
+- name: light.master_bath_light_bright_20
+  conditions:
+  - type: action
+    entity_id: light.master_bath_light
+    attributes:
+      brightness: 20
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ masterbath 20
+  - ਰੋਸ਼ਨੀ masterbath 20
+- name: light.master_bath_light_bright_40
+  conditions:
+  - type: action
+    entity_id: light.master_bath_light
+    attributes:
+      brightness: 40
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ masterbath 40
+  - ਰੋਸ਼ਨੀ masterbath 40
+- name: light.master_bath_light_bright_50
+  conditions:
+  - type: action
+    entity_id: light.master_bath_light
+    attributes:
+      brightness: 50
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ masterbath 50
+  - ਰੋਸ਼ਨੀ masterbath 50
+- name: light.master_bath_light_bright_60
+  conditions:
+  - type: action
+    entity_id: light.master_bath_light
+    attributes:
+      brightness: 60
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ masterbath 60
+  - ਰੋਸ਼ਨੀ masterbath 60
+- name: light.master_bath_light_bright_80
+  conditions:
+  - type: action
+    entity_id: light.master_bath_light
+    attributes:
+      brightness: 80
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ masterbath 80
+  - ਰੋਸ਼ਨੀ masterbath 80
+- name: light.master_bath_light_bright_100
+  conditions:
+  - type: action
+    entity_id: light.master_bath_light
+    attributes:
+      brightness: 100
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ masterbath 100
+  - ਰੋਸ਼ਨੀ masterbath 100
+- name: light.living_ceiling_red
+  conditions:
+  - type: action
+    entity_id: light.living_ceiling
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ chhat ਬੈਠਕ red
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਬੈਠਕ red
+- name: light.living_ceiling_blue
+  conditions:
+  - type: action
+    entity_id: light.living_ceiling
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ chhat ਬੈਠਕ blue
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਬੈਠਕ blue
+- name: light.living_ceiling_green
+  conditions:
+  - type: action
+    entity_id: light.living_ceiling
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ chhat ਬੈਠਕ green
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਬੈਠਕ green
+- name: light.living_ceiling_white
+  conditions:
+  - type: action
+    entity_id: light.living_ceiling
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ chhat ਬੈਠਕ white
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਬੈਠਕ white
+- name: light.living_ceiling_yellow
+  conditions:
+  - type: action
+    entity_id: light.living_ceiling
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ chhat ਬੈਠਕ yellow
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਬੈਠਕ yellow
+- name: light.living_ceiling_black
+  conditions:
+  - type: action
+    entity_id: light.living_ceiling
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ chhat ਬੈਠਕ black
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਬੈਠਕ black
+- name: light.living_lamp_red
+  conditions:
+  - type: action
+    entity_id: light.living_lamp
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ roshni ਬੈਠਕ red
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਬੈਠਕ red
+- name: light.living_lamp_blue
+  conditions:
+  - type: action
+    entity_id: light.living_lamp
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ roshni ਬੈਠਕ blue
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਬੈਠਕ blue
+- name: light.living_lamp_green
+  conditions:
+  - type: action
+    entity_id: light.living_lamp
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ roshni ਬੈਠਕ green
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਬੈਠਕ green
+- name: light.living_lamp_white
+  conditions:
+  - type: action
+    entity_id: light.living_lamp
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ roshni ਬੈਠਕ white
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਬੈਠਕ white
+- name: light.living_lamp_yellow
+  conditions:
+  - type: action
+    entity_id: light.living_lamp
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ roshni ਬੈਠਕ yellow
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਬੈਠਕ yellow
+- name: light.living_lamp_black
+  conditions:
+  - type: action
+    entity_id: light.living_lamp
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ roshni ਬੈਠਕ black
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਬੈਠਕ black
+- name: light.kitchen_ceiling_red
+  conditions:
+  - type: action
+    entity_id: light.kitchen_ceiling
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ chhat ਰਸੋਈ red
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਰਸੋਈ red
+- name: light.kitchen_ceiling_blue
+  conditions:
+  - type: action
+    entity_id: light.kitchen_ceiling
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ chhat ਰਸੋਈ blue
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਰਸੋਈ blue
+- name: light.kitchen_ceiling_green
+  conditions:
+  - type: action
+    entity_id: light.kitchen_ceiling
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ chhat ਰਸੋਈ green
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਰਸੋਈ green
+- name: light.kitchen_ceiling_white
+  conditions:
+  - type: action
+    entity_id: light.kitchen_ceiling
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ chhat ਰਸੋਈ white
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਰਸੋਈ white
+- name: light.kitchen_ceiling_yellow
+  conditions:
+  - type: action
+    entity_id: light.kitchen_ceiling
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ chhat ਰਸੋਈ yellow
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਰਸੋਈ yellow
+- name: light.kitchen_ceiling_black
+  conditions:
+  - type: action
+    entity_id: light.kitchen_ceiling
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ chhat ਰਸੋਈ black
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਰਸੋਈ black
+- name: light.kitchen_island_red
+  conditions:
+  - type: action
+    entity_id: light.kitchen_island
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ tapu ਰਸੋਈ red
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਰਸੋਈ red
+- name: light.kitchen_island_blue
+  conditions:
+  - type: action
+    entity_id: light.kitchen_island
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ tapu ਰਸੋਈ blue
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਰਸੋਈ blue
+- name: light.kitchen_island_green
+  conditions:
+  - type: action
+    entity_id: light.kitchen_island
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ tapu ਰਸੋਈ green
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਰਸੋਈ green
+- name: light.kitchen_island_white
+  conditions:
+  - type: action
+    entity_id: light.kitchen_island
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ tapu ਰਸੋਈ white
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਰਸੋਈ white
+- name: light.kitchen_island_yellow
+  conditions:
+  - type: action
+    entity_id: light.kitchen_island
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ tapu ਰਸੋਈ yellow
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਰਸੋਈ yellow
+- name: light.kitchen_island_black
+  conditions:
+  - type: action
+    entity_id: light.kitchen_island
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ tapu ਰਸੋਈ black
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ ਰਸੋਈ black
+- name: light.master_ceiling_red
+  conditions:
+  - type: action
+    entity_id: light.master_ceiling
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ chhat bedroommaster red
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster red
+- name: light.master_ceiling_blue
+  conditions:
+  - type: action
+    entity_id: light.master_ceiling
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ chhat bedroommaster blue
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster blue
+- name: light.master_ceiling_green
+  conditions:
+  - type: action
+    entity_id: light.master_ceiling
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ chhat bedroommaster green
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster green
+- name: light.master_ceiling_white
+  conditions:
+  - type: action
+    entity_id: light.master_ceiling
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ chhat bedroommaster white
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster white
+- name: light.master_ceiling_yellow
+  conditions:
+  - type: action
+    entity_id: light.master_ceiling
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ chhat bedroommaster yellow
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster yellow
+- name: light.master_ceiling_black
+  conditions:
+  - type: action
+    entity_id: light.master_ceiling
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ chhat bedroommaster black
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster black
+- name: light.master_bedside_left_red
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_left
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ palang bedroommaster red
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster red
+- name: light.master_bedside_left_blue
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_left
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ palang bedroommaster blue
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster blue
+- name: light.master_bedside_left_green
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_left
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ palang bedroommaster green
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster green
+- name: light.master_bedside_left_white
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_left
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ palang bedroommaster white
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster white
+- name: light.master_bedside_left_yellow
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_left
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ palang bedroommaster yellow
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster yellow
+- name: light.master_bedside_left_black
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_left
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ palang bedroommaster black
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster black
+- name: light.office_ceiling_red
+  conditions:
+  - type: action
+    entity_id: light.office_ceiling
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ chhat office red
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ office red
+- name: light.office_ceiling_blue
+  conditions:
+  - type: action
+    entity_id: light.office_ceiling
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ chhat office blue
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ office blue
+- name: light.office_ceiling_green
+  conditions:
+  - type: action
+    entity_id: light.office_ceiling
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ chhat office green
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ office green
+- name: light.office_ceiling_white
+  conditions:
+  - type: action
+    entity_id: light.office_ceiling
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ chhat office white
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ office white
+- name: light.office_ceiling_yellow
+  conditions:
+  - type: action
+    entity_id: light.office_ceiling
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ chhat office yellow
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ office yellow
+- name: light.office_ceiling_black
+  conditions:
+  - type: action
+    entity_id: light.office_ceiling
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ chhat office black
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ office black
+- name: light.garden_red
+  conditions:
+  - type: action
+    entity_id: light.garden
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garden red
+  - ਰੋਸ਼ਨੀ garden red
+- name: light.garden_blue
+  conditions:
+  - type: action
+    entity_id: light.garden
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garden blue
+  - ਰੋਸ਼ਨੀ garden blue
+- name: light.garden_green
+  conditions:
+  - type: action
+    entity_id: light.garden
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garden green
+  - ਰੋਸ਼ਨੀ garden green
+- name: light.garden_white
+  conditions:
+  - type: action
+    entity_id: light.garden
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garden white
+  - ਰੋਸ਼ਨੀ garden white
+- name: light.garden_yellow
+  conditions:
+  - type: action
+    entity_id: light.garden
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garden yellow
+  - ਰੋਸ਼ਨੀ garden yellow
+- name: light.garden_black
+  conditions:
+  - type: action
+    entity_id: light.garden
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garden black
+  - ਰੋਸ਼ਨੀ garden black
+- name: light.basement_red
+  conditions:
+  - type: action
+    entity_id: light.basement
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ basement red
+  - ਰੋਸ਼ਨੀ basement red
+- name: light.basement_blue
+  conditions:
+  - type: action
+    entity_id: light.basement
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ basement blue
+  - ਰੋਸ਼ਨੀ basement blue
+- name: light.basement_green
+  conditions:
+  - type: action
+    entity_id: light.basement
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ basement green
+  - ਰੋਸ਼ਨੀ basement green
+- name: light.basement_white
+  conditions:
+  - type: action
+    entity_id: light.basement
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ basement white
+  - ਰੋਸ਼ਨੀ basement white
+- name: light.basement_yellow
+  conditions:
+  - type: action
+    entity_id: light.basement
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ basement yellow
+  - ਰੋਸ਼ਨੀ basement yellow
+- name: light.basement_black
+  conditions:
+  - type: action
+    entity_id: light.basement
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ basement black
+  - ਰੋਸ਼ਨੀ basement black
+- name: light.hallway_light_red
+  conditions:
+  - type: action
+    entity_id: light.hallway_light
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ hallway red
+  - ਰੋਸ਼ਨੀ hallway red
+- name: light.hallway_light_blue
+  conditions:
+  - type: action
+    entity_id: light.hallway_light
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ hallway blue
+  - ਰੋਸ਼ਨੀ hallway blue
+- name: light.hallway_light_green
+  conditions:
+  - type: action
+    entity_id: light.hallway_light
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ hallway green
+  - ਰੋਸ਼ਨੀ hallway green
+- name: light.hallway_light_white
+  conditions:
+  - type: action
+    entity_id: light.hallway_light
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ hallway white
+  - ਰੋਸ਼ਨੀ hallway white
+- name: light.hallway_light_yellow
+  conditions:
+  - type: action
+    entity_id: light.hallway_light
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ hallway yellow
+  - ਰੋਸ਼ਨੀ hallway yellow
+- name: light.hallway_light_black
+  conditions:
+  - type: action
+    entity_id: light.hallway_light
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ hallway black
+  - ਰੋਸ਼ਨੀ hallway black
+- name: light.family_ceiling_red
+  conditions:
+  - type: action
+    entity_id: light.family_ceiling
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ chhat parivarak red
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarak red
+- name: light.family_ceiling_blue
+  conditions:
+  - type: action
+    entity_id: light.family_ceiling
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ chhat parivarak blue
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarak blue
+- name: light.family_ceiling_green
+  conditions:
+  - type: action
+    entity_id: light.family_ceiling
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ chhat parivarak green
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarak green
+- name: light.family_ceiling_white
+  conditions:
+  - type: action
+    entity_id: light.family_ceiling
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ chhat parivarak white
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarak white
+- name: light.family_ceiling_yellow
+  conditions:
+  - type: action
+    entity_id: light.family_ceiling
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ chhat parivarak yellow
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarak yellow
+- name: light.family_ceiling_black
+  conditions:
+  - type: action
+    entity_id: light.family_ceiling
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ chhat parivarak black
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarak black
+- name: light.dining_pendant_red
+  conditions:
+  - type: action
+    entity_id: light.dining_pendant
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarakess red
+  - ਰੋਸ਼ਨੀ parivarakess red
+- name: light.dining_pendant_blue
+  conditions:
+  - type: action
+    entity_id: light.dining_pendant
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarakess blue
+  - ਰੋਸ਼ਨੀ parivarakess blue
+- name: light.dining_pendant_green
+  conditions:
+  - type: action
+    entity_id: light.dining_pendant
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarakess green
+  - ਰੋਸ਼ਨੀ parivarakess green
+- name: light.dining_pendant_white
+  conditions:
+  - type: action
+    entity_id: light.dining_pendant
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarakess white
+  - ਰੋਸ਼ਨੀ parivarakess white
+- name: light.dining_pendant_yellow
+  conditions:
+  - type: action
+    entity_id: light.dining_pendant
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarakess yellow
+  - ਰੋਸ਼ਨੀ parivarakess yellow
+- name: light.dining_pendant_black
+  conditions:
+  - type: action
+    entity_id: light.dining_pendant
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ parivarakess black
+  - ਰੋਸ਼ਨੀ parivarakess black
+- name: light.garage_light_red
+  conditions:
+  - type: action
+    entity_id: light.garage_light
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garage red
+  - ਰੋਸ਼ਨੀ garage red
+- name: light.garage_light_blue
+  conditions:
+  - type: action
+    entity_id: light.garage_light
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garage blue
+  - ਰੋਸ਼ਨੀ garage blue
+- name: light.garage_light_green
+  conditions:
+  - type: action
+    entity_id: light.garage_light
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garage green
+  - ਰੋਸ਼ਨੀ garage green
+- name: light.garage_light_white
+  conditions:
+  - type: action
+    entity_id: light.garage_light
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garage white
+  - ਰੋਸ਼ਨੀ garage white
+- name: light.garage_light_yellow
+  conditions:
+  - type: action
+    entity_id: light.garage_light
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garage yellow
+  - ਰੋਸ਼ਨੀ garage yellow
+- name: light.garage_light_black
+  conditions:
+  - type: action
+    entity_id: light.garage_light
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ garage black
+  - ਰੋਸ਼ਨੀ garage black
+- name: light.bedroom2_ceiling_red
+  conditions:
+  - type: action
+    entity_id: light.bedroom2_ceiling
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ chhat bedroom2 red
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom2 red
+- name: light.bedroom2_ceiling_blue
+  conditions:
+  - type: action
+    entity_id: light.bedroom2_ceiling
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ chhat bedroom2 blue
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom2 blue
+- name: light.bedroom2_ceiling_green
+  conditions:
+  - type: action
+    entity_id: light.bedroom2_ceiling
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ chhat bedroom2 green
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom2 green
+- name: light.bedroom2_ceiling_white
+  conditions:
+  - type: action
+    entity_id: light.bedroom2_ceiling
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ chhat bedroom2 white
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom2 white
+- name: light.bedroom2_ceiling_yellow
+  conditions:
+  - type: action
+    entity_id: light.bedroom2_ceiling
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ chhat bedroom2 yellow
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom2 yellow
+- name: light.bedroom2_ceiling_black
+  conditions:
+  - type: action
+    entity_id: light.bedroom2_ceiling
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ chhat bedroom2 black
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom2 black
+- name: light.bedroom3_ceiling_red
+  conditions:
+  - type: action
+    entity_id: light.bedroom3_ceiling
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ chhat bedroom3 red
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom3 red
+- name: light.bedroom3_ceiling_blue
+  conditions:
+  - type: action
+    entity_id: light.bedroom3_ceiling
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ chhat bedroom3 blue
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom3 blue
+- name: light.bedroom3_ceiling_green
+  conditions:
+  - type: action
+    entity_id: light.bedroom3_ceiling
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ chhat bedroom3 green
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom3 green
+- name: light.bedroom3_ceiling_white
+  conditions:
+  - type: action
+    entity_id: light.bedroom3_ceiling
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ chhat bedroom3 white
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom3 white
+- name: light.bedroom3_ceiling_yellow
+  conditions:
+  - type: action
+    entity_id: light.bedroom3_ceiling
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ chhat bedroom3 yellow
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom3 yellow
+- name: light.bedroom3_ceiling_black
+  conditions:
+  - type: action
+    entity_id: light.bedroom3_ceiling
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ chhat bedroom3 black
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom3 black
+- name: light.bedroom4_ceiling_red
+  conditions:
+  - type: action
+    entity_id: light.bedroom4_ceiling
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ chhat bedroom4 red
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom4 red
+- name: light.bedroom4_ceiling_blue
+  conditions:
+  - type: action
+    entity_id: light.bedroom4_ceiling
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ chhat bedroom4 blue
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom4 blue
+- name: light.bedroom4_ceiling_green
+  conditions:
+  - type: action
+    entity_id: light.bedroom4_ceiling
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ chhat bedroom4 green
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom4 green
+- name: light.bedroom4_ceiling_white
+  conditions:
+  - type: action
+    entity_id: light.bedroom4_ceiling
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ chhat bedroom4 white
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom4 white
+- name: light.bedroom4_ceiling_yellow
+  conditions:
+  - type: action
+    entity_id: light.bedroom4_ceiling
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ chhat bedroom4 yellow
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom4 yellow
+- name: light.bedroom4_ceiling_black
+  conditions:
+  - type: action
+    entity_id: light.bedroom4_ceiling
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ chhat bedroom4 black
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroom4 black
+- name: light.entryway_light_red
+  conditions:
+  - type: action
+    entity_id: light.entryway_light
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dakhla red
+  - ਰੋਸ਼ਨੀ dakhla red
+- name: light.entryway_light_blue
+  conditions:
+  - type: action
+    entity_id: light.entryway_light
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dakhla blue
+  - ਰੋਸ਼ਨੀ dakhla blue
+- name: light.entryway_light_green
+  conditions:
+  - type: action
+    entity_id: light.entryway_light
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dakhla green
+  - ਰੋਸ਼ਨੀ dakhla green
+- name: light.entryway_light_white
+  conditions:
+  - type: action
+    entity_id: light.entryway_light
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dakhla white
+  - ਰੋਸ਼ਨੀ dakhla white
+- name: light.entryway_light_yellow
+  conditions:
+  - type: action
+    entity_id: light.entryway_light
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dakhla yellow
+  - ਰੋਸ਼ਨੀ dakhla yellow
+- name: light.entryway_light_black
+  conditions:
+  - type: action
+    entity_id: light.entryway_light
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dakhla black
+  - ਰੋਸ਼ਨੀ dakhla black
+- name: light.laundry_light_red
+  conditions:
+  - type: action
+    entity_id: light.laundry_light
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dhon red
+  - ਰੋਸ਼ਨੀ dhon red
+- name: light.laundry_light_blue
+  conditions:
+  - type: action
+    entity_id: light.laundry_light
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dhon blue
+  - ਰੋਸ਼ਨੀ dhon blue
+- name: light.laundry_light_green
+  conditions:
+  - type: action
+    entity_id: light.laundry_light
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dhon green
+  - ਰੋਸ਼ਨੀ dhon green
+- name: light.laundry_light_white
+  conditions:
+  - type: action
+    entity_id: light.laundry_light
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dhon white
+  - ਰੋਸ਼ਨੀ dhon white
+- name: light.laundry_light_yellow
+  conditions:
+  - type: action
+    entity_id: light.laundry_light
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dhon yellow
+  - ਰੋਸ਼ਨੀ dhon yellow
+- name: light.laundry_light_black
+  conditions:
+  - type: action
+    entity_id: light.laundry_light
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ dhon black
+  - ਰੋਸ਼ਨੀ dhon black
+- name: light.main_bath_light_red
+  conditions:
+  - type: action
+    entity_id: light.main_bath_light
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ main bath red
+  - ਰੋਸ਼ਨੀ main bath red
+- name: light.main_bath_light_blue
+  conditions:
+  - type: action
+    entity_id: light.main_bath_light
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ main bath blue
+  - ਰੋਸ਼ਨੀ main bath blue
+- name: light.main_bath_light_green
+  conditions:
+  - type: action
+    entity_id: light.main_bath_light
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ main bath green
+  - ਰੋਸ਼ਨੀ main bath green
+- name: light.main_bath_light_white
+  conditions:
+  - type: action
+    entity_id: light.main_bath_light
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ main bath white
+  - ਰੋਸ਼ਨੀ main bath white
+- name: light.main_bath_light_yellow
+  conditions:
+  - type: action
+    entity_id: light.main_bath_light
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ main bath yellow
+  - ਰੋਸ਼ਨੀ main bath yellow
+- name: light.main_bath_light_black
+  conditions:
+  - type: action
+    entity_id: light.main_bath_light
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ main bath black
+  - ਰੋਸ਼ਨੀ main bath black
+- name: light.powder_room_light_red
+  conditions:
+  - type: action
+    entity_id: light.powder_room_light
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ toilet red
+  - ਰੋਸ਼ਨੀ toilet red
+- name: light.powder_room_light_blue
+  conditions:
+  - type: action
+    entity_id: light.powder_room_light
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ toilet blue
+  - ਰੋਸ਼ਨੀ toilet blue
+- name: light.powder_room_light_green
+  conditions:
+  - type: action
+    entity_id: light.powder_room_light
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ toilet green
+  - ਰੋਸ਼ਨੀ toilet green
+- name: light.powder_room_light_white
+  conditions:
+  - type: action
+    entity_id: light.powder_room_light
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ toilet white
+  - ਰੋਸ਼ਨੀ toilet white
+- name: light.powder_room_light_yellow
+  conditions:
+  - type: action
+    entity_id: light.powder_room_light
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ toilet yellow
+  - ਰੋਸ਼ਨੀ toilet yellow
+- name: light.powder_room_light_black
+  conditions:
+  - type: action
+    entity_id: light.powder_room_light
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ toilet black
+  - ਰੋਸ਼ਨੀ toilet black
+- name: light.master_ensuite_red
+  conditions:
+  - type: action
+    entity_id: light.master_ensuite
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ ensuite bedroommaster red
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster red
+- name: light.master_ensuite_blue
+  conditions:
+  - type: action
+    entity_id: light.master_ensuite
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ ensuite bedroommaster blue
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster blue
+- name: light.master_ensuite_green
+  conditions:
+  - type: action
+    entity_id: light.master_ensuite
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ ensuite bedroommaster green
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster green
+- name: light.master_ensuite_white
+  conditions:
+  - type: action
+    entity_id: light.master_ensuite
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ ensuite bedroommaster white
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster white
+- name: light.master_ensuite_yellow
+  conditions:
+  - type: action
+    entity_id: light.master_ensuite
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ ensuite bedroommaster yellow
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster yellow
+- name: light.master_ensuite_black
+  conditions:
+  - type: action
+    entity_id: light.master_ensuite
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ ensuite bedroommaster black
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster black
+- name: light.master_bedside_right_red
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_right
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ palang bedroommaster red
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster red
+- name: light.master_bedside_right_blue
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_right
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ palang bedroommaster blue
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster blue
+- name: light.master_bedside_right_green
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_right
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ palang bedroommaster green
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster green
+- name: light.master_bedside_right_white
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_right
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ palang bedroommaster white
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster white
+- name: light.master_bedside_right_yellow
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_right
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ palang bedroommaster yellow
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster yellow
+- name: light.master_bedside_right_black
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_right
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ palang bedroommaster black
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ bedroommaster black
+- name: light.master_bath_light_red
+  conditions:
+  - type: action
+    entity_id: light.master_bath_light
+    attributes:
+      color: red
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ masterbath red
+  - ਰੋਸ਼ਨੀ masterbath red
+- name: light.master_bath_light_blue
+  conditions:
+  - type: action
+    entity_id: light.master_bath_light
+    attributes:
+      color: blue
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ masterbath blue
+  - ਰੋਸ਼ਨੀ masterbath blue
+- name: light.master_bath_light_green
+  conditions:
+  - type: action
+    entity_id: light.master_bath_light
+    attributes:
+      color: green
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ masterbath green
+  - ਰੋਸ਼ਨੀ masterbath green
+- name: light.master_bath_light_white
+  conditions:
+  - type: action
+    entity_id: light.master_bath_light
+    attributes:
+      color: white
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ masterbath white
+  - ਰੋਸ਼ਨੀ masterbath white
+- name: light.master_bath_light_yellow
+  conditions:
+  - type: action
+    entity_id: light.master_bath_light
+    attributes:
+      color: yellow
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ masterbath yellow
+  - ਰੋਸ਼ਨੀ masterbath yellow
+- name: light.master_bath_light_black
+  conditions:
+  - type: action
+    entity_id: light.master_bath_light
+    attributes:
+      color: black
+  sentences:
+  - ਸੈੱਟ ਰੋਸ਼ਨੀ masterbath black
+  - ਰੋਸ਼ਨੀ masterbath black
+- name: all_except_kitchen
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava ਰਸੋਈ
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava ਰਸੋਈ
+  forbid:
+  - kitchen
+- name: all_except_office
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava office
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava office
+  forbid:
+  - office
+- name: all_except_garage
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava garage
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava garage
+  forbid:
+  - garage
+- name: all_except_master_bedroom
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava bedroommaster
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava bedroommaster
+  forbid:
+  - master_bedroom
+- name: floor_ground_on
+  conditions:
+  - type: action
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ hethan
+  - ਰੋਸ਼ਨੀ hethan ਚਾਲੂ
+- name: floor_ground_off
+  conditions:
+  - type: action
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ hethan
+  - ਰੋਸ਼ਨੀ hethan ਬੰਦ
+- name: floor_upper_on
+  conditions:
+  - type: action
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ uppar
+  - ਰੋਸ਼ਨੀ uppar ਚਾਲੂ
+- name: floor_upper_off
+  conditions:
+  - type: action
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ uppar
+  - ਰੋਸ਼ਨੀ uppar ਬੰਦ
+- name: floor_basement_on
+  conditions:
+  - type: action
+    domain: light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ basement
+  - ਰੋਸ਼ਨੀ basement ਚਾਲੂ
+- name: floor_basement_off
+  conditions:
+  - type: action
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ basement
+  - ਰੋਸ਼ਨੀ basement ਬੰਦ
+- name: all_except_entryway
+  conditions:
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava dakhla
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava dakhla
+  forbid:
+  - entryway
+- name: all_except_living
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava ਬੈਠਕ
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava ਬੈਠਕ
+  forbid:
+  - living
+- name: all_except_dining
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava parivarakess
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava parivarakess
+  forbid:
+  - dining
+- name: all_except_family_room
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava parivarak
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava parivarak
+  forbid:
+  - family_room
+- name: all_except_laundry
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava dhon
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava dhon
+  forbid:
+  - laundry
+- name: all_except_powder_room
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava toilet
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava toilet
+  forbid:
+  - powder_room
+- name: all_except_garden
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava garden
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava garden
+  forbid:
+  - garden
+- name: all_except_bedroom_2
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava bedroom2
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava bedroom2
+  forbid:
+  - bedroom_2
+- name: all_except_bedroom_3
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava bedroom3
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava bedroom3
+  forbid:
+  - bedroom_3
+- name: all_except_bedroom_4
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava bedroom4
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava bedroom4
+  forbid:
+  - bedroom_4
+- name: all_except_master_bath
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava masterbath
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava masterbath
+  forbid:
+  - master_bath
+- name: all_except_main_bath
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava main bath
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava main bath
+  forbid:
+  - main_bath
+- name: all_except_hallway
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: basement
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava hallway
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava hallway
+  forbid:
+  - hallway
+- name: all_except_basement
+  conditions:
+  - type: action
+    area: entryway
+    domain: light
+    state: 'off'
+  - type: action
+    area: living
+    domain: light
+    state: 'off'
+  - type: action
+    area: dining
+    domain: light
+    state: 'off'
+  - type: action
+    area: kitchen
+    domain: light
+    state: 'off'
+  - type: action
+    area: family_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: laundry
+    domain: light
+    state: 'off'
+  - type: action
+    area: powder_room
+    domain: light
+    state: 'off'
+  - type: action
+    area: garage
+    domain: light
+    state: 'off'
+  - type: action
+    area: office
+    domain: light
+    state: 'off'
+  - type: action
+    area: garden
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bedroom
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_2
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_3
+    domain: light
+    state: 'off'
+  - type: action
+    area: bedroom_4
+    domain: light
+    state: 'off'
+  - type: action
+    area: master_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: main_bath
+    domain: light
+    state: 'off'
+  - type: action
+    area: hallway
+    domain: light
+    state: 'off'
+  sentences:
+  - ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava basement
+  - ਸਭ ਰੋਸ਼ਨੀ ਬੰਦ ilava basement
+  forbid:
+  - basement
+- name: light.basement_on_extra
+  conditions:
+  - type: action
+    entity_id: light.basement
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ basement
+  - ਰੋਸ਼ਨੀ basement ਚਾਲੂ
+- name: light.hallway_light_on_extra
+  conditions:
+  - type: action
+    entity_id: light.hallway_light
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ hallway
+  - ਰੋਸ਼ਨੀ hallway ਚਾਲੂ
+- name: light.family_ceiling_on_extra
+  conditions:
+  - type: action
+    entity_id: light.family_ceiling
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ chhat parivarak
+  - chhat parivarak ਚਾਲੂ
+- name: light.dining_pendant_on_extra
+  conditions:
+  - type: action
+    entity_id: light.dining_pendant
+    state: 'on'
+  sentences:
+  - ਚਾਲੂ ਰੋਸ਼ਨੀ parivarakess
+  - ਰੋਸ਼ਨੀ parivarakess ਚਾਲੂ

@@ -1,0 +1,28 @@
+query_area/spoken::status_licht_kuche_casual:
+- ਕੀ ਰੋਸ਼ਨੀ ਰਸੋਈ
+query_area/spoken::status_licht_wohnzimmer_casual:
+- ਕੀ ਰੋਸ਼ਨੀ ਬੈਠਕ
+query_area/spoken_more::brennt_arbeitszimmer:
+- ਕੀ ਰੋਸ਼ਨੀ office
+query_area/spoken_more::brennt_esszimmer:
+- ਕੀ ਰੋਸ਼ਨੀ parivarakess
+query_area/spoken_more::status_licht_schlaf_casual:
+- ਕੀ ਰੋਸ਼ਨੀ bedroom
+query_area/status::status_alle_lichter:
+- ਕੀ ਸਭ ਰੋਸ਼ਨੀ
+query_area/status::status_licht_arbeitszimmer:
+- ਕੀ ਰੋਸ਼ਨੀ office
+query_area/status::status_licht_badezimmer:
+- weather france
+query_area/status::status_licht_esszimmer:
+- ਕੀ ਰੋਸ਼ਨੀ parivarakess
+query_area/status::status_licht_kuche:
+- ਕੀ ਰੋਸ਼ਨੀ ਰਸੋਈ
+query_area/status::status_licht_wohnzimmer:
+- ਕੀ ਰੋਸ਼ਨੀ ਬੈਠਕ
+query_area/status::status_wohn_und_esszimmer:
+- ਕੀ wohn und esszimmer
+query_area/status::temperatur_wohnung:
+- weather france
+query_area/status::temperatur_wohnzimmer:
+- ਕੀ ਗਰਮੀ ਬੈਠਕ

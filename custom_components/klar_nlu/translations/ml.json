@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "This integration talks to Assist. A separate engine parses speech: the Klar NLU App, this bundled process, or Docker. On Home Assistant OS install the App as well, then pick Use the Klar NLU App. Without the App, pick Start the bundled engine. Do not run both.",
+        "data": {
+          "mode": "എഞ്ചിൻ",
+          "channel": "റിലീസ് ചാനൽ",
+          "url": "Klar API URL",
+          "token": "എഴുത്ത് ടോക്കൺ"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL http(s) ആയിരിക്കണം, ഉപയോക്തൃനാമമില്ലാതെ."
+    },
+    "abort": {
+      "already_configured": "Klar NLU ഇതിനകം സജ്ജമാണ്"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "ശബ്ദവും Assist ഭാഷകളും LLM-ഉം Klar ഓപ്പറേറ്റർ UI-യിലാണ് (ക്രമീകരണങ്ങൾ). ഈ ഫോം എഞ്ചിൻ മാത്രം ബന്ധിപ്പിക്കുന്നു: URL, ടോക്കൺ, ചാനൽ. {apps}",
+        "data": {
+          "mode": "എഞ്ചിൻ",
+          "url": "Klar API URL",
+          "token": "എഴുത്ത് ടോക്കൺ",
+          "assist_filter": "Assist കാണുന്ന യൂണിറ്റുകൾ മാത്രം നിയന്ത്രിക്കുക",
+          "channel": "റിലീസ് ചാനൽ"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "Klar ആപ്പിലേതു പോലെ തന്നെ ടോക്കൺ.",
+          "assist_filter": "ഓൺ: Assist കാണുന്നത് മാത്രം. ഓഫ്: മറച്ച യൂണിറ്റുകളും.",
+          "channel": "Works anytime. Staging points at Klar NLU (Staging)."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL http(s) ആയിരിക്കണം, ഉപയോക്തൃനാമമില്ലാതെ."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "ബണ്ടിൽ എഞ്ചിൻ ആരംഭിക്കുക (HACS മാത്രം)",
+        "remote": "Klar NLU ആപ്പ് അല്ലെങ്കിൽ Docker ഉപയോഗിക്കുക"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (ഉത്പാദനം)",
+        "staging": "Staging (സ്ഥാനാർത്ഥി)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "സിസ്റ്റം ഭാഷ",
+        "all": "എല്ലാ ഭാഷകളും"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "സാധാരണ",
+        "butler": "Butler",
+        "locker": "അയഞ്ഞ",
+        "fuersorglich": "ശ്രദ്ധയുള്ള",
+        "party": "Party",
+        "grantig": "ദേഷ്യമുള്ള",
+        "sarkastisch": "പരിഹാസം",
+        "pirat": "കടൽക്കൊള്ളക്കാരൻ",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "വ്യക്തിത്വം",
+        "state": {
+          "default": "സാധാരണ",
+          "butler": "Butler",
+          "locker": "അയഞ്ഞ",
+          "fuersorglich": "ശ്രദ്ധയുള്ള",
+          "party": "Party",
+          "grantig": "ദേഷ്യമുള്ള",
+          "sarkastisch": "പരിഹാസം",
+          "pirat": "കടൽക്കൊള്ളക്കാരൻ",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "ചെറിയ സ്ഥിരീകരണം"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "AI ടാസ്‌ക്"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "അവസാനം കേട്ടത്"
+      },
+      "last_decision": {
+        "name": "അവസാന തീരുമാനം"
+      },
+      "last_speech": {
+        "name": "അവസാന മറുപടി"
+      },
+      "last_area": {
+        "name": "കേട്ട സ്ഥലം"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Klar എഞ്ചിൻ നിന്നു",
+      "description": "ബണ്ടിൽ Klar പ്രക്രിയ ഓടുന്നില്ല. ക്രമീകരണങ്ങൾ → ഉപകരണങ്ങളും സേവനങ്ങളും എന്നതിൽ Klar NLU വീണ്ടും ലോഡ് ചെയ്യുക."
+    }
+  }
+}

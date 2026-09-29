@@ -1,0 +1,249 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- మూయి తెర padakagadi2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- తెరువు తెర padakagadi2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- సెట్ తెర padakagadi2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- సెట్ ఫ్యాన్ padakagadi2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- ఆర్పు ఫ్యాన్ padakagadi2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- వెలిగించు ఫ్యాన్ padakagadi2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- సెట్ అన్ని వెలుగు padakagadi2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- సెట్ అన్ని వెలుగు padakagadi2 pink
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు padakagadi2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు padakagadi2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- మూయి తెర padakagadi3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- తెరువు తెర padakagadi3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- సెట్ తెర padakagadi3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- సెట్ అన్ని వెలుగు padakagadi3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- సెట్ అన్ని వెలుగు padakagadi3 blue
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు padakagadi3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు padakagadi3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- సెట్ అన్ని వెలుగు padakagadi4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- సెట్ అన్ని వెలుగు padakagadi4 green
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు padakagadi4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు padakagadi4
+area/dining_lights::dining_lights_change_brightness:
+- సెట్ అన్ని వెలుగు kutumbamess 54
+area/dining_lights::dining_lights_change_color:
+- సెట్ అన్ని వెలుగు kutumbamess blue
+area/dining_lights::dining_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు kutumbamess
+area/dining_lights::dining_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు kutumbamess
+area/entryway_lights::entryway_lights_change_brightness:
+- సెట్ అన్ని వెలుగు pravesham 72
+area/entryway_lights::entryway_lights_change_color:
+- సెట్ అన్ని వెలుగు pravesham black
+area/entryway_lights::entryway_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు pravesham
+area/entryway_lights::entryway_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు pravesham
+area/entryway_locks::entryway_locks_lock:
+- తాళం తాళం pravesham
+area/entryway_locks::entryway_locks_unlock:
+- తెరువు తాళం pravesham
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- సెట్ అన్ని వెలుగు kutumbam 39 mariyu సెట్ అన్ని వెలుగు వంటగది 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- సెట్ అన్ని వెలుగు kutumbam purple mariyu సెట్ అన్ని వెలుగు వంటగది purple
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు kutumbam mariyu ఆర్పు అన్ని వెలుగు వంటగది
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు kutumbam mariyu వెలిగించు అన్ని వెలుగు వంటగది
+area/family_room_fans::family_room_fans_set_fan_speed:
+- సెట్ ఫ్యాన్ kutumbam 32
+area/family_room_fans::family_room_fans_turn_off:
+- ఆర్పు ఫ్యాన్ kutumbam
+area/family_room_fans::family_room_fans_turn_on:
+- వెలిగించు ఫ్యాన్ kutumbam
+area/family_room_lights::family_room_lights_change_brightness:
+- సెట్ అన్ని వెలుగు kutumbam 44
+area/family_room_lights::family_room_lights_change_color:
+- సెట్ అన్ని వెలుగు kutumbam green
+area/family_room_lights::family_room_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు kutumbam
+area/family_room_lights::family_room_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు kutumbam
+area/garage_covers::garage_covers_close:
+- మూయి తెర garage
+area/garage_covers::garage_covers_open:
+- తెరువు తెర garage
+area/garage_covers::garage_covers_set_position:
+- సెట్ తెర garage 86
+area/garage_lights::garage_lights_change_brightness:
+- సెట్ అన్ని వెలుగు garage 16
+area/garage_lights::garage_lights_change_color:
+- సెట్ అన్ని వెలుగు garage blue
+area/garage_lights::garage_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు garage
+area/garage_lights::garage_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు garage
+area/garage_locks::garage_locks_lock:
+- తాళం తాళం garage
+area/garage_locks::garage_locks_unlock:
+- తెరువు తాళం garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- సెట్ అన్ని వెలుగు praveshamgang 26 mariyu సెట్ అన్ని వెలుగు toilet 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- సెట్ అన్ని వెలుగు praveshamgang purple mariyu సెట్ అన్ని వెలుగు toilet purple
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు praveshamgang mariyu ఆర్పు అన్ని వెలుగు toilet
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు praveshamgang mariyu వెలిగించు అన్ని వెలుగు toilet
+area/hallway_lights::hallway_lights_change_brightness:
+- సెట్ అన్ని వెలుగు praveshamgang 61
+area/hallway_lights::hallway_lights_change_color:
+- సెట్ అన్ని వెలుగు praveshamgang orange
+area/hallway_lights::hallway_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు praveshamgang
+area/hallway_lights::hallway_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు praveshamgang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- సెట్ అన్ని వెలుగు వంటగది 45
+area/kitchen_lights::kitchen_lights_change_color:
+- సెట్ అన్ని వెలుగు వంటగది pink
+area/kitchen_lights::kitchen_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు వంటగది
+area/kitchen_lights::kitchen_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు వంటగది
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- ఆర్పు అన్ని yantram వంటగది
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- వెలిగించు అన్ని yantram వంటగది
+area/laundry_lights::laundry_lights_change_brightness:
+- సెట్ అన్ని వెలుగు laundry 62
+area/laundry_lights::laundry_lights_change_color:
+- సెట్ అన్ని వెలుగు laundry yellow
+area/laundry_lights::laundry_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు laundry
+area/laundry_lights::laundry_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు laundry
+area/laundry_switchs::laundry_switchs_turn_off:
+- ఆర్పు అన్ని yantram laundry
+area/laundry_switchs::laundry_switchs_turn_on:
+- వెలిగించు అన్ని yantram laundry
+area/living_climates::living_climates_set_temperature:
+- సెట్ వేడి గది 20
+area/living_covers::living_covers_close:
+- మూయి తెర గది
+area/living_covers::living_covers_open:
+- తెరువు తెర గది
+area/living_covers::living_covers_set_position:
+- సెట్ తెర గది 46
+area/living_lights::living_lights_change_brightness:
+- సెట్ అన్ని వెలుగు గది 84
+area/living_lights::living_lights_change_color:
+- సెట్ అన్ని వెలుగు గది blue
+area/living_lights::living_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు గది
+area/living_lights::living_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు గది
+area/main_bath_lights::main_bath_lights_change_brightness:
+- సెట్ అన్ని వెలుగు main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- సెట్ అన్ని వెలుగు main bath pink
+area/main_bath_lights::main_bath_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- ఆర్పు అన్ని yantram main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- వెలిగించు అన్ని yantram main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- సెట్ అన్ని వెలుగు masterbath 60
+area/master_bath_lights::master_bath_lights_change_color:
+- సెట్ అన్ని వెలుగు masterbath black
+area/master_bath_lights::master_bath_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు masterbath
+area/master_bath_lights::master_bath_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు masterbath
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- ఆర్పు అన్ని yantram masterbath
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- వెలిగించు అన్ని yantram masterbath
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- సెట్ వేడి padakagadimaster 20 mariyu సెట్ వేడి గది 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- మూయి తెర padakagadimaster mariyu మూయి తెర గది
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- తెరువు తెర padakagadimaster mariyu తెరువు తెర గది
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- సెట్ తెర padakagadimaster 19 mariyu సెట్ తెర గది 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- సెట్ అన్ని వెలుగు padakagadimaster 25 mariyu సెట్ అన్ని వెలుగు గది 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- సెట్ అన్ని వెలుగు padakagadimaster white mariyu సెట్ అన్ని వెలుగు గది white
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు padakagadimaster mariyu ఆర్పు అన్ని వెలుగు గది
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు padakagadimaster mariyu వెలిగించు అన్ని వెలుగు గది
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- సెట్ అన్ని వెలుగు padakagadimaster 57 mariyu సెట్ అన్ని వెలుగు main bath 57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- సెట్ అన్ని వెలుగు padakagadimaster pink mariyu సెట్ అన్ని వెలుగు main bath pink
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు padakagadimaster mariyu ఆర్పు అన్ని వెలుగు main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు padakagadimaster mariyu వెలిగించు అన్ని వెలుగు main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- సెట్ వేడి padakagadimaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- మూయి తెర padakagadimaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- తెరువు తెర padakagadimaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- సెట్ తెర padakagadimaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- సెట్ ఫ్యాన్ padakagadimaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- ఆర్పు ఫ్యాన్ padakagadimaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- వెలిగించు ఫ్యాన్ padakagadimaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- సెట్ అన్ని వెలుగు padakagadimaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- సెట్ అన్ని వెలుగు padakagadimaster pink
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు padakagadimaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు padakagadimaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- సెట్ అన్ని వెలుగు toilet 52
+area/powder_room_lights::powder_room_lights_change_color:
+- సెట్ అన్ని వెలుగు toilet purple
+area/powder_room_lights::powder_room_lights_turn_off:
+- ఆర్పు అన్ని వెలుగు toilet
+area/powder_room_lights::powder_room_lights_turn_on:
+- వెలిగించు అన్ని వెలుగు toilet
+area/spoken_lights::spoken_bedroom_inflection:
+- సెట్ అన్ని వెలుగు padakagadimaster red
+area/spoken_lights::spoken_except_island:
+- ఆర్పు అన్ని వెలుగు tapp dweepam
+area/spoken_lights::spoken_except_kitchen:
+- ఆర్పు అన్ని వెలుగు tapp వంటగది
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- ఆర్పు అన్ని వెలుగు గది mariyu ఆర్పు అన్ని వెలుగు kutumbamess mariyu ఆర్పు అన్ని
+  వెలుగు వంటగది
+area/spoken_lights::spoken_stt_kitchen_off:
+- ఆర్పు అన్ని వెలుగు వంటగది
+area/spoken_lights::spoken_stt_living_off:
+- ఆర్పు అన్ని వెలుగు గది

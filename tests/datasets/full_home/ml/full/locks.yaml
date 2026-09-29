@@ -1,0 +1,48 @@
+- name: lock.front_door_lock
+  conditions:
+  - type: action
+    entity_id: lock.front_door
+    state: locked
+  sentences:
+  - പൂട്ട് പൂട്ട് praveshanam
+  - പൂട്ട് praveshanam പൂട്ട്
+- name: lock.front_door_unlock
+  conditions:
+  - type: action
+    entity_id: lock.front_door
+    state: unlocked
+  sentences:
+  - തുറക്ക് പൂട്ട് praveshanam
+  - പൂട്ട് praveshanam തുറക്ക്
+- name: lock.garage_entry_lock
+  conditions:
+  - type: action
+    entity_id: lock.garage_entry
+    state: locked
+  sentences:
+  - പൂട്ട് പൂട്ട് garage
+  - പൂട്ട് garage പൂട്ട്
+- name: lock.garage_entry_unlock
+  conditions:
+  - type: action
+    entity_id: lock.garage_entry
+    state: unlocked
+  sentences:
+  - തുറക്ക് പൂട്ട് garage
+  - പൂട്ട് garage തുറക്ക്
+- name: lock.front_door_lock_extra
+  conditions:
+  - type: action
+    entity_id: lock.front_door
+    state: locked
+  sentences:
+  - പൂട്ട് പൂട്ട് praveshanam
+  - പൂട്ട് praveshanam പൂട്ട്
+- name: lock.garage_entry_lock_extra
+  conditions:
+  - type: action
+    entity_id: lock.garage_entry
+    state: locked
+  sentences:
+  - പൂട്ട് പൂട്ട് garage
+  - പൂട്ട് garage പൂട്ട്

@@ -1,0 +1,15 @@
+state_persistance/followup::heizung_dann_grad:
+- - เปิด แอร์ ห้องนั่งเล่น
+  - ' 21'
+state_persistance/followup::wohnzimmer_dann_aus:
+- - เปิด ไฟ ห้องนั่งเล่น
+  - ปิด
+state_persistance/spoken::kugel_dann_aus:
+- - เปิด luk
+  - ปิด
+state_persistance/spoken::wohnzimmer_dann_kueche:
+- - เปิด ไฟ ห้องนั่งเล่น
+  - เปิด ไฟ ห้องครัว
+state_persistance/spoken::wohnzimmer_dann_rot:
+- - เปิด ทั้งหมด ไฟ ห้องนั่งเล่น
+  - แดง

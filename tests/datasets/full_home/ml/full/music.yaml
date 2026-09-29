@@ -1,0 +1,529 @@
+- name: play_queen
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: queen
+  sentences:
+  - പ്ലേ queen ഹാൾ
+  - പ്ലേ queen ടിവി ഹാൾ
+- name: play_album
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: rumours
+      media_type: album
+      artist: fleetwood mac
+  sentences:
+  - പ്ലേ album rumours by fleetwood mac ഹാൾ
+- name: play_radio
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - പ്ലേ queen radio mode ഹാൾ
+- name: queue_song
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: bohemian rhapsody
+      enqueue: add
+  sentences:
+  - പ്ലേ bohemian rhapsody queue ഹാൾ
+- name: now_playing
+  conditions:
+  - type: query
+    entity_id: media_player.living_music
+  sentences:
+  - എന്ത് ടിവി ഹാൾ
+  - എന്ത് track ഹാൾ
+- name: music_volume_10
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 10
+  sentences:
+  - സെറ്റ് ടിവി ഹാൾ 10
+  - ടിവി ഹാൾ 10
+- name: music_volume_20
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 20
+  sentences:
+  - സെറ്റ് ടിവി ഹാൾ 20
+  - ടിവി ഹാൾ 20
+- name: music_volume_30
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 30
+  sentences:
+  - സെറ്റ് ടിവി ഹാൾ 30
+  - ടിവി ഹാൾ 30
+- name: music_volume_50
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 50
+  sentences:
+  - സെറ്റ് ടിവി ഹാൾ 50
+  - ടിവി ഹാൾ 50
+- name: music_volume_80
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 80
+  sentences:
+  - സെറ്റ് ടിവി ഹാൾ 80
+  - ടിവി ഹാൾ 80
+- name: music_next
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    state: next
+  sentences:
+  - next track ഹാൾ
+- name: music_prev
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    state: previous
+  sentences:
+  - previous track ഹാൾ
+- name: kitchen_play
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: queen
+  sentences:
+  - പ്ലേ queen അടുക്കള
+  - പ്ലേ queen ടിവി അടുക്കള
+- name: play_beatles_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - പ്ലേ beatles ഹാൾ
+  - പ്ലേ beatles ടിവി ഹാൾ
+- name: play_radiohead_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - പ്ലേ radiohead ഹാൾ
+  - പ്ലേ radiohead ടിവി ഹാൾ
+- name: play_abba_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: abba
+  sentences:
+  - പ്ലേ abba ഹാൾ
+  - പ്ലേ abba ടിവി ഹാൾ
+- name: play_coldplay_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - പ്ലേ coldplay ഹാൾ
+  - പ്ലേ coldplay ടിവി ഹാൾ
+- name: play_adele_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: adele
+  sentences:
+  - പ്ലേ adele ഹാൾ
+  - പ്ലേ adele ടിവി ഹാൾ
+- name: play_prince_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: prince
+  sentences:
+  - പ്ലേ prince ഹാൾ
+  - പ്ലേ prince ടിവി ഹാൾ
+- name: play_bowie_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - പ്ലേ bowie ഹാൾ
+  - പ്ലേ bowie ടിവി ഹാൾ
+- name: play_nirvana_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - പ്ലേ nirvana ഹാൾ
+  - പ്ലേ nirvana ടിവി ഹാൾ
+- name: play_eagles_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - പ്ലേ eagles ഹാൾ
+  - പ്ലേ eagles ടിവി ഹാൾ
+- name: play_madonna_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - പ്ലേ madonna ഹാൾ
+  - പ്ലേ madonna ടിവി ഹാൾ
+- name: play_mozart_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - പ്ലേ mozart ഹാൾ
+  - പ്ലേ mozart ടിവി ഹാൾ
+- name: play_daft punk_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - പ്ലേ daft punk ഹാൾ
+  - പ്ലേ daft punk ടിവി ഹാൾ
+- name: play_biafra_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - പ്ലേ biafra ഹാൾ
+  - പ്ലേ biafra ടിവി ഹാൾ
+- name: play_queen_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: queen
+  sentences:
+  - പ്ലേ queen അടുക്കള
+  - പ്ലേ queen ടിവി അടുക്കള
+- name: play_beatles_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - പ്ലേ beatles അടുക്കള
+  - പ്ലേ beatles ടിവി അടുക്കള
+- name: play_radiohead_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - പ്ലേ radiohead അടുക്കള
+  - പ്ലേ radiohead ടിവി അടുക്കള
+- name: play_abba_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: abba
+  sentences:
+  - പ്ലേ abba അടുക്കള
+  - പ്ലേ abba ടിവി അടുക്കള
+- name: play_coldplay_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - പ്ലേ coldplay അടുക്കള
+  - പ്ലേ coldplay ടിവി അടുക്കള
+- name: play_adele_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: adele
+  sentences:
+  - പ്ലേ adele അടുക്കള
+  - പ്ലേ adele ടിവി അടുക്കള
+- name: play_prince_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: prince
+  sentences:
+  - പ്ലേ prince അടുക്കള
+  - പ്ലേ prince ടിവി അടുക്കള
+- name: play_bowie_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - പ്ലേ bowie അടുക്കള
+  - പ്ലേ bowie ടിവി അടുക്കള
+- name: play_nirvana_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - പ്ലേ nirvana അടുക്കള
+  - പ്ലേ nirvana ടിവി അടുക്കള
+- name: play_eagles_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - പ്ലേ eagles അടുക്കള
+  - പ്ലേ eagles ടിവി അടുക്കള
+- name: play_madonna_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - പ്ലേ madonna അടുക്കള
+  - പ്ലേ madonna ടിവി അടുക്കള
+- name: play_mozart_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - പ്ലേ mozart അടുക്കള
+  - പ്ലേ mozart ടിവി അടുക്കള
+- name: play_daft punk_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - പ്ലേ daft punk അടുക്കള
+  - പ്ലേ daft punk ടിവി അടുക്കള
+- name: play_biafra_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - പ്ലേ biafra അടുക്കള
+  - പ്ലേ biafra ടിവി അടുക്കള
+- name: play_queen_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: queen
+  sentences:
+  - പ്ലേ queen office
+  - പ്ലേ queen ടിവി office
+- name: play_beatles_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - പ്ലേ beatles office
+  - പ്ലേ beatles ടിവി office
+- name: play_radiohead_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - പ്ലേ radiohead office
+  - പ്ലേ radiohead ടിവി office
+- name: play_abba_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: abba
+  sentences:
+  - പ്ലേ abba office
+  - പ്ലേ abba ടിവി office
+- name: play_coldplay_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - പ്ലേ coldplay office
+  - പ്ലേ coldplay ടിവി office
+- name: play_adele_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: adele
+  sentences:
+  - പ്ലേ adele office
+  - പ്ലേ adele ടിവി office
+- name: play_prince_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: prince
+  sentences:
+  - പ്ലേ prince office
+  - പ്ലേ prince ടിവി office
+- name: play_bowie_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - പ്ലേ bowie office
+  - പ്ലേ bowie ടിവി office
+- name: play_nirvana_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - പ്ലേ nirvana office
+  - പ്ലേ nirvana ടിവി office
+- name: play_eagles_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - പ്ലേ eagles office
+  - പ്ലേ eagles ടിവി office
+- name: play_madonna_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - പ്ലേ madonna office
+  - പ്ലേ madonna ടിവി office
+- name: play_mozart_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - പ്ലേ mozart office
+  - പ്ലേ mozart ടിവി office
+- name: play_daft punk_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - പ്ലേ daft punk office
+  - പ്ലേ daft punk ടിവി office
+- name: play_biafra_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - പ്ലേ biafra office
+  - പ്ലേ biafra ടിവി office
+- name: radio_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - പ്ലേ queen radio mode ഹാൾ
+- name: now_living
+  conditions:
+  - type: query
+    entity_id: media_player.living_music
+  sentences:
+  - എന്ത് ടിവി ഹാൾ
+  - എന്ത് track ഹാൾ
+- name: radio_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - പ്ലേ queen radio mode അടുക്കള
+- name: now_kitchen
+  conditions:
+  - type: query
+    entity_id: media_player.kitchen_music
+  sentences:
+  - എന്ത് ടിവി അടുക്കള
+  - എന്ത് track അടുക്കള
+- name: radio_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - പ്ലേ queen radio mode office
+- name: now_office
+  conditions:
+  - type: query
+    entity_id: media_player.office_music
+  sentences:
+  - എന്ത് ടിവി office
+  - എന്ത് track office

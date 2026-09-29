@@ -1,0 +1,26 @@
+multiple_intents/multi::alle_ausser_schlaf_und_kueche:
+- 꺼 모두 불 빼고 chimsil 빼고 부엌
+multiple_intents/multi::licht_und_heizung:
+- 켜 모두 불 거실 then 설정 난방 거실 23
+multiple_intents/multi::wohn_und_ess_aus:
+- 꺼 모두 불 거실 then 꺼 모두 불 gajoksiless
+multiple_intents/multi::wohn_und_ess_rot:
+- 설정 모두 불 거실 빨강 then 설정 모두 불 gajoksiless 빨강
+multiple_intents/multi::wz_und_kuche_licht:
+- 켜 모두 불 거실 then 켜 모두 불 부엌
+multiple_intents/multi::zwei_raeume_und_heizung:
+- 켜 모두 불 거실 then 켜 모두 불 부엌 then 설정 난방 거실 23
+multiple_intents/spoken::drei_raeume_an:
+- 켜 모두 불 거실 then 켜 모두 불 gajoksiless then 켜 모두 불 부엌
+multiple_intents/spoken::drei_raeume_aus:
+- 꺼 모두 불 거실 then 꺼 모두 불 gajoksiless then 꺼 모두 불 부엌
+multiple_intents/spoken::ess_und_wohn_aus:
+- 꺼 모두 불 거실 then 꺼 모두 불 gajoksiless
+multiple_intents/spoken::kugel_und_decke_aus:
+- gong 그리고 cheonjang chimsil 꺼
+multiple_intents/spoken_more::kuche_und_ess_an:
+- 켜 모두 불 부엌 then 켜 모두 불 gajoksiless
+multiple_intents/spoken_more::wz_ess_arbeit_aus:
+- 꺼 모두 불 거실 then 꺼 모두 불 gajoksiless then 꺼 모두 불 office
+multiple_intents/spoken_more::wz_und_arbeit_aus:
+- 꺼 모두 불 거실 then 꺼 모두 불 office

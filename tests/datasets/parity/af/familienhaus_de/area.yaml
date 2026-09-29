@@ -1,0 +1,248 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- toe gordyn slaapkamer2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- oop gordyn slaapkamer2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- stel gordyn slaapkamer2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- stel waaier slaapkamer2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- doof waaier slaapkamer2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- skakel waaier slaapkamer2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- stel almal lig slaapkamer2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- stel almal lig slaapkamer2 pienk
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- doof almal lig slaapkamer2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- skakel almal lig slaapkamer2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- toe gordyn slaapkamer3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- oop gordyn slaapkamer3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- stel gordyn slaapkamer3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- stel almal lig slaapkamer3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- stel almal lig slaapkamer3 blou
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- doof almal lig slaapkamer3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- skakel almal lig slaapkamer3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- stel almal lig slaapkamer4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- stel almal lig slaapkamer4 groen
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- doof almal lig slaapkamer4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- skakel almal lig slaapkamer4
+area/dining_lights::dining_lights_change_brightness:
+- stel almal lig sitkamerfamess 54
+area/dining_lights::dining_lights_change_color:
+- stel almal lig sitkamerfamess blou
+area/dining_lights::dining_lights_turn_off:
+- doof almal lig sitkamerfamess
+area/dining_lights::dining_lights_turn_on:
+- skakel almal lig sitkamerfamess
+area/entryway_lights::entryway_lights_change_brightness:
+- stel almal lig ingang 72
+area/entryway_lights::entryway_lights_change_color:
+- stel almal lig ingang swart
+area/entryway_lights::entryway_lights_turn_off:
+- doof almal lig ingang
+area/entryway_lights::entryway_lights_turn_on:
+- skakel almal lig ingang
+area/entryway_locks::entryway_locks_lock:
+- slot slot ingang
+area/entryway_locks::entryway_locks_unlock:
+- oop slot ingang
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- stel almal lig sitkamerfam 39 then stel almal lig kombuis 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- stel almal lig sitkamerfam pers then stel almal lig kombuis pers
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- doof almal lig sitkamerfam then doof almal lig kombuis
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- skakel almal lig sitkamerfam then skakel almal lig kombuis
+area/family_room_fans::family_room_fans_set_fan_speed:
+- stel waaier sitkamerfam 32
+area/family_room_fans::family_room_fans_turn_off:
+- doof waaier sitkamerfam
+area/family_room_fans::family_room_fans_turn_on:
+- skakel waaier sitkamerfam
+area/family_room_lights::family_room_lights_change_brightness:
+- stel almal lig sitkamerfam 44
+area/family_room_lights::family_room_lights_change_color:
+- stel almal lig sitkamerfam groen
+area/family_room_lights::family_room_lights_turn_off:
+- doof almal lig sitkamerfam
+area/family_room_lights::family_room_lights_turn_on:
+- skakel almal lig sitkamerfam
+area/garage_covers::garage_covers_close:
+- toe gordyn garage
+area/garage_covers::garage_covers_open:
+- oop gordyn garage
+area/garage_covers::garage_covers_set_position:
+- stel gordyn garage 86
+area/garage_lights::garage_lights_change_brightness:
+- stel almal lig garage 16
+area/garage_lights::garage_lights_change_color:
+- stel almal lig garage blou
+area/garage_lights::garage_lights_turn_off:
+- doof almal lig garage
+area/garage_lights::garage_lights_turn_on:
+- skakel almal lig garage
+area/garage_locks::garage_locks_lock:
+- slot slot garage
+area/garage_locks::garage_locks_unlock:
+- oop slot garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- stel almal lig inganggang 26 then stel almal lig toilet 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- stel almal lig inganggang pers then stel almal lig toilet pers
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- doof almal lig inganggang then doof almal lig toilet
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- skakel almal lig inganggang then skakel almal lig toilet
+area/hallway_lights::hallway_lights_change_brightness:
+- stel almal lig inganggang 61
+area/hallway_lights::hallway_lights_change_color:
+- stel almal lig inganggang oranje
+area/hallway_lights::hallway_lights_turn_off:
+- doof almal lig inganggang
+area/hallway_lights::hallway_lights_turn_on:
+- skakel almal lig inganggang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- stel almal lig kombuis 45
+area/kitchen_lights::kitchen_lights_change_color:
+- stel almal lig kombuis pienk
+area/kitchen_lights::kitchen_lights_turn_off:
+- doof almal lig kombuis
+area/kitchen_lights::kitchen_lights_turn_on:
+- skakel almal lig kombuis
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- doof almal toestel kombuis
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- skakel almal toestel kombuis
+area/laundry_lights::laundry_lights_change_brightness:
+- stel almal lig waskamer 62
+area/laundry_lights::laundry_lights_change_color:
+- stel almal lig waskamer geel
+area/laundry_lights::laundry_lights_turn_off:
+- doof almal lig waskamer
+area/laundry_lights::laundry_lights_turn_on:
+- skakel almal lig waskamer
+area/laundry_switchs::laundry_switchs_turn_off:
+- doof almal toestel waskamer
+area/laundry_switchs::laundry_switchs_turn_on:
+- skakel almal toestel waskamer
+area/living_climates::living_climates_set_temperature:
+- stel verwarming sitkamer 20
+area/living_covers::living_covers_close:
+- toe gordyn sitkamer
+area/living_covers::living_covers_open:
+- oop gordyn sitkamer
+area/living_covers::living_covers_set_position:
+- stel gordyn sitkamer 46
+area/living_lights::living_lights_change_brightness:
+- stel almal lig sitkamer 84
+area/living_lights::living_lights_change_color:
+- stel almal lig sitkamer blou
+area/living_lights::living_lights_turn_off:
+- doof almal lig sitkamer
+area/living_lights::living_lights_turn_on:
+- skakel almal lig sitkamer
+area/main_bath_lights::main_bath_lights_change_brightness:
+- stel almal lig main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- stel almal lig main bath pienk
+area/main_bath_lights::main_bath_lights_turn_off:
+- doof almal lig main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- skakel almal lig main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- doof almal toestel main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- skakel almal toestel main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- stel almal lig badmaster 60
+area/master_bath_lights::master_bath_lights_change_color:
+- stel almal lig badmaster swart
+area/master_bath_lights::master_bath_lights_turn_off:
+- doof almal lig badmaster
+area/master_bath_lights::master_bath_lights_turn_on:
+- skakel almal lig badmaster
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- doof almal toestel badmaster
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- skakel almal toestel badmaster
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- stel verwarming slaapkamermaster 20 then stel verwarming sitkamer 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- toe gordyn slaapkamermaster then toe gordyn sitkamer
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- oop gordyn slaapkamermaster then oop gordyn sitkamer
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- stel gordyn slaapkamermaster 19 then stel gordyn sitkamer 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- stel almal lig slaapkamermaster 25 then stel almal lig sitkamer 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- stel almal lig slaapkamermaster wit then stel almal lig sitkamer wit
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- doof almal lig slaapkamermaster then doof almal lig sitkamer
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- skakel almal lig slaapkamermaster then skakel almal lig sitkamer
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- stel almal lig slaapkamermaster 57 then stel almal lig main bath 57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- stel almal lig slaapkamermaster pienk then stel almal lig main bath pienk
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- doof almal lig slaapkamermaster then doof almal lig main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- skakel almal lig slaapkamermaster then skakel almal lig main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- stel verwarming slaapkamermaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- toe gordyn slaapkamermaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- oop gordyn slaapkamermaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- stel gordyn slaapkamermaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- stel waaier slaapkamermaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- doof waaier slaapkamermaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- skakel waaier slaapkamermaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- stel almal lig slaapkamermaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- stel almal lig slaapkamermaster pienk
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- doof almal lig slaapkamermaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- skakel almal lig slaapkamermaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- stel almal lig toilet 52
+area/powder_room_lights::powder_room_lights_change_color:
+- stel almal lig toilet pers
+area/powder_room_lights::powder_room_lights_turn_off:
+- doof almal lig toilet
+area/powder_room_lights::powder_room_lights_turn_on:
+- skakel almal lig toilet
+area/spoken_lights::spoken_bedroom_inflection:
+- stel almal lig slaapkamermaster rooi
+area/spoken_lights::spoken_except_island:
+- doof almal lig behalwe eiland
+area/spoken_lights::spoken_except_kitchen:
+- doof almal lig behalwe kombuis
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- doof almal lig sitkamer then doof almal lig sitkamerfamess then doof almal lig kombuis
+area/spoken_lights::spoken_stt_kitchen_off:
+- doof almal lig kombuis
+area/spoken_lights::spoken_stt_living_off:
+- doof almal lig sitkamer

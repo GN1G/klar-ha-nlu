@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- გამორთე potoloni sadzinebeli
+devices/geraete::device_arbeitszimmer_an:
+- ჩართე სინათლე office
+devices/geraete::device_esszimmer_an:
+- ჩართე სინათლე ojakhisotakhiess
+devices/geraete::device_kuche_kuche_an:
+- ჩართე სინათლე სამზარეულო
+devices/geraete::device_wohnzimmer_an:
+- ჩართე სინათლე მისაღები
+devices/geraete::filmabend:
+- ჩართე სႪენა filmabend
+devices/geraete::kugel_an:
+- ჩართე burtuli
+devices/geraete::luefter_50:
+- დააყენე ვენტილატორი office 50
+devices/geraete::pc_an:
+- ჩართე pc
+devices/geraete::r2d2_saugen:
+- ჩართე მტვერსასრუტი მისაღები
+devices/geraete::rollo_zu:
+- დახურე ფარდა მისაღები
+devices/geraete::spuelmaschine_aus:
+- გამორთე jamtchebi
+devices/geraete::tuer_abschliessen:
+- საკეტი საკეტი shemosasvleli
+devices/geraete::waschmaschine_an:
+- ჩართე saretskhave
+devices/klima::klima_schlaf_21:
+- დააყენე ac sadzinebeli 21
+devices/spoken::deckenlampe_an:
+- ჩართე potoloni sadzinebeli
+devices/spoken::kugel_aus:
+- გამორთე burtuli
+devices/spoken::luefter_aus:
+- გამორთე ვენტილატორი office
+devices/spoken::rollo_auf:
+- გახსენი ფარდა მისაღები
+devices/spoken::trockner_an:
+- ჩართე dryer
+devices/spoken::tv_aus:
+- გამორთე tv
+devices/spoken_more::decke_aus_casual:
+- გამორთე potoloni sadzinebeli
+devices/spoken_more::kugel_casual:
+- ჩართე burtuli
+devices/spoken_more::pc_aus:
+- გამორთე pc
+devices/spoken_more::spuelmaschine_an:
+- ჩართე jamtchebi
+devices/spoken_more::waschmaschine_aus:
+- გამორთე saretskhave

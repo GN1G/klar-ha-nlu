@@ -1,0 +1,156 @@
+- name: fan.family_fan_on
+  conditions:
+  - type: action
+    entity_id: fan.family_fan
+    state: 'on'
+  sentences:
+  - ഫാൻ kutumbam തെളി
+  - തെളി ഫാൻ kutumbam
+- name: fan.family_fan_off
+  conditions:
+  - type: action
+    entity_id: fan.family_fan
+    state: 'off'
+  sentences:
+  - അണയ്ക്ക് ഫാൻ kutumbam
+  - ഫാൻ kutumbam അണയ്ക്ക്
+- name: fan.family_fan_speed
+  conditions:
+  - type: action
+    entity_id: fan.family_fan
+    attributes:
+      percentage: 40
+  sentences:
+  - സെറ്റ് ഫാൻ kutumbam 40
+  - ഫാൻ kutumbam 40
+- name: fan.master_fan_on
+  conditions:
+  - type: action
+    entity_id: fan.master_fan
+    state: 'on'
+  sentences:
+  - ഫാൻ kitappumurimaster തെളി
+  - തെളി ഫാൻ kitappumurimaster
+- name: fan.master_fan_off
+  conditions:
+  - type: action
+    entity_id: fan.master_fan
+    state: 'off'
+  sentences:
+  - അണയ്ക്ക് ഫാൻ kitappumurimaster
+  - ഫാൻ kitappumurimaster അണയ്ക്ക്
+- name: fan.master_fan_speed
+  conditions:
+  - type: action
+    entity_id: fan.master_fan
+    attributes:
+      percentage: 40
+  sentences:
+  - സെറ്റ് ഫാൻ kitappumurimaster 40
+  - ഫാൻ kitappumurimaster 40
+- name: fan.bedroom2_fan_on
+  conditions:
+  - type: action
+    entity_id: fan.bedroom2_fan
+    state: 'on'
+  sentences:
+  - ഫാൻ kitappumuri2 തെളി
+  - തെളി ഫാൻ kitappumuri2
+- name: fan.bedroom2_fan_off
+  conditions:
+  - type: action
+    entity_id: fan.bedroom2_fan
+    state: 'off'
+  sentences:
+  - അണയ്ക്ക് ഫാൻ kitappumuri2
+  - ഫാൻ kitappumuri2 അണയ്ക്ക്
+- name: fan.bedroom2_fan_speed
+  conditions:
+  - type: action
+    entity_id: fan.bedroom2_fan
+    attributes:
+      percentage: 40
+  sentences:
+  - സെറ്റ് ഫാൻ kitappumuri2 40
+  - ഫാൻ kitappumuri2 40
+- name: fan.family_fan_speed_20
+  conditions:
+  - type: action
+    entity_id: fan.family_fan
+    attributes:
+      percentage: 20
+  sentences:
+  - സെറ്റ് ഫാൻ kutumbam 20
+  - ഫാൻ kutumbam 20
+- name: fan.family_fan_speed_60
+  conditions:
+  - type: action
+    entity_id: fan.family_fan
+    attributes:
+      percentage: 60
+  sentences:
+  - സെറ്റ് ഫാൻ kutumbam 60
+  - ഫാൻ kutumbam 60
+- name: fan.family_fan_speed_80
+  conditions:
+  - type: action
+    entity_id: fan.family_fan
+    attributes:
+      percentage: 80
+  sentences:
+  - സെറ്റ് ഫാൻ kutumbam 80
+  - ഫാൻ kutumbam 80
+- name: fan.master_fan_speed_20
+  conditions:
+  - type: action
+    entity_id: fan.master_fan
+    attributes:
+      percentage: 20
+  sentences:
+  - സെറ്റ് ഫാൻ kitappumurimaster 20
+  - ഫാൻ kitappumurimaster 20
+- name: fan.master_fan_speed_60
+  conditions:
+  - type: action
+    entity_id: fan.master_fan
+    attributes:
+      percentage: 60
+  sentences:
+  - സെറ്റ് ഫാൻ kitappumurimaster 60
+  - ഫാൻ kitappumurimaster 60
+- name: fan.master_fan_speed_80
+  conditions:
+  - type: action
+    entity_id: fan.master_fan
+    attributes:
+      percentage: 80
+  sentences:
+  - സെറ്റ് ഫാൻ kitappumurimaster 80
+  - ഫാൻ kitappumurimaster 80
+- name: fan.bedroom2_fan_speed_20
+  conditions:
+  - type: action
+    entity_id: fan.bedroom2_fan
+    attributes:
+      percentage: 20
+  sentences:
+  - സെറ്റ് ഫാൻ kitappumuri2 20
+  - ഫാൻ kitappumuri2 20
+- name: fan.bedroom2_fan_speed_60
+  conditions:
+  - type: action
+    entity_id: fan.bedroom2_fan
+    attributes:
+      percentage: 60
+  sentences:
+  - സെറ്റ് ഫാൻ kitappumuri2 60
+  - ഫാൻ kitappumuri2 60
+- name: fan.bedroom2_fan_speed_80
+  conditions:
+  - type: action
+    entity_id: fan.bedroom2_fan
+    attributes:
+      percentage: 80
+  sentences:
+  - സെറ്റ് ഫാൻ kitappumuri2 80
+  - ഫാൻ kitappumuri2 80

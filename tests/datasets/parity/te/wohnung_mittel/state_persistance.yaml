@@ -1,0 +1,15 @@
+state_persistance/followup::heizung_dann_grad:
+- - వెలిగించు వేడి గది
+  - ' 21'
+state_persistance/followup::wohnzimmer_dann_aus:
+- - వెలిగించు వెలుగు గది
+  - ఆర్పు
+state_persistance/spoken::kugel_dann_aus:
+- - వెలిగించు burra
+  - ఆర్పు
+state_persistance/spoken::wohnzimmer_dann_kueche:
+- - వెలిగించు వెలుగు గది
+  - వెలిగించు వెలుగు వంటగది
+state_persistance/spoken::wohnzimmer_dann_rot:
+- - వెలిగించు అన్ని వెలుగు గది
+  - red

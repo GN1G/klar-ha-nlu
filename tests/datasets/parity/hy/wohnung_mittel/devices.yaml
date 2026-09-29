@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- անջատիր stalat qnakaran
+devices/geraete::device_arbeitszimmer_an:
+- միացրու լույս office
+devices/geraete::device_esszimmer_an:
+- միացրու լույս yntaniqess
+devices/geraete::device_kuche_kuche_an:
+- միացրու լույս խոհանոց
+devices/geraete::device_wohnzimmer_an:
+- միացրու լույս հյուրասենյակ
+devices/geraete::filmabend:
+- միացրու տեսարան filmabend
+devices/geraete::kugel_an:
+- միացրու gundayin
+devices/geraete::luefter_50:
+- դիր օդափոխիչ office 50
+devices/geraete::pc_an:
+- միացրու pc
+devices/geraete::r2d2_saugen:
+- միացրու փոշեկուլ հյուրասենյակ
+devices/geraete::rollo_zu:
+- փակիր վարագույր հյուրասենյակ
+devices/geraete::spuelmaschine_aus:
+- անջատիր aman
+devices/geraete::tuer_abschliessen:
+- կողպեք կողպեք mutq
+devices/geraete::waschmaschine_an:
+- միացրու lvacqimekena
+devices/klima::klima_schlaf_21:
+- դիր ac qnakaran 21
+devices/spoken::deckenlampe_an:
+- միացրու stalat qnakaran
+devices/spoken::kugel_aus:
+- անջատիր gundayin
+devices/spoken::luefter_aus:
+- անջատիր օդափոխիչ office
+devices/spoken::rollo_auf:
+- բացիր վարագույր հյուրասենյակ
+devices/spoken::trockner_an:
+- միացրու dryer
+devices/spoken::tv_aus:
+- անջատիր tv
+devices/spoken_more::decke_aus_casual:
+- անջատիր stalat qnakaran
+devices/spoken_more::kugel_casual:
+- միացրու gundayin
+devices/spoken_more::pc_aus:
+- անջատիր pc
+devices/spoken_more::spuelmaschine_an:
+- միացրու aman
+devices/spoken_more::waschmaschine_aus:
+- անջատիր lvacqimekena

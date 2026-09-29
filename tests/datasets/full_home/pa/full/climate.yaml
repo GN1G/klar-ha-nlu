@@ -1,0 +1,231 @@
+- name: climate.ground_thermostat_18
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 18
+  sentences:
+  - ਸੈੱਟ ਗਰਮੀ ਬੈਠਕ 18
+  - ਗਰਮੀ ਬੈਠਕ 18
+- name: climate.ground_thermostat_19
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 19
+  sentences:
+  - ਸੈੱਟ ਗਰਮੀ ਬੈਠਕ 19
+  - ਗਰਮੀ ਬੈਠਕ 19
+- name: climate.ground_thermostat_20
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 20
+  sentences:
+  - ਸੈੱਟ ਗਰਮੀ ਬੈਠਕ 20
+  - ਗਰਮੀ ਬੈਠਕ 20
+- name: climate.ground_thermostat_21
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 21
+  sentences:
+  - ਸੈੱਟ ਗਰਮੀ ਬੈਠਕ 21
+  - ਗਰਮੀ ਬੈਠਕ 21
+- name: climate.ground_thermostat_22
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 22
+  sentences:
+  - ਸੈੱਟ ਗਰਮੀ ਬੈਠਕ 22
+  - ਗਰਮੀ ਬੈਠਕ 22
+- name: climate.ground_thermostat_23
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 23
+  sentences:
+  - ਸੈੱਟ ਗਰਮੀ ਬੈਠਕ 23
+  - ਗਰਮੀ ਬੈਠਕ 23
+- name: climate.ground_thermostat_24
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 24
+  sentences:
+  - ਸੈੱਟ ਗਰਮੀ ਬੈਠਕ 24
+  - ਗਰਮੀ ਬੈਠਕ 24
+- name: climate.ground_thermostat_get
+  conditions:
+  - type: query
+    entity_id: climate.ground_thermostat
+  sentences:
+  - ਕੀ ਗਰਮੀ ਬੈਠਕ
+  - ਗਰਮੀ ਬੈਠਕ
+- name: climate.upper_thermostat_18
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 18
+  sentences:
+  - ਸੈੱਟ ਗਰਮੀ bedroommaster 18
+  - ਗਰਮੀ bedroommaster 18
+- name: climate.upper_thermostat_19
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 19
+  sentences:
+  - ਸੈੱਟ ਗਰਮੀ bedroommaster 19
+  - ਗਰਮੀ bedroommaster 19
+- name: climate.upper_thermostat_20
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 20
+  sentences:
+  - ਸੈੱਟ ਗਰਮੀ bedroommaster 20
+  - ਗਰਮੀ bedroommaster 20
+- name: climate.upper_thermostat_21
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 21
+  sentences:
+  - ਸੈੱਟ ਗਰਮੀ bedroommaster 21
+  - ਗਰਮੀ bedroommaster 21
+- name: climate.upper_thermostat_22
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 22
+  sentences:
+  - ਸੈੱਟ ਗਰਮੀ bedroommaster 22
+  - ਗਰਮੀ bedroommaster 22
+- name: climate.upper_thermostat_23
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 23
+  sentences:
+  - ਸੈੱਟ ਗਰਮੀ bedroommaster 23
+  - ਗਰਮੀ bedroommaster 23
+- name: climate.upper_thermostat_24
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 24
+  sentences:
+  - ਸੈੱਟ ਗਰਮੀ bedroommaster 24
+  - ਗਰਮੀ bedroommaster 24
+- name: climate.upper_thermostat_get
+  conditions:
+  - type: query
+    entity_id: climate.upper_thermostat
+  sentences:
+  - ਕੀ ਗਰਮੀ bedroommaster
+  - ਗਰਮੀ bedroommaster
+- name: climate.master_ac_18
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 18
+  sentences:
+  - ਸੈੱਟ garmi bedroommaster 18
+  - garmi bedroommaster 18
+- name: climate.master_ac_19
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 19
+  sentences:
+  - ਸੈੱਟ garmi bedroommaster 19
+  - garmi bedroommaster 19
+- name: climate.master_ac_20
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 20
+  sentences:
+  - ਸੈੱਟ garmi bedroommaster 20
+  - garmi bedroommaster 20
+- name: climate.master_ac_21
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 21
+  sentences:
+  - ਸੈੱਟ garmi bedroommaster 21
+  - garmi bedroommaster 21
+- name: climate.master_ac_22
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 22
+  sentences:
+  - ਸੈੱਟ garmi bedroommaster 22
+  - garmi bedroommaster 22
+- name: climate.master_ac_23
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 23
+  sentences:
+  - ਸੈੱਟ garmi bedroommaster 23
+  - garmi bedroommaster 23
+- name: climate.master_ac_24
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 24
+  sentences:
+  - ਸੈੱਟ garmi bedroommaster 24
+  - garmi bedroommaster 24
+- name: climate.master_ac_get
+  conditions:
+  - type: query
+    entity_id: climate.master_ac
+  sentences:
+  - ਕੀ garmi bedroommaster
+  - garmi bedroommaster
+- name: climate.ground_thermostat_get_full
+  conditions:
+  - type: query
+    entity_id: climate.ground_thermostat
+  sentences:
+  - ਕੀ ਗਰਮੀ ਬੈਠਕ
+  - ਗਰਮੀ ਬੈਠਕ
+- name: climate.upper_thermostat_get_full
+  conditions:
+  - type: query
+    entity_id: climate.upper_thermostat
+  sentences:
+  - ਕੀ ਗਰਮੀ bedroommaster
+  - ਗਰਮੀ bedroommaster
+- name: climate.master_ac_get_full
+  conditions:
+  - type: query
+    entity_id: climate.master_ac
+  sentences:
+  - ਕੀ garmi bedroommaster
+  - garmi bedroommaster

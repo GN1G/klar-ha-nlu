@@ -1,0 +1,529 @@
+- name: play_queen
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: queen
+  sentences:
+  - ਚਲਾਓ queen ਬੈਠਕ
+  - ਚਲਾਓ queen ਟੀਵੀ ਬੈਠਕ
+- name: play_album
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: rumours
+      media_type: album
+      artist: fleetwood mac
+  sentences:
+  - ਚਲਾਓ album rumours by fleetwood mac ਬੈਠਕ
+- name: play_radio
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - ਚਲਾਓ queen radio mode ਬੈਠਕ
+- name: queue_song
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: bohemian rhapsody
+      enqueue: add
+  sentences:
+  - ਚਲਾਓ bohemian rhapsody queue ਬੈਠਕ
+- name: now_playing
+  conditions:
+  - type: query
+    entity_id: media_player.living_music
+  sentences:
+  - ਕੀ ਟੀਵੀ ਬੈਠਕ
+  - ਕੀ track ਬੈਠਕ
+- name: music_volume_10
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 10
+  sentences:
+  - ਸੈੱਟ ਟੀਵੀ ਬੈਠਕ 10
+  - ਟੀਵੀ ਬੈਠਕ 10
+- name: music_volume_20
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 20
+  sentences:
+  - ਸੈੱਟ ਟੀਵੀ ਬੈਠਕ 20
+  - ਟੀਵੀ ਬੈਠਕ 20
+- name: music_volume_30
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 30
+  sentences:
+  - ਸੈੱਟ ਟੀਵੀ ਬੈਠਕ 30
+  - ਟੀਵੀ ਬੈਠਕ 30
+- name: music_volume_50
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 50
+  sentences:
+  - ਸੈੱਟ ਟੀਵੀ ਬੈਠਕ 50
+  - ਟੀਵੀ ਬੈਠਕ 50
+- name: music_volume_80
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 80
+  sentences:
+  - ਸੈੱਟ ਟੀਵੀ ਬੈਠਕ 80
+  - ਟੀਵੀ ਬੈਠਕ 80
+- name: music_next
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    state: next
+  sentences:
+  - next track ਬੈਠਕ
+- name: music_prev
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    state: previous
+  sentences:
+  - previous track ਬੈਠਕ
+- name: kitchen_play
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: queen
+  sentences:
+  - ਚਲਾਓ queen ਰਸੋਈ
+  - ਚਲਾਓ queen ਟੀਵੀ ਰਸੋਈ
+- name: play_beatles_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - ਚਲਾਓ beatles ਬੈਠਕ
+  - ਚਲਾਓ beatles ਟੀਵੀ ਬੈਠਕ
+- name: play_radiohead_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - ਚਲਾਓ radiohead ਬੈਠਕ
+  - ਚਲਾਓ radiohead ਟੀਵੀ ਬੈਠਕ
+- name: play_abba_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: abba
+  sentences:
+  - ਚਲਾਓ abba ਬੈਠਕ
+  - ਚਲਾਓ abba ਟੀਵੀ ਬੈਠਕ
+- name: play_coldplay_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - ਚਲਾਓ coldplay ਬੈਠਕ
+  - ਚਲਾਓ coldplay ਟੀਵੀ ਬੈਠਕ
+- name: play_adele_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: adele
+  sentences:
+  - ਚਲਾਓ adele ਬੈਠਕ
+  - ਚਲਾਓ adele ਟੀਵੀ ਬੈਠਕ
+- name: play_prince_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: prince
+  sentences:
+  - ਚਲਾਓ prince ਬੈਠਕ
+  - ਚਲਾਓ prince ਟੀਵੀ ਬੈਠਕ
+- name: play_bowie_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - ਚਲਾਓ bowie ਬੈਠਕ
+  - ਚਲਾਓ bowie ਟੀਵੀ ਬੈਠਕ
+- name: play_nirvana_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - ਚਲਾਓ nirvana ਬੈਠਕ
+  - ਚਲਾਓ nirvana ਟੀਵੀ ਬੈਠਕ
+- name: play_eagles_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - ਚਲਾਓ eagles ਬੈਠਕ
+  - ਚਲਾਓ eagles ਟੀਵੀ ਬੈਠਕ
+- name: play_madonna_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - ਚਲਾਓ madonna ਬੈਠਕ
+  - ਚਲਾਓ madonna ਟੀਵੀ ਬੈਠਕ
+- name: play_mozart_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - ਚਲਾਓ mozart ਬੈਠਕ
+  - ਚਲਾਓ mozart ਟੀਵੀ ਬੈਠਕ
+- name: play_daft punk_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - ਚਲਾਓ daft punk ਬੈਠਕ
+  - ਚਲਾਓ daft punk ਟੀਵੀ ਬੈਠਕ
+- name: play_biafra_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - ਚਲਾਓ biafra ਬੈਠਕ
+  - ਚਲਾਓ biafra ਟੀਵੀ ਬੈਠਕ
+- name: play_queen_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: queen
+  sentences:
+  - ਚਲਾਓ queen ਰਸੋਈ
+  - ਚਲਾਓ queen ਟੀਵੀ ਰਸੋਈ
+- name: play_beatles_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - ਚਲਾਓ beatles ਰਸੋਈ
+  - ਚਲਾਓ beatles ਟੀਵੀ ਰਸੋਈ
+- name: play_radiohead_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - ਚਲਾਓ radiohead ਰਸੋਈ
+  - ਚਲਾਓ radiohead ਟੀਵੀ ਰਸੋਈ
+- name: play_abba_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: abba
+  sentences:
+  - ਚਲਾਓ abba ਰਸੋਈ
+  - ਚਲਾਓ abba ਟੀਵੀ ਰਸੋਈ
+- name: play_coldplay_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - ਚਲਾਓ coldplay ਰਸੋਈ
+  - ਚਲਾਓ coldplay ਟੀਵੀ ਰਸੋਈ
+- name: play_adele_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: adele
+  sentences:
+  - ਚਲਾਓ adele ਰਸੋਈ
+  - ਚਲਾਓ adele ਟੀਵੀ ਰਸੋਈ
+- name: play_prince_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: prince
+  sentences:
+  - ਚਲਾਓ prince ਰਸੋਈ
+  - ਚਲਾਓ prince ਟੀਵੀ ਰਸੋਈ
+- name: play_bowie_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - ਚਲਾਓ bowie ਰਸੋਈ
+  - ਚਲਾਓ bowie ਟੀਵੀ ਰਸੋਈ
+- name: play_nirvana_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - ਚਲਾਓ nirvana ਰਸੋਈ
+  - ਚਲਾਓ nirvana ਟੀਵੀ ਰਸੋਈ
+- name: play_eagles_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - ਚਲਾਓ eagles ਰਸੋਈ
+  - ਚਲਾਓ eagles ਟੀਵੀ ਰਸੋਈ
+- name: play_madonna_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - ਚਲਾਓ madonna ਰਸੋਈ
+  - ਚਲਾਓ madonna ਟੀਵੀ ਰਸੋਈ
+- name: play_mozart_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - ਚਲਾਓ mozart ਰਸੋਈ
+  - ਚਲਾਓ mozart ਟੀਵੀ ਰਸੋਈ
+- name: play_daft punk_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - ਚਲਾਓ daft punk ਰਸੋਈ
+  - ਚਲਾਓ daft punk ਟੀਵੀ ਰਸੋਈ
+- name: play_biafra_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - ਚਲਾਓ biafra ਰਸੋਈ
+  - ਚਲਾਓ biafra ਟੀਵੀ ਰਸੋਈ
+- name: play_queen_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: queen
+  sentences:
+  - ਚਲਾਓ queen office
+  - ਚਲਾਓ queen ਟੀਵੀ office
+- name: play_beatles_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - ਚਲਾਓ beatles office
+  - ਚਲਾਓ beatles ਟੀਵੀ office
+- name: play_radiohead_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - ਚਲਾਓ radiohead office
+  - ਚਲਾਓ radiohead ਟੀਵੀ office
+- name: play_abba_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: abba
+  sentences:
+  - ਚਲਾਓ abba office
+  - ਚਲਾਓ abba ਟੀਵੀ office
+- name: play_coldplay_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - ਚਲਾਓ coldplay office
+  - ਚਲਾਓ coldplay ਟੀਵੀ office
+- name: play_adele_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: adele
+  sentences:
+  - ਚਲਾਓ adele office
+  - ਚਲਾਓ adele ਟੀਵੀ office
+- name: play_prince_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: prince
+  sentences:
+  - ਚਲਾਓ prince office
+  - ਚਲਾਓ prince ਟੀਵੀ office
+- name: play_bowie_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - ਚਲਾਓ bowie office
+  - ਚਲਾਓ bowie ਟੀਵੀ office
+- name: play_nirvana_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - ਚਲਾਓ nirvana office
+  - ਚਲਾਓ nirvana ਟੀਵੀ office
+- name: play_eagles_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - ਚਲਾਓ eagles office
+  - ਚਲਾਓ eagles ਟੀਵੀ office
+- name: play_madonna_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - ਚਲਾਓ madonna office
+  - ਚਲਾਓ madonna ਟੀਵੀ office
+- name: play_mozart_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - ਚਲਾਓ mozart office
+  - ਚਲਾਓ mozart ਟੀਵੀ office
+- name: play_daft punk_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - ਚਲਾਓ daft punk office
+  - ਚਲਾਓ daft punk ਟੀਵੀ office
+- name: play_biafra_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - ਚਲਾਓ biafra office
+  - ਚਲਾਓ biafra ਟੀਵੀ office
+- name: radio_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - ਚਲਾਓ queen radio mode ਬੈਠਕ
+- name: now_living
+  conditions:
+  - type: query
+    entity_id: media_player.living_music
+  sentences:
+  - ਕੀ ਟੀਵੀ ਬੈਠਕ
+  - ਕੀ track ਬੈਠਕ
+- name: radio_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - ਚਲਾਓ queen radio mode ਰਸੋਈ
+- name: now_kitchen
+  conditions:
+  - type: query
+    entity_id: media_player.kitchen_music
+  sentences:
+  - ਕੀ ਟੀਵੀ ਰਸੋਈ
+  - ਕੀ track ਰਸੋਈ
+- name: radio_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - ਚਲਾਓ queen radio mode office
+- name: now_office
+  conditions:
+  - type: query
+    entity_id: media_player.office_music
+  sentences:
+  - ਕੀ ਟੀਵੀ office
+  - ਕੀ track office

@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- ਬੰਦ chhat bedroom
+devices/geraete::device_arbeitszimmer_an:
+- ਚਾਲੂ ਰੋਸ਼ਨੀ office
+devices/geraete::device_esszimmer_an:
+- ਚਾਲੂ ਰੋਸ਼ਨੀ parivarakess
+devices/geraete::device_kuche_kuche_an:
+- ਚਾਲੂ ਰੋਸ਼ਨੀ ਰਸੋਈ
+devices/geraete::device_wohnzimmer_an:
+- ਚਾਲੂ ਰੋਸ਼ਨੀ ਬੈਠਕ
+devices/geraete::filmabend:
+- ਚਾਲੂ ਦ੍ਰਿਸ਼ filmabend
+devices/geraete::kugel_an:
+- ਚਾਲੂ gola
+devices/geraete::luefter_50:
+- ਸੈੱਟ ਪੱਖਾ office 50
+devices/geraete::pc_an:
+- ਚਾਲੂ pc
+devices/geraete::r2d2_saugen:
+- ਚਾਲੂ ਝਾੜੂ ਬੈਠਕ
+devices/geraete::rollo_zu:
+- ਬੰਦਕਰ ਪਰਦਾ ਬੈਠਕ
+devices/geraete::spuelmaschine_aus:
+- ਬੰਦ bartan
+devices/geraete::tuer_abschliessen:
+- ਤਾਲਾ ਤਾਲਾ dakhla
+devices/geraete::waschmaschine_an:
+- ਚਾਲੂ washing
+devices/klima::klima_schlaf_21:
+- ਸੈੱਟ ac bedroom 21
+devices/spoken::deckenlampe_an:
+- ਚਾਲੂ chhat bedroom
+devices/spoken::kugel_aus:
+- ਬੰਦ gola
+devices/spoken::luefter_aus:
+- ਬੰਦ ਪੱਖਾ office
+devices/spoken::rollo_auf:
+- ਖੋਲ੍ਹ ਪਰਦਾ ਬੈਠਕ
+devices/spoken::trockner_an:
+- ਚਾਲੂ dryer
+devices/spoken::tv_aus:
+- ਬੰਦ tv
+devices/spoken_more::decke_aus_casual:
+- ਬੰਦ chhat bedroom
+devices/spoken_more::kugel_casual:
+- ਚਾਲੂ gola
+devices/spoken_more::pc_aus:
+- ਬੰਦ pc
+devices/spoken_more::spuelmaschine_an:
+- ਚਾਲੂ bartan
+devices/spoken_more::waschmaschine_aus:
+- ਬੰਦ washing

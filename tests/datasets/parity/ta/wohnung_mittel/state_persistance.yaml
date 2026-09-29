@@ -1,0 +1,15 @@
+state_persistance/followup::heizung_dann_grad:
+- - ஏற்று வெப்பம் அறை
+  - ' 21'
+state_persistance/followup::wohnzimmer_dann_aus:
+- - ஏற்று விளக்கு அறை
+  - அணை
+state_persistance/spoken::kugel_dann_aus:
+- - ஏற்று undai
+  - அணை
+state_persistance/spoken::wohnzimmer_dann_kueche:
+- - ஏற்று விளக்கு அறை
+  - ஏற்று விளக்கு சமையல்
+state_persistance/spoken::wohnzimmer_dann_rot:
+- - ஏற்று எல்லாம் விளக்கு அறை
+  - red

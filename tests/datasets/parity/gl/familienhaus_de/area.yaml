@@ -1,0 +1,248 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- pecha cortina cuarto2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- abre cortina cuarto2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- pon cortina cuarto2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- pon ventilador cuarto2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- apaga ventilador cuarto2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- acende ventilador cuarto2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- pon todo luz cuarto2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- pon todo luz cuarto2 pink
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- apaga todo luz cuarto2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- acende todo luz cuarto2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- pecha cortina cuarto3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- abre cortina cuarto3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- pon cortina cuarto3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- pon todo luz cuarto3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- pon todo luz cuarto3 blue
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- apaga todo luz cuarto3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- acende todo luz cuarto3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- pon todo luz cuarto4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- pon todo luz cuarto4 green
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- apaga todo luz cuarto4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- acende todo luz cuarto4
+area/dining_lights::dining_lights_change_brightness:
+- pon todo luz salafamess 54
+area/dining_lights::dining_lights_change_color:
+- pon todo luz salafamess blue
+area/dining_lights::dining_lights_turn_off:
+- apaga todo luz salafamess
+area/dining_lights::dining_lights_turn_on:
+- acende todo luz salafamess
+area/entryway_lights::entryway_lights_change_brightness:
+- pon todo luz entrada 72
+area/entryway_lights::entryway_lights_change_color:
+- pon todo luz entrada black
+area/entryway_lights::entryway_lights_turn_off:
+- apaga todo luz entrada
+area/entryway_lights::entryway_lights_turn_on:
+- acende todo luz entrada
+area/entryway_locks::entryway_locks_lock:
+- pechadura pechadura entrada
+area/entryway_locks::entryway_locks_unlock:
+- abre pechadura entrada
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- pon todo luz salafam 39 then pon todo luz cociña 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- pon todo luz salafam purple then pon todo luz cociña purple
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- apaga todo luz salafam then apaga todo luz cociña
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- acende todo luz salafam then acende todo luz cociña
+area/family_room_fans::family_room_fans_set_fan_speed:
+- pon ventilador salafam 32
+area/family_room_fans::family_room_fans_turn_off:
+- apaga ventilador salafam
+area/family_room_fans::family_room_fans_turn_on:
+- acende ventilador salafam
+area/family_room_lights::family_room_lights_change_brightness:
+- pon todo luz salafam 44
+area/family_room_lights::family_room_lights_change_color:
+- pon todo luz salafam green
+area/family_room_lights::family_room_lights_turn_off:
+- apaga todo luz salafam
+area/family_room_lights::family_room_lights_turn_on:
+- acende todo luz salafam
+area/garage_covers::garage_covers_close:
+- pecha cortina garage
+area/garage_covers::garage_covers_open:
+- abre cortina garage
+area/garage_covers::garage_covers_set_position:
+- pon cortina garage 86
+area/garage_lights::garage_lights_change_brightness:
+- pon todo luz garage 16
+area/garage_lights::garage_lights_change_color:
+- pon todo luz garage blue
+area/garage_lights::garage_lights_turn_off:
+- apaga todo luz garage
+area/garage_lights::garage_lights_turn_on:
+- acende todo luz garage
+area/garage_locks::garage_locks_lock:
+- pechadura pechadura garage
+area/garage_locks::garage_locks_unlock:
+- abre pechadura garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- pon todo luz entradagang 26 then pon todo luz aseo 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- pon todo luz entradagang purple then pon todo luz aseo purple
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- apaga todo luz entradagang then apaga todo luz aseo
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- acende todo luz entradagang then acende todo luz aseo
+area/hallway_lights::hallway_lights_change_brightness:
+- pon todo luz entradagang 61
+area/hallway_lights::hallway_lights_change_color:
+- pon todo luz entradagang orange
+area/hallway_lights::hallway_lights_turn_off:
+- apaga todo luz entradagang
+area/hallway_lights::hallway_lights_turn_on:
+- acende todo luz entradagang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- pon todo luz cociña 45
+area/kitchen_lights::kitchen_lights_change_color:
+- pon todo luz cociña pink
+area/kitchen_lights::kitchen_lights_turn_off:
+- apaga todo luz cociña
+area/kitchen_lights::kitchen_lights_turn_on:
+- acende todo luz cociña
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- apaga todo aparello cociña
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- acende todo aparello cociña
+area/laundry_lights::laundry_lights_change_brightness:
+- pon todo luz lavandaria 62
+area/laundry_lights::laundry_lights_change_color:
+- pon todo luz lavandaria yellow
+area/laundry_lights::laundry_lights_turn_off:
+- apaga todo luz lavandaria
+area/laundry_lights::laundry_lights_turn_on:
+- acende todo luz lavandaria
+area/laundry_switchs::laundry_switchs_turn_off:
+- apaga todo aparello lavandaria
+area/laundry_switchs::laundry_switchs_turn_on:
+- acende todo aparello lavandaria
+area/living_climates::living_climates_set_temperature:
+- pon calefaccion salon 20
+area/living_covers::living_covers_close:
+- pecha cortina salon
+area/living_covers::living_covers_open:
+- abre cortina salon
+area/living_covers::living_covers_set_position:
+- pon cortina salon 46
+area/living_lights::living_lights_change_brightness:
+- pon todo luz salon 84
+area/living_lights::living_lights_change_color:
+- pon todo luz salon blue
+area/living_lights::living_lights_turn_off:
+- apaga todo luz salon
+area/living_lights::living_lights_turn_on:
+- acende todo luz salon
+area/main_bath_lights::main_bath_lights_change_brightness:
+- pon todo luz main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- pon todo luz main bath pink
+area/main_bath_lights::main_bath_lights_turn_off:
+- apaga todo luz main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- acende todo luz main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- apaga todo aparello main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- acende todo aparello main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- pon todo luz banomaster 60
+area/master_bath_lights::master_bath_lights_change_color:
+- pon todo luz banomaster black
+area/master_bath_lights::master_bath_lights_turn_off:
+- apaga todo luz banomaster
+area/master_bath_lights::master_bath_lights_turn_on:
+- acende todo luz banomaster
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- apaga todo aparello banomaster
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- acende todo aparello banomaster
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- pon calefaccion cuartomaster 20 then pon calefaccion salon 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- pecha cortina cuartomaster then pecha cortina salon
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- abre cortina cuartomaster then abre cortina salon
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- pon cortina cuartomaster 19 then pon cortina salon 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- pon todo luz cuartomaster 25 then pon todo luz salon 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- pon todo luz cuartomaster white then pon todo luz salon white
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- apaga todo luz cuartomaster then apaga todo luz salon
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- acende todo luz cuartomaster then acende todo luz salon
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- pon todo luz cuartomaster 57 then pon todo luz main bath 57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- pon todo luz cuartomaster pink then pon todo luz main bath pink
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- apaga todo luz cuartomaster then apaga todo luz main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- acende todo luz cuartomaster then acende todo luz main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- pon calefaccion cuartomaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- pecha cortina cuartomaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- abre cortina cuartomaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- pon cortina cuartomaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- pon ventilador cuartomaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- apaga ventilador cuartomaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- acende ventilador cuartomaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- pon todo luz cuartomaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- pon todo luz cuartomaster pink
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- apaga todo luz cuartomaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- acende todo luz cuartomaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- pon todo luz aseo 52
+area/powder_room_lights::powder_room_lights_change_color:
+- pon todo luz aseo purple
+area/powder_room_lights::powder_room_lights_turn_off:
+- apaga todo luz aseo
+area/powder_room_lights::powder_room_lights_turn_on:
+- acende todo luz aseo
+area/spoken_lights::spoken_bedroom_inflection:
+- pon todo luz cuartomaster red
+area/spoken_lights::spoken_except_island:
+- apaga todo luz excepto illa
+area/spoken_lights::spoken_except_kitchen:
+- apaga todo luz excepto cociña
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- apaga todo luz salon then apaga todo luz salafamess then apaga todo luz cociña
+area/spoken_lights::spoken_stt_kitchen_off:
+- apaga todo luz cociña
+area/spoken_lights::spoken_stt_living_off:
+- apaga todo luz salon

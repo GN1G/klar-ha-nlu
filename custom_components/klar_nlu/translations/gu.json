@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "This integration talks to Assist. A separate engine parses speech: the Klar NLU App, this bundled process, or Docker. On Home Assistant OS install the App as well, then pick Use the Klar NLU App. Without the App, pick Start the bundled engine. Do not run both.",
+        "data": {
+          "mode": "એન્જિન",
+          "channel": "રિલીઝ ચેનલ",
+          "url": "Klar API URL",
+          "token": "લેખન ટોકન"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL http(s) હોવું જોઈએ, વપરાશકર્તા નામ વગર."
+    },
+    "abort": {
+      "already_configured": "Klar NLU પહેલેથી સેટ છે"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "અવાજ, Assist ભાષાઓ અને LLM Klar ઓપરેટર UI (સેટિંગ્સ)માં છે. આ ફોર્મ ફક્ત એન્જિન જોડે છે: URL, ટોકન અને ચેનલ. {apps}",
+        "data": {
+          "mode": "એન્જિન",
+          "url": "Klar API URL",
+          "token": "લેખન ટોકન",
+          "assist_filter": "ફક્ત Assistને દેખાતી એકમો નિયંત્રિત કરો",
+          "channel": "રિલીઝ ચેનલ"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "Klar એપ જેવું જ ટોકન.",
+          "assist_filter": "ચાલુ: ફક્ત Assist જુએ તે. બંધ: છુપાયેલા એકમો પણ.",
+          "channel": "ગમે ત્યારે. Staging Klar NLU (Staging) તરફ છે."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL http(s) હોવું જોઈએ, વપરાશકર્તા નામ વગર."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "બંડલ એન્જિન શરૂ કરો (ફક્ત HACS)",
+        "remote": "Klar NLU એપ અથવા Docker વાપરો"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (ઉત્પાદન)",
+        "staging": "Staging (ઉમેદવાર)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "સિસ્ટમ ભાષા",
+        "all": "બધી ભાષાઓ"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "સામાન્ય",
+        "butler": "Butler",
+        "locker": "આરામદાયક",
+        "fuersorglich": "કાળજી રાખનાર",
+        "party": "Party",
+        "grantig": "ચિડાયેલું",
+        "sarkastisch": "વ્યંગ્યાત્મક",
+        "pirat": "ચાંચિયો",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "વ્યક્તિત્વ",
+        "state": {
+          "default": "સામાન્ય",
+          "butler": "Butler",
+          "locker": "આરામદાયક",
+          "fuersorglich": "કાળજી રાખનાર",
+          "party": "Party",
+          "grantig": "ચિડાયેલું",
+          "sarkastisch": "વ્યંગ્યાત્મક",
+          "pirat": "ચાંચિયો",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "ટૂંકી પુષ્ટિ"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "AI કાર્ય"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "છેલ્લે સાંભળ્યું"
+      },
+      "last_decision": {
+        "name": "છેલ્લો નિર્ણય"
+      },
+      "last_speech": {
+        "name": "છેલ્લો જવાબ"
+      },
+      "last_area": {
+        "name": "સાંભળ્યું"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Klar એન્જિન અટક્યું",
+      "description": "બંડલ Klar પ્રક્રિયા ચાલતી નથી. સેટિંગ્સ → ઉપકરણો અને સેવાઓમાંથી Klar NLU ફરી લોડ કરો."
+    }
+  }
+}

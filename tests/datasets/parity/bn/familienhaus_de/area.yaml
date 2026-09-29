@@ -1,0 +1,248 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- বন্ধ পর্দা shobarghor2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- খোল পর্দা shobarghor2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- সেট পর্দা shobarghor2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- সেট পাখা shobarghor2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- নিভাও পাখা shobarghor2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- জ্বালাও পাখা shobarghor2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- সেট সব আলো shobarghor2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- সেট সব আলো shobarghor2 pink
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- নিভাও সব আলো shobarghor2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- জ্বালাও সব আলো shobarghor2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- বন্ধ পর্দা shobarghor3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- খোল পর্দা shobarghor3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- সেট পর্দা shobarghor3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- সেট সব আলো shobarghor3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- সেট সব আলো shobarghor3 blue
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- নিভাও সব আলো shobarghor3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- জ্বালাও সব আলো shobarghor3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- সেট সব আলো shobarghor4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- সেট সব আলো shobarghor4 green
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- নিভাও সব আলো shobarghor4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- জ্বালাও সব আলো shobarghor4
+area/dining_lights::dining_lights_change_brightness:
+- সেট সব আলো paribarikess 54
+area/dining_lights::dining_lights_change_color:
+- সেট সব আলো paribarikess blue
+area/dining_lights::dining_lights_turn_off:
+- নিভাও সব আলো paribarikess
+area/dining_lights::dining_lights_turn_on:
+- জ্বালাও সব আলো paribarikess
+area/entryway_lights::entryway_lights_change_brightness:
+- সেট সব আলো prabesh 72
+area/entryway_lights::entryway_lights_change_color:
+- সেট সব আলো prabesh black
+area/entryway_lights::entryway_lights_turn_off:
+- নিভাও সব আলো prabesh
+area/entryway_lights::entryway_lights_turn_on:
+- জ্বালাও সব আলো prabesh
+area/entryway_locks::entryway_locks_lock:
+- তালা তালা prabesh
+area/entryway_locks::entryway_locks_unlock:
+- খোল তালা prabesh
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- সেট সব আলো paribarik 39 ebong সেট সব আলো রান্না 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- সেট সব আলো paribarik purple ebong সেট সব আলো রান্না purple
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- নিভাও সব আলো paribarik ebong নিভাও সব আলো রান্না
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- জ্বালাও সব আলো paribarik ebong জ্বালাও সব আলো রান্না
+area/family_room_fans::family_room_fans_set_fan_speed:
+- সেট পাখা paribarik 32
+area/family_room_fans::family_room_fans_turn_off:
+- নিভাও পাখা paribarik
+area/family_room_fans::family_room_fans_turn_on:
+- জ্বালাও পাখা paribarik
+area/family_room_lights::family_room_lights_change_brightness:
+- সেট সব আলো paribarik 44
+area/family_room_lights::family_room_lights_change_color:
+- সেট সব আলো paribarik green
+area/family_room_lights::family_room_lights_turn_off:
+- নিভাও সব আলো paribarik
+area/family_room_lights::family_room_lights_turn_on:
+- জ্বালাও সব আলো paribarik
+area/garage_covers::garage_covers_close:
+- বন্ধ পর্দা garage
+area/garage_covers::garage_covers_open:
+- খোল পর্দা garage
+area/garage_covers::garage_covers_set_position:
+- সেট পর্দা garage 86
+area/garage_lights::garage_lights_change_brightness:
+- সেট সব আলো garage 16
+area/garage_lights::garage_lights_change_color:
+- সেট সব আলো garage blue
+area/garage_lights::garage_lights_turn_off:
+- নিভাও সব আলো garage
+area/garage_lights::garage_lights_turn_on:
+- জ্বালাও সব আলো garage
+area/garage_locks::garage_locks_lock:
+- তালা তালা garage
+area/garage_locks::garage_locks_unlock:
+- খোল তালা garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- সেট সব আলো prabeshgang 26 ebong সেট সব আলো shauchagar 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- সেট সব আলো prabeshgang purple ebong সেট সব আলো shauchagar purple
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- নিভাও সব আলো prabeshgang ebong নিভাও সব আলো shauchagar
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- জ্বালাও সব আলো prabeshgang ebong জ্বালাও সব আলো shauchagar
+area/hallway_lights::hallway_lights_change_brightness:
+- সেট সব আলো prabeshgang 61
+area/hallway_lights::hallway_lights_change_color:
+- সেট সব আলো prabeshgang orange
+area/hallway_lights::hallway_lights_turn_off:
+- নিভাও সব আলো prabeshgang
+area/hallway_lights::hallway_lights_turn_on:
+- জ্বালাও সব আলো prabeshgang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- সেট সব আলো রান্না 45
+area/kitchen_lights::kitchen_lights_change_color:
+- সেট সব আলো রান্না pink
+area/kitchen_lights::kitchen_lights_turn_off:
+- নিভাও সব আলো রান্না
+area/kitchen_lights::kitchen_lights_turn_on:
+- জ্বালাও সব আলো রান্না
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- নিভাও সব jantro রান্না
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- জ্বালাও সব jantro রান্না
+area/laundry_lights::laundry_lights_change_brightness:
+- সেট সব আলো dhoa 62
+area/laundry_lights::laundry_lights_change_color:
+- সেট সব আলো dhoa yellow
+area/laundry_lights::laundry_lights_turn_off:
+- নিভাও সব আলো dhoa
+area/laundry_lights::laundry_lights_turn_on:
+- জ্বালাও সব আলো dhoa
+area/laundry_switchs::laundry_switchs_turn_off:
+- নিভাও সব jantro dhoa
+area/laundry_switchs::laundry_switchs_turn_on:
+- জ্বালাও সব jantro dhoa
+area/living_climates::living_climates_set_temperature:
+- সেট গরম বসার 20
+area/living_covers::living_covers_close:
+- বন্ধ পর্দা বসার
+area/living_covers::living_covers_open:
+- খোল পর্দা বসার
+area/living_covers::living_covers_set_position:
+- সেট পর্দা বসার 46
+area/living_lights::living_lights_change_brightness:
+- সেট সব আলো বসার 84
+area/living_lights::living_lights_change_color:
+- সেট সব আলো বসার blue
+area/living_lights::living_lights_turn_off:
+- নিভাও সব আলো বসার
+area/living_lights::living_lights_turn_on:
+- জ্বালাও সব আলো বসার
+area/main_bath_lights::main_bath_lights_change_brightness:
+- সেট সব আলো main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- সেট সব আলো main bath pink
+area/main_bath_lights::main_bath_lights_turn_off:
+- নিভাও সব আলো main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- জ্বালাও সব আলো main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- নিভাও সব jantro main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- জ্বালাও সব jantro main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- সেট সব আলো masterbath 60
+area/master_bath_lights::master_bath_lights_change_color:
+- সেট সব আলো masterbath black
+area/master_bath_lights::master_bath_lights_turn_off:
+- নিভাও সব আলো masterbath
+area/master_bath_lights::master_bath_lights_turn_on:
+- জ্বালাও সব আলো masterbath
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- নিভাও সব jantro masterbath
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- জ্বালাও সব jantro masterbath
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- সেট গরম shobarghormaster 20 ebong সেট গরম বসার 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- বন্ধ পর্দা shobarghormaster ebong বন্ধ পর্দা বসার
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- খোল পর্দা shobarghormaster ebong খোল পর্দা বসার
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- সেট পর্দা shobarghormaster 19 ebong সেট পর্দা বসার 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- সেট সব আলো shobarghormaster 25 ebong সেট সব আলো বসার 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- সেট সব আলো shobarghormaster white ebong সেট সব আলো বসার white
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- নিভাও সব আলো shobarghormaster ebong নিভাও সব আলো বসার
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- জ্বালাও সব আলো shobarghormaster ebong জ্বালাও সব আলো বসার
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- সেট সব আলো shobarghormaster 57 ebong সেট সব আলো main bath 57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- সেট সব আলো shobarghormaster pink ebong সেট সব আলো main bath pink
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- নিভাও সব আলো shobarghormaster ebong নিভাও সব আলো main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- জ্বালাও সব আলো shobarghormaster ebong জ্বালাও সব আলো main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- সেট গরম shobarghormaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- বন্ধ পর্দা shobarghormaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- খোল পর্দা shobarghormaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- সেট পর্দা shobarghormaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- সেট পাখা shobarghormaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- নিভাও পাখা shobarghormaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- জ্বালাও পাখা shobarghormaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- সেট সব আলো shobarghormaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- সেট সব আলো shobarghormaster pink
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- নিভাও সব আলো shobarghormaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- জ্বালাও সব আলো shobarghormaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- সেট সব আলো shauchagar 52
+area/powder_room_lights::powder_room_lights_change_color:
+- সেট সব আলো shauchagar purple
+area/powder_room_lights::powder_room_lights_turn_off:
+- নিভাও সব আলো shauchagar
+area/powder_room_lights::powder_room_lights_turn_on:
+- জ্বালাও সব আলো shauchagar
+area/spoken_lights::spoken_bedroom_inflection:
+- সেট সব আলো shobarghormaster red
+area/spoken_lights::spoken_except_island:
+- নিভাও সব আলো chara dip
+area/spoken_lights::spoken_except_kitchen:
+- নিভাও সব আলো chara রান্না
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- নিভাও সব আলো বসার ebong নিভাও সব আলো paribarikess ebong নিভাও সব আলো রান্না
+area/spoken_lights::spoken_stt_kitchen_off:
+- নিভাও সব আলো রান্না
+area/spoken_lights::spoken_stt_living_off:
+- নিভাও সব আলো বসার

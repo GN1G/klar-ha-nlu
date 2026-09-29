@@ -1,0 +1,34 @@
+multiple_intents/multiple_intents::multi_0:
+- apaga luz aseo then acende escena good_morning
+multiple_intents/multiple_intents::multi_1:
+- que lavavajillas then acende escena leaving_home
+multiple_intents/multiple_intents::multi_10:
+- pon ventilador cuarto2 50 then que cortina cuarto2 then que cortina cuartomaster
+multiple_intents/multiple_intents::multi_12:
+- apaga mesilla left cuartomaster then acende todo luz lavandaria
+multiple_intents/multiple_intents::multi_14:
+- apaga todo luz cociña then que luz entradagang
+multiple_intents/multiple_intents::multi_15:
+- que cortina cuarto2 then apaga todo luz cociña
+multiple_intents/multiple_intents::multi_16:
+- acende teito cociña then que luz entradagang
+multiple_intents/multiple_intents::multi_18:
+- apaga ventilador salafam then pon illa cociña 20
+multiple_intents/multiple_intents::multi_19:
+- que ventilador cuarto2 then acende luz lavandaria
+multiple_intents/multiple_intents::multi_2:
+- que luz garage then pecha cortina salon
+multiple_intents/multiple_intents::multi_3:
+- que calefaccion salon then apaga teito salon
+multiple_intents/multiple_intents::multi_4:
+- pecha cortina cuarto3 then pecha cortina garage then acende teito cuarto2
+multiple_intents/multiple_intents::multi_5:
+- apaga luz salafamess then pon ventilador cuarto2 50
+multiple_intents/multiple_intents::multi_6:
+- acende teito cuarto3 then apaga luz entrada
+multiple_intents/multiple_intents::multi_7:
+- acende escena movie_night then apaga lavavajillas
+multiple_intents/multiple_intents::multi_8:
+- abre pechadura garage then que luz garage
+multiple_intents/multiple_intents::multi_9:
+- pause tv salon then apaga teito salon

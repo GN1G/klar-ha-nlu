@@ -1,0 +1,321 @@
+- name: cover.living_blinds_open
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    state: open
+  sentences:
+  - เปิด ม่าน ห้องนั่งเล่น
+  - ม่าน ห้องนั่งเล่น เปิด
+- name: cover.living_blinds_close
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    state: closed
+  sentences:
+  - ปิด ม่าน ห้องนั่งเล่น
+  - ม่าน ห้องนั่งเล่น ปิด
+- name: cover.living_blinds_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 0
+  sentences:
+  - ตั้ง ม่าน ห้องนั่งเล่น 0
+  - ม่าน ห้องนั่งเล่น 0
+- name: cover.living_blinds_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 25
+  sentences:
+  - ตั้ง ม่าน ห้องนั่งเล่น 25
+  - ม่าน ห้องนั่งเล่น 25
+- name: cover.living_blinds_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 40
+  sentences:
+  - ตั้ง ม่าน ห้องนั่งเล่น 40
+  - ม่าน ห้องนั่งเล่น 40
+- name: cover.living_blinds_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 75
+  sentences:
+  - ตั้ง ม่าน ห้องนั่งเล่น 75
+  - ม่าน ห้องนั่งเล่น 75
+- name: cover.living_blinds_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 100
+  sentences:
+  - ตั้ง ม่าน ห้องนั่งเล่น 100
+  - ม่าน ห้องนั่งเล่น 100
+- name: cover.master_blinds_open
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    state: open
+  sentences:
+  - เปิด ม่าน hongnonmaster
+  - ม่าน hongnonmaster เปิด
+- name: cover.master_blinds_close
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    state: closed
+  sentences:
+  - ปิด ม่าน hongnonmaster
+  - ม่าน hongnonmaster ปิด
+- name: cover.master_blinds_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 0
+  sentences:
+  - ตั้ง ม่าน hongnonmaster 0
+  - ม่าน hongnonmaster 0
+- name: cover.master_blinds_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 25
+  sentences:
+  - ตั้ง ม่าน hongnonmaster 25
+  - ม่าน hongnonmaster 25
+- name: cover.master_blinds_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 40
+  sentences:
+  - ตั้ง ม่าน hongnonmaster 40
+  - ม่าน hongnonmaster 40
+- name: cover.master_blinds_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 75
+  sentences:
+  - ตั้ง ม่าน hongnonmaster 75
+  - ม่าน hongnonmaster 75
+- name: cover.master_blinds_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 100
+  sentences:
+  - ตั้ง ม่าน hongnonmaster 100
+  - ม่าน hongnonmaster 100
+- name: cover.bedroom2_blinds_open
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    state: open
+  sentences:
+  - เปิด ม่าน hongnon2
+  - ม่าน hongnon2 เปิด
+- name: cover.bedroom2_blinds_close
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    state: closed
+  sentences:
+  - ปิด ม่าน hongnon2
+  - ม่าน hongnon2 ปิด
+- name: cover.bedroom2_blinds_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 0
+  sentences:
+  - ตั้ง ม่าน hongnon2 0
+  - ม่าน hongnon2 0
+- name: cover.bedroom2_blinds_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 25
+  sentences:
+  - ตั้ง ม่าน hongnon2 25
+  - ม่าน hongnon2 25
+- name: cover.bedroom2_blinds_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 40
+  sentences:
+  - ตั้ง ม่าน hongnon2 40
+  - ม่าน hongnon2 40
+- name: cover.bedroom2_blinds_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 75
+  sentences:
+  - ตั้ง ม่าน hongnon2 75
+  - ม่าน hongnon2 75
+- name: cover.bedroom2_blinds_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 100
+  sentences:
+  - ตั้ง ม่าน hongnon2 100
+  - ม่าน hongnon2 100
+- name: cover.bedroom3_blinds_open
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    state: open
+  sentences:
+  - เปิด ม่าน hongnon3
+  - ม่าน hongnon3 เปิด
+- name: cover.bedroom3_blinds_close
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    state: closed
+  sentences:
+  - ปิด ม่าน hongnon3
+  - ม่าน hongnon3 ปิด
+- name: cover.bedroom3_blinds_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 0
+  sentences:
+  - ตั้ง ม่าน hongnon3 0
+  - ม่าน hongnon3 0
+- name: cover.bedroom3_blinds_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 25
+  sentences:
+  - ตั้ง ม่าน hongnon3 25
+  - ม่าน hongnon3 25
+- name: cover.bedroom3_blinds_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 40
+  sentences:
+  - ตั้ง ม่าน hongnon3 40
+  - ม่าน hongnon3 40
+- name: cover.bedroom3_blinds_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 75
+  sentences:
+  - ตั้ง ม่าน hongnon3 75
+  - ม่าน hongnon3 75
+- name: cover.bedroom3_blinds_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 100
+  sentences:
+  - ตั้ง ม่าน hongnon3 100
+  - ม่าน hongnon3 100
+- name: cover.garage_door_open
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    state: open
+  sentences:
+  - เปิด ม่าน garage
+  - ม่าน garage เปิด
+- name: cover.garage_door_close
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    state: closed
+  sentences:
+  - ปิด ม่าน garage
+  - ม่าน garage ปิด
+- name: cover.garage_door_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 0
+  sentences:
+  - ตั้ง ม่าน garage 0
+  - ม่าน garage 0
+- name: cover.garage_door_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 25
+  sentences:
+  - ตั้ง ม่าน garage 25
+  - ม่าน garage 25
+- name: cover.garage_door_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 40
+  sentences:
+  - ตั้ง ม่าน garage 40
+  - ม่าน garage 40
+- name: cover.garage_door_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 75
+  sentences:
+  - ตั้ง ม่าน garage 75
+  - ม่าน garage 75
+- name: cover.garage_door_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 100
+  sentences:
+  - ตั้ง ม่าน garage 100
+  - ม่าน garage 100
+- name: cover.living_blinds_open_extra
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    state: open
+  sentences:
+  - เปิด ม่าน ห้องนั่งเล่น
+  - ม่าน ห้องนั่งเล่น เปิด
+- name: cover.master_blinds_open_extra
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    state: open
+  sentences:
+  - เปิด ม่าน hongnonmaster
+  - ม่าน hongnonmaster เปิด

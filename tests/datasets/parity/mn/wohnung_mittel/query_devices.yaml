@@ -1,0 +1,18 @@
+query_devices/spoken::status_kugel:
+- юу bomboo
+query_devices/spoken::status_pc:
+- юу pc
+query_devices/spoken::status_trockner:
+- юу dryer
+query_devices/spoken::status_tv:
+- юу tv
+query_devices/spoken_more::status_decke:
+- юу taaz untlagiin
+query_devices/spoken_more::status_spuelmaschine:
+- юу sav
+query_devices/spoken_more::status_wasch_casual:
+- юу ugaalgyn
+query_devices/status::status_r2d2:
+- юу тоос зочны
+query_devices/status::status_waschmaschine:
+- юу ugaalgyn

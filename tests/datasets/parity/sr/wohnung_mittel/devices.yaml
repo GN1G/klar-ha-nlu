@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- искључи плафон спавача
+devices/geraete::device_arbeitszimmer_an:
+- укључи светло office
+devices/geraete::device_esszimmer_an:
+- укључи светло дневнаfamess
+devices/geraete::device_kuche_kuche_an:
+- укључи светло кухиња
+devices/geraete::device_wohnzimmer_an:
+- укључи светло дневна
+devices/geraete::filmabend:
+- укључи сцена filmabend
+devices/geraete::kugel_an:
+- укључи кугла
+devices/geraete::luefter_50:
+- стави вентилатор office 50
+devices/geraete::pc_an:
+- укључи pc
+devices/geraete::r2d2_saugen:
+- укључи усисивач дневна
+devices/geraete::rollo_zu:
+- затвори завеса дневна
+devices/geraete::spuelmaschine_aus:
+- искључи судови
+devices/geraete::tuer_abschliessen:
+- брава брава улаз
+devices/geraete::waschmaschine_an:
+- укључи веш
+devices/klima::klima_schlaf_21:
+- стави ac спавача 21
+devices/spoken::deckenlampe_an:
+- укључи плафон спавача
+devices/spoken::kugel_aus:
+- искључи кугла
+devices/spoken::luefter_aus:
+- искључи вентилатор office
+devices/spoken::rollo_auf:
+- отвори завеса дневна
+devices/spoken::trockner_an:
+- укључи dryer
+devices/spoken::tv_aus:
+- искључи tv
+devices/spoken_more::decke_aus_casual:
+- искључи плафон спавача
+devices/spoken_more::kugel_casual:
+- укључи кугла
+devices/spoken_more::pc_aus:
+- искључи pc
+devices/spoken_more::spuelmaschine_an:
+- укључи судови
+devices/spoken_more::waschmaschine_aus:
+- искључи веш

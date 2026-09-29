@@ -1,0 +1,214 @@
+# Home Assistant
+
+[Deutsch](home-assistant.md) · [English](en/home-assistant.md)
+
+Haushaltsweg: [Einstieg](getting-started.md). Fehltreffer, Token, Bundle: [Fehlerbehebung](troubleshooting.md).
+
+Klar NLU hängt als Conversation-Entity an Assist. Das ist die **HACS-Integration**. Die **Engine**, die Sprache parst, ist getrennt: Klar-NLU-App (Add-on), das mitgelieferte Kind, das die Integration startet, oder Docker. Derselbe Parser — die App macht Assist nicht schlauer.
+
+Unter Home Assistant OS beides installieren, wenn Assist **und** Zuordnung/Labor gebraucht werden. Nur HACS reicht für Assist ohne App-UI. Nur die App koppelt Assist nicht.
+
+V2 spricht nur `POST /api/v2/parse`. Integration und Engine im selben Release aktualisieren; ein gemischtes Paar schlägt fehl. Jede kompilierte Assist-Locale ist erstklassig; Assist pinnt pro Request ein Pack.
+
+## Integration
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=FABBricate-IT-Solutions&repository=klar-ha-nlu&category=integration)
+
+1. Badge klicken, oder HACS → Integrationen → ⋮ → Benutzerdefinierte Repositories → `https://github.com/FABBricate-IT-Solutions/klar-ha-nlu` → Kategorie **Integration**.
+2. **Klar NLU** herunterladen und Home Assistant neu starten.
+3. [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=klar_nlu)  
+   oder Einstellungen → Geräte & Dienste → Integration hinzufügen → **Klar NLU**.
+4. Mit laufender App **Klar-NLU-App oder Docker verwenden**. Ohne App **Mitgelieferte Engine starten (nur HACS)** (braucht ein GitHub Release mit Linux-Tarballs).
+5. Mitgelieferte Engine: **Release-Kanal** = Stable (CalVer) oder Staging (neuestes GitHub-Prerelease). Später unter Konfigurieren änderbar.
+
+Ohne HACS `custom_components/klar_nlu` nach `<config>/custom_components/klar_nlu` kopieren und neu starten.
+
+Nur eine Instanz. Die URL bleibt im ersten Schritt. Stimme und Engine-LLM liegen in der Klar-Operator-UI.
+
+## Assist-Pipeline
+
+Einstellungen → Sprachassistenten → Pipeline bearbeiten:
+
+- **Conversation-Engine:** Klar NLU
+- STT/TTS beliebig (lokal oder Cloud)
+
+Nicht den LLM-Agenten direkt als Engine wählen. Sonst umgeht Assist Klar und das LLM darf Geräte anfassen.
+
+## LLM-Fallback
+
+Einstellungen → Klar-Operator-UI → **LLM**. Assist-Chat nutzt diesen Engine-Endpoint, keinen leftover Home-Assistant-Conversation-Agenten.
+
+Es gibt keine Nutzer-Phrase wie „Frag das LLM“. Ist ein Fallback-Agent gesetzt, gehen unhandled Sätze (Reject oder leere Intents) an diesen Agenten in der Assist-Sprache. Refine ändert nur den Ton einer schon gesprochenen NLU-Zeile.
+
+Ablauf:
+
+1. Klar parst.
+2. Haus-Intents werden über `intent.async_handle` ausgeführt.
+3. Rückfragen (`clarify`) bleiben bei Klar.
+4. Keine Intents, einschließlich Reject → Weiterleitung an den gewählten Agenten. NLU-RAG ist nicht nötig.
+5. Klar selbst und ein unerreichbarer Motor lösen keinen Fallback aus.
+
+Chat-Fallback nutzt das Klar-Engine-LLM. **Assist-Werkzeuge beim Chat** ist standardmäßig aus. Ist sie an, darf das Modell nach dem Klar-Parse Home-Assistant-Assist-Werkzeuge mit den Namen von Core nutzen (2026.9-Präfixe wie `intent__HassTurnOn`). Gerätebefehle laufen zuerst durch Klar-Parse.
+
+## Persönlichkeit
+
+Klar-Operator-UI → Einstellungen → **Stimme**, oder die Select-Entity **Persönlichkeit** am Klar-Gerät (schreibt die Engine).
+
+Die Auswahl liegt in den Engine-Settings (`GET`/`POST /api/settings`), nicht im Home-Assistant-Optionsformular. Assist liest den Engine-Cache pro Turn und fällt nur auf übrige Integrationsoptionen zurück, wenn der Cache leer ist. Die Persönlichkeit zu ändern startet die Engine nicht neu.
+
+| Id | Stimme |
+|----|--------|
+| `default` | schlicht, freundlich |
+| `butler` | höflicher Butler, gewählt und diskret |
+| `locker` | kumpelhaft, locker |
+| `fuersorglich` | warm, beruhigend |
+| `party` | euphorisch, feiernd |
+| `grantig` | knurrig, widerwillig |
+| `sarkastisch` | trocken sarkastisch |
+| `pirat` | piratenhaft, verständlich |
+| `hippie` | entspannt, weich |
+| `gollum` | knisternd, verständlich |
+
+Mit LLM-Refine steckt die Stimme im Satz — nicht in einem Stempel wie „Sehr wohl“. Ohne Refine rotiert eine kurze gesprochene Variante (manchmal gar keine Formel). Der Fallback ist kein fester Stempel. Refine folgt der Sprache der Input-Zeile, nicht stillschweigend Deutsch.
+
+## LLM-Verfeinerung
+
+Standardmäßig aus. Klar-Operator-UI → Einstellungen:
+
+1. LLM-Endpoint setzen (OpenAI-kompatibel, lokales Gemma reicht).
+2. **LLM-Verfeinerung** einschalten.
+3. Assist-Pipeline: Conversation-Engine = **Klar NLU**.
+4. **Assist-Werkzeuge beim Chat** aus lassen, außer Core-Assist-Werkzeuge sollen im Engine-Chat-Fallback verfügbar sein.
+
+Ablauf nach einem Hausbefehl:
+
+1. Klar parst, HA führt die Intents aus.
+2. Das Fallback-LLM formuliert die fertige NLU-Antwort in der gewählten Persönlichkeit um — ein oder zwei gesprochene Sätze, nach Steuerung und nach Statusabfrage (kein Smalltalk, kein News-Briefing, keine Rückfrage).
+3. Die Umformulierung bleibt stehen. Klar klebt keine Formel mehr davor oder dahinter.
+4. Schlägt Refine fehl, bleibt die kurze Fallback-Formel.
+
+Der Prompt ist pro Persönlichkeit (Stimme plus Few-Shots) und ist die **System**-Nachricht. **Extra-Prompt** unter Einstellungen ist eine optionale **User**-Hausregel — sie ersetzt die Pack-Stimme nicht.
+
+Die Sicherheit bleibt bei Klar, nicht beim Modell:
+
+- keine Gerätesteuerung, keine Home-Assistant-Werkzeuge
+- Räume, Namen, an/aus/offen/zu bleiben
+- Ziffern bleiben Ziffern (`21` bleibt `21`, nicht einundzwanzig)
+- keine erfundenen Zahlen (Temperatur ohne Wert bleibt ohne Wert)
+- Intent-Namen wie `HassSetPosition` werden verworfen
+
+Bei OpenAI-kompatiblen Agenten schickt Klar `chat_template_kwargs.enable_thinking=false`, damit Gemma 4 nicht die ganze Runde im Thought-Kanal verbringt. Prompt-Text schaltet Thinking nicht aus. Fehlt ein direkter Chat-Client, fällt Klar auf `conversation.async_converse` zurück und behält die NLU-Antwort nur, wenn der Rewrite fehlschlägt.
+
+## Engine starten
+
+Nur **einen** Host. Ein Reload der Integration auf die App-URL beendet das mitgelieferte Kind.
+
+**Home Assistant OS (empfohlen):** HACS-Integration **plus** App. Die App ist Engine-Host und Zuordnung/Labor (Seitenleiste **Klar NLU**).
+
+[![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FFABBricate-IT-Solutions%2Fklar-ha-nlu)
+
+`https://github.com/FABBricate-IT-Solutions/klar-ha-nlu` als App-Repository hinzufügen, **Klar NLU** oder **Klar NLU (Staging)** installieren und starten, in der Integration **Klar-NLU-App oder Docker verwenden** (`http://klar-nlu:10520`).
+
+**Mitgeliefert (keine App):** HACS-Integration → **Mitgelieferte Engine starten (nur HACS)**. Lädt das GitHub-Release nach `/config/klar_nlu/`. Assist funktioniert. Zuordnung/Labor binden `127.0.0.1` in Core, ein Handy kommt nicht ran. Lovelace **Klar** ist nur der letzte Assist-Zug.
+
+**Engine vs Kanal:** zwei Schalter. Einstellungen → Geräte & Dienste → Klar NLU → Konfigurieren → **Engine** wechselt App und mitgelieferte Engine (jederzeit). **Release-Kanal** wählt Stable oder Staging für genau diesen Host: App zeigt auf das Add-on, mitgelieferte Engine lädt das GitHub-Release. Eine eigene URL bleibt unverändert. Die Integrations-Sidebar erscheint nur bei der mitgelieferten Engine. Nach dem Wechsel lädt die Integration neu. Nicht in `.storage` umbiegen.
+
+Supervisor liest das Add-on-Repo von `main`. **Klar NLU (Staging)** erscheint im Store erst, wenn `addon-staging/` dort liegt. Nach einem Merge auf `staging` die Staging-App neu bauen (Version bleibt `staging`).
+
+**Docker:**
+
+```bash
+docker run --rm --network host \
+  -v /pfad/zur/homeassistant/config:/config:ro \
+  ghcr.io/fabbricate-it-solutions/klar-nlu:2026.9.5
+```
+
+CalVer der Engine verwenden (`Cargo.toml` / GitHub-Release), kein altes `0.1.x`-Tag. Für einen Release Candidate: `ghcr.io/fabbricate-it-solutions/klar-nlu:staging`.
+
+Integrations-URL: `http://127.0.0.1:10520`. Aus dem Quellcode: `docker build -t klar-nlu .` (Root-Dockerfile).
+
+**Cargo:**
+
+```bash
+cargo run --release -- --config-dir /config
+```
+
+Die Engine kann `.storage/core.entity_registry`, `core.device_registry`, `core.area_registry`, `core.floor_registry`, `core.label_registry` und die Assist-Expose-Liste lesen. Das ist der Fallback für Wyoming-only oder wenn die Integration die Engine nicht anstößt. Aliase, Areas, Etagen und Assist-Freigabe in HA pflegen — Klar hat keine zweite Gerätedatenbank.
+
+## Registry-Sync (HA ist Quelle)
+
+Die Integration ist der offizielle Sync-Pfad. Nach dem Setup und bei Registry-/Expose-Änderungen (`entity`, `device`, `area`, `floor`, `label`, `exposed_entities`) schickt sie einen versionierten Snapshot an `POST /api/v2/home`.
+
+```json
+{
+  "schema_version": "1",
+  "entities": [
+    {
+      "entity_id": "light.living",
+      "name": "Wohnzimmer Decke",
+      "original_name": "Ceiling",
+      "has_entity_name": true,
+      "area_id": "living",
+      "device_id": "dev1",
+      "platform": "hue",
+      "aliases": ["decke"],
+      "labels": ["Licht"],
+      "disabled": false
+    }
+  ],
+  "devices": [{"id": "dev1", "name": "Hue", "name_by_user": null, "area_id": "living"}],
+  "areas": [{"id": "living", "name": "Wohnzimmer", "aliases": ["wohnzimmer"], "floor_id": "upper"}],
+  "floors": [{"floor_id": "upper", "name": "Obergeschoss", "aliases": ["upstairs"], "level": 1}],
+  "labels": [{"label_id": "lbl_1", "name": "Licht"}],
+  "assist": ["light.living"]
+}
+```
+
+`schema_version` muss `"1"` sein. Die Engine prüft den Snapshot an der API-Grenze: unbekannte Felder und ungültiges JSON mit `422`, leere IDs, Steuerzeichen und Schemafehler mit `400`, zu große Bodies oder Listen mit `413`. Keiner dieser Fälle stürzt den Prozess ab. Caps: 4096 Entities, 2048 Devices, 256 Areas, 64 Etagen, 256 Labels, 4096 Assist-IDs, 32 Aliase je Eintrag. `assist: null` bedeutet keine Expose-Filterung; ein Array begrenzt die sichtbaren IDs.
+
+Nach einem gültigen Push ist HA die laufende Quelle. Die `.storage`-Dateiüberwachung überschreibt diesen Live-Graph nicht mehr. Overlay-Kalibrierung (Aliase, manuelle Areas, Preferred, Infra) wird weiterhin darübergelegt.
+
+## Registry, Overlay und Reload
+
+Klar baut einen effektiven Home-Graph:
+
+1. Live-Snapshot von der Integration (`POST /api/v2/home`), sobald vorhanden.
+2. Sonst HA-Registries aus `--config-dir` lesen: Entities, Devices, Areas, Floors, Labels und Expose-Liste.
+3. Fehlen die Registries, die eingebaute Musterwohnung nutzen.
+4. Overlay aus `--config-dir` anwenden.
+5. Wenn `--data-dir` existiert und von `--config-dir` abweicht, Overlay aus `--data-dir` darüber anwenden.
+
+Das Overlay enthält Kalibrierung aus der Klar-UI: Aliase, manuelle Areas, bevorzugte Geräte, Infrastruktur-Filter, Timer-Hinweise, Settings und Custom Sentences. Im Add-on ist `/config` read-only gedacht und `/data` beschreibbar; bei Cargo/Docker kann beides auf dasselbe Verzeichnis zeigen.
+
+Ohne Live-Sync beobachtet Klar die HA-Registry-Dateien und lädt den Home-Graph bei Änderungen neu. Settings und Custom Sentences werden dabei aus den Overlays erneut übernommen. Änderungen über die Klar-UI werden sofort gespeichert und auf den laufenden `HomeStore` angewendet.
+
+## Zugriff und Token
+
+Loopback darf lesen und schreiben. Das Supervisor-Netz darf lesen; Schreibzugriffe von dort oder aus dem LAN brauchen einen Token. Setze ihn mit `--token`, `KLAR_TOKEN` oder `--token-file`.
+
+```bash
+cargo run --release -- --config-dir /config --data-dir /data --token-file /data/klar.token
+```
+
+HTTP akzeptiert den Token als `x-klar-token` oder `Authorization: Bearer ...`. Wyoming ist auf Loopback und Supervisor-Netz begrenzt.
+
+## Intents
+
+Die Integration führt nur `decision.type == execute` aus. Confirm, Clarify und Reject lösen keine Services aus. Ein Execute-Plan läuft in Planreihenfolge über `intent.async_handle`. Jeder Schritt liefert success oder error; Teilfehler sind ein eigenes Ergebnis (Sprache plus strukturierte Fehler), kein stilles Gesamterfolg. Direkte Service-Calls gibt es nur, wo HA keinen nativen Intent hat (Music Assistant, Relativlautstärke, Mute). Custom Sentences in Klar NLU (`/api/custom`) können auf dieselben oder eigene Intent-Namen zeigen; eigene Namen brauchen einen Handler in HA.
+
+## Etagen- und Raumstatus
+
+`Wie ist der Status der Wohnung` bleibt **ein** `HassGetState` mit `floor` — Klar zerlegt das nicht in acht Raum-Intents (das würde Confirm auslösen). Die Integration sammelt die Areas auf der Etage und spricht fest: Raum, dann jedes Licht und jede Steckdose mit Namen, Anwesenheit, Temperatur, Lux, dann die übrigen Geräte mit Namen. Switches ohne `device_class: outlet` und Climate zählen zu den benannten Geräten, nicht als anonyme Steckdose oder nur als Gradzahl. Derselbe Klauselbau gilt für `Status vom Wohnzimmer`. Alle Assist-Sprachpakete nutzen dieselbe Reihenfolge; eine leere Etage oder ein leerer Raum sagt lokalisiert „Keine Geräte“, nicht den gemischten HA-Kurzbericht. Technik ohne Floor bleibt draußen.
+
+## Medien und Music Assistant
+
+Pause, weiter, zurück, stumm und Lautstärke nutzen den genannten `media_player` oder den im Raum. Der Player muss für Assist freigegeben sein und ein Music-Assistant-Player oder mit einem Musik-Tag versehen. Fehlt der Player, ist das Setup — nicht das Lexikon.
+
+| Satz | Hinweis |
+|------|---------|
+| Wohnzimmer Fernseher pausieren | Native Media-Pause |
+| Spiel Queen | Suche auf einem Music-Assistant-Player |
+| Play the playlist Chill in the living room | Playlist-Klasse und Raum bleiben |
+| Musik an | Setzt den MA-Player fort, nicht ein Script-Alias „musik“ |
+
+Klar NLU erfindet keine Bibliothek. Nicht erreichbare Player werden übersprungen. Siehe [Einstieg](getting-started.md) und [Fehlerbehebung](troubleshooting.md).

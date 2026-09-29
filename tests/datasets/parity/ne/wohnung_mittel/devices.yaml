@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- निभाऊ chhana sutnekotha
+devices/geraete::device_arbeitszimmer_an:
+- बाल बत्ती office
+devices/geraete::device_esszimmer_an:
+- बाल बत्ती parivarikess
+devices/geraete::device_kuche_kuche_an:
+- बाल बत्ती भान्सा
+devices/geraete::device_wohnzimmer_an:
+- बाल बत्ती बैठक
+devices/geraete::filmabend:
+- बाल दृश्य filmabend
+devices/geraete::kugel_an:
+- बाल gola
+devices/geraete::luefter_50:
+- सेट पंखा office 50
+devices/geraete::pc_an:
+- बाल pc
+devices/geraete::r2d2_saugen:
+- बाल कुचो बैठक
+devices/geraete::rollo_zu:
+- बन्द पर्दा बैठक
+devices/geraete::spuelmaschine_aus:
+- निभाऊ basna
+devices/geraete::tuer_abschliessen:
+- ताला ताला pravesh
+devices/geraete::waschmaschine_an:
+- बाल washing
+devices/klima::klima_schlaf_21:
+- सेट ac sutnekotha 21
+devices/spoken::deckenlampe_an:
+- बाल chhana sutnekotha
+devices/spoken::kugel_aus:
+- निभाऊ gola
+devices/spoken::luefter_aus:
+- निभाऊ पंखा office
+devices/spoken::rollo_auf:
+- खोल पर्दा बैठक
+devices/spoken::trockner_an:
+- बाल dryer
+devices/spoken::tv_aus:
+- निभाऊ tv
+devices/spoken_more::decke_aus_casual:
+- निभाऊ chhana sutnekotha
+devices/spoken_more::kugel_casual:
+- बाल gola
+devices/spoken_more::pc_aus:
+- निभाऊ pc
+devices/spoken_more::spuelmaschine_an:
+- बाल basna
+devices/spoken_more::waschmaschine_aus:
+- निभाऊ washing

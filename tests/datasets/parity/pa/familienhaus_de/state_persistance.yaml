@@ -1,0 +1,138 @@
+state_persistance/area_bedroom_2_covers::bedroom_2_covers_set_position:
+- - ਕੀ ਪਰਦਾ bedroom2
+  - ' 51'
+state_persistance/area_bedroom_2_lights::bedroom_2_lights_set_brightness:
+- - ਕੀ chhat bedroom2
+  - ' 20'
+state_persistance/area_bedroom_3_covers::bedroom_3_covers_set_position:
+- - ਕੀ ਪਰਦਾ bedroom3
+  - ' 67'
+state_persistance/area_bedroom_3_lights::bedroom_3_lights_set_brightness:
+- - ਕੀ chhat bedroom3
+  - ' 63'
+state_persistance/area_bedroom_4_lights::bedroom_4_lights_set_brightness:
+- - ਕੀ chhat bedroom4
+  - ' 80'
+state_persistance/area_dining_lights::dining_lights_set_brightness:
+- - ਕੀ ਰੋਸ਼ਨੀ parivarakess
+  - ' 68'
+state_persistance/area_entryway_lights::entryway_lights_set_brightness:
+- - ਕੀ ਰੋਸ਼ਨੀ dakhla
+  - ' 54'
+state_persistance/area_family_room_lights::family_room_lights_set_brightness:
+- - ਕੀ chhat parivarak
+  - ' 94'
+state_persistance/area_garage_covers::garage_covers_set_position:
+- - ਕੀ ਪਰਦਾ garage
+  - ' 18'
+state_persistance/area_garage_lights::garage_lights_set_brightness:
+- - ਕੀ ਰੋਸ਼ਨੀ garage
+  - ' 27'
+state_persistance/area_hallway_and_powder_room_lights::hallway_and_powder_room_lights_set_brightness:
+- - ਕੀ ਰੋਸ਼ਨੀ dakhlagang ate ਕੀ ਰੋਸ਼ਨੀ toilet
+  - ' 100'
+state_persistance/area_hallway_lights::hallway_lights_set_brightness:
+- - ਕੀ ਰੋਸ਼ਨੀ dakhlagang
+  - ' 69'
+state_persistance/area_kitchen_lights::kitchen_lights_set_brightness:
+- - ਕੀ ਰੋਸ਼ਨੀ ਰਸੋਈ
+  - ' 46'
+state_persistance/area_laundry_lights::laundry_lights_set_brightness:
+- - ਕੀ ਰੋਸ਼ਨੀ dhon
+  - ' 62'
+state_persistance/area_living_climates::living_climates_set_temperature:
+- - ਕੀ ਗਰਮੀ ਬੈਠਕ
+  - ' 95'
+state_persistance/area_living_covers::living_covers_set_position:
+- - ਕੀ ਪਰਦਾ ਬੈਠਕ
+  - ' 86'
+state_persistance/area_living_lights::living_lights_set_brightness:
+- - ਕੀ ਰੋਸ਼ਨੀ ਬੈਠਕ
+  - ' 55'
+state_persistance/area_main_bath_lights::main_bath_lights_set_brightness:
+- - ਕੀ ਰੋਸ਼ਨੀ main bath
+  - ' 96'
+state_persistance/area_master_bath_lights::master_bath_lights_set_brightness:
+- - ਕੀ ਰੋਸ਼ਨੀ masterbath
+  - ' 50'
+state_persistance/area_master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- - ਕੀ ਗਰਮੀ bedroommaster ate ਕੀ ਗਰਮੀ ਬੈਠਕ
+  - ' 69'
+state_persistance/area_master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- - ਕੀ ਪਰਦਾ bedroommaster ate ਕੀ ਪਰਦਾ ਬੈਠਕ
+  - ' 15'
+state_persistance/area_master_bedroom_climates::master_bedroom_climates_set_temperature:
+- - ਕੀ ਗਰਮੀ bedroommaster
+  - ' 44'
+state_persistance/area_master_bedroom_covers::master_bedroom_covers_set_position:
+- - ਕੀ ਪਰਦਾ bedroommaster
+  - ' 88'
+state_persistance/area_powder_room_lights::powder_room_lights_set_brightness:
+- - ਕੀ ਰੋਸ਼ਨੀ toilet
+  - ' 70'
+state_persistance/device_cover_garage_door::cover_garage_door_close:
+- - ਕੀ ਪਰਦਾ garage
+  - ਬੰਦਕਰ
+state_persistance/device_cover_garage_door::cover_garage_door_open:
+- - ਕੀ ਪਰਦਾ garage
+  - ਖੋਲ੍ਹ
+state_persistance/device_cover_garage_door::cover_garage_door_persistance_position:
+- - ਕੀ ਪਰਦਾ garage
+  - '23'
+state_persistance/device_cover_living_blinds::cover_living_blinds_close:
+- - ਕੀ ਪਰਦਾ ਬੈਠਕ
+  - ਬੰਦਕਰ
+state_persistance/device_cover_living_blinds::cover_living_blinds_open:
+- - ਕੀ ਪਰਦਾ ਬੈਠਕ
+  - ਖੋਲ੍ਹ
+state_persistance/device_cover_living_blinds::cover_living_blinds_persistance_position:
+- - ਕੀ ਪਰਦਾ ਬੈਠਕ
+  - '85'
+state_persistance/device_fan_family_fan::fan_family_fan_persistance_percentage:
+- - ਕੀ ਪੱਖਾ parivarak
+  - ' 43'
+state_persistance/device_fan_family_fan::fan_family_fan_turn_off:
+- - ਕੀ ਪੱਖਾ parivarak
+  - ਬੰਦ
+state_persistance/device_fan_family_fan::fan_family_fan_turn_on:
+- - ਕੀ ਪੱਖਾ parivarak
+  - ਚਾਲੂ
+state_persistance/device_light_entryway_light::light_entryway_light_persistance_brightness:
+- - ਕੀ ਰੋਸ਼ਨੀ dakhla
+  - '12'
+state_persistance/device_light_entryway_light::light_entryway_light_turn_off:
+- - ਕੀ ਰੋਸ਼ਨੀ dakhla
+  - ਬੰਦ
+state_persistance/device_light_entryway_light::light_entryway_light_turn_on:
+- - ਕੀ ਰੋਸ਼ਨੀ dakhla
+  - ਚਾਲੂ
+state_persistance/device_lock_front_door::lock_front_door_lock:
+- - ਕੀ ਤਾਲਾ dakhla
+  - ਤਾਲਾ
+state_persistance/device_lock_front_door::lock_front_door_unlock:
+- - ਕੀ ਤਾਲਾ dakhla
+  - ਖੋਲ੍ਹ
+state_persistance/device_lock_garage_entry::lock_garage_entry_lock:
+- - ਕੀ ਤਾਲਾ garage
+  - ਤਾਲਾ
+state_persistance/device_lock_garage_entry::lock_garage_entry_unlock:
+- - ਕੀ ਤਾਲਾ garage
+  - ਖੋਲ੍ਹ
+state_persistance/device_media_player_family_tv::media_player_family_tv_persistance_volume_level:
+- - ਕੀ tv parivarak
+  - ' 21'
+state_persistance/device_media_player_family_tv::media_player_family_tv_turn_off:
+- - ਕੀ tv parivarak
+  - ਬੰਦ
+state_persistance/device_media_player_family_tv::media_player_family_tv_turn_on:
+- - ਕੀ tv parivarak
+  - ਚਾਲੂ
+state_persistance/device_media_player_living_tv::media_player_living_tv_persistance_volume_level:
+- - ਕੀ tv ਬੈਠਕ
+  - ' 21'
+state_persistance/device_media_player_living_tv::media_player_living_tv_turn_off:
+- - ਕੀ tv ਬੈਠਕ
+  - ਬੰਦ
+state_persistance/device_media_player_living_tv::media_player_living_tv_turn_on:
+- - ਕੀ tv ਬੈਠਕ
+  - ਚਾਲੂ

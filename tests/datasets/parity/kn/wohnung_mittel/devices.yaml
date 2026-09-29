@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- ಆರಿಸು chavani shayanakone
+devices/geraete::device_arbeitszimmer_an:
+- ಹಚ್ಚು ಬೆಳಕು office
+devices/geraete::device_esszimmer_an:
+- ಹಚ್ಚು ಬೆಳಕು kutumbaess
+devices/geraete::device_kuche_kuche_an:
+- ಹಚ್ಚು ಬೆಳಕು ಅಡುಗೆ
+devices/geraete::device_wohnzimmer_an:
+- ಹಚ್ಚು ಬೆಳಕು ಹಾಲ್
+devices/geraete::filmabend:
+- ಹಚ್ಚು ದೃಶ್ಯ filmabend
+devices/geraete::kugel_an:
+- ಹಚ್ಚು goli
+devices/geraete::luefter_50:
+- ಹೊಂದಿಸು ಫ್ಯಾನ್ office 50
+devices/geraete::pc_an:
+- ಹಚ್ಚು pc
+devices/geraete::r2d2_saugen:
+- ಹಚ್ಚು ಗುಡಿಸು ಹಾಲ್
+devices/geraete::rollo_zu:
+- ಮುಚ್ಚು ಪರದೆ ಹಾಲ್
+devices/geraete::spuelmaschine_aus:
+- ಆರಿಸು patre
+devices/geraete::tuer_abschliessen:
+- ಬೀಗ ಬೀಗ pravesha
+devices/geraete::waschmaschine_an:
+- ಹಚ್ಚು washing
+devices/klima::klima_schlaf_21:
+- ಹೊಂದಿಸು ac shayanakone 21
+devices/spoken::deckenlampe_an:
+- ಹಚ್ಚು chavani shayanakone
+devices/spoken::kugel_aus:
+- ಆರಿಸು goli
+devices/spoken::luefter_aus:
+- ಆರಿಸು ಫ್ಯಾನ್ office
+devices/spoken::rollo_auf:
+- ತೆರೆ ಪರದೆ ಹಾಲ್
+devices/spoken::trockner_an:
+- ಹಚ್ಚು dryer
+devices/spoken::tv_aus:
+- ಆರಿಸು tv
+devices/spoken_more::decke_aus_casual:
+- ಆರಿಸು chavani shayanakone
+devices/spoken_more::kugel_casual:
+- ಹಚ್ಚು goli
+devices/spoken_more::pc_aus:
+- ಆರಿಸು pc
+devices/spoken_more::spuelmaschine_an:
+- ಹಚ್ಚು patre
+devices/spoken_more::waschmaschine_aus:
+- ಆರಿಸು washing

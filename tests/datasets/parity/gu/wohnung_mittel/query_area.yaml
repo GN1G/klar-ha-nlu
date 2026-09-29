@@ -1,0 +1,28 @@
+query_area/spoken::status_licht_kuche_casual:
+- શું પ્રકાશ રસોડું
+query_area/spoken::status_licht_wohnzimmer_casual:
+- શું પ્રકાશ ઓરડો
+query_area/spoken_more::brennt_arbeitszimmer:
+- શું પ્રકાશ office
+query_area/spoken_more::brennt_esszimmer:
+- શું પ્રકાશ kutumbess
+query_area/spoken_more::status_licht_schlaf_casual:
+- શું પ્રકાશ shayankhand
+query_area/status::status_alle_lichter:
+- શું બધું પ્રકાશ
+query_area/status::status_licht_arbeitszimmer:
+- શું પ્રકાશ office
+query_area/status::status_licht_badezimmer:
+- weather france
+query_area/status::status_licht_esszimmer:
+- શું પ્રકાશ kutumbess
+query_area/status::status_licht_kuche:
+- શું પ્રકાશ રસોડું
+query_area/status::status_licht_wohnzimmer:
+- શું પ્રકાશ ઓરડો
+query_area/status::status_wohn_und_esszimmer:
+- શું wohn und esszimmer
+query_area/status::temperatur_wohnung:
+- weather france
+query_area/status::temperatur_wohnzimmer:
+- શું ગરમી ઓરડો

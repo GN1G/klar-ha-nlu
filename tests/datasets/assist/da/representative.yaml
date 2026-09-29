@@ -1,0 +1,42 @@
+- name: light_on
+  sentences:
+    - taend lys stue
+  nlu_expect:
+    intents:
+      - intent: HassTurnOn
+- name: light_off
+  sentences:
+    - sluk lys kokken
+  nlu_expect:
+    intents:
+      - intent: HassTurnOff
+- name: calendar_list
+  sentences:
+    - hvad er i kalenderen
+  nlu_expect:
+    intents:
+      - intent: KlarGetCalendarEvents
+- name: calendar_create
+  sentences:
+    - tilfoj tandlaege imorgen kl 15 kalender
+  nlu_expect:
+    intents:
+      - intent: KlarCreateCalendarEvent
+- name: calendar_delete
+  sentences:
+    - slet tandlaege kalender
+  nlu_expect:
+    intents:
+      - intent: KlarDeleteCalendarEvent
+- name: calendar_move
+  sentences:
+    - flyt tandlaege imorgen kl 16 kalender
+  nlu_expect:
+    intents:
+      - intent: KlarMoveCalendarEvent
+- name: play_media
+  sentences:
+    - spil depeche
+  nlu_expect:
+    intents:
+      - intent: MassPlayMedia

@@ -1,0 +1,77 @@
+- name: list_add
+  conditions:
+  - type: todo_list
+    item: milk
+  sentences:
+  - add milk 清單
+  - milk add 清單
+- name: list_done
+  conditions:
+  - type: todo_list
+    item: milk
+  sentences:
+  - 完成 milk
+  - milk 完成
+- name: list_done_milk
+  conditions:
+  - type: todo_list
+    item: milk
+  sentences:
+  - 完成 milk
+  - milk 完成
+- name: list_add_bread
+  conditions:
+  - type: todo_list
+    item: bread
+  sentences:
+  - add bread 清單
+  - bread add 清單
+- name: list_done_bread
+  conditions:
+  - type: todo_list
+    item: bread
+  sentences:
+  - 完成 bread
+  - bread 完成
+- name: list_add_eggs
+  conditions:
+  - type: todo_list
+    item: eggs
+  sentences:
+  - add eggs 清單
+  - eggs add 清單
+- name: list_done_eggs
+  conditions:
+  - type: todo_list
+    item: eggs
+  sentences:
+  - 完成 eggs
+  - eggs 完成
+- name: list_add_apples
+  conditions:
+  - type: todo_list
+    item: apples
+  sentences:
+  - add apples 清單
+  - apples add 清單
+- name: list_done_apples
+  conditions:
+  - type: todo_list
+    item: apples
+  sentences:
+  - 完成 apples
+  - apples 完成
+- name: list_add_coffee
+  conditions:
+  - type: todo_list
+    item: coffee
+  sentences:
+  - add coffee 清單
+  - coffee add 清單
+- name: list_done_coffee
+  conditions:
+  - type: todo_list
+    item: coffee
+  sentences:
+  - 完成 coffee
+  - coffee 完成

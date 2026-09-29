@@ -1,0 +1,96 @@
+- name: switch.dishwasher_on
+  conditions:
+  - type: action
+    entity_id: switch.dishwasher
+    state: 'on'
+  sentences:
+  - ჩართე jamtchebi სამზარეულო
+  - jamtchebi სამზარეულო ჩართე
+- name: switch.dishwasher_off
+  conditions:
+  - type: action
+    entity_id: switch.dishwasher
+    state: 'off'
+  sentences:
+  - გამორთე jamtchebi სამზარეულო
+  - jamtchebi სამზარეულო გამორთე
+- name: switch.washing_machine_on
+  conditions:
+  - type: action
+    entity_id: switch.washing_machine
+    state: 'on'
+  sentences:
+  - ჩართე saretskhave samretskhao
+  - saretskhave samretskhao ჩართე
+- name: switch.washing_machine_off
+  conditions:
+  - type: action
+    entity_id: switch.washing_machine
+    state: 'off'
+  sentences:
+  - გამორთე saretskhave samretskhao
+  - saretskhave samretskhao გამორთე
+- name: switch.dryer_on
+  conditions:
+  - type: action
+    entity_id: switch.dryer
+    state: 'on'
+  sentences:
+  - ჩართე dryer samretskhao
+  - dryer samretskhao ჩართე
+- name: switch.dryer_off
+  conditions:
+  - type: action
+    entity_id: switch.dryer
+    state: 'off'
+  sentences:
+  - გამორთე dryer samretskhao
+  - dryer samretskhao გამორთე
+- name: switch.rangehood_on
+  conditions:
+  - type: action
+    entity_id: switch.rangehood
+    state: 'on'
+  sentences:
+  - ჩართე rangehood სამზარეულო
+  - rangehood სამზარეულო ჩართე
+- name: switch.rangehood_off
+  conditions:
+  - type: action
+    entity_id: switch.rangehood
+    state: 'off'
+  sentences:
+  - გამორთე rangehood სამზარეულო
+  - rangehood სამზარეულო გამორთე
+- name: switch.master_bath_fan_on
+  conditions:
+  - type: action
+    entity_id: switch.master_bath_fan
+    state: 'on'
+  sentences:
+  - ჩართე ვენტილატორიbad abazanamaster
+  - ვენტილატორიbad abazanamaster ჩართე
+- name: switch.master_bath_fan_off
+  conditions:
+  - type: action
+    entity_id: switch.master_bath_fan
+    state: 'off'
+  sentences:
+  - გამორთე ვენტილატორიbad abazanamaster
+  - ვენტილატორიbad abazanamaster გამორთე
+- name: switch.main_bath_fan_on
+  conditions:
+  - type: action
+    entity_id: switch.main_bath_fan
+    state: 'on'
+  sentences:
+  - ჩართე ვენტილატორიbad main bath
+  - ვენტილატორიbad main bath ჩართე
+- name: switch.main_bath_fan_off
+  conditions:
+  - type: action
+    entity_id: switch.main_bath_fan
+    state: 'off'
+  sentences:
+  - გამორთე ვენტილატორიbad main bath
+  - ვენტილატორიbad main bath გამორთე

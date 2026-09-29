@@ -1,0 +1,77 @@
+- name: list_add
+  conditions:
+  - type: todo_list
+    item: milk
+  sentences:
+  - add milk ਸੂਚੀ
+  - milk add ਸੂਚੀ
+- name: list_done
+  conditions:
+  - type: todo_list
+    item: milk
+  sentences:
+  - ਹੋ ਗਿਆ milk
+  - milk ਹੋ ਗਿਆ
+- name: list_done_milk
+  conditions:
+  - type: todo_list
+    item: milk
+  sentences:
+  - ਹੋ ਗਿਆ milk
+  - milk ਹੋ ਗਿਆ
+- name: list_add_bread
+  conditions:
+  - type: todo_list
+    item: bread
+  sentences:
+  - add bread ਸੂਚੀ
+  - bread add ਸੂਚੀ
+- name: list_done_bread
+  conditions:
+  - type: todo_list
+    item: bread
+  sentences:
+  - ਹੋ ਗਿਆ bread
+  - bread ਹੋ ਗਿਆ
+- name: list_add_eggs
+  conditions:
+  - type: todo_list
+    item: eggs
+  sentences:
+  - add eggs ਸੂਚੀ
+  - eggs add ਸੂਚੀ
+- name: list_done_eggs
+  conditions:
+  - type: todo_list
+    item: eggs
+  sentences:
+  - ਹੋ ਗਿਆ eggs
+  - eggs ਹੋ ਗਿਆ
+- name: list_add_apples
+  conditions:
+  - type: todo_list
+    item: apples
+  sentences:
+  - add apples ਸੂਚੀ
+  - apples add ਸੂਚੀ
+- name: list_done_apples
+  conditions:
+  - type: todo_list
+    item: apples
+  sentences:
+  - ਹੋ ਗਿਆ apples
+  - apples ਹੋ ਗਿਆ
+- name: list_add_coffee
+  conditions:
+  - type: todo_list
+    item: coffee
+  sentences:
+  - add coffee ਸੂਚੀ
+  - coffee add ਸੂਚੀ
+- name: list_done_coffee
+  conditions:
+  - type: todo_list
+    item: coffee
+  sentences:
+  - ਹੋ ਗਿਆ coffee
+  - coffee ਹੋ ਗਿਆ

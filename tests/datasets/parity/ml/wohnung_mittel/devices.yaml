@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- അണയ്ക്ക് tosh kitappumuri
+devices/geraete::device_arbeitszimmer_an:
+- തെളി വിളക്ക് office
+devices/geraete::device_esszimmer_an:
+- തെളി വിളക്ക് kutumbamess
+devices/geraete::device_kuche_kuche_an:
+- തെളി വിളക്ക് അടുക്കള
+devices/geraete::device_wohnzimmer_an:
+- തെളി വിളക്ക് ഹാൾ
+devices/geraete::filmabend:
+- തെളി രംഗം filmabend
+devices/geraete::kugel_an:
+- തെളി golam
+devices/geraete::luefter_50:
+- സെറ്റ് ഫാൻ office 50
+devices/geraete::pc_an:
+- തെളി pc
+devices/geraete::r2d2_saugen:
+- തെളി വാരൽ ഹാൾ
+devices/geraete::rollo_zu:
+- അടയ്ക്ക് ജാലകം ഹാൾ
+devices/geraete::spuelmaschine_aus:
+- അണയ്ക്ക് pathram
+devices/geraete::tuer_abschliessen:
+- പൂട്ട് പൂട്ട് praveshanam
+devices/geraete::waschmaschine_an:
+- തെളി washing
+devices/klima::klima_schlaf_21:
+- സെറ്റ് ac kitappumuri 21
+devices/spoken::deckenlampe_an:
+- തെളി tosh kitappumuri
+devices/spoken::kugel_aus:
+- അണയ്ക്ക് golam
+devices/spoken::luefter_aus:
+- അണയ്ക്ക് ഫാൻ office
+devices/spoken::rollo_auf:
+- തുറക്ക് ജാലകം ഹാൾ
+devices/spoken::trockner_an:
+- തെളി dryer
+devices/spoken::tv_aus:
+- അണയ്ക്ക് tv
+devices/spoken_more::decke_aus_casual:
+- അണയ്ക്ക് tosh kitappumuri
+devices/spoken_more::kugel_casual:
+- തെളി golam
+devices/spoken_more::pc_aus:
+- അണയ്ക്ക് pc
+devices/spoken_more::spuelmaschine_an:
+- തെളി pathram
+devices/spoken_more::waschmaschine_aus:
+- അണയ്ക്ക് washing

@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- унтраа taaz untlagiin
+devices/geraete::device_arbeitszimmer_an:
+- асаа гэрэл office
+devices/geraete::device_esszimmer_an:
+- асаа гэрэл gerbuless
+devices/geraete::device_kuche_kuche_an:
+- асаа гэрэл галтогоо
+devices/geraete::device_wohnzimmer_an:
+- асаа гэрэл зочны
+devices/geraete::filmabend:
+- асаа үзэгдэл filmabend
+devices/geraete::kugel_an:
+- асаа bomboo
+devices/geraete::luefter_50:
+- тохируул сэнс office 50
+devices/geraete::pc_an:
+- асаа pc
+devices/geraete::r2d2_saugen:
+- асаа тоос зочны
+devices/geraete::rollo_zu:
+- хаа хөшиг зочны
+devices/geraete::spuelmaschine_aus:
+- унтраа sav
+devices/geraete::tuer_abschliessen:
+- түгжээ түгжээ orol
+devices/geraete::waschmaschine_an:
+- асаа ugaalgyn
+devices/klima::klima_schlaf_21:
+- тохируул ac untlagiin 21
+devices/spoken::deckenlampe_an:
+- асаа taaz untlagiin
+devices/spoken::kugel_aus:
+- унтраа bomboo
+devices/spoken::luefter_aus:
+- унтраа сэнс office
+devices/spoken::rollo_auf:
+- нээ хөшиг зочны
+devices/spoken::trockner_an:
+- асаа dryer
+devices/spoken::tv_aus:
+- унтраа tv
+devices/spoken_more::decke_aus_casual:
+- унтраа taaz untlagiin
+devices/spoken_more::kugel_casual:
+- асаа bomboo
+devices/spoken_more::pc_aus:
+- унтраа pc
+devices/spoken_more::spuelmaschine_an:
+- асаа sav
+devices/spoken_more::waschmaschine_aus:
+- унтраа ugaalgyn

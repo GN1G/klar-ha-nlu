@@ -1,0 +1,29 @@
+multiple_intents/multi::alle_ausser_schlaf_und_kueche:
+- kustuta koik vali peale magamistuba peale kook
+multiple_intents/multi::licht_und_heizung:
+- lulita koik vali elutuba then sea kyte elutuba 23
+multiple_intents/multi::wohn_und_ess_aus:
+- kustuta koik vali elutuba then kustuta koik vali peredetubaess
+multiple_intents/multi::wohn_und_ess_rot:
+- sea koik vali elutuba red then sea koik vali peredetubaess red
+multiple_intents/multi::wz_und_kuche_licht:
+- lulita koik vali elutuba then lulita koik vali kook
+multiple_intents/multi::zwei_raeume_und_heizung:
+- lulita koik vali elutuba then lulita koik vali kook then sea kyte elutuba 23
+multiple_intents/spoken::drei_raeume_an:
+- lulita koik vali elutuba then lulita koik vali peredetubaess then lulita koik vali
+  kook
+multiple_intents/spoken::drei_raeume_aus:
+- kustuta koik vali elutuba then kustuta koik vali peredetubaess then kustuta koik
+  vali kook
+multiple_intents/spoken::ess_und_wohn_aus:
+- kustuta koik vali elutuba then kustuta koik vali peredetubaess
+multiple_intents/spoken::kugel_und_decke_aus:
+- kera ja lagi magamistuba kustuta
+multiple_intents/spoken_more::kuche_und_ess_an:
+- lulita koik vali kook then lulita koik vali peredetubaess
+multiple_intents/spoken_more::wz_ess_arbeit_aus:
+- kustuta koik vali elutuba then kustuta koik vali peredetubaess then kustuta koik
+  vali office
+multiple_intents/spoken_more::wz_und_arbeit_aus:
+- kustuta koik vali elutuba then kustuta koik vali office

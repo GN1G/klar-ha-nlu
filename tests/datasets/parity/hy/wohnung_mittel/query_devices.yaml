@@ -1,0 +1,18 @@
+query_devices/spoken::status_kugel:
+- ինչ gundayin
+query_devices/spoken::status_pc:
+- ինչ pc
+query_devices/spoken::status_trockner:
+- ինչ dryer
+query_devices/spoken::status_tv:
+- ինչ tv
+query_devices/spoken_more::status_decke:
+- ինչ stalat qnakaran
+query_devices/spoken_more::status_spuelmaschine:
+- ինչ aman
+query_devices/spoken_more::status_wasch_casual:
+- ինչ lvacqimekena
+query_devices/status::status_r2d2:
+- ինչ փոշեկուլ հյուրասենյակ
+query_devices/status::status_waschmaschine:
+- ինչ lvacqimekena

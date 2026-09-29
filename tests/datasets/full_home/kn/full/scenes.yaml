@@ -1,0 +1,48 @@
+- name: scene_film
+  conditions:
+  - type: action
+    entity_id: scene.movie_night
+    state: 'on'
+  sentences:
+  - ಹಚ್ಚು cinema
+  - cinema ಹಚ್ಚು
+- name: scene_night
+  conditions:
+  - type: action
+    entity_id: script.good_night
+    state: 'on'
+  sentences:
+  - ಹಚ್ಚು ratri
+  - ratri ಹಚ್ಚು
+- name: scene_leave
+  conditions:
+  - type: action
+    entity_id: script.leaving_home
+    state: 'on'
+  sentences:
+  - ಹಚ್ಚು horatu
+  - horatu ಹಚ್ಚು
+- name: scene_dinner
+  conditions:
+  - type: action
+    entity_id: scene.dinner_time
+    state: 'on'
+  sentences:
+  - ಹಚ್ಚು dinner
+  - dinner ಹಚ್ಚು
+- name: scene_morning
+  conditions:
+  - type: action
+    entity_id: scene.good_morning
+    state: 'on'
+  sentences:
+  - ಹಚ್ಚು morning
+  - morning ಹಚ್ಚು
+- name: scene_kids
+  conditions:
+  - type: action
+    entity_id: scene.kids_bedtime
+    state: 'on'
+  sentences:
+  - ಹಚ್ಚು kids
+  - kids ಹಚ್ಚು

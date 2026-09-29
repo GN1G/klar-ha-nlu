@@ -1,0 +1,15 @@
+state_persistance/followup::heizung_dann_grad:
+- - ચાલુ ગરમી ઓરડો
+  - ' 21'
+state_persistance/followup::wohnzimmer_dann_aus:
+- - ચાલુ પ્રકાશ ઓરડો
+  - બંધ
+state_persistance/spoken::kugel_dann_aus:
+- - ચાલુ gol
+  - બંધ
+state_persistance/spoken::wohnzimmer_dann_kueche:
+- - ચાલુ પ્રકાશ ઓરડો
+  - ચાલુ પ્રકાશ રસોડું
+state_persistance/spoken::wohnzimmer_dann_rot:
+- - ચાલુ બધું પ્રકાશ ઓરડો
+  - red

@@ -1,0 +1,248 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- zapri zavesa spalnica2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- odpri zavesa spalnica2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- nastavi zavesa spalnica2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- nastavi ventilator spalnica2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- ugasni ventilator spalnica2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- prizgi ventilator spalnica2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- nastavi vse luc spalnica2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- nastavi vse luc spalnica2 pink
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- ugasni vse luc spalnica2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- prizgi vse luc spalnica2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- zapri zavesa spalnica3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- odpri zavesa spalnica3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- nastavi zavesa spalnica3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- nastavi vse luc spalnica3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- nastavi vse luc spalnica3 blue
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- ugasni vse luc spalnica3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- prizgi vse luc spalnica3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- nastavi vse luc spalnica4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- nastavi vse luc spalnica4 green
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- ugasni vse luc spalnica4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- prizgi vse luc spalnica4
+area/dining_lights::dining_lights_change_brightness:
+- nastavi vse luc dnevnafamess 54
+area/dining_lights::dining_lights_change_color:
+- nastavi vse luc dnevnafamess blue
+area/dining_lights::dining_lights_turn_off:
+- ugasni vse luc dnevnafamess
+area/dining_lights::dining_lights_turn_on:
+- prizgi vse luc dnevnafamess
+area/entryway_lights::entryway_lights_change_brightness:
+- nastavi vse luc predsoba 72
+area/entryway_lights::entryway_lights_change_color:
+- nastavi vse luc predsoba black
+area/entryway_lights::entryway_lights_turn_off:
+- ugasni vse luc predsoba
+area/entryway_lights::entryway_lights_turn_on:
+- prizgi vse luc predsoba
+area/entryway_locks::entryway_locks_lock:
+- kljucavnica kljucavnica predsoba
+area/entryway_locks::entryway_locks_unlock:
+- odpri kljucavnica predsoba
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- nastavi vse luc dnevnafam 39 then nastavi vse luc kuhinja 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- nastavi vse luc dnevnafam purple then nastavi vse luc kuhinja purple
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- ugasni vse luc dnevnafam then ugasni vse luc kuhinja
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- prizgi vse luc dnevnafam then prizgi vse luc kuhinja
+area/family_room_fans::family_room_fans_set_fan_speed:
+- nastavi ventilator dnevnafam 32
+area/family_room_fans::family_room_fans_turn_off:
+- ugasni ventilator dnevnafam
+area/family_room_fans::family_room_fans_turn_on:
+- prizgi ventilator dnevnafam
+area/family_room_lights::family_room_lights_change_brightness:
+- nastavi vse luc dnevnafam 44
+area/family_room_lights::family_room_lights_change_color:
+- nastavi vse luc dnevnafam green
+area/family_room_lights::family_room_lights_turn_off:
+- ugasni vse luc dnevnafam
+area/family_room_lights::family_room_lights_turn_on:
+- prizgi vse luc dnevnafam
+area/garage_covers::garage_covers_close:
+- zapri zavesa garage
+area/garage_covers::garage_covers_open:
+- odpri zavesa garage
+area/garage_covers::garage_covers_set_position:
+- nastavi zavesa garage 86
+area/garage_lights::garage_lights_change_brightness:
+- nastavi vse luc garage 16
+area/garage_lights::garage_lights_change_color:
+- nastavi vse luc garage blue
+area/garage_lights::garage_lights_turn_off:
+- ugasni vse luc garage
+area/garage_lights::garage_lights_turn_on:
+- prizgi vse luc garage
+area/garage_locks::garage_locks_lock:
+- kljucavnica kljucavnica garage
+area/garage_locks::garage_locks_unlock:
+- odpri kljucavnica garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- nastavi vse luc predsobagang 26 then nastavi vse luc wc 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- nastavi vse luc predsobagang purple then nastavi vse luc wc purple
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- ugasni vse luc predsobagang then ugasni vse luc wc
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- prizgi vse luc predsobagang then prizgi vse luc wc
+area/hallway_lights::hallway_lights_change_brightness:
+- nastavi vse luc predsobagang 61
+area/hallway_lights::hallway_lights_change_color:
+- nastavi vse luc predsobagang orange
+area/hallway_lights::hallway_lights_turn_off:
+- ugasni vse luc predsobagang
+area/hallway_lights::hallway_lights_turn_on:
+- prizgi vse luc predsobagang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- nastavi vse luc kuhinja 45
+area/kitchen_lights::kitchen_lights_change_color:
+- nastavi vse luc kuhinja pink
+area/kitchen_lights::kitchen_lights_turn_off:
+- ugasni vse luc kuhinja
+area/kitchen_lights::kitchen_lights_turn_on:
+- prizgi vse luc kuhinja
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- ugasni vse naprava kuhinja
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- prizgi vse naprava kuhinja
+area/laundry_lights::laundry_lights_change_brightness:
+- nastavi vse luc pralnica 62
+area/laundry_lights::laundry_lights_change_color:
+- nastavi vse luc pralnica yellow
+area/laundry_lights::laundry_lights_turn_off:
+- ugasni vse luc pralnica
+area/laundry_lights::laundry_lights_turn_on:
+- prizgi vse luc pralnica
+area/laundry_switchs::laundry_switchs_turn_off:
+- ugasni vse naprava pralnica
+area/laundry_switchs::laundry_switchs_turn_on:
+- prizgi vse naprava pralnica
+area/living_climates::living_climates_set_temperature:
+- nastavi ogrevanje dnevna 20
+area/living_covers::living_covers_close:
+- zapri zavesa dnevna
+area/living_covers::living_covers_open:
+- odpri zavesa dnevna
+area/living_covers::living_covers_set_position:
+- nastavi zavesa dnevna 46
+area/living_lights::living_lights_change_brightness:
+- nastavi vse luc dnevna 84
+area/living_lights::living_lights_change_color:
+- nastavi vse luc dnevna blue
+area/living_lights::living_lights_turn_off:
+- ugasni vse luc dnevna
+area/living_lights::living_lights_turn_on:
+- prizgi vse luc dnevna
+area/main_bath_lights::main_bath_lights_change_brightness:
+- nastavi vse luc main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- nastavi vse luc main bath pink
+area/main_bath_lights::main_bath_lights_turn_off:
+- ugasni vse luc main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- prizgi vse luc main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- ugasni vse naprava main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- prizgi vse naprava main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- nastavi vse luc kopalmaster 60
+area/master_bath_lights::master_bath_lights_change_color:
+- nastavi vse luc kopalmaster black
+area/master_bath_lights::master_bath_lights_turn_off:
+- ugasni vse luc kopalmaster
+area/master_bath_lights::master_bath_lights_turn_on:
+- prizgi vse luc kopalmaster
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- ugasni vse naprava kopalmaster
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- prizgi vse naprava kopalmaster
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- nastavi ogrevanje spalnicamaster 20 then nastavi ogrevanje dnevna 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- zapri zavesa spalnicamaster then zapri zavesa dnevna
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- odpri zavesa spalnicamaster then odpri zavesa dnevna
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- nastavi zavesa spalnicamaster 19 then nastavi zavesa dnevna 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- nastavi vse luc spalnicamaster 25 then nastavi vse luc dnevna 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- nastavi vse luc spalnicamaster white then nastavi vse luc dnevna white
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- ugasni vse luc spalnicamaster then ugasni vse luc dnevna
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- prizgi vse luc spalnicamaster then prizgi vse luc dnevna
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- nastavi vse luc spalnicamaster 57 then nastavi vse luc main bath 57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- nastavi vse luc spalnicamaster pink then nastavi vse luc main bath pink
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- ugasni vse luc spalnicamaster then ugasni vse luc main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- prizgi vse luc spalnicamaster then prizgi vse luc main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- nastavi ogrevanje spalnicamaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- zapri zavesa spalnicamaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- odpri zavesa spalnicamaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- nastavi zavesa spalnicamaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- nastavi ventilator spalnicamaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- ugasni ventilator spalnicamaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- prizgi ventilator spalnicamaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- nastavi vse luc spalnicamaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- nastavi vse luc spalnicamaster pink
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- ugasni vse luc spalnicamaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- prizgi vse luc spalnicamaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- nastavi vse luc wc 52
+area/powder_room_lights::powder_room_lights_change_color:
+- nastavi vse luc wc purple
+area/powder_room_lights::powder_room_lights_turn_off:
+- ugasni vse luc wc
+area/powder_room_lights::powder_room_lights_turn_on:
+- prizgi vse luc wc
+area/spoken_lights::spoken_bedroom_inflection:
+- nastavi vse luc spalnicamaster red
+area/spoken_lights::spoken_except_island:
+- ugasni vse luc razen otok
+area/spoken_lights::spoken_except_kitchen:
+- ugasni vse luc razen kuhinja
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- ugasni vse luc dnevna then ugasni vse luc dnevnafamess then ugasni vse luc kuhinja
+area/spoken_lights::spoken_stt_kitchen_off:
+- ugasni vse luc kuhinja
+area/spoken_lights::spoken_stt_living_off:
+- ugasni vse luc dnevna

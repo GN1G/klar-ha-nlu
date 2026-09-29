@@ -1,0 +1,18 @@
+query_devices/spoken::status_kugel:
+- อะไร luk
+query_devices/spoken::status_pc:
+- อะไร pc
+query_devices/spoken::status_trockner:
+- อะไร dryer
+query_devices/spoken::status_tv:
+- อะไร tv
+query_devices/spoken_more::status_decke:
+- อะไร phalang hongnon
+query_devices/spoken_more::status_spuelmaschine:
+- อะไร langchan
+query_devices/spoken_more::status_wasch_casual:
+- อะไร sakpha
+query_devices/status::status_r2d2:
+- อะไร ดูดฝุ่น ห้องนั่งเล่น
+query_devices/status::status_waschmaschine:
+- อะไร sakpha

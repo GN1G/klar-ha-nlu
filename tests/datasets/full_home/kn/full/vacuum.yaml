@@ -1,0 +1,16 @@
+- name: vacuum_start
+  conditions:
+  - type: action
+    entity_id: vacuum.robot
+    state: 'on'
+  sentences:
+  - ಹಚ್ಚು ಗುಡಿಸು
+  - ಗುಡಿಸು ಹಚ್ಚು
+- name: vacuum_dock
+  conditions:
+  - type: action
+    entity_id: vacuum.robot
+    state: 'off'
+  sentences:
+  - ಆರಿಸು ಗುಡಿಸು
+  - ಗುಡಿಸು ಆರಿಸು

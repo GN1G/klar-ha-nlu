@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "Ta integracja rozmawia z Assist. Osobny silnik analizuje mowę: aplikacja Klar NLU, ten dołączony proces albo Docker. W Home Assistant OS zainstaluj też aplikację i wybierz Użyj aplikacji Klar NLU. Bez aplikacji uruchom dołączony silnik. Nie uruchamiaj obu.",
+        "data": {
+          "mode": "Silnik",
+          "channel": "Kanał wydań",
+          "url": "URL API Klar",
+          "token": "Token zapisu"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL musi być http(s), bez nazwy użytkownika."
+    },
+    "abort": {
+      "already_configured": "Klar NLU jest już skonfigurowane"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "Głos, języki Assist i LLM są w interfejsie operatora Klar (Ustawienia). Ten formularz tylko łączy silnik: URL, token i kanał. {apps}",
+        "data": {
+          "mode": "Silnik",
+          "url": "URL API Klar",
+          "token": "Token zapisu",
+          "assist_filter": "Steruj tylko encjami widocznymi dla Assist",
+          "channel": "Kanał wydań"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "Ten sam token co w aplikacji Klar.",
+          "assist_filter": "Wł.: tylko to, co Assist może widzieć. Wył.: także ukryte encje.",
+          "channel": "W każdej chwili. Staging wskazuje na Klar NLU (Staging)."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL musi być http(s), bez nazwy użytkownika."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "Uruchom dołączony silnik (tylko HACS)",
+        "remote": "Użyj aplikacji Klar NLU lub Dockera"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (produkcja)",
+        "staging": "Staging (kandydat)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "Język systemu",
+        "all": "Wszystkie języki"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "Zwykła",
+        "butler": "Butler",
+        "locker": "Swobodna",
+        "fuersorglich": "Troskliwa",
+        "party": "Party",
+        "grantig": "Zrzędliwa",
+        "sarkastisch": "Sarkastyczna",
+        "pirat": "Pirat",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "Osobowość",
+        "state": {
+          "default": "Zwykła",
+          "butler": "Butler",
+          "locker": "Swobodna",
+          "fuersorglich": "Troskliwa",
+          "party": "Party",
+          "grantig": "Zrzędliwa",
+          "sarkastisch": "Sarkastyczna",
+          "pirat": "Pirat",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "Krótkie potwierdzenie"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "Zadanie SI"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "Ostatnio usłyszane"
+      },
+      "last_decision": {
+        "name": "Ostatnia decyzja"
+      },
+      "last_speech": {
+        "name": "Ostatnia odpowiedź"
+      },
+      "last_area": {
+        "name": "Usłyszane w"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Silnik Klar zatrzymany",
+      "description": "Dołączony proces Klar nie działa. Przeładuj Klar NLU w Ustawienia → Urządzenia i usługi."
+    }
+  }
+}

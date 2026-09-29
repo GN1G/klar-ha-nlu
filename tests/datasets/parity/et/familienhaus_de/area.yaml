@@ -1,0 +1,249 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- sulge kardin magamistuba2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- ava kardin magamistuba2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- sea kardin magamistuba2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- sea ventilaator magamistuba2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- kustuta ventilaator magamistuba2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- lulita ventilaator magamistuba2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- sea koik vali magamistuba2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- sea koik vali magamistuba2 pink
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- kustuta koik vali magamistuba2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- lulita koik vali magamistuba2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- sulge kardin magamistuba3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- ava kardin magamistuba3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- sea kardin magamistuba3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- sea koik vali magamistuba3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- sea koik vali magamistuba3 blue
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- kustuta koik vali magamistuba3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- lulita koik vali magamistuba3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- sea koik vali magamistuba4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- sea koik vali magamistuba4 green
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- kustuta koik vali magamistuba4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- lulita koik vali magamistuba4
+area/dining_lights::dining_lights_change_brightness:
+- sea koik vali peredetubaess 54
+area/dining_lights::dining_lights_change_color:
+- sea koik vali peredetubaess blue
+area/dining_lights::dining_lights_turn_off:
+- kustuta koik vali peredetubaess
+area/dining_lights::dining_lights_turn_on:
+- lulita koik vali peredetubaess
+area/entryway_lights::entryway_lights_change_brightness:
+- sea koik vali esik 72
+area/entryway_lights::entryway_lights_change_color:
+- sea koik vali esik black
+area/entryway_lights::entryway_lights_turn_off:
+- kustuta koik vali esik
+area/entryway_lights::entryway_lights_turn_on:
+- lulita koik vali esik
+area/entryway_locks::entryway_locks_lock:
+- lukk lukk esik
+area/entryway_locks::entryway_locks_unlock:
+- ava lukk esik
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- sea koik vali peredetuba 39 then sea koik vali kook 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- sea koik vali peredetuba purple then sea koik vali kook purple
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- kustuta koik vali peredetuba then kustuta koik vali kook
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- lulita koik vali peredetuba then lulita koik vali kook
+area/family_room_fans::family_room_fans_set_fan_speed:
+- sea ventilaator peredetuba 32
+area/family_room_fans::family_room_fans_turn_off:
+- kustuta ventilaator peredetuba
+area/family_room_fans::family_room_fans_turn_on:
+- lulita ventilaator peredetuba
+area/family_room_lights::family_room_lights_change_brightness:
+- sea koik vali peredetuba 44
+area/family_room_lights::family_room_lights_change_color:
+- sea koik vali peredetuba green
+area/family_room_lights::family_room_lights_turn_off:
+- kustuta koik vali peredetuba
+area/family_room_lights::family_room_lights_turn_on:
+- lulita koik vali peredetuba
+area/garage_covers::garage_covers_close:
+- sulge kardin garage
+area/garage_covers::garage_covers_open:
+- ava kardin garage
+area/garage_covers::garage_covers_set_position:
+- sea kardin garage 86
+area/garage_lights::garage_lights_change_brightness:
+- sea koik vali garage 16
+area/garage_lights::garage_lights_change_color:
+- sea koik vali garage blue
+area/garage_lights::garage_lights_turn_off:
+- kustuta koik vali garage
+area/garage_lights::garage_lights_turn_on:
+- lulita koik vali garage
+area/garage_locks::garage_locks_lock:
+- lukk lukk garage
+area/garage_locks::garage_locks_unlock:
+- ava lukk garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- sea koik vali esikgang 26 then sea koik vali wc 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- sea koik vali esikgang purple then sea koik vali wc purple
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- kustuta koik vali esikgang then kustuta koik vali wc
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- lulita koik vali esikgang then lulita koik vali wc
+area/hallway_lights::hallway_lights_change_brightness:
+- sea koik vali esikgang 61
+area/hallway_lights::hallway_lights_change_color:
+- sea koik vali esikgang orange
+area/hallway_lights::hallway_lights_turn_off:
+- kustuta koik vali esikgang
+area/hallway_lights::hallway_lights_turn_on:
+- lulita koik vali esikgang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- sea koik vali kook 45
+area/kitchen_lights::kitchen_lights_change_color:
+- sea koik vali kook pink
+area/kitchen_lights::kitchen_lights_turn_off:
+- kustuta koik vali kook
+area/kitchen_lights::kitchen_lights_turn_on:
+- lulita koik vali kook
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- kustuta koik seade kook
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- lulita koik seade kook
+area/laundry_lights::laundry_lights_change_brightness:
+- sea koik vali pesuruum 62
+area/laundry_lights::laundry_lights_change_color:
+- sea koik vali pesuruum yellow
+area/laundry_lights::laundry_lights_turn_off:
+- kustuta koik vali pesuruum
+area/laundry_lights::laundry_lights_turn_on:
+- lulita koik vali pesuruum
+area/laundry_switchs::laundry_switchs_turn_off:
+- kustuta koik seade pesuruum
+area/laundry_switchs::laundry_switchs_turn_on:
+- lulita koik seade pesuruum
+area/living_climates::living_climates_set_temperature:
+- sea kyte elutuba 20
+area/living_covers::living_covers_close:
+- sulge kardin elutuba
+area/living_covers::living_covers_open:
+- ava kardin elutuba
+area/living_covers::living_covers_set_position:
+- sea kardin elutuba 46
+area/living_lights::living_lights_change_brightness:
+- sea koik vali elutuba 84
+area/living_lights::living_lights_change_color:
+- sea koik vali elutuba blue
+area/living_lights::living_lights_turn_off:
+- kustuta koik vali elutuba
+area/living_lights::living_lights_turn_on:
+- lulita koik vali elutuba
+area/main_bath_lights::main_bath_lights_change_brightness:
+- sea koik vali main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- sea koik vali main bath pink
+area/main_bath_lights::main_bath_lights_turn_off:
+- kustuta koik vali main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- lulita koik vali main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- kustuta koik seade main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- lulita koik seade main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- sea koik vali vannmaster 60
+area/master_bath_lights::master_bath_lights_change_color:
+- sea koik vali vannmaster black
+area/master_bath_lights::master_bath_lights_turn_off:
+- kustuta koik vali vannmaster
+area/master_bath_lights::master_bath_lights_turn_on:
+- lulita koik vali vannmaster
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- kustuta koik seade vannmaster
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- lulita koik seade vannmaster
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- sea kyte magamistubamaster 20 then sea kyte elutuba 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- sulge kardin magamistubamaster then sulge kardin elutuba
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- ava kardin magamistubamaster then ava kardin elutuba
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- sea kardin magamistubamaster 19 then sea kardin elutuba 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- sea koik vali magamistubamaster 25 then sea koik vali elutuba 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- sea koik vali magamistubamaster white then sea koik vali elutuba white
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- kustuta koik vali magamistubamaster then kustuta koik vali elutuba
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- lulita koik vali magamistubamaster then lulita koik vali elutuba
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- sea koik vali magamistubamaster 57 then sea koik vali main bath 57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- sea koik vali magamistubamaster pink then sea koik vali main bath pink
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- kustuta koik vali magamistubamaster then kustuta koik vali main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- lulita koik vali magamistubamaster then lulita koik vali main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- sea kyte magamistubamaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- sulge kardin magamistubamaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- ava kardin magamistubamaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- sea kardin magamistubamaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- sea ventilaator magamistubamaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- kustuta ventilaator magamistubamaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- lulita ventilaator magamistubamaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- sea koik vali magamistubamaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- sea koik vali magamistubamaster pink
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- kustuta koik vali magamistubamaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- lulita koik vali magamistubamaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- sea koik vali wc 52
+area/powder_room_lights::powder_room_lights_change_color:
+- sea koik vali wc purple
+area/powder_room_lights::powder_room_lights_turn_off:
+- kustuta koik vali wc
+area/powder_room_lights::powder_room_lights_turn_on:
+- lulita koik vali wc
+area/spoken_lights::spoken_bedroom_inflection:
+- sea koik vali magamistubamaster red
+area/spoken_lights::spoken_except_island:
+- kustuta koik vali peale saar
+area/spoken_lights::spoken_except_kitchen:
+- kustuta koik vali peale kook
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- kustuta koik vali elutuba then kustuta koik vali peredetubaess then kustuta koik
+  vali kook
+area/spoken_lights::spoken_stt_kitchen_off:
+- kustuta koik vali kook
+area/spoken_lights::spoken_stt_living_off:
+- kustuta koik vali elutuba

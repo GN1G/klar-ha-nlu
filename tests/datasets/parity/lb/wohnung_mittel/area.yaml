@@ -1,0 +1,82 @@
+area/heizung::heizung_badezimmer_23:
+- stell heizung bademaster 23
+area/heizung::heizung_esszimmer_23:
+- stell heizung wunnsalless 23
+area/heizung::heizung_schlafzimmer_23:
+- stell heizung schlofzëmmer 23
+area/heizung::heizung_wohnzimmer_23:
+- stell heizung wunnen 23
+area/lichter::alle_an_ausser_kugel:
+- maach all luucht ausser kugel
+area/lichter::alle_an_ausser_schlafzimmer:
+- maach all luucht ausser schlofzëmmer
+area/lichter::alle_auf_20_ausser_schlafzimmer:
+- stell all luucht ausser schlofzëmmer 20
+area/lichter::alle_auf_rot_ausser_kugel:
+- stell all luucht ausser kugel red
+area/lichter::alle_ausser_kugel:
+- maachaus all luucht ausser kugel
+area/lichter::alle_ausser_schlafzimmer:
+- maachaus all luucht ausser schlofzëmmer
+area/lichter::alle_lichter_an:
+- maach all luucht
+area/lichter::alle_lichter_aus:
+- maachaus all luucht
+area/lichter::arbeitszimmer_lichter_an:
+- maach all luucht office
+area/lichter::arbeitszimmer_lichter_aus:
+- maachaus all luucht office
+area/lichter::esszimmer_lichter_an:
+- maach all luucht wunnsalless
+area/lichter::esszimmer_lichter_aus:
+- maachaus all luucht wunnsalless
+area/lichter::kuche_lichter_an:
+- maach all luucht kichen
+area/lichter::kuche_lichter_aus:
+- maachaus all luucht kichen
+area/lichter::schlafzimmer_auf_blau:
+- stell all luucht schlofzëmmer blue
+area/lichter::schlafzimmer_auf_rot:
+- stell all luucht schlofzëmmer red
+area/lichter::wohnzimmer_helligkeit:
+- stell all luucht wunnen 45
+area/lichter::wohnzimmer_lichter_an:
+- maach all luucht wunnen
+area/lichter::wohnzimmer_lichter_aus:
+- maachaus all luucht wunnen
+area/spoken::alle_ausser_kugel_stt:
+- maachaus all luucht ausser kugel
+area/spoken::alle_ausser_schlaf_stt:
+- maachaus all luucht ausser schlofzëmmer
+area/spoken::alle_ganzen_an:
+- maach all luucht
+area/spoken::alle_lampen_aus:
+- maachaus all luucht
+area/spoken::esszimmer_weiss:
+- stell all luucht wunnsalless white
+area/spoken::stt_kuche_lichte:
+- maachaus all luucht kichen
+area/spoken::stt_licht_wohnzimmer_an:
+- maach all luucht wunnen
+area/spoken::stt_licht_wohnzimmer_aus:
+- maachaus all luucht wunnen
+area/spoken::stt_schlafzimmer_dativ:
+- maachaus all luucht schlofzëmmer
+area/spoken::wohnzimmer_gruen:
+- stell all luucht wunnen green
+area/spoken_more::alle_ausser_arbeitszimmer:
+- maachaus all luucht ausser office
+area/spoken_more::arbeitszimmer_lampen_aus:
+- maachaus all luucht office
+area/spoken_more::esszimmer_30:
+- stell all luucht wunnsalless 30
+area/spoken_more::esszimmer_lichte_an:
+- maach all luucht wunnsalless
+area/spoken_more::kuche_80:
+- stell all luucht kichen 80
+area/spoken_more::kuche_blau:
+- stell all luucht kichen blue
+area/spoken_more::ueberall_ausser_schlaf_stt:
+- maachaus all luucht ausser schlofzëmmer
+area/spoken_more::wohnzimmer_gelb:
+- stell all luucht wunnen yellow

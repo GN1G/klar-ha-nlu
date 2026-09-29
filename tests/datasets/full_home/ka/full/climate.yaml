@@ -1,0 +1,231 @@
+- name: climate.ground_thermostat_18
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 18
+  sentences:
+  - დააყენე გათბობა მისაღები 18
+  - გათბობა მისაღები 18
+- name: climate.ground_thermostat_19
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 19
+  sentences:
+  - დააყენე გათბობა მისაღები 19
+  - გათბობა მისაღები 19
+- name: climate.ground_thermostat_20
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 20
+  sentences:
+  - დააყენე გათბობა მისაღები 20
+  - გათბობა მისაღები 20
+- name: climate.ground_thermostat_21
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 21
+  sentences:
+  - დააყენე გათბობა მისაღები 21
+  - გათბობა მისაღები 21
+- name: climate.ground_thermostat_22
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 22
+  sentences:
+  - დააყენე გათბობა მისაღები 22
+  - გათბობა მისაღები 22
+- name: climate.ground_thermostat_23
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 23
+  sentences:
+  - დააყენე გათბობა მისაღები 23
+  - გათბობა მისაღები 23
+- name: climate.ground_thermostat_24
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 24
+  sentences:
+  - დააყენე გათბობა მისაღები 24
+  - გათბობა მისაღები 24
+- name: climate.ground_thermostat_get
+  conditions:
+  - type: query
+    entity_id: climate.ground_thermostat
+  sentences:
+  - რა გათბობა მისაღები
+  - გათბობა მისაღები
+- name: climate.upper_thermostat_18
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 18
+  sentences:
+  - დააყენე გათბობა sadzinebelimaster 18
+  - გათბობა sadzinebelimaster 18
+- name: climate.upper_thermostat_19
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 19
+  sentences:
+  - დააყენე გათბობა sadzinebelimaster 19
+  - გათბობა sadzinebelimaster 19
+- name: climate.upper_thermostat_20
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 20
+  sentences:
+  - დააყენე გათბობა sadzinebelimaster 20
+  - გათბობა sadzinebelimaster 20
+- name: climate.upper_thermostat_21
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 21
+  sentences:
+  - დააყენე გათბობა sadzinebelimaster 21
+  - გათბობა sadzinebelimaster 21
+- name: climate.upper_thermostat_22
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 22
+  sentences:
+  - დააყენე გათბობა sadzinebelimaster 22
+  - გათბობა sadzinebelimaster 22
+- name: climate.upper_thermostat_23
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 23
+  sentences:
+  - დააყენე გათბობა sadzinebelimaster 23
+  - გათბობა sadzinebelimaster 23
+- name: climate.upper_thermostat_24
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 24
+  sentences:
+  - დააყენე გათბობა sadzinebelimaster 24
+  - გათბობა sadzinebelimaster 24
+- name: climate.upper_thermostat_get
+  conditions:
+  - type: query
+    entity_id: climate.upper_thermostat
+  sentences:
+  - რა გათბობა sadzinebelimaster
+  - გათბობა sadzinebelimaster
+- name: climate.master_ac_18
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 18
+  sentences:
+  - დააყენე gatboba sadzinebelimaster 18
+  - gatboba sadzinebelimaster 18
+- name: climate.master_ac_19
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 19
+  sentences:
+  - დააყენე gatboba sadzinebelimaster 19
+  - gatboba sadzinebelimaster 19
+- name: climate.master_ac_20
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 20
+  sentences:
+  - დააყენე gatboba sadzinebelimaster 20
+  - gatboba sadzinebelimaster 20
+- name: climate.master_ac_21
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 21
+  sentences:
+  - დააყენე gatboba sadzinebelimaster 21
+  - gatboba sadzinebelimaster 21
+- name: climate.master_ac_22
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 22
+  sentences:
+  - დააყენე gatboba sadzinebelimaster 22
+  - gatboba sadzinebelimaster 22
+- name: climate.master_ac_23
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 23
+  sentences:
+  - დააყენე gatboba sadzinebelimaster 23
+  - gatboba sadzinebelimaster 23
+- name: climate.master_ac_24
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 24
+  sentences:
+  - დააყენე gatboba sadzinebelimaster 24
+  - gatboba sadzinebelimaster 24
+- name: climate.master_ac_get
+  conditions:
+  - type: query
+    entity_id: climate.master_ac
+  sentences:
+  - რა gatboba sadzinebelimaster
+  - gatboba sadzinebelimaster
+- name: climate.ground_thermostat_get_full
+  conditions:
+  - type: query
+    entity_id: climate.ground_thermostat
+  sentences:
+  - რა გათბობა მისაღები
+  - გათბობა მისაღები
+- name: climate.upper_thermostat_get_full
+  conditions:
+  - type: query
+    entity_id: climate.upper_thermostat
+  sentences:
+  - რა გათბობა sadzinebelimaster
+  - გათბობა sadzinebelimaster
+- name: climate.master_ac_get_full
+  conditions:
+  - type: query
+    entity_id: climate.master_ac
+  sentences:
+  - რა gatboba sadzinebelimaster
+  - gatboba sadzinebelimaster

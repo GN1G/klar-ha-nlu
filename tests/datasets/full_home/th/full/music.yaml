@@ -1,0 +1,529 @@
+- name: play_queen
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: queen
+  sentences:
+  - เล่น queen ห้องนั่งเล่น
+  - เล่น queen ทีวี ห้องนั่งเล่น
+- name: play_album
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: rumours
+      media_type: album
+      artist: fleetwood mac
+  sentences:
+  - เล่น album rumours by fleetwood mac ห้องนั่งเล่น
+- name: play_radio
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - เล่น queen radio mode ห้องนั่งเล่น
+- name: queue_song
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: bohemian rhapsody
+      enqueue: add
+  sentences:
+  - เล่น bohemian rhapsody queue ห้องนั่งเล่น
+- name: now_playing
+  conditions:
+  - type: query
+    entity_id: media_player.living_music
+  sentences:
+  - อะไร ทีวี ห้องนั่งเล่น
+  - อะไร track ห้องนั่งเล่น
+- name: music_volume_10
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 10
+  sentences:
+  - ตั้ง ทีวี ห้องนั่งเล่น 10
+  - ทีวี ห้องนั่งเล่น 10
+- name: music_volume_20
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 20
+  sentences:
+  - ตั้ง ทีวี ห้องนั่งเล่น 20
+  - ทีวี ห้องนั่งเล่น 20
+- name: music_volume_30
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 30
+  sentences:
+  - ตั้ง ทีวี ห้องนั่งเล่น 30
+  - ทีวี ห้องนั่งเล่น 30
+- name: music_volume_50
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 50
+  sentences:
+  - ตั้ง ทีวี ห้องนั่งเล่น 50
+  - ทีวี ห้องนั่งเล่น 50
+- name: music_volume_80
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 80
+  sentences:
+  - ตั้ง ทีวี ห้องนั่งเล่น 80
+  - ทีวี ห้องนั่งเล่น 80
+- name: music_next
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    state: next
+  sentences:
+  - next track ห้องนั่งเล่น
+- name: music_prev
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    state: previous
+  sentences:
+  - previous track ห้องนั่งเล่น
+- name: kitchen_play
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: queen
+  sentences:
+  - เล่น queen ห้องครัว
+  - เล่น queen ทีวี ห้องครัว
+- name: play_beatles_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - เล่น beatles ห้องนั่งเล่น
+  - เล่น beatles ทีวี ห้องนั่งเล่น
+- name: play_radiohead_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - เล่น radiohead ห้องนั่งเล่น
+  - เล่น radiohead ทีวี ห้องนั่งเล่น
+- name: play_abba_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: abba
+  sentences:
+  - เล่น abba ห้องนั่งเล่น
+  - เล่น abba ทีวี ห้องนั่งเล่น
+- name: play_coldplay_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - เล่น coldplay ห้องนั่งเล่น
+  - เล่น coldplay ทีวี ห้องนั่งเล่น
+- name: play_adele_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: adele
+  sentences:
+  - เล่น adele ห้องนั่งเล่น
+  - เล่น adele ทีวี ห้องนั่งเล่น
+- name: play_prince_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: prince
+  sentences:
+  - เล่น prince ห้องนั่งเล่น
+  - เล่น prince ทีวี ห้องนั่งเล่น
+- name: play_bowie_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - เล่น bowie ห้องนั่งเล่น
+  - เล่น bowie ทีวี ห้องนั่งเล่น
+- name: play_nirvana_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - เล่น nirvana ห้องนั่งเล่น
+  - เล่น nirvana ทีวี ห้องนั่งเล่น
+- name: play_eagles_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - เล่น eagles ห้องนั่งเล่น
+  - เล่น eagles ทีวี ห้องนั่งเล่น
+- name: play_madonna_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - เล่น madonna ห้องนั่งเล่น
+  - เล่น madonna ทีวี ห้องนั่งเล่น
+- name: play_mozart_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - เล่น mozart ห้องนั่งเล่น
+  - เล่น mozart ทีวี ห้องนั่งเล่น
+- name: play_daft punk_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - เล่น daft punk ห้องนั่งเล่น
+  - เล่น daft punk ทีวี ห้องนั่งเล่น
+- name: play_biafra_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - เล่น biafra ห้องนั่งเล่น
+  - เล่น biafra ทีวี ห้องนั่งเล่น
+- name: play_queen_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: queen
+  sentences:
+  - เล่น queen ห้องครัว
+  - เล่น queen ทีวี ห้องครัว
+- name: play_beatles_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - เล่น beatles ห้องครัว
+  - เล่น beatles ทีวี ห้องครัว
+- name: play_radiohead_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - เล่น radiohead ห้องครัว
+  - เล่น radiohead ทีวี ห้องครัว
+- name: play_abba_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: abba
+  sentences:
+  - เล่น abba ห้องครัว
+  - เล่น abba ทีวี ห้องครัว
+- name: play_coldplay_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - เล่น coldplay ห้องครัว
+  - เล่น coldplay ทีวี ห้องครัว
+- name: play_adele_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: adele
+  sentences:
+  - เล่น adele ห้องครัว
+  - เล่น adele ทีวี ห้องครัว
+- name: play_prince_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: prince
+  sentences:
+  - เล่น prince ห้องครัว
+  - เล่น prince ทีวี ห้องครัว
+- name: play_bowie_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - เล่น bowie ห้องครัว
+  - เล่น bowie ทีวี ห้องครัว
+- name: play_nirvana_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - เล่น nirvana ห้องครัว
+  - เล่น nirvana ทีวี ห้องครัว
+- name: play_eagles_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - เล่น eagles ห้องครัว
+  - เล่น eagles ทีวี ห้องครัว
+- name: play_madonna_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - เล่น madonna ห้องครัว
+  - เล่น madonna ทีวี ห้องครัว
+- name: play_mozart_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - เล่น mozart ห้องครัว
+  - เล่น mozart ทีวี ห้องครัว
+- name: play_daft punk_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - เล่น daft punk ห้องครัว
+  - เล่น daft punk ทีวี ห้องครัว
+- name: play_biafra_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - เล่น biafra ห้องครัว
+  - เล่น biafra ทีวี ห้องครัว
+- name: play_queen_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: queen
+  sentences:
+  - เล่น queen office
+  - เล่น queen ทีวี office
+- name: play_beatles_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - เล่น beatles office
+  - เล่น beatles ทีวี office
+- name: play_radiohead_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - เล่น radiohead office
+  - เล่น radiohead ทีวี office
+- name: play_abba_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: abba
+  sentences:
+  - เล่น abba office
+  - เล่น abba ทีวี office
+- name: play_coldplay_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - เล่น coldplay office
+  - เล่น coldplay ทีวี office
+- name: play_adele_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: adele
+  sentences:
+  - เล่น adele office
+  - เล่น adele ทีวี office
+- name: play_prince_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: prince
+  sentences:
+  - เล่น prince office
+  - เล่น prince ทีวี office
+- name: play_bowie_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - เล่น bowie office
+  - เล่น bowie ทีวี office
+- name: play_nirvana_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - เล่น nirvana office
+  - เล่น nirvana ทีวี office
+- name: play_eagles_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - เล่น eagles office
+  - เล่น eagles ทีวี office
+- name: play_madonna_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - เล่น madonna office
+  - เล่น madonna ทีวี office
+- name: play_mozart_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - เล่น mozart office
+  - เล่น mozart ทีวี office
+- name: play_daft punk_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - เล่น daft punk office
+  - เล่น daft punk ทีวี office
+- name: play_biafra_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - เล่น biafra office
+  - เล่น biafra ทีวี office
+- name: radio_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - เล่น queen radio mode ห้องนั่งเล่น
+- name: now_living
+  conditions:
+  - type: query
+    entity_id: media_player.living_music
+  sentences:
+  - อะไร ทีวี ห้องนั่งเล่น
+  - อะไร track ห้องนั่งเล่น
+- name: radio_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - เล่น queen radio mode ห้องครัว
+- name: now_kitchen
+  conditions:
+  - type: query
+    entity_id: media_player.kitchen_music
+  sentences:
+  - อะไร ทีวี ห้องครัว
+  - อะไร track ห้องครัว
+- name: radio_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - เล่น queen radio mode office
+- name: now_office
+  conditions:
+  - type: query
+    entity_id: media_player.office_music
+  sentences:
+  - อะไร ทีวี office
+  - อะไร track office

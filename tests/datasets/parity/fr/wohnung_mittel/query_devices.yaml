@@ -1,0 +1,18 @@
+query_devices/spoken::status_kugel:
+- quel globe
+query_devices/spoken::status_pc:
+- quel pc
+query_devices/spoken::status_trockner:
+- quel sechelinge
+query_devices/spoken::status_tv:
+- quel tv
+query_devices/spoken_more::status_decke:
+- quel plafond chambre
+query_devices/spoken_more::status_spuelmaschine:
+- quel lavevaisselle
+query_devices/spoken_more::status_wasch_casual:
+- quel lave
+query_devices/status::status_r2d2:
+- quel aspirateur salon
+query_devices/status::status_waschmaschine:
+- quel lave

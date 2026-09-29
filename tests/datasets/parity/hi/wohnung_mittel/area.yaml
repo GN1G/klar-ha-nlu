@@ -1,0 +1,82 @@
+area/heizung::heizung_badezimmer_23:
+- सेट गर्मी mukhyasnan 23
+area/heizung::heizung_esszimmer_23:
+- सेट गर्मी parivarikess 23
+area/heizung::heizung_schlafzimmer_23:
+- सेट गर्मी shayankaksh 23
+area/heizung::heizung_wohnzimmer_23:
+- सेट गर्मी बैठक 23
+area/lichter::alle_an_ausser_kugel:
+- जलाओ सब बत्ती sivay gola
+area/lichter::alle_an_ausser_schlafzimmer:
+- जलाओ सब बत्ती sivay shayankaksh
+area/lichter::alle_auf_20_ausser_schlafzimmer:
+- सेट सब बत्ती sivay shayankaksh 20
+area/lichter::alle_auf_rot_ausser_kugel:
+- सेट सब बत्ती sivay gola लाल
+area/lichter::alle_ausser_kugel:
+- बुझाओ सब बत्ती sivay gola
+area/lichter::alle_ausser_schlafzimmer:
+- बुझाओ सब बत्ती sivay shayankaksh
+area/lichter::alle_lichter_an:
+- जलाओ सब बत्ती
+area/lichter::alle_lichter_aus:
+- बुझाओ सब बत्ती
+area/lichter::arbeitszimmer_lichter_an:
+- जलाओ सब बत्ती office
+area/lichter::arbeitszimmer_lichter_aus:
+- बुझाओ सब बत्ती office
+area/lichter::esszimmer_lichter_an:
+- जलाओ सब बत्ती parivarikess
+area/lichter::esszimmer_lichter_aus:
+- बुझाओ सब बत्ती parivarikess
+area/lichter::kuche_lichter_an:
+- जलाओ सब बत्ती रसोई
+area/lichter::kuche_lichter_aus:
+- बुझाओ सब बत्ती रसोई
+area/lichter::schlafzimmer_auf_blau:
+- सेट सब बत्ती shayankaksh नीला
+area/lichter::schlafzimmer_auf_rot:
+- सेट सब बत्ती shayankaksh लाल
+area/lichter::wohnzimmer_helligkeit:
+- सेट सब बत्ती बैठक 45
+area/lichter::wohnzimmer_lichter_an:
+- जलाओ सब बत्ती बैठक
+area/lichter::wohnzimmer_lichter_aus:
+- बुझाओ सब बत्ती बैठक
+area/spoken::alle_ausser_kugel_stt:
+- बुझाओ सब बत्ती sivay gola
+area/spoken::alle_ausser_schlaf_stt:
+- बुझाओ सब बत्ती sivay shayankaksh
+area/spoken::alle_ganzen_an:
+- जलाओ सब बत्ती
+area/spoken::alle_lampen_aus:
+- बुझाओ सब बत्ती
+area/spoken::esszimmer_weiss:
+- सेट सब बत्ती parivarikess सफेद
+area/spoken::stt_kuche_lichte:
+- बुझाओ सब बत्ती रसोई
+area/spoken::stt_licht_wohnzimmer_an:
+- जलाओ सब बत्ती बैठक
+area/spoken::stt_licht_wohnzimmer_aus:
+- बुझाओ सब बत्ती बैठक
+area/spoken::stt_schlafzimmer_dativ:
+- बुझाओ सब बत्ती shayankaksh
+area/spoken::wohnzimmer_gruen:
+- सेट सब बत्ती बैठक हरा
+area/spoken_more::alle_ausser_arbeitszimmer:
+- बुझाओ सब बत्ती sivay office
+area/spoken_more::arbeitszimmer_lampen_aus:
+- बुझाओ सब बत्ती office
+area/spoken_more::esszimmer_30:
+- सेट सब बत्ती parivarikess 30
+area/spoken_more::esszimmer_lichte_an:
+- जलाओ सब बत्ती parivarikess
+area/spoken_more::kuche_80:
+- सेट सब बत्ती रसोई 80
+area/spoken_more::kuche_blau:
+- सेट सब बत्ती रसोई नीला
+area/spoken_more::ueberall_ausser_schlaf_stt:
+- बुझाओ सब बत्ती sivay shayankaksh
+area/spoken_more::wohnzimmer_gelb:
+- सेट सब बत्ती बैठक पीला

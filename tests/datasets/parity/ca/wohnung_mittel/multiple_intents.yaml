@@ -1,0 +1,26 @@
+multiple_intents/multi::alle_ausser_schlaf_und_kueche:
+- apaga tot llum excepte habitacio excepte cuina
+multiple_intents/multi::licht_und_heizung:
+- encen tot llum sala then posa calefaccio sala 23
+multiple_intents/multi::wohn_und_ess_aus:
+- apaga tot llum sala then apaga tot llum salaestaress
+multiple_intents/multi::wohn_und_ess_rot:
+- posa tot llum sala vermell then posa tot llum salaestaress vermell
+multiple_intents/multi::wz_und_kuche_licht:
+- encen tot llum sala then encen tot llum cuina
+multiple_intents/multi::zwei_raeume_und_heizung:
+- encen tot llum sala then encen tot llum cuina then posa calefaccio sala 23
+multiple_intents/spoken::drei_raeume_an:
+- encen tot llum sala then encen tot llum salaestaress then encen tot llum cuina
+multiple_intents/spoken::drei_raeume_aus:
+- apaga tot llum sala then apaga tot llum salaestaress then apaga tot llum cuina
+multiple_intents/spoken::ess_und_wohn_aus:
+- apaga tot llum sala then apaga tot llum salaestaress
+multiple_intents/spoken::kugel_und_decke_aus:
+- bola i sostre habitacio apaga
+multiple_intents/spoken_more::kuche_und_ess_an:
+- encen tot llum cuina then encen tot llum salaestaress
+multiple_intents/spoken_more::wz_ess_arbeit_aus:
+- apaga tot llum sala then apaga tot llum salaestaress then apaga tot llum office
+multiple_intents/spoken_more::wz_und_arbeit_aus:
+- apaga tot llum sala then apaga tot llum office

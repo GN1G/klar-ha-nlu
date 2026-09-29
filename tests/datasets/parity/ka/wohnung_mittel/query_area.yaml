@@ -1,0 +1,28 @@
+query_area/spoken::status_licht_kuche_casual:
+- რა სინათლე სამზარეულო
+query_area/spoken::status_licht_wohnzimmer_casual:
+- რა სინათლე მისაღები
+query_area/spoken_more::brennt_arbeitszimmer:
+- რა სინათლე office
+query_area/spoken_more::brennt_esszimmer:
+- რა სინათლე ojakhisotakhiess
+query_area/spoken_more::status_licht_schlaf_casual:
+- რა სინათლე sadzinebeli
+query_area/status::status_alle_lichter:
+- რა ყველა სინათლე
+query_area/status::status_licht_arbeitszimmer:
+- რა სინათლე office
+query_area/status::status_licht_badezimmer:
+- weather france
+query_area/status::status_licht_esszimmer:
+- რა სინათლე ojakhisotakhiess
+query_area/status::status_licht_kuche:
+- რა სინათლე სამზარეულო
+query_area/status::status_licht_wohnzimmer:
+- რა სინათლე მისაღები
+query_area/status::status_wohn_und_esszimmer:
+- რა wohn und esszimmer
+query_area/status::temperatur_wohnung:
+- weather france
+query_area/status::temperatur_wohnzimmer:
+- რა გათბობა მისაღები

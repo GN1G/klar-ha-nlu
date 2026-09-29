@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- diffyg nen chambour
+devices/geraete::device_arbeitszimmer_an:
+- enow golow office
+devices/geraete::device_esszimmer_an:
+- enow golow stevellteyluess
+devices/geraete::device_kuche_kuche_an:
+- enow golow kegin
+devices/geraete::device_wohnzimmer_an:
+- enow golow stafell
+devices/geraete::filmabend:
+- enow gweles filmabend
+devices/geraete::kugel_an:
+- enow pel
+devices/geraete::luefter_50:
+- settya gwyns office 50
+devices/geraete::pc_an:
+- enow pc
+devices/geraete::r2d2_saugen:
+- enow sughva stafell
+devices/geraete::rollo_zu:
+- degea curtayn stafell
+devices/geraete::spuelmaschine_aus:
+- diffyg lestri
+devices/geraete::tuer_abschliessen:
+- alhwedh alhwedh porth
+devices/geraete::waschmaschine_an:
+- enow jynnwolhi
+devices/klima::klima_schlaf_21:
+- settya ac chambour 21
+devices/spoken::deckenlampe_an:
+- enow nen chambour
+devices/spoken::kugel_aus:
+- diffyg pel
+devices/spoken::luefter_aus:
+- diffyg gwyns office
+devices/spoken::rollo_auf:
+- igeri curtayn stafell
+devices/spoken::trockner_an:
+- enow dryer
+devices/spoken::tv_aus:
+- diffyg tv
+devices/spoken_more::decke_aus_casual:
+- diffyg nen chambour
+devices/spoken_more::kugel_casual:
+- enow pel
+devices/spoken_more::pc_aus:
+- diffyg pc
+devices/spoken_more::spuelmaschine_an:
+- enow lestri
+devices/spoken_more::waschmaschine_aus:
+- diffyg jynnwolhi

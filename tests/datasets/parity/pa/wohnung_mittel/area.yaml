@@ -1,0 +1,82 @@
+area/heizung::heizung_badezimmer_23:
+- ਸੈੱਟ ਗਰਮੀ masterbath 23
+area/heizung::heizung_esszimmer_23:
+- ਸੈੱਟ ਗਰਮੀ parivarakess 23
+area/heizung::heizung_schlafzimmer_23:
+- ਸੈੱਟ ਗਰਮੀ bedroom 23
+area/heizung::heizung_wohnzimmer_23:
+- ਸੈੱਟ ਗਰਮੀ ਬੈਠਕ 23
+area/lichter::alle_an_ausser_kugel:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ ilava gola
+area/lichter::alle_an_ausser_schlafzimmer:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ ilava bedroom
+area/lichter::alle_auf_20_ausser_schlafzimmer:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ ilava bedroom 20
+area/lichter::alle_auf_rot_ausser_kugel:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ ilava gola red
+area/lichter::alle_ausser_kugel:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava gola
+area/lichter::alle_ausser_schlafzimmer:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava bedroom
+area/lichter::alle_lichter_an:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ
+area/lichter::alle_lichter_aus:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ
+area/lichter::arbeitszimmer_lichter_an:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ office
+area/lichter::arbeitszimmer_lichter_aus:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ office
+area/lichter::esszimmer_lichter_an:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ parivarakess
+area/lichter::esszimmer_lichter_aus:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ parivarakess
+area/lichter::kuche_lichter_an:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ ਰਸੋਈ
+area/lichter::kuche_lichter_aus:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ਰਸੋਈ
+area/lichter::schlafzimmer_auf_blau:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ bedroom blue
+area/lichter::schlafzimmer_auf_rot:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ bedroom red
+area/lichter::wohnzimmer_helligkeit:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ 45
+area/lichter::wohnzimmer_lichter_an:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ
+area/lichter::wohnzimmer_lichter_aus:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ
+area/spoken::alle_ausser_kugel_stt:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava gola
+area/spoken::alle_ausser_schlaf_stt:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava bedroom
+area/spoken::alle_ganzen_an:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ
+area/spoken::alle_lampen_aus:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ
+area/spoken::esszimmer_weiss:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ parivarakess white
+area/spoken::stt_kuche_lichte:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ਰਸੋਈ
+area/spoken::stt_licht_wohnzimmer_an:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ
+area/spoken::stt_licht_wohnzimmer_aus:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ
+area/spoken::stt_schlafzimmer_dativ:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ bedroom
+area/spoken::wohnzimmer_gruen:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ green
+area/spoken_more::alle_ausser_arbeitszimmer:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava office
+area/spoken_more::arbeitszimmer_lampen_aus:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ office
+area/spoken_more::esszimmer_30:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ parivarakess 30
+area/spoken_more::esszimmer_lichte_an:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ parivarakess
+area/spoken_more::kuche_80:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ ਰਸੋਈ 80
+area/spoken_more::kuche_blau:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ ਰਸੋਈ blue
+area/spoken_more::ueberall_ausser_schlaf_stt:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava bedroom
+area/spoken_more::wohnzimmer_gelb:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ yellow

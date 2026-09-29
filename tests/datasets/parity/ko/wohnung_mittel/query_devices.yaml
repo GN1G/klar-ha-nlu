@@ -1,0 +1,18 @@
+query_devices/spoken::status_kugel:
+- 뭔 gong
+query_devices/spoken::status_pc:
+- 뭔 pc
+query_devices/spoken::status_trockner:
+- 뭔 dryer
+query_devices/spoken::status_tv:
+- 뭔 tv
+query_devices/spoken_more::status_decke:
+- 뭔 cheonjang chimsil
+query_devices/spoken_more::status_spuelmaschine:
+- 뭔 sikgi
+query_devices/spoken_more::status_wasch_casual:
+- 뭔 setakgi
+query_devices/status::status_r2d2:
+- 뭔 청소기 거실
+query_devices/status::status_waschmaschine:
+- 뭔 setakgi

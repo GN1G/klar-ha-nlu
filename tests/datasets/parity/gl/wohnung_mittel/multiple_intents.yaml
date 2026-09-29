@@ -1,0 +1,26 @@
+multiple_intents/multi::alle_ausser_schlaf_und_kueche:
+- apaga todo luz excepto cuarto excepto cociña
+multiple_intents/multi::licht_und_heizung:
+- acende todo luz salon then pon calefaccion salon 23
+multiple_intents/multi::wohn_und_ess_aus:
+- apaga todo luz salon then apaga todo luz salafamess
+multiple_intents/multi::wohn_und_ess_rot:
+- pon todo luz salon red then pon todo luz salafamess red
+multiple_intents/multi::wz_und_kuche_licht:
+- acende todo luz salon then acende todo luz cociña
+multiple_intents/multi::zwei_raeume_und_heizung:
+- acende todo luz salon then acende todo luz cociña then pon calefaccion salon 23
+multiple_intents/spoken::drei_raeume_an:
+- acende todo luz salon then acende todo luz salafamess then acende todo luz cociña
+multiple_intents/spoken::drei_raeume_aus:
+- apaga todo luz salon then apaga todo luz salafamess then apaga todo luz cociña
+multiple_intents/spoken::ess_und_wohn_aus:
+- apaga todo luz salon then apaga todo luz salafamess
+multiple_intents/spoken::kugel_und_decke_aus:
+- bola e teito cuarto apaga
+multiple_intents/spoken_more::kuche_und_ess_an:
+- acende todo luz cociña then acende todo luz salafamess
+multiple_intents/spoken_more::wz_ess_arbeit_aus:
+- apaga todo luz salon then apaga todo luz salafamess then apaga todo luz office
+multiple_intents/spoken_more::wz_und_arbeit_aus:
+- apaga todo luz salon then apaga todo luz office

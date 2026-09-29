@@ -1,0 +1,28 @@
+query_area/spoken::status_licht_kuche_casual:
+- என்ன விளக்கு சமையல்
+query_area/spoken::status_licht_wohnzimmer_casual:
+- என்ன விளக்கு அறை
+query_area/spoken_more::brennt_arbeitszimmer:
+- என்ன விளக்கு office
+query_area/spoken_more::brennt_esszimmer:
+- என்ன விளக்கு kutumbamess
+query_area/spoken_more::status_licht_schlaf_casual:
+- என்ன விளக்கு padukkaiyarai
+query_area/status::status_alle_lichter:
+- என்ன எல்லாம் விளக்கு
+query_area/status::status_licht_arbeitszimmer:
+- என்ன விளக்கு office
+query_area/status::status_licht_badezimmer:
+- weather france
+query_area/status::status_licht_esszimmer:
+- என்ன விளக்கு kutumbamess
+query_area/status::status_licht_kuche:
+- என்ன விளக்கு சமையல்
+query_area/status::status_licht_wohnzimmer:
+- என்ன விளக்கு அறை
+query_area/status::status_wohn_und_esszimmer:
+- என்ன wohn und esszimmer
+query_area/status::temperatur_wohnung:
+- weather france
+query_area/status::temperatur_wohnzimmer:
+- என்ன வெப்பம் அறை

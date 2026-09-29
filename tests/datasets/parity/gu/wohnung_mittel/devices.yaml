@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- બંધ chhat shayankhand
+devices/geraete::device_arbeitszimmer_an:
+- ચાલુ પ્રકાશ office
+devices/geraete::device_esszimmer_an:
+- ચાલુ પ્રકાશ kutumbess
+devices/geraete::device_kuche_kuche_an:
+- ચાલુ પ્રકાશ રસોડું
+devices/geraete::device_wohnzimmer_an:
+- ચાલુ પ્રકાશ ઓરડો
+devices/geraete::filmabend:
+- ચાલુ દ્રશ્ય filmabend
+devices/geraete::kugel_an:
+- ચાલુ gol
+devices/geraete::luefter_50:
+- સેટ પંખો office 50
+devices/geraete::pc_an:
+- ચાલુ pc
+devices/geraete::r2d2_saugen:
+- ચાલુ ઝાડુ ઓરડો
+devices/geraete::rollo_zu:
+- બંધકરો પડદો ઓરડો
+devices/geraete::spuelmaschine_aus:
+- બંધ vasan
+devices/geraete::tuer_abschliessen:
+- તાળું તાળું pravesh
+devices/geraete::waschmaschine_an:
+- ચાલુ washing
+devices/klima::klima_schlaf_21:
+- સેટ ac shayankhand 21
+devices/spoken::deckenlampe_an:
+- ચાલુ chhat shayankhand
+devices/spoken::kugel_aus:
+- બંધ gol
+devices/spoken::luefter_aus:
+- બંધ પંખો office
+devices/spoken::rollo_auf:
+- ખોલો પડદો ઓરડો
+devices/spoken::trockner_an:
+- ચાલુ dryer
+devices/spoken::tv_aus:
+- બંધ tv
+devices/spoken_more::decke_aus_casual:
+- બંધ chhat shayankhand
+devices/spoken_more::kugel_casual:
+- ચાલુ gol
+devices/spoken_more::pc_aus:
+- બંધ pc
+devices/spoken_more::spuelmaschine_an:
+- ચાલુ vasan
+devices/spoken_more::waschmaschine_aus:
+- બંધ washing

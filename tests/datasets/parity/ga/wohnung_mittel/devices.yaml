@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- much uasteorainn seomraleong
+devices/geraete::device_arbeitszimmer_an:
+- cas solas office
+devices/geraete::device_esszimmer_an:
+- cas solas seomrateaghlaighess
+devices/geraete::device_kuche_kuche_an:
+- cas solas cistin
+devices/geraete::device_wohnzimmer_an:
+- cas solas seomra
+devices/geraete::filmabend:
+- cas radharc filmabend
+devices/geraete::kugel_an:
+- cas liathroid
+devices/geraete::luefter_50:
+- socraigh fean office 50
+devices/geraete::pc_an:
+- cas pc
+devices/geraete::r2d2_saugen:
+- cas folusaire seomra
+devices/geraete::rollo_zu:
+- dun cuirtin seomra
+devices/geraete::spuelmaschine_aus:
+- much soitheach
+devices/geraete::tuer_abschliessen:
+- glas glas halla
+devices/geraete::waschmaschine_an:
+- cas meaisinniocadh
+devices/klima::klima_schlaf_21:
+- socraigh ac seomraleong 21
+devices/spoken::deckenlampe_an:
+- cas uasteorainn seomraleong
+devices/spoken::kugel_aus:
+- much liathroid
+devices/spoken::luefter_aus:
+- much fean office
+devices/spoken::rollo_auf:
+- oscail cuirtin seomra
+devices/spoken::trockner_an:
+- cas dryer
+devices/spoken::tv_aus:
+- much tv
+devices/spoken_more::decke_aus_casual:
+- much uasteorainn seomraleong
+devices/spoken_more::kugel_casual:
+- cas liathroid
+devices/spoken_more::pc_aus:
+- much pc
+devices/spoken_more::spuelmaschine_an:
+- cas soitheach
+devices/spoken_more::waschmaschine_aus:
+- much meaisinniocadh

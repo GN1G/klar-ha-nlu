@@ -1,0 +1,252 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- zamknij zaslona sypialnia2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- otworz zaslona sypialnia2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- ustaw zaslona sypialnia2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- ustaw wentylator sypialnia2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- wylacz wentylator sypialnia2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- wlacz wentylator sypialnia2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- ustaw wszystko swiatlo sypialnia2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- ustaw wszystko swiatlo sypialnia2 rozowy
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- wylacz wszystko swiatlo sypialnia2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- wlacz wszystko swiatlo sypialnia2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- zamknij zaslona sypialnia3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- otworz zaslona sypialnia3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- ustaw zaslona sypialnia3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- ustaw wszystko swiatlo sypialnia3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- ustaw wszystko swiatlo sypialnia3 niebieski
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- wylacz wszystko swiatlo sypialnia3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- wlacz wszystko swiatlo sypialnia3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- ustaw wszystko swiatlo sypialnia4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- ustaw wszystko swiatlo sypialnia4 zielony
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- wylacz wszystko swiatlo sypialnia4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- wlacz wszystko swiatlo sypialnia4
+area/dining_lights::dining_lights_change_brightness:
+- ustaw wszystko swiatlo salonfamess 54
+area/dining_lights::dining_lights_change_color:
+- ustaw wszystko swiatlo salonfamess niebieski
+area/dining_lights::dining_lights_turn_off:
+- wylacz wszystko swiatlo salonfamess
+area/dining_lights::dining_lights_turn_on:
+- wlacz wszystko swiatlo salonfamess
+area/entryway_lights::entryway_lights_change_brightness:
+- ustaw wszystko swiatlo przedpokoj 72
+area/entryway_lights::entryway_lights_change_color:
+- ustaw wszystko swiatlo przedpokoj czarny
+area/entryway_lights::entryway_lights_turn_off:
+- wylacz wszystko swiatlo przedpokoj
+area/entryway_lights::entryway_lights_turn_on:
+- wlacz wszystko swiatlo przedpokoj
+area/entryway_locks::entryway_locks_lock:
+- zamek zamek przedpokoj
+area/entryway_locks::entryway_locks_unlock:
+- otworz zamek przedpokoj
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- ustaw wszystko swiatlo salonfam 39 then ustaw wszystko swiatlo kuchnia 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- ustaw wszystko swiatlo salonfam fioletowy then ustaw wszystko swiatlo kuchnia fioletowy
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- wylacz wszystko swiatlo salonfam then wylacz wszystko swiatlo kuchnia
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- wlacz wszystko swiatlo salonfam then wlacz wszystko swiatlo kuchnia
+area/family_room_fans::family_room_fans_set_fan_speed:
+- ustaw wentylator salonfam 32
+area/family_room_fans::family_room_fans_turn_off:
+- wylacz wentylator salonfam
+area/family_room_fans::family_room_fans_turn_on:
+- wlacz wentylator salonfam
+area/family_room_lights::family_room_lights_change_brightness:
+- ustaw wszystko swiatlo salonfam 44
+area/family_room_lights::family_room_lights_change_color:
+- ustaw wszystko swiatlo salonfam zielony
+area/family_room_lights::family_room_lights_turn_off:
+- wylacz wszystko swiatlo salonfam
+area/family_room_lights::family_room_lights_turn_on:
+- wlacz wszystko swiatlo salonfam
+area/garage_covers::garage_covers_close:
+- zamknij zaslona garage
+area/garage_covers::garage_covers_open:
+- otworz zaslona garage
+area/garage_covers::garage_covers_set_position:
+- ustaw zaslona garage 86
+area/garage_lights::garage_lights_change_brightness:
+- ustaw wszystko swiatlo garage 16
+area/garage_lights::garage_lights_change_color:
+- ustaw wszystko swiatlo garage niebieski
+area/garage_lights::garage_lights_turn_off:
+- wylacz wszystko swiatlo garage
+area/garage_lights::garage_lights_turn_on:
+- wlacz wszystko swiatlo garage
+area/garage_locks::garage_locks_lock:
+- zamek zamek garage
+area/garage_locks::garage_locks_unlock:
+- otworz zamek garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- ustaw wszystko swiatlo przedpokojgang 26 then ustaw wszystko swiatlo toaleta 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- ustaw wszystko swiatlo przedpokojgang fioletowy then ustaw wszystko swiatlo toaleta
+  fioletowy
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- wylacz wszystko swiatlo przedpokojgang then wylacz wszystko swiatlo toaleta
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- wlacz wszystko swiatlo przedpokojgang then wlacz wszystko swiatlo toaleta
+area/hallway_lights::hallway_lights_change_brightness:
+- ustaw wszystko swiatlo przedpokojgang 61
+area/hallway_lights::hallway_lights_change_color:
+- ustaw wszystko swiatlo przedpokojgang pomaranczowy
+area/hallway_lights::hallway_lights_turn_off:
+- wylacz wszystko swiatlo przedpokojgang
+area/hallway_lights::hallway_lights_turn_on:
+- wlacz wszystko swiatlo przedpokojgang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- ustaw wszystko swiatlo kuchnia 45
+area/kitchen_lights::kitchen_lights_change_color:
+- ustaw wszystko swiatlo kuchnia rozowy
+area/kitchen_lights::kitchen_lights_turn_off:
+- wylacz wszystko swiatlo kuchnia
+area/kitchen_lights::kitchen_lights_turn_on:
+- wlacz wszystko swiatlo kuchnia
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- wylacz wszystko urzadzenie kuchnia
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- wlacz wszystko urzadzenie kuchnia
+area/laundry_lights::laundry_lights_change_brightness:
+- ustaw wszystko swiatlo pralnia 62
+area/laundry_lights::laundry_lights_change_color:
+- ustaw wszystko swiatlo pralnia zolty
+area/laundry_lights::laundry_lights_turn_off:
+- wylacz wszystko swiatlo pralnia
+area/laundry_lights::laundry_lights_turn_on:
+- wlacz wszystko swiatlo pralnia
+area/laundry_switchs::laundry_switchs_turn_off:
+- wylacz wszystko urzadzenie pralnia
+area/laundry_switchs::laundry_switchs_turn_on:
+- wlacz wszystko urzadzenie pralnia
+area/living_climates::living_climates_set_temperature:
+- ustaw ogrzewanie salon 20
+area/living_covers::living_covers_close:
+- zamknij zaslona salon
+area/living_covers::living_covers_open:
+- otworz zaslona salon
+area/living_covers::living_covers_set_position:
+- ustaw zaslona salon 46
+area/living_lights::living_lights_change_brightness:
+- ustaw wszystko swiatlo salon 84
+area/living_lights::living_lights_change_color:
+- ustaw wszystko swiatlo salon niebieski
+area/living_lights::living_lights_turn_off:
+- wylacz wszystko swiatlo salon
+area/living_lights::living_lights_turn_on:
+- wlacz wszystko swiatlo salon
+area/main_bath_lights::main_bath_lights_change_brightness:
+- ustaw wszystko swiatlo main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- ustaw wszystko swiatlo main bath rozowy
+area/main_bath_lights::main_bath_lights_turn_off:
+- wylacz wszystko swiatlo main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- wlacz wszystko swiatlo main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- wylacz wszystko urzadzenie main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- wlacz wszystko urzadzenie main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- ustaw wszystko swiatlo lazmaster 60
+area/master_bath_lights::master_bath_lights_change_color:
+- ustaw wszystko swiatlo lazmaster czarny
+area/master_bath_lights::master_bath_lights_turn_off:
+- wylacz wszystko swiatlo lazmaster
+area/master_bath_lights::master_bath_lights_turn_on:
+- wlacz wszystko swiatlo lazmaster
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- wylacz wszystko urzadzenie lazmaster
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- wlacz wszystko urzadzenie lazmaster
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- ustaw ogrzewanie sypialniamaster 20 then ustaw ogrzewanie salon 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- zamknij zaslona sypialniamaster then zamknij zaslona salon
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- otworz zaslona sypialniamaster then otworz zaslona salon
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- ustaw zaslona sypialniamaster 19 then ustaw zaslona salon 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- ustaw wszystko swiatlo sypialniamaster 25 then ustaw wszystko swiatlo salon 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- ustaw wszystko swiatlo sypialniamaster bialy then ustaw wszystko swiatlo salon bialy
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- wylacz wszystko swiatlo sypialniamaster then wylacz wszystko swiatlo salon
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- wlacz wszystko swiatlo sypialniamaster then wlacz wszystko swiatlo salon
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- ustaw wszystko swiatlo sypialniamaster 57 then ustaw wszystko swiatlo main bath
+  57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- ustaw wszystko swiatlo sypialniamaster rozowy then ustaw wszystko swiatlo main bath
+  rozowy
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- wylacz wszystko swiatlo sypialniamaster then wylacz wszystko swiatlo main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- wlacz wszystko swiatlo sypialniamaster then wlacz wszystko swiatlo main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- ustaw ogrzewanie sypialniamaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- zamknij zaslona sypialniamaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- otworz zaslona sypialniamaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- ustaw zaslona sypialniamaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- ustaw wentylator sypialniamaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- wylacz wentylator sypialniamaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- wlacz wentylator sypialniamaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- ustaw wszystko swiatlo sypialniamaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- ustaw wszystko swiatlo sypialniamaster rozowy
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- wylacz wszystko swiatlo sypialniamaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- wlacz wszystko swiatlo sypialniamaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- ustaw wszystko swiatlo toaleta 52
+area/powder_room_lights::powder_room_lights_change_color:
+- ustaw wszystko swiatlo toaleta fioletowy
+area/powder_room_lights::powder_room_lights_turn_off:
+- wylacz wszystko swiatlo toaleta
+area/powder_room_lights::powder_room_lights_turn_on:
+- wlacz wszystko swiatlo toaleta
+area/spoken_lights::spoken_bedroom_inflection:
+- ustaw wszystko swiatlo sypialniamaster czerwony
+area/spoken_lights::spoken_except_island:
+- wylacz wszystko swiatlo oprocz wyspa
+area/spoken_lights::spoken_except_kitchen:
+- wylacz wszystko swiatlo oprocz kuchnia
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- wylacz wszystko swiatlo salon then wylacz wszystko swiatlo salonfamess then wylacz
+  wszystko swiatlo kuchnia
+area/spoken_lights::spoken_stt_kitchen_off:
+- wylacz wszystko swiatlo kuchnia
+area/spoken_lights::spoken_stt_living_off:
+- wylacz wszystko swiatlo salon

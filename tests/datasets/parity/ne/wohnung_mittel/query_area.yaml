@@ -1,0 +1,28 @@
+query_area/spoken::status_licht_kuche_casual:
+- के बत्ती भान्सा
+query_area/spoken::status_licht_wohnzimmer_casual:
+- के बत्ती बैठक
+query_area/spoken_more::brennt_arbeitszimmer:
+- के बत्ती office
+query_area/spoken_more::brennt_esszimmer:
+- के बत्ती parivarikess
+query_area/spoken_more::status_licht_schlaf_casual:
+- के बत्ती sutnekotha
+query_area/status::status_alle_lichter:
+- के सबै बत्ती
+query_area/status::status_licht_arbeitszimmer:
+- के बत्ती office
+query_area/status::status_licht_badezimmer:
+- weather france
+query_area/status::status_licht_esszimmer:
+- के बत्ती parivarikess
+query_area/status::status_licht_kuche:
+- के बत्ती भान्सा
+query_area/status::status_licht_wohnzimmer:
+- के बत्ती बैठक
+query_area/status::status_wohn_und_esszimmer:
+- के wohn und esszimmer
+query_area/status::temperatur_wohnung:
+- weather france
+query_area/status::temperatur_wohnzimmer:
+- के तातो बैठक

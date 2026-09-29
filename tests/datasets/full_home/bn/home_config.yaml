@@ -1,0 +1,507 @@
+name: Full Home bn
+language: bn
+difficulty: full
+policy:
+  preferred_climate: climate.upper_thermostat
+  timer_hints:
+    90: laundry
+floors:
+- id: ground
+  name: nich
+  level: 0
+  aliases:
+  - nich
+  - nich
+- id: upper
+  name: upor
+  level: 1
+  aliases:
+  - upor
+  - tala
+- id: basement
+  name: basement
+  level: -1
+  aliases:
+  - basement
+  - keller
+areas:
+- id: entryway
+  name: Prabesh
+  floor: ground
+  aliases:
+  - prabesh
+- id: living
+  name: বসার
+  floor: ground
+  aliases:
+  - বসার
+  - bosar
+- id: dining
+  name: Paribarikess
+  floor: ground
+  aliases:
+  - paribarikess
+- id: kitchen
+  name: রান্না
+  floor: ground
+  aliases:
+  - রান্না
+  - ranna
+- id: family_room
+  name: Paribarik
+  floor: ground
+  aliases:
+  - paribarik
+- id: laundry
+  name: Dhoa
+  floor: ground
+  aliases:
+  - dhoa
+- id: powder_room
+  name: Shauchagar
+  floor: ground
+  aliases:
+  - shauchagar
+- id: garage
+  name: Garage
+  floor: ground
+  aliases:
+  - garage
+- id: office
+  name: Office
+  floor: ground
+  aliases:
+  - office
+- id: garden
+  name: Garden
+  floor: ground
+  aliases:
+  - garden
+- id: master_bedroom
+  name: Shobarghormaster
+  floor: upper
+  aliases:
+  - shobarghormaster
+  - shobarghor
+- id: bedroom_2
+  name: Shobarghor2
+  floor: upper
+  aliases:
+  - shobarghor2
+- id: bedroom_3
+  name: Shobarghor3
+  floor: upper
+  aliases:
+  - shobarghor3
+- id: bedroom_4
+  name: Shobarghor4
+  floor: upper
+  aliases:
+  - shobarghor4
+- id: master_bath
+  name: Masterbath
+  floor: upper
+  aliases:
+  - masterbath
+- id: main_bath
+  name: Main Bath
+  floor: upper
+  aliases:
+  - main bath
+- id: hallway
+  name: Hallway
+  floor: upper
+  aliases:
+  - hallway
+- id: basement
+  name: Basement
+  floor: basement
+  aliases:
+  - basement
+devices:
+- id: light.entryway_light
+  area_id: entryway
+  name: prabesh আলো
+  aliases:
+  - prabesh আলো
+  - আলো
+- id: light.living_ceiling
+  area_id: living
+  name: বসার chhad
+  aliases:
+  - বসার chhad
+  - chhad
+- id: light.living_lamp
+  area_id: living
+  name: বসার alo
+  aliases:
+  - বসার alo
+  - alo
+- id: light.dining_pendant
+  area_id: dining
+  name: paribarikess আলো
+  aliases:
+  - paribarikess আলো
+  - আলো
+- id: light.kitchen_ceiling
+  area_id: kitchen
+  name: রান্না chhad
+  aliases:
+  - রান্না chhad
+  - chhad
+- id: light.kitchen_island
+  area_id: kitchen
+  name: রান্না dip
+  aliases:
+  - রান্না dip
+  - dip
+- id: light.family_ceiling
+  area_id: family_room
+  name: paribarik chhad
+  aliases:
+  - paribarik chhad
+  - chhad
+- id: light.laundry_light
+  area_id: laundry
+  name: dhoa আলো
+  aliases:
+  - dhoa আলো
+  - আলো
+- id: light.powder_room_light
+  area_id: powder_room
+  name: shauchagar আলো
+  aliases:
+  - shauchagar আলো
+  - আলো
+- id: light.garage_light
+  area_id: garage
+  name: garage আলো
+  aliases:
+  - garage আলো
+  - আলো
+- id: light.office_ceiling
+  area_id: office
+  name: office chhad
+  aliases:
+  - office chhad
+  - chhad
+- id: light.garden
+  area_id: garden
+  name: garden আলো
+  aliases:
+  - garden আলো
+  - আলো
+- id: light.master_ceiling
+  area_id: master_bedroom
+  name: shobarghormaster chhad
+  aliases:
+  - shobarghormaster chhad
+  - chhad
+- id: light.master_ensuite
+  area_id: master_bedroom
+  name: shobarghormaster ensuite
+  aliases:
+  - shobarghormaster ensuite
+  - ensuite
+  tags:
+  - ensuite
+- id: light.master_bedside_left
+  area_id: master_bedroom
+  name: shobarghormaster left bichana
+  aliases:
+  - shobarghormaster left bichana
+  - bichana
+- id: light.master_bedside_right
+  area_id: master_bedroom
+  name: shobarghormaster right bichana
+  aliases:
+  - shobarghormaster right bichana
+  - bichana
+- id: light.bedroom2_ceiling
+  area_id: bedroom_2
+  name: shobarghor2 chhad
+  aliases:
+  - shobarghor2 chhad
+  - chhad
+- id: light.bedroom3_ceiling
+  area_id: bedroom_3
+  name: shobarghor3 chhad
+  aliases:
+  - shobarghor3 chhad
+  - chhad
+- id: light.bedroom4_ceiling
+  area_id: bedroom_4
+  name: shobarghor4 chhad
+  aliases:
+  - shobarghor4 chhad
+  - chhad
+- id: light.master_bath_light
+  area_id: master_bath
+  name: masterbath আলো
+  aliases:
+  - masterbath আলো
+  - আলো
+- id: light.main_bath_light
+  area_id: main_bath
+  name: main bath আলো
+  aliases:
+  - main bath আলো
+  - আলো
+- id: light.hallway_light
+  area_id: hallway
+  name: hallway আলো
+  aliases:
+  - hallway আলো
+  - আলো
+- id: light.basement
+  area_id: basement
+  name: basement আলো
+  aliases:
+  - basement আলো
+  - আলো
+- id: cover.living_blinds
+  area_id: living
+  name: বসার পর্দা
+  aliases:
+  - বসার পর্দা
+  - পর্দা
+- id: cover.master_blinds
+  area_id: master_bedroom
+  name: shobarghormaster পর্দা
+  aliases:
+  - shobarghormaster পর্দা
+  - পর্দা
+- id: cover.bedroom2_blinds
+  area_id: bedroom_2
+  name: shobarghor2 পর্দা
+  aliases:
+  - shobarghor2 পর্দা
+  - পর্দা
+- id: cover.bedroom3_blinds
+  area_id: bedroom_3
+  name: shobarghor3 পর্দা
+  aliases:
+  - shobarghor3 পর্দা
+  - পর্দা
+- id: cover.garage_door
+  area_id: garage
+  name: garage পর্দা
+  aliases:
+  - garage পর্দা
+  - পর্দা
+- id: climate.ground_thermostat
+  area_id: living
+  name: বসার গরম
+  aliases:
+  - বসার গরম
+  - গরম
+- id: climate.upper_thermostat
+  area_id: master_bedroom
+  name: shobarghormaster গরম
+  aliases:
+  - shobarghormaster গরম
+  - গরম
+- id: climate.master_ac
+  area_id: master_bedroom
+  name: gorom shobarghormaster
+  aliases:
+  - gorom shobarghormaster
+  - gorom
+  - ac
+  tags:
+  - gorom
+- id: fan.family_fan
+  area_id: family_room
+  name: paribarik পাখা
+  aliases:
+  - paribarik পাখা
+  - পাখা
+- id: fan.master_fan
+  area_id: master_bedroom
+  name: shobarghormaster পাখা
+  aliases:
+  - shobarghormaster পাখা
+  - পাখা
+- id: fan.bedroom2_fan
+  area_id: bedroom_2
+  name: shobarghor2 পাখা
+  aliases:
+  - shobarghor2 পাখা
+  - পাখা
+- id: lock.front_door
+  area_id: entryway
+  name: front দরজা
+  aliases:
+  - front দরজা
+  tags:
+  - front
+- id: lock.garage_entry
+  area_id: garage
+  name: garage দরজা
+  aliases:
+  - garage দরজা
+  tags:
+  - garage
+- id: switch.dishwasher
+  area_id: kitchen
+  name: রান্না basan
+  aliases:
+  - রান্না basan
+  - basan
+- id: switch.rangehood
+  area_id: kitchen
+  name: রান্না rangehood
+  aliases:
+  - রান্না rangehood
+  - rangehood
+  tags:
+  - rangehood
+- id: switch.washing_machine
+  area_id: laundry
+  name: dhoa washing
+  aliases:
+  - dhoa washing
+  - washing
+  - washer
+  tags:
+  - washer
+  - washing
+- id: switch.dryer
+  area_id: laundry
+  name: dhoa dryer
+  aliases:
+  - dhoa dryer
+  - dryer
+  tags:
+  - dryer
+- id: switch.master_bath_fan
+  area_id: master_bath
+  name: masterbath পাখাbad
+  aliases:
+  - masterbath পাখাbad
+  - পাখাbad
+  tags:
+  - পাখাbad
+- id: switch.main_bath_fan
+  area_id: main_bath
+  name: main bath পাখাbad
+  aliases:
+  - main bath পাখাbad
+  - পাখাbad
+  tags:
+  - পাখাbad
+- id: media_player.living_tv
+  area_id: living
+  name: বসার tv
+  aliases:
+  - বসার tv
+  - tv
+- id: media_player.family_tv
+  area_id: family_room
+  name: paribarik tv
+  aliases:
+  - paribarik tv
+  - tv
+- id: media_player.living_music
+  area_id: living
+  name: বসার টিভি
+  aliases:
+  - বসার টিভি
+  - টিভি
+  platform: music_assistant
+  tags:
+  - টিভি
+- id: media_player.kitchen_music
+  area_id: kitchen
+  name: রান্না টিভি
+  aliases:
+  - রান্না টিভি
+  - টিভি
+  platform: music_assistant
+  tags:
+  - টিভি
+- id: media_player.office_music
+  area_id: office
+  name: office টিভি
+  aliases:
+  - office টিভি
+  - টিভি
+  platform: music_assistant
+  tags:
+  - টিভি
+- id: vacuum.robot
+  area_id: living
+  name: বসার ঝাড়ু
+  aliases:
+  - বসার ঝাড়ু
+  - ঝাড়ু
+- id: binary_sensor.front_door_sensor
+  area_id: entryway
+  name: prabesh doorsensor
+  aliases:
+  - prabesh doorsensor
+  - doorsensor
+  tags:
+  - doorsensor
+- id: binary_sensor.living_window
+  area_id: living
+  name: বসার windowsensor
+  aliases:
+  - বসার windowsensor
+  - windowsensor
+  tags:
+  - windowsensor
+- id: binary_sensor.kitchen_motion
+  area_id: kitchen
+  name: রান্না motion
+  aliases:
+  - রান্না motion
+  - motion
+  tags:
+  - motion
+- id: sensor.living_temperature
+  area_id: living
+  name: বসার tempsensor
+  aliases:
+  - বসার tempsensor
+  - tempsensor
+  tags:
+  - tempsensor
+- id: sensor.living_humidity
+  area_id: living
+  name: বসার humidity
+  aliases:
+  - বসার humidity
+  - humidity
+  tags:
+  - humidity
+- id: weather.home
+  area_id: garden
+  name: garden weather
+  aliases:
+  - garden weather
+  - weather
+scenes:
+- id: movie_night
+  name: chobi
+- id: dinner_time
+  name: dinner
+- id: kids_bedtime
+  name: kids
+- id: good_morning
+  name: morning
+scripts:
+- id: good_night
+  name: rat
+- id: leaving_home
+  name: ber
+timers:
+- id: oven
+  name: oven টাইমার
+- id: laundry
+  name: laundry টাইমার
+- id: abstract
+  name: abstract টাইমার
+lists:
+- id: shopping
+  name: তালিকা

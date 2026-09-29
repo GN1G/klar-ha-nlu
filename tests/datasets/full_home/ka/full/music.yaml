@@ -1,0 +1,529 @@
+- name: play_queen
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: queen
+  sentences:
+  - დაკვრა queen მისაღები
+  - დაკვრა queen ტელევიზორი მისაღები
+- name: play_album
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: rumours
+      media_type: album
+      artist: fleetwood mac
+  sentences:
+  - დაკვრა album rumours by fleetwood mac მისაღები
+- name: play_radio
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - დაკვრა queen radio mode მისაღები
+- name: queue_song
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: bohemian rhapsody
+      enqueue: add
+  sentences:
+  - დაკვრა bohemian rhapsody queue მისაღები
+- name: now_playing
+  conditions:
+  - type: query
+    entity_id: media_player.living_music
+  sentences:
+  - რა ტელევიზორი მისაღები
+  - რა track მისაღები
+- name: music_volume_10
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 10
+  sentences:
+  - დააყენე ტელევიზორი მისაღები 10
+  - ტელევიზორი მისაღები 10
+- name: music_volume_20
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 20
+  sentences:
+  - დააყენე ტელევიზორი მისაღები 20
+  - ტელევიზორი მისაღები 20
+- name: music_volume_30
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 30
+  sentences:
+  - დააყენე ტელევიზორი მისაღები 30
+  - ტელევიზორი მისაღები 30
+- name: music_volume_50
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 50
+  sentences:
+  - დააყენე ტელევიზორი მისაღები 50
+  - ტელევიზორი მისაღები 50
+- name: music_volume_80
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      volume_level: 80
+  sentences:
+  - დააყენე ტელევიზორი მისაღები 80
+  - ტელევიზორი მისაღები 80
+- name: music_next
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    state: next
+  sentences:
+  - next track მისაღები
+- name: music_prev
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    state: previous
+  sentences:
+  - previous track მისაღები
+- name: kitchen_play
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: queen
+  sentences:
+  - დაკვრა queen სამზარეულო
+  - დაკვრა queen ტელევიზორი სამზარეულო
+- name: play_beatles_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - დაკვრა beatles მისაღები
+  - დაკვრა beatles ტელევიზორი მისაღები
+- name: play_radiohead_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - დაკვრა radiohead მისაღები
+  - დაკვრა radiohead ტელევიზორი მისაღები
+- name: play_abba_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: abba
+  sentences:
+  - დაკვრა abba მისაღები
+  - დაკვრა abba ტელევიზორი მისაღები
+- name: play_coldplay_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - დაკვრა coldplay მისაღები
+  - დაკვრა coldplay ტელევიზორი მისაღები
+- name: play_adele_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: adele
+  sentences:
+  - დაკვრა adele მისაღები
+  - დაკვრა adele ტელევიზორი მისაღები
+- name: play_prince_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: prince
+  sentences:
+  - დაკვრა prince მისაღები
+  - დაკვრა prince ტელევიზორი მისაღები
+- name: play_bowie_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - დაკვრა bowie მისაღები
+  - დაკვრა bowie ტელევიზორი მისაღები
+- name: play_nirvana_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - დაკვრა nirvana მისაღები
+  - დაკვრა nirvana ტელევიზორი მისაღები
+- name: play_eagles_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - დაკვრა eagles მისაღები
+  - დაკვრა eagles ტელევიზორი მისაღები
+- name: play_madonna_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - დაკვრა madonna მისაღები
+  - დაკვრა madonna ტელევიზორი მისაღები
+- name: play_mozart_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - დაკვრა mozart მისაღები
+  - დაკვრა mozart ტელევიზორი მისაღები
+- name: play_daft punk_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - დაკვრა daft punk მისაღები
+  - დაკვრა daft punk ტელევიზორი მისაღები
+- name: play_biafra_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - დაკვრა biafra მისაღები
+  - დაკვრა biafra ტელევიზორი მისაღები
+- name: play_queen_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: queen
+  sentences:
+  - დაკვრა queen სამზარეულო
+  - დაკვრა queen ტელევიზორი სამზარეულო
+- name: play_beatles_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - დაკვრა beatles სამზარეულო
+  - დაკვრა beatles ტელევიზორი სამზარეულო
+- name: play_radiohead_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - დაკვრა radiohead სამზარეულო
+  - დაკვრა radiohead ტელევიზორი სამზარეულო
+- name: play_abba_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: abba
+  sentences:
+  - დაკვრა abba სამზარეულო
+  - დაკვრა abba ტელევიზორი სამზარეულო
+- name: play_coldplay_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - დაკვრა coldplay სამზარეულო
+  - დაკვრა coldplay ტელევიზორი სამზარეულო
+- name: play_adele_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: adele
+  sentences:
+  - დაკვრა adele სამზარეულო
+  - დაკვრა adele ტელევიზორი სამზარეულო
+- name: play_prince_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: prince
+  sentences:
+  - დაკვრა prince სამზარეულო
+  - დაკვრა prince ტელევიზორი სამზარეულო
+- name: play_bowie_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - დაკვრა bowie სამზარეულო
+  - დაკვრა bowie ტელევიზორი სამზარეულო
+- name: play_nirvana_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - დაკვრა nirvana სამზარეულო
+  - დაკვრა nirvana ტელევიზორი სამზარეულო
+- name: play_eagles_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - დაკვრა eagles სამზარეულო
+  - დაკვრა eagles ტელევიზორი სამზარეულო
+- name: play_madonna_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - დაკვრა madonna სამზარეულო
+  - დაკვრა madonna ტელევიზორი სამზარეულო
+- name: play_mozart_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - დაკვრა mozart სამზარეულო
+  - დაკვრა mozart ტელევიზორი სამზარეულო
+- name: play_daft punk_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - დაკვრა daft punk სამზარეულო
+  - დაკვრა daft punk ტელევიზორი სამზარეულო
+- name: play_biafra_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - დაკვრა biafra სამზარეულო
+  - დაკვრა biafra ტელევიზორი სამზარეულო
+- name: play_queen_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: queen
+  sentences:
+  - დაკვრა queen office
+  - დაკვრა queen ტელევიზორი office
+- name: play_beatles_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: beatles
+  sentences:
+  - დაკვრა beatles office
+  - დაკვრა beatles ტელევიზორი office
+- name: play_radiohead_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: radiohead
+  sentences:
+  - დაკვრა radiohead office
+  - დაკვრა radiohead ტელევიზორი office
+- name: play_abba_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: abba
+  sentences:
+  - დაკვრა abba office
+  - დაკვრა abba ტელევიზორი office
+- name: play_coldplay_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: coldplay
+  sentences:
+  - დაკვრა coldplay office
+  - დაკვრა coldplay ტელევიზორი office
+- name: play_adele_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: adele
+  sentences:
+  - დაკვრა adele office
+  - დაკვრა adele ტელევიზორი office
+- name: play_prince_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: prince
+  sentences:
+  - დაკვრა prince office
+  - დაკვრა prince ტელევიზორი office
+- name: play_bowie_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: bowie
+  sentences:
+  - დაკვრა bowie office
+  - დაკვრა bowie ტელევიზორი office
+- name: play_nirvana_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: nirvana
+  sentences:
+  - დაკვრა nirvana office
+  - დაკვრა nirvana ტელევიზორი office
+- name: play_eagles_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: eagles
+  sentences:
+  - დაკვრა eagles office
+  - დაკვრა eagles ტელევიზორი office
+- name: play_madonna_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: madonna
+  sentences:
+  - დაკვრა madonna office
+  - დაკვრა madonna ტელევიზორი office
+- name: play_mozart_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: mozart
+  sentences:
+  - დაკვრა mozart office
+  - დაკვრა mozart ტელევიზორი office
+- name: play_daft punk_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: daft punk
+  sentences:
+  - დაკვრა daft punk office
+  - დაკვრა daft punk ტელევიზორი office
+- name: play_biafra_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      search_query: biafra
+  sentences:
+  - დაკვრა biafra office
+  - დაკვრა biafra ტელევიზორი office
+- name: radio_living
+  conditions:
+  - type: action
+    entity_id: media_player.living_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - დაკვრა queen radio mode მისაღები
+- name: now_living
+  conditions:
+  - type: query
+    entity_id: media_player.living_music
+  sentences:
+  - რა ტელევიზორი მისაღები
+  - რა track მისაღები
+- name: radio_kitchen
+  conditions:
+  - type: action
+    entity_id: media_player.kitchen_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - დაკვრა queen radio mode სამზარეულო
+- name: now_kitchen
+  conditions:
+  - type: query
+    entity_id: media_player.kitchen_music
+  sentences:
+  - რა ტელევიზორი სამზარეულო
+  - რა track სამზარეულო
+- name: radio_office
+  conditions:
+  - type: action
+    entity_id: media_player.office_music
+    attributes:
+      media_id: queen
+      radio_mode: 'true'
+  sentences:
+  - დაკვრა queen radio mode office
+- name: now_office
+  conditions:
+  - type: query
+    entity_id: media_player.office_music
+  sentences:
+  - რა ტელევიზორი office
+  - რა track office

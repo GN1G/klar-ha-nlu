@@ -1,0 +1,36 @@
+timers/timers::abstract_start:
+- միացրու ժամաչափ abstract 45 min
+timers/timers::abstract_start_hours_minutes:
+- միացրու ժամաչափ abstract 20 min
+timers/timers::abstract_start_seconds:
+- միացրու ժամաչափ abstract 45 sec
+timers/timers::cancel_all_timers:
+- անջատիր բոլոր ժամաչափ
+timers/timers::timer_laundry_cancel:
+- անջատիր ժամաչափ laundry
+timers/timers::timer_laundry_decrease:
+- միացրու ժամաչափ laundry 5 min
+timers/timers::timer_laundry_increase:
+- միացրու ժամաչափ laundry 16 min
+timers/timers::timer_laundry_pause:
+- դադար ժամաչափ laundry
+timers/timers::timer_laundry_start:
+- միացրու ժամաչափ laundry 90 sec
+timers/timers::timer_laundry_status:
+- ինչ ժամաչափ laundry
+timers/timers::timer_laundry_unpause:
+- նվագիր ժամաչափ laundry
+timers/timers::timer_oven_cancel:
+- անջատիր ժամաչափ oven
+timers/timers::timer_oven_decrease:
+- միացրու ժամաչափ oven 44 min
+timers/timers::timer_oven_increase:
+- միացրու ժամաչափ oven 30 min
+timers/timers::timer_oven_pause:
+- դադար ժամաչափ oven
+timers/timers::timer_oven_start:
+- միացրու ժամաչափ oven 2 min
+timers/timers::timer_oven_status:
+- ինչ ժամաչափ oven
+timers/timers::timer_oven_unpause:
+- նվագիր ժամաչափ oven

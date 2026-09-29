@@ -1,0 +1,507 @@
+name: Full Home gu
+language: gu
+difficulty: full
+policy:
+  preferred_climate: climate.upper_thermostat
+  timer_hints:
+    90: laundry
+floors:
+- id: ground
+  name: niche
+  level: 0
+  aliases:
+  - niche
+  - zamin
+- id: upper
+  name: upar
+  level: 1
+  aliases:
+  - upar
+  - majla
+- id: basement
+  name: basement
+  level: -1
+  aliases:
+  - basement
+  - keller
+areas:
+- id: entryway
+  name: Pravesh
+  floor: ground
+  aliases:
+  - pravesh
+- id: living
+  name: ઓરડો
+  floor: ground
+  aliases:
+  - ઓરડો
+  - orado
+- id: dining
+  name: Kutumbess
+  floor: ground
+  aliases:
+  - kutumbess
+- id: kitchen
+  name: રસોડું
+  floor: ground
+  aliases:
+  - રસોડું
+  - rasodu
+- id: family_room
+  name: Kutumb
+  floor: ground
+  aliases:
+  - kutumb
+- id: laundry
+  name: Dhovanu
+  floor: ground
+  aliases:
+  - dhovanu
+- id: powder_room
+  name: Shauchalay
+  floor: ground
+  aliases:
+  - shauchalay
+- id: garage
+  name: Garage
+  floor: ground
+  aliases:
+  - garage
+- id: office
+  name: Office
+  floor: ground
+  aliases:
+  - office
+- id: garden
+  name: Garden
+  floor: ground
+  aliases:
+  - garden
+- id: master_bedroom
+  name: Shayankhandmaster
+  floor: upper
+  aliases:
+  - shayankhandmaster
+  - shayankhand
+- id: bedroom_2
+  name: Shayankhand2
+  floor: upper
+  aliases:
+  - shayankhand2
+- id: bedroom_3
+  name: Shayankhand3
+  floor: upper
+  aliases:
+  - shayankhand3
+- id: bedroom_4
+  name: Shayankhand4
+  floor: upper
+  aliases:
+  - shayankhand4
+- id: master_bath
+  name: Mukhyasnan
+  floor: upper
+  aliases:
+  - mukhyasnan
+- id: main_bath
+  name: Main Bath
+  floor: upper
+  aliases:
+  - main bath
+- id: hallway
+  name: Hallway
+  floor: upper
+  aliases:
+  - hallway
+- id: basement
+  name: Basement
+  floor: basement
+  aliases:
+  - basement
+devices:
+- id: light.entryway_light
+  area_id: entryway
+  name: pravesh પ્રકાશ
+  aliases:
+  - pravesh પ્રકાશ
+  - પ્રકાશ
+- id: light.living_ceiling
+  area_id: living
+  name: ઓરડો chhat
+  aliases:
+  - ઓરડો chhat
+  - chhat
+- id: light.living_lamp
+  area_id: living
+  name: ઓરડો prakash
+  aliases:
+  - ઓરડો prakash
+  - prakash
+- id: light.dining_pendant
+  area_id: dining
+  name: kutumbess પ્રકાશ
+  aliases:
+  - kutumbess પ્રકાશ
+  - પ્રકાશ
+- id: light.kitchen_ceiling
+  area_id: kitchen
+  name: રસોડું chhat
+  aliases:
+  - રસોડું chhat
+  - chhat
+- id: light.kitchen_island
+  area_id: kitchen
+  name: રસોડું tapu
+  aliases:
+  - રસોડું tapu
+  - tapu
+- id: light.family_ceiling
+  area_id: family_room
+  name: kutumb chhat
+  aliases:
+  - kutumb chhat
+  - chhat
+- id: light.laundry_light
+  area_id: laundry
+  name: dhovanu પ્રકાશ
+  aliases:
+  - dhovanu પ્રકાશ
+  - પ્રકાશ
+- id: light.powder_room_light
+  area_id: powder_room
+  name: shauchalay પ્રકાશ
+  aliases:
+  - shauchalay પ્રકાશ
+  - પ્રકાશ
+- id: light.garage_light
+  area_id: garage
+  name: garage પ્રકાશ
+  aliases:
+  - garage પ્રકાશ
+  - પ્રકાશ
+- id: light.office_ceiling
+  area_id: office
+  name: office chhat
+  aliases:
+  - office chhat
+  - chhat
+- id: light.garden
+  area_id: garden
+  name: garden પ્રકાશ
+  aliases:
+  - garden પ્રકાશ
+  - પ્રકાશ
+- id: light.master_ceiling
+  area_id: master_bedroom
+  name: shayankhandmaster chhat
+  aliases:
+  - shayankhandmaster chhat
+  - chhat
+- id: light.master_ensuite
+  area_id: master_bedroom
+  name: shayankhandmaster ensuite
+  aliases:
+  - shayankhandmaster ensuite
+  - ensuite
+  tags:
+  - ensuite
+- id: light.master_bedside_left
+  area_id: master_bedroom
+  name: shayankhandmaster left palang
+  aliases:
+  - shayankhandmaster left palang
+  - palang
+- id: light.master_bedside_right
+  area_id: master_bedroom
+  name: shayankhandmaster right palang
+  aliases:
+  - shayankhandmaster right palang
+  - palang
+- id: light.bedroom2_ceiling
+  area_id: bedroom_2
+  name: shayankhand2 chhat
+  aliases:
+  - shayankhand2 chhat
+  - chhat
+- id: light.bedroom3_ceiling
+  area_id: bedroom_3
+  name: shayankhand3 chhat
+  aliases:
+  - shayankhand3 chhat
+  - chhat
+- id: light.bedroom4_ceiling
+  area_id: bedroom_4
+  name: shayankhand4 chhat
+  aliases:
+  - shayankhand4 chhat
+  - chhat
+- id: light.master_bath_light
+  area_id: master_bath
+  name: mukhyasnan પ્રકાશ
+  aliases:
+  - mukhyasnan પ્રકાશ
+  - પ્રકાશ
+- id: light.main_bath_light
+  area_id: main_bath
+  name: main bath પ્રકાશ
+  aliases:
+  - main bath પ્રકાશ
+  - પ્રકાશ
+- id: light.hallway_light
+  area_id: hallway
+  name: hallway પ્રકાશ
+  aliases:
+  - hallway પ્રકાશ
+  - પ્રકાશ
+- id: light.basement
+  area_id: basement
+  name: basement પ્રકાશ
+  aliases:
+  - basement પ્રકાશ
+  - પ્રકાશ
+- id: cover.living_blinds
+  area_id: living
+  name: ઓરડો પડદો
+  aliases:
+  - ઓરડો પડદો
+  - પડદો
+- id: cover.master_blinds
+  area_id: master_bedroom
+  name: shayankhandmaster પડદો
+  aliases:
+  - shayankhandmaster પડદો
+  - પડદો
+- id: cover.bedroom2_blinds
+  area_id: bedroom_2
+  name: shayankhand2 પડદો
+  aliases:
+  - shayankhand2 પડદો
+  - પડદો
+- id: cover.bedroom3_blinds
+  area_id: bedroom_3
+  name: shayankhand3 પડદો
+  aliases:
+  - shayankhand3 પડદો
+  - પડદો
+- id: cover.garage_door
+  area_id: garage
+  name: garage પડદો
+  aliases:
+  - garage પડદો
+  - પડદો
+- id: climate.ground_thermostat
+  area_id: living
+  name: ઓરડો ગરમી
+  aliases:
+  - ઓરડો ગરમી
+  - ગરમી
+- id: climate.upper_thermostat
+  area_id: master_bedroom
+  name: shayankhandmaster ગરમી
+  aliases:
+  - shayankhandmaster ગરમી
+  - ગરમી
+- id: climate.master_ac
+  area_id: master_bedroom
+  name: garmi shayankhandmaster
+  aliases:
+  - garmi shayankhandmaster
+  - garmi
+  - ac
+  tags:
+  - garmi
+- id: fan.family_fan
+  area_id: family_room
+  name: kutumb પંખો
+  aliases:
+  - kutumb પંખો
+  - પંખો
+- id: fan.master_fan
+  area_id: master_bedroom
+  name: shayankhandmaster પંખો
+  aliases:
+  - shayankhandmaster પંખો
+  - પંખો
+- id: fan.bedroom2_fan
+  area_id: bedroom_2
+  name: shayankhand2 પંખો
+  aliases:
+  - shayankhand2 પંખો
+  - પંખો
+- id: lock.front_door
+  area_id: entryway
+  name: front દરવાજો
+  aliases:
+  - front દરવાજો
+  tags:
+  - front
+- id: lock.garage_entry
+  area_id: garage
+  name: garage દરવાજો
+  aliases:
+  - garage દરવાજો
+  tags:
+  - garage
+- id: switch.dishwasher
+  area_id: kitchen
+  name: રસોડું vasan
+  aliases:
+  - રસોડું vasan
+  - vasan
+- id: switch.rangehood
+  area_id: kitchen
+  name: રસોડું rangehood
+  aliases:
+  - રસોડું rangehood
+  - rangehood
+  tags:
+  - rangehood
+- id: switch.washing_machine
+  area_id: laundry
+  name: dhovanu washing
+  aliases:
+  - dhovanu washing
+  - washing
+  - washer
+  tags:
+  - washer
+  - washing
+- id: switch.dryer
+  area_id: laundry
+  name: dhovanu dryer
+  aliases:
+  - dhovanu dryer
+  - dryer
+  tags:
+  - dryer
+- id: switch.master_bath_fan
+  area_id: master_bath
+  name: mukhyasnan પંખોbad
+  aliases:
+  - mukhyasnan પંખોbad
+  - પંખોbad
+  tags:
+  - પંખોbad
+- id: switch.main_bath_fan
+  area_id: main_bath
+  name: main bath પંખોbad
+  aliases:
+  - main bath પંખોbad
+  - પંખોbad
+  tags:
+  - પંખોbad
+- id: media_player.living_tv
+  area_id: living
+  name: ઓરડો tv
+  aliases:
+  - ઓરડો tv
+  - tv
+- id: media_player.family_tv
+  area_id: family_room
+  name: kutumb tv
+  aliases:
+  - kutumb tv
+  - tv
+- id: media_player.living_music
+  area_id: living
+  name: ઓરડો ટીવી
+  aliases:
+  - ઓરડો ટીવી
+  - ટીવી
+  platform: music_assistant
+  tags:
+  - ટીવી
+- id: media_player.kitchen_music
+  area_id: kitchen
+  name: રસોડું ટીવી
+  aliases:
+  - રસોડું ટીવી
+  - ટીવી
+  platform: music_assistant
+  tags:
+  - ટીવી
+- id: media_player.office_music
+  area_id: office
+  name: office ટીવી
+  aliases:
+  - office ટીવી
+  - ટીવી
+  platform: music_assistant
+  tags:
+  - ટીવી
+- id: vacuum.robot
+  area_id: living
+  name: ઓરડો ઝાડુ
+  aliases:
+  - ઓરડો ઝાડુ
+  - ઝાડુ
+- id: binary_sensor.front_door_sensor
+  area_id: entryway
+  name: pravesh doorsensor
+  aliases:
+  - pravesh doorsensor
+  - doorsensor
+  tags:
+  - doorsensor
+- id: binary_sensor.living_window
+  area_id: living
+  name: ઓરડો windowsensor
+  aliases:
+  - ઓરડો windowsensor
+  - windowsensor
+  tags:
+  - windowsensor
+- id: binary_sensor.kitchen_motion
+  area_id: kitchen
+  name: રસોડું motion
+  aliases:
+  - રસોડું motion
+  - motion
+  tags:
+  - motion
+- id: sensor.living_temperature
+  area_id: living
+  name: ઓરડો tempsensor
+  aliases:
+  - ઓરડો tempsensor
+  - tempsensor
+  tags:
+  - tempsensor
+- id: sensor.living_humidity
+  area_id: living
+  name: ઓરડો humidity
+  aliases:
+  - ઓરડો humidity
+  - humidity
+  tags:
+  - humidity
+- id: weather.home
+  area_id: garden
+  name: garden weather
+  aliases:
+  - garden weather
+  - weather
+scenes:
+- id: movie_night
+  name: film
+- id: dinner_time
+  name: dinner
+- id: kids_bedtime
+  name: kids
+- id: good_morning
+  name: morning
+scripts:
+- id: good_night
+  name: raat
+- id: leaving_home
+  name: javu
+timers:
+- id: oven
+  name: oven ટાઈમર
+- id: laundry
+  name: laundry ટાઈમર
+- id: abstract
+  name: abstract ટાઈમર
+lists:
+- id: shopping
+  name: યાદી

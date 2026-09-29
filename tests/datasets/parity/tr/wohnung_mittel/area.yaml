@@ -1,0 +1,82 @@
+area/heizung::heizung_badezimmer_23:
+- ayarla sicaklik ebatmaster 23
+area/heizung::heizung_esszimmer_23:
+- ayarla sicaklik aileess 23
+area/heizung::heizung_schlafzimmer_23:
+- ayarla sicaklik yatakodasi 23
+area/heizung::heizung_wohnzimmer_23:
+- ayarla sicaklik salon 23
+area/lichter::alle_an_ausser_kugel:
+- yak hepsi isik haric kure
+area/lichter::alle_an_ausser_schlafzimmer:
+- yak hepsi isik haric yatakodasi
+area/lichter::alle_auf_20_ausser_schlafzimmer:
+- ayarla hepsi isik haric yatakodasi 20
+area/lichter::alle_auf_rot_ausser_kugel:
+- ayarla hepsi isik haric kure red
+area/lichter::alle_ausser_kugel:
+- sondur hepsi isik haric kure
+area/lichter::alle_ausser_schlafzimmer:
+- sondur hepsi isik haric yatakodasi
+area/lichter::alle_lichter_an:
+- yak hepsi isik
+area/lichter::alle_lichter_aus:
+- sondur hepsi isik
+area/lichter::arbeitszimmer_lichter_an:
+- yak hepsi isik office
+area/lichter::arbeitszimmer_lichter_aus:
+- sondur hepsi isik office
+area/lichter::esszimmer_lichter_an:
+- yak hepsi isik aileess
+area/lichter::esszimmer_lichter_aus:
+- sondur hepsi isik aileess
+area/lichter::kuche_lichter_an:
+- yak hepsi isik mutfak
+area/lichter::kuche_lichter_aus:
+- sondur hepsi isik mutfak
+area/lichter::schlafzimmer_auf_blau:
+- ayarla hepsi isik yatakodasi blue
+area/lichter::schlafzimmer_auf_rot:
+- ayarla hepsi isik yatakodasi red
+area/lichter::wohnzimmer_helligkeit:
+- ayarla hepsi isik salon 45
+area/lichter::wohnzimmer_lichter_an:
+- yak hepsi isik salon
+area/lichter::wohnzimmer_lichter_aus:
+- sondur hepsi isik salon
+area/spoken::alle_ausser_kugel_stt:
+- sondur hepsi isik haric kure
+area/spoken::alle_ausser_schlaf_stt:
+- sondur hepsi isik haric yatakodasi
+area/spoken::alle_ganzen_an:
+- yak hepsi isik
+area/spoken::alle_lampen_aus:
+- sondur hepsi isik
+area/spoken::esszimmer_weiss:
+- ayarla hepsi isik aileess white
+area/spoken::stt_kuche_lichte:
+- sondur hepsi isik mutfak
+area/spoken::stt_licht_wohnzimmer_an:
+- yak hepsi isik salon
+area/spoken::stt_licht_wohnzimmer_aus:
+- sondur hepsi isik salon
+area/spoken::stt_schlafzimmer_dativ:
+- sondur hepsi isik yatakodasi
+area/spoken::wohnzimmer_gruen:
+- ayarla hepsi isik salon green
+area/spoken_more::alle_ausser_arbeitszimmer:
+- sondur hepsi isik haric office
+area/spoken_more::arbeitszimmer_lampen_aus:
+- sondur hepsi isik office
+area/spoken_more::esszimmer_30:
+- ayarla hepsi isik aileess 30
+area/spoken_more::esszimmer_lichte_an:
+- yak hepsi isik aileess
+area/spoken_more::kuche_80:
+- ayarla hepsi isik mutfak 80
+area/spoken_more::kuche_blau:
+- ayarla hepsi isik mutfak blue
+area/spoken_more::ueberall_ausser_schlaf_stt:
+- sondur hepsi isik haric yatakodasi
+area/spoken_more::wohnzimmer_gelb:
+- ayarla hepsi isik salon yellow

@@ -1,0 +1,82 @@
+area/heizung::heizung_badezimmer_23:
+- 设置 空调 zhuwei 23
+area/heizung::heizung_esszimmer_23:
+- 设置 空调 jiatingfangess 23
+area/heizung::heizung_schlafzimmer_23:
+- 设置 空调 woshi 23
+area/heizung::heizung_wohnzimmer_23:
+- 设置 空调 客厅 23
+area/lichter::alle_an_ausser_kugel:
+- 打开 全部 灯 除了 qiudeng
+area/lichter::alle_an_ausser_schlafzimmer:
+- 打开 全部 灯 除了 woshi
+area/lichter::alle_auf_20_ausser_schlafzimmer:
+- 设置 全部 灯 除了 woshi 20
+area/lichter::alle_auf_rot_ausser_kugel:
+- 设置 全部 灯 除了 qiudeng 红
+area/lichter::alle_ausser_kugel:
+- 关闭 全部 灯 除了 qiudeng
+area/lichter::alle_ausser_schlafzimmer:
+- 关闭 全部 灯 除了 woshi
+area/lichter::alle_lichter_an:
+- 打开 全部 灯
+area/lichter::alle_lichter_aus:
+- 关闭 全部 灯
+area/lichter::arbeitszimmer_lichter_an:
+- 打开 全部 灯 office
+area/lichter::arbeitszimmer_lichter_aus:
+- 关闭 全部 灯 office
+area/lichter::esszimmer_lichter_an:
+- 打开 全部 灯 jiatingfangess
+area/lichter::esszimmer_lichter_aus:
+- 关闭 全部 灯 jiatingfangess
+area/lichter::kuche_lichter_an:
+- 打开 全部 灯 厨房
+area/lichter::kuche_lichter_aus:
+- 关闭 全部 灯 厨房
+area/lichter::schlafzimmer_auf_blau:
+- 设置 全部 灯 woshi 蓝
+area/lichter::schlafzimmer_auf_rot:
+- 设置 全部 灯 woshi 红
+area/lichter::wohnzimmer_helligkeit:
+- 设置 全部 灯 客厅 45
+area/lichter::wohnzimmer_lichter_an:
+- 打开 全部 灯 客厅
+area/lichter::wohnzimmer_lichter_aus:
+- 关闭 全部 灯 客厅
+area/spoken::alle_ausser_kugel_stt:
+- 关闭 全部 灯 除了 qiudeng
+area/spoken::alle_ausser_schlaf_stt:
+- 关闭 全部 灯 除了 woshi
+area/spoken::alle_ganzen_an:
+- 打开 全部 灯
+area/spoken::alle_lampen_aus:
+- 关闭 全部 灯
+area/spoken::esszimmer_weiss:
+- 设置 全部 灯 jiatingfangess 白
+area/spoken::stt_kuche_lichte:
+- 关闭 全部 灯 厨房
+area/spoken::stt_licht_wohnzimmer_an:
+- 打开 全部 灯 客厅
+area/spoken::stt_licht_wohnzimmer_aus:
+- 关闭 全部 灯 客厅
+area/spoken::stt_schlafzimmer_dativ:
+- 关闭 全部 灯 woshi
+area/spoken::wohnzimmer_gruen:
+- 设置 全部 灯 客厅 绿
+area/spoken_more::alle_ausser_arbeitszimmer:
+- 关闭 全部 灯 除了 office
+area/spoken_more::arbeitszimmer_lampen_aus:
+- 关闭 全部 灯 office
+area/spoken_more::esszimmer_30:
+- 设置 全部 灯 jiatingfangess 30
+area/spoken_more::esszimmer_lichte_an:
+- 打开 全部 灯 jiatingfangess
+area/spoken_more::kuche_80:
+- 设置 全部 灯 厨房 80
+area/spoken_more::kuche_blau:
+- 设置 全部 灯 厨房 蓝
+area/spoken_more::ueberall_ausser_schlaf_stt:
+- 关闭 全部 灯 除了 woshi
+area/spoken_more::wohnzimmer_gelb:
+- 设置 全部 灯 客厅 黄

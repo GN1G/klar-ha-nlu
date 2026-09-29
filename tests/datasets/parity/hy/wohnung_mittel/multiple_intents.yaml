@@ -1,0 +1,30 @@
+multiple_intents/multi::alle_ausser_schlaf_und_kueche:
+- անջատիր բոլոր լույս batsi qnakaran batsi խոհանոց
+multiple_intents/multi::licht_und_heizung:
+- միացրու բոլոր լույս հյուրասենյակ yev դիր ջեռուցում հյուրասենյակ 23
+multiple_intents/multi::wohn_und_ess_aus:
+- անջատիր բոլոր լույս հյուրասենյակ yev անջատիր բոլոր լույս yntaniqess
+multiple_intents/multi::wohn_und_ess_rot:
+- դիր բոլոր լույս հյուրասենյակ red yev դիր բոլոր լույս yntaniqess red
+multiple_intents/multi::wz_und_kuche_licht:
+- միացրու բոլոր լույս հյուրասենյակ yev միացրու բոլոր լույս խոհանոց
+multiple_intents/multi::zwei_raeume_und_heizung:
+- միացրու բոլոր լույս հյուրասենյակ yev միացրու բոլոր լույս խոհանոց yev դիր ջեռուցում
+  հյուրասենյակ 23
+multiple_intents/spoken::drei_raeume_an:
+- միացրու բոլոր լույս հյուրասենյակ yev միացրու բոլոր լույս yntaniqess yev միացրու
+  բոլոր լույս խոհանոց
+multiple_intents/spoken::drei_raeume_aus:
+- անջատիր բոլոր լույս հյուրասենյակ yev անջատիր բոլոր լույս yntaniqess yev անջատիր
+  բոլոր լույս խոհանոց
+multiple_intents/spoken::ess_und_wohn_aus:
+- անջատիր բոլոր լույս հյուրասենյակ yev անջատիր բոլոր լույս yntaniqess
+multiple_intents/spoken::kugel_und_decke_aus:
+- gundayin և stalat qnakaran անջատիր
+multiple_intents/spoken_more::kuche_und_ess_an:
+- միացրու բոլոր լույս խոհանոց yev միացրու բոլոր լույս yntaniqess
+multiple_intents/spoken_more::wz_ess_arbeit_aus:
+- անջատիր բոլոր լույս հյուրասենյակ yev անջատիր բոլոր լույս yntaniqess yev անջատիր
+  բոլոր լույս office
+multiple_intents/spoken_more::wz_und_arbeit_aus:
+- անջատիր բոլոր լույս հյուրասենյակ yev անջատիր բոլոր լույս office

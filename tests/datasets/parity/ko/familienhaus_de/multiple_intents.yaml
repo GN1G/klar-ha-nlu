@@ -1,0 +1,34 @@
+multiple_intents/multiple_intents::multi_0:
+- 꺼 불 hwajangsil then 켜 장면 good_morning
+multiple_intents/multiple_intents::multi_1:
+- 뭔 sikgi then 켜 장면 leaving_home
+multiple_intents/multiple_intents::multi_10:
+- 설정 선풍기 chimsil2 50 then 뭔 커튼 chimsil2 then 뭔 커튼 chimsilmaster
+multiple_intents/multiple_intents::multi_12:
+- 꺼 chimdae left chimsilmaster then 켜 모두 불 setaksil
+multiple_intents/multiple_intents::multi_14:
+- 꺼 모두 불 부엌 then 뭔 불 hyeongwangang
+multiple_intents/multiple_intents::multi_15:
+- 뭔 커튼 chimsil2 then 꺼 모두 불 부엌
+multiple_intents/multiple_intents::multi_16:
+- 켜 cheonjang 부엌 then 뭔 불 hyeongwangang
+multiple_intents/multiple_intents::multi_18:
+- 꺼 선풍기 gajoksil then 설정 seom 부엌 20
+multiple_intents/multiple_intents::multi_19:
+- 뭔 선풍기 chimsil2 then 켜 불 setaksil
+multiple_intents/multiple_intents::multi_2:
+- 뭔 불 garage then 닫아 커튼 거실
+multiple_intents/multiple_intents::multi_3:
+- 뭔 난방 거실 then 꺼 cheonjang 거실
+multiple_intents/multiple_intents::multi_4:
+- 닫아 커튼 chimsil3 then 닫아 커튼 garage then 켜 cheonjang chimsil2
+multiple_intents/multiple_intents::multi_5:
+- 꺼 불 gajoksiless then 설정 선풍기 chimsil2 50
+multiple_intents/multiple_intents::multi_6:
+- 켜 cheonjang chimsil3 then 꺼 불 hyeongwan
+multiple_intents/multiple_intents::multi_7:
+- 켜 장면 movie_night then 꺼 sikgi
+multiple_intents/multiple_intents::multi_8:
+- 열어 자물쇠 garage then 뭔 불 garage
+multiple_intents/multiple_intents::multi_9:
+- 일시정지 tv 거실 then 꺼 cheonjang 거실

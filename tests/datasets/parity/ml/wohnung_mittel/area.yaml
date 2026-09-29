@@ -1,0 +1,82 @@
+area/heizung::heizung_badezimmer_23:
+- സെറ്റ് ചൂട് masterbath 23
+area/heizung::heizung_esszimmer_23:
+- സെറ്റ് ചൂട് kutumbamess 23
+area/heizung::heizung_schlafzimmer_23:
+- സെറ്റ് ചൂട് kitappumuri 23
+area/heizung::heizung_wohnzimmer_23:
+- സെറ്റ് ചൂട് ഹാൾ 23
+area/lichter::alle_an_ausser_kugel:
+- തെളി എല്ലാം വിളക്ക് ozhike golam
+area/lichter::alle_an_ausser_schlafzimmer:
+- തെളി എല്ലാം വിളക്ക് ozhike kitappumuri
+area/lichter::alle_auf_20_ausser_schlafzimmer:
+- സെറ്റ് എല്ലാം വിളക്ക് ozhike kitappumuri 20
+area/lichter::alle_auf_rot_ausser_kugel:
+- സെറ്റ് എല്ലാം വിളക്ക് ozhike golam red
+area/lichter::alle_ausser_kugel:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് ozhike golam
+area/lichter::alle_ausser_schlafzimmer:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് ozhike kitappumuri
+area/lichter::alle_lichter_an:
+- തെളി എല്ലാം വിളക്ക്
+area/lichter::alle_lichter_aus:
+- അണയ്ക്ക് എല്ലാം വിളക്ക്
+area/lichter::arbeitszimmer_lichter_an:
+- തെളി എല്ലാം വിളക്ക് office
+area/lichter::arbeitszimmer_lichter_aus:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് office
+area/lichter::esszimmer_lichter_an:
+- തെളി എല്ലാം വിളക്ക് kutumbamess
+area/lichter::esszimmer_lichter_aus:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് kutumbamess
+area/lichter::kuche_lichter_an:
+- തെളി എല്ലാം വിളക്ക് അടുക്കള
+area/lichter::kuche_lichter_aus:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് അടുക്കള
+area/lichter::schlafzimmer_auf_blau:
+- സെറ്റ് എല്ലാം വിളക്ക് kitappumuri blue
+area/lichter::schlafzimmer_auf_rot:
+- സെറ്റ് എല്ലാം വിളക്ക് kitappumuri red
+area/lichter::wohnzimmer_helligkeit:
+- സെറ്റ് എല്ലാം വിളക്ക് ഹാൾ 45
+area/lichter::wohnzimmer_lichter_an:
+- തെളി എല്ലാം വിളക്ക് ഹാൾ
+area/lichter::wohnzimmer_lichter_aus:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് ഹാൾ
+area/spoken::alle_ausser_kugel_stt:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് ozhike golam
+area/spoken::alle_ausser_schlaf_stt:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് ozhike kitappumuri
+area/spoken::alle_ganzen_an:
+- തെളി എല്ലാം വിളക്ക്
+area/spoken::alle_lampen_aus:
+- അണയ്ക്ക് എല്ലാം വിളക്ക്
+area/spoken::esszimmer_weiss:
+- സെറ്റ് എല്ലാം വിളക്ക് kutumbamess white
+area/spoken::stt_kuche_lichte:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് അടുക്കള
+area/spoken::stt_licht_wohnzimmer_an:
+- തെളി എല്ലാം വിളക്ക് ഹാൾ
+area/spoken::stt_licht_wohnzimmer_aus:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് ഹാൾ
+area/spoken::stt_schlafzimmer_dativ:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് kitappumuri
+area/spoken::wohnzimmer_gruen:
+- സെറ്റ് എല്ലാം വിളക്ക് ഹാൾ green
+area/spoken_more::alle_ausser_arbeitszimmer:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് ozhike office
+area/spoken_more::arbeitszimmer_lampen_aus:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് office
+area/spoken_more::esszimmer_30:
+- സെറ്റ് എല്ലാം വിളക്ക് kutumbamess 30
+area/spoken_more::esszimmer_lichte_an:
+- തെളി എല്ലാം വിളക്ക് kutumbamess
+area/spoken_more::kuche_80:
+- സെറ്റ് എല്ലാം വിളക്ക് അടുക്കള 80
+area/spoken_more::kuche_blau:
+- സെറ്റ് എല്ലാം വിളക്ക് അടുക്കള blue
+area/spoken_more::ueberall_ausser_schlaf_stt:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് ozhike kitappumuri
+area/spoken_more::wohnzimmer_gelb:
+- സെറ്റ് എല്ലാം വിളക്ക് ഹാൾ yellow

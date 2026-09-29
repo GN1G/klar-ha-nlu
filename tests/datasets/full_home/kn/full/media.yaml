@@ -1,0 +1,48 @@
+- name: media_player.living_tv_on
+  conditions:
+  - type: action
+    entity_id: media_player.living_tv
+    state: 'on'
+  sentences:
+  - tv ಹಾಲ್ ಹಚ್ಚು
+  - ಹಚ್ಚು tv ಹಾಲ್
+- name: media_player.living_tv_off
+  conditions:
+  - type: action
+    entity_id: media_player.living_tv
+    state: 'off'
+  sentences:
+  - ಆರಿಸು tv ಹಾಲ್
+  - tv ಹಾಲ್ ಆರಿಸು
+- name: media_player.living_tv_pause
+  conditions:
+  - type: action
+    entity_id: media_player.living_tv
+    state: paused
+  sentences:
+  - ನಿಲ್ಲಿಸು tv ಹಾಲ್
+  - tv ಹಾಲ್ ನಿಲ್ಲಿಸು
+- name: media_player.family_tv_on
+  conditions:
+  - type: action
+    entity_id: media_player.family_tv
+    state: 'on'
+  sentences:
+  - tv kutumba ಹಚ್ಚು
+  - ಹಚ್ಚು tv kutumba
+- name: media_player.family_tv_off
+  conditions:
+  - type: action
+    entity_id: media_player.family_tv
+    state: 'off'
+  sentences:
+  - ಆರಿಸು tv kutumba
+  - tv kutumba ಆರಿಸು
+- name: media_player.family_tv_pause
+  conditions:
+  - type: action
+    entity_id: media_player.family_tv
+    state: paused
+  sentences:
+  - ನಿಲ್ಲಿಸು tv kutumba
+  - tv kutumba ನಿಲ್ಲಿಸು

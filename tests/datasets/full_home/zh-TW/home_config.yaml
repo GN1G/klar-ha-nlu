@@ -1,0 +1,507 @@
+name: Full Home zh-TW
+language: zh-TW
+difficulty: full
+policy:
+  preferred_climate: climate.upper_thermostat
+  timer_hints:
+    90: laundry
+floors:
+- id: ground
+  name: louxia
+  level: 0
+  aliases:
+  - louxia
+  - diceng
+- id: upper
+  name: loushang
+  level: 1
+  aliases:
+  - loushang
+  - shangceng
+- id: basement
+  name: basement
+  level: -1
+  aliases:
+  - basement
+  - keller
+areas:
+- id: entryway
+  name: Xuanguan
+  floor: ground
+  aliases:
+  - xuanguan
+- id: living
+  name: 客廳
+  floor: ground
+  aliases:
+  - 客廳
+  - keting
+- id: dining
+  name: Jiatingfangess
+  floor: ground
+  aliases:
+  - jiatingfangess
+- id: kitchen
+  name: 廚房
+  floor: ground
+  aliases:
+  - 廚房
+  - chufang
+- id: family_room
+  name: Jiatingfang
+  floor: ground
+  aliases:
+  - jiatingfang
+- id: laundry
+  name: Xiyifang
+  floor: ground
+  aliases:
+  - xiyifang
+- id: powder_room
+  name: Kewei
+  floor: ground
+  aliases:
+  - kewei
+- id: garage
+  name: Garage
+  floor: ground
+  aliases:
+  - garage
+- id: office
+  name: Office
+  floor: ground
+  aliases:
+  - office
+- id: garden
+  name: Garden
+  floor: ground
+  aliases:
+  - garden
+- id: master_bedroom
+  name: Woshimaster
+  floor: upper
+  aliases:
+  - woshimaster
+  - woshi
+- id: bedroom_2
+  name: Woshi2
+  floor: upper
+  aliases:
+  - woshi2
+- id: bedroom_3
+  name: Woshi3
+  floor: upper
+  aliases:
+  - woshi3
+- id: bedroom_4
+  name: Woshi4
+  floor: upper
+  aliases:
+  - woshi4
+- id: master_bath
+  name: Zhuwei
+  floor: upper
+  aliases:
+  - zhuwei
+- id: main_bath
+  name: Main Bath
+  floor: upper
+  aliases:
+  - main bath
+- id: hallway
+  name: Zoulang
+  floor: upper
+  aliases:
+  - zoulang
+- id: basement
+  name: Basement
+  floor: basement
+  aliases:
+  - basement
+devices:
+- id: light.entryway_light
+  area_id: entryway
+  name: xuanguan 燈
+  aliases:
+  - xuanguan 燈
+  - 燈
+- id: light.living_ceiling
+  area_id: living
+  name: 客廳 tianhuaban
+  aliases:
+  - 客廳 tianhuaban
+  - tianhuaban
+- id: light.living_lamp
+  area_id: living
+  name: 客廳 deng
+  aliases:
+  - 客廳 deng
+  - deng
+- id: light.dining_pendant
+  area_id: dining
+  name: jiatingfangess 燈
+  aliases:
+  - jiatingfangess 燈
+  - 燈
+- id: light.kitchen_ceiling
+  area_id: kitchen
+  name: 廚房 tianhuaban
+  aliases:
+  - 廚房 tianhuaban
+  - tianhuaban
+- id: light.kitchen_island
+  area_id: kitchen
+  name: 廚房 daotai
+  aliases:
+  - 廚房 daotai
+  - daotai
+- id: light.family_ceiling
+  area_id: family_room
+  name: jiatingfang tianhuaban
+  aliases:
+  - jiatingfang tianhuaban
+  - tianhuaban
+- id: light.laundry_light
+  area_id: laundry
+  name: xiyifang 燈
+  aliases:
+  - xiyifang 燈
+  - 燈
+- id: light.powder_room_light
+  area_id: powder_room
+  name: kewei 燈
+  aliases:
+  - kewei 燈
+  - 燈
+- id: light.garage_light
+  area_id: garage
+  name: garage 燈
+  aliases:
+  - garage 燈
+  - 燈
+- id: light.office_ceiling
+  area_id: office
+  name: office tianhuaban
+  aliases:
+  - office tianhuaban
+  - tianhuaban
+- id: light.garden
+  area_id: garden
+  name: garden 燈
+  aliases:
+  - garden 燈
+  - 燈
+- id: light.master_ceiling
+  area_id: master_bedroom
+  name: woshimaster tianhuaban
+  aliases:
+  - woshimaster tianhuaban
+  - tianhuaban
+- id: light.master_ensuite
+  area_id: master_bedroom
+  name: woshimaster ensuite
+  aliases:
+  - woshimaster ensuite
+  - ensuite
+  tags:
+  - ensuite
+- id: light.master_bedside_left
+  area_id: master_bedroom
+  name: woshimaster left chuangtoudeng
+  aliases:
+  - woshimaster left chuangtoudeng
+  - chuangtoudeng
+- id: light.master_bedside_right
+  area_id: master_bedroom
+  name: woshimaster right chuangtoudeng
+  aliases:
+  - woshimaster right chuangtoudeng
+  - chuangtoudeng
+- id: light.bedroom2_ceiling
+  area_id: bedroom_2
+  name: woshi2 tianhuaban
+  aliases:
+  - woshi2 tianhuaban
+  - tianhuaban
+- id: light.bedroom3_ceiling
+  area_id: bedroom_3
+  name: woshi3 tianhuaban
+  aliases:
+  - woshi3 tianhuaban
+  - tianhuaban
+- id: light.bedroom4_ceiling
+  area_id: bedroom_4
+  name: woshi4 tianhuaban
+  aliases:
+  - woshi4 tianhuaban
+  - tianhuaban
+- id: light.master_bath_light
+  area_id: master_bath
+  name: zhuwei 燈
+  aliases:
+  - zhuwei 燈
+  - 燈
+- id: light.main_bath_light
+  area_id: main_bath
+  name: main bath 燈
+  aliases:
+  - main bath 燈
+  - 燈
+- id: light.hallway_light
+  area_id: hallway
+  name: zoulang 燈
+  aliases:
+  - zoulang 燈
+  - 燈
+- id: light.basement
+  area_id: basement
+  name: basement 燈
+  aliases:
+  - basement 燈
+  - 燈
+- id: cover.living_blinds
+  area_id: living
+  name: 客廳 簾子
+  aliases:
+  - 客廳 簾子
+  - 簾子
+- id: cover.master_blinds
+  area_id: master_bedroom
+  name: woshimaster 簾子
+  aliases:
+  - woshimaster 簾子
+  - 簾子
+- id: cover.bedroom2_blinds
+  area_id: bedroom_2
+  name: woshi2 簾子
+  aliases:
+  - woshi2 簾子
+  - 簾子
+- id: cover.bedroom3_blinds
+  area_id: bedroom_3
+  name: woshi3 簾子
+  aliases:
+  - woshi3 簾子
+  - 簾子
+- id: cover.garage_door
+  area_id: garage
+  name: garage 簾子
+  aliases:
+  - garage 簾子
+  - 簾子
+- id: climate.ground_thermostat
+  area_id: living
+  name: 客廳 空調
+  aliases:
+  - 客廳 空調
+  - 空調
+- id: climate.upper_thermostat
+  area_id: master_bedroom
+  name: woshimaster 空調
+  aliases:
+  - woshimaster 空調
+  - 空調
+- id: climate.master_ac
+  area_id: master_bedroom
+  name: kongtiao woshimaster
+  aliases:
+  - kongtiao woshimaster
+  - kongtiao
+  - ac
+  tags:
+  - kongtiao
+- id: fan.family_fan
+  area_id: family_room
+  name: jiatingfang 風扇
+  aliases:
+  - jiatingfang 風扇
+  - 風扇
+- id: fan.master_fan
+  area_id: master_bedroom
+  name: woshimaster 風扇
+  aliases:
+  - woshimaster 風扇
+  - 風扇
+- id: fan.bedroom2_fan
+  area_id: bedroom_2
+  name: woshi2 風扇
+  aliases:
+  - woshi2 風扇
+  - 風扇
+- id: lock.front_door
+  area_id: entryway
+  name: front 門
+  aliases:
+  - front 門
+  tags:
+  - front
+- id: lock.garage_entry
+  area_id: garage
+  name: garage 門
+  aliases:
+  - garage 門
+  tags:
+  - garage
+- id: switch.dishwasher
+  area_id: kitchen
+  name: 廚房 xiwanji
+  aliases:
+  - 廚房 xiwanji
+  - xiwanji
+- id: switch.rangehood
+  area_id: kitchen
+  name: 廚房 rangehood
+  aliases:
+  - 廚房 rangehood
+  - rangehood
+  tags:
+  - rangehood
+- id: switch.washing_machine
+  area_id: laundry
+  name: xiyifang xiyiji
+  aliases:
+  - xiyifang xiyiji
+  - xiyiji
+  - washer
+  tags:
+  - washer
+  - xiyiji
+- id: switch.dryer
+  area_id: laundry
+  name: xiyifang dryer
+  aliases:
+  - xiyifang dryer
+  - dryer
+  tags:
+  - dryer
+- id: switch.master_bath_fan
+  area_id: master_bath
+  name: zhuwei 風扇bad
+  aliases:
+  - zhuwei 風扇bad
+  - 風扇bad
+  tags:
+  - 風扇bad
+- id: switch.main_bath_fan
+  area_id: main_bath
+  name: main bath 風扇bad
+  aliases:
+  - main bath 風扇bad
+  - 風扇bad
+  tags:
+  - 風扇bad
+- id: media_player.living_tv
+  area_id: living
+  name: 客廳 dianshi
+  aliases:
+  - 客廳 dianshi
+  - dianshi
+- id: media_player.family_tv
+  area_id: family_room
+  name: jiatingfang dianshi
+  aliases:
+  - jiatingfang dianshi
+  - dianshi
+- id: media_player.living_music
+  area_id: living
+  name: 客廳 電視
+  aliases:
+  - 客廳 電視
+  - 電視
+  platform: music_assistant
+  tags:
+  - 電視
+- id: media_player.kitchen_music
+  area_id: kitchen
+  name: 廚房 電視
+  aliases:
+  - 廚房 電視
+  - 電視
+  platform: music_assistant
+  tags:
+  - 電視
+- id: media_player.office_music
+  area_id: office
+  name: office 電視
+  aliases:
+  - office 電視
+  - 電視
+  platform: music_assistant
+  tags:
+  - 電視
+- id: vacuum.robot
+  area_id: living
+  name: 客廳 掃地
+  aliases:
+  - 客廳 掃地
+  - 掃地
+- id: binary_sensor.front_door_sensor
+  area_id: entryway
+  name: xuanguan doorsensor
+  aliases:
+  - xuanguan doorsensor
+  - doorsensor
+  tags:
+  - doorsensor
+- id: binary_sensor.living_window
+  area_id: living
+  name: 客廳 windowsensor
+  aliases:
+  - 客廳 windowsensor
+  - windowsensor
+  tags:
+  - windowsensor
+- id: binary_sensor.kitchen_motion
+  area_id: kitchen
+  name: 廚房 motion
+  aliases:
+  - 廚房 motion
+  - motion
+  tags:
+  - motion
+- id: sensor.living_temperature
+  area_id: living
+  name: 客廳 tempsensor
+  aliases:
+  - 客廳 tempsensor
+  - tempsensor
+  tags:
+  - tempsensor
+- id: sensor.living_humidity
+  area_id: living
+  name: 客廳 humidity
+  aliases:
+  - 客廳 humidity
+  - humidity
+  tags:
+  - humidity
+- id: weather.home
+  area_id: garden
+  name: garden weather
+  aliases:
+  - garden weather
+  - weather
+scenes:
+- id: movie_night
+  name: dianying
+- id: dinner_time
+  name: dinner
+- id: kids_bedtime
+  name: kids
+- id: good_morning
+  name: morning
+scripts:
+- id: good_night
+  name: wanshang
+- id: leaving_home
+  name: likai
+timers:
+- id: oven
+  name: oven 定時
+- id: laundry
+  name: laundry 定時
+- id: abstract
+  name: abstract 定時
+lists:
+- id: shopping
+  name: 清單

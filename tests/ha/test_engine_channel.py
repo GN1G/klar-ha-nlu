@@ -1,0 +1,337 @@
+#!/usr/bin/env python3
+"""Channel helpers for bundled-engine stable vs staging downloads."""
+
+from __future__ import annotations
+
+import importlib.util
+import sys
+import types
+import unittest
+from pathlib import Path
+from unittest.mock import patch
+
+ROOT = Path(__file__).resolve().parents[2]
+
+
+def _load_const():
+    languages = types.ModuleType("klar_channel_test.languages")
+    languages.LANGUAGE_VARIANTS = {}
+    languages.SUPPORTED_LANGUAGES = ("de", "en")
+    package = types.ModuleType("klar_channel_test")
+    package.__path__ = []
+    with patch.dict(
+        sys.modules,
+        {
+            "klar_channel_test": package,
+            "klar_channel_test.languages": languages,
+        },
+    ):
+        path = ROOT / "custom_components" / "klar_nlu" / "const.py"
+        spec = importlib.util.spec_from_file_location("klar_channel_test.const", path)
+        if spec is None or spec.loader is None:
+            raise RuntimeError(f"cannot load {path}")
+        module = importlib.util.module_from_spec(spec)
+        sys.modules["klar_channel_test.const"] = module
+        spec.loader.exec_module(module)
+        return module
+
+
+const = _load_const()
+
+
+class EngineChannelTests(unittest.TestCase):
+    def test_followup_session_key_and_keep(self) -> None:
+        self.assertFalse(const.keeps_conversation("execute"))
+        self.assertFalse(const.keeps_conversation("reject"))
+        self.assertFalse(const.keeps_conversation("error"))
+        self.assertTrue(const.keeps_conversation("clarify"))
+        self.assertTrue(const.keeps_conversation("confirm"))
+        self.assertTrue(const.keeps_conversation("chat"))
+        self.assertEqual(const.engine_session_id("dev-1", None), "dev:dev-1")
+        self.assertEqual(const.engine_session_id(None, "sat-1"), "dev:sat-1")
+        self.assertEqual(const.engine_session_id(None, None), const.FOLLOWUP_SESSION)
+        self.assertEqual(const.parse_session_id("assist-9", None, None), "assist-9")
+        self.assertEqual(const.parse_session_id(None, None, None), const.FOLLOWUP_SESSION)
+
+    def test_resolve_channel_defaults_stable(self) -> None:
+        self.assertEqual(const.resolve_channel(None), const.CHANNEL_STABLE)
+        self.assertEqual(const.resolve_channel("stable"), const.CHANNEL_STABLE)
+        self.assertEqual(const.resolve_channel("nightly"), const.CHANNEL_STABLE)
+        self.assertEqual(const.resolve_channel("staging"), const.CHANNEL_STAGING)
+
+    def test_pick_staging_skips_latest_and_non_staging(self) -> None:
+        releases = [
+            {"tag_name": "2026.8.30", "prerelease": False, "name": "stable"},
+            {"tag_name": "2026.8.30-rc.1", "prerelease": True, "name": "other"},
+            {
+                "tag_name": "2026.8.30-staging.abc1234",
+                "prerelease": True,
+                "name": "wanted",
+            },
+        ]
+        chosen = const.pick_staging_release(releases)
+        self.assertIsNotNone(chosen)
+        self.assertEqual(chosen["name"], "wanted")
+
+    def test_is_addon_engine_url(self) -> None:
+        self.assertFalse(const.is_addon_engine_url(const.DEFAULT_URL))
+        self.assertFalse(const.is_addon_engine_url("http://192.168.1.40:10520"))
+        self.assertTrue(const.is_addon_engine_url(const.DEFAULT_ADDON_URL))
+        self.assertTrue(const.is_addon_engine_url(const.DEFAULT_STAGING_ADDON_URL))
+        self.assertTrue(const.is_addon_engine_url("http://klar-nlu.local.hass.io:10520"))
+        self.assertTrue(const.is_addon_engine_url("http://8db2ab02-klar-nlu:10520"))
+        self.assertEqual(const.addon_sidebar_path(const.DEFAULT_ADDON_URL), "klar_nlu")
+        self.assertEqual(const.addon_sidebar_path(const.DEFAULT_STAGING_ADDON_URL), "klar_nlu_staging")
+        self.assertEqual(
+            const.addon_sidebar_path("http://8db2ab02-klar-nlu-staging.local.hass.io:10520"),
+            "klar_nlu_staging",
+        )
+        self.assertIsNone(const.addon_sidebar_path(const.DEFAULT_URL))
+
+    def test_addon_url_follows_channel(self) -> None:
+        self.assertEqual(
+            const.addon_url_for_channel(const.CHANNEL_STABLE),
+            const.DEFAULT_ADDON_URL,
+        )
+        self.assertEqual(
+            const.addon_url_for_channel(const.CHANNEL_STAGING),
+            const.DEFAULT_STAGING_ADDON_URL,
+        )
+
+    def test_resolve_engine_url_rewrites_managed_hosts(self) -> None:
+        self.assertEqual(
+            const.resolve_engine_url(
+                mode=const.MODE_REMOTE,
+                channel=const.CHANNEL_STAGING,
+                url=const.DEFAULT_ADDON_URL,
+            ),
+            const.DEFAULT_STAGING_ADDON_URL,
+        )
+        self.assertEqual(
+            const.resolve_engine_url(
+                mode=const.MODE_REMOTE,
+                channel=const.CHANNEL_STABLE,
+                url=const.DEFAULT_STAGING_ADDON_URL,
+            ),
+            const.DEFAULT_ADDON_URL,
+        )
+        self.assertEqual(
+            const.resolve_engine_url(
+                mode=const.MODE_LOCAL,
+                channel=const.CHANNEL_STAGING,
+                url=const.DEFAULT_ADDON_URL,
+            ),
+            const.DEFAULT_URL,
+        )
+        self.assertEqual(
+            const.resolve_engine_target(
+                mode=const.MODE_LOCAL,
+                channel=const.CHANNEL_STAGING,
+                url=const.DEFAULT_URL,
+                supervisor=True,
+            ),
+            (const.MODE_LOCAL, const.DEFAULT_URL),
+        )
+        self.assertEqual(
+            const.resolve_engine_target(
+                mode=const.MODE_LOCAL,
+                channel=const.CHANNEL_STABLE,
+                url=const.DEFAULT_STAGING_ADDON_URL,
+                supervisor=True,
+            ),
+            (const.MODE_LOCAL, const.DEFAULT_URL),
+        )
+        self.assertEqual(
+            const.resolve_engine_target(
+                mode=const.MODE_REMOTE,
+                channel=const.CHANNEL_STAGING,
+                url=const.DEFAULT_URL,
+                supervisor=True,
+            ),
+            (const.MODE_REMOTE, const.DEFAULT_STAGING_ADDON_URL),
+        )
+        self.assertEqual(
+            const.resolve_engine_target(
+                mode=const.MODE_LOCAL,
+                channel=const.CHANNEL_STAGING,
+                url="http://8db2ab02-klar-nlu-staging.local.hass.io:10520",
+                supervisor=True,
+            ),
+            (const.MODE_LOCAL, const.DEFAULT_URL),
+        )
+
+    def test_resolve_engine_url_keeps_custom_host(self) -> None:
+        custom = "http://192.168.1.40:10520"
+        self.assertEqual(
+            const.resolve_engine_url(
+                mode=const.MODE_REMOTE,
+                channel=const.CHANNEL_STAGING,
+                url=custom,
+            ),
+            custom,
+        )
+
+    def test_resolve_engine_url_keeps_supervisor_prefix(self) -> None:
+        prefixed = "http://xyz-klar-nlu:10520"
+        fqdn = "http://8db2ab02-klar-nlu.local.hass.io:10520"
+        for url in (prefixed, fqdn):
+            self.assertTrue(const.is_managed_engine_url(url), url)
+            self.assertEqual(
+                const.resolve_engine_url(
+                    mode=const.MODE_REMOTE,
+                    channel=const.CHANNEL_STABLE,
+                    url=url,
+                    supervisor=True,
+                ),
+                url,
+            )
+            self.assertEqual(
+                const.resolve_engine_target(
+                    mode=const.MODE_REMOTE,
+                    channel=const.CHANNEL_STABLE,
+                    url=url,
+                    supervisor=True,
+                ),
+                (const.MODE_REMOTE, url),
+            )
+
+    def test_resolve_engine_url_retargets_prefixed_channel(self) -> None:
+        self.assertEqual(
+            const.resolve_engine_url(
+                mode=const.MODE_REMOTE,
+                channel=const.CHANNEL_STAGING,
+                url="http://xyz-klar-nlu:10520",
+                supervisor=True,
+            ),
+            "http://xyz-klar-nlu-staging:10520",
+        )
+        self.assertEqual(
+            const.resolve_engine_url(
+                mode=const.MODE_REMOTE,
+                channel=const.CHANNEL_STABLE,
+                url="http://xyz-klar-nlu-staging.local.hass.io:10520",
+                supervisor=True,
+            ),
+            "http://xyz-klar-nlu.local.hass.io:10520",
+        )
+
+    def test_hassio_discovery_slug_url_is_kept(self) -> None:
+        discovered = "http://8db2ab02-klar-nlu:10520"
+        self.assertEqual(
+            const.resolve_engine_target(
+                mode=const.MODE_REMOTE,
+                channel=const.CHANNEL_STABLE,
+                url=discovered,
+                supervisor=True,
+            ),
+            (const.MODE_REMOTE, discovered),
+        )
+
+    def test_engine_url_candidates_add_hassio_fqdn(self) -> None:
+        self.assertEqual(
+            const.engine_url_candidates("http://klar-nlu:10520"),
+            ["http://klar-nlu:10520", "http://klar-nlu.local.hass.io:10520"],
+        )
+        fqdn = "http://8db2ab02-klar-nlu.local.hass.io:10520"
+        self.assertEqual(const.engine_url_candidates(fqdn), [fqdn])
+        custom = "http://192.168.1.40:10520"
+        self.assertEqual(const.engine_url_candidates(custom), [custom])
+
+    def test_channel_for_addon_slug(self) -> None:
+        self.assertEqual(
+            const.channel_for_addon_slug("klar_nlu_staging"),
+            const.CHANNEL_STAGING,
+        )
+        self.assertEqual(
+            const.channel_for_addon_slug("klar-nlu-staging"),
+            const.CHANNEL_STAGING,
+        )
+        self.assertEqual(
+            const.channel_for_addon_slug("klar_nlu"),
+            const.CHANNEL_STABLE,
+        )
+
+    def test_pick_staging_requires_prerelease_flag(self) -> None:
+        self.assertIsNone(
+            const.pick_staging_release(
+                [{"tag_name": "2026.8.30-staging.deadbee", "prerelease": False}]
+            )
+        )
+        self.assertIsNone(const.pick_staging_release("nope"))
+
+    def test_addon_and_engine_drop_armv7(self) -> None:
+        engine = (ROOT / "custom_components" / "klar_nlu" / "engine.py").read_text()
+        self.assertIn("languages", engine)
+        self.assertIn("ui_locale", engine)
+        self.assertIn("pipeline: dict[str, object] | None = None", engine)
+        self.assertNotIn("armv7", engine)
+        build = (ROOT / ".github" / "workflows" / "build.yml").read_text()
+        self.assertNotIn("armv7", build)
+        self.assertIn("x86_64-unknown-linux-musl", build)
+        self.assertIn("aarch64-unknown-linux-musl", build)
+        self.assertNotIn("unknown-linux-gnu", build)
+        init = (ROOT / "custom_components" / "klar_nlu" / "__init__.py").read_text()
+        for flag in (
+            "nlu_rag",
+            "refine_speech",
+            "calendar_llm",
+            "quiet_ack",
+            "allow_llm_tools",
+            "fallback_llm",
+        ):
+            self.assertIn(flag, init)
+        self.assertIn("pipeline=_pipeline_flags(entry)", init)
+        for rel in (
+            "config.yaml",
+            "addon/config.yaml",
+            "addon-staging/config.yaml",
+            "addon/build.yaml",
+            "addon-staging/build.yaml",
+        ):
+            self.assertNotIn("armv7", (ROOT / rel).read_text(), rel)
+
+    def test_merge_engine_settings_copies_pipeline_flags(self) -> None:
+        source = (ROOT / "custom_components" / "klar_nlu" / "engine.py").read_text()
+        start = source.index("def merge_engine_settings(")
+        end = source.index("def merge_ui_locale(")
+        ns = {"resolve_personality": lambda value: value or "default"}
+        exec(source[start:end], ns)  # noqa: S102 — isolated merge helper
+        merged = ns["merge_engine_settings"](
+            {"personality": "default", "nlu_rag": False},
+            "butler",
+            ["de"],
+            {
+                "nlu_rag": True,
+                "refine_speech": True,
+                "calendar_llm": True,
+                "quiet_ack": True,
+                "allow_llm_tools": True,
+                "fallback_llm": True,
+                "extra_prompt": "house rule",
+            },
+        )
+        self.assertEqual(merged["personality"], "butler")
+        self.assertEqual(merged["languages"], ["de"])
+        self.assertTrue(merged["nlu_rag"])
+        self.assertTrue(merged["refine_speech"])
+        self.assertTrue(merged["calendar_llm"])
+        self.assertTrue(merged["quiet_ack"])
+        self.assertTrue(merged["allow_llm_tools"])
+        self.assertTrue(merged["fallback_llm"])
+        self.assertEqual(merged["extra_prompt"], "house rule")
+        self.assertIsNone(ns["merge_engine_settings"]("nope", "default", None))
+
+    def test_engine_headers_send_write_token(self) -> None:
+        self.assertEqual(const.TOKEN_HEADER, "x-klar-token")
+        self.assertEqual(const.engine_headers("secret"), {"x-klar-token": "secret"})
+        self.assertEqual(const.engine_headers("  tok  ", extra={"Accept": "application/json"}), {"Accept": "application/json", "x-klar-token": "tok"})
+        self.assertEqual(const.engine_headers(None, extra={"Accept": "text/event-stream"}), {"Accept": "text/event-stream"})
+        self.assertEqual(const.engine_headers(""), {})
+        for rel in ("engine.py", "engine_llm.py", "sync.py", "services.py"):
+            src = (ROOT / "custom_components" / "klar_nlu" / rel).read_text(encoding="utf-8")
+            self.assertIn("engine_headers", src, rel)
+            self.assertNotIn("X-Klar-Token", src, rel)
+
+
+if __name__ == "__main__":
+    unittest.main()

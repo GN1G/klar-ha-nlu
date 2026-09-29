@@ -1,0 +1,15 @@
+state_persistance/followup::heizung_dann_grad:
+- - асаа халаалт зочны
+  - ' 21'
+state_persistance/followup::wohnzimmer_dann_aus:
+- - асаа гэрэл зочны
+  - унтраа
+state_persistance/spoken::kugel_dann_aus:
+- - асаа bomboo
+  - унтраа
+state_persistance/spoken::wohnzimmer_dann_kueche:
+- - асаа гэрэл зочны
+  - асаа гэрэл галтогоо
+state_persistance/spoken::wohnzimmer_dann_rot:
+- - асаа бүгд гэрэл зочны
+  - red

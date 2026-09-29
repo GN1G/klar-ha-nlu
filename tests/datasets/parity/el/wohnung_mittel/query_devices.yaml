@@ -1,0 +1,18 @@
+query_devices/spoken::status_kugel:
+- τι σφαιρα
+query_devices/spoken::status_pc:
+- τι pc
+query_devices/spoken::status_trockner:
+- τι dryer
+query_devices/spoken::status_tv:
+- τι tv
+query_devices/spoken_more::status_decke:
+- τι ταβανι υπνοδωματο
+query_devices/spoken_more::status_spuelmaschine:
+- τι πιατα
+query_devices/spoken_more::status_wasch_casual:
+- τι πλυντηριο
+query_devices/status::status_r2d2:
+- τι σκουπα σαλονι
+query_devices/status::status_waschmaschine:
+- τι πλυντηριο

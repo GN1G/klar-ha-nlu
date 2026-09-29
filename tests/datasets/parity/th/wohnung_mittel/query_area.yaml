@@ -1,0 +1,28 @@
+query_area/spoken::status_licht_kuche_casual:
+- อะไร ไฟ ห้องครัว
+query_area/spoken::status_licht_wohnzimmer_casual:
+- อะไร ไฟ ห้องนั่งเล่น
+query_area/spoken_more::brennt_arbeitszimmer:
+- อะไร ไฟ office
+query_area/spoken_more::brennt_esszimmer:
+- อะไร ไฟ hongkhropkhruaess
+query_area/spoken_more::status_licht_schlaf_casual:
+- อะไร ไฟ hongnon
+query_area/status::status_alle_lichter:
+- อะไร ทั้งหมด ไฟ
+query_area/status::status_licht_arbeitszimmer:
+- อะไร ไฟ office
+query_area/status::status_licht_badezimmer:
+- weather france
+query_area/status::status_licht_esszimmer:
+- อะไร ไฟ hongkhropkhruaess
+query_area/status::status_licht_kuche:
+- อะไร ไฟ ห้องครัว
+query_area/status::status_licht_wohnzimmer:
+- อะไร ไฟ ห้องนั่งเล่น
+query_area/status::status_wohn_und_esszimmer:
+- อะไร wohn und esszimmer
+query_area/status::temperatur_wohnung:
+- weather france
+query_area/status::temperatur_wohnzimmer:
+- อะไร แอร์ ห้องนั่งเล่น

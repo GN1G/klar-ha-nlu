@@ -1,0 +1,18 @@
+query_devices/spoken::status_kugel:
+- pyth pel
+query_devices/spoken::status_pc:
+- pyth pc
+query_devices/spoken::status_trockner:
+- pyth dryer
+query_devices/spoken::status_tv:
+- pyth tv
+query_devices/spoken_more::status_decke:
+- pyth nen chambour
+query_devices/spoken_more::status_spuelmaschine:
+- pyth lestri
+query_devices/spoken_more::status_wasch_casual:
+- pyth jynnwolhi
+query_devices/status::status_r2d2:
+- pyth sughva stafell
+query_devices/status::status_waschmaschine:
+- pyth jynnwolhi

@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "此整合同 Assist 對話。語音由 Klar NLU 應用、內建程序或 Docker 解析。喺 Home Assistant OS 請安裝應用並選擇使用 Klar NLU 應用；否則啟動內建引擎。唔好兩個一齊開。",
+        "data": {
+          "mode": "引擎",
+          "channel": "發行通道",
+          "url": "Klar API 網址",
+          "token": "寫入權杖"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "網址必須係 http(s)，唔好帶用戶名。"
+    },
+    "abort": {
+      "already_configured": "Klar NLU 已經設定"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "語音、Assist 語言和 LLM 在 Klar 操作介面（設定）中。此表格只連接引擎：URL、權杖和頻道。 {apps}",
+        "data": {
+          "mode": "引擎",
+          "url": "Klar API 網址",
+          "token": "寫入權杖",
+          "assist_filter": "只控制已向 Assist 公開嘅實體",
+          "channel": "發行通道"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "同 Klar 應用一樣嘅權杖。",
+          "assist_filter": "開：只限 Assist 見到嘅實體。關：包括隱藏實體。",
+          "channel": "隨時可改。預發佈指向 Klar NLU（Staging）。"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "網址必須係 http(s)，唔好帶用戶名。"
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "啟動內建引擎（只限 HACS）",
+        "remote": "使用 Klar NLU 應用或 Docker"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "穩定版（正式）",
+        "staging": "預發佈（候選）"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "系統語言",
+        "all": "所有語言"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "一般",
+        "butler": "Butler",
+        "locker": "輕鬆",
+        "fuersorglich": "體貼",
+        "party": "Party",
+        "grantig": "脾氣",
+        "sarkastisch": "諷刺",
+        "pirat": "海盜",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "人格",
+        "state": {
+          "default": "一般",
+          "butler": "Butler",
+          "locker": "輕鬆",
+          "fuersorglich": "體貼",
+          "party": "Party",
+          "grantig": "脾氣",
+          "sarkastisch": "諷刺",
+          "pirat": "海盜",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "簡短確認"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "AI 任務"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "上次聽到"
+      },
+      "last_decision": {
+        "name": "上次判定"
+      },
+      "last_speech": {
+        "name": "上次回覆"
+      },
+      "last_area": {
+        "name": "聽到位置"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Klar 引擎已停止",
+      "description": "內建 Klar 程序未運行。請喺設定 → 裝置與服務重新載入 Klar NLU。"
+    }
+  }
+}

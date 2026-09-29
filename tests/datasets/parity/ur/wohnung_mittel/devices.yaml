@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- بند چھت bedroom
+devices/geraete::device_arbeitszimmer_an:
+- چالو روشنی office
+devices/geraete::device_esszimmer_an:
+- چالو روشنی خاندانیess
+devices/geraete::device_kuche_kuche_an:
+- چالو روشنی باورچی
+devices/geraete::device_wohnzimmer_an:
+- چالو روشنی لانج
+devices/geraete::filmabend:
+- چالو منظر filmabend
+devices/geraete::kugel_an:
+- چالو گولا
+devices/geraete::luefter_50:
+- رکھو پنکھا office 50
+devices/geraete::pc_an:
+- چالو pc
+devices/geraete::r2d2_saugen:
+- چالو جھاڑو لانج
+devices/geraete::rollo_zu:
+- بندکرو پردہ لانج
+devices/geraete::spuelmaschine_aus:
+- بند برتن
+devices/geraete::tuer_abschliessen:
+- تالا تالا داخلہ
+devices/geraete::waschmaschine_an:
+- چالو واشنگ
+devices/klima::klima_schlaf_21:
+- رکھو ac bedroom 21
+devices/spoken::deckenlampe_an:
+- چالو چھت bedroom
+devices/spoken::kugel_aus:
+- بند گولا
+devices/spoken::luefter_aus:
+- بند پنکھا office
+devices/spoken::rollo_auf:
+- کھولو پردہ لانج
+devices/spoken::trockner_an:
+- چالو dryer
+devices/spoken::tv_aus:
+- بند tv
+devices/spoken_more::decke_aus_casual:
+- بند چھت bedroom
+devices/spoken_more::kugel_casual:
+- چالو گولا
+devices/spoken_more::pc_aus:
+- بند pc
+devices/spoken_more::spuelmaschine_an:
+- چالو برتن
+devices/spoken_more::waschmaschine_aus:
+- بند واشنگ

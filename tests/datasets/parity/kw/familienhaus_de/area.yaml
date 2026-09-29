@@ -1,0 +1,249 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- degea curtayn chambour2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- igeri curtayn chambour2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- settya curtayn chambour2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- settya gwyns chambour2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- diffyg gwyns chambour2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- enow gwyns chambour2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- settya oll golow chambour2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- settya oll golow chambour2 pink
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- diffyg oll golow chambour2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- enow oll golow chambour2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- degea curtayn chambour3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- igeri curtayn chambour3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- settya curtayn chambour3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- settya oll golow chambour3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- settya oll golow chambour3 blue
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- diffyg oll golow chambour3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- enow oll golow chambour3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- settya oll golow chambour4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- settya oll golow chambour4 green
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- diffyg oll golow chambour4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- enow oll golow chambour4
+area/dining_lights::dining_lights_change_brightness:
+- settya oll golow stevellteyluess 54
+area/dining_lights::dining_lights_change_color:
+- settya oll golow stevellteyluess blue
+area/dining_lights::dining_lights_turn_off:
+- diffyg oll golow stevellteyluess
+area/dining_lights::dining_lights_turn_on:
+- enow oll golow stevellteyluess
+area/entryway_lights::entryway_lights_change_brightness:
+- settya oll golow porth 72
+area/entryway_lights::entryway_lights_change_color:
+- settya oll golow porth black
+area/entryway_lights::entryway_lights_turn_off:
+- diffyg oll golow porth
+area/entryway_lights::entryway_lights_turn_on:
+- enow oll golow porth
+area/entryway_locks::entryway_locks_lock:
+- alhwedh alhwedh porth
+area/entryway_locks::entryway_locks_unlock:
+- igeri alhwedh porth
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- settya oll golow stevellteylu 39 then settya oll golow kegin 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- settya oll golow stevellteylu purple then settya oll golow kegin purple
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- diffyg oll golow stevellteylu then diffyg oll golow kegin
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- enow oll golow stevellteylu then enow oll golow kegin
+area/family_room_fans::family_room_fans_set_fan_speed:
+- settya gwyns stevellteylu 32
+area/family_room_fans::family_room_fans_turn_off:
+- diffyg gwyns stevellteylu
+area/family_room_fans::family_room_fans_turn_on:
+- enow gwyns stevellteylu
+area/family_room_lights::family_room_lights_change_brightness:
+- settya oll golow stevellteylu 44
+area/family_room_lights::family_room_lights_change_color:
+- settya oll golow stevellteylu green
+area/family_room_lights::family_room_lights_turn_off:
+- diffyg oll golow stevellteylu
+area/family_room_lights::family_room_lights_turn_on:
+- enow oll golow stevellteylu
+area/garage_covers::garage_covers_close:
+- degea curtayn garage
+area/garage_covers::garage_covers_open:
+- igeri curtayn garage
+area/garage_covers::garage_covers_set_position:
+- settya curtayn garage 86
+area/garage_lights::garage_lights_change_brightness:
+- settya oll golow garage 16
+area/garage_lights::garage_lights_change_color:
+- settya oll golow garage blue
+area/garage_lights::garage_lights_turn_off:
+- diffyg oll golow garage
+area/garage_lights::garage_lights_turn_on:
+- enow oll golow garage
+area/garage_locks::garage_locks_lock:
+- alhwedh alhwedh garage
+area/garage_locks::garage_locks_unlock:
+- igeri alhwedh garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- settya oll golow porthgang 26 then settya oll golow tybach 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- settya oll golow porthgang purple then settya oll golow tybach purple
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- diffyg oll golow porthgang then diffyg oll golow tybach
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- enow oll golow porthgang then enow oll golow tybach
+area/hallway_lights::hallway_lights_change_brightness:
+- settya oll golow porthgang 61
+area/hallway_lights::hallway_lights_change_color:
+- settya oll golow porthgang orange
+area/hallway_lights::hallway_lights_turn_off:
+- diffyg oll golow porthgang
+area/hallway_lights::hallway_lights_turn_on:
+- enow oll golow porthgang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- settya oll golow kegin 45
+area/kitchen_lights::kitchen_lights_change_color:
+- settya oll golow kegin pink
+area/kitchen_lights::kitchen_lights_turn_off:
+- diffyg oll golow kegin
+area/kitchen_lights::kitchen_lights_turn_on:
+- enow oll golow kegin
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- diffyg oll tol kegin
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- enow oll tol kegin
+area/laundry_lights::laundry_lights_change_brightness:
+- settya oll golow stevellgolhi 62
+area/laundry_lights::laundry_lights_change_color:
+- settya oll golow stevellgolhi yellow
+area/laundry_lights::laundry_lights_turn_off:
+- diffyg oll golow stevellgolhi
+area/laundry_lights::laundry_lights_turn_on:
+- enow oll golow stevellgolhi
+area/laundry_switchs::laundry_switchs_turn_off:
+- diffyg oll tol stevellgolhi
+area/laundry_switchs::laundry_switchs_turn_on:
+- enow oll tol stevellgolhi
+area/living_climates::living_climates_set_temperature:
+- settya tomder stafell 20
+area/living_covers::living_covers_close:
+- degea curtayn stafell
+area/living_covers::living_covers_open:
+- igeri curtayn stafell
+area/living_covers::living_covers_set_position:
+- settya curtayn stafell 46
+area/living_lights::living_lights_change_brightness:
+- settya oll golow stafell 84
+area/living_lights::living_lights_change_color:
+- settya oll golow stafell blue
+area/living_lights::living_lights_turn_off:
+- diffyg oll golow stafell
+area/living_lights::living_lights_turn_on:
+- enow oll golow stafell
+area/main_bath_lights::main_bath_lights_change_brightness:
+- settya oll golow main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- settya oll golow main bath pink
+area/main_bath_lights::main_bath_lights_turn_off:
+- diffyg oll golow main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- enow oll golow main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- diffyg oll tol main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- enow oll tol main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- settya oll golow kewndhavas 60
+area/master_bath_lights::master_bath_lights_change_color:
+- settya oll golow kewndhavas black
+area/master_bath_lights::master_bath_lights_turn_off:
+- diffyg oll golow kewndhavas
+area/master_bath_lights::master_bath_lights_turn_on:
+- enow oll golow kewndhavas
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- diffyg oll tol kewndhavas
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- enow oll tol kewndhavas
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- settya tomder chambourmaster 20 then settya tomder stafell 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- degea curtayn chambourmaster then degea curtayn stafell
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- igeri curtayn chambourmaster then igeri curtayn stafell
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- settya curtayn chambourmaster 19 then settya curtayn stafell 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- settya oll golow chambourmaster 25 then settya oll golow stafell 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- settya oll golow chambourmaster white then settya oll golow stafell white
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- diffyg oll golow chambourmaster then diffyg oll golow stafell
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- enow oll golow chambourmaster then enow oll golow stafell
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- settya oll golow chambourmaster 57 then settya oll golow main bath 57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- settya oll golow chambourmaster pink then settya oll golow main bath pink
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- diffyg oll golow chambourmaster then diffyg oll golow main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- enow oll golow chambourmaster then enow oll golow main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- settya tomder chambourmaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- degea curtayn chambourmaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- igeri curtayn chambourmaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- settya curtayn chambourmaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- settya gwyns chambourmaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- diffyg gwyns chambourmaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- enow gwyns chambourmaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- settya oll golow chambourmaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- settya oll golow chambourmaster pink
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- diffyg oll golow chambourmaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- enow oll golow chambourmaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- settya oll golow tybach 52
+area/powder_room_lights::powder_room_lights_change_color:
+- settya oll golow tybach purple
+area/powder_room_lights::powder_room_lights_turn_off:
+- diffyg oll golow tybach
+area/powder_room_lights::powder_room_lights_turn_on:
+- enow oll golow tybach
+area/spoken_lights::spoken_bedroom_inflection:
+- settya oll golow chambourmaster red
+area/spoken_lights::spoken_except_island:
+- diffyg oll golow marnas enys
+area/spoken_lights::spoken_except_kitchen:
+- diffyg oll golow marnas kegin
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- diffyg oll golow stafell then diffyg oll golow stevellteyluess then diffyg oll golow
+  kegin
+area/spoken_lights::spoken_stt_kitchen_off:
+- diffyg oll golow kegin
+area/spoken_lights::spoken_stt_living_off:
+- diffyg oll golow stafell

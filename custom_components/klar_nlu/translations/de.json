@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "Diese Integration spricht mit Assist. App oder mitgelieferte Engine wählen — später unter Konfigurieren umstellbar. Nicht beides als Engine-Host. Der Release-Kanal lässt sich später ändern.",
+        "data": {
+          "mode": "Engine",
+          "channel": "Release-Kanal",
+          "url": "URL der Klar-API",
+          "token": "Write-Token"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL muss http(s) sein, ohne Benutzername."
+    },
+    "abort": {
+      "already_configured": "Klar NLU ist bereits eingerichtet"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "Stimme, Assist-Sprachen und das LLM liegen in der Klar-Operator-UI (Einstellungen). Dieses Formular verbindet nur die Engine: URL, Token und Kanal. {apps}",
+        "data": {
+          "mode": "Engine",
+          "url": "URL der Klar-API",
+          "token": "Write-Token",
+          "assist_filter": "Nur für Assist freigegebene Entitäten steuern",
+          "channel": "Release-Kanal"
+        },
+        "data_description": {
+          "mode": "App oder mitgelieferte Engine. Jederzeit umstellen. Die Integrations-Sidebar erscheint nur bei der mitgelieferten Engine.",
+          "token": "Derselbe Token wie im Klar-Addon. Für Overlay-Schreibzugriffe aus Home Assistant.",
+          "assist_filter": "An (Standard): nur was Assist sehen darf. Aus: auch versteckte Entitäten — leichter das falsche Gerät.",
+          "channel": "Stable oder Staging für den Host oben. App nutzt das Add-on; mitgelieferte Engine lädt das GitHub-Release. Eine eigene URL bleibt."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL muss http(s) sein, ohne Benutzername."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "Mitgelieferte Engine starten (nur HACS)",
+        "remote": "Klar-NLU-App oder Docker verwenden"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (Produktion)",
+        "staging": "Staging (Release Candidate)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "Systemsprache",
+        "all": "Alle Sprachen"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "Normal",
+        "butler": "Butler",
+        "locker": "Locker",
+        "fuersorglich": "Fürsorglich",
+        "party": "Party",
+        "grantig": "Grantig",
+        "sarkastisch": "Sarkastisch",
+        "pirat": "Pirat",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "Persönlichkeit",
+        "state": {
+          "default": "Normal",
+          "butler": "Butler",
+          "locker": "Locker",
+          "fuersorglich": "Fürsorglich",
+          "party": "Party",
+          "grantig": "Grantig",
+          "sarkastisch": "Sarkastisch",
+          "pirat": "Pirat",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "Kurze Bestätigung"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "KI-Aufgabe"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "Zuletzt gehört"
+      },
+      "last_decision": {
+        "name": "Letzte Entscheidung"
+      },
+      "last_speech": {
+        "name": "Letzte Antwort"
+      },
+      "last_area": {
+        "name": "Gehört in"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Klar-Engine gestoppt",
+      "description": "Der mitgelieferte Klar-Prozess läuft nicht. Lade Klar NLU unter Einstellungen → Geräte und Dienste neu."
+    }
+  }
+}

@@ -1,0 +1,30 @@
+multiple_intents/multi::alle_ausser_schlaf_und_kueche:
+- გამორთე ყველა სინათლე garda sadzinebeli garda სამზარეულო
+multiple_intents/multi::licht_und_heizung:
+- ჩართე ყველა სინათლე მისაღები da დააყენე გათბობა მისაღები 23
+multiple_intents/multi::wohn_und_ess_aus:
+- გამორთე ყველა სინათლე მისაღები da გამორთე ყველა სინათლე ojakhisotakhiess
+multiple_intents/multi::wohn_und_ess_rot:
+- დააყენე ყველა სინათლე მისაღები red da დააყენე ყველა სინათლე ojakhisotakhiess red
+multiple_intents/multi::wz_und_kuche_licht:
+- ჩართე ყველა სინათლე მისაღები da ჩართე ყველა სინათლე სამზარეულო
+multiple_intents/multi::zwei_raeume_und_heizung:
+- ჩართე ყველა სინათლე მისაღები da ჩართე ყველა სინათლე სამზარეულო da დააყენე გათბობა
+  მისაღები 23
+multiple_intents/spoken::drei_raeume_an:
+- ჩართე ყველა სინათლე მისაღები da ჩართე ყველა სინათლე ojakhisotakhiess da ჩართე ყველა
+  სინათლე სამზარეულო
+multiple_intents/spoken::drei_raeume_aus:
+- გამორთე ყველა სინათლე მისაღები da გამორთე ყველა სინათლე ojakhisotakhiess da გამორთე
+  ყველა სინათლე სამზარეულო
+multiple_intents/spoken::ess_und_wohn_aus:
+- გამორთე ყველა სინათლე მისაღები da გამორთე ყველა სინათლე ojakhisotakhiess
+multiple_intents/spoken::kugel_und_decke_aus:
+- burtuli და potoloni sadzinebeli გამორთე
+multiple_intents/spoken_more::kuche_und_ess_an:
+- ჩართე ყველა სინათლე სამზარეულო da ჩართე ყველა სინათლე ojakhisotakhiess
+multiple_intents/spoken_more::wz_ess_arbeit_aus:
+- გამორთე ყველა სინათლე მისაღები da გამორთე ყველა სინათლე ojakhisotakhiess da გამორთე
+  ყველა სინათლე office
+multiple_intents/spoken_more::wz_und_arbeit_aus:
+- გამორთე ყველა სინათლე მისაღები da გამორთე ყველა სინათლე office

@@ -1,0 +1,82 @@
+area/heizung::heizung_badezimmer_23:
+- weka joto bafumaster 23
+area/heizung::heizung_esszimmer_23:
+- weka joto sefulaess 23
+area/heizung::heizung_schlafzimmer_23:
+- weka joto chumbakulala 23
+area/heizung::heizung_wohnzimmer_23:
+- weka joto sebuleni 23
+area/lichter::alle_an_ausser_kugel:
+- washa yote taa isipokuwa tufe
+area/lichter::alle_an_ausser_schlafzimmer:
+- washa yote taa isipokuwa chumbakulala
+area/lichter::alle_auf_20_ausser_schlafzimmer:
+- weka yote taa isipokuwa chumbakulala 20
+area/lichter::alle_auf_rot_ausser_kugel:
+- weka yote taa isipokuwa tufe red
+area/lichter::alle_ausser_kugel:
+- zima yote taa isipokuwa tufe
+area/lichter::alle_ausser_schlafzimmer:
+- zima yote taa isipokuwa chumbakulala
+area/lichter::alle_lichter_an:
+- washa yote taa
+area/lichter::alle_lichter_aus:
+- zima yote taa
+area/lichter::arbeitszimmer_lichter_an:
+- washa yote taa office
+area/lichter::arbeitszimmer_lichter_aus:
+- zima yote taa office
+area/lichter::esszimmer_lichter_an:
+- washa yote taa sefulaess
+area/lichter::esszimmer_lichter_aus:
+- zima yote taa sefulaess
+area/lichter::kuche_lichter_an:
+- washa yote taa jikonini
+area/lichter::kuche_lichter_aus:
+- zima yote taa jikonini
+area/lichter::schlafzimmer_auf_blau:
+- weka yote taa chumbakulala blue
+area/lichter::schlafzimmer_auf_rot:
+- weka yote taa chumbakulala red
+area/lichter::wohnzimmer_helligkeit:
+- weka yote taa sebuleni 45
+area/lichter::wohnzimmer_lichter_an:
+- washa yote taa sebuleni
+area/lichter::wohnzimmer_lichter_aus:
+- zima yote taa sebuleni
+area/spoken::alle_ausser_kugel_stt:
+- zima yote taa isipokuwa tufe
+area/spoken::alle_ausser_schlaf_stt:
+- zima yote taa isipokuwa chumbakulala
+area/spoken::alle_ganzen_an:
+- washa yote taa
+area/spoken::alle_lampen_aus:
+- zima yote taa
+area/spoken::esszimmer_weiss:
+- weka yote taa sefulaess white
+area/spoken::stt_kuche_lichte:
+- zima yote taa jikonini
+area/spoken::stt_licht_wohnzimmer_an:
+- washa yote taa sebuleni
+area/spoken::stt_licht_wohnzimmer_aus:
+- zima yote taa sebuleni
+area/spoken::stt_schlafzimmer_dativ:
+- zima yote taa chumbakulala
+area/spoken::wohnzimmer_gruen:
+- weka yote taa sebuleni green
+area/spoken_more::alle_ausser_arbeitszimmer:
+- zima yote taa isipokuwa office
+area/spoken_more::arbeitszimmer_lampen_aus:
+- zima yote taa office
+area/spoken_more::esszimmer_30:
+- weka yote taa sefulaess 30
+area/spoken_more::esszimmer_lichte_an:
+- washa yote taa sefulaess
+area/spoken_more::kuche_80:
+- weka yote taa jikonini 80
+area/spoken_more::kuche_blau:
+- weka yote taa jikonini blue
+area/spoken_more::ueberall_ausser_schlaf_stt:
+- zima yote taa isipokuwa chumbakulala
+area/spoken_more::wohnzimmer_gelb:
+- weka yote taa sebuleni yellow

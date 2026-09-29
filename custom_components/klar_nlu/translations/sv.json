@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "Den här integrationen pratar med Assist. En separat motor tolkar tal: Klar NLU-appen, den här medföljande processen eller Docker. På Home Assistant OS, installera även appen och välj Använd Klar NLU-appen. Utan app, starta den medföljande motorn. Kör inte båda.",
+        "data": {
+          "mode": "Motor",
+          "channel": "Utgivningskanal",
+          "url": "Klar-API-URL",
+          "token": "Skrivtoken"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL måste vara http(s) utan användarnamn."
+    },
+    "abort": {
+      "already_configured": "Klar NLU är redan konfigurerad"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "Röst, Assist-språk och LLM finns i Klars operatörsgränssnitt (Inställningar). Det här formuläret kopplar bara motorn: URL, token och kanal. {apps}",
+        "data": {
+          "mode": "Motor",
+          "url": "Klar-API-URL",
+          "token": "Skrivtoken",
+          "assist_filter": "Styr bara enheter som Assist får se",
+          "channel": "Utgivningskanal"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "Samma token som i Klar-appen.",
+          "assist_filter": "På: bara det Assist får se. Av: även dolda enheter.",
+          "channel": "När som helst. Staging pekar på Klar NLU (Staging)."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL måste vara http(s) utan användarnamn."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "Starta den medföljande motorn (endast HACS)",
+        "remote": "Använd Klar NLU-appen eller Docker"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (produktion)",
+        "staging": "Staging (releasekandidat)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "Systemspråk",
+        "all": "Alla språk"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "Normal",
+        "butler": "Butler",
+        "locker": "Avslappnad",
+        "fuersorglich": "Omsorgsfull",
+        "party": "Party",
+        "grantig": "Grinig",
+        "sarkastisch": "Sarkastisk",
+        "pirat": "Pirat",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "Personlighet",
+        "state": {
+          "default": "Normal",
+          "butler": "Butler",
+          "locker": "Avslappnad",
+          "fuersorglich": "Omsorgsfull",
+          "party": "Party",
+          "grantig": "Grinig",
+          "sarkastisch": "Sarkastisk",
+          "pirat": "Pirat",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "Kort bekräftelse"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "AI-uppgift"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "Senast hörts"
+      },
+      "last_decision": {
+        "name": "Senaste beslut"
+      },
+      "last_speech": {
+        "name": "Senaste svar"
+      },
+      "last_area": {
+        "name": "Hördes i"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Klar-motorn stoppad",
+      "description": "Den medföljande Klar-processen körs inte. Ladda om Klar NLU under Inställningar → Enheter och tjänster."
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "Šī integrācija runā ar Assist. Atsevišķs dzinējs analizē runu: Klar NLU lietotne, iekļautais process vai Docker. Home Assistant OS instalējiet arī lietotni un izvēlieties Izmantot Klar NLU lietotni. Bez lietotnes palaidiet iekļauto dzinēju. Nedarbojiet abus.",
+        "data": {
+          "mode": "Dzinējs",
+          "channel": "Izlaides kanāls",
+          "url": "Klar API URL",
+          "token": "Rakstīšanas marķieris"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL jābūt http(s) bez lietotājvārda."
+    },
+    "abort": {
+      "already_configured": "Klar NLU jau ir iestatīts"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "Balss, Assist valodas un LLM ir Klar operatora saskarnē (Iestatījumi). Šī veidlapa savieno tikai dzinēju: URL, marķieris un kanāls. {apps}",
+        "data": {
+          "mode": "Dzinējs",
+          "url": "Klar API URL",
+          "token": "Rakstīšanas marķieris",
+          "assist_filter": "Vadīt tikai Assist redzamās entītijas",
+          "channel": "Izlaides kanāls"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "Tas pats marķieris kā Klar lietotnē.",
+          "assist_filter": "Ieslēgts: tikai to, ko redz Assist. Izslēgts: arī slēptās entītijas.",
+          "channel": "Jebkurā laikā. Staging norāda uz Klar NLU (Staging)."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL jābūt http(s) bez lietotājvārda."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "Palaist iekļauto dzinēju (tikai HACS)",
+        "remote": "Izmantot Klar NLU lietotni vai Docker"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (ražošana)",
+        "staging": "Staging (kandidāts)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "Sistēmas valoda",
+        "all": "Visas valodas"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "Parasta",
+        "butler": "Butler",
+        "locker": "Neformāla",
+        "fuersorglich": "Gādīga",
+        "party": "Party",
+        "grantig": "Nikna",
+        "sarkastisch": "Sarkastiska",
+        "pirat": "Pirāts",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "Personība",
+        "state": {
+          "default": "Parasta",
+          "butler": "Butler",
+          "locker": "Neformāla",
+          "fuersorglich": "Gādīga",
+          "party": "Party",
+          "grantig": "Nikna",
+          "sarkastisch": "Sarkastiska",
+          "pirat": "Pirāts",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "Īsa apstiprināšana"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "MI uzdevums"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "Pēdējoreiz dzirdēts"
+      },
+      "last_decision": {
+        "name": "Pēdējais lēmums"
+      },
+      "last_speech": {
+        "name": "Pēdējā atbilde"
+      },
+      "last_area": {
+        "name": "Dzirdēts"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Klar dzinējs apstājās",
+      "description": "Iekļautais Klar process nedarbojas. Pārlādējiet Klar NLU sadaļā Iestatījumi → Ierīces un pakalpojumi."
+    }
+  }
+}

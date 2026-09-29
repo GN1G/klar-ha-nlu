@@ -1,0 +1,18 @@
+query_devices/spoken::status_kugel:
+- ఏమి burra
+query_devices/spoken::status_pc:
+- ఏమి pc
+query_devices/spoken::status_trockner:
+- ఏమి dryer
+query_devices/spoken::status_tv:
+- ఏమి tv
+query_devices/spoken_more::status_decke:
+- ఏమి kappu padakagadi
+query_devices/spoken_more::status_spuelmaschine:
+- ఏమి ginjalu
+query_devices/spoken_more::status_wasch_casual:
+- ఏమి washing
+query_devices/status::status_r2d2:
+- ఏమి ఊడ్చు గది
+query_devices/status::status_waschmaschine:
+- ఏమి washing

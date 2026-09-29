@@ -1,0 +1,6 @@
+assist/ha_queries::ha_status_kueche:
+- 뭔 불 부엌
+assist/ha_queries::ha_status_kugel:
+- 뭔 gong
+assist/ha_queries::ha_status_lichter:
+- 뭔 모두 불

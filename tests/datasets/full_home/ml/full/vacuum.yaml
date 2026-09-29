@@ -1,0 +1,16 @@
+- name: vacuum_start
+  conditions:
+  - type: action
+    entity_id: vacuum.robot
+    state: 'on'
+  sentences:
+  - തെളി വാരൽ
+  - വാരൽ തെളി
+- name: vacuum_dock
+  conditions:
+  - type: action
+    entity_id: vacuum.robot
+    state: 'off'
+  sentences:
+  - അണയ്ക്ക് വാരൽ
+  - വാരൽ അണയ്ക്ക്

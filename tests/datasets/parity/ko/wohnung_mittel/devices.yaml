@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- 꺼 cheonjang chimsil
+devices/geraete::device_arbeitszimmer_an:
+- 켜 불 office
+devices/geraete::device_esszimmer_an:
+- 켜 불 gajoksiless
+devices/geraete::device_kuche_kuche_an:
+- 켜 불 부엌
+devices/geraete::device_wohnzimmer_an:
+- 켜 불 거실
+devices/geraete::filmabend:
+- 켜 장면 filmabend
+devices/geraete::kugel_an:
+- 켜 gong
+devices/geraete::luefter_50:
+- 설정 선풍기 office 50
+devices/geraete::pc_an:
+- 켜 pc
+devices/geraete::r2d2_saugen:
+- 켜 청소기 거실
+devices/geraete::rollo_zu:
+- 닫아 커튼 거실
+devices/geraete::spuelmaschine_aus:
+- 꺼 sikgi
+devices/geraete::tuer_abschliessen:
+- 자물쇠 자물쇠 hyeongwan
+devices/geraete::waschmaschine_an:
+- 켜 setakgi
+devices/klima::klima_schlaf_21:
+- 설정 ac chimsil 21
+devices/spoken::deckenlampe_an:
+- 켜 cheonjang chimsil
+devices/spoken::kugel_aus:
+- 꺼 gong
+devices/spoken::luefter_aus:
+- 꺼 선풍기 office
+devices/spoken::rollo_auf:
+- 열어 커튼 거실
+devices/spoken::trockner_an:
+- 켜 dryer
+devices/spoken::tv_aus:
+- 꺼 tv
+devices/spoken_more::decke_aus_casual:
+- 꺼 cheonjang chimsil
+devices/spoken_more::kugel_casual:
+- 켜 gong
+devices/spoken_more::pc_aus:
+- 꺼 pc
+devices/spoken_more::spuelmaschine_an:
+- 켜 sikgi
+devices/spoken_more::waschmaschine_aus:
+- 꺼 setakgi

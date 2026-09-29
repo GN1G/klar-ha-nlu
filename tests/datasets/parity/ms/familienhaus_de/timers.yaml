@@ -1,0 +1,36 @@
+timers/timers::abstract_start:
+- hidupkan pemasa abstract 45 min
+timers/timers::abstract_start_hours_minutes:
+- hidupkan pemasa abstract 20 min
+timers/timers::abstract_start_seconds:
+- hidupkan pemasa abstract 45 sec
+timers/timers::cancel_all_timers:
+- matikan semua pemasa
+timers/timers::timer_laundry_cancel:
+- matikan pemasa laundry
+timers/timers::timer_laundry_decrease:
+- hidupkan pemasa laundry 5 min
+timers/timers::timer_laundry_increase:
+- hidupkan pemasa laundry 16 min
+timers/timers::timer_laundry_pause:
+- pause pemasa laundry
+timers/timers::timer_laundry_start:
+- hidupkan pemasa laundry 90 sec
+timers/timers::timer_laundry_status:
+- apa pemasa laundry
+timers/timers::timer_laundry_unpause:
+- mainkan pemasa laundry
+timers/timers::timer_oven_cancel:
+- matikan pemasa oven
+timers/timers::timer_oven_decrease:
+- hidupkan pemasa oven 44 min
+timers/timers::timer_oven_increase:
+- hidupkan pemasa oven 30 min
+timers/timers::timer_oven_pause:
+- pause pemasa oven
+timers/timers::timer_oven_start:
+- hidupkan pemasa oven 2 min
+timers/timers::timer_oven_status:
+- apa pemasa oven
+timers/timers::timer_oven_unpause:
+- mainkan pemasa oven

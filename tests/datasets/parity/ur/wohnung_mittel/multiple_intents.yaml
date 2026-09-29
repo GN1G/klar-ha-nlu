@@ -1,0 +1,26 @@
+multiple_intents/multi::alle_ausser_schlaf_und_kueche:
+- بند سب روشنی سوا bedroom سوا باورچی
+multiple_intents/multi::licht_und_heizung:
+- چالو سب روشنی لانج then رکھو گرمی لانج 23
+multiple_intents/multi::wohn_und_ess_aus:
+- بند سب روشنی لانج then بند سب روشنی خاندانیess
+multiple_intents/multi::wohn_und_ess_rot:
+- رکھو سب روشنی لانج red then رکھو سب روشنی خاندانیess red
+multiple_intents/multi::wz_und_kuche_licht:
+- چالو سب روشنی لانج then چالو سب روشنی باورچی
+multiple_intents/multi::zwei_raeume_und_heizung:
+- چالو سب روشنی لانج then چالو سب روشنی باورچی then رکھو گرمی لانج 23
+multiple_intents/spoken::drei_raeume_an:
+- چالو سب روشنی لانج then چالو سب روشنی خاندانیess then چالو سب روشنی باورچی
+multiple_intents/spoken::drei_raeume_aus:
+- بند سب روشنی لانج then بند سب روشنی خاندانیess then بند سب روشنی باورچی
+multiple_intents/spoken::ess_und_wohn_aus:
+- بند سب روشنی لانج then بند سب روشنی خاندانیess
+multiple_intents/spoken::kugel_und_decke_aus:
+- گولا اور چھت bedroom بند
+multiple_intents/spoken_more::kuche_und_ess_an:
+- چالو سب روشنی باورچی then چالو سب روشنی خاندانیess
+multiple_intents/spoken_more::wz_ess_arbeit_aus:
+- بند سب روشنی لانج then بند سب روشنی خاندانیess then بند سب روشنی office
+multiple_intents/spoken_more::wz_und_arbeit_aus:
+- بند سب روشنی لانج then بند سب روشنی office

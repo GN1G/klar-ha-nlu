@@ -1,0 +1,287 @@
+- name: query_light.living_ceiling
+  conditions:
+  - type: query
+    entity_id: light.living_ceiling
+  sentences:
+  - 뭔 불 거실
+  - 뭔 거실 불
+- name: query_cover.living_blinds
+  conditions:
+  - type: query
+    entity_id: cover.living_blinds
+  sentences:
+  - 뭔 커튼 거실
+  - 뭔 거실 커튼
+- name: query_lock.front_door
+  conditions:
+  - type: query
+    entity_id: lock.front_door
+  sentences:
+  - 뭔 자물쇠 hyeongwan
+  - 뭔 hyeongwan 자물쇠
+- name: query_climate.ground_thermostat
+  conditions:
+  - type: query
+    entity_id: climate.ground_thermostat
+  sentences:
+  - 뭔 난방 거실
+  - 뭔 거실 난방
+- name: query_media_player.living_tv
+  conditions:
+  - type: query
+    entity_id: media_player.living_tv
+  sentences:
+  - 뭔 tv 거실
+  - 뭔 거실 tv
+- name: query_binary_sensor.front_door_sensor
+  conditions:
+  - type: query
+    entity_id: binary_sensor.front_door_sensor
+  sentences:
+  - 뭔 doorsensor hyeongwan
+  - 뭔 hyeongwan doorsensor
+- name: query_binary_sensor.living_window
+  conditions:
+  - type: query
+    entity_id: binary_sensor.living_window
+  sentences:
+  - 뭔 windowsensor 거실
+  - 뭔 거실 windowsensor
+- name: query_sensor.living_temperature
+  conditions:
+  - type: query
+    entity_id: sensor.living_temperature
+  sentences:
+  - 뭔 tempsensor 거실
+  - 뭔 거실 tempsensor
+- name: query_light.kitchen_ceiling
+  conditions:
+  - type: query
+    entity_id: light.kitchen_ceiling
+  sentences:
+  - 뭔 불 부엌
+  - 뭔 부엌 불
+- name: query_light.office_ceiling
+  conditions:
+  - type: query
+    entity_id: light.office_ceiling
+  sentences:
+  - 뭔 불 office
+  - 뭔 office 불
+- name: query_light.garden
+  conditions:
+  - type: query
+    entity_id: light.garden
+  sentences:
+  - 뭔 불 garden
+  - 뭔 garden 불
+- name: query_light.basement
+  conditions:
+  - type: query
+    entity_id: light.basement
+  sentences:
+  - 뭔 불 basement
+  - 뭔 basement 불
+- name: query_cover.master_blinds
+  conditions:
+  - type: query
+    entity_id: cover.master_blinds
+  sentences:
+  - 뭔 커튼 chimsilmaster
+  - 뭔 chimsilmaster 커튼
+- name: query_cover.garage_door
+  conditions:
+  - type: query
+    entity_id: cover.garage_door
+  sentences:
+  - 뭔 커튼 garage
+  - 뭔 garage 커튼
+- name: query_lock.garage_entry
+  conditions:
+  - type: query
+    entity_id: lock.garage_entry
+  sentences:
+  - 뭔 자물쇠 garage
+  - 뭔 garage 자물쇠
+- name: query_climate.upper_thermostat
+  conditions:
+  - type: query
+    entity_id: climate.upper_thermostat
+  sentences:
+  - 뭔 난방 chimsilmaster
+  - 뭔 chimsilmaster 난방
+- name: query_climate.master_ac
+  conditions:
+  - type: query
+    entity_id: climate.master_ac
+  sentences:
+  - 뭔 nanbang chimsilmaster
+  - 뭔 chimsilmaster nanbang
+- name: query_media_player.family_tv
+  conditions:
+  - type: query
+    entity_id: media_player.family_tv
+  sentences:
+  - 뭔 tv gajoksil
+  - 뭔 gajoksil tv
+- name: query_media_player.living_music
+  conditions:
+  - type: query
+    entity_id: media_player.living_music
+  sentences:
+  - 뭔 티비 거실
+  - 뭔 거실 티비
+- name: query_binary_sensor.kitchen_motion
+  conditions:
+  - type: query
+    entity_id: binary_sensor.kitchen_motion
+  sentences:
+  - 뭔 motion 부엌
+  - 뭔 부엌 motion
+- name: query_sensor.living_humidity
+  conditions:
+  - type: query
+    entity_id: sensor.living_humidity
+  sentences:
+  - 뭔 humidity 거실
+  - 뭔 거실 humidity
+- name: query_fan.master_fan
+  conditions:
+  - type: query
+    entity_id: fan.master_fan
+  sentences:
+  - 뭔 선풍기 chimsilmaster
+  - 뭔 chimsilmaster 선풍기
+- name: query_vacuum.robot
+  conditions:
+  - type: query
+    entity_id: vacuum.robot
+  sentences:
+  - 뭔 청소기 거실
+  - 뭔 거실 청소기
+- name: query_light.living_lamp
+  conditions:
+  - type: query
+    entity_id: light.living_lamp
+  sentences:
+  - 뭔 불 거실
+  - 뭔 거실 불
+- name: query_light.kitchen_island
+  conditions:
+  - type: query
+    entity_id: light.kitchen_island
+  sentences:
+  - 뭔 불 부엌
+  - 뭔 부엌 불
+- name: query_light.master_ceiling
+  conditions:
+  - type: query
+    entity_id: light.master_ceiling
+  sentences:
+  - 뭔 불 chimsilmaster
+  - 뭔 chimsilmaster 불
+- name: query_light.master_bedside_left
+  conditions:
+  - type: query
+    entity_id: light.master_bedside_left
+  sentences:
+  - 뭔 불 chimsilmaster
+  - 뭔 chimsilmaster 불
+- name: query_light.hallway_light
+  conditions:
+  - type: query
+    entity_id: light.hallway_light
+  sentences:
+  - 뭔 불 bokdo
+  - 뭔 bokdo 불
+- name: query_light.family_ceiling
+  conditions:
+  - type: query
+    entity_id: light.family_ceiling
+  sentences:
+  - 뭔 불 gajoksil
+  - 뭔 gajoksil 불
+- name: query_light.dining_pendant
+  conditions:
+  - type: query
+    entity_id: light.dining_pendant
+  sentences:
+  - 뭔 불 gajoksiless
+  - 뭔 gajoksiless 불
+- name: query_light.garage_light
+  conditions:
+  - type: query
+    entity_id: light.garage_light
+  sentences:
+  - 뭔 불 garage
+  - 뭔 garage 불
+- name: query_light.bedroom2_ceiling
+  conditions:
+  - type: query
+    entity_id: light.bedroom2_ceiling
+  sentences:
+  - 뭔 불 chimsil2
+  - 뭔 chimsil2 불
+- name: query_light.bedroom3_ceiling
+  conditions:
+  - type: query
+    entity_id: light.bedroom3_ceiling
+  sentences:
+  - 뭔 불 chimsil3
+  - 뭔 chimsil3 불
+- name: query_light.bedroom4_ceiling
+  conditions:
+  - type: query
+    entity_id: light.bedroom4_ceiling
+  sentences:
+  - 뭔 불 chimsil4
+  - 뭔 chimsil4 불
+- name: query_light.entryway_light
+  conditions:
+  - type: query
+    entity_id: light.entryway_light
+  sentences:
+  - 뭔 불 hyeongwan
+  - 뭔 hyeongwan 불
+- name: query_light.laundry_light
+  conditions:
+  - type: query
+    entity_id: light.laundry_light
+  sentences:
+  - 뭔 불 setaksil
+  - 뭔 setaksil 불
+- name: query_light.main_bath_light
+  conditions:
+  - type: query
+    entity_id: light.main_bath_light
+  sentences:
+  - 뭔 불 main bath
+  - 뭔 main bath 불
+- name: query_light.powder_room_light
+  conditions:
+  - type: query
+    entity_id: light.powder_room_light
+  sentences:
+  - 뭔 불 hwajangsil
+  - 뭔 hwajangsil 불
+- name: query_light.master_ensuite
+  conditions:
+  - type: query
+    entity_id: light.master_ensuite
+  sentences:
+  - 뭔 ensuite chimsilmaster
+  - 뭔 chimsilmaster ensuite
+- name: query_light.master_bedside_right
+  conditions:
+  - type: query
+    entity_id: light.master_bedside_right
+  sentences:
+  - 뭔 불 chimsilmaster
+  - 뭔 chimsilmaster 불
+- name: query_light.master_bath_light
+  conditions:
+  - type: query
+    entity_id: light.master_bath_light
+  sentences:
+  - 뭔 불 anbangyoksil
+  - 뭔 anbangyoksil 불

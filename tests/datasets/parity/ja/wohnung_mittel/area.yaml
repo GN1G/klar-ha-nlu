@@ -1,0 +1,82 @@
+area/heizung::heizung_badezimmer_23:
+- セット エアコン shuyokushitsu 23
+area/heizung::heizung_esszimmer_23:
+- セット エアコン famiriiess 23
+area/heizung::heizung_schlafzimmer_23:
+- セット エアコン shinshitsu 23
+area/heizung::heizung_wohnzimmer_23:
+- セット エアコン リビング 23
+area/lichter::alle_an_ausser_kugel:
+- つけて 全部 電気 以外 tama
+area/lichter::alle_an_ausser_schlafzimmer:
+- つけて 全部 電気 以外 shinshitsu
+area/lichter::alle_auf_20_ausser_schlafzimmer:
+- セット 全部 電気 以外 shinshitsu 20
+area/lichter::alle_auf_rot_ausser_kugel:
+- セット 全部 電気 以外 tama 赤
+area/lichter::alle_ausser_kugel:
+- 消して 全部 電気 以外 tama
+area/lichter::alle_ausser_schlafzimmer:
+- 消して 全部 電気 以外 shinshitsu
+area/lichter::alle_lichter_an:
+- つけて 全部 電気
+area/lichter::alle_lichter_aus:
+- 消して 全部 電気
+area/lichter::arbeitszimmer_lichter_an:
+- つけて 全部 電気 office
+area/lichter::arbeitszimmer_lichter_aus:
+- 消して 全部 電気 office
+area/lichter::esszimmer_lichter_an:
+- つけて 全部 電気 famiriiess
+area/lichter::esszimmer_lichter_aus:
+- 消して 全部 電気 famiriiess
+area/lichter::kuche_lichter_an:
+- つけて 全部 電気 キッチン
+area/lichter::kuche_lichter_aus:
+- 消して 全部 電気 キッチン
+area/lichter::schlafzimmer_auf_blau:
+- セット 全部 電気 shinshitsu 青
+area/lichter::schlafzimmer_auf_rot:
+- セット 全部 電気 shinshitsu 赤
+area/lichter::wohnzimmer_helligkeit:
+- セット 全部 電気 リビング 45
+area/lichter::wohnzimmer_lichter_an:
+- つけて 全部 電気 リビング
+area/lichter::wohnzimmer_lichter_aus:
+- 消して 全部 電気 リビング
+area/spoken::alle_ausser_kugel_stt:
+- 消して 全部 電気 以外 tama
+area/spoken::alle_ausser_schlaf_stt:
+- 消して 全部 電気 以外 shinshitsu
+area/spoken::alle_ganzen_an:
+- つけて 全部 電気
+area/spoken::alle_lampen_aus:
+- 消して 全部 電気
+area/spoken::esszimmer_weiss:
+- セット 全部 電気 famiriiess 白
+area/spoken::stt_kuche_lichte:
+- 消して 全部 電気 キッチン
+area/spoken::stt_licht_wohnzimmer_an:
+- つけて 全部 電気 リビング
+area/spoken::stt_licht_wohnzimmer_aus:
+- 消して 全部 電気 リビング
+area/spoken::stt_schlafzimmer_dativ:
+- 消して 全部 電気 shinshitsu
+area/spoken::wohnzimmer_gruen:
+- セット 全部 電気 リビング 緑
+area/spoken_more::alle_ausser_arbeitszimmer:
+- 消して 全部 電気 以外 office
+area/spoken_more::arbeitszimmer_lampen_aus:
+- 消して 全部 電気 office
+area/spoken_more::esszimmer_30:
+- セット 全部 電気 famiriiess 30
+area/spoken_more::esszimmer_lichte_an:
+- つけて 全部 電気 famiriiess
+area/spoken_more::kuche_80:
+- セット 全部 電気 キッチン 80
+area/spoken_more::kuche_blau:
+- セット 全部 電気 キッチン 青
+area/spoken_more::ueberall_ausser_schlaf_stt:
+- 消して 全部 電気 以外 shinshitsu
+area/spoken_more::wohnzimmer_gelb:
+- セット 全部 電気 リビング 黄

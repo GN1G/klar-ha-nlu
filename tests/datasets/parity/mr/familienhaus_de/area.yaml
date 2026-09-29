@@ -1,0 +1,248 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- बंदकर पडदा shayankaksh2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- उघड पडदा shayankaksh2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- सेट पडदा shayankaksh2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- सेट पंखा shayankaksh2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- बंद पंखा shayankaksh2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- चालू पंखा shayankaksh2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- सेट सर्व दिवा shayankaksh2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- सेट सर्व दिवा shayankaksh2 pink
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- बंद सर्व दिवा shayankaksh2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- चालू सर्व दिवा shayankaksh2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- बंदकर पडदा shayankaksh3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- उघड पडदा shayankaksh3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- सेट पडदा shayankaksh3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- सेट सर्व दिवा shayankaksh3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- सेट सर्व दिवा shayankaksh3 blue
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- बंद सर्व दिवा shayankaksh3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- चालू सर्व दिवा shayankaksh3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- सेट सर्व दिवा shayankaksh4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- सेट सर्व दिवा shayankaksh4 green
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- बंद सर्व दिवा shayankaksh4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- चालू सर्व दिवा shayankaksh4
+area/dining_lights::dining_lights_change_brightness:
+- सेट सर्व दिवा kutumbess 54
+area/dining_lights::dining_lights_change_color:
+- सेट सर्व दिवा kutumbess blue
+area/dining_lights::dining_lights_turn_off:
+- बंद सर्व दिवा kutumbess
+area/dining_lights::dining_lights_turn_on:
+- चालू सर्व दिवा kutumbess
+area/entryway_lights::entryway_lights_change_brightness:
+- सेट सर्व दिवा pravesh 72
+area/entryway_lights::entryway_lights_change_color:
+- सेट सर्व दिवा pravesh black
+area/entryway_lights::entryway_lights_turn_off:
+- बंद सर्व दिवा pravesh
+area/entryway_lights::entryway_lights_turn_on:
+- चालू सर्व दिवा pravesh
+area/entryway_locks::entryway_locks_lock:
+- कुलूप कुलूप pravesh
+area/entryway_locks::entryway_locks_unlock:
+- उघड कुलूप pravesh
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- सेट सर्व दिवा kutumb 39 ani सेट सर्व दिवा स्वयंपाक 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- सेट सर्व दिवा kutumb purple ani सेट सर्व दिवा स्वयंपाक purple
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- बंद सर्व दिवा kutumb ani बंद सर्व दिवा स्वयंपाक
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- चालू सर्व दिवा kutumb ani चालू सर्व दिवा स्वयंपाक
+area/family_room_fans::family_room_fans_set_fan_speed:
+- सेट पंखा kutumb 32
+area/family_room_fans::family_room_fans_turn_off:
+- बंद पंखा kutumb
+area/family_room_fans::family_room_fans_turn_on:
+- चालू पंखा kutumb
+area/family_room_lights::family_room_lights_change_brightness:
+- सेट सर्व दिवा kutumb 44
+area/family_room_lights::family_room_lights_change_color:
+- सेट सर्व दिवा kutumb green
+area/family_room_lights::family_room_lights_turn_off:
+- बंद सर्व दिवा kutumb
+area/family_room_lights::family_room_lights_turn_on:
+- चालू सर्व दिवा kutumb
+area/garage_covers::garage_covers_close:
+- बंदकर पडदा garage
+area/garage_covers::garage_covers_open:
+- उघड पडदा garage
+area/garage_covers::garage_covers_set_position:
+- सेट पडदा garage 86
+area/garage_lights::garage_lights_change_brightness:
+- सेट सर्व दिवा garage 16
+area/garage_lights::garage_lights_change_color:
+- सेट सर्व दिवा garage blue
+area/garage_lights::garage_lights_turn_off:
+- बंद सर्व दिवा garage
+area/garage_lights::garage_lights_turn_on:
+- चालू सर्व दिवा garage
+area/garage_locks::garage_locks_lock:
+- कुलूप कुलूप garage
+area/garage_locks::garage_locks_unlock:
+- उघड कुलूप garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- सेट सर्व दिवा praveshgang 26 ani सेट सर्व दिवा swachhata 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- सेट सर्व दिवा praveshgang purple ani सेट सर्व दिवा swachhata purple
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- बंद सर्व दिवा praveshgang ani बंद सर्व दिवा swachhata
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- चालू सर्व दिवा praveshgang ani चालू सर्व दिवा swachhata
+area/hallway_lights::hallway_lights_change_brightness:
+- सेट सर्व दिवा praveshgang 61
+area/hallway_lights::hallway_lights_change_color:
+- सेट सर्व दिवा praveshgang orange
+area/hallway_lights::hallway_lights_turn_off:
+- बंद सर्व दिवा praveshgang
+area/hallway_lights::hallway_lights_turn_on:
+- चालू सर्व दिवा praveshgang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- सेट सर्व दिवा स्वयंपाक 45
+area/kitchen_lights::kitchen_lights_change_color:
+- सेट सर्व दिवा स्वयंपाक pink
+area/kitchen_lights::kitchen_lights_turn_off:
+- बंद सर्व दिवा स्वयंपाक
+area/kitchen_lights::kitchen_lights_turn_on:
+- चालू सर्व दिवा स्वयंपाक
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- बंद सर्व upkaran स्वयंपाक
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- चालू सर्व upkaran स्वयंपाक
+area/laundry_lights::laundry_lights_change_brightness:
+- सेट सर्व दिवा dhune 62
+area/laundry_lights::laundry_lights_change_color:
+- सेट सर्व दिवा dhune yellow
+area/laundry_lights::laundry_lights_turn_off:
+- बंद सर्व दिवा dhune
+area/laundry_lights::laundry_lights_turn_on:
+- चालू सर्व दिवा dhune
+area/laundry_switchs::laundry_switchs_turn_off:
+- बंद सर्व upkaran dhune
+area/laundry_switchs::laundry_switchs_turn_on:
+- चालू सर्व upkaran dhune
+area/living_climates::living_climates_set_temperature:
+- सेट उष्णता बैठक 20
+area/living_covers::living_covers_close:
+- बंदकर पडदा बैठक
+area/living_covers::living_covers_open:
+- उघड पडदा बैठक
+area/living_covers::living_covers_set_position:
+- सेट पडदा बैठक 46
+area/living_lights::living_lights_change_brightness:
+- सेट सर्व दिवा बैठक 84
+area/living_lights::living_lights_change_color:
+- सेट सर्व दिवा बैठक blue
+area/living_lights::living_lights_turn_off:
+- बंद सर्व दिवा बैठक
+area/living_lights::living_lights_turn_on:
+- चालू सर्व दिवा बैठक
+area/main_bath_lights::main_bath_lights_change_brightness:
+- सेट सर्व दिवा main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- सेट सर्व दिवा main bath pink
+area/main_bath_lights::main_bath_lights_turn_off:
+- बंद सर्व दिवा main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- चालू सर्व दिवा main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- बंद सर्व upkaran main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- चालू सर्व upkaran main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- सेट सर्व दिवा mukhyasnan 60
+area/master_bath_lights::master_bath_lights_change_color:
+- सेट सर्व दिवा mukhyasnan black
+area/master_bath_lights::master_bath_lights_turn_off:
+- बंद सर्व दिवा mukhyasnan
+area/master_bath_lights::master_bath_lights_turn_on:
+- चालू सर्व दिवा mukhyasnan
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- बंद सर्व upkaran mukhyasnan
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- चालू सर्व upkaran mukhyasnan
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- सेट उष्णता shayankakshmaster 20 ani सेट उष्णता बैठक 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- बंदकर पडदा shayankakshmaster ani बंदकर पडदा बैठक
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- उघड पडदा shayankakshmaster ani उघड पडदा बैठक
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- सेट पडदा shayankakshmaster 19 ani सेट पडदा बैठक 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- सेट सर्व दिवा shayankakshmaster 25 ani सेट सर्व दिवा बैठक 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- सेट सर्व दिवा shayankakshmaster white ani सेट सर्व दिवा बैठक white
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- बंद सर्व दिवा shayankakshmaster ani बंद सर्व दिवा बैठक
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- चालू सर्व दिवा shayankakshmaster ani चालू सर्व दिवा बैठक
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- सेट सर्व दिवा shayankakshmaster 57 ani सेट सर्व दिवा main bath 57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- सेट सर्व दिवा shayankakshmaster pink ani सेट सर्व दिवा main bath pink
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- बंद सर्व दिवा shayankakshmaster ani बंद सर्व दिवा main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- चालू सर्व दिवा shayankakshmaster ani चालू सर्व दिवा main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- सेट उष्णता shayankakshmaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- बंदकर पडदा shayankakshmaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- उघड पडदा shayankakshmaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- सेट पडदा shayankakshmaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- सेट पंखा shayankakshmaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- बंद पंखा shayankakshmaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- चालू पंखा shayankakshmaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- सेट सर्व दिवा shayankakshmaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- सेट सर्व दिवा shayankakshmaster pink
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- बंद सर्व दिवा shayankakshmaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- चालू सर्व दिवा shayankakshmaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- सेट सर्व दिवा swachhata 52
+area/powder_room_lights::powder_room_lights_change_color:
+- सेट सर्व दिवा swachhata purple
+area/powder_room_lights::powder_room_lights_turn_off:
+- बंद सर्व दिवा swachhata
+area/powder_room_lights::powder_room_lights_turn_on:
+- चालू सर्व दिवा swachhata
+area/spoken_lights::spoken_bedroom_inflection:
+- सेट सर्व दिवा shayankakshmaster red
+area/spoken_lights::spoken_except_island:
+- बंद सर्व दिवा vagal dweep
+area/spoken_lights::spoken_except_kitchen:
+- बंद सर्व दिवा vagal स्वयंपाक
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- बंद सर्व दिवा बैठक ani बंद सर्व दिवा kutumbess ani बंद सर्व दिवा स्वयंपाक
+area/spoken_lights::spoken_stt_kitchen_off:
+- बंद सर्व दिवा स्वयंपाक
+area/spoken_lights::spoken_stt_living_off:
+- बंद सर्व दिवा बैठक

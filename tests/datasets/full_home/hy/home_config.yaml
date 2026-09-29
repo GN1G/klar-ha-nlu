@@ -1,0 +1,507 @@
+name: Full Home hy
+language: hy
+difficulty: full
+policy:
+  preferred_climate: climate.upper_thermostat
+  timer_hints:
+    90: laundry
+floors:
+- id: ground
+  name: nerqev
+  level: 0
+  aliases:
+  - nerqev
+  - getin
+- id: upper
+  name: verev
+  level: 1
+  aliases:
+  - verev
+  - hark
+- id: basement
+  name: basement
+  level: -1
+  aliases:
+  - basement
+  - keller
+areas:
+- id: entryway
+  name: Mutq
+  floor: ground
+  aliases:
+  - mutq
+- id: living
+  name: հյուրասենյակ
+  floor: ground
+  aliases:
+  - հյուրասենյակ
+  - hyurasenyak
+- id: dining
+  name: Yntaniqess
+  floor: ground
+  aliases:
+  - yntaniqess
+- id: kitchen
+  name: խոհանոց
+  floor: ground
+  aliases:
+  - խոհանոց
+  - khohanots
+- id: family_room
+  name: Yntaniq
+  floor: ground
+  aliases:
+  - yntaniq
+- id: laundry
+  name: Lvacqaran
+  floor: ground
+  aliases:
+  - lvacqaran
+- id: powder_room
+  name: Wc
+  floor: ground
+  aliases:
+  - wc
+- id: garage
+  name: Garage
+  floor: ground
+  aliases:
+  - garage
+- id: office
+  name: Office
+  floor: ground
+  aliases:
+  - office
+- id: garden
+  name: Garden
+  floor: ground
+  aliases:
+  - garden
+- id: master_bedroom
+  name: Qnakaranmaster
+  floor: upper
+  aliases:
+  - qnakaranmaster
+  - qnakaran
+- id: bedroom_2
+  name: Qnakaran2
+  floor: upper
+  aliases:
+  - qnakaran2
+- id: bedroom_3
+  name: Qnakaran3
+  floor: upper
+  aliases:
+  - qnakaran3
+- id: bedroom_4
+  name: Qnakaran4
+  floor: upper
+  aliases:
+  - qnakaran4
+- id: master_bath
+  name: Lvacaranmaster
+  floor: upper
+  aliases:
+  - lvacaranmaster
+- id: main_bath
+  name: Main Bath
+  floor: upper
+  aliases:
+  - main bath
+- id: hallway
+  name: Hallway
+  floor: upper
+  aliases:
+  - hallway
+- id: basement
+  name: Basement
+  floor: basement
+  aliases:
+  - basement
+devices:
+- id: light.entryway_light
+  area_id: entryway
+  name: mutq լույս
+  aliases:
+  - mutq լույս
+  - լույս
+- id: light.living_ceiling
+  area_id: living
+  name: հյուրասենյակ stalat
+  aliases:
+  - հյուրասենյակ stalat
+  - stalat
+- id: light.living_lamp
+  area_id: living
+  name: հյուրասենյակ luys
+  aliases:
+  - հյուրասենյակ luys
+  - luys
+- id: light.dining_pendant
+  area_id: dining
+  name: yntaniqess լույս
+  aliases:
+  - yntaniqess լույս
+  - լույս
+- id: light.kitchen_ceiling
+  area_id: kitchen
+  name: խոհանոց stalat
+  aliases:
+  - խոհանոց stalat
+  - stalat
+- id: light.kitchen_island
+  area_id: kitchen
+  name: խոհանոց kghzi
+  aliases:
+  - խոհանոց kghzi
+  - kghzi
+- id: light.family_ceiling
+  area_id: family_room
+  name: yntaniq stalat
+  aliases:
+  - yntaniq stalat
+  - stalat
+- id: light.laundry_light
+  area_id: laundry
+  name: lvacqaran լույս
+  aliases:
+  - lvacqaran լույս
+  - լույս
+- id: light.powder_room_light
+  area_id: powder_room
+  name: wc լույս
+  aliases:
+  - wc լույս
+  - լույս
+- id: light.garage_light
+  area_id: garage
+  name: garage լույս
+  aliases:
+  - garage լույս
+  - լույս
+- id: light.office_ceiling
+  area_id: office
+  name: office stalat
+  aliases:
+  - office stalat
+  - stalat
+- id: light.garden
+  area_id: garden
+  name: garden լույս
+  aliases:
+  - garden լույս
+  - լույս
+- id: light.master_ceiling
+  area_id: master_bedroom
+  name: qnakaranmaster stalat
+  aliases:
+  - qnakaranmaster stalat
+  - stalat
+- id: light.master_ensuite
+  area_id: master_bedroom
+  name: qnakaranmaster ensuite
+  aliases:
+  - qnakaranmaster ensuite
+  - ensuite
+  tags:
+  - ensuite
+- id: light.master_bedside_left
+  area_id: master_bedroom
+  name: qnakaranmaster left gisherayin
+  aliases:
+  - qnakaranmaster left gisherayin
+  - gisherayin
+- id: light.master_bedside_right
+  area_id: master_bedroom
+  name: qnakaranmaster right gisherayin
+  aliases:
+  - qnakaranmaster right gisherayin
+  - gisherayin
+- id: light.bedroom2_ceiling
+  area_id: bedroom_2
+  name: qnakaran2 stalat
+  aliases:
+  - qnakaran2 stalat
+  - stalat
+- id: light.bedroom3_ceiling
+  area_id: bedroom_3
+  name: qnakaran3 stalat
+  aliases:
+  - qnakaran3 stalat
+  - stalat
+- id: light.bedroom4_ceiling
+  area_id: bedroom_4
+  name: qnakaran4 stalat
+  aliases:
+  - qnakaran4 stalat
+  - stalat
+- id: light.master_bath_light
+  area_id: master_bath
+  name: lvacaranmaster լույս
+  aliases:
+  - lvacaranmaster լույս
+  - լույս
+- id: light.main_bath_light
+  area_id: main_bath
+  name: main bath լույս
+  aliases:
+  - main bath լույս
+  - լույս
+- id: light.hallway_light
+  area_id: hallway
+  name: hallway լույս
+  aliases:
+  - hallway լույս
+  - լույս
+- id: light.basement
+  area_id: basement
+  name: basement լույս
+  aliases:
+  - basement լույս
+  - լույս
+- id: cover.living_blinds
+  area_id: living
+  name: հյուրասենյակ վարագույր
+  aliases:
+  - հյուրասենյակ վարագույր
+  - վարագույր
+- id: cover.master_blinds
+  area_id: master_bedroom
+  name: qnakaranmaster վարագույր
+  aliases:
+  - qnakaranmaster վարագույր
+  - վարագույր
+- id: cover.bedroom2_blinds
+  area_id: bedroom_2
+  name: qnakaran2 վարագույր
+  aliases:
+  - qnakaran2 վարագույր
+  - վարագույր
+- id: cover.bedroom3_blinds
+  area_id: bedroom_3
+  name: qnakaran3 վարագույր
+  aliases:
+  - qnakaran3 վարագույր
+  - վարագույր
+- id: cover.garage_door
+  area_id: garage
+  name: garage վարագույր
+  aliases:
+  - garage վարագույր
+  - վարագույր
+- id: climate.ground_thermostat
+  area_id: living
+  name: հյուրասենյակ ջեռուցում
+  aliases:
+  - հյուրասենյակ ջեռուցում
+  - ջեռուցում
+- id: climate.upper_thermostat
+  area_id: master_bedroom
+  name: qnakaranmaster ջեռուցում
+  aliases:
+  - qnakaranmaster ջեռուցում
+  - ջեռուցում
+- id: climate.master_ac
+  area_id: master_bedroom
+  name: jerutsum qnakaranmaster
+  aliases:
+  - jerutsum qnakaranmaster
+  - jerutsum
+  - ac
+  tags:
+  - jerutsum
+- id: fan.family_fan
+  area_id: family_room
+  name: yntaniq օդափոխիչ
+  aliases:
+  - yntaniq օդափոխիչ
+  - օդափոխիչ
+- id: fan.master_fan
+  area_id: master_bedroom
+  name: qnakaranmaster օդափոխիչ
+  aliases:
+  - qnakaranmaster օդափոխիչ
+  - օդափոխիչ
+- id: fan.bedroom2_fan
+  area_id: bedroom_2
+  name: qnakaran2 օդափոխիչ
+  aliases:
+  - qnakaran2 օդափոխիչ
+  - օդափոխիչ
+- id: lock.front_door
+  area_id: entryway
+  name: front դոռռ
+  aliases:
+  - front դոռռ
+  tags:
+  - front
+- id: lock.garage_entry
+  area_id: garage
+  name: garage դոռռ
+  aliases:
+  - garage դոռռ
+  tags:
+  - garage
+- id: switch.dishwasher
+  area_id: kitchen
+  name: խոհանոց aman
+  aliases:
+  - խոհանոց aman
+  - aman
+- id: switch.rangehood
+  area_id: kitchen
+  name: խոհանոց rangehood
+  aliases:
+  - խոհանոց rangehood
+  - rangehood
+  tags:
+  - rangehood
+- id: switch.washing_machine
+  area_id: laundry
+  name: lvacqaran lvacqimekena
+  aliases:
+  - lvacqaran lvacqimekena
+  - lvacqimekena
+  - washer
+  tags:
+  - washer
+  - lvacqimekena
+- id: switch.dryer
+  area_id: laundry
+  name: lvacqaran dryer
+  aliases:
+  - lvacqaran dryer
+  - dryer
+  tags:
+  - dryer
+- id: switch.master_bath_fan
+  area_id: master_bath
+  name: lvacaranmaster օդափոխիչbad
+  aliases:
+  - lvacaranmaster օդափոխիչbad
+  - օդափոխիչbad
+  tags:
+  - օդափոխիչbad
+- id: switch.main_bath_fan
+  area_id: main_bath
+  name: main bath օդափոխիչbad
+  aliases:
+  - main bath օդափոխիչbad
+  - օդափոխիչbad
+  tags:
+  - օդափոխիչbad
+- id: media_player.living_tv
+  area_id: living
+  name: հյուրասենյակ tv
+  aliases:
+  - հյուրասենյակ tv
+  - tv
+- id: media_player.family_tv
+  area_id: family_room
+  name: yntaniq tv
+  aliases:
+  - yntaniq tv
+  - tv
+- id: media_player.living_music
+  area_id: living
+  name: հյուրասենյակ հեռուստացույց
+  aliases:
+  - հյուրասենյակ հեռուստացույց
+  - հեռուստացույց
+  platform: music_assistant
+  tags:
+  - հեռուստացույց
+- id: media_player.kitchen_music
+  area_id: kitchen
+  name: խոհանոց հեռուստացույց
+  aliases:
+  - խոհանոց հեռուստացույց
+  - հեռուստացույց
+  platform: music_assistant
+  tags:
+  - հեռուստացույց
+- id: media_player.office_music
+  area_id: office
+  name: office հեռուստացույց
+  aliases:
+  - office հեռուստացույց
+  - հեռուստացույց
+  platform: music_assistant
+  tags:
+  - հեռուստացույց
+- id: vacuum.robot
+  area_id: living
+  name: հյուրասենյակ փոշեկուլ
+  aliases:
+  - հյուրասենյակ փոշեկուլ
+  - փոշեկուլ
+- id: binary_sensor.front_door_sensor
+  area_id: entryway
+  name: mutq doorsensor
+  aliases:
+  - mutq doorsensor
+  - doorsensor
+  tags:
+  - doorsensor
+- id: binary_sensor.living_window
+  area_id: living
+  name: հյուրասենյակ windowsensor
+  aliases:
+  - հյուրասենյակ windowsensor
+  - windowsensor
+  tags:
+  - windowsensor
+- id: binary_sensor.kitchen_motion
+  area_id: kitchen
+  name: խոհանոց motion
+  aliases:
+  - խոհանոց motion
+  - motion
+  tags:
+  - motion
+- id: sensor.living_temperature
+  area_id: living
+  name: հյուրասենյակ tempsensor
+  aliases:
+  - հյուրասենյակ tempsensor
+  - tempsensor
+  tags:
+  - tempsensor
+- id: sensor.living_humidity
+  area_id: living
+  name: հյուրասենյակ humidity
+  aliases:
+  - հյուրասենյակ humidity
+  - humidity
+  tags:
+  - humidity
+- id: weather.home
+  area_id: garden
+  name: garden weather
+  aliases:
+  - garden weather
+  - weather
+scenes:
+- id: movie_night
+  name: film
+- id: dinner_time
+  name: dinner
+- id: kids_bedtime
+  name: kids
+- id: good_morning
+  name: morning
+scripts:
+- id: good_night
+  name: gisher
+- id: leaving_home
+  name: elq
+timers:
+- id: oven
+  name: oven ժամաչափ
+- id: laundry
+  name: laundry ժամաչափ
+- id: abstract
+  name: abstract ժամաչափ
+lists:
+- id: shopping
+  name: ցուցակ

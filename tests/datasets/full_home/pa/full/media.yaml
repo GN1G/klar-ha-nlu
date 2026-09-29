@@ -1,0 +1,48 @@
+- name: media_player.living_tv_on
+  conditions:
+  - type: action
+    entity_id: media_player.living_tv
+    state: 'on'
+  sentences:
+  - tv ਬੈਠਕ ਚਾਲੂ
+  - ਚਾਲੂ tv ਬੈਠਕ
+- name: media_player.living_tv_off
+  conditions:
+  - type: action
+    entity_id: media_player.living_tv
+    state: 'off'
+  sentences:
+  - ਬੰਦ tv ਬੈਠਕ
+  - tv ਬੈਠਕ ਬੰਦ
+- name: media_player.living_tv_pause
+  conditions:
+  - type: action
+    entity_id: media_player.living_tv
+    state: paused
+  sentences:
+  - ਰੋਕੋ tv ਬੈਠਕ
+  - tv ਬੈਠਕ ਰੋਕੋ
+- name: media_player.family_tv_on
+  conditions:
+  - type: action
+    entity_id: media_player.family_tv
+    state: 'on'
+  sentences:
+  - tv parivarak ਚਾਲੂ
+  - ਚਾਲੂ tv parivarak
+- name: media_player.family_tv_off
+  conditions:
+  - type: action
+    entity_id: media_player.family_tv
+    state: 'off'
+  sentences:
+  - ਬੰਦ tv parivarak
+  - tv parivarak ਬੰਦ
+- name: media_player.family_tv_pause
+  conditions:
+  - type: action
+    entity_id: media_player.family_tv
+    state: paused
+  sentences:
+  - ਰੋਕੋ tv parivarak
+  - tv parivarak ਰੋਕੋ

@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- isjunk lubos miegamasis
+devices/geraete::device_arbeitszimmer_an:
+- ijunk sviesa office
+devices/geraete::device_esszimmer_an:
+- ijunk sviesa svetainefamess
+devices/geraete::device_kuche_kuche_an:
+- ijunk sviesa virtuve
+devices/geraete::device_wohnzimmer_an:
+- ijunk sviesa svetaine
+devices/geraete::filmabend:
+- ijunk scena filmabend
+devices/geraete::kugel_an:
+- ijunk rutulys
+devices/geraete::luefter_50:
+- nustatyk ventiliatorius office 50
+devices/geraete::pc_an:
+- ijunk pc
+devices/geraete::r2d2_saugen:
+- ijunk siurblys svetaine
+devices/geraete::rollo_zu:
+- uzdaryk uzuolaida svetaine
+devices/geraete::spuelmaschine_aus:
+- isjunk indaplove
+devices/geraete::tuer_abschliessen:
+- spyna spyna prieskambaris
+devices/geraete::waschmaschine_an:
+- ijunk skalbimo
+devices/klima::klima_schlaf_21:
+- nustatyk ac miegamasis 21
+devices/spoken::deckenlampe_an:
+- ijunk lubos miegamasis
+devices/spoken::kugel_aus:
+- isjunk rutulys
+devices/spoken::luefter_aus:
+- isjunk ventiliatorius office
+devices/spoken::rollo_auf:
+- atidaryk uzuolaida svetaine
+devices/spoken::trockner_an:
+- ijunk dryer
+devices/spoken::tv_aus:
+- isjunk tv
+devices/spoken_more::decke_aus_casual:
+- isjunk lubos miegamasis
+devices/spoken_more::kugel_casual:
+- ijunk rutulys
+devices/spoken_more::pc_aus:
+- isjunk pc
+devices/spoken_more::spuelmaschine_an:
+- ijunk indaplove
+devices/spoken_more::waschmaschine_aus:
+- isjunk skalbimo

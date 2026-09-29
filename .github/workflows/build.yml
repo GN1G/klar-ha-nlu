@@ -1,0 +1,304 @@
+name: Build
+
+on:
+  push:
+    tags: ["v*", "20*"]
+  workflow_call:
+    inputs:
+      release_tag:
+        description: Tag to publish as a GitHub Release
+        required: false
+        type: string
+        default: ""
+      prerelease:
+        description: Staging RC — prerelease, Docker tag staging, never latest
+        required: false
+        type: boolean
+        default: false
+
+env:
+  CARGO_TERM_COLOR: always
+  # Fork-safe: push to the repo owner's GHCR, not upstream.
+  GHCR: ghcr.io/${{ github.repository_owner }}/klar-nlu
+
+jobs:
+  build:
+    name: ${{ matrix.name }}
+    # Tag-push of an RC must not run Build on its own (would retag latest).
+    # Staging.yml calls this workflow with release_tag after it creates the tag.
+    if: ${{ !(github.event_name == 'push' && startsWith(github.ref, 'refs/tags/') && inputs.release_tag == '' && (contains(github.ref_name, '-staging.') || contains(github.ref_name, '-rc.'))) }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # musl-static: HA Core is Alpine. gnu binaries execve with ENOENT there.
+          - target: x86_64-unknown-linux-musl
+            name: linux-x86_64
+            ha_arch: amd64
+            platform: linux/amd64
+          - target: aarch64-unknown-linux-musl
+            name: linux-aarch64
+            ha_arch: aarch64
+            platform: linux/arm64
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.release_tag || github.ref }}
+      - uses: dtolnay/rust-toolchain@1.85
+        with:
+          targets: ${{ matrix.target }}
+      - uses: taiki-e/setup-cross-toolchain-action@v1
+        with:
+          target: ${{ matrix.target }}
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: ${{ matrix.target }}
+      - name: Build
+        run: cargo build --release --locked --target ${{ matrix.target }}
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - name: Build UI
+        working-directory: web
+        run: npm ci && npm run build
+      - name: Package
+        run: |
+          dest="klar-${{ matrix.name }}"
+          python3 scripts/third-party-notices.py > THIRD_PARTY
+          cp "target/${{ matrix.target }}/release/klar" klar
+          chmod +x klar
+          rm -rf ui
+          cp -R web/dist ui
+          tar -czf "${dest}.tar.gz" klar LICENSE THIRD_PARTY ui
+      - uses: actions/upload-artifact@v7
+        with:
+          name: klar-${{ matrix.name }}
+          path: klar-${{ matrix.name }}.tar.gz
+          if-no-files-found: error
+      - name: Image version
+        if: github.event_name != 'pull_request'
+        id: meta
+        env:
+          GITHUB_REF: ${{ github.ref }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+        run: |
+          addon="$(sed -n 's/^version: "\([^"]*\)"/\1/p' addon/config.yaml | head -1)"
+          if [[ -n "$RELEASE_TAG" && ! "$RELEASE_TAG" =~ ^v?[0-9]+(\.[0-9]+)+(-((rc|staging)\.[A-Za-z0-9]+))?$ ]]; then
+            echo "Invalid release_tag format: $RELEASE_TAG" >&2
+            exit 1
+          fi
+          if [[ "$GITHUB_REF" == refs/tags/v* || "$GITHUB_REF" == refs/tags/20* ]]; then
+            echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+          elif [[ -n "$RELEASE_TAG" ]]; then
+            echo "version=${RELEASE_TAG#v}" >> "$GITHUB_OUTPUT"
+          else
+            echo "version=$addon" >> "$GITHUB_OUTPUT"
+            echo "edge=true" >> "$GITHUB_OUTPUT"
+          fi
+          if [[ "${{ inputs.prerelease }}" == "true" || "$RELEASE_TAG" == *-staging.* || "$RELEASE_TAG" == *-rc.* || "$GITHUB_REF_NAME" == *-staging.* || "$GITHUB_REF_NAME" == *-rc.* ]]; then
+            echo "channel=staging" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: docker/setup-buildx-action@v4
+        if: github.event_name != 'pull_request'
+      - uses: docker/login-action@v4
+        if: github.event_name != 'pull_request'
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Push container
+        if: github.event_name != 'pull_request'
+        env:
+          GITHUB_REF: ${{ github.ref }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+        run: |
+          cp LICENSE docker/LICENSE
+          cp THIRD_PARTY docker/THIRD_PARTY
+          cp "target/${{ matrix.target }}/release/klar" docker/klar
+          cp scripts/klar-entry.sh docker/klar-entry.sh
+          rm -rf docker/ui
+          cp -R web/dist docker/ui
+          chmod +x docker/klar docker/klar-entry.sh
+          image="${GHCR}-${{ matrix.ha_arch }}"
+          version="${{ steps.meta.outputs.version }}"
+          tags=(-t "$image:$version")
+          if [[ "${{ steps.meta.outputs.edge }}" == "true" ]]; then
+            tags+=(-t "$image:edge")
+          fi
+          if [[ "${{ inputs.prerelease }}" == "true" || "${{ steps.meta.outputs.channel }}" == "staging" ]]; then
+            tags+=(-t "$image:staging")
+          elif [[ "$GITHUB_REF" == refs/tags/v* || "$GITHUB_REF" == refs/tags/20* || -n "$RELEASE_TAG" ]]; then
+            tags+=(-t "$image:latest")
+          fi
+          docker buildx build --platform "${{ matrix.platform }}" --push \
+            -f docker/Dockerfile "${tags[@]}" docker/
+
+  docker-manifest:
+    name: docker-manifest
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    outputs:
+      image: ${{ steps.tags.outputs.image }}
+    permissions:
+      packages: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.release_tag || github.ref }}
+      - uses: docker/setup-buildx-action@v4
+      - uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Multi-arch tags
+        id: tags
+        env:
+          GITHUB_REF: ${{ github.ref }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+        run: |
+          addon="$(sed -n 's/^version: "\([^"]*\)"/\1/p' addon/config.yaml | head -1)"
+          if [[ -n "$RELEASE_TAG" && ! "$RELEASE_TAG" =~ ^v?[0-9]+(\.[0-9]+)+(-((rc|staging)\.[A-Za-z0-9]+))?$ ]]; then
+            echo "Invalid release_tag format: $RELEASE_TAG" >&2
+            exit 1
+          fi
+          if [[ "$GITHUB_REF" == refs/tags/v* || "$GITHUB_REF" == refs/tags/20* ]]; then
+            version="${GITHUB_REF_NAME#v}"
+          elif [[ -n "$RELEASE_TAG" ]]; then
+            version="${RELEASE_TAG#v}"
+          else
+            version="$addon"
+            extra_edge=true
+          fi
+          src=(
+            "${GHCR}-amd64:${version}"
+            "${GHCR}-aarch64:${version}"
+          )
+          docker buildx imagetools create -t "${GHCR}:${version}" "${src[@]}"
+          if [[ "${extra_edge:-}" == "true" ]]; then
+            docker buildx imagetools create -t "${GHCR}:edge" "${src[@]}"
+          fi
+          if [[ "${{ inputs.prerelease }}" == "true" || "$RELEASE_TAG" == *-staging.* || "$RELEASE_TAG" == *-rc.* ]]; then
+            docker buildx imagetools create -t "${GHCR}:staging" "${src[@]}"
+          elif [[ "$GITHUB_REF" == refs/tags/v* || "$GITHUB_REF" == refs/tags/20* || -n "$RELEASE_TAG" ]]; then
+            docker buildx imagetools create -t "${GHCR}:latest" "${src[@]}"
+          fi
+          echo "image=${GHCR}:${version}" >> "$GITHUB_OUTPUT"
+
+  trivy:
+    name: trivy
+    if: github.event_name != 'pull_request'
+    needs: docker-manifest
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      packages: read
+      security-events: write
+    steps:
+      - uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: aquasecurity/trivy-action@v0.36.0
+        with:
+          version: v0.74.0
+          image-ref: ${{ needs.docker-manifest.outputs.image }}
+          severity: HIGH,CRITICAL
+          ignore-unfixed: true
+          vuln-type: os,library
+          format: sarif
+          output: trivy-results.sarif
+          exit-code: "1"
+        env:
+          TRIVY_USERNAME: ${{ github.actor }}
+          TRIVY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+      - uses: github/codeql-action/upload-sarif@v4
+        if: always()
+        with:
+          sarif_file: trivy-results.sarif
+
+  release:
+    name: release
+    if: ${{ startsWith(github.ref, 'refs/tags/v') || startsWith(github.ref, 'refs/tags/20') || inputs.release_tag != '' }}
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          ref: ${{ inputs.release_tag || github.ref }}
+      - uses: actions/download-artifact@v8
+        with:
+          path: dist
+          merge-multiple: true
+      - uses: anchore/sbom-action@v0
+        with:
+          path: .
+          format: cyclonedx-json
+          artifact-name: klar.cdx.json
+          output-file: dist/klar.cdx.json
+          upload-release-assets: false
+      - name: Release notes
+        env:
+          RAW_TAG: ${{ inputs.release_tag || github.ref_name }}
+          PRERELEASE: ${{ inputs.prerelease }}
+        run: |
+          set -euo pipefail
+          tag="${RAW_TAG#refs/tags/}"
+          tag="${tag#v}"
+          # CHANGELOG.md is written at prepare time. `git-cliff --latest` is
+          # empty after a squash whose subject is `chore(release):` because
+          # cliff.toml skips those commits. Staging RCs list commits since main,
+          # not the last stable CHANGELOG section.
+          if [[ "$PRERELEASE" == "true" ]]; then
+            git fetch --no-tags --depth=1 origin main || true
+            {
+              echo "> **Staging / release candidate.** Not a production cut."
+              echo ">"
+              echo "> Built from branch \`staging\`. Docker tags: \`staging\` and this RC tag."
+              echo "> Stable remains CalVer / \`latest\` from \`main\`."
+              echo
+              python3 scripts/release-notes.py --since origin/main \
+                || echo "No non-merge commits since main yet."
+            } > CHANGES.md
+          else
+            python3 scripts/release-notes.py "$tag" > CHANGES.md
+          fi
+      - name: Release identity
+        id: rel
+        env:
+          RAW_TAG: ${{ inputs.release_tag || github.ref_name }}
+          PRERELEASE: ${{ inputs.prerelease }}
+        run: |
+          raw="$RAW_TAG"
+          title="${raw#v}"
+          echo "tag=$raw" >> "$GITHUB_OUTPUT"
+          if [[ "$PRERELEASE" == "true" ]]; then
+            echo "title=${title} (staging RC)" >> "$GITHUB_OUTPUT"
+          else
+            echo "title=${title}" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ steps.rel.outputs.tag }}
+          name: ${{ steps.rel.outputs.title }}
+          files: |
+            dist/*.tar.gz
+            dist/klar.cdx.json
+          body_path: CHANGES.md
+          generate_release_notes: false
+          prerelease: ${{ inputs.prerelease || contains(inputs.release_tag, '-staging.') }}
+          make_latest: ${{ inputs.prerelease != true && !contains(inputs.release_tag, '-staging.') }}

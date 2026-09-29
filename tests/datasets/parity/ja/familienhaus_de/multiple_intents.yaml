@@ -1,0 +1,34 @@
+multiple_intents/multiple_intents::multi_0:
+- 消して 電気 toire then つけて シーン good_morning
+multiple_intents/multiple_intents::multi_1:
+- 何 shokkaiki then つけて シーン leaving_home
+multiple_intents/multiple_intents::multi_10:
+- セット ファン shinshitsu2 50 then 何 カーテン shinshitsu2 then 何 カーテン shinshitsumaster
+multiple_intents/multiple_intents::multi_12:
+- 消して beddowaki left shinshitsumaster then つけて 全部 電気 sentakushitsu
+multiple_intents/multiple_intents::multi_14:
+- 消して 全部 電気 キッチン then 何 電気 genkangang
+multiple_intents/multiple_intents::multi_15:
+- 何 カーテン shinshitsu2 then 消して 全部 電気 キッチン
+multiple_intents/multiple_intents::multi_16:
+- つけて tenjo キッチン then 何 電気 genkangang
+multiple_intents/multiple_intents::multi_18:
+- 消して ファン famirii then セット shima キッチン 20
+multiple_intents/multiple_intents::multi_19:
+- 何 ファン shinshitsu2 then つけて 電気 sentakushitsu
+multiple_intents/multiple_intents::multi_2:
+- 何 電気 garage then 閉めて カーテン リビング
+multiple_intents/multiple_intents::multi_3:
+- 何 エアコン リビング then 消して tenjo リビング
+multiple_intents/multiple_intents::multi_4:
+- 閉めて カーテン shinshitsu3 then 閉めて カーテン garage then つけて tenjo shinshitsu2
+multiple_intents/multiple_intents::multi_5:
+- 消して 電気 famiriiess then セット ファン shinshitsu2 50
+multiple_intents/multiple_intents::multi_6:
+- つけて tenjo shinshitsu3 then 消して 電気 genkan
+multiple_intents/multiple_intents::multi_7:
+- つけて シーン movie_night then 消して shokkaiki
+multiple_intents/multiple_intents::multi_8:
+- 開けて 鍵 garage then 何 電気 garage
+multiple_intents/multiple_intents::multi_9:
+- 一時停止 terebi リビング then 消して tenjo リビング

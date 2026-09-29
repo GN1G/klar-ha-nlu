@@ -1,0 +1,86 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Empty = next YYYY.M.PATCH (Home Assistant CalVer). Or set 2026.8.0
+        type: string
+        required: false
+
+concurrency:
+  group: release-main
+  cancel-in-progress: false
+
+# Must cover every permission callee jobs declare (including skipped ones).
+# Otherwise GitHub rejects the run as startup_failure before any job starts.
+permissions:
+  actions: read
+  contents: write
+  issues: write
+  packages: write
+  pull-requests: write
+  security-events: write
+
+# Tag/publish only after fmt, clippy, nextest, pack freshness, web, audit, deny, and gitleaks.
+jobs:
+  quality:
+    name: quality
+    uses: ./.github/workflows/ci.yml
+    permissions:
+      contents: read
+
+  security:
+    name: security
+    uses: ./.github/workflows/security.yml
+    secrets: inherit
+    permissions:
+      actions: read
+      contents: read
+      issues: write
+      packages: read
+      security-events: write
+
+  cut:
+    name: cut
+    needs: [quality, security]
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+      pull-requests: write
+    outputs:
+      tag: ${{ steps.cut.outputs.tag }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+          token: ${{ github.token }}
+
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: git-cliff
+
+      - name: Cut or reuse release
+        id: cut
+        env:
+          VERSION: ${{ inputs.version }}
+          MESSAGE: ${{ github.event.head_commit.message }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash scripts/cut-release.sh
+
+  publish:
+    name: publish
+    needs: cut
+    if: needs.cut.outputs.tag != ''
+    uses: ./.github/workflows/build.yml
+    with:
+      release_tag: ${{ needs.cut.outputs.tag }}
+    secrets: inherit
+    permissions:
+      contents: write
+      packages: write
+      security-events: write

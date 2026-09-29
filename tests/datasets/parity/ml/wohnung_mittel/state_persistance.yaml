@@ -1,0 +1,15 @@
+state_persistance/followup::heizung_dann_grad:
+- - തെളി ചൂട് ഹാൾ
+  - ' 21'
+state_persistance/followup::wohnzimmer_dann_aus:
+- - തെളി വിളക്ക് ഹാൾ
+  - അണയ്ക്ക്
+state_persistance/spoken::kugel_dann_aus:
+- - തെളി golam
+  - അണയ്ക്ക്
+state_persistance/spoken::wohnzimmer_dann_kueche:
+- - തെളി വിളക്ക് ഹാൾ
+  - തെളി വിളക്ക് അടുക്കള
+state_persistance/spoken::wohnzimmer_dann_rot:
+- - തെളി എല്ലാം വിളക്ക് ഹാൾ
+  - red

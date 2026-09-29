@@ -1,0 +1,34 @@
+multiple_intents/multiple_intents::multi_0:
+- matikan lampu wc then hidupkan adegan good_morning
+multiple_intents/multiple_intents::multi_1:
+- apa pinggan then hidupkan adegan leaving_home
+multiple_intents/multiple_intents::multi_10:
+- tetapkan kipas bilik2 50 then apa langsir bilik2 then apa langsir bilikmaster
+multiple_intents/multiple_intents::multi_12:
+- matikan katil left bilikmaster then hidupkan semua lampu dobi
+multiple_intents/multiple_intents::multi_14:
+- matikan semua lampu dapur then apa lampu lobigang
+multiple_intents/multiple_intents::multi_15:
+- apa langsir bilik2 then matikan semua lampu dapur
+multiple_intents/multiple_intents::multi_16:
+- hidupkan siling dapur then apa lampu lobigang
+multiple_intents/multiple_intents::multi_18:
+- matikan kipas ruankeluarga then tetapkan pulau dapur 20
+multiple_intents/multiple_intents::multi_19:
+- apa kipas bilik2 then hidupkan lampu dobi
+multiple_intents/multiple_intents::multi_2:
+- apa lampu garage then tutup langsir ruang
+multiple_intents/multiple_intents::multi_3:
+- apa pendingin ruang then matikan siling ruang
+multiple_intents/multiple_intents::multi_4:
+- tutup langsir bilik3 then tutup langsir garage then hidupkan siling bilik2
+multiple_intents/multiple_intents::multi_5:
+- matikan lampu ruankeluargaess then tetapkan kipas bilik2 50
+multiple_intents/multiple_intents::multi_6:
+- hidupkan siling bilik3 then matikan lampu lobi
+multiple_intents/multiple_intents::multi_7:
+- hidupkan adegan movie_night then matikan pinggan
+multiple_intents/multiple_intents::multi_8:
+- buka kunci garage then apa lampu garage
+multiple_intents/multiple_intents::multi_9:
+- pause tv ruang then matikan siling ruang

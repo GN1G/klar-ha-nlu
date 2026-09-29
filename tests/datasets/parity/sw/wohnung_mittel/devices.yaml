@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- zima dari chumbakulala
+devices/geraete::device_arbeitszimmer_an:
+- washa taa office
+devices/geraete::device_esszimmer_an:
+- washa taa sefulaess
+devices/geraete::device_kuche_kuche_an:
+- washa taa jikonini
+devices/geraete::device_wohnzimmer_an:
+- washa taa sebuleni
+devices/geraete::filmabend:
+- washa tukio filmabend
+devices/geraete::kugel_an:
+- washa tufe
+devices/geraete::luefter_50:
+- weka feni office 50
+devices/geraete::pc_an:
+- washa pc
+devices/geraete::r2d2_saugen:
+- washa kifagio sebuleni
+devices/geraete::rollo_zu:
+- funga pazia sebuleni
+devices/geraete::spuelmaschine_aus:
+- zima vyombo
+devices/geraete::tuer_abschliessen:
+- kufuli kufuli kiingilio
+devices/geraete::waschmaschine_an:
+- washa mashine
+devices/klima::klima_schlaf_21:
+- weka ac chumbakulala 21
+devices/spoken::deckenlampe_an:
+- washa dari chumbakulala
+devices/spoken::kugel_aus:
+- zima tufe
+devices/spoken::luefter_aus:
+- zima feni office
+devices/spoken::rollo_auf:
+- fungua pazia sebuleni
+devices/spoken::trockner_an:
+- washa dryer
+devices/spoken::tv_aus:
+- zima tv
+devices/spoken_more::decke_aus_casual:
+- zima dari chumbakulala
+devices/spoken_more::kugel_casual:
+- washa tufe
+devices/spoken_more::pc_aus:
+- zima pc
+devices/spoken_more::spuelmaschine_an:
+- washa vyombo
+devices/spoken_more::waschmaschine_aus:
+- zima mashine

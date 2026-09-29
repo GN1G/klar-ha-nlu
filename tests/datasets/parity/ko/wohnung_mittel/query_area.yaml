@@ -1,0 +1,28 @@
+query_area/spoken::status_licht_kuche_casual:
+- 뭔 불 부엌
+query_area/spoken::status_licht_wohnzimmer_casual:
+- 뭔 불 거실
+query_area/spoken_more::brennt_arbeitszimmer:
+- 뭔 불 office
+query_area/spoken_more::brennt_esszimmer:
+- 뭔 불 gajoksiless
+query_area/spoken_more::status_licht_schlaf_casual:
+- 뭔 불 chimsil
+query_area/status::status_alle_lichter:
+- 뭔 모두 불
+query_area/status::status_licht_arbeitszimmer:
+- 뭔 불 office
+query_area/status::status_licht_badezimmer:
+- weather france
+query_area/status::status_licht_esszimmer:
+- 뭔 불 gajoksiless
+query_area/status::status_licht_kuche:
+- 뭔 불 부엌
+query_area/status::status_licht_wohnzimmer:
+- 뭔 불 거실
+query_area/status::status_wohn_und_esszimmer:
+- 뭔 wohn und esszimmer
+query_area/status::temperatur_wohnung:
+- weather france
+query_area/status::temperatur_wohnzimmer:
+- 뭔 난방 거실

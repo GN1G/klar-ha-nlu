@@ -1,0 +1,77 @@
+- name: list_add
+  conditions:
+  - type: todo_list
+    item: milk
+  sentences:
+  - 追加 milk リスト
+  - milk 追加 リスト
+- name: list_done
+  conditions:
+  - type: todo_list
+    item: milk
+  sentences:
+  - 完了 milk
+  - milk 完了
+- name: list_done_milk
+  conditions:
+  - type: todo_list
+    item: milk
+  sentences:
+  - 完了 milk
+  - milk 完了
+- name: list_add_bread
+  conditions:
+  - type: todo_list
+    item: bread
+  sentences:
+  - 追加 bread リスト
+  - bread 追加 リスト
+- name: list_done_bread
+  conditions:
+  - type: todo_list
+    item: bread
+  sentences:
+  - 完了 bread
+  - bread 完了
+- name: list_add_eggs
+  conditions:
+  - type: todo_list
+    item: eggs
+  sentences:
+  - 追加 eggs リスト
+  - eggs 追加 リスト
+- name: list_done_eggs
+  conditions:
+  - type: todo_list
+    item: eggs
+  sentences:
+  - 完了 eggs
+  - eggs 完了
+- name: list_add_apples
+  conditions:
+  - type: todo_list
+    item: apples
+  sentences:
+  - 追加 apples リスト
+  - apples 追加 リスト
+- name: list_done_apples
+  conditions:
+  - type: todo_list
+    item: apples
+  sentences:
+  - 完了 apples
+  - apples 完了
+- name: list_add_coffee
+  conditions:
+  - type: todo_list
+    item: coffee
+  sentences:
+  - 追加 coffee リスト
+  - coffee 追加 リスト
+- name: list_done_coffee
+  conditions:
+  - type: todo_list
+    item: coffee
+  sentences:
+  - 完了 coffee
+  - coffee 完了

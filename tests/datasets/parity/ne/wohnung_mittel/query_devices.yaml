@@ -1,0 +1,18 @@
+query_devices/spoken::status_kugel:
+- के gola
+query_devices/spoken::status_pc:
+- के pc
+query_devices/spoken::status_trockner:
+- के dryer
+query_devices/spoken::status_tv:
+- के tv
+query_devices/spoken_more::status_decke:
+- के chhana sutnekotha
+query_devices/spoken_more::status_spuelmaschine:
+- के basna
+query_devices/spoken_more::status_wasch_casual:
+- के washing
+query_devices/status::status_r2d2:
+- के कुचो बैठक
+query_devices/status::status_waschmaschine:
+- के washing

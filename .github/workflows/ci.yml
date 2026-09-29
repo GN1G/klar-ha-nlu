@@ -1,0 +1,145 @@
+name: CI
+
+on:
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+env:
+  CARGO_TERM_COLOR: always
+  CARGO_INCREMENTAL: "1"
+
+jobs:
+  rustfmt:
+    name: rustfmt
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: dtolnay/rust-toolchain@1.85
+        with:
+          components: rustfmt
+      - name: Check formatting
+        run: cargo fmt --all -- --check
+
+  clippy:
+    name: clippy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: dtolnay/rust-toolchain@1.85
+        with:
+          components: clippy
+      - uses: Swatinem/rust-cache@v2
+        with:
+          shared-key: ci-linux
+          cache-on-failure: true
+      - name: Clippy
+        run: |
+          cargo clippy --locked --all-targets -- \
+            -D warnings \
+            -D clippy::undocumented_unsafe_blocks \
+            -D clippy::dbg_macro \
+            -D clippy::todo
+
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: CalVer bump script
+        run: python3 scripts/bump-version.py --self-test
+      - name: Release cut script
+        run: bash scripts/cut-release.sh --self-test
+      - name: Path-scoped language mapper
+        run: python3 scripts/ci_lang_tests.py --self-test
+      - name: Python tests
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Language pack gates
+        run: python3 scripts/check_lang_packs.py
+      - uses: dtolnay/rust-toolchain@1.85
+        with:
+          components: rustfmt
+      - name: Generators are a no-op
+        run: |
+          set -euo pipefail
+          python3 scripts/lang_packs/generate.py
+          python3 scripts/parity/generate.py
+          python3 scripts/full_home/generate.py
+          cargo fmt --all
+          paths=(
+            src/lang/packs
+            src/lang/registry.rs
+            src/lang/packs/mod.rs
+            tests/assist_langs.rs
+            tests/full_home.rs
+            tests/datasets
+            custom_components/klar_nlu/languages.py
+            custom_components/klar_nlu/speech_locale.py
+            src/llm/refine_shots.rs
+            src/llm/refine_shots_a.rs
+            src/llm/refine_shots_b.rs
+            src/llm/refine_shots_c.rs
+            src/llm/refine_shots_d.rs
+            src/llm/refine_shots_e.rs
+            src/llm/refine_shots_f.rs
+            src/speech/generated.rs
+          )
+          dirty="$(git status --porcelain -- "${paths[@]}")"
+          if [[ -n "$dirty" ]]; then
+            echo "$dirty"
+            git diff -- "${paths[@]}"
+            echo "generated language packs or datasets are stale; run python3 scripts/lang_packs/generate.py && python3 scripts/parity/generate.py && python3 scripts/full_home/generate.py && cargo fmt --all" >&2
+            exit 1
+          fi
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: nextest
+      - uses: Swatinem/rust-cache@v2
+        with:
+          shared-key: ci-linux
+          cache-on-failure: true
+      - name: Test
+        timeout-minutes: 30
+        run: cargo nextest run --locked --profile ci --no-fail-fast
+
+  web:
+    name: web
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Detect web UI
+        id: web
+        run: |
+          if [[ -f web/package.json && -f web/package-lock.json ]]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-node@v7
+        if: steps.web.outputs.present == 'true'
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - name: Build UI
+        if: steps.web.outputs.present == 'true'
+        working-directory: web
+        run: npm ci && npm run build
+      - name: Skip missing web/
+        if: steps.web.outputs.present != 'true'
+        run: echo "web/ not present — skip npm build"
+
+  release-gates:
+    name: release-gates
+    needs: [test, clippy, rustfmt, web]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Covered by cargo test
+        run: echo "lang validate and eval bench already run inside cargo nextest"

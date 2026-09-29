@@ -1,0 +1,231 @@
+- name: climate.ground_thermostat_18
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 18
+  sentences:
+  - ಹೊಂದಿಸು ಬಿಸಿ ಹಾಲ್ 18
+  - ಬಿಸಿ ಹಾಲ್ 18
+- name: climate.ground_thermostat_19
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 19
+  sentences:
+  - ಹೊಂದಿಸು ಬಿಸಿ ಹಾಲ್ 19
+  - ಬಿಸಿ ಹಾಲ್ 19
+- name: climate.ground_thermostat_20
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 20
+  sentences:
+  - ಹೊಂದಿಸು ಬಿಸಿ ಹಾಲ್ 20
+  - ಬಿಸಿ ಹಾಲ್ 20
+- name: climate.ground_thermostat_21
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 21
+  sentences:
+  - ಹೊಂದಿಸು ಬಿಸಿ ಹಾಲ್ 21
+  - ಬಿಸಿ ಹಾಲ್ 21
+- name: climate.ground_thermostat_22
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 22
+  sentences:
+  - ಹೊಂದಿಸು ಬಿಸಿ ಹಾಲ್ 22
+  - ಬಿಸಿ ಹಾಲ್ 22
+- name: climate.ground_thermostat_23
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 23
+  sentences:
+  - ಹೊಂದಿಸು ಬಿಸಿ ಹಾಲ್ 23
+  - ಬಿಸಿ ಹಾಲ್ 23
+- name: climate.ground_thermostat_24
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 24
+  sentences:
+  - ಹೊಂದಿಸು ಬಿಸಿ ಹಾಲ್ 24
+  - ಬಿಸಿ ಹಾಲ್ 24
+- name: climate.ground_thermostat_get
+  conditions:
+  - type: query
+    entity_id: climate.ground_thermostat
+  sentences:
+  - ಏನು ಬಿಸಿ ಹಾಲ್
+  - ಬಿಸಿ ಹಾಲ್
+- name: climate.upper_thermostat_18
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 18
+  sentences:
+  - ಹೊಂದಿಸು ಬಿಸಿ shayanakonemaster 18
+  - ಬಿಸಿ shayanakonemaster 18
+- name: climate.upper_thermostat_19
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 19
+  sentences:
+  - ಹೊಂದಿಸು ಬಿಸಿ shayanakonemaster 19
+  - ಬಿಸಿ shayanakonemaster 19
+- name: climate.upper_thermostat_20
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 20
+  sentences:
+  - ಹೊಂದಿಸು ಬಿಸಿ shayanakonemaster 20
+  - ಬಿಸಿ shayanakonemaster 20
+- name: climate.upper_thermostat_21
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 21
+  sentences:
+  - ಹೊಂದಿಸು ಬಿಸಿ shayanakonemaster 21
+  - ಬಿಸಿ shayanakonemaster 21
+- name: climate.upper_thermostat_22
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 22
+  sentences:
+  - ಹೊಂದಿಸು ಬಿಸಿ shayanakonemaster 22
+  - ಬಿಸಿ shayanakonemaster 22
+- name: climate.upper_thermostat_23
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 23
+  sentences:
+  - ಹೊಂದಿಸು ಬಿಸಿ shayanakonemaster 23
+  - ಬಿಸಿ shayanakonemaster 23
+- name: climate.upper_thermostat_24
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 24
+  sentences:
+  - ಹೊಂದಿಸು ಬಿಸಿ shayanakonemaster 24
+  - ಬಿಸಿ shayanakonemaster 24
+- name: climate.upper_thermostat_get
+  conditions:
+  - type: query
+    entity_id: climate.upper_thermostat
+  sentences:
+  - ಏನು ಬಿಸಿ shayanakonemaster
+  - ಬಿಸಿ shayanakonemaster
+- name: climate.master_ac_18
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 18
+  sentences:
+  - ಹೊಂದಿಸು bisi shayanakonemaster 18
+  - bisi shayanakonemaster 18
+- name: climate.master_ac_19
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 19
+  sentences:
+  - ಹೊಂದಿಸು bisi shayanakonemaster 19
+  - bisi shayanakonemaster 19
+- name: climate.master_ac_20
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 20
+  sentences:
+  - ಹೊಂದಿಸು bisi shayanakonemaster 20
+  - bisi shayanakonemaster 20
+- name: climate.master_ac_21
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 21
+  sentences:
+  - ಹೊಂದಿಸು bisi shayanakonemaster 21
+  - bisi shayanakonemaster 21
+- name: climate.master_ac_22
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 22
+  sentences:
+  - ಹೊಂದಿಸು bisi shayanakonemaster 22
+  - bisi shayanakonemaster 22
+- name: climate.master_ac_23
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 23
+  sentences:
+  - ಹೊಂದಿಸು bisi shayanakonemaster 23
+  - bisi shayanakonemaster 23
+- name: climate.master_ac_24
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 24
+  sentences:
+  - ಹೊಂದಿಸು bisi shayanakonemaster 24
+  - bisi shayanakonemaster 24
+- name: climate.master_ac_get
+  conditions:
+  - type: query
+    entity_id: climate.master_ac
+  sentences:
+  - ಏನು bisi shayanakonemaster
+  - bisi shayanakonemaster
+- name: climate.ground_thermostat_get_full
+  conditions:
+  - type: query
+    entity_id: climate.ground_thermostat
+  sentences:
+  - ಏನು ಬಿಸಿ ಹಾಲ್
+  - ಬಿಸಿ ಹಾಲ್
+- name: climate.upper_thermostat_get_full
+  conditions:
+  - type: query
+    entity_id: climate.upper_thermostat
+  sentences:
+  - ಏನು ಬಿಸಿ shayanakonemaster
+  - ಬಿಸಿ shayanakonemaster
+- name: climate.master_ac_get_full
+  conditions:
+  - type: query
+    entity_id: climate.master_ac
+  sentences:
+  - ಏನು bisi shayanakonemaster
+  - bisi shayanakonemaster

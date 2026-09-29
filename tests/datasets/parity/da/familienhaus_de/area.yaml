@@ -1,0 +1,248 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- luk gardin sovevaerelse2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- aabn gardin sovevaerelse2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- saet gardin sovevaerelse2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- saet ventilator sovevaerelse2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- sluk ventilator sovevaerelse2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- taend ventilator sovevaerelse2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- saet alle lys sovevaerelse2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- saet alle lys sovevaerelse2 pink
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- sluk alle lys sovevaerelse2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- taend alle lys sovevaerelse2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- luk gardin sovevaerelse3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- aabn gardin sovevaerelse3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- saet gardin sovevaerelse3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- saet alle lys sovevaerelse3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- saet alle lys sovevaerelse3 bla
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- sluk alle lys sovevaerelse3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- taend alle lys sovevaerelse3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- saet alle lys sovevaerelse4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- saet alle lys sovevaerelse4 gron
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- sluk alle lys sovevaerelse4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- taend alle lys sovevaerelse4
+area/dining_lights::dining_lights_change_brightness:
+- saet alle lys alrumess 54
+area/dining_lights::dining_lights_change_color:
+- saet alle lys alrumess bla
+area/dining_lights::dining_lights_turn_off:
+- sluk alle lys alrumess
+area/dining_lights::dining_lights_turn_on:
+- taend alle lys alrumess
+area/entryway_lights::entryway_lights_change_brightness:
+- saet alle lys entree 72
+area/entryway_lights::entryway_lights_change_color:
+- saet alle lys entree sort
+area/entryway_lights::entryway_lights_turn_off:
+- sluk alle lys entree
+area/entryway_lights::entryway_lights_turn_on:
+- taend alle lys entree
+area/entryway_locks::entryway_locks_lock:
+- laas laas entree
+area/entryway_locks::entryway_locks_unlock:
+- aabn laas entree
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- saet alle lys alrum 39 then saet alle lys kokken 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- saet alle lys alrum lilla then saet alle lys kokken lilla
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- sluk alle lys alrum then sluk alle lys kokken
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- taend alle lys alrum then taend alle lys kokken
+area/family_room_fans::family_room_fans_set_fan_speed:
+- saet ventilator alrum 32
+area/family_room_fans::family_room_fans_turn_off:
+- sluk ventilator alrum
+area/family_room_fans::family_room_fans_turn_on:
+- taend ventilator alrum
+area/family_room_lights::family_room_lights_change_brightness:
+- saet alle lys alrum 44
+area/family_room_lights::family_room_lights_change_color:
+- saet alle lys alrum gron
+area/family_room_lights::family_room_lights_turn_off:
+- sluk alle lys alrum
+area/family_room_lights::family_room_lights_turn_on:
+- taend alle lys alrum
+area/garage_covers::garage_covers_close:
+- luk gardin garage
+area/garage_covers::garage_covers_open:
+- aabn gardin garage
+area/garage_covers::garage_covers_set_position:
+- saet gardin garage 86
+area/garage_lights::garage_lights_change_brightness:
+- saet alle lys garage 16
+area/garage_lights::garage_lights_change_color:
+- saet alle lys garage bla
+area/garage_lights::garage_lights_turn_off:
+- sluk alle lys garage
+area/garage_lights::garage_lights_turn_on:
+- taend alle lys garage
+area/garage_locks::garage_locks_lock:
+- laas laas garage
+area/garage_locks::garage_locks_unlock:
+- aabn laas garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- saet alle lys entreegang 26 then saet alle lys toilet 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- saet alle lys entreegang lilla then saet alle lys toilet lilla
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- sluk alle lys entreegang then sluk alle lys toilet
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- taend alle lys entreegang then taend alle lys toilet
+area/hallway_lights::hallway_lights_change_brightness:
+- saet alle lys entreegang 61
+area/hallway_lights::hallway_lights_change_color:
+- saet alle lys entreegang orange
+area/hallway_lights::hallway_lights_turn_off:
+- sluk alle lys entreegang
+area/hallway_lights::hallway_lights_turn_on:
+- taend alle lys entreegang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- saet alle lys kokken 45
+area/kitchen_lights::kitchen_lights_change_color:
+- saet alle lys kokken pink
+area/kitchen_lights::kitchen_lights_turn_off:
+- sluk alle lys kokken
+area/kitchen_lights::kitchen_lights_turn_on:
+- taend alle lys kokken
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- sluk alle apparat kokken
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- taend alle apparat kokken
+area/laundry_lights::laundry_lights_change_brightness:
+- saet alle lys vaskerum 62
+area/laundry_lights::laundry_lights_change_color:
+- saet alle lys vaskerum gul
+area/laundry_lights::laundry_lights_turn_off:
+- sluk alle lys vaskerum
+area/laundry_lights::laundry_lights_turn_on:
+- taend alle lys vaskerum
+area/laundry_switchs::laundry_switchs_turn_off:
+- sluk alle apparat vaskerum
+area/laundry_switchs::laundry_switchs_turn_on:
+- taend alle apparat vaskerum
+area/living_climates::living_climates_set_temperature:
+- saet varme stue 20
+area/living_covers::living_covers_close:
+- luk gardin stue
+area/living_covers::living_covers_open:
+- aabn gardin stue
+area/living_covers::living_covers_set_position:
+- saet gardin stue 46
+area/living_lights::living_lights_change_brightness:
+- saet alle lys stue 84
+area/living_lights::living_lights_change_color:
+- saet alle lys stue bla
+area/living_lights::living_lights_turn_off:
+- sluk alle lys stue
+area/living_lights::living_lights_turn_on:
+- taend alle lys stue
+area/main_bath_lights::main_bath_lights_change_brightness:
+- saet alle lys main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- saet alle lys main bath pink
+area/main_bath_lights::main_bath_lights_turn_off:
+- sluk alle lys main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- taend alle lys main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- sluk alle apparat main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- taend alle apparat main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- saet alle lys badmaster 60
+area/master_bath_lights::master_bath_lights_change_color:
+- saet alle lys badmaster sort
+area/master_bath_lights::master_bath_lights_turn_off:
+- sluk alle lys badmaster
+area/master_bath_lights::master_bath_lights_turn_on:
+- taend alle lys badmaster
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- sluk alle apparat badmaster
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- taend alle apparat badmaster
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- saet varme sovevaerelsemaster 20 then saet varme stue 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- luk gardin sovevaerelsemaster then luk gardin stue
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- aabn gardin sovevaerelsemaster then aabn gardin stue
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- saet gardin sovevaerelsemaster 19 then saet gardin stue 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- saet alle lys sovevaerelsemaster 25 then saet alle lys stue 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- saet alle lys sovevaerelsemaster hvid then saet alle lys stue hvid
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- sluk alle lys sovevaerelsemaster then sluk alle lys stue
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- taend alle lys sovevaerelsemaster then taend alle lys stue
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- saet alle lys sovevaerelsemaster 57 then saet alle lys main bath 57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- saet alle lys sovevaerelsemaster pink then saet alle lys main bath pink
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- sluk alle lys sovevaerelsemaster then sluk alle lys main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- taend alle lys sovevaerelsemaster then taend alle lys main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- saet varme sovevaerelsemaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- luk gardin sovevaerelsemaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- aabn gardin sovevaerelsemaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- saet gardin sovevaerelsemaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- saet ventilator sovevaerelsemaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- sluk ventilator sovevaerelsemaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- taend ventilator sovevaerelsemaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- saet alle lys sovevaerelsemaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- saet alle lys sovevaerelsemaster pink
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- sluk alle lys sovevaerelsemaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- taend alle lys sovevaerelsemaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- saet alle lys toilet 52
+area/powder_room_lights::powder_room_lights_change_color:
+- saet alle lys toilet lilla
+area/powder_room_lights::powder_room_lights_turn_off:
+- sluk alle lys toilet
+area/powder_room_lights::powder_room_lights_turn_on:
+- taend alle lys toilet
+area/spoken_lights::spoken_bedroom_inflection:
+- saet alle lys sovevaerelsemaster rod
+area/spoken_lights::spoken_except_island:
+- sluk alle lys undtagen oe
+area/spoken_lights::spoken_except_kitchen:
+- sluk alle lys undtagen kokken
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- sluk alle lys stue then sluk alle lys alrumess then sluk alle lys kokken
+area/spoken_lights::spoken_stt_kitchen_off:
+- sluk alle lys kokken
+area/spoken_lights::spoken_stt_living_off:
+- sluk alle lys stue

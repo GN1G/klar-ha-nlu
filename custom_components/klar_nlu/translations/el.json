@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "Αυτή η ενσωμάτωση μιλά με το Assist. Ξεχωριστή μηχανή αναλύει την ομιλία: εφαρμογή Klar NLU, ενσωματωμένη διεργασία ή Docker. Στο Home Assistant OS εγκαταστήστε και την εφαρμογή και επιλέξτε Χρήση εφαρμογής Klar NLU. Χωρίς εφαρμογή ξεκινήστε την ενσωματωμένη μηχανή. Μην τρέχετε και τα δύο.",
+        "data": {
+          "mode": "Μηχανή",
+          "channel": "Κανάλι έκδοσης",
+          "url": "URL API Klar",
+          "token": "Διακριτικό εγγραφής"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Το URL πρέπει να είναι http(s) χωρίς όνομα χρήστη."
+    },
+    "abort": {
+      "already_configured": "Το Klar NLU είναι ήδη ρυθμισμένο"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "Η φωνή, οι γλώσσες του Assist και το LLM βρίσκονται στο UI χειριστή του Klar (Ρυθμίσεις). Αυτή η φόρμα συνδέει μόνο τη μηχανή: URL, διακριτικό και κανάλι. {apps}",
+        "data": {
+          "mode": "Μηχανή",
+          "url": "URL API Klar",
+          "token": "Διακριτικό εγγραφής",
+          "assist_filter": "Έλεγχος μόνο οντοτήτων εκτεθειμένων στο Assist",
+          "channel": "Κανάλι έκδοσης"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "Το ίδιο διακριτικό με την εφαρμογή Klar.",
+          "assist_filter": "Ενεργό: μόνο όσα βλέπει το Assist. Ανενεργό: και κρυφές οντότητες.",
+          "channel": "Οποτεδήποτε. Το Staging δείχνει στο Klar NLU (Staging)."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Το URL πρέπει να είναι http(s) χωρίς όνομα χρήστη."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "Εκκίνηση ενσωματωμένης μηχανής (μόνο HACS)",
+        "remote": "Χρήση εφαρμογής Klar NLU ή Docker"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (παραγωγή)",
+        "staging": "Staging (υποψήφιο)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "Γλώσσα συστήματος",
+        "all": "Όλες οι γλώσσες"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "Κανονική",
+        "butler": "Butler",
+        "locker": "Χαλαρή",
+        "fuersorglich": "Φροντιστική",
+        "party": "Party",
+        "grantig": "Γκρινιάρικη",
+        "sarkastisch": "Σαρκαστική",
+        "pirat": "Πειρατής",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "Προσωπικότητα",
+        "state": {
+          "default": "Κανονική",
+          "butler": "Butler",
+          "locker": "Χαλαρή",
+          "fuersorglich": "Φροντιστική",
+          "party": "Party",
+          "grantig": "Γκρινιάρικη",
+          "sarkastisch": "Σαρκαστική",
+          "pirat": "Πειρατής",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "Σύντομη επιβεβαίωση"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "Εργασία ΤΝ"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "Τελευταία ακρόαση"
+      },
+      "last_decision": {
+        "name": "Τελευταία απόφαση"
+      },
+      "last_speech": {
+        "name": "Τελευταία απάντηση"
+      },
+      "last_area": {
+        "name": "Ακούστηκε σε"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Η μηχανή Klar σταμάτησε",
+      "description": "Η ενσωματωμένη διεργασία Klar δεν τρέχει. Επαναφορτώστε το Klar NLU στις Ρυθμίσεις → Συσκευές και υπηρεσίες."
+    }
+  }
+}

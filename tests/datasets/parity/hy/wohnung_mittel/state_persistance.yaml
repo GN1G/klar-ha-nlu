@@ -1,0 +1,15 @@
+state_persistance/followup::heizung_dann_grad:
+- - միացրու ջեռուցում հյուրասենյակ
+  - ' 21'
+state_persistance/followup::wohnzimmer_dann_aus:
+- - միացրու լույս հյուրասենյակ
+  - անջատիր
+state_persistance/spoken::kugel_dann_aus:
+- - միացրու gundayin
+  - անջատիր
+state_persistance/spoken::wohnzimmer_dann_kueche:
+- - միացրու լույս հյուրասենյակ
+  - միացրու լույս խոհանոց
+state_persistance/spoken::wohnzimmer_dann_rot:
+- - միացրու բոլոր լույս հյուրասենյակ
+  - red

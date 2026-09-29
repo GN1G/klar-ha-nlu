@@ -1,0 +1,6 @@
+assist/ha_queries::ha_status_kueche:
+- 何 電気 キッチン
+assist/ha_queries::ha_status_kugel:
+- 何 tama
+assist/ha_queries::ha_status_lichter:
+- 何 全部 電気

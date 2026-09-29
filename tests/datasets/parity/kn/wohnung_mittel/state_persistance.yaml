@@ -1,0 +1,15 @@
+state_persistance/followup::heizung_dann_grad:
+- - ಹಚ್ಚು ಬಿಸಿ ಹಾಲ್
+  - ' 21'
+state_persistance/followup::wohnzimmer_dann_aus:
+- - ಹಚ್ಚು ಬೆಳಕು ಹಾಲ್
+  - ಆರಿಸು
+state_persistance/spoken::kugel_dann_aus:
+- - ಹಚ್ಚು goli
+  - ಆರಿಸು
+state_persistance/spoken::wohnzimmer_dann_kueche:
+- - ಹಚ್ಚು ಬೆಳಕು ಹಾಲ್
+  - ಹಚ್ಚು ಬೆಳಕು ಅಡುಗೆ
+state_persistance/spoken::wohnzimmer_dann_rot:
+- - ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್
+  - red

@@ -1,0 +1,96 @@
+- name: switch.dishwasher_on
+  conditions:
+  - type: action
+    entity_id: switch.dishwasher
+    state: 'on'
+  sentences:
+  - ஏற்று pattiram சமையல்
+  - pattiram சமையல் ஏற்று
+- name: switch.dishwasher_off
+  conditions:
+  - type: action
+    entity_id: switch.dishwasher
+    state: 'off'
+  sentences:
+  - அணை pattiram சமையல்
+  - pattiram சமையல் அணை
+- name: switch.washing_machine_on
+  conditions:
+  - type: action
+    entity_id: switch.washing_machine
+    state: 'on'
+  sentences:
+  - ஏற்று washing salavai
+  - washing salavai ஏற்று
+- name: switch.washing_machine_off
+  conditions:
+  - type: action
+    entity_id: switch.washing_machine
+    state: 'off'
+  sentences:
+  - அணை washing salavai
+  - washing salavai அணை
+- name: switch.dryer_on
+  conditions:
+  - type: action
+    entity_id: switch.dryer
+    state: 'on'
+  sentences:
+  - ஏற்று dryer salavai
+  - dryer salavai ஏற்று
+- name: switch.dryer_off
+  conditions:
+  - type: action
+    entity_id: switch.dryer
+    state: 'off'
+  sentences:
+  - அணை dryer salavai
+  - dryer salavai அணை
+- name: switch.rangehood_on
+  conditions:
+  - type: action
+    entity_id: switch.rangehood
+    state: 'on'
+  sentences:
+  - ஏற்று rangehood சமையல்
+  - rangehood சமையல் ஏற்று
+- name: switch.rangehood_off
+  conditions:
+  - type: action
+    entity_id: switch.rangehood
+    state: 'off'
+  sentences:
+  - அணை rangehood சமையல்
+  - rangehood சமையல் அணை
+- name: switch.master_bath_fan_on
+  conditions:
+  - type: action
+    entity_id: switch.master_bath_fan
+    state: 'on'
+  sentences:
+  - ஏற்று விசிறிbad muthanmaikuliyal
+  - விசிறிbad muthanmaikuliyal ஏற்று
+- name: switch.master_bath_fan_off
+  conditions:
+  - type: action
+    entity_id: switch.master_bath_fan
+    state: 'off'
+  sentences:
+  - அணை விசிறிbad muthanmaikuliyal
+  - விசிறிbad muthanmaikuliyal அணை
+- name: switch.main_bath_fan_on
+  conditions:
+  - type: action
+    entity_id: switch.main_bath_fan
+    state: 'on'
+  sentences:
+  - ஏற்று விசிறிbad main bath
+  - விசிறிbad main bath ஏற்று
+- name: switch.main_bath_fan_off
+  conditions:
+  - type: action
+    entity_id: switch.main_bath_fan
+    state: 'off'
+  sentences:
+  - அணை விசிறிbad main bath
+  - விசிறிbad main bath அணை

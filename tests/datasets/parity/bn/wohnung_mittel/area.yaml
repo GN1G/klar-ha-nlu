@@ -1,0 +1,82 @@
+area/heizung::heizung_badezimmer_23:
+- সেট গরম masterbath 23
+area/heizung::heizung_esszimmer_23:
+- সেট গরম paribarikess 23
+area/heizung::heizung_schlafzimmer_23:
+- সেট গরম shobarghor 23
+area/heizung::heizung_wohnzimmer_23:
+- সেট গরম বসার 23
+area/lichter::alle_an_ausser_kugel:
+- জ্বালাও সব আলো chara gola
+area/lichter::alle_an_ausser_schlafzimmer:
+- জ্বালাও সব আলো chara shobarghor
+area/lichter::alle_auf_20_ausser_schlafzimmer:
+- সেট সব আলো chara shobarghor 20
+area/lichter::alle_auf_rot_ausser_kugel:
+- সেট সব আলো chara gola red
+area/lichter::alle_ausser_kugel:
+- নিভাও সব আলো chara gola
+area/lichter::alle_ausser_schlafzimmer:
+- নিভাও সব আলো chara shobarghor
+area/lichter::alle_lichter_an:
+- জ্বালাও সব আলো
+area/lichter::alle_lichter_aus:
+- নিভাও সব আলো
+area/lichter::arbeitszimmer_lichter_an:
+- জ্বালাও সব আলো office
+area/lichter::arbeitszimmer_lichter_aus:
+- নিভাও সব আলো office
+area/lichter::esszimmer_lichter_an:
+- জ্বালাও সব আলো paribarikess
+area/lichter::esszimmer_lichter_aus:
+- নিভাও সব আলো paribarikess
+area/lichter::kuche_lichter_an:
+- জ্বালাও সব আলো রান্না
+area/lichter::kuche_lichter_aus:
+- নিভাও সব আলো রান্না
+area/lichter::schlafzimmer_auf_blau:
+- সেট সব আলো shobarghor blue
+area/lichter::schlafzimmer_auf_rot:
+- সেট সব আলো shobarghor red
+area/lichter::wohnzimmer_helligkeit:
+- সেট সব আলো বসার 45
+area/lichter::wohnzimmer_lichter_an:
+- জ্বালাও সব আলো বসার
+area/lichter::wohnzimmer_lichter_aus:
+- নিভাও সব আলো বসার
+area/spoken::alle_ausser_kugel_stt:
+- নিভাও সব আলো chara gola
+area/spoken::alle_ausser_schlaf_stt:
+- নিভাও সব আলো chara shobarghor
+area/spoken::alle_ganzen_an:
+- জ্বালাও সব আলো
+area/spoken::alle_lampen_aus:
+- নিভাও সব আলো
+area/spoken::esszimmer_weiss:
+- সেট সব আলো paribarikess white
+area/spoken::stt_kuche_lichte:
+- নিভাও সব আলো রান্না
+area/spoken::stt_licht_wohnzimmer_an:
+- জ্বালাও সব আলো বসার
+area/spoken::stt_licht_wohnzimmer_aus:
+- নিভাও সব আলো বসার
+area/spoken::stt_schlafzimmer_dativ:
+- নিভাও সব আলো shobarghor
+area/spoken::wohnzimmer_gruen:
+- সেট সব আলো বসার green
+area/spoken_more::alle_ausser_arbeitszimmer:
+- নিভাও সব আলো chara office
+area/spoken_more::arbeitszimmer_lampen_aus:
+- নিভাও সব আলো office
+area/spoken_more::esszimmer_30:
+- সেট সব আলো paribarikess 30
+area/spoken_more::esszimmer_lichte_an:
+- জ্বালাও সব আলো paribarikess
+area/spoken_more::kuche_80:
+- সেট সব আলো রান্না 80
+area/spoken_more::kuche_blau:
+- সেট সব আলো রান্না blue
+area/spoken_more::ueberall_ausser_schlaf_stt:
+- নিভাও সব আলো chara shobarghor
+area/spoken_more::wohnzimmer_gelb:
+- সেট সব আলো বসার yellow

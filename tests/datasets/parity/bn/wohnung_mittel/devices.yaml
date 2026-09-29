@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- নিভাও chhad shobarghor
+devices/geraete::device_arbeitszimmer_an:
+- জ্বালাও আলো office
+devices/geraete::device_esszimmer_an:
+- জ্বালাও আলো paribarikess
+devices/geraete::device_kuche_kuche_an:
+- জ্বালাও আলো রান্না
+devices/geraete::device_wohnzimmer_an:
+- জ্বালাও আলো বসার
+devices/geraete::filmabend:
+- জ্বালাও দৃশ্য filmabend
+devices/geraete::kugel_an:
+- জ্বালাও gola
+devices/geraete::luefter_50:
+- সেট পাখা office 50
+devices/geraete::pc_an:
+- জ্বালাও pc
+devices/geraete::r2d2_saugen:
+- জ্বালাও ঝাড়ু বসার
+devices/geraete::rollo_zu:
+- বন্ধ পর্দা বসার
+devices/geraete::spuelmaschine_aus:
+- নিভাও basan
+devices/geraete::tuer_abschliessen:
+- তালা তালা prabesh
+devices/geraete::waschmaschine_an:
+- জ্বালাও washing
+devices/klima::klima_schlaf_21:
+- সেট ac shobarghor 21
+devices/spoken::deckenlampe_an:
+- জ্বালাও chhad shobarghor
+devices/spoken::kugel_aus:
+- নিভাও gola
+devices/spoken::luefter_aus:
+- নিভাও পাখা office
+devices/spoken::rollo_auf:
+- খোল পর্দা বসার
+devices/spoken::trockner_an:
+- জ্বালাও dryer
+devices/spoken::tv_aus:
+- নিভাও tv
+devices/spoken_more::decke_aus_casual:
+- নিভাও chhad shobarghor
+devices/spoken_more::kugel_casual:
+- জ্বালাও gola
+devices/spoken_more::pc_aus:
+- নিভাও pc
+devices/spoken_more::spuelmaschine_an:
+- জ্বালাও basan
+devices/spoken_more::waschmaschine_aus:
+- নিভাও washing

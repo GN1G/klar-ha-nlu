@@ -1,0 +1,19 @@
+m0_exact/representative::exact_clarify:
+- बाल सबै बत्ती बैठक
+m0_exact/representative::exact_list_complete_from_setup:
+- भयो bread aufgabenliste
+m0_exact/representative::exact_multi_intent:
+- बाल chhana sutnekotha3 ra निभाऊ बत्ती pravesh
+m0_exact/representative::exact_reject:
+- weather france
+m0_exact/representative::exact_shopping_list:
+- add milk सूची
+m0_exact/representative::exact_state_persistence:
+- - के बत्ती pravesh
+  - '12'
+m0_exact/representative::exact_timer:
+- बाल टाइमर oven 2 min
+m0_exact/representative::exact_timer_resume_preserves_duration:
+- बाल टाइमर oven
+m0_exact/representative::exact_todo_list:
+- add apples aufgabenliste

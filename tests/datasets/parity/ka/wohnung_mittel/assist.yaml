@@ -1,0 +1,6 @@
+assist/ha_queries::ha_status_kueche:
+- რა სინათლე სამზარეულო
+assist/ha_queries::ha_status_kugel:
+- რა burtuli
+assist/ha_queries::ha_status_lichter:
+- რა ყველა სინათლე

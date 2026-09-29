@@ -1,0 +1,509 @@
+name: Full Home ja
+language: ja
+difficulty: full
+policy:
+  preferred_climate: climate.upper_thermostat
+  timer_hints:
+    90: laundry
+floors:
+- id: ground
+  name: kakai
+  level: 0
+  aliases:
+  - kakai
+  - shita
+- id: upper
+  name: joukai
+  level: 1
+  aliases:
+  - joukai
+  - ue
+- id: basement
+  name: basement
+  level: -1
+  aliases:
+  - basement
+  - keller
+areas:
+- id: entryway
+  name: Genkan
+  floor: ground
+  aliases:
+  - genkan
+- id: living
+  name: リビング
+  floor: ground
+  aliases:
+  - リビング
+  - ribingu
+- id: dining
+  name: Famiriiess
+  floor: ground
+  aliases:
+  - famiriiess
+- id: kitchen
+  name: キッチン
+  floor: ground
+  aliases:
+  - キッチン
+  - kitchin
+- id: family_room
+  name: Famirii
+  floor: ground
+  aliases:
+  - famirii
+- id: laundry
+  name: Sentakushitsu
+  floor: ground
+  aliases:
+  - sentakushitsu
+- id: powder_room
+  name: Toire
+  floor: ground
+  aliases:
+  - toire
+- id: garage
+  name: Garage
+  floor: ground
+  aliases:
+  - garage
+- id: office
+  name: Office
+  floor: ground
+  aliases:
+  - office
+- id: garden
+  name: Garden
+  floor: ground
+  aliases:
+  - garden
+- id: master_bedroom
+  name: Shinshitsumaster
+  floor: upper
+  aliases:
+  - shinshitsumaster
+  - shinshitsu
+- id: bedroom_2
+  name: Shinshitsu2
+  floor: upper
+  aliases:
+  - shinshitsu2
+- id: bedroom_3
+  name: Shinshitsu3
+  floor: upper
+  aliases:
+  - shinshitsu3
+- id: bedroom_4
+  name: Shinshitsu4
+  floor: upper
+  aliases:
+  - shinshitsu4
+- id: master_bath
+  name: Shuyokushitsu
+  floor: upper
+  aliases:
+  - shuyokushitsu
+- id: main_bath
+  name: Main Bath
+  floor: upper
+  aliases:
+  - main bath
+- id: hallway
+  name: Roka
+  floor: upper
+  aliases:
+  - roka
+- id: basement
+  name: Chika
+  floor: basement
+  aliases:
+  - chika
+devices:
+- id: light.entryway_light
+  area_id: entryway
+  name: genkan 電気
+  aliases:
+  - genkan 電気
+  - 電気
+- id: light.living_ceiling
+  area_id: living
+  name: リビング tenjo
+  aliases:
+  - リビング tenjo
+  - tenjo
+- id: light.living_lamp
+  area_id: living
+  name: リビング ライト
+  aliases:
+  - リビング ライト
+  - ライト
+- id: light.dining_pendant
+  area_id: dining
+  name: famiriiess 電気
+  aliases:
+  - famiriiess 電気
+  - 電気
+- id: light.kitchen_ceiling
+  area_id: kitchen
+  name: キッチン tenjo
+  aliases:
+  - キッチン tenjo
+  - tenjo
+- id: light.kitchen_island
+  area_id: kitchen
+  name: キッチン shima
+  aliases:
+  - キッチン shima
+  - shima
+- id: light.family_ceiling
+  area_id: family_room
+  name: famirii tenjo
+  aliases:
+  - famirii tenjo
+  - tenjo
+- id: light.laundry_light
+  area_id: laundry
+  name: sentakushitsu 電気
+  aliases:
+  - sentakushitsu 電気
+  - 電気
+- id: light.powder_room_light
+  area_id: powder_room
+  name: toire 電気
+  aliases:
+  - toire 電気
+  - 電気
+- id: light.garage_light
+  area_id: garage
+  name: garage 電気
+  aliases:
+  - garage 電気
+  - 電気
+- id: light.office_ceiling
+  area_id: office
+  name: office tenjo
+  aliases:
+  - office tenjo
+  - tenjo
+- id: light.garden
+  area_id: garden
+  name: garden 電気
+  aliases:
+  - garden 電気
+  - 電気
+- id: light.master_ceiling
+  area_id: master_bedroom
+  name: shinshitsumaster tenjo
+  aliases:
+  - shinshitsumaster tenjo
+  - tenjo
+- id: light.master_ensuite
+  area_id: master_bedroom
+  name: shinshitsumaster ensuite
+  aliases:
+  - shinshitsumaster ensuite
+  - ensuite
+  tags:
+  - ensuite
+- id: light.master_bedside_left
+  area_id: master_bedroom
+  name: shinshitsumaster left beddowaki
+  aliases:
+  - shinshitsumaster left beddowaki
+  - beddowaki
+- id: light.master_bedside_right
+  area_id: master_bedroom
+  name: shinshitsumaster right beddowaki
+  aliases:
+  - shinshitsumaster right beddowaki
+  - beddowaki
+- id: light.bedroom2_ceiling
+  area_id: bedroom_2
+  name: shinshitsu2 tenjo
+  aliases:
+  - shinshitsu2 tenjo
+  - tenjo
+- id: light.bedroom3_ceiling
+  area_id: bedroom_3
+  name: shinshitsu3 tenjo
+  aliases:
+  - shinshitsu3 tenjo
+  - tenjo
+- id: light.bedroom4_ceiling
+  area_id: bedroom_4
+  name: shinshitsu4 tenjo
+  aliases:
+  - shinshitsu4 tenjo
+  - tenjo
+- id: light.master_bath_light
+  area_id: master_bath
+  name: shuyokushitsu 電気
+  aliases:
+  - shuyokushitsu 電気
+  - 電気
+- id: light.main_bath_light
+  area_id: main_bath
+  name: main bath 電気
+  aliases:
+  - main bath 電気
+  - 電気
+- id: light.hallway_light
+  area_id: hallway
+  name: roka 電気
+  aliases:
+  - roka 電気
+  - 電気
+- id: light.basement
+  area_id: basement
+  name: chika 電気
+  aliases:
+  - chika 電気
+  - 電気
+- id: cover.living_blinds
+  area_id: living
+  name: リビング カーテン
+  aliases:
+  - リビング カーテン
+  - カーテン
+- id: cover.master_blinds
+  area_id: master_bedroom
+  name: shinshitsumaster カーテン
+  aliases:
+  - shinshitsumaster カーテン
+  - カーテン
+- id: cover.bedroom2_blinds
+  area_id: bedroom_2
+  name: shinshitsu2 カーテン
+  aliases:
+  - shinshitsu2 カーテン
+  - カーテン
+- id: cover.bedroom3_blinds
+  area_id: bedroom_3
+  name: shinshitsu3 カーテン
+  aliases:
+  - shinshitsu3 カーテン
+  - カーテン
+- id: cover.garage_door
+  area_id: garage
+  name: garage カーテン
+  aliases:
+  - garage カーテン
+  - カーテン
+- id: climate.ground_thermostat
+  area_id: living
+  name: リビング エアコン
+  aliases:
+  - リビング エアコン
+  - エアコン
+- id: climate.upper_thermostat
+  area_id: master_bedroom
+  name: shinshitsumaster エアコン
+  aliases:
+  - shinshitsumaster エアコン
+  - エアコン
+- id: climate.master_ac
+  area_id: master_bedroom
+  name: eakon shinshitsumaster
+  aliases:
+  - eakon shinshitsumaster
+  - eakon
+  - ac
+  tags:
+  - eakon
+- id: fan.family_fan
+  area_id: family_room
+  name: famirii ファン
+  aliases:
+  - famirii ファン
+  - ファン
+- id: fan.master_fan
+  area_id: master_bedroom
+  name: shinshitsumaster ファン
+  aliases:
+  - shinshitsumaster ファン
+  - ファン
+- id: fan.bedroom2_fan
+  area_id: bedroom_2
+  name: shinshitsu2 ファン
+  aliases:
+  - shinshitsu2 ファン
+  - ファン
+- id: lock.front_door
+  area_id: entryway
+  name: front ドア
+  aliases:
+  - front ドア
+  tags:
+  - front
+- id: lock.garage_entry
+  area_id: garage
+  name: garage ドア
+  aliases:
+  - garage ドア
+  tags:
+  - garage
+- id: switch.dishwasher
+  area_id: kitchen
+  name: キッチン shokkaiki
+  aliases:
+  - キッチン shokkaiki
+  - shokkaiki
+- id: switch.rangehood
+  area_id: kitchen
+  name: キッチン renjifud
+  aliases:
+  - キッチン renjifud
+  - renjifud
+  tags:
+  - renjifud
+- id: switch.washing_machine
+  area_id: laundry
+  name: sentakushitsu sentakuki
+  aliases:
+  - sentakushitsu sentakuki
+  - sentakuki
+  - washer
+  tags:
+  - washer
+  - sentakuki
+- id: switch.dryer
+  area_id: laundry
+  name: sentakushitsu kansouki
+  aliases:
+  - sentakushitsu kansouki
+  - kansouki
+  - dryer
+  tags:
+  - dryer
+  - kansouki
+- id: switch.master_bath_fan
+  area_id: master_bath
+  name: shuyokushitsu yokusovent
+  aliases:
+  - shuyokushitsu yokusovent
+  - yokusovent
+  tags:
+  - yokusovent
+- id: switch.main_bath_fan
+  area_id: main_bath
+  name: main bath yokusovent
+  aliases:
+  - main bath yokusovent
+  - yokusovent
+  tags:
+  - yokusovent
+- id: media_player.living_tv
+  area_id: living
+  name: リビング terebi
+  aliases:
+  - リビング terebi
+  - terebi
+- id: media_player.family_tv
+  area_id: family_room
+  name: famirii terebi
+  aliases:
+  - famirii terebi
+  - terebi
+- id: media_player.living_music
+  area_id: living
+  name: リビング テレビ
+  aliases:
+  - リビング テレビ
+  - テレビ
+  platform: music_assistant
+  tags:
+  - テレビ
+- id: media_player.kitchen_music
+  area_id: kitchen
+  name: キッチン テレビ
+  aliases:
+  - キッチン テレビ
+  - テレビ
+  platform: music_assistant
+  tags:
+  - テレビ
+- id: media_player.office_music
+  area_id: office
+  name: office テレビ
+  aliases:
+  - office テレビ
+  - テレビ
+  platform: music_assistant
+  tags:
+  - テレビ
+- id: vacuum.robot
+  area_id: living
+  name: リビング 掃除機
+  aliases:
+  - リビング 掃除機
+  - 掃除機
+- id: binary_sensor.front_door_sensor
+  area_id: entryway
+  name: genkan doasensa
+  aliases:
+  - genkan doasensa
+  - doasensa
+  tags:
+  - doasensa
+- id: binary_sensor.living_window
+  area_id: living
+  name: リビング madosensa
+  aliases:
+  - リビング madosensa
+  - madosensa
+  tags:
+  - madosensa
+- id: binary_sensor.kitchen_motion
+  area_id: kitchen
+  name: キッチン kando
+  aliases:
+  - キッチン kando
+  - kando
+  tags:
+  - kando
+- id: sensor.living_temperature
+  area_id: living
+  name: リビング ondo
+  aliases:
+  - リビング ondo
+  - ondo
+  tags:
+  - ondo
+- id: sensor.living_humidity
+  area_id: living
+  name: リビング shitsudo
+  aliases:
+  - リビング shitsudo
+  - shitsudo
+  tags:
+  - shitsudo
+- id: weather.home
+  area_id: garden
+  name: garden weather
+  aliases:
+  - garden weather
+  - weather
+scenes:
+- id: movie_night
+  name: eiga
+- id: dinner_time
+  name: bangohan
+- id: kids_bedtime
+  name: kodomo
+- id: good_morning
+  name: asa
+scripts:
+- id: good_night
+  name: yoru
+- id: leaving_home
+  name: taishutsu
+timers:
+- id: oven
+  name: oven タイマー
+- id: laundry
+  name: laundry タイマー
+- id: abstract
+  name: abstract タイマー
+lists:
+- id: shopping
+  name: リスト

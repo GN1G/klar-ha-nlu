@@ -1,0 +1,10 @@
+- name: master_light_bedside_left_vs_ceiling_on
+  conditions:
+  - type: action
+    entity_id: light.master_bedside_left
+    state: 'on'
+  - type: action
+    entity_id: light.master_ceiling
+    state: 'on'
+  sentences:
+  - Mach Licht Schlafzimmer an

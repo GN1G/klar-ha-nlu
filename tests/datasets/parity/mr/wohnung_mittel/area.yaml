@@ -1,0 +1,82 @@
+area/heizung::heizung_badezimmer_23:
+- सेट उष्णता mukhyasnan 23
+area/heizung::heizung_esszimmer_23:
+- सेट उष्णता kutumbess 23
+area/heizung::heizung_schlafzimmer_23:
+- सेट उष्णता shayankaksh 23
+area/heizung::heizung_wohnzimmer_23:
+- सेट उष्णता बैठक 23
+area/lichter::alle_an_ausser_kugel:
+- चालू सर्व दिवा vagal gol
+area/lichter::alle_an_ausser_schlafzimmer:
+- चालू सर्व दिवा vagal shayankaksh
+area/lichter::alle_auf_20_ausser_schlafzimmer:
+- सेट सर्व दिवा vagal shayankaksh 20
+area/lichter::alle_auf_rot_ausser_kugel:
+- सेट सर्व दिवा vagal gol red
+area/lichter::alle_ausser_kugel:
+- बंद सर्व दिवा vagal gol
+area/lichter::alle_ausser_schlafzimmer:
+- बंद सर्व दिवा vagal shayankaksh
+area/lichter::alle_lichter_an:
+- चालू सर्व दिवा
+area/lichter::alle_lichter_aus:
+- बंद सर्व दिवा
+area/lichter::arbeitszimmer_lichter_an:
+- चालू सर्व दिवा office
+area/lichter::arbeitszimmer_lichter_aus:
+- बंद सर्व दिवा office
+area/lichter::esszimmer_lichter_an:
+- चालू सर्व दिवा kutumbess
+area/lichter::esszimmer_lichter_aus:
+- बंद सर्व दिवा kutumbess
+area/lichter::kuche_lichter_an:
+- चालू सर्व दिवा स्वयंपाक
+area/lichter::kuche_lichter_aus:
+- बंद सर्व दिवा स्वयंपाक
+area/lichter::schlafzimmer_auf_blau:
+- सेट सर्व दिवा shayankaksh blue
+area/lichter::schlafzimmer_auf_rot:
+- सेट सर्व दिवा shayankaksh red
+area/lichter::wohnzimmer_helligkeit:
+- सेट सर्व दिवा बैठक 45
+area/lichter::wohnzimmer_lichter_an:
+- चालू सर्व दिवा बैठक
+area/lichter::wohnzimmer_lichter_aus:
+- बंद सर्व दिवा बैठक
+area/spoken::alle_ausser_kugel_stt:
+- बंद सर्व दिवा vagal gol
+area/spoken::alle_ausser_schlaf_stt:
+- बंद सर्व दिवा vagal shayankaksh
+area/spoken::alle_ganzen_an:
+- चालू सर्व दिवा
+area/spoken::alle_lampen_aus:
+- बंद सर्व दिवा
+area/spoken::esszimmer_weiss:
+- सेट सर्व दिवा kutumbess white
+area/spoken::stt_kuche_lichte:
+- बंद सर्व दिवा स्वयंपाक
+area/spoken::stt_licht_wohnzimmer_an:
+- चालू सर्व दिवा बैठक
+area/spoken::stt_licht_wohnzimmer_aus:
+- बंद सर्व दिवा बैठक
+area/spoken::stt_schlafzimmer_dativ:
+- बंद सर्व दिवा shayankaksh
+area/spoken::wohnzimmer_gruen:
+- सेट सर्व दिवा बैठक green
+area/spoken_more::alle_ausser_arbeitszimmer:
+- बंद सर्व दिवा vagal office
+area/spoken_more::arbeitszimmer_lampen_aus:
+- बंद सर्व दिवा office
+area/spoken_more::esszimmer_30:
+- सेट सर्व दिवा kutumbess 30
+area/spoken_more::esszimmer_lichte_an:
+- चालू सर्व दिवा kutumbess
+area/spoken_more::kuche_80:
+- सेट सर्व दिवा स्वयंपाक 80
+area/spoken_more::kuche_blau:
+- सेट सर्व दिवा स्वयंपाक blue
+area/spoken_more::ueberall_ausser_schlaf_stt:
+- बंद सर्व दिवा vagal shayankaksh
+area/spoken_more::wohnzimmer_gelb:
+- सेट सर्व दिवा बैठक yellow

@@ -1,0 +1,34 @@
+multiple_intents/multiple_intents::multi_0:
+- ugasi svjetlo wc then upali scena good_morning
+multiple_intents/multiple_intents::multi_1:
+- kako posuda then upali scena leaving_home
+multiple_intents/multiple_intents::multi_10:
+- stavi ventilator spavaca2 50 then kako zavjesa spavaca2 then kako zavjesa spavacamaster
+multiple_intents/multiple_intents::multi_12:
+- ugasi nocni left spavacamaster then upali sve svjetlo perionica
+multiple_intents/multiple_intents::multi_14:
+- ugasi sve svjetlo kuhinja then kako svjetlo hodnikgang
+multiple_intents/multiple_intents::multi_15:
+- kako zavjesa spavaca2 then ugasi sve svjetlo kuhinja
+multiple_intents/multiple_intents::multi_16:
+- upali strop kuhinja then kako svjetlo hodnikgang
+multiple_intents/multiple_intents::multi_18:
+- ugasi ventilator dnevnifam then stavi otok kuhinja 20
+multiple_intents/multiple_intents::multi_19:
+- kako ventilator spavaca2 then upali svjetlo perionica
+multiple_intents/multiple_intents::multi_2:
+- kako svjetlo garage then zatvori zavjesa dnevni
+multiple_intents/multiple_intents::multi_3:
+- kako grijanje dnevni then ugasi strop dnevni
+multiple_intents/multiple_intents::multi_4:
+- zatvori zavjesa spavaca3 then zatvori zavjesa garage then upali strop spavaca2
+multiple_intents/multiple_intents::multi_5:
+- ugasi svjetlo dnevnifamess then stavi ventilator spavaca2 50
+multiple_intents/multiple_intents::multi_6:
+- upali strop spavaca3 then ugasi svjetlo hodnik
+multiple_intents/multiple_intents::multi_7:
+- upali scena movie_night then ugasi posuda
+multiple_intents/multiple_intents::multi_8:
+- otvori brava garage then kako svjetlo garage
+multiple_intents/multiple_intents::multi_9:
+- pause tv dnevni then ugasi strop dnevni

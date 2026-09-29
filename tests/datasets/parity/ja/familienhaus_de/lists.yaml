@@ -1,0 +1,10 @@
+lists/lists::chores_add_wipe_down_the_counte:
+- 追加 Wipe aufgabenliste
+lists/lists::chores_complete_scrub_the_toilet:
+- 完了 Scrub aufgabenliste
+lists/lists::chores_remove_mop_the_kitchen_floo:
+- 追加 Mop aufgabenliste
+lists/lists::shopping_list_add_apples:
+- 追加 apples リスト
+lists/lists::shopping_list_complete_bread:
+- 完了 bread リスト

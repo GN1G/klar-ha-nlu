@@ -1,0 +1,507 @@
+name: Full Home mr
+language: mr
+difficulty: full
+policy:
+  preferred_climate: climate.upper_thermostat
+  timer_hints:
+    90: laundry
+floors:
+- id: ground
+  name: khali
+  level: 0
+  aliases:
+  - khali
+  - bhumi
+- id: upper
+  name: var
+  level: 1
+  aliases:
+  - var
+  - majla
+- id: basement
+  name: basement
+  level: -1
+  aliases:
+  - basement
+  - keller
+areas:
+- id: entryway
+  name: Pravesh
+  floor: ground
+  aliases:
+  - pravesh
+- id: living
+  name: बैठक
+  floor: ground
+  aliases:
+  - बैठक
+  - baithak
+- id: dining
+  name: Kutumbess
+  floor: ground
+  aliases:
+  - kutumbess
+- id: kitchen
+  name: स्वयंपाक
+  floor: ground
+  aliases:
+  - स्वयंपाक
+  - svayampak
+- id: family_room
+  name: Kutumb
+  floor: ground
+  aliases:
+  - kutumb
+- id: laundry
+  name: Dhune
+  floor: ground
+  aliases:
+  - dhune
+- id: powder_room
+  name: Swachhata
+  floor: ground
+  aliases:
+  - swachhata
+- id: garage
+  name: Garage
+  floor: ground
+  aliases:
+  - garage
+- id: office
+  name: Office
+  floor: ground
+  aliases:
+  - office
+- id: garden
+  name: Garden
+  floor: ground
+  aliases:
+  - garden
+- id: master_bedroom
+  name: Shayankakshmaster
+  floor: upper
+  aliases:
+  - shayankakshmaster
+  - shayankaksh
+- id: bedroom_2
+  name: Shayankaksh2
+  floor: upper
+  aliases:
+  - shayankaksh2
+- id: bedroom_3
+  name: Shayankaksh3
+  floor: upper
+  aliases:
+  - shayankaksh3
+- id: bedroom_4
+  name: Shayankaksh4
+  floor: upper
+  aliases:
+  - shayankaksh4
+- id: master_bath
+  name: Mukhyasnan
+  floor: upper
+  aliases:
+  - mukhyasnan
+- id: main_bath
+  name: Main Bath
+  floor: upper
+  aliases:
+  - main bath
+- id: hallway
+  name: Hallway
+  floor: upper
+  aliases:
+  - hallway
+- id: basement
+  name: Basement
+  floor: basement
+  aliases:
+  - basement
+devices:
+- id: light.entryway_light
+  area_id: entryway
+  name: pravesh दिवा
+  aliases:
+  - pravesh दिवा
+  - दिवा
+- id: light.living_ceiling
+  area_id: living
+  name: बैठक chhat
+  aliases:
+  - बैठक chhat
+  - chhat
+- id: light.living_lamp
+  area_id: living
+  name: बैठक diva
+  aliases:
+  - बैठक diva
+  - diva
+- id: light.dining_pendant
+  area_id: dining
+  name: kutumbess दिवा
+  aliases:
+  - kutumbess दिवा
+  - दिवा
+- id: light.kitchen_ceiling
+  area_id: kitchen
+  name: स्वयंपाक chhat
+  aliases:
+  - स्वयंपाक chhat
+  - chhat
+- id: light.kitchen_island
+  area_id: kitchen
+  name: स्वयंपाक dweep
+  aliases:
+  - स्वयंपाक dweep
+  - dweep
+- id: light.family_ceiling
+  area_id: family_room
+  name: kutumb chhat
+  aliases:
+  - kutumb chhat
+  - chhat
+- id: light.laundry_light
+  area_id: laundry
+  name: dhune दिवा
+  aliases:
+  - dhune दिवा
+  - दिवा
+- id: light.powder_room_light
+  area_id: powder_room
+  name: swachhata दिवा
+  aliases:
+  - swachhata दिवा
+  - दिवा
+- id: light.garage_light
+  area_id: garage
+  name: garage दिवा
+  aliases:
+  - garage दिवा
+  - दिवा
+- id: light.office_ceiling
+  area_id: office
+  name: office chhat
+  aliases:
+  - office chhat
+  - chhat
+- id: light.garden
+  area_id: garden
+  name: garden दिवा
+  aliases:
+  - garden दिवा
+  - दिवा
+- id: light.master_ceiling
+  area_id: master_bedroom
+  name: shayankakshmaster chhat
+  aliases:
+  - shayankakshmaster chhat
+  - chhat
+- id: light.master_ensuite
+  area_id: master_bedroom
+  name: shayankakshmaster ensuite
+  aliases:
+  - shayankakshmaster ensuite
+  - ensuite
+  tags:
+  - ensuite
+- id: light.master_bedside_left
+  area_id: master_bedroom
+  name: shayankakshmaster left palang
+  aliases:
+  - shayankakshmaster left palang
+  - palang
+- id: light.master_bedside_right
+  area_id: master_bedroom
+  name: shayankakshmaster right palang
+  aliases:
+  - shayankakshmaster right palang
+  - palang
+- id: light.bedroom2_ceiling
+  area_id: bedroom_2
+  name: shayankaksh2 chhat
+  aliases:
+  - shayankaksh2 chhat
+  - chhat
+- id: light.bedroom3_ceiling
+  area_id: bedroom_3
+  name: shayankaksh3 chhat
+  aliases:
+  - shayankaksh3 chhat
+  - chhat
+- id: light.bedroom4_ceiling
+  area_id: bedroom_4
+  name: shayankaksh4 chhat
+  aliases:
+  - shayankaksh4 chhat
+  - chhat
+- id: light.master_bath_light
+  area_id: master_bath
+  name: mukhyasnan दिवा
+  aliases:
+  - mukhyasnan दिवा
+  - दिवा
+- id: light.main_bath_light
+  area_id: main_bath
+  name: main bath दिवा
+  aliases:
+  - main bath दिवा
+  - दिवा
+- id: light.hallway_light
+  area_id: hallway
+  name: hallway दिवा
+  aliases:
+  - hallway दिवा
+  - दिवा
+- id: light.basement
+  area_id: basement
+  name: basement दिवा
+  aliases:
+  - basement दिवा
+  - दिवा
+- id: cover.living_blinds
+  area_id: living
+  name: बैठक पडदा
+  aliases:
+  - बैठक पडदा
+  - पडदा
+- id: cover.master_blinds
+  area_id: master_bedroom
+  name: shayankakshmaster पडदा
+  aliases:
+  - shayankakshmaster पडदा
+  - पडदा
+- id: cover.bedroom2_blinds
+  area_id: bedroom_2
+  name: shayankaksh2 पडदा
+  aliases:
+  - shayankaksh2 पडदा
+  - पडदा
+- id: cover.bedroom3_blinds
+  area_id: bedroom_3
+  name: shayankaksh3 पडदा
+  aliases:
+  - shayankaksh3 पडदा
+  - पडदा
+- id: cover.garage_door
+  area_id: garage
+  name: garage पडदा
+  aliases:
+  - garage पडदा
+  - पडदा
+- id: climate.ground_thermostat
+  area_id: living
+  name: बैठक उष्णता
+  aliases:
+  - बैठक उष्णता
+  - उष्णता
+- id: climate.upper_thermostat
+  area_id: master_bedroom
+  name: shayankakshmaster उष्णता
+  aliases:
+  - shayankakshmaster उष्णता
+  - उष्णता
+- id: climate.master_ac
+  area_id: master_bedroom
+  name: ushnata shayankakshmaster
+  aliases:
+  - ushnata shayankakshmaster
+  - ushnata
+  - ac
+  tags:
+  - ushnata
+- id: fan.family_fan
+  area_id: family_room
+  name: kutumb पंखा
+  aliases:
+  - kutumb पंखा
+  - पंखा
+- id: fan.master_fan
+  area_id: master_bedroom
+  name: shayankakshmaster पंखा
+  aliases:
+  - shayankakshmaster पंखा
+  - पंखा
+- id: fan.bedroom2_fan
+  area_id: bedroom_2
+  name: shayankaksh2 पंखा
+  aliases:
+  - shayankaksh2 पंखा
+  - पंखा
+- id: lock.front_door
+  area_id: entryway
+  name: front दरवाजा
+  aliases:
+  - front दरवाजा
+  tags:
+  - front
+- id: lock.garage_entry
+  area_id: garage
+  name: garage दरवाजा
+  aliases:
+  - garage दरवाजा
+  tags:
+  - garage
+- id: switch.dishwasher
+  area_id: kitchen
+  name: स्वयंपाक bhandi
+  aliases:
+  - स्वयंपाक bhandi
+  - bhandi
+- id: switch.rangehood
+  area_id: kitchen
+  name: स्वयंपाक rangehood
+  aliases:
+  - स्वयंपाक rangehood
+  - rangehood
+  tags:
+  - rangehood
+- id: switch.washing_machine
+  area_id: laundry
+  name: dhune washing
+  aliases:
+  - dhune washing
+  - washing
+  - washer
+  tags:
+  - washer
+  - washing
+- id: switch.dryer
+  area_id: laundry
+  name: dhune dryer
+  aliases:
+  - dhune dryer
+  - dryer
+  tags:
+  - dryer
+- id: switch.master_bath_fan
+  area_id: master_bath
+  name: mukhyasnan पंखाbad
+  aliases:
+  - mukhyasnan पंखाbad
+  - पंखाbad
+  tags:
+  - पंखाbad
+- id: switch.main_bath_fan
+  area_id: main_bath
+  name: main bath पंखाbad
+  aliases:
+  - main bath पंखाbad
+  - पंखाbad
+  tags:
+  - पंखाbad
+- id: media_player.living_tv
+  area_id: living
+  name: बैठक tv
+  aliases:
+  - बैठक tv
+  - tv
+- id: media_player.family_tv
+  area_id: family_room
+  name: kutumb tv
+  aliases:
+  - kutumb tv
+  - tv
+- id: media_player.living_music
+  area_id: living
+  name: बैठक टीव्ही
+  aliases:
+  - बैठक टीव्ही
+  - टीव्ही
+  platform: music_assistant
+  tags:
+  - टीव्ही
+- id: media_player.kitchen_music
+  area_id: kitchen
+  name: स्वयंपाक टीव्ही
+  aliases:
+  - स्वयंपाक टीव्ही
+  - टीव्ही
+  platform: music_assistant
+  tags:
+  - टीव्ही
+- id: media_player.office_music
+  area_id: office
+  name: office टीव्ही
+  aliases:
+  - office टीव्ही
+  - टीव्ही
+  platform: music_assistant
+  tags:
+  - टीव्ही
+- id: vacuum.robot
+  area_id: living
+  name: बैठक झाडू
+  aliases:
+  - बैठक झाडू
+  - झाडू
+- id: binary_sensor.front_door_sensor
+  area_id: entryway
+  name: pravesh doorsensor
+  aliases:
+  - pravesh doorsensor
+  - doorsensor
+  tags:
+  - doorsensor
+- id: binary_sensor.living_window
+  area_id: living
+  name: बैठक windowsensor
+  aliases:
+  - बैठक windowsensor
+  - windowsensor
+  tags:
+  - windowsensor
+- id: binary_sensor.kitchen_motion
+  area_id: kitchen
+  name: स्वयंपाक motion
+  aliases:
+  - स्वयंपाक motion
+  - motion
+  tags:
+  - motion
+- id: sensor.living_temperature
+  area_id: living
+  name: बैठक tempsensor
+  aliases:
+  - बैठक tempsensor
+  - tempsensor
+  tags:
+  - tempsensor
+- id: sensor.living_humidity
+  area_id: living
+  name: बैठक humidity
+  aliases:
+  - बैठक humidity
+  - humidity
+  tags:
+  - humidity
+- id: weather.home
+  area_id: garden
+  name: garden weather
+  aliases:
+  - garden weather
+  - weather
+scenes:
+- id: movie_night
+  name: chitrapat
+- id: dinner_time
+  name: dinner
+- id: kids_bedtime
+  name: kids
+- id: good_morning
+  name: morning
+scripts:
+- id: good_night
+  name: ratra
+- id: leaving_home
+  name: jane
+timers:
+- id: oven
+  name: oven टाइमर
+- id: laundry
+  name: laundry टाइमर
+- id: abstract
+  name: abstract टाइमर
+lists:
+- id: shopping
+  name: यादी

@@ -1,0 +1,82 @@
+area/heizung::heizung_badezimmer_23:
+- ตั้ง แอร์ hongnamlak 23
+area/heizung::heizung_esszimmer_23:
+- ตั้ง แอร์ hongkhropkhruaess 23
+area/heizung::heizung_schlafzimmer_23:
+- ตั้ง แอร์ hongnon 23
+area/heizung::heizung_wohnzimmer_23:
+- ตั้ง แอร์ ห้องนั่งเล่น 23
+area/lichter::alle_an_ausser_kugel:
+- เปิด ทั้งหมด ไฟ ยกเว้น luk
+area/lichter::alle_an_ausser_schlafzimmer:
+- เปิด ทั้งหมด ไฟ ยกเว้น hongnon
+area/lichter::alle_auf_20_ausser_schlafzimmer:
+- ตั้ง ทั้งหมด ไฟ ยกเว้น hongnon 20
+area/lichter::alle_auf_rot_ausser_kugel:
+- ตั้ง ทั้งหมด ไฟ ยกเว้น luk แดง
+area/lichter::alle_ausser_kugel:
+- ปิด ทั้งหมด ไฟ ยกเว้น luk
+area/lichter::alle_ausser_schlafzimmer:
+- ปิด ทั้งหมด ไฟ ยกเว้น hongnon
+area/lichter::alle_lichter_an:
+- เปิด ทั้งหมด ไฟ
+area/lichter::alle_lichter_aus:
+- ปิด ทั้งหมด ไฟ
+area/lichter::arbeitszimmer_lichter_an:
+- เปิด ทั้งหมด ไฟ office
+area/lichter::arbeitszimmer_lichter_aus:
+- ปิด ทั้งหมด ไฟ office
+area/lichter::esszimmer_lichter_an:
+- เปิด ทั้งหมด ไฟ hongkhropkhruaess
+area/lichter::esszimmer_lichter_aus:
+- ปิด ทั้งหมด ไฟ hongkhropkhruaess
+area/lichter::kuche_lichter_an:
+- เปิด ทั้งหมด ไฟ ห้องครัว
+area/lichter::kuche_lichter_aus:
+- ปิด ทั้งหมด ไฟ ห้องครัว
+area/lichter::schlafzimmer_auf_blau:
+- ตั้ง ทั้งหมด ไฟ hongnon น้ำเงิน
+area/lichter::schlafzimmer_auf_rot:
+- ตั้ง ทั้งหมด ไฟ hongnon แดง
+area/lichter::wohnzimmer_helligkeit:
+- ตั้ง ทั้งหมด ไฟ ห้องนั่งเล่น 45
+area/lichter::wohnzimmer_lichter_an:
+- เปิด ทั้งหมด ไฟ ห้องนั่งเล่น
+area/lichter::wohnzimmer_lichter_aus:
+- ปิด ทั้งหมด ไฟ ห้องนั่งเล่น
+area/spoken::alle_ausser_kugel_stt:
+- ปิด ทั้งหมด ไฟ ยกเว้น luk
+area/spoken::alle_ausser_schlaf_stt:
+- ปิด ทั้งหมด ไฟ ยกเว้น hongnon
+area/spoken::alle_ganzen_an:
+- เปิด ทั้งหมด ไฟ
+area/spoken::alle_lampen_aus:
+- ปิด ทั้งหมด ไฟ
+area/spoken::esszimmer_weiss:
+- ตั้ง ทั้งหมด ไฟ hongkhropkhruaess ขาว
+area/spoken::stt_kuche_lichte:
+- ปิด ทั้งหมด ไฟ ห้องครัว
+area/spoken::stt_licht_wohnzimmer_an:
+- เปิด ทั้งหมด ไฟ ห้องนั่งเล่น
+area/spoken::stt_licht_wohnzimmer_aus:
+- ปิด ทั้งหมด ไฟ ห้องนั่งเล่น
+area/spoken::stt_schlafzimmer_dativ:
+- ปิด ทั้งหมด ไฟ hongnon
+area/spoken::wohnzimmer_gruen:
+- ตั้ง ทั้งหมด ไฟ ห้องนั่งเล่น เขียว
+area/spoken_more::alle_ausser_arbeitszimmer:
+- ปิด ทั้งหมด ไฟ ยกเว้น office
+area/spoken_more::arbeitszimmer_lampen_aus:
+- ปิด ทั้งหมด ไฟ office
+area/spoken_more::esszimmer_30:
+- ตั้ง ทั้งหมด ไฟ hongkhropkhruaess 30
+area/spoken_more::esszimmer_lichte_an:
+- เปิด ทั้งหมด ไฟ hongkhropkhruaess
+area/spoken_more::kuche_80:
+- ตั้ง ทั้งหมด ไฟ ห้องครัว 80
+area/spoken_more::kuche_blau:
+- ตั้ง ทั้งหมด ไฟ ห้องครัว น้ำเงิน
+area/spoken_more::ueberall_ausser_schlaf_stt:
+- ปิด ทั้งหมด ไฟ ยกเว้น hongnon
+area/spoken_more::wohnzimmer_gelb:
+- ตั้ง ทั้งหมด ไฟ ห้องนั่งเล่น เหลือง

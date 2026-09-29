@@ -1,0 +1,507 @@
+name: Full Home th
+language: th
+difficulty: full
+policy:
+  preferred_climate: climate.upper_thermostat
+  timer_hints:
+    90: laundry
+floors:
+- id: ground
+  name: chanlang
+  level: 0
+  aliases:
+  - chanlang
+  - lang
+- id: upper
+  name: chanbon
+  level: 1
+  aliases:
+  - chanbon
+  - bon
+- id: basement
+  name: basement
+  level: -1
+  aliases:
+  - basement
+  - keller
+areas:
+- id: entryway
+  name: Thangkhau
+  floor: ground
+  aliases:
+  - thangkhau
+- id: living
+  name: ห้องนั่งเล่น
+  floor: ground
+  aliases:
+  - ห้องนั่งเล่น
+  - hongnang
+- id: dining
+  name: Hongkhropkhruaess
+  floor: ground
+  aliases:
+  - hongkhropkhruaess
+- id: kitchen
+  name: ห้องครัว
+  floor: ground
+  aliases:
+  - ห้องครัว
+  - hongkrua
+- id: family_room
+  name: Hongkhropkhrua
+  floor: ground
+  aliases:
+  - hongkhropkhrua
+- id: laundry
+  name: Hongsakpha
+  floor: ground
+  aliases:
+  - hongsakpha
+- id: powder_room
+  name: Hongnamkhaek
+  floor: ground
+  aliases:
+  - hongnamkhaek
+- id: garage
+  name: Garage
+  floor: ground
+  aliases:
+  - garage
+- id: office
+  name: Office
+  floor: ground
+  aliases:
+  - office
+- id: garden
+  name: Garden
+  floor: ground
+  aliases:
+  - garden
+- id: master_bedroom
+  name: Hongnonmaster
+  floor: upper
+  aliases:
+  - hongnonmaster
+  - hongnon
+- id: bedroom_2
+  name: Hongnon2
+  floor: upper
+  aliases:
+  - hongnon2
+- id: bedroom_3
+  name: Hongnon3
+  floor: upper
+  aliases:
+  - hongnon3
+- id: bedroom_4
+  name: Hongnon4
+  floor: upper
+  aliases:
+  - hongnon4
+- id: master_bath
+  name: Hongnamlak
+  floor: upper
+  aliases:
+  - hongnamlak
+- id: main_bath
+  name: Main Bath
+  floor: upper
+  aliases:
+  - main bath
+- id: hallway
+  name: Hallway
+  floor: upper
+  aliases:
+  - hallway
+- id: basement
+  name: Basement
+  floor: basement
+  aliases:
+  - basement
+devices:
+- id: light.entryway_light
+  area_id: entryway
+  name: thangkhau ไฟ
+  aliases:
+  - thangkhau ไฟ
+  - ไฟ
+- id: light.living_ceiling
+  area_id: living
+  name: ห้องนั่งเล่น phalang
+  aliases:
+  - ห้องนั่งเล่น phalang
+  - phalang
+- id: light.living_lamp
+  area_id: living
+  name: ห้องนั่งเล่น fai
+  aliases:
+  - ห้องนั่งเล่น fai
+  - fai
+- id: light.dining_pendant
+  area_id: dining
+  name: hongkhropkhruaess ไฟ
+  aliases:
+  - hongkhropkhruaess ไฟ
+  - ไฟ
+- id: light.kitchen_ceiling
+  area_id: kitchen
+  name: ห้องครัว phalang
+  aliases:
+  - ห้องครัว phalang
+  - phalang
+- id: light.kitchen_island
+  area_id: kitchen
+  name: ห้องครัว ko
+  aliases:
+  - ห้องครัว ko
+  - ko
+- id: light.family_ceiling
+  area_id: family_room
+  name: hongkhropkhrua phalang
+  aliases:
+  - hongkhropkhrua phalang
+  - phalang
+- id: light.laundry_light
+  area_id: laundry
+  name: hongsakpha ไฟ
+  aliases:
+  - hongsakpha ไฟ
+  - ไฟ
+- id: light.powder_room_light
+  area_id: powder_room
+  name: hongnamkhaek ไฟ
+  aliases:
+  - hongnamkhaek ไฟ
+  - ไฟ
+- id: light.garage_light
+  area_id: garage
+  name: garage ไฟ
+  aliases:
+  - garage ไฟ
+  - ไฟ
+- id: light.office_ceiling
+  area_id: office
+  name: office phalang
+  aliases:
+  - office phalang
+  - phalang
+- id: light.garden
+  area_id: garden
+  name: garden ไฟ
+  aliases:
+  - garden ไฟ
+  - ไฟ
+- id: light.master_ceiling
+  area_id: master_bedroom
+  name: hongnonmaster phalang
+  aliases:
+  - hongnonmaster phalang
+  - phalang
+- id: light.master_ensuite
+  area_id: master_bedroom
+  name: hongnonmaster ensuite
+  aliases:
+  - hongnonmaster ensuite
+  - ensuite
+  tags:
+  - ensuite
+- id: light.master_bedside_left
+  area_id: master_bedroom
+  name: hongnonmaster left khangtiang
+  aliases:
+  - hongnonmaster left khangtiang
+  - khangtiang
+- id: light.master_bedside_right
+  area_id: master_bedroom
+  name: hongnonmaster right khangtiang
+  aliases:
+  - hongnonmaster right khangtiang
+  - khangtiang
+- id: light.bedroom2_ceiling
+  area_id: bedroom_2
+  name: hongnon2 phalang
+  aliases:
+  - hongnon2 phalang
+  - phalang
+- id: light.bedroom3_ceiling
+  area_id: bedroom_3
+  name: hongnon3 phalang
+  aliases:
+  - hongnon3 phalang
+  - phalang
+- id: light.bedroom4_ceiling
+  area_id: bedroom_4
+  name: hongnon4 phalang
+  aliases:
+  - hongnon4 phalang
+  - phalang
+- id: light.master_bath_light
+  area_id: master_bath
+  name: hongnamlak ไฟ
+  aliases:
+  - hongnamlak ไฟ
+  - ไฟ
+- id: light.main_bath_light
+  area_id: main_bath
+  name: main bath ไฟ
+  aliases:
+  - main bath ไฟ
+  - ไฟ
+- id: light.hallway_light
+  area_id: hallway
+  name: hallway ไฟ
+  aliases:
+  - hallway ไฟ
+  - ไฟ
+- id: light.basement
+  area_id: basement
+  name: basement ไฟ
+  aliases:
+  - basement ไฟ
+  - ไฟ
+- id: cover.living_blinds
+  area_id: living
+  name: ห้องนั่งเล่น ม่าน
+  aliases:
+  - ห้องนั่งเล่น ม่าน
+  - ม่าน
+- id: cover.master_blinds
+  area_id: master_bedroom
+  name: hongnonmaster ม่าน
+  aliases:
+  - hongnonmaster ม่าน
+  - ม่าน
+- id: cover.bedroom2_blinds
+  area_id: bedroom_2
+  name: hongnon2 ม่าน
+  aliases:
+  - hongnon2 ม่าน
+  - ม่าน
+- id: cover.bedroom3_blinds
+  area_id: bedroom_3
+  name: hongnon3 ม่าน
+  aliases:
+  - hongnon3 ม่าน
+  - ม่าน
+- id: cover.garage_door
+  area_id: garage
+  name: garage ม่าน
+  aliases:
+  - garage ม่าน
+  - ม่าน
+- id: climate.ground_thermostat
+  area_id: living
+  name: ห้องนั่งเล่น แอร์
+  aliases:
+  - ห้องนั่งเล่น แอร์
+  - แอร์
+- id: climate.upper_thermostat
+  area_id: master_bedroom
+  name: hongnonmaster แอร์
+  aliases:
+  - hongnonmaster แอร์
+  - แอร์
+- id: climate.master_ac
+  area_id: master_bedroom
+  name: air hongnonmaster
+  aliases:
+  - air hongnonmaster
+  - air
+  - ac
+  tags:
+  - air
+- id: fan.family_fan
+  area_id: family_room
+  name: hongkhropkhrua พัดลม
+  aliases:
+  - hongkhropkhrua พัดลม
+  - พัดลม
+- id: fan.master_fan
+  area_id: master_bedroom
+  name: hongnonmaster พัดลม
+  aliases:
+  - hongnonmaster พัดลม
+  - พัดลม
+- id: fan.bedroom2_fan
+  area_id: bedroom_2
+  name: hongnon2 พัดลม
+  aliases:
+  - hongnon2 พัดลม
+  - พัดลม
+- id: lock.front_door
+  area_id: entryway
+  name: front ประตู
+  aliases:
+  - front ประตู
+  tags:
+  - front
+- id: lock.garage_entry
+  area_id: garage
+  name: garage ประตู
+  aliases:
+  - garage ประตู
+  tags:
+  - garage
+- id: switch.dishwasher
+  area_id: kitchen
+  name: ห้องครัว langchan
+  aliases:
+  - ห้องครัว langchan
+  - langchan
+- id: switch.rangehood
+  area_id: kitchen
+  name: ห้องครัว rangehood
+  aliases:
+  - ห้องครัว rangehood
+  - rangehood
+  tags:
+  - rangehood
+- id: switch.washing_machine
+  area_id: laundry
+  name: hongsakpha sakpha
+  aliases:
+  - hongsakpha sakpha
+  - sakpha
+  - washer
+  tags:
+  - washer
+  - sakpha
+- id: switch.dryer
+  area_id: laundry
+  name: hongsakpha dryer
+  aliases:
+  - hongsakpha dryer
+  - dryer
+  tags:
+  - dryer
+- id: switch.master_bath_fan
+  area_id: master_bath
+  name: hongnamlak พัดลมbad
+  aliases:
+  - hongnamlak พัดลมbad
+  - พัดลมbad
+  tags:
+  - พัดลมbad
+- id: switch.main_bath_fan
+  area_id: main_bath
+  name: main bath พัดลมbad
+  aliases:
+  - main bath พัดลมbad
+  - พัดลมbad
+  tags:
+  - พัดลมbad
+- id: media_player.living_tv
+  area_id: living
+  name: ห้องนั่งเล่น thorathat
+  aliases:
+  - ห้องนั่งเล่น thorathat
+  - thorathat
+- id: media_player.family_tv
+  area_id: family_room
+  name: hongkhropkhrua thorathat
+  aliases:
+  - hongkhropkhrua thorathat
+  - thorathat
+- id: media_player.living_music
+  area_id: living
+  name: ห้องนั่งเล่น ทีวี
+  aliases:
+  - ห้องนั่งเล่น ทีวี
+  - ทีวี
+  platform: music_assistant
+  tags:
+  - ทีวี
+- id: media_player.kitchen_music
+  area_id: kitchen
+  name: ห้องครัว ทีวี
+  aliases:
+  - ห้องครัว ทีวี
+  - ทีวี
+  platform: music_assistant
+  tags:
+  - ทีวี
+- id: media_player.office_music
+  area_id: office
+  name: office ทีวี
+  aliases:
+  - office ทีวี
+  - ทีวี
+  platform: music_assistant
+  tags:
+  - ทีวี
+- id: vacuum.robot
+  area_id: living
+  name: ห้องนั่งเล่น ดูดฝุ่น
+  aliases:
+  - ห้องนั่งเล่น ดูดฝุ่น
+  - ดูดฝุ่น
+- id: binary_sensor.front_door_sensor
+  area_id: entryway
+  name: thangkhau doorsensor
+  aliases:
+  - thangkhau doorsensor
+  - doorsensor
+  tags:
+  - doorsensor
+- id: binary_sensor.living_window
+  area_id: living
+  name: ห้องนั่งเล่น windowsensor
+  aliases:
+  - ห้องนั่งเล่น windowsensor
+  - windowsensor
+  tags:
+  - windowsensor
+- id: binary_sensor.kitchen_motion
+  area_id: kitchen
+  name: ห้องครัว motion
+  aliases:
+  - ห้องครัว motion
+  - motion
+  tags:
+  - motion
+- id: sensor.living_temperature
+  area_id: living
+  name: ห้องนั่งเล่น tempsensor
+  aliases:
+  - ห้องนั่งเล่น tempsensor
+  - tempsensor
+  tags:
+  - tempsensor
+- id: sensor.living_humidity
+  area_id: living
+  name: ห้องนั่งเล่น humidity
+  aliases:
+  - ห้องนั่งเล่น humidity
+  - humidity
+  tags:
+  - humidity
+- id: weather.home
+  area_id: garden
+  name: garden weather
+  aliases:
+  - garden weather
+  - weather
+scenes:
+- id: movie_night
+  name: nang
+- id: dinner_time
+  name: dinner
+- id: kids_bedtime
+  name: kids
+- id: good_morning
+  name: morning
+scripts:
+- id: good_night
+  name: khuen
+- id: leaving_home
+  name: ok
+timers:
+- id: oven
+  name: oven ตั้งเวลา
+- id: laundry
+  name: laundry ตั้งเวลา
+- id: abstract
+  name: abstract ตั้งเวลา
+lists:
+- id: shopping
+  name: รายการ

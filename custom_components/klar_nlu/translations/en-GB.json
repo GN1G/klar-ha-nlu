@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "This integration talks to Assist. A separate engine parses speech: the Klar NLU App, this bundled process, or Docker. On Home Assistant OS install the App as well, then pick Use the Klar NLU App. Without the App, pick Start the bundled engine. Do not run both. The release channel can be changed later.",
+        "data": {
+          "mode": "Engine",
+          "channel": "Release channel",
+          "url": "Klar API URL",
+          "token": "Write token"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL must be http(s) without userinfo."
+    },
+    "abort": {
+      "already_configured": "Klar NLU is already set up"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "Voice, Assist languages, and the LLM live in the Klar operator UI (Settings). This form only connects the engine: URL, token, and channel. {apps}",
+        "data": {
+          "mode": "Engine",
+          "url": "Klar API URL",
+          "token": "Write token",
+          "assist_filter": "Only control entities exposed to Assist",
+          "channel": "Release channel"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "Same token as the Klar add-on.",
+          "assist_filter": "On (default): only what Assist may see. Off: hidden entities too.",
+          "channel": "Stable vs staging for the host you picked above. App uses that add-on; bundled engine downloads that GitHub release. A custom URL is left alone."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL must be http(s) without userinfo."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "Start the bundled engine (HACS only)",
+        "remote": "Use the Klar NLU App or Docker"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (production)",
+        "staging": "Staging (release candidate)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "System language",
+        "all": "All languages"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "Normal",
+        "butler": "Butler",
+        "locker": "Casual",
+        "fuersorglich": "Caring",
+        "party": "Party",
+        "grantig": "Grumpy",
+        "sarkastisch": "Sarcastic",
+        "pirat": "Pirate",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "Personality",
+        "state": {
+          "default": "Normal",
+          "butler": "Butler",
+          "locker": "Casual",
+          "fuersorglich": "Caring",
+          "party": "Party",
+          "grantig": "Grumpy",
+          "sarkastisch": "Sarcastic",
+          "pirat": "Pirate",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "Short confirmation"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "AI Task"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "Last heard"
+      },
+      "last_decision": {
+        "name": "Last decision"
+      },
+      "last_speech": {
+        "name": "Last reply"
+      },
+      "last_area": {
+        "name": "Heard in"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Klar engine stopped",
+      "description": "The bundled Klar process is not running. Reload Klar NLU from Settings → Devices & Services."
+    }
+  }
+}

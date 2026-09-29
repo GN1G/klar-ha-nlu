@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "این یکپارچه‌سازی با Assist صحبت می‌کند. موتور جداگانه‌ای گفتار را تحلیل می‌کند: برنامه Klar NLU، فرایند همراه یا Docker. در Home Assistant OS برنامه را نصب کنید و استفاده از برنامه Klar NLU را انتخاب کنید. بدون برنامه موتور همراه را شروع کنید. هر دو را با هم اجرا نکنید.",
+        "data": {
+          "mode": "موتور",
+          "channel": "کانال انتشار",
+          "url": "نشانی API کلار",
+          "token": "توکن نوشتن"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "نشانی باید http(s) باشد و نام کاربری نداشته باشد."
+    },
+    "abort": {
+      "already_configured": "Klar NLU از قبل پیکربندی شده"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "صدا، زبان‌های Assist و مدل زبانی در رابط اپراتور Klar (تنظیمات) هستند. این فرم فقط موتور را وصل می‌کند: نشانی، رمز و کانال. {apps}",
+        "data": {
+          "mode": "موتور",
+          "url": "نشانی API کلار",
+          "token": "توکن نوشتن",
+          "assist_filter": "فقط نهادهای نمایان برای Assist را کنترل کن",
+          "channel": "کانال انتشار"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "همان توکن برنامه Klar.",
+          "assist_filter": "روشن: فقط آنچه Assist می‌بیند. خاموش: شامل نهادهای پنهان.",
+          "channel": "هر زمان. Staging به Klar NLU (Staging) اشاره می‌کند."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "نشانی باید http(s) باشد و نام کاربری نداشته باشد."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "شروع موتور همراه (فقط HACS)",
+        "remote": "استفاده از برنامه Klar NLU یا Docker"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (تولید)",
+        "staging": "Staging (نامزد)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "زبان سیستم",
+        "all": "همه زبان‌ها"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "معمولی",
+        "butler": "Butler",
+        "locker": "راحت",
+        "fuersorglich": "مهربان",
+        "party": "Party",
+        "grantig": "بدخلق",
+        "sarkastisch": "طعنه‌آمیز",
+        "pirat": "دزد دریایی",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "شخصیت",
+        "state": {
+          "default": "معمولی",
+          "butler": "Butler",
+          "locker": "راحت",
+          "fuersorglich": "مهربان",
+          "party": "Party",
+          "grantig": "بدخلق",
+          "sarkastisch": "طعنه‌آمیز",
+          "pirat": "دزد دریایی",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "تأیید کوتاه"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "وظیفه هوش مصنوعی"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "آخرین شنیده"
+      },
+      "last_decision": {
+        "name": "آخرین تصمیم"
+      },
+      "last_speech": {
+        "name": "آخرین پاسخ"
+      },
+      "last_area": {
+        "name": "شنیده در"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "موتور Klar متوقف شد",
+      "description": "فرایند همراه Klar در حال اجرا نیست. Klar NLU را در تنظیمات ← دستگاه‌ها و خدمات دوباره بارگذاری کنید."
+    }
+  }
+}

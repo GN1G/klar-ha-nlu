@@ -1,0 +1,26 @@
+multiple_intents/multi::alle_ausser_schlaf_und_kueche:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು hodake shayanakone hodake ಅಡುಗೆ
+multiple_intents/multi::licht_und_heizung:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್ mattu ಹೊಂದಿಸು ಬಿಸಿ ಹಾಲ್ 23
+multiple_intents/multi::wohn_und_ess_aus:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್ mattu ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು kutumbaess
+multiple_intents/multi::wohn_und_ess_rot:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್ red mattu ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು kutumbaess red
+multiple_intents/multi::wz_und_kuche_licht:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್ mattu ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು ಅಡುಗೆ
+multiple_intents/multi::zwei_raeume_und_heizung:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್ mattu ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು ಅಡುಗೆ mattu ಹೊಂದಿಸು ಬಿಸಿ ಹಾಲ್ 23
+multiple_intents/spoken::drei_raeume_an:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್ mattu ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು kutumbaess mattu ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು ಅಡುಗೆ
+multiple_intents/spoken::drei_raeume_aus:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್ mattu ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು kutumbaess mattu ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು ಅಡುಗೆ
+multiple_intents/spoken::ess_und_wohn_aus:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್ mattu ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು kutumbaess
+multiple_intents/spoken::kugel_und_decke_aus:
+- goli ಮತ್ತು chavani shayanakone ಆರಿಸು
+multiple_intents/spoken_more::kuche_und_ess_an:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು ಅಡುಗೆ mattu ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು kutumbaess
+multiple_intents/spoken_more::wz_ess_arbeit_aus:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್ mattu ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು kutumbaess mattu ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು office
+multiple_intents/spoken_more::wz_und_arbeit_aus:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್ mattu ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು office

@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- ปิด phalang hongnon
+devices/geraete::device_arbeitszimmer_an:
+- เปิด ไฟ office
+devices/geraete::device_esszimmer_an:
+- เปิด ไฟ hongkhropkhruaess
+devices/geraete::device_kuche_kuche_an:
+- เปิด ไฟ ห้องครัว
+devices/geraete::device_wohnzimmer_an:
+- เปิด ไฟ ห้องนั่งเล่น
+devices/geraete::filmabend:
+- เปิด ฉาก filmabend
+devices/geraete::kugel_an:
+- เปิด luk
+devices/geraete::luefter_50:
+- ตั้ง พัดลม office 50
+devices/geraete::pc_an:
+- เปิด pc
+devices/geraete::r2d2_saugen:
+- เปิด ดูดฝุ่น ห้องนั่งเล่น
+devices/geraete::rollo_zu:
+- ปิด ม่าน ห้องนั่งเล่น
+devices/geraete::spuelmaschine_aus:
+- ปิด langchan
+devices/geraete::tuer_abschliessen:
+- กุญแจ กุญแจ thangkhau
+devices/geraete::waschmaschine_an:
+- เปิด sakpha
+devices/klima::klima_schlaf_21:
+- ตั้ง ac hongnon 21
+devices/spoken::deckenlampe_an:
+- เปิด phalang hongnon
+devices/spoken::kugel_aus:
+- ปิด luk
+devices/spoken::luefter_aus:
+- ปิด พัดลม office
+devices/spoken::rollo_auf:
+- เปิด ม่าน ห้องนั่งเล่น
+devices/spoken::trockner_an:
+- เปิด dryer
+devices/spoken::tv_aus:
+- ปิด tv
+devices/spoken_more::decke_aus_casual:
+- ปิด phalang hongnon
+devices/spoken_more::kugel_casual:
+- เปิด luk
+devices/spoken_more::pc_aus:
+- ปิด pc
+devices/spoken_more::spuelmaschine_an:
+- เปิด langchan
+devices/spoken_more::waschmaschine_aus:
+- ปิด sakpha

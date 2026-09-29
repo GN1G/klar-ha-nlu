@@ -1,0 +1,18 @@
+query_devices/spoken::status_kugel:
+- co kula
+query_devices/spoken::status_pc:
+- co pc
+query_devices/spoken::status_trockner:
+- co suszarka
+query_devices/spoken::status_tv:
+- co tv
+query_devices/spoken_more::status_decke:
+- co sufit sypialnia
+query_devices/spoken_more::status_spuelmaschine:
+- co zmywarka
+query_devices/spoken_more::status_wasch_casual:
+- co pralka
+query_devices/status::status_r2d2:
+- co odkurzacz salon
+query_devices/status::status_waschmaschine:
+- co pralka

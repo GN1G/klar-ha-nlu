@@ -1,0 +1,231 @@
+- name: climate.ground_thermostat_18
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 18
+  sentences:
+  - அமை வெப்பம் அறை 18
+  - வெப்பம் அறை 18
+- name: climate.ground_thermostat_19
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 19
+  sentences:
+  - அமை வெப்பம் அறை 19
+  - வெப்பம் அறை 19
+- name: climate.ground_thermostat_20
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 20
+  sentences:
+  - அமை வெப்பம் அறை 20
+  - வெப்பம் அறை 20
+- name: climate.ground_thermostat_21
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 21
+  sentences:
+  - அமை வெப்பம் அறை 21
+  - வெப்பம் அறை 21
+- name: climate.ground_thermostat_22
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 22
+  sentences:
+  - அமை வெப்பம் அறை 22
+  - வெப்பம் அறை 22
+- name: climate.ground_thermostat_23
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 23
+  sentences:
+  - அமை வெப்பம் அறை 23
+  - வெப்பம் அறை 23
+- name: climate.ground_thermostat_24
+  conditions:
+  - type: action
+    entity_id: climate.ground_thermostat
+    attributes:
+      temperature: 24
+  sentences:
+  - அமை வெப்பம் அறை 24
+  - வெப்பம் அறை 24
+- name: climate.ground_thermostat_get
+  conditions:
+  - type: query
+    entity_id: climate.ground_thermostat
+  sentences:
+  - என்ன வெப்பம் அறை
+  - வெப்பம் அறை
+- name: climate.upper_thermostat_18
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 18
+  sentences:
+  - அமை வெப்பம் padukkaiyaraimaster 18
+  - வெப்பம் padukkaiyaraimaster 18
+- name: climate.upper_thermostat_19
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 19
+  sentences:
+  - அமை வெப்பம் padukkaiyaraimaster 19
+  - வெப்பம் padukkaiyaraimaster 19
+- name: climate.upper_thermostat_20
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 20
+  sentences:
+  - அமை வெப்பம் padukkaiyaraimaster 20
+  - வெப்பம் padukkaiyaraimaster 20
+- name: climate.upper_thermostat_21
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 21
+  sentences:
+  - அமை வெப்பம் padukkaiyaraimaster 21
+  - வெப்பம் padukkaiyaraimaster 21
+- name: climate.upper_thermostat_22
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 22
+  sentences:
+  - அமை வெப்பம் padukkaiyaraimaster 22
+  - வெப்பம் padukkaiyaraimaster 22
+- name: climate.upper_thermostat_23
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 23
+  sentences:
+  - அமை வெப்பம் padukkaiyaraimaster 23
+  - வெப்பம் padukkaiyaraimaster 23
+- name: climate.upper_thermostat_24
+  conditions:
+  - type: action
+    entity_id: climate.upper_thermostat
+    attributes:
+      temperature: 24
+  sentences:
+  - அமை வெப்பம் padukkaiyaraimaster 24
+  - வெப்பம் padukkaiyaraimaster 24
+- name: climate.upper_thermostat_get
+  conditions:
+  - type: query
+    entity_id: climate.upper_thermostat
+  sentences:
+  - என்ன வெப்பம் padukkaiyaraimaster
+  - வெப்பம் padukkaiyaraimaster
+- name: climate.master_ac_18
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 18
+  sentences:
+  - அமை veppam padukkaiyaraimaster 18
+  - veppam padukkaiyaraimaster 18
+- name: climate.master_ac_19
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 19
+  sentences:
+  - அமை veppam padukkaiyaraimaster 19
+  - veppam padukkaiyaraimaster 19
+- name: climate.master_ac_20
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 20
+  sentences:
+  - அமை veppam padukkaiyaraimaster 20
+  - veppam padukkaiyaraimaster 20
+- name: climate.master_ac_21
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 21
+  sentences:
+  - அமை veppam padukkaiyaraimaster 21
+  - veppam padukkaiyaraimaster 21
+- name: climate.master_ac_22
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 22
+  sentences:
+  - அமை veppam padukkaiyaraimaster 22
+  - veppam padukkaiyaraimaster 22
+- name: climate.master_ac_23
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 23
+  sentences:
+  - அமை veppam padukkaiyaraimaster 23
+  - veppam padukkaiyaraimaster 23
+- name: climate.master_ac_24
+  conditions:
+  - type: action
+    entity_id: climate.master_ac
+    attributes:
+      temperature: 24
+  sentences:
+  - அமை veppam padukkaiyaraimaster 24
+  - veppam padukkaiyaraimaster 24
+- name: climate.master_ac_get
+  conditions:
+  - type: query
+    entity_id: climate.master_ac
+  sentences:
+  - என்ன veppam padukkaiyaraimaster
+  - veppam padukkaiyaraimaster
+- name: climate.ground_thermostat_get_full
+  conditions:
+  - type: query
+    entity_id: climate.ground_thermostat
+  sentences:
+  - என்ன வெப்பம் அறை
+  - வெப்பம் அறை
+- name: climate.upper_thermostat_get_full
+  conditions:
+  - type: query
+    entity_id: climate.upper_thermostat
+  sentences:
+  - என்ன வெப்பம் padukkaiyaraimaster
+  - வெப்பம் padukkaiyaraimaster
+- name: climate.master_ac_get_full
+  conditions:
+  - type: query
+    entity_id: climate.master_ac
+  sentences:
+  - என்ன veppam padukkaiyaraimaster
+  - veppam padukkaiyaraimaster

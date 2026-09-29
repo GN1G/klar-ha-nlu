@@ -1,0 +1,96 @@
+- name: switch.dishwasher_on
+  conditions:
+  - type: action
+    entity_id: switch.dishwasher
+    state: 'on'
+  sentences:
+  - തെളി pathram അടുക്കള
+  - pathram അടുക്കള തെളി
+- name: switch.dishwasher_off
+  conditions:
+  - type: action
+    entity_id: switch.dishwasher
+    state: 'off'
+  sentences:
+  - അണയ്ക്ക് pathram അടുക്കള
+  - pathram അടുക്കള അണയ്ക്ക്
+- name: switch.washing_machine_on
+  conditions:
+  - type: action
+    entity_id: switch.washing_machine
+    state: 'on'
+  sentences:
+  - തെളി washing alakku
+  - washing alakku തെളി
+- name: switch.washing_machine_off
+  conditions:
+  - type: action
+    entity_id: switch.washing_machine
+    state: 'off'
+  sentences:
+  - അണയ്ക്ക് washing alakku
+  - washing alakku അണയ്ക്ക്
+- name: switch.dryer_on
+  conditions:
+  - type: action
+    entity_id: switch.dryer
+    state: 'on'
+  sentences:
+  - തെളി dryer alakku
+  - dryer alakku തെളി
+- name: switch.dryer_off
+  conditions:
+  - type: action
+    entity_id: switch.dryer
+    state: 'off'
+  sentences:
+  - അണയ്ക്ക് dryer alakku
+  - dryer alakku അണയ്ക്ക്
+- name: switch.rangehood_on
+  conditions:
+  - type: action
+    entity_id: switch.rangehood
+    state: 'on'
+  sentences:
+  - തെളി rangehood അടുക്കള
+  - rangehood അടുക്കള തെളി
+- name: switch.rangehood_off
+  conditions:
+  - type: action
+    entity_id: switch.rangehood
+    state: 'off'
+  sentences:
+  - അണയ്ക്ക് rangehood അടുക്കള
+  - rangehood അടുക്കള അണയ്ക്ക്
+- name: switch.master_bath_fan_on
+  conditions:
+  - type: action
+    entity_id: switch.master_bath_fan
+    state: 'on'
+  sentences:
+  - തെളി ഫാൻbad masterbath
+  - ഫാൻbad masterbath തെളി
+- name: switch.master_bath_fan_off
+  conditions:
+  - type: action
+    entity_id: switch.master_bath_fan
+    state: 'off'
+  sentences:
+  - അണയ്ക്ക് ഫാൻbad masterbath
+  - ഫാൻbad masterbath അണയ്ക്ക്
+- name: switch.main_bath_fan_on
+  conditions:
+  - type: action
+    entity_id: switch.main_bath_fan
+    state: 'on'
+  sentences:
+  - തെളി ഫാൻbad main bath
+  - ഫാൻbad main bath തെളി
+- name: switch.main_bath_fan_off
+  conditions:
+  - type: action
+    entity_id: switch.main_bath_fan
+    state: 'off'
+  sentences:
+  - അണയ്ക്ക് ഫാൻbad main bath
+  - ഫാൻbad main bath അണയ്ക്ക്

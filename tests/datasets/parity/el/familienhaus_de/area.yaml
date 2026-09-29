@@ -1,0 +1,248 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- κλεισε κουρτινα υπνοδωματο2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- ανοιξε κουρτινα υπνοδωματο2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- βαλε κουρτινα υπνοδωματο2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- βαλε ανεμιστηρας υπνοδωματο2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- σβησε ανεμιστηρας υπνοδωματο2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- αναψε ανεμιστηρας υπνοδωματο2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- βαλε ολα φως υπνοδωματο2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- βαλε ολα φως υπνοδωματο2 pink
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- σβησε ολα φως υπνοδωματο2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- αναψε ολα φως υπνοδωματο2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- κλεισε κουρτινα υπνοδωματο3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- ανοιξε κουρτινα υπνοδωματο3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- βαλε κουρτινα υπνοδωματο3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- βαλε ολα φως υπνοδωματο3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- βαλε ολα φως υπνοδωματο3 blue
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- σβησε ολα φως υπνοδωματο3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- αναψε ολα φως υπνοδωματο3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- βαλε ολα φως υπνοδωματο4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- βαλε ολα φως υπνοδωματο4 green
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- σβησε ολα φως υπνοδωματο4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- αναψε ολα φως υπνοδωματο4
+area/dining_lights::dining_lights_change_brightness:
+- βαλε ολα φως σαλονιfamess 54
+area/dining_lights::dining_lights_change_color:
+- βαλε ολα φως σαλονιfamess blue
+area/dining_lights::dining_lights_turn_off:
+- σβησε ολα φως σαλονιfamess
+area/dining_lights::dining_lights_turn_on:
+- αναψε ολα φως σαλονιfamess
+area/entryway_lights::entryway_lights_change_brightness:
+- βαλε ολα φως εισοδος 72
+area/entryway_lights::entryway_lights_change_color:
+- βαλε ολα φως εισοδος black
+area/entryway_lights::entryway_lights_turn_off:
+- σβησε ολα φως εισοδος
+area/entryway_lights::entryway_lights_turn_on:
+- αναψε ολα φως εισοδος
+area/entryway_locks::entryway_locks_lock:
+- κλειδωσε κλειδαρια εισοδος
+area/entryway_locks::entryway_locks_unlock:
+- ξεκλειδωσε κλειδαρια εισοδος
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- βαλε ολα φως σαλονιfam 39 then βαλε ολα φως κουζινα 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- βαλε ολα φως σαλονιfam purple then βαλε ολα φως κουζινα purple
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- σβησε ολα φως σαλονιfam then σβησε ολα φως κουζινα
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- αναψε ολα φως σαλονιfam then αναψε ολα φως κουζινα
+area/family_room_fans::family_room_fans_set_fan_speed:
+- βαλε ανεμιστηρας σαλονιfam 32
+area/family_room_fans::family_room_fans_turn_off:
+- σβησε ανεμιστηρας σαλονιfam
+area/family_room_fans::family_room_fans_turn_on:
+- αναψε ανεμιστηρας σαλονιfam
+area/family_room_lights::family_room_lights_change_brightness:
+- βαλε ολα φως σαλονιfam 44
+area/family_room_lights::family_room_lights_change_color:
+- βαλε ολα φως σαλονιfam green
+area/family_room_lights::family_room_lights_turn_off:
+- σβησε ολα φως σαλονιfam
+area/family_room_lights::family_room_lights_turn_on:
+- αναψε ολα φως σαλονιfam
+area/garage_covers::garage_covers_close:
+- κλεισε κουρτινα garage
+area/garage_covers::garage_covers_open:
+- ανοιξε κουρτινα garage
+area/garage_covers::garage_covers_set_position:
+- βαλε κουρτινα garage 86
+area/garage_lights::garage_lights_change_brightness:
+- βαλε ολα φως garage 16
+area/garage_lights::garage_lights_change_color:
+- βαλε ολα φως garage blue
+area/garage_lights::garage_lights_turn_off:
+- σβησε ολα φως garage
+area/garage_lights::garage_lights_turn_on:
+- αναψε ολα φως garage
+area/garage_locks::garage_locks_lock:
+- κλειδωσε κλειδαρια garage
+area/garage_locks::garage_locks_unlock:
+- ξεκλειδωσε κλειδαρια garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- βαλε ολα φως εισοδοςgang 26 then βαλε ολα φως wc 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- βαλε ολα φως εισοδοςgang purple then βαλε ολα φως wc purple
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- σβησε ολα φως εισοδοςgang then σβησε ολα φως wc
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- αναψε ολα φως εισοδοςgang then αναψε ολα φως wc
+area/hallway_lights::hallway_lights_change_brightness:
+- βαλε ολα φως εισοδοςgang 61
+area/hallway_lights::hallway_lights_change_color:
+- βαλε ολα φως εισοδοςgang orange
+area/hallway_lights::hallway_lights_turn_off:
+- σβησε ολα φως εισοδοςgang
+area/hallway_lights::hallway_lights_turn_on:
+- αναψε ολα φως εισοδοςgang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- βαλε ολα φως κουζινα 45
+area/kitchen_lights::kitchen_lights_change_color:
+- βαλε ολα φως κουζινα pink
+area/kitchen_lights::kitchen_lights_turn_off:
+- σβησε ολα φως κουζινα
+area/kitchen_lights::kitchen_lights_turn_on:
+- αναψε ολα φως κουζινα
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- σβησε ολα συσκευη κουζινα
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- αναψε ολα συσκευη κουζινα
+area/laundry_lights::laundry_lights_change_brightness:
+- βαλε ολα φως πλυσταριο 62
+area/laundry_lights::laundry_lights_change_color:
+- βαλε ολα φως πλυσταριο yellow
+area/laundry_lights::laundry_lights_turn_off:
+- σβησε ολα φως πλυσταριο
+area/laundry_lights::laundry_lights_turn_on:
+- αναψε ολα φως πλυσταριο
+area/laundry_switchs::laundry_switchs_turn_off:
+- σβησε ολα συσκευη πλυσταριο
+area/laundry_switchs::laundry_switchs_turn_on:
+- αναψε ολα συσκευη πλυσταριο
+area/living_climates::living_climates_set_temperature:
+- βαλε θερμανση σαλονι 20
+area/living_covers::living_covers_close:
+- κλεισε κουρτινα σαλονι
+area/living_covers::living_covers_open:
+- ανοιξε κουρτινα σαλονι
+area/living_covers::living_covers_set_position:
+- βαλε κουρτινα σαλονι 46
+area/living_lights::living_lights_change_brightness:
+- βαλε ολα φως σαλονι 84
+area/living_lights::living_lights_change_color:
+- βαλε ολα φως σαλονι blue
+area/living_lights::living_lights_turn_off:
+- σβησε ολα φως σαλονι
+area/living_lights::living_lights_turn_on:
+- αναψε ολα φως σαλονι
+area/main_bath_lights::main_bath_lights_change_brightness:
+- βαλε ολα φως main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- βαλε ολα φως main bath pink
+area/main_bath_lights::main_bath_lights_turn_off:
+- σβησε ολα φως main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- αναψε ολα φως main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- σβησε ολα συσκευη main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- αναψε ολα συσκευη main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- βαλε ολα φως μπανιοmaster 60
+area/master_bath_lights::master_bath_lights_change_color:
+- βαλε ολα φως μπανιοmaster black
+area/master_bath_lights::master_bath_lights_turn_off:
+- σβησε ολα φως μπανιοmaster
+area/master_bath_lights::master_bath_lights_turn_on:
+- αναψε ολα φως μπανιοmaster
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- σβησε ολα συσκευη μπανιοmaster
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- αναψε ολα συσκευη μπανιοmaster
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- βαλε θερμανση υπνοδωματοmaster 20 then βαλε θερμανση σαλονι 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- κλεισε κουρτινα υπνοδωματοmaster then κλεισε κουρτινα σαλονι
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- ανοιξε κουρτινα υπνοδωματοmaster then ανοιξε κουρτινα σαλονι
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- βαλε κουρτινα υπνοδωματοmaster 19 then βαλε κουρτινα σαλονι 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- βαλε ολα φως υπνοδωματοmaster 25 then βαλε ολα φως σαλονι 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- βαλε ολα φως υπνοδωματοmaster white then βαλε ολα φως σαλονι white
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- σβησε ολα φως υπνοδωματοmaster then σβησε ολα φως σαλονι
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- αναψε ολα φως υπνοδωματοmaster then αναψε ολα φως σαλονι
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- βαλε ολα φως υπνοδωματοmaster 57 then βαλε ολα φως main bath 57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- βαλε ολα φως υπνοδωματοmaster pink then βαλε ολα φως main bath pink
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- σβησε ολα φως υπνοδωματοmaster then σβησε ολα φως main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- αναψε ολα φως υπνοδωματοmaster then αναψε ολα φως main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- βαλε θερμανση υπνοδωματοmaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- κλεισε κουρτινα υπνοδωματοmaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- ανοιξε κουρτινα υπνοδωματοmaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- βαλε κουρτινα υπνοδωματοmaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- βαλε ανεμιστηρας υπνοδωματοmaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- σβησε ανεμιστηρας υπνοδωματοmaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- αναψε ανεμιστηρας υπνοδωματοmaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- βαλε ολα φως υπνοδωματοmaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- βαλε ολα φως υπνοδωματοmaster pink
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- σβησε ολα φως υπνοδωματοmaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- αναψε ολα φως υπνοδωματοmaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- βαλε ολα φως wc 52
+area/powder_room_lights::powder_room_lights_change_color:
+- βαλε ολα φως wc purple
+area/powder_room_lights::powder_room_lights_turn_off:
+- σβησε ολα φως wc
+area/powder_room_lights::powder_room_lights_turn_on:
+- αναψε ολα φως wc
+area/spoken_lights::spoken_bedroom_inflection:
+- βαλε ολα φως υπνοδωματοmaster red
+area/spoken_lights::spoken_except_island:
+- σβησε ολα φως εκτος νησι
+area/spoken_lights::spoken_except_kitchen:
+- σβησε ολα φως εκτος κουζινα
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- σβησε ολα φως σαλονι then σβησε ολα φως σαλονιfamess then σβησε ολα φως κουζινα
+area/spoken_lights::spoken_stt_kitchen_off:
+- σβησε ολα φως κουζινα
+area/spoken_lights::spoken_stt_living_off:
+- σβησε ολα φως σαλονι

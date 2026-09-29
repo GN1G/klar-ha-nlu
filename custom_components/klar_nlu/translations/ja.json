@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "この連携は Assist と話します。音声は Klar NLU アプリ、同梱プロセス、または Docker が解析します。Home Assistant OS ではアプリも入れ、「Klar NLU アプリを使う」を選んでください。アプリがなければ同梱エンジンを起動します。両方は動かさないでください。",
+        "data": {
+          "mode": "エンジン",
+          "channel": "リリースチャネル",
+          "url": "Klar API の URL",
+          "token": "書き込みトークン"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL はユーザー情報なしの http(s) である必要があります。"
+    },
+    "abort": {
+      "already_configured": "Klar NLU はすでに設定されています"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "音声、Assist の言語、LLM は Klar オペレーター UI（設定）にあります。このフォームはエンジンの接続だけです：URL、トークン、チャネル。 {apps}",
+        "data": {
+          "mode": "エンジン",
+          "url": "Klar API の URL",
+          "token": "書き込みトークン",
+          "assist_filter": "Assist に公開されたエンティティだけ操作する",
+          "channel": "リリースチャネル"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "Klar アプリと同じトークンです。",
+          "assist_filter": "オン：Assist が見えるものだけ。オフ：非表示も含む。",
+          "channel": "いつでも変更できます。Staging は Klar NLU（Staging）を指します。"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL はユーザー情報なしの http(s) である必要があります。"
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "同梱エンジンを起動（HACS のみ）",
+        "remote": "Klar NLU アプリまたは Docker を使う"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable（本番）",
+        "staging": "Staging（候補）"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "システム言語",
+        "all": "すべての言語"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "標準",
+        "butler": "Butler",
+        "locker": "カジュアル",
+        "fuersorglich": "やさしい",
+        "party": "Party",
+        "grantig": "不機嫌",
+        "sarkastisch": "皮肉",
+        "pirat": "海賊",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "人格",
+        "state": {
+          "default": "標準",
+          "butler": "Butler",
+          "locker": "カジュアル",
+          "fuersorglich": "やさしい",
+          "party": "Party",
+          "grantig": "不機嫌",
+          "sarkastisch": "皮肉",
+          "pirat": "海賊",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "短い確認"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "AIタスク"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "最後に聞いた内容"
+      },
+      "last_decision": {
+        "name": "最後の判定"
+      },
+      "last_speech": {
+        "name": "最後の返答"
+      },
+      "last_area": {
+        "name": "聞いた場所"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Klar エンジンが停止",
+      "description": "同梱の Klar プロセスが動いていません。設定 → デバイスとサービスで Klar NLU を再読み込みしてください。"
+    }
+  }
+}

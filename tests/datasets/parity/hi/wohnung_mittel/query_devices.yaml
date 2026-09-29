@@ -1,0 +1,18 @@
+query_devices/spoken::status_kugel:
+- क्या gola
+query_devices/spoken::status_pc:
+- क्या pc
+query_devices/spoken::status_trockner:
+- क्या dryer
+query_devices/spoken::status_tv:
+- क्या tv
+query_devices/spoken_more::status_decke:
+- क्या chhat shayankaksh
+query_devices/spoken_more::status_spuelmaschine:
+- क्या bartan
+query_devices/spoken_more::status_wasch_casual:
+- क्या washing
+query_devices/status::status_r2d2:
+- क्या झाड़ू बैठक
+query_devices/status::status_waschmaschine:
+- क्या washing

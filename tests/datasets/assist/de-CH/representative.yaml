@@ -1,0 +1,42 @@
+- name: light_on
+  sentences:
+    - mach liecht wohnzimmer
+  nlu_expect:
+    intents:
+      - intent: HassTurnOn
+- name: light_off
+  sentences:
+    - loesch liecht chuchi
+  nlu_expect:
+    intents:
+      - intent: HassTurnOff
+- name: calendar_list
+  sentences:
+    - was staht im kalender
+  nlu_expect:
+    intents:
+      - intent: KlarGetCalendarEvents
+- name: calendar_create
+  sentences:
+    - termin zahnarzt morn um 15 uhr
+  nlu_expect:
+    intents:
+      - intent: KlarCreateCalendarEvent
+- name: calendar_delete
+  sentences:
+    - lösch zahnarzt kalender
+  nlu_expect:
+    intents:
+      - intent: KlarDeleteCalendarEvent
+- name: calendar_move
+  sentences:
+    - verschieb zahnarzt morn um 16 kalender
+  nlu_expect:
+    intents:
+      - intent: KlarMoveCalendarEvent
+- name: play_media
+  sentences:
+    - spiel depeche
+  nlu_expect:
+    intents:
+      - intent: MassPlayMedia

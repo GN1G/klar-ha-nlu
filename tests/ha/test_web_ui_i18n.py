@@ -1,0 +1,233 @@
+"""Every Assist locale has operator UI chrome with the same keys as English."""
+
+from __future__ import annotations
+
+import ast
+import json
+import re
+import sys
+import unittest
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+if str(ROOT / "scripts") not in sys.path:
+    sys.path.insert(0, str(ROOT / "scripts"))
+HA = ROOT / "custom_components" / "klar_nlu"
+EN = ROOT / "web" / "src" / "i18n" / "en.ts"
+DE = ROOT / "web" / "src" / "i18n" / "de.ts"
+MESSAGES = ROOT / "web" / "src" / "i18n" / "messages"
+
+
+def _keys(text: str) -> list[str]:
+    return re.findall(r"^\s+(\w+):", text, re.M)
+
+
+def _supported() -> tuple[str, ...]:
+    tree = ast.parse((HA / "languages.py").read_text(encoding="utf-8"))
+    for node in tree.body:
+        if isinstance(node, ast.Assign):
+            names = [target.id for target in node.targets if isinstance(target, ast.Name)]
+            if "SUPPORTED_LANGUAGES" in names:
+                return ast.literal_eval(node.value)
+    raise AssertionError("SUPPORTED_LANGUAGES missing")
+
+
+class OperatorUiParity(unittest.TestCase):
+    def test_every_assist_locale_has_operator_chrome(self) -> None:
+        english = _keys(EN.read_text(encoding="utf-8"))
+        self.assertEqual(english, _keys(DE.read_text(encoding="utf-8")))
+        self.assertIn("parseSample", english)
+        self.assertIn("tryOn", english)
+        on_disk = {path.stem for path in MESSAGES.glob("*.json")}
+        expected = set(_supported()) - {"de", "en"}
+        self.assertEqual(expected, on_disk)
+        english_hint = "Voice, languages, and the LLM live here. Home Assistant only connects the engine."
+        for code in sorted(expected):
+            payload = json.loads((MESSAGES / f"{code}.json").read_text(encoding="utf-8"))
+            self.assertEqual(set(english), set(payload), code)
+            self.assertIn("{room}", payload["tryOn"], code)
+            self.assertIn("{{ text }}", payload["payloadTemplate"], code)
+            self.assertIn("{count}", payload["applyDone"], code)
+            self.assertNotIn("Home Assistant → Klar NLU", payload["personalityHa"], code)
+            self.assertNotIn("Mode binds devices or rooms only", payload["engineHint"], code)
+            self.assertNotEqual(payload["processPath"], "conversation.process", code)
+            self.assertIn("{count}", payload["lexiconOverlayPlus"], code)
+            if code != "en-GB":
+                self.assertNotEqual(payload["engineHint"], english_hint, code)
+                self.assertNotEqual(payload["laneTabs"], "Lanes", code)
+                self.assertNotEqual(
+                    payload["governEmpty"],
+                    "Safety seeds ship with every pack. Off writes a house override; the compiled floor stays on.",
+                    code,
+                )
+
+    def test_wizard_chrome_is_translated(self) -> None:
+        wizard = ROOT / "web" / "src" / "i18n" / "wizard"
+        expected = set(_supported()) - {"de", "en"}
+        on_disk = {path.stem for path in wizard.glob("*.json")}
+        self.assertEqual(expected, on_disk)
+        english_console = (
+            "Lovelace “Klar” is the last Assist turn. This surface (Klar NLU) is the operator console: Settings, House, Lab, and Rules."
+        )
+        english_llm = (
+            "Assist chat, refine, and the trainer live in Settings, not in a Home Assistant conversation integration."
+        )
+        for code in sorted(expected):
+            payload = json.loads((wizard / f"{code}.json").read_text(encoding="utf-8"))
+            self.assertIn("whatConsole", payload, code)
+            self.assertIn("missLlmBody", payload, code)
+            self.assertIn("{count}", payload["phrasesMapping"], code)
+            if code != "en-GB":
+                self.assertNotEqual(payload["whatConsole"], english_console, code)
+                self.assertNotEqual(payload["missLlmBody"], english_llm, code)
+
+    def test_wizard_writes_engine_settings(self) -> None:
+        wizard = (ROOT / "web" / "src" / "pages" / "Wizard.tsx").read_text(encoding="utf-8")
+        app = (ROOT / "web" / "src" / "App.tsx").read_text(encoding="utf-8")
+        self.assertIn("api.saveSettings", wizard)
+        self.assertIn('refine_bands: ["status"]', wizard)
+        self.assertIn("api.saveLlmEndpoint", wizard)
+        self.assertIn("chrome={t}", app)
+        self.assertIn("onSettings={setSettings}", app)
+
+    def test_operator_chrome_follows_saved_ui_not_nlu_pin(self) -> None:
+        i18n = (ROOT / "web" / "src" / "i18n.ts").read_text(encoding="utf-8")
+        app = (ROOT / "web" / "src" / "App.tsx").read_text(encoding="utf-8")
+        self.assertIn("export function chromeLocale(saved?: string)", i18n)
+        self.assertIn("export function assistParseLanguage(languages: string[], chrome?: string)", i18n)
+        self.assertIn("return languages.length === 1 ? languages[0] : chrome", i18n)
+        self.assertIn("chromeLocale(ui.locale)", app)
+        self.assertIn("assistParseLanguage(settings.languages, locale)", app)
+        self.assertNotIn("chromeLocale(settings.languages", app)
+        self.assertNotIn('locale: "de"', app)
+        self.assertIn("assistParseLanguage", app)
+        self.assertIn("onLocale", app)
+        i18n_src = (ROOT / "web" / "src" / "i18n.ts").read_text(encoding="utf-8")
+        self.assertNotIn("navigator.language", i18n_src)
+        self.assertIn("assistParseLanguage", i18n_src)
+        lab = (ROOT / "web" / "src" / "pages" / "ParsePage.tsx").read_text(encoding="utf-8")
+        self.assertNotIn("HA trigger", lab)
+        self.assertNotIn("dispatch / intent_script", lab)
+        self.assertIn("t.labParse", lab)
+        self.assertIn("armedPipeline", lab)
+        self.assertIn("labPath", lab)
+        self.assertIn("lab-pipeline-path", lab)
+        self.assertIn("labThisTurn", lab)
+        self.assertIn("refineBandLabel", lab)
+        self.assertIn("void submit()", lab)
+        self.assertIn("api.parse", lab)
+        self.assertIn("api.llmRefine", lab)
+        self.assertIn("api.llmAssist", lab)
+        self.assertIn("labChatLike", lab)
+        self.assertIn("labRefineEligible", lab)
+        self.assertIn("refine_band", lab)
+        self.assertIn("effectiveRefineBands", lab)
+        self.assertIn("refineBandOf", lab)
+        self.assertIn("t.labChipLlmChat", lab)
+        self.assertIn("LabSpeechCompare", lab)
+        self.assertIn("aria-controls=\"klar-nav\"", app)
+        self.assertIn("setNavOpen", app)
+        self.assertIn("MenuIcon", app)
+        llm = (ROOT / "web" / "src" / "components" / "LlmProviderFields.tsx").read_text(encoding="utf-8")
+        self.assertIn("LlmModelField", llm)
+        engine_llm_rs = (ROOT / "src" / "io" / "llm.rs").read_text(encoding="utf-8")
+        self.assertIn("/api/v2/llm/models", engine_llm_rs)
+        self.assertIn("t.labChipLlmRefine", lab)
+        self.assertIn("t.labChipCalendarLlm", lab)
+        self.assertIn("t.labChipQuietAck", lab)
+        self.assertIn("t.labChipLlmTools", lab)
+        self.assertIn("PersonalityPrompt", (ROOT / "web" / "src" / "components" / "SettingsSections.tsx").read_text(encoding="utf-8"))
+        self.assertIn("/api/v2/llm/voice", engine_llm_rs)
+        self.assertNotIn("fallback LLM", lab)
+        self.assertIn("t.labChipNluRag", lab)
+        self.assertIn("t.labPipeline", lab)
+        self.assertNotIn('aria-label="pipeline"', lab)
+        self.assertIn("policy_trace?.hit", lab)
+        en = EN.read_text(encoding="utf-8")
+        self.assertIn("llmCalls", en)
+        self.assertIn("llmNoCalls", en)
+        self.assertIn("labThisTurn", en)
+        dash_page = (ROOT / "web" / "src" / "pages" / "Dashboard.tsx").read_text(encoding="utf-8")
+        self.assertIn("LlmMix", dash_page)
+        self.assertIn("t.llmCalls", dash_page)
+        self.assertIn("llm.tokens", dash_page)
+        self.assertIn("llmModelsEmpty", en)
+        self.assertIn("saveOk", en)
+        self.assertIn("refineBandStatus", en)
+        self.assertIn("refineBandStatusHint", en)
+        self.assertIn("refineBandsHint", en)
+        self.assertIn("confirmRiskyHint", en)
+        self.assertIn("SettingsToggle", (ROOT / "web" / "src" / "components" / "SettingsSections.tsx").read_text(encoding="utf-8"))
+        self.assertIn("Saved.", en)
+        self.assertIn("Could not save.", en)
+        card = (ROOT / "web" / "src" / "components" / "LlmSettingsCard.tsx").read_text(encoding="utf-8")
+        settings_page = (ROOT / "web" / "src" / "pages" / "SettingsPage.tsx").read_text(encoding="utf-8")
+        self.assertIn("toastSaved", card)
+        self.assertIn("toastSaveFailed", card)
+        self.assertIn("toastSaved", settings_page)
+        self.assertIn("toastSaveFailed", settings_page)
+        self.assertIn("Klar parse", en)
+        self.assertIn("LLM refine", en)
+        self.assertIn("calendar LLM", en)
+        self.assertIn("quiet ack", en)
+        self.assertIn("LLM tools", en)
+        self.assertIn("NLU-RAG", en)
+        self.assertIn("LLM chat", en)
+        self.assertIn("Lab is the Assist path for the selected language", en)
+        self.assertIn("Sentence triggers run only if Klar is unreachable", en)
+        self.assertNotIn("trigger, then Klar, then intent_script", en)
+        self.assertNotIn("when this parse is not execute", en)
+        overlay = (ROOT / "src" / "home" / "overlay.rs").read_text(encoding="utf-8")
+        dashboard = (ROOT / "src" / "io" / "dashboard.rs").read_text(encoding="utf-8")
+        self.assertIn("locale_set", overlay)
+        self.assertIn("KLAR_UI_LOCALE", dashboard)
+        self.assertNotIn("locale_from_accept_language", dashboard)
+        self.assertNotIn("accept-language", dashboard)
+        conversation = (ROOT / "custom_components" / "klar_nlu" / "conversation.py").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("advertised_languages()", conversation)
+
+    def test_llm_chrome_is_translated(self) -> None:
+        from lang_packs.web_ui_keys import FALLBACKS
+        from lang_packs.web_ui_llm import CHECK_KEYS, KEYS
+
+        expected = set(_supported()) - {"de", "en"}
+        for code in sorted(expected):
+            payload = json.loads((MESSAGES / f"{code}.json").read_text(encoding="utf-8"))
+            for key in KEYS:
+                value = payload[key]
+                self.assertNotIn("\ufffd", value, f"{code}.{key}")
+                self.assertTrue(value.strip(), f"{code}.{key}")
+            if code == "en-GB":
+                continue
+            for key in CHECK_KEYS:
+                self.assertNotEqual(payload[key], FALLBACKS[key], f"{code}.{key}")
+
+    def test_settings_hints_are_translated(self) -> None:
+        from lang_packs.settings_hints import KEYS
+        from lang_packs.web_ui_keys import FALLBACKS
+
+        english = {key: FALLBACKS[key] for key in KEYS}
+        loanwords = {"refineBandStatus": {"Status"}}
+        expected = set(_supported()) - {"de", "en"}
+        for code in sorted(expected):
+            payload = json.loads((MESSAGES / f"{code}.json").read_text(encoding="utf-8"))
+            for key in KEYS:
+                value = payload[key]
+                self.assertNotIn("\ufffd", value, f"{code}.{key}")
+                self.assertTrue(value.strip(), f"{code}.{key}")
+                if code == "en-GB":
+                    continue
+                if value in loanwords.get(key, ()):
+                    continue
+                self.assertNotEqual(value, english[key], f"{code}.{key}")
+
+    def test_policy_lanes_clip_lists(self) -> None:
+        theme = (ROOT / "web" / "src" / "theme.css").read_text(encoding="utf-8")
+        self.assertIn(".lane-body {", theme)
+        self.assertIn("overflow: auto;", theme)
+        self.assertNotIn("max-height: none;", theme)
+        for name in ("MatchLane.tsx", "LexiconLane.tsx", "HouseLane.tsx"):
+            src = (ROOT / "web" / "src" / "components" / name).read_text(encoding="utf-8")
+            self.assertIn('className="lane-body"', src, name)

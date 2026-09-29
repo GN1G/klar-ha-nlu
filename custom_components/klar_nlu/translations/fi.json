@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "Tämä integraatio puhuu Assistille. Erillinen moottori tulkitsee puheen: Klar NLU -sovellus, tämä mukana tuleva prosessi tai Docker. Home Assistant OS:ssä asenna myös sovellus ja valitse Käytä Klar NLU -sovellusta. Ilman sovellusta käynnistä mukana tuleva moottori. Älä käytä molempia.",
+        "data": {
+          "mode": "Moottori",
+          "channel": "Julkaisukanava",
+          "url": "Klar-API:n URL",
+          "token": "Kirjoituspoletti"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL:n on oltava http(s) ilman käyttäjätunnusta."
+    },
+    "abort": {
+      "already_configured": "Klar NLU on jo määritetty"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "Ääni, Assist-kielet ja LLM ovat Klarin operaattori-UI:ssa (Asetukset). Tämä lomake yhdistää vain moottorin: URL, tunnus ja kanava. {apps}",
+        "data": {
+          "mode": "Moottori",
+          "url": "Klar-API:n URL",
+          "token": "Kirjoituspoletti",
+          "assist_filter": "Ohjaa vain Assistille näkyviä entiteettejä",
+          "channel": "Julkaisukanava"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "Sama poletti kuin Klar-sovelluksessa.",
+          "assist_filter": "Päällä: vain se mitä Assist saa nähdä. Pois: myös piilotetut.",
+          "channel": "Milloin tahansa. Staging osoittaa Klar NLU (Staging) -palveluun."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL:n on oltava http(s) ilman käyttäjätunnusta."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "Käynnistä mukana tuleva moottori (vain HACS)",
+        "remote": "Käytä Klar NLU -sovellusta tai Dockeria"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (tuotanto)",
+        "staging": "Staging (ehdokas)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "Järjestelmäkieli",
+        "all": "Kaikki kielet"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "Tavallinen",
+        "butler": "Butler",
+        "locker": "Rento",
+        "fuersorglich": "Huolehtiva",
+        "party": "Party",
+        "grantig": "Äksy",
+        "sarkastisch": "Sarkastinen",
+        "pirat": "Piraatti",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "Persoonallisuus",
+        "state": {
+          "default": "Tavallinen",
+          "butler": "Butler",
+          "locker": "Rento",
+          "fuersorglich": "Huolehtiva",
+          "party": "Party",
+          "grantig": "Äksy",
+          "sarkastisch": "Sarkastinen",
+          "pirat": "Piraatti",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "Lyhyt vahvistus"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "Tekoälytehtävä"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "Viimeksi kuultu"
+      },
+      "last_decision": {
+        "name": "Viimeinen päätös"
+      },
+      "last_speech": {
+        "name": "Viimeinen vastaus"
+      },
+      "last_area": {
+        "name": "Kuultu alueella"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Klar-moottori pysähtyi",
+      "description": "Mukana tuleva Klar-prosessi ei ole käynnissä. Lataa Klar NLU uudelleen kohdasta Asetukset → Laitteet ja palvelut."
+    }
+  }
+}

@@ -1,0 +1,15 @@
+state_persistance/followup::heizung_dann_grad:
+- - 켜 난방 거실
+  - ' 21'
+state_persistance/followup::wohnzimmer_dann_aus:
+- - 켜 불 거실
+  - 꺼
+state_persistance/spoken::kugel_dann_aus:
+- - 켜 gong
+  - 꺼
+state_persistance/spoken::wohnzimmer_dann_kueche:
+- - 켜 불 거실
+  - 켜 불 부엌
+state_persistance/spoken::wohnzimmer_dann_rot:
+- - 켜 모두 불 거실
+  - 빨강

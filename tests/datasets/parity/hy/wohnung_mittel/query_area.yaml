@@ -1,0 +1,28 @@
+query_area/spoken::status_licht_kuche_casual:
+- ինչ լույս խոհանոց
+query_area/spoken::status_licht_wohnzimmer_casual:
+- ինչ լույս հյուրասենյակ
+query_area/spoken_more::brennt_arbeitszimmer:
+- ինչ լույս office
+query_area/spoken_more::brennt_esszimmer:
+- ինչ լույս yntaniqess
+query_area/spoken_more::status_licht_schlaf_casual:
+- ինչ լույս qnakaran
+query_area/status::status_alle_lichter:
+- ինչ բոլոր լույս
+query_area/status::status_licht_arbeitszimmer:
+- ինչ լույս office
+query_area/status::status_licht_badezimmer:
+- weather france
+query_area/status::status_licht_esszimmer:
+- ինչ լույս yntaniqess
+query_area/status::status_licht_kuche:
+- ինչ լույս խոհանոց
+query_area/status::status_licht_wohnzimmer:
+- ինչ լույս հյուրասենյակ
+query_area/status::status_wohn_und_esszimmer:
+- ինչ wohn und esszimmer
+query_area/status::temperatur_wohnung:
+- weather france
+query_area/status::temperatur_wohnzimmer:
+- ինչ ջեռուցում հյուրասենյակ

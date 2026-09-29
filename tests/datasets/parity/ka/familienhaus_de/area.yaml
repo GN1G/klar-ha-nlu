@@ -1,0 +1,251 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- დახურე ფარდა sadzinebeli2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- გახსენი ფარდა sadzinebeli2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- დააყენე ფარდა sadzinebeli2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- დააყენე ვენტილატორი sadzinebeli2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- გამორთე ვენტილატორი sadzinebeli2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- ჩართე ვენტილატორი sadzinebeli2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- დააყენე ყველა სინათლე sadzinebeli2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- დააყენე ყველა სინათლე sadzinebeli2 pink
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- გამორთე ყველა სინათლე sadzinebeli2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- ჩართე ყველა სინათლე sadzinebeli2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- დახურე ფარდა sadzinebeli3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- გახსენი ფარდა sadzinebeli3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- დააყენე ფარდა sadzinebeli3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- დააყენე ყველა სინათლე sadzinebeli3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- დააყენე ყველა სინათლე sadzinebeli3 blue
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- გამორთე ყველა სინათლე sadzinebeli3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- ჩართე ყველა სინათლე sadzinebeli3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- დააყენე ყველა სინათლე sadzinebeli4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- დააყენე ყველა სინათლე sadzinebeli4 green
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- გამორთე ყველა სინათლე sadzinebeli4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- ჩართე ყველა სინათლე sadzinebeli4
+area/dining_lights::dining_lights_change_brightness:
+- დააყენე ყველა სინათლე ojakhisotakhiess 54
+area/dining_lights::dining_lights_change_color:
+- დააყენე ყველა სინათლე ojakhisotakhiess blue
+area/dining_lights::dining_lights_turn_off:
+- გამორთე ყველა სინათლე ojakhisotakhiess
+area/dining_lights::dining_lights_turn_on:
+- ჩართე ყველა სინათლე ojakhisotakhiess
+area/entryway_lights::entryway_lights_change_brightness:
+- დააყენე ყველა სინათლე shemosasvleli 72
+area/entryway_lights::entryway_lights_change_color:
+- დააყენე ყველა სინათლე shemosasvleli black
+area/entryway_lights::entryway_lights_turn_off:
+- გამორთე ყველა სინათლე shemosasvleli
+area/entryway_lights::entryway_lights_turn_on:
+- ჩართე ყველა სინათლე shemosasvleli
+area/entryway_locks::entryway_locks_lock:
+- საკეტი საკეტი shemosasvleli
+area/entryway_locks::entryway_locks_unlock:
+- გახსენი საკეტი shemosasvleli
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- დააყენე ყველა სინათლე ojakhisotakhi 39 da დააყენე ყველა სინათლე სამზარეულო 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- დააყენე ყველა სინათლე ojakhisotakhi purple da დააყენე ყველა სინათლე სამზარეულო purple
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- გამორთე ყველა სინათლე ojakhisotakhi da გამორთე ყველა სინათლე სამზარეულო
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- ჩართე ყველა სინათლე ojakhisotakhi da ჩართე ყველა სინათლე სამზარეულო
+area/family_room_fans::family_room_fans_set_fan_speed:
+- დააყენე ვენტილატორი ojakhisotakhi 32
+area/family_room_fans::family_room_fans_turn_off:
+- გამორთე ვენტილატორი ojakhisotakhi
+area/family_room_fans::family_room_fans_turn_on:
+- ჩართე ვენტილატორი ojakhisotakhi
+area/family_room_lights::family_room_lights_change_brightness:
+- დააყენე ყველა სინათლე ojakhisotakhi 44
+area/family_room_lights::family_room_lights_change_color:
+- დააყენე ყველა სინათლე ojakhisotakhi green
+area/family_room_lights::family_room_lights_turn_off:
+- გამორთე ყველა სინათლე ojakhisotakhi
+area/family_room_lights::family_room_lights_turn_on:
+- ჩართე ყველა სინათლე ojakhisotakhi
+area/garage_covers::garage_covers_close:
+- დახურე ფარდა garage
+area/garage_covers::garage_covers_open:
+- გახსენი ფარდა garage
+area/garage_covers::garage_covers_set_position:
+- დააყენე ფარდა garage 86
+area/garage_lights::garage_lights_change_brightness:
+- დააყენე ყველა სინათლე garage 16
+area/garage_lights::garage_lights_change_color:
+- დააყენე ყველა სინათლე garage blue
+area/garage_lights::garage_lights_turn_off:
+- გამორთე ყველა სინათლე garage
+area/garage_lights::garage_lights_turn_on:
+- ჩართე ყველა სინათლე garage
+area/garage_locks::garage_locks_lock:
+- საკეტი საკეტი garage
+area/garage_locks::garage_locks_unlock:
+- გახსენი საკეტი garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- დააყენე ყველა სინათლე shemosasvleligang 26 da დააყენე ყველა სინათლე wc 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- დააყენე ყველა სინათლე shemosasvleligang purple da დააყენე ყველა სინათლე wc purple
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- გამორთე ყველა სინათლე shemosasvleligang da გამორთე ყველა სინათლე wc
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- ჩართე ყველა სინათლე shemosasvleligang da ჩართე ყველა სინათლე wc
+area/hallway_lights::hallway_lights_change_brightness:
+- დააყენე ყველა სინათლე shemosasvleligang 61
+area/hallway_lights::hallway_lights_change_color:
+- დააყენე ყველა სინათლე shemosasvleligang orange
+area/hallway_lights::hallway_lights_turn_off:
+- გამორთე ყველა სინათლე shemosasvleligang
+area/hallway_lights::hallway_lights_turn_on:
+- ჩართე ყველა სინათლე shemosasvleligang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- დააყენე ყველა სინათლე სამზარეულო 45
+area/kitchen_lights::kitchen_lights_change_color:
+- დააყენე ყველა სინათლე სამზარეულო pink
+area/kitchen_lights::kitchen_lights_turn_off:
+- გამორთე ყველა სინათლე სამზარეულო
+area/kitchen_lights::kitchen_lights_turn_on:
+- ჩართე ყველა სინათლე სამზარეულო
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- გამორთე ყველა mokobiloba სამზარეულო
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- ჩართე ყველა mokobiloba სამზარეულო
+area/laundry_lights::laundry_lights_change_brightness:
+- დააყენე ყველა სინათლე samretskhao 62
+area/laundry_lights::laundry_lights_change_color:
+- დააყენე ყველა სინათლე samretskhao yellow
+area/laundry_lights::laundry_lights_turn_off:
+- გამორთე ყველა სინათლე samretskhao
+area/laundry_lights::laundry_lights_turn_on:
+- ჩართე ყველა სინათლე samretskhao
+area/laundry_switchs::laundry_switchs_turn_off:
+- გამორთე ყველა mokobiloba samretskhao
+area/laundry_switchs::laundry_switchs_turn_on:
+- ჩართე ყველა mokobiloba samretskhao
+area/living_climates::living_climates_set_temperature:
+- დააყენე გათბობა მისაღები 20
+area/living_covers::living_covers_close:
+- დახურე ფარდა მისაღები
+area/living_covers::living_covers_open:
+- გახსენი ფარდა მისაღები
+area/living_covers::living_covers_set_position:
+- დააყენე ფარდა მისაღები 46
+area/living_lights::living_lights_change_brightness:
+- დააყენე ყველა სინათლე მისაღები 84
+area/living_lights::living_lights_change_color:
+- დააყენე ყველა სინათლე მისაღები blue
+area/living_lights::living_lights_turn_off:
+- გამორთე ყველა სინათლე მისაღები
+area/living_lights::living_lights_turn_on:
+- ჩართე ყველა სინათლე მისაღები
+area/main_bath_lights::main_bath_lights_change_brightness:
+- დააყენე ყველა სინათლე main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- დააყენე ყველა სინათლე main bath pink
+area/main_bath_lights::main_bath_lights_turn_off:
+- გამორთე ყველა სინათლე main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- ჩართე ყველა სინათლე main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- გამორთე ყველა mokobiloba main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- ჩართე ყველა mokobiloba main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- დააყენე ყველა სინათლე abazanamaster 60
+area/master_bath_lights::master_bath_lights_change_color:
+- დააყენე ყველა სინათლე abazanamaster black
+area/master_bath_lights::master_bath_lights_turn_off:
+- გამორთე ყველა სინათლე abazanamaster
+area/master_bath_lights::master_bath_lights_turn_on:
+- ჩართე ყველა სინათლე abazanamaster
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- გამორთე ყველა mokobiloba abazanamaster
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- ჩართე ყველა mokobiloba abazanamaster
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- დააყენე გათბობა sadzinebelimaster 20 da დააყენე გათბობა მისაღები 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- დახურე ფარდა sadzinebelimaster da დახურე ფარდა მისაღები
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- გახსენი ფარდა sadzinebelimaster da გახსენი ფარდა მისაღები
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- დააყენე ფარდა sadzinebelimaster 19 da დააყენე ფარდა მისაღები 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- დააყენე ყველა სინათლე sadzinebelimaster 25 da დააყენე ყველა სინათლე მისაღები 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- დააყენე ყველა სინათლე sadzinebelimaster white da დააყენე ყველა სინათლე მისაღები
+  white
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- გამორთე ყველა სინათლე sadzinebelimaster da გამორთე ყველა სინათლე მისაღები
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- ჩართე ყველა სინათლე sadzinebelimaster da ჩართე ყველა სინათლე მისაღები
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- დააყენე ყველა სინათლე sadzinebelimaster 57 da დააყენე ყველა სინათლე main bath 57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- დააყენე ყველა სინათლე sadzinebelimaster pink da დააყენე ყველა სინათლე main bath
+  pink
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- გამორთე ყველა სინათლე sadzinebelimaster da გამორთე ყველა სინათლე main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- ჩართე ყველა სინათლე sadzinebelimaster da ჩართე ყველა სინათლე main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- დააყენე გათბობა sadzinebelimaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- დახურე ფარდა sadzinebelimaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- გახსენი ფარდა sadzinebelimaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- დააყენე ფარდა sadzinebelimaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- დააყენე ვენტილატორი sadzinebelimaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- გამორთე ვენტილატორი sadzinebelimaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- ჩართე ვენტილატორი sadzinebelimaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- დააყენე ყველა სინათლე sadzinebelimaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- დააყენე ყველა სინათლე sadzinebelimaster pink
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- გამორთე ყველა სინათლე sadzinebelimaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- ჩართე ყველა სინათლე sadzinebelimaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- დააყენე ყველა სინათლე wc 52
+area/powder_room_lights::powder_room_lights_change_color:
+- დააყენე ყველა სინათლე wc purple
+area/powder_room_lights::powder_room_lights_turn_off:
+- გამორთე ყველა სინათლე wc
+area/powder_room_lights::powder_room_lights_turn_on:
+- ჩართე ყველა სინათლე wc
+area/spoken_lights::spoken_bedroom_inflection:
+- დააყენე ყველა სინათლე sadzinebelimaster red
+area/spoken_lights::spoken_except_island:
+- გამორთე ყველა სინათლე garda kuntkhuli
+area/spoken_lights::spoken_except_kitchen:
+- გამორთე ყველა სინათლე garda სამზარეულო
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- გამორთე ყველა სინათლე მისაღები da გამორთე ყველა სინათლე ojakhisotakhiess da გამორთე
+  ყველა სინათლე სამზარეულო
+area/spoken_lights::spoken_stt_kitchen_off:
+- გამორთე ყველა სინათლე სამზარეულო
+area/spoken_lights::spoken_stt_living_off:
+- გამორთე ყველა სინათლე მისაღები

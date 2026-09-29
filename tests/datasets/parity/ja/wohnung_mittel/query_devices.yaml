@@ -1,0 +1,18 @@
+query_devices/spoken::status_kugel:
+- 何 tama
+query_devices/spoken::status_pc:
+- 何 pc
+query_devices/spoken::status_trockner:
+- 何 kansouki
+query_devices/spoken::status_tv:
+- 何 tv
+query_devices/spoken_more::status_decke:
+- 何 tenjo shinshitsu
+query_devices/spoken_more::status_spuelmaschine:
+- 何 shokkaiki
+query_devices/spoken_more::status_wasch_casual:
+- 何 sentakuki
+query_devices/status::status_r2d2:
+- 何 掃除機 リビング
+query_devices/status::status_waschmaschine:
+- 何 sentakuki

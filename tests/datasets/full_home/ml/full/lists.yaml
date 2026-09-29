@@ -1,0 +1,77 @@
+- name: list_add
+  conditions:
+  - type: todo_list
+    item: milk
+  sentences:
+  - add milk പട്ടിക
+  - milk add പട്ടിക
+- name: list_done
+  conditions:
+  - type: todo_list
+    item: milk
+  sentences:
+  - ആയി milk
+  - milk ആയി
+- name: list_done_milk
+  conditions:
+  - type: todo_list
+    item: milk
+  sentences:
+  - ആയി milk
+  - milk ആയി
+- name: list_add_bread
+  conditions:
+  - type: todo_list
+    item: bread
+  sentences:
+  - add bread പട്ടിക
+  - bread add പട്ടിക
+- name: list_done_bread
+  conditions:
+  - type: todo_list
+    item: bread
+  sentences:
+  - ആയി bread
+  - bread ആയി
+- name: list_add_eggs
+  conditions:
+  - type: todo_list
+    item: eggs
+  sentences:
+  - add eggs പട്ടിക
+  - eggs add പട്ടിക
+- name: list_done_eggs
+  conditions:
+  - type: todo_list
+    item: eggs
+  sentences:
+  - ആയി eggs
+  - eggs ആയി
+- name: list_add_apples
+  conditions:
+  - type: todo_list
+    item: apples
+  sentences:
+  - add apples പട്ടിക
+  - apples add പട്ടിക
+- name: list_done_apples
+  conditions:
+  - type: todo_list
+    item: apples
+  sentences:
+  - ആയി apples
+  - apples ആയി
+- name: list_add_coffee
+  conditions:
+  - type: todo_list
+    item: coffee
+  sentences:
+  - add coffee പട്ടിക
+  - coffee add പട്ടിക
+- name: list_done_coffee
+  conditions:
+  - type: todo_list
+    item: coffee
+  sentences:
+  - ആയി coffee
+  - coffee ആയി

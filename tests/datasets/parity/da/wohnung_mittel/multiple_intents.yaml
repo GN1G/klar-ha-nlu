@@ -1,0 +1,26 @@
+multiple_intents/multi::alle_ausser_schlaf_und_kueche:
+- sluk alle lys undtagen sovevaerelse undtagen kokken
+multiple_intents/multi::licht_und_heizung:
+- taend alle lys stue then saet varme stue 23
+multiple_intents/multi::wohn_und_ess_aus:
+- sluk alle lys stue then sluk alle lys alrumess
+multiple_intents/multi::wohn_und_ess_rot:
+- saet alle lys stue rod then saet alle lys alrumess rod
+multiple_intents/multi::wz_und_kuche_licht:
+- taend alle lys stue then taend alle lys kokken
+multiple_intents/multi::zwei_raeume_und_heizung:
+- taend alle lys stue then taend alle lys kokken then saet varme stue 23
+multiple_intents/spoken::drei_raeume_an:
+- taend alle lys stue then taend alle lys alrumess then taend alle lys kokken
+multiple_intents/spoken::drei_raeume_aus:
+- sluk alle lys stue then sluk alle lys alrumess then sluk alle lys kokken
+multiple_intents/spoken::ess_und_wohn_aus:
+- sluk alle lys stue then sluk alle lys alrumess
+multiple_intents/spoken::kugel_und_decke_aus:
+- kugle og loft sovevaerelse sluk
+multiple_intents/spoken_more::kuche_und_ess_an:
+- taend alle lys kokken then taend alle lys alrumess
+multiple_intents/spoken_more::wz_ess_arbeit_aus:
+- sluk alle lys stue then sluk alle lys alrumess then sluk alle lys office
+multiple_intents/spoken_more::wz_und_arbeit_aus:
+- sluk alle lys stue then sluk alle lys office

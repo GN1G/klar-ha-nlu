@@ -1,0 +1,14 @@
+/target
+.cargo-musl-home
+/web/dist
+/web/node_modules
+__pycache__/
+*.pyc
+.pytest_cache/
+.claude-flow/
+.swarm/
+ruvector.db
+docs/architecture/*.visual-check.*
+
+
+.cursor/

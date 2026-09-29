@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- oltsd mennyezet haloszoba
+devices/geraete::device_arbeitszimmer_an:
+- kapcsold villany office
+devices/geraete::device_esszimmer_an:
+- kapcsold villany nappalifamess
+devices/geraete::device_kuche_kuche_an:
+- kapcsold villany konyha
+devices/geraete::device_wohnzimmer_an:
+- kapcsold villany nappali
+devices/geraete::filmabend:
+- kapcsold jelenet filmabend
+devices/geraete::kugel_an:
+- kapcsold gomb
+devices/geraete::luefter_50:
+- allitsd ventilator office 50
+devices/geraete::pc_an:
+- kapcsold pc
+devices/geraete::r2d2_saugen:
+- kapcsold porszivo nappali
+devices/geraete::rollo_zu:
+- csukd fuggony nappali
+devices/geraete::spuelmaschine_aus:
+- oltsd mosogatogep
+devices/geraete::tuer_abschliessen:
+- zar zar eloter
+devices/geraete::waschmaschine_an:
+- kapcsold mosogep
+devices/klima::klima_schlaf_21:
+- allitsd ac haloszoba 21
+devices/spoken::deckenlampe_an:
+- kapcsold mennyezet haloszoba
+devices/spoken::kugel_aus:
+- oltsd gomb
+devices/spoken::luefter_aus:
+- oltsd ventilator office
+devices/spoken::rollo_auf:
+- nyisd fuggony nappali
+devices/spoken::trockner_an:
+- kapcsold dryer
+devices/spoken::tv_aus:
+- oltsd tv
+devices/spoken_more::decke_aus_casual:
+- oltsd mennyezet haloszoba
+devices/spoken_more::kugel_casual:
+- kapcsold gomb
+devices/spoken_more::pc_aus:
+- oltsd pc
+devices/spoken_more::spuelmaschine_an:
+- kapcsold mosogatogep
+devices/spoken_more::waschmaschine_aus:
+- oltsd mosogep

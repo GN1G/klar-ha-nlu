@@ -1,0 +1,321 @@
+- name: cover.living_blinds_open
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    state: open
+  sentences:
+  - ਖੋਲ੍ਹ ਪਰਦਾ ਬੈਠਕ
+  - ਪਰਦਾ ਬੈਠਕ ਖੋਲ੍ਹ
+- name: cover.living_blinds_close
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    state: closed
+  sentences:
+  - ਬੰਦਕਰ ਪਰਦਾ ਬੈਠਕ
+  - ਪਰਦਾ ਬੈਠਕ ਬੰਦਕਰ
+- name: cover.living_blinds_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 0
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ ਬੈਠਕ 0
+  - ਪਰਦਾ ਬੈਠਕ 0
+- name: cover.living_blinds_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 25
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ ਬੈਠਕ 25
+  - ਪਰਦਾ ਬੈਠਕ 25
+- name: cover.living_blinds_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 40
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ ਬੈਠਕ 40
+  - ਪਰਦਾ ਬੈਠਕ 40
+- name: cover.living_blinds_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 75
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ ਬੈਠਕ 75
+  - ਪਰਦਾ ਬੈਠਕ 75
+- name: cover.living_blinds_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    attributes:
+      position: 100
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ ਬੈਠਕ 100
+  - ਪਰਦਾ ਬੈਠਕ 100
+- name: cover.master_blinds_open
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    state: open
+  sentences:
+  - ਖੋਲ੍ਹ ਪਰਦਾ bedroommaster
+  - ਪਰਦਾ bedroommaster ਖੋਲ੍ਹ
+- name: cover.master_blinds_close
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    state: closed
+  sentences:
+  - ਬੰਦਕਰ ਪਰਦਾ bedroommaster
+  - ਪਰਦਾ bedroommaster ਬੰਦਕਰ
+- name: cover.master_blinds_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 0
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ bedroommaster 0
+  - ਪਰਦਾ bedroommaster 0
+- name: cover.master_blinds_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 25
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ bedroommaster 25
+  - ਪਰਦਾ bedroommaster 25
+- name: cover.master_blinds_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 40
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ bedroommaster 40
+  - ਪਰਦਾ bedroommaster 40
+- name: cover.master_blinds_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 75
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ bedroommaster 75
+  - ਪਰਦਾ bedroommaster 75
+- name: cover.master_blinds_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    attributes:
+      position: 100
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ bedroommaster 100
+  - ਪਰਦਾ bedroommaster 100
+- name: cover.bedroom2_blinds_open
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    state: open
+  sentences:
+  - ਖੋਲ੍ਹ ਪਰਦਾ bedroom2
+  - ਪਰਦਾ bedroom2 ਖੋਲ੍ਹ
+- name: cover.bedroom2_blinds_close
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    state: closed
+  sentences:
+  - ਬੰਦਕਰ ਪਰਦਾ bedroom2
+  - ਪਰਦਾ bedroom2 ਬੰਦਕਰ
+- name: cover.bedroom2_blinds_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 0
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ bedroom2 0
+  - ਪਰਦਾ bedroom2 0
+- name: cover.bedroom2_blinds_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 25
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ bedroom2 25
+  - ਪਰਦਾ bedroom2 25
+- name: cover.bedroom2_blinds_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 40
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ bedroom2 40
+  - ਪਰਦਾ bedroom2 40
+- name: cover.bedroom2_blinds_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 75
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ bedroom2 75
+  - ਪਰਦਾ bedroom2 75
+- name: cover.bedroom2_blinds_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.bedroom2_blinds
+    attributes:
+      position: 100
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ bedroom2 100
+  - ਪਰਦਾ bedroom2 100
+- name: cover.bedroom3_blinds_open
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    state: open
+  sentences:
+  - ਖੋਲ੍ਹ ਪਰਦਾ bedroom3
+  - ਪਰਦਾ bedroom3 ਖੋਲ੍ਹ
+- name: cover.bedroom3_blinds_close
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    state: closed
+  sentences:
+  - ਬੰਦਕਰ ਪਰਦਾ bedroom3
+  - ਪਰਦਾ bedroom3 ਬੰਦਕਰ
+- name: cover.bedroom3_blinds_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 0
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ bedroom3 0
+  - ਪਰਦਾ bedroom3 0
+- name: cover.bedroom3_blinds_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 25
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ bedroom3 25
+  - ਪਰਦਾ bedroom3 25
+- name: cover.bedroom3_blinds_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 40
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ bedroom3 40
+  - ਪਰਦਾ bedroom3 40
+- name: cover.bedroom3_blinds_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 75
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ bedroom3 75
+  - ਪਰਦਾ bedroom3 75
+- name: cover.bedroom3_blinds_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.bedroom3_blinds
+    attributes:
+      position: 100
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ bedroom3 100
+  - ਪਰਦਾ bedroom3 100
+- name: cover.garage_door_open
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    state: open
+  sentences:
+  - ਖੋਲ੍ਹ ਪਰਦਾ garage
+  - ਪਰਦਾ garage ਖੋਲ੍ਹ
+- name: cover.garage_door_close
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    state: closed
+  sentences:
+  - ਬੰਦਕਰ ਪਰਦਾ garage
+  - ਪਰਦਾ garage ਬੰਦਕਰ
+- name: cover.garage_door_pos_0
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 0
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ garage 0
+  - ਪਰਦਾ garage 0
+- name: cover.garage_door_pos_25
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 25
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ garage 25
+  - ਪਰਦਾ garage 25
+- name: cover.garage_door_pos_40
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 40
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ garage 40
+  - ਪਰਦਾ garage 40
+- name: cover.garage_door_pos_75
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 75
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ garage 75
+  - ਪਰਦਾ garage 75
+- name: cover.garage_door_pos_100
+  conditions:
+  - type: action
+    entity_id: cover.garage_door
+    attributes:
+      position: 100
+  sentences:
+  - ਸੈੱਟ ਪਰਦਾ garage 100
+  - ਪਰਦਾ garage 100
+- name: cover.living_blinds_open_extra
+  conditions:
+  - type: action
+    entity_id: cover.living_blinds
+    state: open
+  sentences:
+  - ਖੋਲ੍ਹ ਪਰਦਾ ਬੈਠਕ
+  - ਪਰਦਾ ਬੈਠਕ ਖੋਲ੍ਹ
+- name: cover.master_blinds_open_extra
+  conditions:
+  - type: action
+    entity_id: cover.master_blinds
+    state: open
+  sentences:
+  - ਖੋਲ੍ਹ ਪਰਦਾ bedroommaster
+  - ਪਰਦਾ bedroommaster ਖੋਲ੍ਹ

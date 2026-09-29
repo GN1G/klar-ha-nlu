@@ -1,0 +1,249 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- փակիր վարագույր qnakaran2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- բացիր վարագույր qnakaran2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- դիր վարագույր qnakaran2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- դիր օդափոխիչ qnakaran2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- անջատիր օդափոխիչ qnakaran2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- միացրու օդափոխիչ qnakaran2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- դիր բոլոր լույս qnakaran2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- դիր բոլոր լույս qnakaran2 pink
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- անջատիր բոլոր լույս qnakaran2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- միացրու բոլոր լույս qnakaran2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- փակիր վարագույր qnakaran3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- բացիր վարագույր qnakaran3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- դիր վարագույր qnakaran3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- դիր բոլոր լույս qnakaran3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- դիր բոլոր լույս qnakaran3 blue
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- անջատիր բոլոր լույս qnakaran3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- միացրու բոլոր լույս qnakaran3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- դիր բոլոր լույս qnakaran4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- դիր բոլոր լույս qnakaran4 green
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- անջատիր բոլոր լույս qnakaran4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- միացրու բոլոր լույս qnakaran4
+area/dining_lights::dining_lights_change_brightness:
+- դիր բոլոր լույս yntaniqess 54
+area/dining_lights::dining_lights_change_color:
+- դիր բոլոր լույս yntaniqess blue
+area/dining_lights::dining_lights_turn_off:
+- անջատիր բոլոր լույս yntaniqess
+area/dining_lights::dining_lights_turn_on:
+- միացրու բոլոր լույս yntaniqess
+area/entryway_lights::entryway_lights_change_brightness:
+- դիր բոլոր լույս mutq 72
+area/entryway_lights::entryway_lights_change_color:
+- դիր բոլոր լույս mutq black
+area/entryway_lights::entryway_lights_turn_off:
+- անջատիր բոլոր լույս mutq
+area/entryway_lights::entryway_lights_turn_on:
+- միացրու բոլոր լույս mutq
+area/entryway_locks::entryway_locks_lock:
+- կողպեք կողպեք mutq
+area/entryway_locks::entryway_locks_unlock:
+- բացիր կողպեք mutq
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- դիր բոլոր լույս yntaniq 39 yev դիր բոլոր լույս խոհանոց 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- դիր բոլոր լույս yntaniq purple yev դիր բոլոր լույս խոհանոց purple
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- անջատիր բոլոր լույս yntaniq yev անջատիր բոլոր լույս խոհանոց
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- միացրու բոլոր լույս yntaniq yev միացրու բոլոր լույս խոհանոց
+area/family_room_fans::family_room_fans_set_fan_speed:
+- դիր օդափոխիչ yntaniq 32
+area/family_room_fans::family_room_fans_turn_off:
+- անջատիր օդափոխիչ yntaniq
+area/family_room_fans::family_room_fans_turn_on:
+- միացրու օդափոխիչ yntaniq
+area/family_room_lights::family_room_lights_change_brightness:
+- դիր բոլոր լույս yntaniq 44
+area/family_room_lights::family_room_lights_change_color:
+- դիր բոլոր լույս yntaniq green
+area/family_room_lights::family_room_lights_turn_off:
+- անջատիր բոլոր լույս yntaniq
+area/family_room_lights::family_room_lights_turn_on:
+- միացրու բոլոր լույս yntaniq
+area/garage_covers::garage_covers_close:
+- փակիր վարագույր garage
+area/garage_covers::garage_covers_open:
+- բացիր վարագույր garage
+area/garage_covers::garage_covers_set_position:
+- դիր վարագույր garage 86
+area/garage_lights::garage_lights_change_brightness:
+- դիր բոլոր լույս garage 16
+area/garage_lights::garage_lights_change_color:
+- դիր բոլոր լույս garage blue
+area/garage_lights::garage_lights_turn_off:
+- անջատիր բոլոր լույս garage
+area/garage_lights::garage_lights_turn_on:
+- միացրու բոլոր լույս garage
+area/garage_locks::garage_locks_lock:
+- կողպեք կողպեք garage
+area/garage_locks::garage_locks_unlock:
+- բացիր կողպեք garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- դիր բոլոր լույս mutqgang 26 yev դիր բոլոր լույս wc 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- դիր բոլոր լույս mutqgang purple yev դիր բոլոր լույս wc purple
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- անջատիր բոլոր լույս mutqgang yev անջատիր բոլոր լույս wc
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- միացրու բոլոր լույս mutqgang yev միացրու բոլոր լույս wc
+area/hallway_lights::hallway_lights_change_brightness:
+- դիր բոլոր լույս mutqgang 61
+area/hallway_lights::hallway_lights_change_color:
+- դիր բոլոր լույս mutqgang orange
+area/hallway_lights::hallway_lights_turn_off:
+- անջատիր բոլոր լույս mutqgang
+area/hallway_lights::hallway_lights_turn_on:
+- միացրու բոլոր լույս mutqgang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- դիր բոլոր լույս խոհանոց 45
+area/kitchen_lights::kitchen_lights_change_color:
+- դիր բոլոր լույս խոհանոց pink
+area/kitchen_lights::kitchen_lights_turn_off:
+- անջատիր բոլոր լույս խոհանոց
+area/kitchen_lights::kitchen_lights_turn_on:
+- միացրու բոլոր լույս խոհանոց
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- անջատիր բոլոր sark խոհանոց
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- միացրու բոլոր sark խոհանոց
+area/laundry_lights::laundry_lights_change_brightness:
+- դիր բոլոր լույս lvacqaran 62
+area/laundry_lights::laundry_lights_change_color:
+- դիր բոլոր լույս lvacqaran yellow
+area/laundry_lights::laundry_lights_turn_off:
+- անջատիր բոլոր լույս lvacqaran
+area/laundry_lights::laundry_lights_turn_on:
+- միացրու բոլոր լույս lvacqaran
+area/laundry_switchs::laundry_switchs_turn_off:
+- անջատիր բոլոր sark lvacqaran
+area/laundry_switchs::laundry_switchs_turn_on:
+- միացրու բոլոր sark lvacqaran
+area/living_climates::living_climates_set_temperature:
+- դիր ջեռուցում հյուրասենյակ 20
+area/living_covers::living_covers_close:
+- փակիր վարագույր հյուրասենյակ
+area/living_covers::living_covers_open:
+- բացիր վարագույր հյուրասենյակ
+area/living_covers::living_covers_set_position:
+- դիր վարագույր հյուրասենյակ 46
+area/living_lights::living_lights_change_brightness:
+- դիր բոլոր լույս հյուրասենյակ 84
+area/living_lights::living_lights_change_color:
+- դիր բոլոր լույս հյուրասենյակ blue
+area/living_lights::living_lights_turn_off:
+- անջատիր բոլոր լույս հյուրասենյակ
+area/living_lights::living_lights_turn_on:
+- միացրու բոլոր լույս հյուրասենյակ
+area/main_bath_lights::main_bath_lights_change_brightness:
+- դիր բոլոր լույս main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- դիր բոլոր լույս main bath pink
+area/main_bath_lights::main_bath_lights_turn_off:
+- անջատիր բոլոր լույս main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- միացրու բոլոր լույս main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- անջատիր բոլոր sark main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- միացրու բոլոր sark main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- դիր բոլոր լույս lvacaranmaster 60
+area/master_bath_lights::master_bath_lights_change_color:
+- դիր բոլոր լույս lvacaranmaster black
+area/master_bath_lights::master_bath_lights_turn_off:
+- անջատիր բոլոր լույս lvacaranmaster
+area/master_bath_lights::master_bath_lights_turn_on:
+- միացրու բոլոր լույս lvacaranmaster
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- անջատիր բոլոր sark lvacaranmaster
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- միացրու բոլոր sark lvacaranmaster
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- դիր ջեռուցում qnakaranmaster 20 yev դիր ջեռուցում հյուրասենյակ 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- փակիր վարագույր qnakaranmaster yev փակիր վարագույր հյուրասենյակ
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- բացիր վարագույր qnakaranmaster yev բացիր վարագույր հյուրասենյակ
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- դիր վարագույր qnakaranmaster 19 yev դիր վարագույր հյուրասենյակ 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- դիր բոլոր լույս qnakaranmaster 25 yev դիր բոլոր լույս հյուրասենյակ 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- դիր բոլոր լույս qnakaranmaster white yev դիր բոլոր լույս հյուրասենյակ white
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- անջատիր բոլոր լույս qnakaranmaster yev անջատիր բոլոր լույս հյուրասենյակ
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- միացրու բոլոր լույս qnakaranmaster yev միացրու բոլոր լույս հյուրասենյակ
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- դիր բոլոր լույս qnakaranmaster 57 yev դիր բոլոր լույս main bath 57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- դիր բոլոր լույս qnakaranmaster pink yev դիր բոլոր լույս main bath pink
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- անջատիր բոլոր լույս qnakaranmaster yev անջատիր բոլոր լույս main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- միացրու բոլոր լույս qnakaranmaster yev միացրու բոլոր լույս main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- դիր ջեռուցում qnakaranmaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- փակիր վարագույր qnakaranmaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- բացիր վարագույր qnakaranmaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- դիր վարագույր qnakaranmaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- դիր օդափոխիչ qnakaranmaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- անջատիր օդափոխիչ qnakaranmaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- միացրու օդափոխիչ qnakaranmaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- դիր բոլոր լույս qnakaranmaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- դիր բոլոր լույս qnakaranmaster pink
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- անջատիր բոլոր լույս qnakaranmaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- միացրու բոլոր լույս qnakaranmaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- դիր բոլոր լույս wc 52
+area/powder_room_lights::powder_room_lights_change_color:
+- դիր բոլոր լույս wc purple
+area/powder_room_lights::powder_room_lights_turn_off:
+- անջատիր բոլոր լույս wc
+area/powder_room_lights::powder_room_lights_turn_on:
+- միացրու բոլոր լույս wc
+area/spoken_lights::spoken_bedroom_inflection:
+- դիր բոլոր լույս qnakaranmaster red
+area/spoken_lights::spoken_except_island:
+- անջատիր բոլոր լույս batsi kghzi
+area/spoken_lights::spoken_except_kitchen:
+- անջատիր բոլոր լույս batsi խոհանոց
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- անջատիր բոլոր լույս հյուրասենյակ yev անջատիր բոլոր լույս yntaniqess yev անջատիր
+  բոլոր լույս խոհանոց
+area/spoken_lights::spoken_stt_kitchen_off:
+- անջատիր բոլոր լույս խոհանոց
+area/spoken_lights::spoken_stt_living_off:
+- անջատիր բոլոր լույս հյուրասենյակ

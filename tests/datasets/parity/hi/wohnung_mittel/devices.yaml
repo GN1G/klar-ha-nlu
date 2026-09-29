@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- बुझाओ chhat shayankaksh
+devices/geraete::device_arbeitszimmer_an:
+- जलाओ बत्ती office
+devices/geraete::device_esszimmer_an:
+- जलाओ बत्ती parivarikess
+devices/geraete::device_kuche_kuche_an:
+- जलाओ बत्ती रसोई
+devices/geraete::device_wohnzimmer_an:
+- जलाओ बत्ती बैठक
+devices/geraete::filmabend:
+- जलाओ दृश्य filmabend
+devices/geraete::kugel_an:
+- जलाओ gola
+devices/geraete::luefter_50:
+- सेट पंखा office 50
+devices/geraete::pc_an:
+- जलाओ pc
+devices/geraete::r2d2_saugen:
+- जलाओ झाड़ू बैठक
+devices/geraete::rollo_zu:
+- बंद पर्दा बैठक
+devices/geraete::spuelmaschine_aus:
+- बुझाओ bartan
+devices/geraete::tuer_abschliessen:
+- ताला ताला pravesh
+devices/geraete::waschmaschine_an:
+- जलाओ washing
+devices/klima::klima_schlaf_21:
+- सेट ac shayankaksh 21
+devices/spoken::deckenlampe_an:
+- जलाओ chhat shayankaksh
+devices/spoken::kugel_aus:
+- बुझाओ gola
+devices/spoken::luefter_aus:
+- बुझाओ पंखा office
+devices/spoken::rollo_auf:
+- खोलो पर्दा बैठक
+devices/spoken::trockner_an:
+- जलाओ dryer
+devices/spoken::tv_aus:
+- बुझाओ tv
+devices/spoken_more::decke_aus_casual:
+- बुझाओ chhat shayankaksh
+devices/spoken_more::kugel_casual:
+- जलाओ gola
+devices/spoken_more::pc_aus:
+- बुझाओ pc
+devices/spoken_more::spuelmaschine_an:
+- जलाओ bartan
+devices/spoken_more::waschmaschine_aus:
+- बुझाओ washing

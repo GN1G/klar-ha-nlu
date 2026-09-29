@@ -1,0 +1,26 @@
+multiple_intents/multi::alle_ausser_schlaf_und_kueche:
+- নিভাও সব আলো chara shobarghor chara রান্না
+multiple_intents/multi::licht_und_heizung:
+- জ্বালাও সব আলো বসার ebong সেট গরম বসার 23
+multiple_intents/multi::wohn_und_ess_aus:
+- নিভাও সব আলো বসার ebong নিভাও সব আলো paribarikess
+multiple_intents/multi::wohn_und_ess_rot:
+- সেট সব আলো বসার red ebong সেট সব আলো paribarikess red
+multiple_intents/multi::wz_und_kuche_licht:
+- জ্বালাও সব আলো বসার ebong জ্বালাও সব আলো রান্না
+multiple_intents/multi::zwei_raeume_und_heizung:
+- জ্বালাও সব আলো বসার ebong জ্বালাও সব আলো রান্না ebong সেট গরম বসার 23
+multiple_intents/spoken::drei_raeume_an:
+- জ্বালাও সব আলো বসার ebong জ্বালাও সব আলো paribarikess ebong জ্বালাও সব আলো রান্না
+multiple_intents/spoken::drei_raeume_aus:
+- নিভাও সব আলো বসার ebong নিভাও সব আলো paribarikess ebong নিভাও সব আলো রান্না
+multiple_intents/spoken::ess_und_wohn_aus:
+- নিভাও সব আলো বসার ebong নিভাও সব আলো paribarikess
+multiple_intents/spoken::kugel_und_decke_aus:
+- gola এবং chhad shobarghor নিভাও
+multiple_intents/spoken_more::kuche_und_ess_an:
+- জ্বালাও সব আলো রান্না ebong জ্বালাও সব আলো paribarikess
+multiple_intents/spoken_more::wz_ess_arbeit_aus:
+- নিভাও সব আলো বসার ebong নিভাও সব আলো paribarikess ebong নিভাও সব আলো office
+multiple_intents/spoken_more::wz_und_arbeit_aus:
+- নিভাও সব আলো বসার ebong নিভাও সব আলো office

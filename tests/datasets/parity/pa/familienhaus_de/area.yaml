@@ -1,0 +1,248 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- ਬੰਦਕਰ ਪਰਦਾ bedroom2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- ਖੋਲ੍ਹ ਪਰਦਾ bedroom2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- ਸੈੱਟ ਪਰਦਾ bedroom2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- ਸੈੱਟ ਪੱਖਾ bedroom2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- ਬੰਦ ਪੱਖਾ bedroom2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- ਚਾਲੂ ਪੱਖਾ bedroom2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ bedroom2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ bedroom2 pink
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ bedroom2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ bedroom2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- ਬੰਦਕਰ ਪਰਦਾ bedroom3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- ਖੋਲ੍ਹ ਪਰਦਾ bedroom3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- ਸੈੱਟ ਪਰਦਾ bedroom3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ bedroom3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ bedroom3 blue
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ bedroom3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ bedroom3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ bedroom4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ bedroom4 green
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ bedroom4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ bedroom4
+area/dining_lights::dining_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ parivarakess 54
+area/dining_lights::dining_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ parivarakess blue
+area/dining_lights::dining_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ parivarakess
+area/dining_lights::dining_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ parivarakess
+area/entryway_lights::entryway_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ dakhla 72
+area/entryway_lights::entryway_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ dakhla black
+area/entryway_lights::entryway_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ dakhla
+area/entryway_lights::entryway_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ dakhla
+area/entryway_locks::entryway_locks_lock:
+- ਤਾਲਾ ਤਾਲਾ dakhla
+area/entryway_locks::entryway_locks_unlock:
+- ਖੋਲ੍ਹ ਤਾਲਾ dakhla
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ parivarak 39 ate ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ ਰਸੋਈ 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ parivarak purple ate ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ ਰਸੋਈ purple
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ parivarak ate ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ਰਸੋਈ
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ parivarak ate ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ ਰਸੋਈ
+area/family_room_fans::family_room_fans_set_fan_speed:
+- ਸੈੱਟ ਪੱਖਾ parivarak 32
+area/family_room_fans::family_room_fans_turn_off:
+- ਬੰਦ ਪੱਖਾ parivarak
+area/family_room_fans::family_room_fans_turn_on:
+- ਚਾਲੂ ਪੱਖਾ parivarak
+area/family_room_lights::family_room_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ parivarak 44
+area/family_room_lights::family_room_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ parivarak green
+area/family_room_lights::family_room_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ parivarak
+area/family_room_lights::family_room_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ parivarak
+area/garage_covers::garage_covers_close:
+- ਬੰਦਕਰ ਪਰਦਾ garage
+area/garage_covers::garage_covers_open:
+- ਖੋਲ੍ਹ ਪਰਦਾ garage
+area/garage_covers::garage_covers_set_position:
+- ਸੈੱਟ ਪਰਦਾ garage 86
+area/garage_lights::garage_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ garage 16
+area/garage_lights::garage_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ garage blue
+area/garage_lights::garage_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ garage
+area/garage_lights::garage_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ garage
+area/garage_locks::garage_locks_lock:
+- ਤਾਲਾ ਤਾਲਾ garage
+area/garage_locks::garage_locks_unlock:
+- ਖੋਲ੍ਹ ਤਾਲਾ garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ dakhlagang 26 ate ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ toilet 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ dakhlagang purple ate ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ toilet purple
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ dakhlagang ate ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ toilet
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ dakhlagang ate ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ toilet
+area/hallway_lights::hallway_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ dakhlagang 61
+area/hallway_lights::hallway_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ dakhlagang orange
+area/hallway_lights::hallway_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ dakhlagang
+area/hallway_lights::hallway_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ dakhlagang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ ਰਸੋਈ 45
+area/kitchen_lights::kitchen_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ ਰਸੋਈ pink
+area/kitchen_lights::kitchen_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ਰਸੋਈ
+area/kitchen_lights::kitchen_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ ਰਸੋਈ
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- ਬੰਦ ਸਭ upkaran ਰਸੋਈ
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- ਚਾਲੂ ਸਭ upkaran ਰਸੋਈ
+area/laundry_lights::laundry_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ dhon 62
+area/laundry_lights::laundry_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ dhon yellow
+area/laundry_lights::laundry_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ dhon
+area/laundry_lights::laundry_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ dhon
+area/laundry_switchs::laundry_switchs_turn_off:
+- ਬੰਦ ਸਭ upkaran dhon
+area/laundry_switchs::laundry_switchs_turn_on:
+- ਚਾਲੂ ਸਭ upkaran dhon
+area/living_climates::living_climates_set_temperature:
+- ਸੈੱਟ ਗਰਮੀ ਬੈਠਕ 20
+area/living_covers::living_covers_close:
+- ਬੰਦਕਰ ਪਰਦਾ ਬੈਠਕ
+area/living_covers::living_covers_open:
+- ਖੋਲ੍ਹ ਪਰਦਾ ਬੈਠਕ
+area/living_covers::living_covers_set_position:
+- ਸੈੱਟ ਪਰਦਾ ਬੈਠਕ 46
+area/living_lights::living_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ 84
+area/living_lights::living_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ blue
+area/living_lights::living_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ
+area/living_lights::living_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ
+area/main_bath_lights::main_bath_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ main bath pink
+area/main_bath_lights::main_bath_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- ਬੰਦ ਸਭ upkaran main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- ਚਾਲੂ ਸਭ upkaran main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ masterbath 60
+area/master_bath_lights::master_bath_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ masterbath black
+area/master_bath_lights::master_bath_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ masterbath
+area/master_bath_lights::master_bath_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ masterbath
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- ਬੰਦ ਸਭ upkaran masterbath
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- ਚਾਲੂ ਸਭ upkaran masterbath
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- ਸੈੱਟ ਗਰਮੀ bedroommaster 20 ate ਸੈੱਟ ਗਰਮੀ ਬੈਠਕ 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- ਬੰਦਕਰ ਪਰਦਾ bedroommaster ate ਬੰਦਕਰ ਪਰਦਾ ਬੈਠਕ
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- ਖੋਲ੍ਹ ਪਰਦਾ bedroommaster ate ਖੋਲ੍ਹ ਪਰਦਾ ਬੈਠਕ
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- ਸੈੱਟ ਪਰਦਾ bedroommaster 19 ate ਸੈੱਟ ਪਰਦਾ ਬੈਠਕ 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ bedroommaster 25 ate ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ bedroommaster white ate ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ white
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ bedroommaster ate ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ bedroommaster ate ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ bedroommaster 57 ate ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ main bath 57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ bedroommaster pink ate ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ main bath pink
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ bedroommaster ate ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ bedroommaster ate ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- ਸੈੱਟ ਗਰਮੀ bedroommaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- ਬੰਦਕਰ ਪਰਦਾ bedroommaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- ਖੋਲ੍ਹ ਪਰਦਾ bedroommaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- ਸੈੱਟ ਪਰਦਾ bedroommaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- ਸੈੱਟ ਪੱਖਾ bedroommaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- ਬੰਦ ਪੱਖਾ bedroommaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- ਚਾਲੂ ਪੱਖਾ bedroommaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ bedroommaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ bedroommaster pink
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ bedroommaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ bedroommaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ toilet 52
+area/powder_room_lights::powder_room_lights_change_color:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ toilet purple
+area/powder_room_lights::powder_room_lights_turn_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ toilet
+area/powder_room_lights::powder_room_lights_turn_on:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ toilet
+area/spoken_lights::spoken_bedroom_inflection:
+- ਸੈੱਟ ਸਭ ਰੋਸ਼ਨੀ bedroommaster red
+area/spoken_lights::spoken_except_island:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava tapu
+area/spoken_lights::spoken_except_kitchen:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ilava ਰਸੋਈ
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ ate ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ parivarakess ate ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ਰਸੋਈ
+area/spoken_lights::spoken_stt_kitchen_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ਰਸੋਈ
+area/spoken_lights::spoken_stt_living_off:
+- ਬੰਦ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ

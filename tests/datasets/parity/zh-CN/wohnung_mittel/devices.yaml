@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- 关闭 tianhuaban woshi
+devices/geraete::device_arbeitszimmer_an:
+- 打开 灯 office
+devices/geraete::device_esszimmer_an:
+- 打开 灯 jiatingfangess
+devices/geraete::device_kuche_kuche_an:
+- 打开 灯 厨房
+devices/geraete::device_wohnzimmer_an:
+- 打开 灯 客厅
+devices/geraete::filmabend:
+- 打开 场景 filmabend
+devices/geraete::kugel_an:
+- 打开 qiudeng
+devices/geraete::luefter_50:
+- 设置 风扇 office 50
+devices/geraete::pc_an:
+- 打开 pc
+devices/geraete::r2d2_saugen:
+- 打开 扫地 客厅
+devices/geraete::rollo_zu:
+- 合上 帘子 客厅
+devices/geraete::spuelmaschine_aus:
+- 关闭 xiwanji
+devices/geraete::tuer_abschliessen:
+- 锁 锁 xuanguan
+devices/geraete::waschmaschine_an:
+- 打开 xiyiji
+devices/klima::klima_schlaf_21:
+- 设置 ac woshi 21
+devices/spoken::deckenlampe_an:
+- 打开 tianhuaban woshi
+devices/spoken::kugel_aus:
+- 关闭 qiudeng
+devices/spoken::luefter_aus:
+- 关闭 风扇 office
+devices/spoken::rollo_auf:
+- 开启 帘子 客厅
+devices/spoken::trockner_an:
+- 打开 dryer
+devices/spoken::tv_aus:
+- 关闭 tv
+devices/spoken_more::decke_aus_casual:
+- 关闭 tianhuaban woshi
+devices/spoken_more::kugel_casual:
+- 打开 qiudeng
+devices/spoken_more::pc_aus:
+- 关闭 pc
+devices/spoken_more::spuelmaschine_an:
+- 打开 xiwanji
+devices/spoken_more::waschmaschine_aus:
+- 关闭 xiyiji

@@ -1,0 +1,18 @@
+query_devices/spoken::status_kugel:
+- શું gol
+query_devices/spoken::status_pc:
+- શું pc
+query_devices/spoken::status_trockner:
+- શું dryer
+query_devices/spoken::status_tv:
+- શું tv
+query_devices/spoken_more::status_decke:
+- શું chhat shayankhand
+query_devices/spoken_more::status_spuelmaschine:
+- શું vasan
+query_devices/spoken_more::status_wasch_casual:
+- શું washing
+query_devices/status::status_r2d2:
+- શું ઝાડુ ઓરડો
+query_devices/status::status_waschmaschine:
+- શું washing

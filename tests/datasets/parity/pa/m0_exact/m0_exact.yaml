@@ -1,0 +1,19 @@
+m0_exact/representative::exact_clarify:
+- ਚਾਲੂ ਸਭ ਰੋਸ਼ਨੀ ਬੈਠਕ
+m0_exact/representative::exact_list_complete_from_setup:
+- ਹੋ ਗਿਆ bread aufgabenliste
+m0_exact/representative::exact_multi_intent:
+- ਚਾਲੂ chhat bedroom3 ate ਬੰਦ ਰੋਸ਼ਨੀ dakhla
+m0_exact/representative::exact_reject:
+- weather france
+m0_exact/representative::exact_shopping_list:
+- add milk ਸੂਚੀ
+m0_exact/representative::exact_state_persistence:
+- - ਕੀ ਰੋਸ਼ਨੀ dakhla
+  - '12'
+m0_exact/representative::exact_timer:
+- ਚਾਲੂ ਟਾਈਮਰ oven 2 min
+m0_exact/representative::exact_timer_resume_preserves_duration:
+- ਚਾਲੂ ਟਾਈਮਰ oven
+m0_exact/representative::exact_todo_list:
+- add apples aufgabenliste

@@ -1,0 +1,18 @@
+query_devices/spoken::status_kugel:
+- 咩 qiudeng
+query_devices/spoken::status_pc:
+- 咩 pc
+query_devices/spoken::status_trockner:
+- 咩 dryer
+query_devices/spoken::status_tv:
+- 咩 tv
+query_devices/spoken_more::status_decke:
+- 咩 tianhuaban woshi
+query_devices/spoken_more::status_spuelmaschine:
+- 咩 xiwanji
+query_devices/spoken_more::status_wasch_casual:
+- 咩 xiyiji
+query_devices/status::status_r2d2:
+- 咩 掃地 客廳
+query_devices/status::status_waschmaschine:
+- 咩 xiyiji

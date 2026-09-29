@@ -1,0 +1,18 @@
+query_devices/spoken::status_kugel:
+- কি gola
+query_devices/spoken::status_pc:
+- কি pc
+query_devices/spoken::status_trockner:
+- কি dryer
+query_devices/spoken::status_tv:
+- কি tv
+query_devices/spoken_more::status_decke:
+- কি chhad shobarghor
+query_devices/spoken_more::status_spuelmaschine:
+- কি basan
+query_devices/spoken_more::status_wasch_casual:
+- কি washing
+query_devices/status::status_r2d2:
+- কি ঝাড়ু বসার
+query_devices/status::status_waschmaschine:
+- কি washing

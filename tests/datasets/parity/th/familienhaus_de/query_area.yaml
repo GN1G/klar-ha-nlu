@@ -1,0 +1,248 @@
+query_area/bedroom_2_covers::bedroom_2_covers_get_position:
+- อะไร ม่าน hongnon2
+query_area/bedroom_2_covers::bedroom_2_covers_get_state:
+- อะไร ม่าน hongnon2
+query_area/bedroom_2_covers::bedroom_2_covers_list_closed_covers:
+- อะไร ม่าน hongnon2
+query_area/bedroom_2_covers::bedroom_2_covers_list_open_covers:
+- อะไร ม่าน hongnon2
+query_area/bedroom_2_fans::bedroom_2_fans_get_fan_speed:
+- อะไร พัดลม hongnon2
+query_area/bedroom_2_fans::bedroom_2_fans_get_state:
+- อะไร พัดลม hongnon2
+query_area/bedroom_2_fans::bedroom_2_fans_list_off_fans:
+- อะไร พัดลม hongnon2
+query_area/bedroom_2_fans::bedroom_2_fans_list_on_fans:
+- อะไร พัดลม hongnon2
+query_area/bedroom_2_lights::bedroom_2_lights_get_brightness:
+- อะไร ไฟ hongnon2
+query_area/bedroom_2_lights::bedroom_2_lights_get_state:
+- อะไร ไฟ hongnon2
+query_area/bedroom_2_lights::bedroom_2_lights_list_off_lights:
+- อะไร ไฟ hongnon2
+query_area/bedroom_2_lights::bedroom_2_lights_list_on_lights:
+- อะไร ไฟ hongnon2
+query_area/bedroom_3_covers::bedroom_3_covers_get_position:
+- อะไร ม่าน hongnon3
+query_area/bedroom_3_covers::bedroom_3_covers_get_state:
+- อะไร ม่าน hongnon3
+query_area/bedroom_3_covers::bedroom_3_covers_list_closed_covers:
+- อะไร ม่าน hongnon3
+query_area/bedroom_3_covers::bedroom_3_covers_list_open_covers:
+- อะไร ม่าน hongnon3
+query_area/bedroom_3_lights::bedroom_3_lights_get_brightness:
+- อะไร ไฟ hongnon3
+query_area/bedroom_3_lights::bedroom_3_lights_get_state:
+- อะไร ไฟ hongnon3
+query_area/bedroom_3_lights::bedroom_3_lights_list_off_lights:
+- อะไร ไฟ hongnon3
+query_area/bedroom_3_lights::bedroom_3_lights_list_on_lights:
+- อะไร ไฟ hongnon3
+query_area/bedroom_4_lights::bedroom_4_lights_get_brightness:
+- อะไร ไฟ hongnon4
+query_area/bedroom_4_lights::bedroom_4_lights_get_state:
+- อะไร ไฟ hongnon4
+query_area/bedroom_4_lights::bedroom_4_lights_list_off_lights:
+- อะไร ไฟ hongnon4
+query_area/bedroom_4_lights::bedroom_4_lights_list_on_lights:
+- อะไร ไฟ hongnon4
+query_area/dining_lights::dining_lights_get_brightness:
+- อะไร ไฟ hongkhropkhruaess
+query_area/dining_lights::dining_lights_get_state:
+- อะไร ไฟ hongkhropkhruaess
+query_area/dining_lights::dining_lights_list_off_lights:
+- อะไร ไฟ hongkhropkhruaess
+query_area/dining_lights::dining_lights_list_on_lights:
+- อะไร ไฟ hongkhropkhruaess
+query_area/entryway_lights::entryway_lights_get_brightness:
+- อะไร ไฟ thangkhau
+query_area/entryway_lights::entryway_lights_get_state:
+- อะไร ไฟ thangkhau
+query_area/entryway_lights::entryway_lights_list_off_lights:
+- อะไร ไฟ thangkhau
+query_area/entryway_lights::entryway_lights_list_on_lights:
+- อะไร ไฟ thangkhau
+query_area/entryway_locks::entryway_locks_get_state:
+- อะไร กุญแจ thangkhau
+query_area/entryway_locks::entryway_locks_list_locked_locks:
+- อะไร กุญแจ thangkhau
+query_area/entryway_locks::entryway_locks_list_unlocked_locks:
+- อะไร กุญแจ thangkhau
+query_area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_get_brightness:
+- อะไร ไฟ hongkhropkhrua then อะไร ไฟ ห้องครัว
+query_area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_get_state:
+- อะไร ไฟ hongkhropkhrua then อะไร ไฟ ห้องครัว
+query_area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_list_off_lights:
+- อะไร ไฟ hongkhropkhrua then อะไร ไฟ ห้องครัว
+query_area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_list_on_lights:
+- อะไร ไฟ hongkhropkhrua then อะไร ไฟ ห้องครัว
+query_area/family_room_fans::family_room_fans_get_fan_speed:
+- อะไร พัดลม hongkhropkhrua
+query_area/family_room_fans::family_room_fans_get_state:
+- อะไร พัดลม hongkhropkhrua
+query_area/family_room_fans::family_room_fans_list_off_fans:
+- อะไร พัดลม hongkhropkhrua
+query_area/family_room_fans::family_room_fans_list_on_fans:
+- อะไร พัดลม hongkhropkhrua
+query_area/family_room_lights::family_room_lights_get_brightness:
+- อะไร ไฟ hongkhropkhrua
+query_area/family_room_lights::family_room_lights_get_state:
+- อะไร ไฟ hongkhropkhrua
+query_area/family_room_lights::family_room_lights_list_off_lights:
+- อะไร ไฟ hongkhropkhrua
+query_area/family_room_lights::family_room_lights_list_on_lights:
+- อะไร ไฟ hongkhropkhrua
+query_area/garage_covers::garage_covers_get_position:
+- อะไร ม่าน garage
+query_area/garage_covers::garage_covers_get_state:
+- อะไร ม่าน garage
+query_area/garage_covers::garage_covers_list_closed_covers:
+- อะไร ม่าน garage
+query_area/garage_covers::garage_covers_list_open_covers:
+- อะไร ม่าน garage
+query_area/garage_lights::garage_lights_get_brightness:
+- อะไร ไฟ garage
+query_area/garage_lights::garage_lights_get_state:
+- อะไร ไฟ garage
+query_area/garage_lights::garage_lights_list_off_lights:
+- อะไร ไฟ garage
+query_area/garage_lights::garage_lights_list_on_lights:
+- อะไร ไฟ garage
+query_area/garage_locks::garage_locks_get_state:
+- อะไร กุญแจ garage
+query_area/garage_locks::garage_locks_list_locked_locks:
+- อะไร กุญแจ garage
+query_area/garage_locks::garage_locks_list_unlocked_locks:
+- อะไร กุญแจ garage
+query_area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_get_brightness:
+- อะไร ไฟ thangkhaugang then อะไร ไฟ hongnamkhaek
+query_area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_get_state:
+- อะไร ไฟ thangkhaugang then อะไร ไฟ hongnamkhaek
+query_area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_list_off_lights:
+- อะไร ไฟ thangkhaugang then อะไร ไฟ hongnamkhaek
+query_area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_list_on_lights:
+- อะไร ไฟ thangkhaugang then อะไร ไฟ hongnamkhaek
+query_area/hallway_lights::hallway_lights_get_brightness:
+- อะไร ไฟ thangkhaugang
+query_area/hallway_lights::hallway_lights_get_state:
+- อะไร ไฟ thangkhaugang
+query_area/hallway_lights::hallway_lights_list_off_lights:
+- อะไร ไฟ thangkhaugang
+query_area/hallway_lights::hallway_lights_list_on_lights:
+- อะไร ไฟ thangkhaugang
+query_area/kitchen_lights::kitchen_lights_get_brightness:
+- อะไร ไฟ ห้องครัว
+query_area/kitchen_lights::kitchen_lights_get_state:
+- อะไร ไฟ ห้องครัว
+query_area/kitchen_lights::kitchen_lights_list_off_lights:
+- อะไร ไฟ ห้องครัว
+query_area/kitchen_lights::kitchen_lights_list_on_lights:
+- อะไร ไฟ ห้องครัว
+query_area/kitchen_switchs::kitchen_switchs_get_state:
+- อะไร khrueang ห้องครัว
+query_area/kitchen_switchs::kitchen_switchs_list_off_switchs:
+- อะไร khrueang ห้องครัว
+query_area/kitchen_switchs::kitchen_switchs_list_on_switchs:
+- อะไร khrueang ห้องครัว
+query_area/laundry_lights::laundry_lights_get_brightness:
+- อะไร ไฟ hongsakpha
+query_area/laundry_lights::laundry_lights_get_state:
+- อะไร ไฟ hongsakpha
+query_area/laundry_lights::laundry_lights_list_off_lights:
+- อะไร ไฟ hongsakpha
+query_area/laundry_lights::laundry_lights_list_on_lights:
+- อะไร ไฟ hongsakpha
+query_area/laundry_switchs::laundry_switchs_get_state:
+- อะไร khrueang hongsakpha
+query_area/laundry_switchs::laundry_switchs_list_off_switchs:
+- อะไร khrueang hongsakpha
+query_area/laundry_switchs::laundry_switchs_list_on_switchs:
+- อะไร khrueang hongsakpha
+query_area/living_climates::living_climates_get_temperature:
+- อะไร แอร์ ห้องนั่งเล่น
+query_area/living_covers::living_covers_get_position:
+- อะไร ม่าน ห้องนั่งเล่น
+query_area/living_covers::living_covers_get_state:
+- อะไร ม่าน ห้องนั่งเล่น
+query_area/living_covers::living_covers_list_closed_covers:
+- อะไร ม่าน ห้องนั่งเล่น
+query_area/living_covers::living_covers_list_open_covers:
+- อะไร ม่าน ห้องนั่งเล่น
+query_area/living_lights::living_lights_get_brightness:
+- อะไร ไฟ ห้องนั่งเล่น
+query_area/living_lights::living_lights_get_state:
+- อะไร ไฟ ห้องนั่งเล่น
+query_area/living_lights::living_lights_list_off_lights:
+- อะไร ไฟ ห้องนั่งเล่น
+query_area/living_lights::living_lights_list_on_lights:
+- อะไร ไฟ ห้องนั่งเล่น
+query_area/main_bath_lights::main_bath_lights_get_brightness:
+- อะไร ไฟ main bath
+query_area/main_bath_lights::main_bath_lights_get_state:
+- อะไร ไฟ main bath
+query_area/main_bath_lights::main_bath_lights_list_off_lights:
+- อะไร ไฟ main bath
+query_area/main_bath_lights::main_bath_lights_list_on_lights:
+- อะไร ไฟ main bath
+query_area/main_bath_switchs::main_bath_switchs_get_state:
+- อะไร khrueang main bath
+query_area/main_bath_switchs::main_bath_switchs_list_off_switchs:
+- อะไร khrueang main bath
+query_area/main_bath_switchs::main_bath_switchs_list_on_switchs:
+- อะไร khrueang main bath
+query_area/master_bath_lights::master_bath_lights_get_brightness:
+- อะไร ไฟ hongnamlak
+query_area/master_bath_lights::master_bath_lights_get_state:
+- อะไร ไฟ hongnamlak
+query_area/master_bath_lights::master_bath_lights_list_off_lights:
+- อะไร ไฟ hongnamlak
+query_area/master_bath_lights::master_bath_lights_list_on_lights:
+- อะไร ไฟ hongnamlak
+query_area/master_bath_switchs::master_bath_switchs_get_state:
+- อะไร khrueang hongnamlak
+query_area/master_bath_switchs::master_bath_switchs_list_off_switchs:
+- อะไร khrueang hongnamlak
+query_area/master_bath_switchs::master_bath_switchs_list_on_switchs:
+- อะไร khrueang hongnamlak
+query_area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_get_position:
+- อะไร ม่าน hongnonmaster then อะไร ม่าน ห้องนั่งเล่น
+query_area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_get_state:
+- อะไร ม่าน hongnonmaster then อะไร ม่าน ห้องนั่งเล่น
+query_area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_list_closed_covers:
+- อะไร ม่าน hongnonmaster then อะไร ม่าน ห้องนั่งเล่น
+query_area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_list_open_covers:
+- อะไร ม่าน hongnonmaster then อะไร ม่าน ห้องนั่งเล่น
+query_area/master_bedroom_climates::master_bedroom_climates_get_temperature:
+- อะไร แอร์ hongnonmaster
+query_area/master_bedroom_covers::master_bedroom_covers_get_position:
+- อะไร ม่าน hongnonmaster
+query_area/master_bedroom_covers::master_bedroom_covers_get_state:
+- อะไร ม่าน hongnonmaster
+query_area/master_bedroom_covers::master_bedroom_covers_list_closed_covers:
+- อะไร ม่าน hongnonmaster
+query_area/master_bedroom_covers::master_bedroom_covers_list_open_covers:
+- อะไร ม่าน hongnonmaster
+query_area/master_bedroom_fans::master_bedroom_fans_get_fan_speed:
+- อะไร พัดลม hongnonmaster
+query_area/master_bedroom_fans::master_bedroom_fans_get_state:
+- อะไร พัดลม hongnonmaster
+query_area/master_bedroom_fans::master_bedroom_fans_list_off_fans:
+- อะไร พัดลม hongnonmaster
+query_area/master_bedroom_fans::master_bedroom_fans_list_on_fans:
+- อะไร พัดลม hongnonmaster
+query_area/master_bedroom_lights::master_bedroom_lights_get_brightness:
+- อะไร ไฟ hongnonmaster
+query_area/master_bedroom_lights::master_bedroom_lights_get_state:
+- อะไร ไฟ hongnonmaster
+query_area/master_bedroom_lights::master_bedroom_lights_list_off_lights:
+- อะไร ไฟ hongnonmaster
+query_area/master_bedroom_lights::master_bedroom_lights_list_on_lights:
+- อะไร ไฟ hongnonmaster
+query_area/powder_room_lights::powder_room_lights_get_brightness:
+- อะไร ไฟ hongnamkhaek
+query_area/powder_room_lights::powder_room_lights_get_state:
+- อะไร ไฟ hongnamkhaek
+query_area/powder_room_lights::powder_room_lights_list_off_lights:
+- อะไร ไฟ hongnamkhaek
+query_area/powder_room_lights::powder_room_lights_list_on_lights:
+- อะไร ไฟ hongnamkhaek

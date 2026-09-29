@@ -1,0 +1,48 @@
+- name: media_player.living_tv_on
+  conditions:
+  - type: action
+    entity_id: media_player.living_tv
+    state: 'on'
+  sentences:
+  - tv հյուրասենյակ միացրու
+  - միացրու tv հյուրասենյակ
+- name: media_player.living_tv_off
+  conditions:
+  - type: action
+    entity_id: media_player.living_tv
+    state: 'off'
+  sentences:
+  - անջատիր tv հյուրասենյակ
+  - tv հյուրասենյակ անջատիր
+- name: media_player.living_tv_pause
+  conditions:
+  - type: action
+    entity_id: media_player.living_tv
+    state: paused
+  sentences:
+  - դադար tv հյուրասենյակ
+  - tv հյուրասենյակ դադար
+- name: media_player.family_tv_on
+  conditions:
+  - type: action
+    entity_id: media_player.family_tv
+    state: 'on'
+  sentences:
+  - tv yntaniq միացրու
+  - միացրու tv yntaniq
+- name: media_player.family_tv_off
+  conditions:
+  - type: action
+    entity_id: media_player.family_tv
+    state: 'off'
+  sentences:
+  - անջատիր tv yntaniq
+  - tv yntaniq անջատիր
+- name: media_player.family_tv_pause
+  conditions:
+  - type: action
+    entity_id: media_player.family_tv
+    state: paused
+  sentences:
+  - դադար tv yntaniq
+  - tv yntaniq դադար

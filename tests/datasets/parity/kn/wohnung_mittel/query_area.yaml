@@ -1,0 +1,28 @@
+query_area/spoken::status_licht_kuche_casual:
+- ಏನು ಬೆಳಕು ಅಡುಗೆ
+query_area/spoken::status_licht_wohnzimmer_casual:
+- ಏನು ಬೆಳಕು ಹಾಲ್
+query_area/spoken_more::brennt_arbeitszimmer:
+- ಏನು ಬೆಳಕು office
+query_area/spoken_more::brennt_esszimmer:
+- ಏನು ಬೆಳಕು kutumbaess
+query_area/spoken_more::status_licht_schlaf_casual:
+- ಏನು ಬೆಳಕು shayanakone
+query_area/status::status_alle_lichter:
+- ಏನು ಎಲ್ಲ ಬೆಳಕು
+query_area/status::status_licht_arbeitszimmer:
+- ಏನು ಬೆಳಕು office
+query_area/status::status_licht_badezimmer:
+- weather france
+query_area/status::status_licht_esszimmer:
+- ಏನು ಬೆಳಕು kutumbaess
+query_area/status::status_licht_kuche:
+- ಏನು ಬೆಳಕು ಅಡುಗೆ
+query_area/status::status_licht_wohnzimmer:
+- ಏನು ಬೆಳಕು ಹಾಲ್
+query_area/status::status_wohn_und_esszimmer:
+- ಏನು wohn und esszimmer
+query_area/status::temperatur_wohnung:
+- weather france
+query_area/status::temperatur_wohnzimmer:
+- ಏನು ಬಿಸಿ ಹಾಲ್

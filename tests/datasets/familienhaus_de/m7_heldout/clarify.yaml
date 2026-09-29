@@ -1,0 +1,8 @@
+- name: clarify_living
+  split: clarify
+  language: de
+  sentences:
+    - 'mach die lampe im schlafzimmer an'
+  nlu_expect:
+    clarify: true
+    intents: []

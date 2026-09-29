@@ -1,0 +1,96 @@
+- name: switch.dishwasher_on
+  conditions:
+  - type: action
+    entity_id: switch.dishwasher
+    state: 'on'
+  sentences:
+  - 打開 xiwanji 廚房
+  - xiwanji 廚房 打開
+- name: switch.dishwasher_off
+  conditions:
+  - type: action
+    entity_id: switch.dishwasher
+    state: 'off'
+  sentences:
+  - 關閉 xiwanji 廚房
+  - xiwanji 廚房 關閉
+- name: switch.washing_machine_on
+  conditions:
+  - type: action
+    entity_id: switch.washing_machine
+    state: 'on'
+  sentences:
+  - 打開 xiyiji xiyifang
+  - xiyiji xiyifang 打開
+- name: switch.washing_machine_off
+  conditions:
+  - type: action
+    entity_id: switch.washing_machine
+    state: 'off'
+  sentences:
+  - 關閉 xiyiji xiyifang
+  - xiyiji xiyifang 關閉
+- name: switch.dryer_on
+  conditions:
+  - type: action
+    entity_id: switch.dryer
+    state: 'on'
+  sentences:
+  - 打開 dryer xiyifang
+  - dryer xiyifang 打開
+- name: switch.dryer_off
+  conditions:
+  - type: action
+    entity_id: switch.dryer
+    state: 'off'
+  sentences:
+  - 關閉 dryer xiyifang
+  - dryer xiyifang 關閉
+- name: switch.rangehood_on
+  conditions:
+  - type: action
+    entity_id: switch.rangehood
+    state: 'on'
+  sentences:
+  - 打開 rangehood 廚房
+  - rangehood 廚房 打開
+- name: switch.rangehood_off
+  conditions:
+  - type: action
+    entity_id: switch.rangehood
+    state: 'off'
+  sentences:
+  - 關閉 rangehood 廚房
+  - rangehood 廚房 關閉
+- name: switch.master_bath_fan_on
+  conditions:
+  - type: action
+    entity_id: switch.master_bath_fan
+    state: 'on'
+  sentences:
+  - 打開 風扇bad zhuwei
+  - 風扇bad zhuwei 打開
+- name: switch.master_bath_fan_off
+  conditions:
+  - type: action
+    entity_id: switch.master_bath_fan
+    state: 'off'
+  sentences:
+  - 關閉 風扇bad zhuwei
+  - 風扇bad zhuwei 關閉
+- name: switch.main_bath_fan_on
+  conditions:
+  - type: action
+    entity_id: switch.main_bath_fan
+    state: 'on'
+  sentences:
+  - 打開 風扇bad main bath
+  - 風扇bad main bath 打開
+- name: switch.main_bath_fan_off
+  conditions:
+  - type: action
+    entity_id: switch.main_bath_fan
+    state: 'off'
+  sentences:
+  - 關閉 風扇bad main bath
+  - 風扇bad main bath 關閉

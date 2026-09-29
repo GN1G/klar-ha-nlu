@@ -1,0 +1,507 @@
+name: Full Home mn
+language: mn
+difficulty: full
+policy:
+  preferred_climate: climate.upper_thermostat
+  timer_hints:
+    90: laundry
+floors:
+- id: ground
+  name: dood
+  level: 0
+  aliases:
+  - dood
+  - gazar
+- id: upper
+  name: deed
+  level: 1
+  aliases:
+  - deed
+  - davhar
+- id: basement
+  name: basement
+  level: -1
+  aliases:
+  - basement
+  - keller
+areas:
+- id: entryway
+  name: Orol
+  floor: ground
+  aliases:
+  - orol
+- id: living
+  name: зочны
+  floor: ground
+  aliases:
+  - зочны
+  - zochny
+- id: dining
+  name: Gerbuless
+  floor: ground
+  aliases:
+  - gerbuless
+- id: kitchen
+  name: галтогоо
+  floor: ground
+  aliases:
+  - галтогоо
+  - galtogoo
+- id: family_room
+  name: Gerbul
+  floor: ground
+  aliases:
+  - gerbul
+- id: laundry
+  name: Ugaalga
+  floor: ground
+  aliases:
+  - ugaalga
+- id: powder_room
+  name: Oroon
+  floor: ground
+  aliases:
+  - oroon
+- id: garage
+  name: Garage
+  floor: ground
+  aliases:
+  - garage
+- id: office
+  name: Office
+  floor: ground
+  aliases:
+  - office
+- id: garden
+  name: Garden
+  floor: ground
+  aliases:
+  - garden
+- id: master_bedroom
+  name: Untlagiinmaster
+  floor: upper
+  aliases:
+  - untlagiinmaster
+  - untlagiin
+- id: bedroom_2
+  name: Untlagiin2
+  floor: upper
+  aliases:
+  - untlagiin2
+- id: bedroom_3
+  name: Untlagiin3
+  floor: upper
+  aliases:
+  - untlagiin3
+- id: bedroom_4
+  name: Untlagiin4
+  floor: upper
+  aliases:
+  - untlagiin4
+- id: master_bath
+  name: Untlagiinugasalgach
+  floor: upper
+  aliases:
+  - untlagiinugasalgach
+- id: main_bath
+  name: Main Bath
+  floor: upper
+  aliases:
+  - main bath
+- id: hallway
+  name: Hallway
+  floor: upper
+  aliases:
+  - hallway
+- id: basement
+  name: Basement
+  floor: basement
+  aliases:
+  - basement
+devices:
+- id: light.entryway_light
+  area_id: entryway
+  name: orol гэрэл
+  aliases:
+  - orol гэрэл
+  - гэрэл
+- id: light.living_ceiling
+  area_id: living
+  name: зочны taaz
+  aliases:
+  - зочны taaz
+  - taaz
+- id: light.living_lamp
+  area_id: living
+  name: зочны gerel
+  aliases:
+  - зочны gerel
+  - gerel
+- id: light.dining_pendant
+  area_id: dining
+  name: gerbuless гэрэл
+  aliases:
+  - gerbuless гэрэл
+  - гэрэл
+- id: light.kitchen_ceiling
+  area_id: kitchen
+  name: галтогоо taaz
+  aliases:
+  - галтогоо taaz
+  - taaz
+- id: light.kitchen_island
+  area_id: kitchen
+  name: галтогоо aran
+  aliases:
+  - галтогоо aran
+  - aran
+- id: light.family_ceiling
+  area_id: family_room
+  name: gerbul taaz
+  aliases:
+  - gerbul taaz
+  - taaz
+- id: light.laundry_light
+  area_id: laundry
+  name: ugaalga гэрэл
+  aliases:
+  - ugaalga гэрэл
+  - гэрэл
+- id: light.powder_room_light
+  area_id: powder_room
+  name: oroon гэрэл
+  aliases:
+  - oroon гэрэл
+  - гэрэл
+- id: light.garage_light
+  area_id: garage
+  name: garage гэрэл
+  aliases:
+  - garage гэрэл
+  - гэрэл
+- id: light.office_ceiling
+  area_id: office
+  name: office taaz
+  aliases:
+  - office taaz
+  - taaz
+- id: light.garden
+  area_id: garden
+  name: garden гэрэл
+  aliases:
+  - garden гэрэл
+  - гэрэл
+- id: light.master_ceiling
+  area_id: master_bedroom
+  name: untlagiinmaster taaz
+  aliases:
+  - untlagiinmaster taaz
+  - taaz
+- id: light.master_ensuite
+  area_id: master_bedroom
+  name: untlagiinmaster ensuite
+  aliases:
+  - untlagiinmaster ensuite
+  - ensuite
+  tags:
+  - ensuite
+- id: light.master_bedside_left
+  area_id: master_bedroom
+  name: untlagiinmaster left oronii
+  aliases:
+  - untlagiinmaster left oronii
+  - oronii
+- id: light.master_bedside_right
+  area_id: master_bedroom
+  name: untlagiinmaster right oronii
+  aliases:
+  - untlagiinmaster right oronii
+  - oronii
+- id: light.bedroom2_ceiling
+  area_id: bedroom_2
+  name: untlagiin2 taaz
+  aliases:
+  - untlagiin2 taaz
+  - taaz
+- id: light.bedroom3_ceiling
+  area_id: bedroom_3
+  name: untlagiin3 taaz
+  aliases:
+  - untlagiin3 taaz
+  - taaz
+- id: light.bedroom4_ceiling
+  area_id: bedroom_4
+  name: untlagiin4 taaz
+  aliases:
+  - untlagiin4 taaz
+  - taaz
+- id: light.master_bath_light
+  area_id: master_bath
+  name: untlagiinugasalgach гэрэл
+  aliases:
+  - untlagiinugasalgach гэрэл
+  - гэрэл
+- id: light.main_bath_light
+  area_id: main_bath
+  name: main bath гэрэл
+  aliases:
+  - main bath гэрэл
+  - гэрэл
+- id: light.hallway_light
+  area_id: hallway
+  name: hallway гэрэл
+  aliases:
+  - hallway гэрэл
+  - гэрэл
+- id: light.basement
+  area_id: basement
+  name: basement гэрэл
+  aliases:
+  - basement гэрэл
+  - гэрэл
+- id: cover.living_blinds
+  area_id: living
+  name: зочны хөшиг
+  aliases:
+  - зочны хөшиг
+  - хөшиг
+- id: cover.master_blinds
+  area_id: master_bedroom
+  name: untlagiinmaster хөшиг
+  aliases:
+  - untlagiinmaster хөшиг
+  - хөшиг
+- id: cover.bedroom2_blinds
+  area_id: bedroom_2
+  name: untlagiin2 хөшиг
+  aliases:
+  - untlagiin2 хөшиг
+  - хөшиг
+- id: cover.bedroom3_blinds
+  area_id: bedroom_3
+  name: untlagiin3 хөшиг
+  aliases:
+  - untlagiin3 хөшиг
+  - хөшиг
+- id: cover.garage_door
+  area_id: garage
+  name: garage хөшиг
+  aliases:
+  - garage хөшиг
+  - хөшиг
+- id: climate.ground_thermostat
+  area_id: living
+  name: зочны халаалт
+  aliases:
+  - зочны халаалт
+  - халаалт
+- id: climate.upper_thermostat
+  area_id: master_bedroom
+  name: untlagiinmaster халаалт
+  aliases:
+  - untlagiinmaster халаалт
+  - халаалт
+- id: climate.master_ac
+  area_id: master_bedroom
+  name: khalaalt untlagiinmaster
+  aliases:
+  - khalaalt untlagiinmaster
+  - khalaalt
+  - ac
+  tags:
+  - khalaalt
+- id: fan.family_fan
+  area_id: family_room
+  name: gerbul сэнс
+  aliases:
+  - gerbul сэнс
+  - сэнс
+- id: fan.master_fan
+  area_id: master_bedroom
+  name: untlagiinmaster сэнс
+  aliases:
+  - untlagiinmaster сэнс
+  - сэнс
+- id: fan.bedroom2_fan
+  area_id: bedroom_2
+  name: untlagiin2 сэнс
+  aliases:
+  - untlagiin2 сэнс
+  - сэнс
+- id: lock.front_door
+  area_id: entryway
+  name: front хаалга
+  aliases:
+  - front хаалга
+  tags:
+  - front
+- id: lock.garage_entry
+  area_id: garage
+  name: garage хаалга
+  aliases:
+  - garage хаалга
+  tags:
+  - garage
+- id: switch.dishwasher
+  area_id: kitchen
+  name: галтогоо sav
+  aliases:
+  - галтогоо sav
+  - sav
+- id: switch.rangehood
+  area_id: kitchen
+  name: галтогоо rangehood
+  aliases:
+  - галтогоо rangehood
+  - rangehood
+  tags:
+  - rangehood
+- id: switch.washing_machine
+  area_id: laundry
+  name: ugaalga ugaalgyn
+  aliases:
+  - ugaalga ugaalgyn
+  - ugaalgyn
+  - washer
+  tags:
+  - washer
+  - ugaalgyn
+- id: switch.dryer
+  area_id: laundry
+  name: ugaalga dryer
+  aliases:
+  - ugaalga dryer
+  - dryer
+  tags:
+  - dryer
+- id: switch.master_bath_fan
+  area_id: master_bath
+  name: untlagiinugasalgach сэнсbad
+  aliases:
+  - untlagiinugasalgach сэнсbad
+  - сэнсbad
+  tags:
+  - сэнсbad
+- id: switch.main_bath_fan
+  area_id: main_bath
+  name: main bath сэнсbad
+  aliases:
+  - main bath сэнсbad
+  - сэнсbad
+  tags:
+  - сэнсbad
+- id: media_player.living_tv
+  area_id: living
+  name: зочны tv
+  aliases:
+  - зочны tv
+  - tv
+- id: media_player.family_tv
+  area_id: family_room
+  name: gerbul tv
+  aliases:
+  - gerbul tv
+  - tv
+- id: media_player.living_music
+  area_id: living
+  name: зочны телевиз
+  aliases:
+  - зочны телевиз
+  - телевиз
+  platform: music_assistant
+  tags:
+  - телевиз
+- id: media_player.kitchen_music
+  area_id: kitchen
+  name: галтогоо телевиз
+  aliases:
+  - галтогоо телевиз
+  - телевиз
+  platform: music_assistant
+  tags:
+  - телевиз
+- id: media_player.office_music
+  area_id: office
+  name: office телевиз
+  aliases:
+  - office телевиз
+  - телевиз
+  platform: music_assistant
+  tags:
+  - телевиз
+- id: vacuum.robot
+  area_id: living
+  name: зочны тоос
+  aliases:
+  - зочны тоос
+  - тоос
+- id: binary_sensor.front_door_sensor
+  area_id: entryway
+  name: orol doorsensor
+  aliases:
+  - orol doorsensor
+  - doorsensor
+  tags:
+  - doorsensor
+- id: binary_sensor.living_window
+  area_id: living
+  name: зочны windowsensor
+  aliases:
+  - зочны windowsensor
+  - windowsensor
+  tags:
+  - windowsensor
+- id: binary_sensor.kitchen_motion
+  area_id: kitchen
+  name: галтогоо motion
+  aliases:
+  - галтогоо motion
+  - motion
+  tags:
+  - motion
+- id: sensor.living_temperature
+  area_id: living
+  name: зочны tempsensor
+  aliases:
+  - зочны tempsensor
+  - tempsensor
+  tags:
+  - tempsensor
+- id: sensor.living_humidity
+  area_id: living
+  name: зочны humidity
+  aliases:
+  - зочны humidity
+  - humidity
+  tags:
+  - humidity
+- id: weather.home
+  area_id: garden
+  name: garden weather
+  aliases:
+  - garden weather
+  - weather
+scenes:
+- id: movie_night
+  name: kino
+- id: dinner_time
+  name: dinner
+- id: kids_bedtime
+  name: kids
+- id: good_morning
+  name: morning
+scripts:
+- id: good_night
+  name: shono
+- id: leaving_home
+  name: garah
+timers:
+- id: oven
+  name: oven таймер
+- id: laundry
+  name: laundry таймер
+- id: abstract
+  name: abstract таймер
+lists:
+- id: shopping
+  name: жагсаалт

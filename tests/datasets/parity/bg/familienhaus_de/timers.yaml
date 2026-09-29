@@ -1,0 +1,36 @@
+timers/timers::abstract_start:
+- включи таймер abstract 45 min
+timers/timers::abstract_start_hours_minutes:
+- включи таймер abstract 20 min
+timers/timers::abstract_start_seconds:
+- включи таймер abstract 45 sec
+timers/timers::cancel_all_timers:
+- изключи всичко таймер
+timers/timers::timer_laundry_cancel:
+- изключи таймер laundry
+timers/timers::timer_laundry_decrease:
+- включи таймер laundry 5 min
+timers/timers::timer_laundry_increase:
+- включи таймер laundry 16 min
+timers/timers::timer_laundry_pause:
+- pause таймер laundry
+timers/timers::timer_laundry_start:
+- включи таймер laundry 90 sec
+timers/timers::timer_laundry_status:
+- какво таймер laundry
+timers/timers::timer_laundry_unpause:
+- пусни таймер laundry
+timers/timers::timer_oven_cancel:
+- изключи таймер oven
+timers/timers::timer_oven_decrease:
+- включи таймер oven 44 min
+timers/timers::timer_oven_increase:
+- включи таймер oven 30 min
+timers/timers::timer_oven_pause:
+- pause таймер oven
+timers/timers::timer_oven_start:
+- включи таймер oven 2 min
+timers/timers::timer_oven_status:
+- какво таймер oven
+timers/timers::timer_oven_unpause:
+- пусни таймер oven

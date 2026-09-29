@@ -1,0 +1,82 @@
+area/heizung::heizung_badezimmer_23:
+- حط تكييف حمامرئيسي 23
+area/heizung::heizung_esszimmer_23:
+- حط تكييف عائليess 23
+area/heizung::heizung_schlafzimmer_23:
+- حط تكييف غرفة 23
+area/heizung::heizung_wohnzimmer_23:
+- حط تكييف صالون 23
+area/lichter::alle_an_ausser_kugel:
+- شغل كل ضوء إلا كرة
+area/lichter::alle_an_ausser_schlafzimmer:
+- شغل كل ضوء إلا غرفة
+area/lichter::alle_auf_20_ausser_schlafzimmer:
+- حط كل ضوء إلا غرفة 20
+area/lichter::alle_auf_rot_ausser_kugel:
+- حط كل ضوء إلا كرة red
+area/lichter::alle_ausser_kugel:
+- اطفئ كل ضوء إلا كرة
+area/lichter::alle_ausser_schlafzimmer:
+- اطفئ كل ضوء إلا غرفة
+area/lichter::alle_lichter_an:
+- شغل كل ضوء
+area/lichter::alle_lichter_aus:
+- اطفئ كل ضوء
+area/lichter::arbeitszimmer_lichter_an:
+- شغل كل ضوء office
+area/lichter::arbeitszimmer_lichter_aus:
+- اطفئ كل ضوء office
+area/lichter::esszimmer_lichter_an:
+- شغل كل ضوء عائليess
+area/lichter::esszimmer_lichter_aus:
+- اطفئ كل ضوء عائليess
+area/lichter::kuche_lichter_an:
+- شغل كل ضوء مطبخ
+area/lichter::kuche_lichter_aus:
+- اطفئ كل ضوء مطبخ
+area/lichter::schlafzimmer_auf_blau:
+- حط كل ضوء غرفة blue
+area/lichter::schlafzimmer_auf_rot:
+- حط كل ضوء غرفة red
+area/lichter::wohnzimmer_helligkeit:
+- حط كل ضوء صالون 45
+area/lichter::wohnzimmer_lichter_an:
+- شغل كل ضوء صالون
+area/lichter::wohnzimmer_lichter_aus:
+- اطفئ كل ضوء صالون
+area/spoken::alle_ausser_kugel_stt:
+- اطفئ كل ضوء إلا كرة
+area/spoken::alle_ausser_schlaf_stt:
+- اطفئ كل ضوء إلا غرفة
+area/spoken::alle_ganzen_an:
+- شغل كل ضوء
+area/spoken::alle_lampen_aus:
+- اطفئ كل ضوء
+area/spoken::esszimmer_weiss:
+- حط كل ضوء عائليess white
+area/spoken::stt_kuche_lichte:
+- اطفئ كل ضوء مطبخ
+area/spoken::stt_licht_wohnzimmer_an:
+- شغل كل ضوء صالون
+area/spoken::stt_licht_wohnzimmer_aus:
+- اطفئ كل ضوء صالون
+area/spoken::stt_schlafzimmer_dativ:
+- اطفئ كل ضوء غرفة
+area/spoken::wohnzimmer_gruen:
+- حط كل ضوء صالون green
+area/spoken_more::alle_ausser_arbeitszimmer:
+- اطفئ كل ضوء إلا office
+area/spoken_more::arbeitszimmer_lampen_aus:
+- اطفئ كل ضوء office
+area/spoken_more::esszimmer_30:
+- حط كل ضوء عائليess 30
+area/spoken_more::esszimmer_lichte_an:
+- شغل كل ضوء عائليess
+area/spoken_more::kuche_80:
+- حط كل ضوء مطبخ 80
+area/spoken_more::kuche_blau:
+- حط كل ضوء مطبخ blue
+area/spoken_more::ueberall_ausser_schlaf_stt:
+- اطفئ كل ضوء إلا غرفة
+area/spoken_more::wohnzimmer_gelb:
+- حط كل ضوء صالون yellow

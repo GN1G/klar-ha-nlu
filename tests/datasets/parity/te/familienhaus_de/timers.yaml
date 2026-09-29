@@ -1,0 +1,36 @@
+timers/timers::abstract_start:
+- వెలిగించు టైమర్ abstract 45 min
+timers/timers::abstract_start_hours_minutes:
+- వెలిగించు టైమర్ abstract 20 min
+timers/timers::abstract_start_seconds:
+- వెలిగించు టైమర్ abstract 45 sec
+timers/timers::cancel_all_timers:
+- ఆర్పు అన్ని టైమర్
+timers/timers::timer_laundry_cancel:
+- ఆర్పు టైమర్ laundry
+timers/timers::timer_laundry_decrease:
+- వెలిగించు టైమర్ laundry 5 min
+timers/timers::timer_laundry_increase:
+- వెలిగించు టైమర్ laundry 16 min
+timers/timers::timer_laundry_pause:
+- ఆపు టైమర్ laundry
+timers/timers::timer_laundry_start:
+- వెలిగించు టైమర్ laundry 90 sec
+timers/timers::timer_laundry_status:
+- ఏమి టైమర్ laundry
+timers/timers::timer_laundry_unpause:
+- ప్లే టైమర్ laundry
+timers/timers::timer_oven_cancel:
+- ఆర్పు టైమర్ oven
+timers/timers::timer_oven_decrease:
+- వెలిగించు టైమర్ oven 44 min
+timers/timers::timer_oven_increase:
+- వెలిగించు టైమర్ oven 30 min
+timers/timers::timer_oven_pause:
+- ఆపు టైమర్ oven
+timers/timers::timer_oven_start:
+- వెలిగించు టైమర్ oven 2 min
+timers/timers::timer_oven_status:
+- ఏమి టైమర్ oven
+timers/timers::timer_oven_unpause:
+- ప్లే టైమర్ oven

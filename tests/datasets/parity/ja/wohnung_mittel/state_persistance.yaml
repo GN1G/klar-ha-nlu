@@ -1,0 +1,15 @@
+state_persistance/followup::heizung_dann_grad:
+- - つけて エアコン リビング
+  - ' 21'
+state_persistance/followup::wohnzimmer_dann_aus:
+- - つけて 電気 リビング
+  - 消して
+state_persistance/spoken::kugel_dann_aus:
+- - つけて tama
+  - 消して
+state_persistance/spoken::wohnzimmer_dann_kueche:
+- - つけて 電気 リビング
+  - つけて 電気 キッチン
+state_persistance/spoken::wohnzimmer_dann_rot:
+- - つけて 全部 電気 リビング
+  - 赤

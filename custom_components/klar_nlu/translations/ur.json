@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "یہ انٹیگریشن Assist سے بات کرتی ہے۔ الگ انجن تقریر پڑھتا ہے: Klar NLU ایپ، شامل عمل، یا Docker۔ Home Assistant OS پر ایپ لگائیں اور Klar NLU ایپ استعمال کریں منتخب کریں۔ بغیر ایپ شامل انجن چلائیں۔ دونوں ایک ساتھ نہ چلائیں۔",
+        "data": {
+          "mode": "انجن",
+          "channel": "ریلیز چینل",
+          "url": "Klar API یو آر ایل",
+          "token": "لکھنے کا ٹوکن"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "یو آر ایل http(s) ہو اور صارف نام نہ ہو۔"
+    },
+    "abort": {
+      "already_configured": "Klar NLU پہلے سے سیٹ ہے"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "آواز، Assist زبانیں اور LLM کلار آپریٹر UI (ترتیبات) میں ہیں۔ یہ فارم صرف انجن جوڑتا ہے: URL، ٹوکن اور چینل۔ {apps}",
+        "data": {
+          "mode": "انجن",
+          "url": "Klar API یو آر ایل",
+          "token": "لکھنے کا ٹوکن",
+          "assist_filter": "صرف Assist کو دکھائی گئی ہستیاں کنٹرول کریں",
+          "channel": "ریلیز چینل"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "وہی ٹوکن جو Klar ایپ میں ہے۔",
+          "assist_filter": "آن: صرف جو Assist دیکھے۔ آف: چھپی ہستیاں بھی۔",
+          "channel": "کسی بھی وقت۔ Staging Klar NLU (Staging) کی طرف ہے۔"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "یو آر ایل http(s) ہو اور صارف نام نہ ہو۔"
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "شامل انجن چلائیں (صرف HACS)",
+        "remote": "Klar NLU ایپ یا Docker استعمال کریں"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (پروڈکشن)",
+        "staging": "Staging (امیدوار)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "سسٹم زبان",
+        "all": "تمام زبانیں"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "عام",
+        "butler": "Butler",
+        "locker": "آسان",
+        "fuersorglich": "خیال رکھنے والی",
+        "party": "Party",
+        "grantig": "چڑچڑی",
+        "sarkastisch": "طنزیہ",
+        "pirat": "قزاق",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "شخصیت",
+        "state": {
+          "default": "عام",
+          "butler": "Butler",
+          "locker": "آسان",
+          "fuersorglich": "خیال رکھنے والی",
+          "party": "Party",
+          "grantig": "چڑچڑی",
+          "sarkastisch": "طنزیہ",
+          "pirat": "قزاق",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "مختصر تصدیق"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "مصنوعی ذہانت کا کام"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "آخری سنا"
+      },
+      "last_decision": {
+        "name": "آخری فیصلہ"
+      },
+      "last_speech": {
+        "name": "آخری جواب"
+      },
+      "last_area": {
+        "name": "سنا گیا"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Klar انجن رک گیا",
+      "description": "شامل Klar عمل نہیں چل رہا۔ سیٹنگز ← آلات اور سروسز سے Klar NLU دوبارہ لوڈ کریں۔"
+    }
+  }
+}

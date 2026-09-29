@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "Ова интеграција разговара са Assist-ом. Посебан мотор тумачи говор: апликација Klar NLU, укључени процес или Docker. На Home Assistant OS инсталирајте и апликацију па изаберите Користи апликацију Klar NLU. Без апликације покрените укључени мотор. Не покрећите оба.",
+        "data": {
+          "mode": "Мотор",
+          "channel": "Канал издања",
+          "url": "URL Klar API-ја",
+          "token": "Токен за упис"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL мора бити http(s), без корисничког имена."
+    },
+    "abort": {
+      "already_configured": "Klar NLU је већ подешен"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "Глас, језици Assist-а и LLM су у Klar операторском UI-ју (Подешавања). Овај образац само повезује мотор: URL, токен и канал. {apps}",
+        "data": {
+          "mode": "Мотор",
+          "url": "URL Klar API-ја",
+          "token": "Токен за упис",
+          "assist_filter": "Управљај само ентитетима изложеним Assist-у",
+          "channel": "Канал издања"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "Исти токен као у апликацији Klar.",
+          "assist_filter": "Укључено: само што Assist види. Искључено: и скривени ентитети.",
+          "channel": "Било када. Staging показује на Klar NLU (Staging)."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL мора бити http(s), без корисничког имена."
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "Покрени укључени мотор (само HACS)",
+        "remote": "Користи апликацију Klar NLU или Docker"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (продукција)",
+        "staging": "Staging (кандидат)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "Језик система",
+        "all": "Сви језици"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "Обично",
+        "butler": "Butler",
+        "locker": "Опуштено",
+        "fuersorglich": "Брижно",
+        "party": "Party",
+        "grantig": "Мрзовољно",
+        "sarkastisch": "Саркастично",
+        "pirat": "Пират",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "Личност",
+        "state": {
+          "default": "Обично",
+          "butler": "Butler",
+          "locker": "Опуштено",
+          "fuersorglich": "Брижно",
+          "party": "Party",
+          "grantig": "Мрзовољно",
+          "sarkastisch": "Саркастично",
+          "pirat": "Пират",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "Кратка потврда"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "АИ задатак"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "Последње чуто"
+      },
+      "last_decision": {
+        "name": "Последња одлука"
+      },
+      "last_speech": {
+        "name": "Последњи одговор"
+      },
+      "last_area": {
+        "name": "Чуто у"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "Klar мотор је стао",
+      "description": "Укључени Klar процес не ради. Поново учитајте Klar NLU у Подешавања → Уређаји и услуге."
+    }
+  }
+}

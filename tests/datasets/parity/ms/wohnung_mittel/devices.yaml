@@ -1,0 +1,52 @@
+devices/geraete::deckenlampe_aus:
+- matikan siling bilik
+devices/geraete::device_arbeitszimmer_an:
+- hidupkan lampu office
+devices/geraete::device_esszimmer_an:
+- hidupkan lampu ruankeluargaess
+devices/geraete::device_kuche_kuche_an:
+- hidupkan lampu dapur
+devices/geraete::device_wohnzimmer_an:
+- hidupkan lampu ruang
+devices/geraete::filmabend:
+- hidupkan adegan filmabend
+devices/geraete::kugel_an:
+- hidupkan bola
+devices/geraete::luefter_50:
+- tetapkan kipas office 50
+devices/geraete::pc_an:
+- hidupkan pc
+devices/geraete::r2d2_saugen:
+- hidupkan vakum ruang
+devices/geraete::rollo_zu:
+- tutup langsir ruang
+devices/geraete::spuelmaschine_aus:
+- matikan pinggan
+devices/geraete::tuer_abschliessen:
+- kuncikan kunci lobi
+devices/geraete::waschmaschine_an:
+- hidupkan mesinbasuh
+devices/klima::klima_schlaf_21:
+- tetapkan ac bilik 21
+devices/spoken::deckenlampe_an:
+- hidupkan siling bilik
+devices/spoken::kugel_aus:
+- matikan bola
+devices/spoken::luefter_aus:
+- matikan kipas office
+devices/spoken::rollo_auf:
+- buka langsir ruang
+devices/spoken::trockner_an:
+- hidupkan dryer
+devices/spoken::tv_aus:
+- matikan tv
+devices/spoken_more::decke_aus_casual:
+- matikan siling bilik
+devices/spoken_more::kugel_casual:
+- hidupkan bola
+devices/spoken_more::pc_aus:
+- matikan pc
+devices/spoken_more::spuelmaschine_an:
+- hidupkan pinggan
+devices/spoken_more::waschmaschine_aus:
+- matikan mesinbasuh

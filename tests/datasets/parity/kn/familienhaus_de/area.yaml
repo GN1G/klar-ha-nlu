@@ -1,0 +1,248 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- ಮುಚ್ಚು ಪರದೆ shayanakone2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- ತೆರೆ ಪರದೆ shayanakone2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- ಹೊಂದಿಸು ಪರದೆ shayanakone2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- ಹೊಂದಿಸು ಫ್ಯಾನ್ shayanakone2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- ಆರಿಸು ಫ್ಯಾನ್ shayanakone2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- ಹಚ್ಚು ಫ್ಯಾನ್ shayanakone2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakone2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakone2 pink
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakone2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು shayanakone2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- ಮುಚ್ಚು ಪರದೆ shayanakone3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- ತೆರೆ ಪರದೆ shayanakone3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- ಹೊಂದಿಸು ಪರದೆ shayanakone3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakone3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakone3 blue
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakone3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು shayanakone3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakone4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakone4 green
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakone4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು shayanakone4
+area/dining_lights::dining_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು kutumbaess 54
+area/dining_lights::dining_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು kutumbaess blue
+area/dining_lights::dining_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು kutumbaess
+area/dining_lights::dining_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು kutumbaess
+area/entryway_lights::entryway_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು pravesha 72
+area/entryway_lights::entryway_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು pravesha black
+area/entryway_lights::entryway_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು pravesha
+area/entryway_lights::entryway_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು pravesha
+area/entryway_locks::entryway_locks_lock:
+- ಬೀಗ ಬೀಗ pravesha
+area/entryway_locks::entryway_locks_unlock:
+- ತೆರೆ ಬೀಗ pravesha
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು kutumba 39 mattu ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು ಅಡುಗೆ 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು kutumba purple mattu ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು ಅಡುಗೆ purple
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು kutumba mattu ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು ಅಡುಗೆ
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು kutumba mattu ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು ಅಡುಗೆ
+area/family_room_fans::family_room_fans_set_fan_speed:
+- ಹೊಂದಿಸು ಫ್ಯಾನ್ kutumba 32
+area/family_room_fans::family_room_fans_turn_off:
+- ಆರಿಸು ಫ್ಯಾನ್ kutumba
+area/family_room_fans::family_room_fans_turn_on:
+- ಹಚ್ಚು ಫ್ಯಾನ್ kutumba
+area/family_room_lights::family_room_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು kutumba 44
+area/family_room_lights::family_room_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು kutumba green
+area/family_room_lights::family_room_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು kutumba
+area/family_room_lights::family_room_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು kutumba
+area/garage_covers::garage_covers_close:
+- ಮುಚ್ಚು ಪರದೆ garage
+area/garage_covers::garage_covers_open:
+- ತೆರೆ ಪರದೆ garage
+area/garage_covers::garage_covers_set_position:
+- ಹೊಂದಿಸು ಪರದೆ garage 86
+area/garage_lights::garage_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು garage 16
+area/garage_lights::garage_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು garage blue
+area/garage_lights::garage_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು garage
+area/garage_lights::garage_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು garage
+area/garage_locks::garage_locks_lock:
+- ಬೀಗ ಬೀಗ garage
+area/garage_locks::garage_locks_unlock:
+- ತೆರೆ ಬೀಗ garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು praveshagang 26 mattu ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು shauchalaya 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು praveshagang purple mattu ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು shauchalaya purple
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು praveshagang mattu ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು shauchalaya
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು praveshagang mattu ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು shauchalaya
+area/hallway_lights::hallway_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು praveshagang 61
+area/hallway_lights::hallway_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು praveshagang orange
+area/hallway_lights::hallway_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು praveshagang
+area/hallway_lights::hallway_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು praveshagang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು ಅಡುಗೆ 45
+area/kitchen_lights::kitchen_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು ಅಡುಗೆ pink
+area/kitchen_lights::kitchen_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು ಅಡುಗೆ
+area/kitchen_lights::kitchen_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು ಅಡುಗೆ
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- ಆರಿಸು ಎಲ್ಲ upakarana ಅಡುಗೆ
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ upakarana ಅಡುಗೆ
+area/laundry_lights::laundry_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು ogeyuva 62
+area/laundry_lights::laundry_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು ogeyuva yellow
+area/laundry_lights::laundry_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು ogeyuva
+area/laundry_lights::laundry_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು ogeyuva
+area/laundry_switchs::laundry_switchs_turn_off:
+- ಆರಿಸು ಎಲ್ಲ upakarana ogeyuva
+area/laundry_switchs::laundry_switchs_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ upakarana ogeyuva
+area/living_climates::living_climates_set_temperature:
+- ಹೊಂದಿಸು ಬಿಸಿ ಹಾಲ್ 20
+area/living_covers::living_covers_close:
+- ಮುಚ್ಚು ಪರದೆ ಹಾಲ್
+area/living_covers::living_covers_open:
+- ತೆರೆ ಪರದೆ ಹಾಲ್
+area/living_covers::living_covers_set_position:
+- ಹೊಂದಿಸು ಪರದೆ ಹಾಲ್ 46
+area/living_lights::living_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್ 84
+area/living_lights::living_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್ blue
+area/living_lights::living_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್
+area/living_lights::living_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್
+area/main_bath_lights::main_bath_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು main bath pink
+area/main_bath_lights::main_bath_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- ಆರಿಸು ಎಲ್ಲ upakarana main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ upakarana main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು mukhyasnana 60
+area/master_bath_lights::master_bath_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು mukhyasnana black
+area/master_bath_lights::master_bath_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು mukhyasnana
+area/master_bath_lights::master_bath_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು mukhyasnana
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- ಆರಿಸು ಎಲ್ಲ upakarana mukhyasnana
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ upakarana mukhyasnana
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- ಹೊಂದಿಸು ಬಿಸಿ shayanakonemaster 20 mattu ಹೊಂದಿಸು ಬಿಸಿ ಹಾಲ್ 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- ಮುಚ್ಚು ಪರದೆ shayanakonemaster mattu ಮುಚ್ಚು ಪರದೆ ಹಾಲ್
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- ತೆರೆ ಪರದೆ shayanakonemaster mattu ತೆರೆ ಪರದೆ ಹಾಲ್
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- ಹೊಂದಿಸು ಪರದೆ shayanakonemaster 19 mattu ಹೊಂದಿಸು ಪರದೆ ಹಾಲ್ 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakonemaster 25 mattu ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್ 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakonemaster white mattu ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್ white
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakonemaster mattu ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು shayanakonemaster mattu ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakonemaster 57 mattu ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು main bath 57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakonemaster pink mattu ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು main bath pink
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakonemaster mattu ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು shayanakonemaster mattu ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- ಹೊಂದಿಸು ಬಿಸಿ shayanakonemaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- ಮುಚ್ಚು ಪರದೆ shayanakonemaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- ತೆರೆ ಪರದೆ shayanakonemaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- ಹೊಂದಿಸು ಪರದೆ shayanakonemaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- ಹೊಂದಿಸು ಫ್ಯಾನ್ shayanakonemaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- ಆರಿಸು ಫ್ಯಾನ್ shayanakonemaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- ಹಚ್ಚು ಫ್ಯಾನ್ shayanakonemaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakonemaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakonemaster pink
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakonemaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು shayanakonemaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು shauchalaya 52
+area/powder_room_lights::powder_room_lights_change_color:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು shauchalaya purple
+area/powder_room_lights::powder_room_lights_turn_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು shauchalaya
+area/powder_room_lights::powder_room_lights_turn_on:
+- ಹಚ್ಚು ಎಲ್ಲ ಬೆಳಕು shauchalaya
+area/spoken_lights::spoken_bedroom_inflection:
+- ಹೊಂದಿಸು ಎಲ್ಲ ಬೆಳಕು shayanakonemaster red
+area/spoken_lights::spoken_except_island:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು hodake dweepa
+area/spoken_lights::spoken_except_kitchen:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು hodake ಅಡುಗೆ
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್ mattu ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು kutumbaess mattu ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು ಅಡುಗೆ
+area/spoken_lights::spoken_stt_kitchen_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು ಅಡುಗೆ
+area/spoken_lights::spoken_stt_living_off:
+- ಆರಿಸು ಎಲ್ಲ ಬೆಳಕು ಹಾಲ್

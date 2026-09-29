@@ -1,0 +1,250 @@
+area/bedroom_2_covers::bedroom_2_covers_close:
+- അടയ്ക്ക് ജാലകം kitappumuri2
+area/bedroom_2_covers::bedroom_2_covers_open:
+- തുറക്ക് ജാലകം kitappumuri2
+area/bedroom_2_covers::bedroom_2_covers_set_position:
+- സെറ്റ് ജാലകം kitappumuri2 16
+area/bedroom_2_fans::bedroom_2_fans_set_fan_speed:
+- സെറ്റ് ഫാൻ kitappumuri2 32
+area/bedroom_2_fans::bedroom_2_fans_turn_off:
+- അണയ്ക്ക് ഫാൻ kitappumuri2
+area/bedroom_2_fans::bedroom_2_fans_turn_on:
+- തെളി ഫാൻ kitappumuri2
+area/bedroom_2_lights::bedroom_2_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് kitappumuri2 65
+area/bedroom_2_lights::bedroom_2_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് kitappumuri2 pink
+area/bedroom_2_lights::bedroom_2_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് kitappumuri2
+area/bedroom_2_lights::bedroom_2_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് kitappumuri2
+area/bedroom_3_covers::bedroom_3_covers_close:
+- അടയ്ക്ക് ജാലകം kitappumuri3
+area/bedroom_3_covers::bedroom_3_covers_open:
+- തുറക്ക് ജാലകം kitappumuri3
+area/bedroom_3_covers::bedroom_3_covers_set_position:
+- സെറ്റ് ജാലകം kitappumuri3 29
+area/bedroom_3_lights::bedroom_3_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് kitappumuri3 76
+area/bedroom_3_lights::bedroom_3_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് kitappumuri3 blue
+area/bedroom_3_lights::bedroom_3_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് kitappumuri3
+area/bedroom_3_lights::bedroom_3_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് kitappumuri3
+area/bedroom_4_lights::bedroom_4_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് kitappumuri4 69
+area/bedroom_4_lights::bedroom_4_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് kitappumuri4 green
+area/bedroom_4_lights::bedroom_4_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് kitappumuri4
+area/bedroom_4_lights::bedroom_4_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് kitappumuri4
+area/dining_lights::dining_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് kutumbamess 54
+area/dining_lights::dining_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് kutumbamess blue
+area/dining_lights::dining_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് kutumbamess
+area/dining_lights::dining_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് kutumbamess
+area/entryway_lights::entryway_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് praveshanam 72
+area/entryway_lights::entryway_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് praveshanam black
+area/entryway_lights::entryway_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് praveshanam
+area/entryway_lights::entryway_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് praveshanam
+area/entryway_locks::entryway_locks_lock:
+- പൂട്ട് പൂട്ട് praveshanam
+area/entryway_locks::entryway_locks_unlock:
+- തുറക്ക് പൂട്ട് praveshanam
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് kutumbam 39 um സെറ്റ് എല്ലാം വിളക്ക് അടുക്കള 39
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് kutumbam purple um സെറ്റ് എല്ലാം വിളക്ക് അടുക്കള purple
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് kutumbam um അണയ്ക്ക് എല്ലാം വിളക്ക് അടുക്കള
+area/family_room_and_kitchen_lights::family_room_and_kitchen_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് kutumbam um തെളി എല്ലാം വിളക്ക് അടുക്കള
+area/family_room_fans::family_room_fans_set_fan_speed:
+- സെറ്റ് ഫാൻ kutumbam 32
+area/family_room_fans::family_room_fans_turn_off:
+- അണയ്ക്ക് ഫാൻ kutumbam
+area/family_room_fans::family_room_fans_turn_on:
+- തെളി ഫാൻ kutumbam
+area/family_room_lights::family_room_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് kutumbam 44
+area/family_room_lights::family_room_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് kutumbam green
+area/family_room_lights::family_room_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് kutumbam
+area/family_room_lights::family_room_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് kutumbam
+area/garage_covers::garage_covers_close:
+- അടയ്ക്ക് ജാലകം garage
+area/garage_covers::garage_covers_open:
+- തുറക്ക് ജാലകം garage
+area/garage_covers::garage_covers_set_position:
+- സെറ്റ് ജാലകം garage 86
+area/garage_lights::garage_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് garage 16
+area/garage_lights::garage_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് garage blue
+area/garage_lights::garage_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് garage
+area/garage_lights::garage_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് garage
+area/garage_locks::garage_locks_lock:
+- പൂട്ട് പൂട്ട് garage
+area/garage_locks::garage_locks_unlock:
+- തുറക്ക് പൂട്ട് garage
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് praveshanamgang 26 um സെറ്റ് എല്ലാം വിളക്ക് toilet 26
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് praveshanamgang purple um സെറ്റ് എല്ലാം വിളക്ക് toilet purple
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് praveshanamgang um അണയ്ക്ക് എല്ലാം വിളക്ക് toilet
+area/hallway_and_powder_room_lights::hallway_and_powder_room_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് praveshanamgang um തെളി എല്ലാം വിളക്ക് toilet
+area/hallway_lights::hallway_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് praveshanamgang 61
+area/hallway_lights::hallway_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് praveshanamgang orange
+area/hallway_lights::hallway_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് praveshanamgang
+area/hallway_lights::hallway_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് praveshanamgang
+area/kitchen_lights::kitchen_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് അടുക്കള 45
+area/kitchen_lights::kitchen_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് അടുക്കള pink
+area/kitchen_lights::kitchen_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് അടുക്കള
+area/kitchen_lights::kitchen_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് അടുക്കള
+area/kitchen_switchs::kitchen_switchs_turn_off:
+- അണയ്ക്ക് എല്ലാം upakaranam അടുക്കള
+area/kitchen_switchs::kitchen_switchs_turn_on:
+- തെളി എല്ലാം upakaranam അടുക്കള
+area/laundry_lights::laundry_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് alakku 62
+area/laundry_lights::laundry_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് alakku yellow
+area/laundry_lights::laundry_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് alakku
+area/laundry_lights::laundry_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് alakku
+area/laundry_switchs::laundry_switchs_turn_off:
+- അണയ്ക്ക് എല്ലാം upakaranam alakku
+area/laundry_switchs::laundry_switchs_turn_on:
+- തെളി എല്ലാം upakaranam alakku
+area/living_climates::living_climates_set_temperature:
+- സെറ്റ് ചൂട് ഹാൾ 20
+area/living_covers::living_covers_close:
+- അടയ്ക്ക് ജാലകം ഹാൾ
+area/living_covers::living_covers_open:
+- തുറക്ക് ജാലകം ഹാൾ
+area/living_covers::living_covers_set_position:
+- സെറ്റ് ജാലകം ഹാൾ 46
+area/living_lights::living_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് ഹാൾ 84
+area/living_lights::living_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് ഹാൾ blue
+area/living_lights::living_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് ഹാൾ
+area/living_lights::living_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് ഹാൾ
+area/main_bath_lights::main_bath_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് main bath 73
+area/main_bath_lights::main_bath_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് main bath pink
+area/main_bath_lights::main_bath_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് main bath
+area/main_bath_lights::main_bath_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് main bath
+area/main_bath_switchs::main_bath_switchs_turn_off:
+- അണയ്ക്ക് എല്ലാം upakaranam main bath
+area/main_bath_switchs::main_bath_switchs_turn_on:
+- തെളി എല്ലാം upakaranam main bath
+area/master_bath_lights::master_bath_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് masterbath 60
+area/master_bath_lights::master_bath_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് masterbath black
+area/master_bath_lights::master_bath_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് masterbath
+area/master_bath_lights::master_bath_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് masterbath
+area/master_bath_switchs::master_bath_switchs_turn_off:
+- അണയ്ക്ക് എല്ലാം upakaranam masterbath
+area/master_bath_switchs::master_bath_switchs_turn_on:
+- തെളി എല്ലാം upakaranam masterbath
+area/master_bedroom_and_living_climates::master_bedroom_and_living_climates_set_temperature:
+- സെറ്റ് ചൂട് kitappumurimaster 20 um സെറ്റ് ചൂട് ഹാൾ 20
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_close:
+- അടയ്ക്ക് ജാലകം kitappumurimaster um അടയ്ക്ക് ജാലകം ഹാൾ
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_open:
+- തുറക്ക് ജാലകം kitappumurimaster um തുറക്ക് ജാലകം ഹാൾ
+area/master_bedroom_and_living_covers::master_bedroom_and_living_covers_set_position:
+- സെറ്റ് ജാലകം kitappumurimaster 19 um സെറ്റ് ജാലകം ഹാൾ 19
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് kitappumurimaster 25 um സെറ്റ് എല്ലാം വിളക്ക് ഹാൾ 25
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് kitappumurimaster white um സെറ്റ് എല്ലാം വിളക്ക് ഹാൾ white
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് kitappumurimaster um അണയ്ക്ക് എല്ലാം വിളക്ക് ഹാൾ
+area/master_bedroom_and_living_lights::master_bedroom_and_living_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് kitappumurimaster um തെളി എല്ലാം വിളക്ക് ഹാൾ
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് kitappumurimaster 57 um സെറ്റ് എല്ലാം വിളക്ക് main bath 57
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് kitappumurimaster pink um സെറ്റ് എല്ലാം വിളക്ക് main bath
+  pink
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് kitappumurimaster um അണയ്ക്ക് എല്ലാം വിളക്ക് main bath
+area/master_bedroom_and_main_bath_lights::master_bedroom_and_main_bath_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് kitappumurimaster um തെളി എല്ലാം വിളക്ക് main bath
+area/master_bedroom_climates::master_bedroom_climates_set_temperature:
+- സെറ്റ് ചൂട് kitappumurimaster 20
+area/master_bedroom_covers::master_bedroom_covers_close:
+- അടയ്ക്ക് ജാലകം kitappumurimaster
+area/master_bedroom_covers::master_bedroom_covers_open:
+- തുറക്ക് ജാലകം kitappumurimaster
+area/master_bedroom_covers::master_bedroom_covers_set_position:
+- സെറ്റ് ജാലകം kitappumurimaster 38
+area/master_bedroom_fans::master_bedroom_fans_set_fan_speed:
+- സെറ്റ് ഫാൻ kitappumurimaster 79
+area/master_bedroom_fans::master_bedroom_fans_turn_off:
+- അണയ്ക്ക് ഫാൻ kitappumurimaster
+area/master_bedroom_fans::master_bedroom_fans_turn_on:
+- തെളി ഫാൻ kitappumurimaster
+area/master_bedroom_lights::master_bedroom_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് kitappumurimaster 73
+area/master_bedroom_lights::master_bedroom_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് kitappumurimaster pink
+area/master_bedroom_lights::master_bedroom_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് kitappumurimaster
+area/master_bedroom_lights::master_bedroom_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് kitappumurimaster
+area/powder_room_lights::powder_room_lights_change_brightness:
+- സെറ്റ് എല്ലാം വിളക്ക് toilet 52
+area/powder_room_lights::powder_room_lights_change_color:
+- സെറ്റ് എല്ലാം വിളക്ക് toilet purple
+area/powder_room_lights::powder_room_lights_turn_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് toilet
+area/powder_room_lights::powder_room_lights_turn_on:
+- തെളി എല്ലാം വിളക്ക് toilet
+area/spoken_lights::spoken_bedroom_inflection:
+- സെറ്റ് എല്ലാം വിളക്ക് kitappumurimaster red
+area/spoken_lights::spoken_except_island:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് ozhike dweep
+area/spoken_lights::spoken_except_kitchen:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് ozhike അടുക്കള
+area/spoken_lights::spoken_listing_living_dining_kitchen:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് ഹാൾ um അണയ്ക്ക് എല്ലാം വിളക്ക് kutumbamess um അണയ്ക്ക് എല്ലാം
+  വിളക്ക് അടുക്കള
+area/spoken_lights::spoken_stt_kitchen_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് അടുക്കള
+area/spoken_lights::spoken_stt_living_off:
+- അണയ്ക്ക് എല്ലാം വിളക്ക് ഹാൾ

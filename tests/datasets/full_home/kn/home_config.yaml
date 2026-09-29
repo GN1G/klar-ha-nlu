@@ -1,0 +1,507 @@
+name: Full Home kn
+language: kn
+difficulty: full
+policy:
+  preferred_climate: climate.upper_thermostat
+  timer_hints:
+    90: laundry
+floors:
+- id: ground
+  name: kelage
+  level: 0
+  aliases:
+  - kelage
+  - nelada
+- id: upper
+  name: mele
+  level: 1
+  aliases:
+  - mele
+  - antastu
+- id: basement
+  name: basement
+  level: -1
+  aliases:
+  - basement
+  - keller
+areas:
+- id: entryway
+  name: Pravesha
+  floor: ground
+  aliases:
+  - pravesha
+- id: living
+  name: ಹಾಲ್
+  floor: ground
+  aliases:
+  - ಹಾಲ್
+  - hallige
+- id: dining
+  name: Kutumbaess
+  floor: ground
+  aliases:
+  - kutumbaess
+- id: kitchen
+  name: ಅಡುಗೆ
+  floor: ground
+  aliases:
+  - ಅಡುಗೆ
+  - aduge
+- id: family_room
+  name: Kutumba
+  floor: ground
+  aliases:
+  - kutumba
+- id: laundry
+  name: Ogeyuva
+  floor: ground
+  aliases:
+  - ogeyuva
+- id: powder_room
+  name: Shauchalaya
+  floor: ground
+  aliases:
+  - shauchalaya
+- id: garage
+  name: Garage
+  floor: ground
+  aliases:
+  - garage
+- id: office
+  name: Office
+  floor: ground
+  aliases:
+  - office
+- id: garden
+  name: Garden
+  floor: ground
+  aliases:
+  - garden
+- id: master_bedroom
+  name: Shayanakonemaster
+  floor: upper
+  aliases:
+  - shayanakonemaster
+  - shayanakone
+- id: bedroom_2
+  name: Shayanakone2
+  floor: upper
+  aliases:
+  - shayanakone2
+- id: bedroom_3
+  name: Shayanakone3
+  floor: upper
+  aliases:
+  - shayanakone3
+- id: bedroom_4
+  name: Shayanakone4
+  floor: upper
+  aliases:
+  - shayanakone4
+- id: master_bath
+  name: Mukhyasnana
+  floor: upper
+  aliases:
+  - mukhyasnana
+- id: main_bath
+  name: Main Bath
+  floor: upper
+  aliases:
+  - main bath
+- id: hallway
+  name: Hallway
+  floor: upper
+  aliases:
+  - hallway
+- id: basement
+  name: Basement
+  floor: basement
+  aliases:
+  - basement
+devices:
+- id: light.entryway_light
+  area_id: entryway
+  name: pravesha ಬೆಳಕು
+  aliases:
+  - pravesha ಬೆಳಕು
+  - ಬೆಳಕು
+- id: light.living_ceiling
+  area_id: living
+  name: ಹಾಲ್ chavani
+  aliases:
+  - ಹಾಲ್ chavani
+  - chavani
+- id: light.living_lamp
+  area_id: living
+  name: ಹಾಲ್ belaku
+  aliases:
+  - ಹಾಲ್ belaku
+  - belaku
+- id: light.dining_pendant
+  area_id: dining
+  name: kutumbaess ಬೆಳಕು
+  aliases:
+  - kutumbaess ಬೆಳಕು
+  - ಬೆಳಕು
+- id: light.kitchen_ceiling
+  area_id: kitchen
+  name: ಅಡುಗೆ chavani
+  aliases:
+  - ಅಡುಗೆ chavani
+  - chavani
+- id: light.kitchen_island
+  area_id: kitchen
+  name: ಅಡುಗೆ dweepa
+  aliases:
+  - ಅಡುಗೆ dweepa
+  - dweepa
+- id: light.family_ceiling
+  area_id: family_room
+  name: kutumba chavani
+  aliases:
+  - kutumba chavani
+  - chavani
+- id: light.laundry_light
+  area_id: laundry
+  name: ogeyuva ಬೆಳಕು
+  aliases:
+  - ogeyuva ಬೆಳಕು
+  - ಬೆಳಕು
+- id: light.powder_room_light
+  area_id: powder_room
+  name: shauchalaya ಬೆಳಕು
+  aliases:
+  - shauchalaya ಬೆಳಕು
+  - ಬೆಳಕು
+- id: light.garage_light
+  area_id: garage
+  name: garage ಬೆಳಕು
+  aliases:
+  - garage ಬೆಳಕು
+  - ಬೆಳಕು
+- id: light.office_ceiling
+  area_id: office
+  name: office chavani
+  aliases:
+  - office chavani
+  - chavani
+- id: light.garden
+  area_id: garden
+  name: garden ಬೆಳಕು
+  aliases:
+  - garden ಬೆಳಕು
+  - ಬೆಳಕು
+- id: light.master_ceiling
+  area_id: master_bedroom
+  name: shayanakonemaster chavani
+  aliases:
+  - shayanakonemaster chavani
+  - chavani
+- id: light.master_ensuite
+  area_id: master_bedroom
+  name: shayanakonemaster ensuite
+  aliases:
+  - shayanakonemaster ensuite
+  - ensuite
+  tags:
+  - ensuite
+- id: light.master_bedside_left
+  area_id: master_bedroom
+  name: shayanakonemaster left mancha
+  aliases:
+  - shayanakonemaster left mancha
+  - mancha
+- id: light.master_bedside_right
+  area_id: master_bedroom
+  name: shayanakonemaster right mancha
+  aliases:
+  - shayanakonemaster right mancha
+  - mancha
+- id: light.bedroom2_ceiling
+  area_id: bedroom_2
+  name: shayanakone2 chavani
+  aliases:
+  - shayanakone2 chavani
+  - chavani
+- id: light.bedroom3_ceiling
+  area_id: bedroom_3
+  name: shayanakone3 chavani
+  aliases:
+  - shayanakone3 chavani
+  - chavani
+- id: light.bedroom4_ceiling
+  area_id: bedroom_4
+  name: shayanakone4 chavani
+  aliases:
+  - shayanakone4 chavani
+  - chavani
+- id: light.master_bath_light
+  area_id: master_bath
+  name: mukhyasnana ಬೆಳಕು
+  aliases:
+  - mukhyasnana ಬೆಳಕು
+  - ಬೆಳಕು
+- id: light.main_bath_light
+  area_id: main_bath
+  name: main bath ಬೆಳಕು
+  aliases:
+  - main bath ಬೆಳಕು
+  - ಬೆಳಕು
+- id: light.hallway_light
+  area_id: hallway
+  name: hallway ಬೆಳಕು
+  aliases:
+  - hallway ಬೆಳಕು
+  - ಬೆಳಕು
+- id: light.basement
+  area_id: basement
+  name: basement ಬೆಳಕು
+  aliases:
+  - basement ಬೆಳಕು
+  - ಬೆಳಕು
+- id: cover.living_blinds
+  area_id: living
+  name: ಹಾಲ್ ಪರದೆ
+  aliases:
+  - ಹಾಲ್ ಪರದೆ
+  - ಪರದೆ
+- id: cover.master_blinds
+  area_id: master_bedroom
+  name: shayanakonemaster ಪರದೆ
+  aliases:
+  - shayanakonemaster ಪರದೆ
+  - ಪರದೆ
+- id: cover.bedroom2_blinds
+  area_id: bedroom_2
+  name: shayanakone2 ಪರದೆ
+  aliases:
+  - shayanakone2 ಪರದೆ
+  - ಪರದೆ
+- id: cover.bedroom3_blinds
+  area_id: bedroom_3
+  name: shayanakone3 ಪರದೆ
+  aliases:
+  - shayanakone3 ಪರದೆ
+  - ಪರದೆ
+- id: cover.garage_door
+  area_id: garage
+  name: garage ಪರದೆ
+  aliases:
+  - garage ಪರದೆ
+  - ಪರದೆ
+- id: climate.ground_thermostat
+  area_id: living
+  name: ಹಾಲ್ ಬಿಸಿ
+  aliases:
+  - ಹಾಲ್ ಬಿಸಿ
+  - ಬಿಸಿ
+- id: climate.upper_thermostat
+  area_id: master_bedroom
+  name: shayanakonemaster ಬಿಸಿ
+  aliases:
+  - shayanakonemaster ಬಿಸಿ
+  - ಬಿಸಿ
+- id: climate.master_ac
+  area_id: master_bedroom
+  name: bisi shayanakonemaster
+  aliases:
+  - bisi shayanakonemaster
+  - bisi
+  - ac
+  tags:
+  - bisi
+- id: fan.family_fan
+  area_id: family_room
+  name: kutumba ಫ್ಯಾನ್
+  aliases:
+  - kutumba ಫ್ಯಾನ್
+  - ಫ್ಯಾನ್
+- id: fan.master_fan
+  area_id: master_bedroom
+  name: shayanakonemaster ಫ್ಯಾನ್
+  aliases:
+  - shayanakonemaster ಫ್ಯಾನ್
+  - ಫ್ಯಾನ್
+- id: fan.bedroom2_fan
+  area_id: bedroom_2
+  name: shayanakone2 ಫ್ಯಾನ್
+  aliases:
+  - shayanakone2 ಫ್ಯಾನ್
+  - ಫ್ಯಾನ್
+- id: lock.front_door
+  area_id: entryway
+  name: front ಬಾಗಿಲು
+  aliases:
+  - front ಬಾಗಿಲು
+  tags:
+  - front
+- id: lock.garage_entry
+  area_id: garage
+  name: garage ಬಾಗಿಲು
+  aliases:
+  - garage ಬಾಗಿಲು
+  tags:
+  - garage
+- id: switch.dishwasher
+  area_id: kitchen
+  name: ಅಡುಗೆ patre
+  aliases:
+  - ಅಡುಗೆ patre
+  - patre
+- id: switch.rangehood
+  area_id: kitchen
+  name: ಅಡುಗೆ rangehood
+  aliases:
+  - ಅಡುಗೆ rangehood
+  - rangehood
+  tags:
+  - rangehood
+- id: switch.washing_machine
+  area_id: laundry
+  name: ogeyuva washing
+  aliases:
+  - ogeyuva washing
+  - washing
+  - washer
+  tags:
+  - washer
+  - washing
+- id: switch.dryer
+  area_id: laundry
+  name: ogeyuva dryer
+  aliases:
+  - ogeyuva dryer
+  - dryer
+  tags:
+  - dryer
+- id: switch.master_bath_fan
+  area_id: master_bath
+  name: mukhyasnana ಫ್ಯಾನ್bad
+  aliases:
+  - mukhyasnana ಫ್ಯಾನ್bad
+  - ಫ್ಯಾನ್bad
+  tags:
+  - ಫ್ಯಾನ್bad
+- id: switch.main_bath_fan
+  area_id: main_bath
+  name: main bath ಫ್ಯಾನ್bad
+  aliases:
+  - main bath ಫ್ಯಾನ್bad
+  - ಫ್ಯಾನ್bad
+  tags:
+  - ಫ್ಯಾನ್bad
+- id: media_player.living_tv
+  area_id: living
+  name: ಹಾಲ್ tv
+  aliases:
+  - ಹಾಲ್ tv
+  - tv
+- id: media_player.family_tv
+  area_id: family_room
+  name: kutumba tv
+  aliases:
+  - kutumba tv
+  - tv
+- id: media_player.living_music
+  area_id: living
+  name: ಹಾಲ್ ಟಿವಿ
+  aliases:
+  - ಹಾಲ್ ಟಿವಿ
+  - ಟಿವಿ
+  platform: music_assistant
+  tags:
+  - ಟಿವಿ
+- id: media_player.kitchen_music
+  area_id: kitchen
+  name: ಅಡುಗೆ ಟಿವಿ
+  aliases:
+  - ಅಡುಗೆ ಟಿವಿ
+  - ಟಿವಿ
+  platform: music_assistant
+  tags:
+  - ಟಿವಿ
+- id: media_player.office_music
+  area_id: office
+  name: office ಟಿವಿ
+  aliases:
+  - office ಟಿವಿ
+  - ಟಿವಿ
+  platform: music_assistant
+  tags:
+  - ಟಿವಿ
+- id: vacuum.robot
+  area_id: living
+  name: ಹಾಲ್ ಗುಡಿಸು
+  aliases:
+  - ಹಾಲ್ ಗುಡಿಸು
+  - ಗುಡಿಸು
+- id: binary_sensor.front_door_sensor
+  area_id: entryway
+  name: pravesha doorsensor
+  aliases:
+  - pravesha doorsensor
+  - doorsensor
+  tags:
+  - doorsensor
+- id: binary_sensor.living_window
+  area_id: living
+  name: ಹಾಲ್ windowsensor
+  aliases:
+  - ಹಾಲ್ windowsensor
+  - windowsensor
+  tags:
+  - windowsensor
+- id: binary_sensor.kitchen_motion
+  area_id: kitchen
+  name: ಅಡುಗೆ motion
+  aliases:
+  - ಅಡುಗೆ motion
+  - motion
+  tags:
+  - motion
+- id: sensor.living_temperature
+  area_id: living
+  name: ಹಾಲ್ tempsensor
+  aliases:
+  - ಹಾಲ್ tempsensor
+  - tempsensor
+  tags:
+  - tempsensor
+- id: sensor.living_humidity
+  area_id: living
+  name: ಹಾಲ್ humidity
+  aliases:
+  - ಹಾಲ್ humidity
+  - humidity
+  tags:
+  - humidity
+- id: weather.home
+  area_id: garden
+  name: garden weather
+  aliases:
+  - garden weather
+  - weather
+scenes:
+- id: movie_night
+  name: cinema
+- id: dinner_time
+  name: dinner
+- id: kids_bedtime
+  name: kids
+- id: good_morning
+  name: morning
+scripts:
+- id: good_night
+  name: ratri
+- id: leaving_home
+  name: horatu
+timers:
+- id: oven
+  name: oven ಟೈಮರ್
+- id: laundry
+  name: laundry ಟೈಮರ್
+- id: abstract
+  name: abstract ಟೈಮರ್
+lists:
+- id: shopping
+  name: ಪಟ್ಟಿ

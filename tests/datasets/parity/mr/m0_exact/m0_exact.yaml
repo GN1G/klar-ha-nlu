@@ -1,0 +1,19 @@
+m0_exact/representative::exact_clarify:
+- चालू सर्व दिवा बैठक
+m0_exact/representative::exact_list_complete_from_setup:
+- झाले bread aufgabenliste
+m0_exact/representative::exact_multi_intent:
+- चालू chhat shayankaksh3 ani बंद दिवा pravesh
+m0_exact/representative::exact_reject:
+- weather france
+m0_exact/representative::exact_shopping_list:
+- add milk यादी
+m0_exact/representative::exact_state_persistence:
+- - काय दिवा pravesh
+  - '12'
+m0_exact/representative::exact_timer:
+- चालू टाइमर oven 2 min
+m0_exact/representative::exact_timer_resume_preserves_duration:
+- चालू टाइमर oven
+m0_exact/representative::exact_todo_list:
+- add apples aufgabenliste

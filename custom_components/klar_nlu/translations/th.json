@@ -1,0 +1,131 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klar NLU",
+        "description": "การเชื่อมต่อนี้คุยกับ Assist เครื่องแยกจะถอดเสียง: แอป Klar NLU โปรเซสที่มากับตัว หรือ Docker บน Home Assistant OS ให้ติดตั้งแอปแล้วเลือกใช้แอป Klar NLU ถ้าไม่มีแอป ให้เริ่มเอนจินที่มากับตัว อย่าเปิดทั้งสอง",
+        "data": {
+          "mode": "เอนจิน",
+          "channel": "ช่องเผยแพร่",
+          "url": "URL ของ Klar API",
+          "token": "โทเคนเขียน"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL ต้องเป็น http(s) และไม่มีชื่อผู้ใช้"
+    },
+    "abort": {
+      "already_configured": "ตั้งค่า Klar NLU แล้ว"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Klar NLU",
+        "description": "เสียง ภาษา Assist และ LLM อยู่ใน UI ผู้ปฏิบัติการของ Klar (การตั้งค่า) แบบฟอร์มนี้เชื่อมต่อเอนจินเท่านั้น: URL โทเค็น และช่องทาง {apps}",
+        "data": {
+          "mode": "เอนจิน",
+          "url": "URL ของ Klar API",
+          "token": "โทเคนเขียน",
+          "assist_filter": "ควบคุมเฉพาะเอนทิตีที่เปิดให้ Assist",
+          "channel": "ช่องเผยแพร่"
+        },
+        "data_description": {
+          "mode": "App vs bundled engine. Switch anytime. The integration sidebar only appears for the bundled engine.",
+          "token": "โทเคนเดียวกับแอป Klar",
+          "assist_filter": "เปิด: เฉพาะที่ Assist เห็น ปิด: รวมเอนทิตีที่ซ่อน",
+          "channel": "เปลี่ยนได้ตลอด Staging ชี้ไปที่ Klar NLU (Staging)"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL ต้องเป็น http(s) และไม่มีชื่อผู้ใช้"
+    }
+  },
+  "selector": {
+    "engine_mode": {
+      "options": {
+        "local": "เริ่มเอนจินที่มากับตัว (เฉพาะ HACS)",
+        "remote": "ใช้แอป Klar NLU หรือ Docker"
+      }
+    },
+    "release_channel": {
+      "options": {
+        "stable": "Stable (ใช้งานจริง)",
+        "staging": "Staging (ตัวทดลอง)"
+      }
+    },
+    "nlu_language": {
+      "options": {
+        "system": "ภาษาของระบบ",
+        "all": "ทุกภาษา"
+      }
+    },
+    "personality": {
+      "options": {
+        "default": "ปกติ",
+        "butler": "Butler",
+        "locker": "สบาย ๆ",
+        "fuersorglich": "ใส่ใจ",
+        "party": "Party",
+        "grantig": "หงุดหงิด",
+        "sarkastisch": "ประชด",
+        "pirat": "โจรสลัด",
+        "hippie": "Hippie",
+        "gollum": "Gollum",
+        "jarvis": "Jarvis"
+      }
+    }
+  },
+  "entity": {
+    "select": {
+      "personality": {
+        "name": "บุคลิก",
+        "state": {
+          "default": "ปกติ",
+          "butler": "Butler",
+          "locker": "สบาย ๆ",
+          "fuersorglich": "ใส่ใจ",
+          "party": "Party",
+          "grantig": "หงุดหงิด",
+          "sarkastisch": "ประชด",
+          "pirat": "โจรสลัด",
+          "hippie": "Hippie",
+          "gollum": "Gollum",
+          "jarvis": "Jarvis"
+        }
+      }
+    },
+    "switch": {
+      "quiet_ack": {
+        "name": "ยืนยันสั้น"
+      }
+    },
+    "ai_task": {
+      "ai_task": {
+        "name": "งาน AI"
+      }
+    },
+    "sensor": {
+      "last_heard": {
+        "name": "ได้ยินล่าสุด"
+      },
+      "last_decision": {
+        "name": "การตัดสินใจล่าสุด"
+      },
+      "last_speech": {
+        "name": "คำตอบล่าสุด"
+      },
+      "last_area": {
+        "name": "ได้ยินที่"
+      }
+    }
+  },
+  "issues": {
+    "engine_down": {
+      "title": "เอนจิน Klar หยุด",
+      "description": "โปรเซส Klar ที่มากับตัวไม่ได้ทำงาน โหลด Klar NLU ใหม่ที่ การตั้งค่า → อุปกรณ์และบริการ"
+    }
+  }
+}

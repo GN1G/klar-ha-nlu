@@ -1,0 +1,82 @@
+area/heizung::heizung_badezimmer_23:
+- સેટ ગરમી mukhyasnan 23
+area/heizung::heizung_esszimmer_23:
+- સેટ ગરમી kutumbess 23
+area/heizung::heizung_schlafzimmer_23:
+- સેટ ગરમી shayankhand 23
+area/heizung::heizung_wohnzimmer_23:
+- સેટ ગરમી ઓરડો 23
+area/lichter::alle_an_ausser_kugel:
+- ચાલુ બધું પ્રકાશ sivay gol
+area/lichter::alle_an_ausser_schlafzimmer:
+- ચાલુ બધું પ્રકાશ sivay shayankhand
+area/lichter::alle_auf_20_ausser_schlafzimmer:
+- સેટ બધું પ્રકાશ sivay shayankhand 20
+area/lichter::alle_auf_rot_ausser_kugel:
+- સેટ બધું પ્રકાશ sivay gol red
+area/lichter::alle_ausser_kugel:
+- બંધ બધું પ્રકાશ sivay gol
+area/lichter::alle_ausser_schlafzimmer:
+- બંધ બધું પ્રકાશ sivay shayankhand
+area/lichter::alle_lichter_an:
+- ચાલુ બધું પ્રકાશ
+area/lichter::alle_lichter_aus:
+- બંધ બધું પ્રકાશ
+area/lichter::arbeitszimmer_lichter_an:
+- ચાલુ બધું પ્રકાશ office
+area/lichter::arbeitszimmer_lichter_aus:
+- બંધ બધું પ્રકાશ office
+area/lichter::esszimmer_lichter_an:
+- ચાલુ બધું પ્રકાશ kutumbess
+area/lichter::esszimmer_lichter_aus:
+- બંધ બધું પ્રકાશ kutumbess
+area/lichter::kuche_lichter_an:
+- ચાલુ બધું પ્રકાશ રસોડું
+area/lichter::kuche_lichter_aus:
+- બંધ બધું પ્રકાશ રસોડું
+area/lichter::schlafzimmer_auf_blau:
+- સેટ બધું પ્રકાશ shayankhand blue
+area/lichter::schlafzimmer_auf_rot:
+- સેટ બધું પ્રકાશ shayankhand red
+area/lichter::wohnzimmer_helligkeit:
+- સેટ બધું પ્રકાશ ઓરડો 45
+area/lichter::wohnzimmer_lichter_an:
+- ચાલુ બધું પ્રકાશ ઓરડો
+area/lichter::wohnzimmer_lichter_aus:
+- બંધ બધું પ્રકાશ ઓરડો
+area/spoken::alle_ausser_kugel_stt:
+- બંધ બધું પ્રકાશ sivay gol
+area/spoken::alle_ausser_schlaf_stt:
+- બંધ બધું પ્રકાશ sivay shayankhand
+area/spoken::alle_ganzen_an:
+- ચાલુ બધું પ્રકાશ
+area/spoken::alle_lampen_aus:
+- બંધ બધું પ્રકાશ
+area/spoken::esszimmer_weiss:
+- સેટ બધું પ્રકાશ kutumbess white
+area/spoken::stt_kuche_lichte:
+- બંધ બધું પ્રકાશ રસોડું
+area/spoken::stt_licht_wohnzimmer_an:
+- ચાલુ બધું પ્રકાશ ઓરડો
+area/spoken::stt_licht_wohnzimmer_aus:
+- બંધ બધું પ્રકાશ ઓરડો
+area/spoken::stt_schlafzimmer_dativ:
+- બંધ બધું પ્રકાશ shayankhand
+area/spoken::wohnzimmer_gruen:
+- સેટ બધું પ્રકાશ ઓરડો green
+area/spoken_more::alle_ausser_arbeitszimmer:
+- બંધ બધું પ્રકાશ sivay office
+area/spoken_more::arbeitszimmer_lampen_aus:
+- બંધ બધું પ્રકાશ office
+area/spoken_more::esszimmer_30:
+- સેટ બધું પ્રકાશ kutumbess 30
+area/spoken_more::esszimmer_lichte_an:
+- ચાલુ બધું પ્રકાશ kutumbess
+area/spoken_more::kuche_80:
+- સેટ બધું પ્રકાશ રસોડું 80
+area/spoken_more::kuche_blau:
+- સેટ બધું પ્રકાશ રસોડું blue
+area/spoken_more::ueberall_ausser_schlaf_stt:
+- બંધ બધું પ્રકાશ sivay shayankhand
+area/spoken_more::wohnzimmer_gelb:
+- સેટ બધું પ્રકાશ ઓરડો yellow

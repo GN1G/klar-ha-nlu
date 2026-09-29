@@ -1,0 +1,18 @@
+query_devices/spoken::status_kugel:
+- რა burtuli
+query_devices/spoken::status_pc:
+- რა pc
+query_devices/spoken::status_trockner:
+- რა dryer
+query_devices/spoken::status_tv:
+- რა tv
+query_devices/spoken_more::status_decke:
+- რა potoloni sadzinebeli
+query_devices/spoken_more::status_spuelmaschine:
+- რა jamtchebi
+query_devices/spoken_more::status_wasch_casual:
+- რა saretskhave
+query_devices/status::status_r2d2:
+- რა მტვერსასრუტი მისაღები
+query_devices/status::status_waschmaschine:
+- რა saretskhave

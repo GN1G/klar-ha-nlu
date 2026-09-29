@@ -1,0 +1,28 @@
+query_area/spoken::status_licht_kuche_casual:
+- काय दिवा स्वयंपाक
+query_area/spoken::status_licht_wohnzimmer_casual:
+- काय दिवा बैठक
+query_area/spoken_more::brennt_arbeitszimmer:
+- काय दिवा office
+query_area/spoken_more::brennt_esszimmer:
+- काय दिवा kutumbess
+query_area/spoken_more::status_licht_schlaf_casual:
+- काय दिवा shayankaksh
+query_area/status::status_alle_lichter:
+- काय सर्व दिवा
+query_area/status::status_licht_arbeitszimmer:
+- काय दिवा office
+query_area/status::status_licht_badezimmer:
+- weather france
+query_area/status::status_licht_esszimmer:
+- काय दिवा kutumbess
+query_area/status::status_licht_kuche:
+- काय दिवा स्वयंपाक
+query_area/status::status_licht_wohnzimmer:
+- काय दिवा बैठक
+query_area/status::status_wohn_und_esszimmer:
+- काय wohn und esszimmer
+query_area/status::temperatur_wohnung:
+- weather france
+query_area/status::temperatur_wohnzimmer:
+- काय उष्णता बैठक

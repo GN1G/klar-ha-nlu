@@ -1,0 +1,19 @@
+m0_exact/representative::exact_clarify:
+- వెలిగించు అన్ని వెలుగు గది
+m0_exact/representative::exact_list_complete_from_setup:
+- అయింది bread aufgabenliste
+m0_exact/representative::exact_multi_intent:
+- వెలిగించు kappu padakagadi3 mariyu ఆర్పు వెలుగు pravesham
+m0_exact/representative::exact_reject:
+- weather france
+m0_exact/representative::exact_shopping_list:
+- add milk జాబితా
+m0_exact/representative::exact_state_persistence:
+- - ఏమి వెలుగు pravesham
+  - '12'
+m0_exact/representative::exact_timer:
+- వెలిగించు టైమర్ oven 2 min
+m0_exact/representative::exact_timer_resume_preserves_duration:
+- వెలిగించు టైమర్ oven
+m0_exact/representative::exact_todo_list:
+- add apples aufgabenliste

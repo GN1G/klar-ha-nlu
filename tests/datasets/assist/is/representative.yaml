@@ -1,0 +1,42 @@
+- name: light_on
+  sentences:
+    - kveiktu ljos stofa
+  nlu_expect:
+    intents:
+      - intent: HassTurnOn
+- name: light_off
+  sentences:
+    - slokktu ljos eldhus
+  nlu_expect:
+    intents:
+      - intent: HassTurnOff
+- name: calendar_list
+  sentences:
+    - hvad er a dagatalinu
+  nlu_expect:
+    intents:
+      - intent: KlarGetCalendarEvents
+- name: calendar_create
+  sentences:
+    - baettu tannlaekni amorgun kl 15 dagatal
+  nlu_expect:
+    intents:
+      - intent: KlarCreateCalendarEvent
+- name: calendar_delete
+  sentences:
+    - eyda tannlaekni dagatal
+  nlu_expect:
+    intents:
+      - intent: KlarDeleteCalendarEvent
+- name: calendar_move
+  sentences:
+    - faera tannlaekni amorgun kl 16 dagatal
+  nlu_expect:
+    intents:
+      - intent: KlarMoveCalendarEvent
+- name: play_media
+  sentences:
+    - spila depeche
+  nlu_expect:
+    intents:
+      - intent: MassPlayMedia
