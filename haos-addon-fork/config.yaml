@@ -3,7 +3,7 @@ version: "2026.9.11-fork.1"
 slug: klar_nlu_fork
 stage: experimental
 description: Klar-Fork — Weltfragen gehen an das konfigurierte LLM (LM Studio etc.).
-url: https://github.com/REPLACE_GITHUB_USER/klar-ha-nlu
+url: https://github.com/GN1G/klar-ha-nlu
 arch:
   - amd64
   - aarch64
@@ -36,4 +36,4 @@ schema:
   ui_locale: str?
 # Nach dem GitHub-Actions-Build: Package public machen oder GHCR-Login im Supervisor.
 # Tag fork-llm kommt aus .github/workflows/fork-image.yml
-image: ghcr.io/REPLACE_GITHUB_USER/klar-nlu-{arch}
+image: ghcr.io/gn1g/klar-nlu-{arch}
