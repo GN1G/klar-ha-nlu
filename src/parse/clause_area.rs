@@ -101,15 +101,23 @@ pub(crate) fn query_area(ctx: &Clause) -> Option<ClauseOut> {
 }
 
 pub(crate) fn query_ungrounded(ctx: &Clause) -> Option<ClauseOut> {
-    if matches!(ctx.action, Action::GetState)
-        && ctx.resolved.entities.is_empty()
-        && ctx.resolved.ambiguous.is_empty()
-        && !query_grounded(ctx.tokens, ctx.home, false)
+    if !matches!(ctx.action, Action::GetState)
+        || !ctx.resolved.entities.is_empty()
+        || !ctx.resolved.ambiguous.is_empty()
+        || query_grounded(ctx.tokens, ctx.home, false)
     {
-        Some(ClauseOut::Intents(Vec::new()))
-    } else {
-        None
+        return None;
     }
+    // House-wide domain status: "sind Lichter an?", "are any windows open?"
+    if let Some(domain) = ctx.domain.filter(|domain| {
+        matches!(*domain, "light" | "switch" | "cover" | "lock" | "climate" | "fan" | "binary_sensor" | "media_player" | "vacuum")
+    }) {
+        let intent = fill_intent(ctx.action, ctx.tokens, ctx.number, None, None, Some(domain));
+        if intent.name != "Unknown" {
+            return Some(ClauseOut::Intents(vec![intent]));
+        }
+    }
+    Some(ClauseOut::Intents(Vec::new()))
 }
 
 pub(crate) fn multi_area(ctx: &Clause) -> Option<ClauseOut> {

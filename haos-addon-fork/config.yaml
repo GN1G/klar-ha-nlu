@@ -1,5 +1,5 @@
 name: Klar NLU (Fork LLM)
-version: "2026.9.30-fork.2"
+version: "2026.9.30-fork.3"
 slug: klar_nlu_fork
 stage: experimental
 description: Klar-Fork — Weltfragen→LLM, Lern-UI, Radio/MASS-Fixes.
@@ -35,6 +35,6 @@ schema:
   support_bundle: bool?
   ui_locale: str?
 # HAOS uses config "version" as the image tag:
-#   ghcr.io/gn1g/klar-nlu-amd64:2026.9.30-fork.2
+#   ghcr.io/gn1g/klar-nlu-amd64:2026.9.30-fork.3
 # Package must be Public (or Supervisor logged into ghcr.io).
 image: ghcr.io/gn1g/klar-nlu-{arch}

@@ -49,6 +49,23 @@ def place_status_rooms(
     return None
 
 
+def domain_status_states(
+    hass: Any,
+    domain: str,
+    exposed: Callable[[str], bool],
+) -> list[Any] | None:
+    """All exposed entities of one domain (house-wide status questions)."""
+    domain = (domain or "").strip().lower()
+    if domain not in _STATUS_DOMAINS:
+        return None
+    states = [
+        state
+        for state in hass.states.async_all(domain)
+        if exposed(str(state.entity_id)) and not _infra_state(state)
+    ]
+    return states
+
+
 def place_get_state(
     hass: Any,
     slots: dict[str, Any],

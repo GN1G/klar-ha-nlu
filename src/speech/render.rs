@@ -120,6 +120,9 @@ fn query_speech(snap: &SpeechSnapshot, speech: Speech, de: bool) -> String {
     if lights.len() >= 2 {
         return light_counts(&lights, de);
     }
+    if let Some(line) = domain_counts(&entities, de) {
+        return line;
+    }
     entities
         .iter()
         .take(4)
@@ -147,26 +150,119 @@ fn cap_first(text: &str) -> String {
 }
 
 fn light_counts(lights: &[&SpeechEntity], de: bool) -> String {
-    let on = lights.iter().filter(|entity| entity.state == "on").count();
+    let on_lights: Vec<_> = lights.iter().filter(|entity| entity.state == "on").copied().collect();
     let off = lights.iter().filter(|entity| entity.state == "off").count();
     if de {
-        let mut bits = Vec::new();
-        if on > 0 {
-            bits.push(if on == 1 { "1 Licht an".into() } else { format!("{on} Lichter an") });
+        if on_lights.is_empty() {
+            return if lights.is_empty() {
+                "Ich sehe keine Lichter.".into()
+            } else {
+                "Keine Lichter sind an.".into()
+            };
         }
+        if on_lights.len() <= 6 {
+            let names = on_lights.iter().map(|entity| entity.name.as_str()).collect::<Vec<_>>().join(", ");
+            return if on_lights.len() == 1 {
+                format!("{names} ist an.")
+            } else {
+                format!("{names} sind an.")
+            };
+        }
+        let mut bits = Vec::new();
+        bits.push(format!("{} Lichter an", on_lights.len()));
         if off > 0 {
             bits.push(if off == 1 { "1 Licht aus".into() } else { format!("{off} Lichter aus") });
         }
         bits.join(", ") + "."
+    } else if on_lights.is_empty() {
+        if lights.is_empty() {
+            "I don't see any lights.".into()
+        } else {
+            "No lights are on.".into()
+        }
+    } else if on_lights.len() <= 6 {
+        let names = on_lights.iter().map(|entity| entity.name.as_str()).collect::<Vec<_>>().join(", ");
+        if on_lights.len() == 1 {
+            format!("{names} is on.")
+        } else {
+            format!("{names} are on.")
+        }
     } else {
         let mut bits = Vec::new();
-        if on > 0 {
-            bits.push(format!("{on} lights on"));
-        }
+        bits.push(format!("{} lights on", on_lights.len()));
         if off > 0 {
             bits.push(format!("{off} lights off"));
         }
         bits.join(", ") + "."
+    }
+}
+
+fn domain_counts(entities: &[&SpeechEntity], de: bool) -> Option<String> {
+    if entities.len() < 2 {
+        return None;
+    }
+    let domain = entities.first()?.domain.as_str();
+    if domain == "light" {
+        return Some(light_counts(entities, de));
+    }
+    let active: Vec<_> = entities
+        .iter()
+        .copied()
+        .filter(|entity| matches!(entity.state.as_str(), "on" | "open" | "opening" | "home" | "playing" | "heat" | "cool" | "auto"))
+        .collect();
+    let inactive = entities.len().saturating_sub(active.len());
+    let (active_word, inactive_word, plural) = match domain {
+        "cover" => {
+            if de {
+                ("offen", "zu", "Fenster/Rollos")
+            } else {
+                ("open", "closed", "covers")
+            }
+        }
+        "lock" => {
+            if de {
+                ("offen", "zu", "Schlösser")
+            } else {
+                ("unlocked", "locked", "locks")
+            }
+        }
+        "climate" | "fan" | "switch" | "media_player" | "vacuum" => {
+            if de {
+                ("an", "aus", "Geräte")
+            } else {
+                ("on", "off", "devices")
+            }
+        }
+        _ => return None,
+    };
+    if de {
+        if active.is_empty() {
+            return Some(format!("Keine {plural} sind {active_word}."));
+        }
+        if active.len() <= 6 {
+            let names = active.iter().map(|entity| entity.name.as_str()).collect::<Vec<_>>().join(", ");
+            return Some(if active.len() == 1 {
+                format!("{names} ist {active_word}.")
+            } else {
+                format!("{names} sind {active_word}.")
+            });
+        }
+        Some(format!(
+            "{} {plural} {active_word}, {} {inactive_word}.",
+            active.len(),
+            inactive
+        ))
+    } else if active.is_empty() {
+        Some(format!("No {plural} are {active_word}."))
+    } else if active.len() <= 6 {
+        let names = active.iter().map(|entity| entity.name.as_str()).collect::<Vec<_>>().join(", ");
+        Some(if active.len() == 1 {
+            format!("{names} is {active_word}.")
+        } else {
+            format!("{names} are {active_word}.")
+        })
+    } else {
+        Some(format!("{} {plural} {active_word}, {} {inactive_word}.", active.len(), inactive))
     }
 }
 

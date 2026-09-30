@@ -125,6 +125,29 @@ fn schlafzimmerlicht_status_ist_das_licht() {
 }
 
 #[test]
+fn irgendwelche_lichter_an_ist_domain_status() {
+    for text in [
+        "sind irgendwelche lichter in meinem zuhause an",
+        "sind irgendwelche Lichter an",
+        "welche Lichter sind an",
+        "sind Lichter an",
+    ] {
+        let found = slots(text);
+        assert_eq!(found.len(), 1, "{text}: {found:?}");
+        assert_eq!(found[0].0, "HassGetState", "{text}: {found:?}");
+        assert!(found[0].1.iter().any(|(k, v)| k == "domain" && v == "light"), "{text}: {found:?}");
+        assert!(found[0].1.iter().all(|(k, _)| k != "entity_id"), "{text}: {found:?}");
+    }
+}
+
+#[test]
+fn fenster_geschlossen_ist_domain_status() {
+    let found = slots("sind alle fenster geschlossen");
+    assert_eq!(found[0].0, "HassGetState", "{found:?}");
+    assert!(found[0].1.iter().any(|(k, v)| k == "domain" && v == "cover"), "{found:?}");
+}
+
+#[test]
 fn schlafzimmerlicht_an_ohne_raumwort() {
     let found = slots("schalte das schlafzimmerlicht an");
     assert_eq!(found[0].0, "HassTurnOn", "{found:?}");

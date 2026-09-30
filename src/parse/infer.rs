@@ -13,6 +13,19 @@ fn dock_hint(tokens: &[String]) -> bool {
     })
 }
 
+fn domain_status_noun(tokens: &[String]) -> bool {
+    let cat = catalog();
+    cat.any(tokens, cat.light_nouns())
+        || cat.any(tokens, cat.light_plural())
+        || cat.any(tokens, cat.cover_nouns())
+        || cat.any(tokens, cat.window_words())
+        || cat.any(tokens, cat.climate_nouns())
+        || cat.any(tokens, cat.fan_nouns())
+        || cat.any(tokens, cat.lock_nouns())
+        || cat.any(tokens, cat.media_nouns())
+        || cat.any(tokens, cat.vacuum_nouns())
+}
+
 fn last_domain(session: &Session, prefix: &str) -> bool {
     session.last_domains().any(|d| d == prefix) || session.last_entities().any(|e| e.starts_with(&format!("{prefix}.")))
 }
@@ -35,6 +48,14 @@ pub(crate) fn infer_action(
 fn refine_tokens(action: Action, tokens: &[String], number: Option<i32>, question: bool) -> Action {
     let vacuum = catalog().any(tokens, catalog().vacuum_nouns());
     if question && (vacuum || matches!(action, Action::VacuumDock | Action::VacuumStart)) {
+        return Action::GetState;
+    }
+    // "Sind Lichter an?" / "Are the windows closed?" — power/open particles are state, not commands.
+    if question
+        && number.is_none()
+        && matches!(action, Action::On | Action::Off | Action::CoverOpen | Action::CoverClose | Action::Lock | Action::Unlock)
+        && domain_status_noun(tokens)
+    {
         return Action::GetState;
     }
     if vacuum && dock_hint(tokens) {

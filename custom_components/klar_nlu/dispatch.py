@@ -21,7 +21,7 @@ from .dispatch_media import (
 )
 from .dispatch_result import IntentStepResult, fail as _fail, ok as _ok
 from .dispatch_timer import prepare_timer_slots, run_timer_helper
-from .floor_query import floor_temperature_rooms, place_status_rooms
+from .floor_query import domain_status_states, floor_temperature_rooms, place_status_rooms
 from .intents import (
     ENTITY_SERVICES,
     LIST_INTENTS,
@@ -106,7 +106,20 @@ async def handle_intent(
         )
         return _ok(spoken) if spoken else _fail("media_status_unavailable")
     if name == "HassGetState" and not entity_id:
+        domain = str(slots.get("domain", {}).get("value") or "").strip().lower()
         rooms = place_status_rooms(hass, slots, exposed)
+        if rooms is None and domain:
+            states = domain_status_states(hass, domain, exposed)
+            if states is not None:
+                extra = [row for state in states if (row := entity_from_state(state))]
+                spoken = await spoken_after_execute(
+                    hass,
+                    pack,
+                    "default",
+                    {**item, "name": name},
+                    extra_entities=extra,
+                )
+                return _ok(spoken) if spoken else _fail("domain_speech_missing")
         if rooms is not None:
             extra: list[dict[str, Any]] = []
             for area_name, states in rooms:
