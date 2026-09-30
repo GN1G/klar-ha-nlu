@@ -343,6 +343,9 @@ fn binding_score(intents: &[Intent], binding: &BindingAnalysis) -> f64 {
     if intents.is_empty() {
         return 0.55;
     }
+    if intents.iter().any(|intent| domain_only_status(intent)) {
+        return 0.92;
+    }
     if intents.iter().any(|intent| {
         requires_target(&intent.name)
             && intent.slot("entity_id").is_none()

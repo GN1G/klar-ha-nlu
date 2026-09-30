@@ -155,6 +155,7 @@ fn is_strong_policy(policy: &str) -> bool {
             | "preferred_area_command"
             | "follow_named"
             | "query_area"
+            | "query_ungrounded"
             | "multi_area"
     )
 }
