@@ -166,6 +166,7 @@ fn usable_fragment(fragment: &IntentCandidate) -> bool {
             || step.intent.slot("entity_id").is_some()
             || step.intent.slot("area").is_some()
             || step.intent.slot("floor").is_some()
+            || domain_only_status(&step.intent)
     });
     if grounded && fragment.score > 0.0 {
         return true;
@@ -175,6 +176,10 @@ fn usable_fragment(fragment: &IntentCandidate) -> bool {
         .steps
         .iter()
         .any(|step| step.intent.slots.iter().any(|slot| !matches!(slot.name.as_str(), "entity_id" | "area" | "floor" | "domain")))
+}
+
+fn domain_only_status(intent: &Intent) -> bool {
+    matches!(intent.name.as_str(), "HassGetState" | "HassClimateGetTemperature") && intent.slot("domain").is_some()
 }
 
 fn empty_entry() -> BeamEntry {

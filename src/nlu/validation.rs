@@ -68,7 +68,12 @@ fn validate_target(intent: &Intent, home: &HomeGraph) -> Result<(), PlanInvalid>
     let floor = intent.slot("floor");
     let domain = intent.slot("domain");
     if requires_target(&intent.name) && entity_id.is_none() && area.is_none() && floor.is_none() {
-        return Err(PlanInvalid::MissingTarget);
+        // House-wide status: "sind Lichter an?" → HassGetState domain=light
+        let domain_status =
+            matches!(intent.name.as_str(), "HassGetState" | "HassClimateGetTemperature") && domain.is_some_and(allowed_domain);
+        if !domain_status {
+            return Err(PlanInvalid::MissingTarget);
+        }
     }
     if let Some(entity_id) = entity_id {
         let entity = home.entities.iter().find(|entity| entity.entity_id == entity_id).ok_or(PlanInvalid::UnsafeTarget)?;
@@ -244,6 +249,7 @@ fn allowed_domain(domain: &str) -> bool {
             | "fan"
             | "vacuum"
             | "media_player"
+            | "binary_sensor"
             | "scene"
             | "script"
             | "input_boolean"
@@ -329,6 +335,16 @@ mod tests {
     fn rejects_targetless_controls() {
         assert_eq!(
             validate_plan(&plan(Intent::new("HassTurnOn").with("domain", "light")), &default_home()),
+            Err(PlanInvalid::MissingTarget)
+        );
+    }
+
+    #[test]
+    fn allows_domain_only_get_state() {
+        assert_eq!(validate_plan(&plan(Intent::new("HassGetState").with("domain", "light")), &default_home()), Ok(()));
+        assert_eq!(validate_plan(&plan(Intent::new("HassGetState").with("domain", "cover")), &default_home()), Ok(()));
+        assert_eq!(
+            validate_plan(&plan(Intent::new("HassGetState").with("domain", "not_a_domain")), &default_home()),
             Err(PlanInvalid::MissingTarget)
         );
     }
