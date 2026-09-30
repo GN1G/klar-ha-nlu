@@ -103,7 +103,14 @@ fn describe(intent: &Intent, home: Option<&HomeGraph>) -> String {
         }
         "HassClimateGetTemperature" => fill(pack.get_temp),
         "HassGetState" if intent.slot("device_class") == Some("temperature") => fill(pack.get_temp),
-        "HassGetState" => fill(pack.get_state),
+        "HassGetState" => {
+            if intent.slot("entity_id").is_none() && intent.slot("area").is_none() && intent.slot("floor").is_none() {
+                if let Some(domain) = intent.slot("domain") {
+                    return domain_status_ack(domain);
+                }
+            }
+            fill(pack.get_state)
+        }
         "HassMediaPause" => pack.media_pause.to_string(),
         "HassMediaUnpause" => pack.media_play.to_string(),
         "HassMediaNext" => pack.media_next.to_string(),
@@ -232,6 +239,20 @@ fn object_id(id: &str) -> String {
 
 fn domain_of(id: &str) -> &str {
     id.split('.').next().unwrap_or("")
+}
+
+fn domain_status_ack(domain: &str) -> String {
+    match domain {
+        "light" => "Ich prüfe die Lichter.".into(),
+        "cover" => "Ich prüfe die Fenster.".into(),
+        "climate" => "Ich prüfe die Klimageräte.".into(),
+        "fan" => "Ich prüfe die Lüfter.".into(),
+        "lock" => "Ich prüfe die Schlösser.".into(),
+        "switch" => "Ich prüfe die Schalter.".into(),
+        "media_player" => "Ich prüfe die Player.".into(),
+        "vacuum" => "Ich prüfe den Sauger.".into(),
+        _ => "Einen Moment.".into(),
+    }
 }
 
 fn climate_noun(intent: &Intent) -> &'static str {

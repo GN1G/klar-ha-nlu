@@ -148,6 +148,14 @@ fn fenster_geschlossen_ist_domain_status() {
 }
 
 #[test]
+fn alle_lichter_aus_ohne_raumfrage() {
+    let found = slots("schalte alle lichter aus");
+    assert!(!found.is_empty(), "{found:?}");
+    assert!(found.iter().all(|(name, _)| name == "HassTurnOff"), "{found:?}");
+    assert!(found.iter().all(|(_, slots)| slots.iter().any(|(k, _)| k == "area" || k == "entity_id")), "{found:?}");
+}
+
+#[test]
 fn schlafzimmerlicht_an_ohne_raumwort() {
     let found = slots("schalte das schlafzimmerlicht an");
     assert_eq!(found[0].0, "HassTurnOn", "{found:?}");

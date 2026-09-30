@@ -101,11 +101,17 @@ pub(crate) fn query_area(ctx: &Clause) -> Option<ClauseOut> {
 }
 
 pub(crate) fn query_ungrounded(ctx: &Clause) -> Option<ClauseOut> {
-    if !matches!(ctx.action, Action::GetState) || !ctx.resolved.entities.is_empty() || !ctx.resolved.ambiguous.is_empty() {
+    if !matches!(ctx.action, Action::GetState) {
+        return None;
+    }
+    let house_wide_all =
+        ctx.tokens.iter().any(|token| catalog().is_all(token)) && ctx.resolved.areas.is_empty() && ctx.resolved.floors.is_empty();
+    if !house_wide_all && (!ctx.resolved.entities.is_empty() || !ctx.resolved.ambiguous.is_empty()) {
         return None;
     }
     // House-wide domain status before the grounded gate: nouns like "Lichter"/"an"
     // make query_grounded true, but that must not block "sind irgendwelche Lichter an?".
+    // "alle Fenster" may fuzzy-bind one cover — still keep domain scope when "alle" is present.
     if ctx.resolved.areas.is_empty() && ctx.resolved.floors.is_empty() {
         if let Some(domain) = ctx.domain.filter(|domain| {
             matches!(*domain, "light" | "switch" | "cover" | "lock" | "climate" | "fan" | "binary_sensor" | "media_player" | "vacuum")
@@ -138,6 +144,17 @@ pub(crate) fn multi_area(ctx: &Clause) -> Option<ClauseOut> {
 }
 
 pub(crate) fn grounded_entities(ctx: &Clause) -> Option<ClauseOut> {
+    if ctx.resolved.entities.is_empty() {
+        return None;
+    }
+    // "sind alle Fenster zu?" must stay domain-wide, not one fuzzy cover hit.
+    if matches!(ctx.action, Action::GetState)
+        && ctx.tokens.iter().any(|token| catalog().is_all(token))
+        && ctx.resolved.areas.is_empty()
+        && ctx.domain.is_some()
+    {
+        return None;
+    }
     (!ctx.resolved.entities.is_empty()).then(|| {
         let intents = ctx
             .resolved

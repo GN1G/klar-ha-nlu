@@ -114,6 +114,9 @@ fn query_speech(snap: &SpeechSnapshot, speech: Speech, de: bool) -> String {
         }
     }
     if entities.is_empty() {
+        if let Some(domain) = slot(snap, "domain") {
+            return empty_domain_status(domain, de);
+        }
         return String::new();
     }
     let lights: Vec<_> = entities.iter().filter(|entity| entity.domain == "light").copied().collect();
@@ -434,6 +437,27 @@ fn is_place_query(snap: &SpeechSnapshot, entities: &[&SpeechEntity]) -> bool {
 
 fn is_de(pack: &str) -> bool {
     pack == "de" || pack.starts_with("de-")
+}
+
+fn empty_domain_status(domain: &str, de: bool) -> String {
+    if de {
+        match domain {
+            "light" => "Ich sehe keine Lichter.".into(),
+            "cover" => "Ich sehe keine Fenster oder Rollos.".into(),
+            "climate" => "Ich sehe keine Klimageräte.".into(),
+            "fan" => "Ich sehe keine Lüfter.".into(),
+            "lock" => "Ich sehe keine Schlösser.".into(),
+            "switch" => "Ich sehe keine Schalter.".into(),
+            _ => "Ich sehe keine passenden Geräte.".into(),
+        }
+    } else {
+        match domain {
+            "light" => "I don't see any lights.".into(),
+            "cover" => "I don't see any covers.".into(),
+            "climate" => "I don't see any climate devices.".into(),
+            _ => "I don't see any matching devices.".into(),
+        }
+    }
 }
 
 fn pack_for(language: &str) -> Speech {

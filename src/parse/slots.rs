@@ -36,8 +36,28 @@ pub(crate) fn all_lights_clause(
     let home_wide = whole_home_lights(home);
     let rooms: Vec<&String> = areas.iter().filter(|a| home_wide.is_none_or(|e| e.area.as_deref() != Some(a.as_str()))).collect();
     if rooms.is_empty() {
-        let e = home_wide?;
-        return Some(ClauseOut::Intents(vec![fill_intent(action, tokens, number, Some(&e.entity_id), e.area.as_deref(), Some("light"))]));
+        if let Some(entity) = home_wide {
+            return Some(ClauseOut::Intents(vec![fill_intent(
+                action,
+                tokens,
+                number,
+                Some(&entity.entity_id),
+                entity.area.as_deref(),
+                Some("light"),
+            )]));
+        }
+        // No single "alle Lichter" entity: expand to every real room.
+        let intents: Vec<Intent> = home
+            .areas
+            .iter()
+            .filter(|area| !is_whole_home(area))
+            .filter_map(|area| {
+                let (id, slot, dom) = area_slots(action, &area.area_id, Some("light"), home, tokens);
+                let intent = fill_intent(action, tokens, number, id.as_deref(), slot.as_deref(), dom.as_deref());
+                (intent.name != "Unknown").then_some(intent)
+            })
+            .collect();
+        return (!intents.is_empty()).then_some(ClauseOut::Intents(intents));
     }
     let intents: Vec<Intent> = rooms
         .into_iter()
