@@ -29,6 +29,14 @@ const SKIP_MEDIA: &[&str] = &[
     "media",
     "music",
     "musik",
+    "homepod",
+    "homepod1",
+    // leftover destination words from STT (we only use real speakers)
+    "web",
+    "chrome",
+    "browser",
+    "webplayer",
+    "im",
 ];
 
 pub(super) fn clean_media_words(words: &[String], home: &HomeGraph, resolved: &Resolved) -> Vec<String> {

@@ -20,7 +20,9 @@ export function canTeachFromMiss(turn: ConversationTurn): boolean {
 }
 
 export function teachIntentFromNames(names: string[]): string | undefined {
-  return names.find((name) => name.startsWith("Hass") || name.startsWith("Klar"));
+  return names.find(
+    (name) => name.startsWith("Hass") || name.startsWith("Klar") || name.startsWith("Mass"),
+  );
 }
 
 export function openTeach(heard: string, onTeach?: (heard: string) => void, intent?: string): void {

@@ -226,17 +226,22 @@ fn media_request(raw: &[String], home: &HomeGraph, resolved: &Resolved) -> Optio
     } else {
         None
     };
-    let media_type = match media_type(raw) {
-        Some("radio") if radio_mode => None,
-        other => other,
-    };
     let by_at = raw.iter().position(|t| matches!(t.as_str(), "von" | "by"));
     let (main, artist) = if let Some(at) = by_at {
         (raw[..at].to_vec(), clean_media_words(&raw[at + 1..], home, resolved).join(" "))
     } else {
         (raw.to_vec(), String::new())
     };
-    let media_id = strip_area_query(clean_media_words(&main, home, resolved).join(" "), home);
+    let cleaned = clean_media_words(&main, home, resolved);
+    let mut media_type = match media_type(raw) {
+        Some("radio") if radio_mode => None,
+        other => other,
+    };
+    let media_id = strip_area_query(join_media_query(&cleaned, media_type == Some("radio") || looks_like_radio_station(&cleaned.join(" "))), home);
+    let media_id = canonicalize_radio_station(&media_id);
+    if media_type.is_none() && looks_like_radio_station(&media_id) {
+        media_type = Some("radio");
+    }
     if media_id.is_empty() && artist.is_empty() && !music_resume(raw) && !music_context(raw) {
         return None;
     }
@@ -246,8 +251,50 @@ fn media_request(raw: &[String], home: &HomeGraph, resolved: &Resolved) -> Optio
         artist: (!artist.is_empty()).then_some(artist),
         enqueue,
         radio_mode,
-        needs_mass: radio_mode || enqueue.is_some() || by_at.is_some(),
+        // Radio stations must hit Music Assistant with media_type=radio, not a generic HA search
+        // that often prefers Spotify playlists with the same name.
+        needs_mass: radio_mode || media_type == Some("radio") || enqueue.is_some() || by_at.is_some(),
     })
+}
+
+fn looks_like_radio_station(query: &str) -> bool {
+    const RADIO_TLDS: &[&str] = &["fm", "am", "radio"];
+    let folded = query.trim().to_ascii_lowercase();
+    RADIO_TLDS.iter().any(|tld| folded.ends_with(&format!(".{tld}")))
+}
+
+fn canonicalize_radio_station(query: &str) -> String {
+    let folded = query.trim().to_ascii_lowercase().replace('.', " ");
+    let compact = folded.split_whitespace().collect::<Vec<_>>().join(" ");
+    match compact.as_str() {
+        "housetime" | "housetime fm" | "house time" | "house time fm" | "haustime" | "haustime fm" | "haus time" | "haus time fm" => {
+            "housetime.fm".into()
+        }
+        _ => query.to_string(),
+    }
+}
+
+fn join_media_query(words: &[String], radio: bool) -> String {
+    if words.is_empty() {
+        return String::new();
+    }
+    if !radio && !looks_like_radio_station(&words.join(" ")) {
+        return words.join(" ");
+    }
+    // STT often turns "housetime.fm" into ["housetime", "fm"]. Rejoin known TLDs for radio search.
+    const RADIO_TLDS: &[&str] = &["fm", "am", "de", "at", "ch", "uk", "com", "net", "org", "io", "radio"];
+    let mut out = Vec::new();
+    let mut i = 0;
+    while i < words.len() {
+        if i + 1 < words.len() && RADIO_TLDS.contains(&words[i + 1].as_str()) && !words[i].contains('.') {
+            out.push(format!("{}.{}", words[i], words[i + 1]));
+            i += 2;
+            continue;
+        }
+        out.push(words[i].clone());
+        i += 1;
+    }
+    out.join(" ")
 }
 
 fn target_player<'a>(
@@ -349,11 +396,16 @@ fn mass_players(home: &HomeGraph) -> Vec<&EntityRec> {
 }
 
 fn eligible_music_player(entity: &EntityRec, home: &HomeGraph) -> bool {
-    assist_visible(entity, home) && !is_infra(entity) && (is_music_assistant_player(entity) || is_music_player(entity))
+    // Music Assistant often exposes TVs as players; keep them out of the default
+    // music pool so phrases like "Spiel Queen" resolve when a speaker exists.
+    assist_visible(entity, home)
+        && !is_infra(entity)
+        && !looks_like_tv(entity)
+        && (is_music_assistant_player(entity) || is_music_player(entity))
 }
 
 fn eligible_mass_player(entity: &EntityRec, home: &HomeGraph) -> bool {
-    assist_visible(entity, home) && !is_infra(entity) && is_music_assistant_player(entity)
+    assist_visible(entity, home) && !is_infra(entity) && is_music_assistant_player(entity) && !looks_like_tv(entity)
 }
 
 fn eligible_media_player(entity: &EntityRec, home: &HomeGraph) -> bool {

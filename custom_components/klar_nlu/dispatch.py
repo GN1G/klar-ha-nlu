@@ -79,6 +79,7 @@ async def handle_intent(
         query = str(slots.get("media_id", {}).get("value") or slots.get("search_query", {}).get("value") or "")
         if query:
             slots = {**slots, "media_id": {"value": query}}
+            # Keep media_type/media_class so radio requests do not become Spotify playlist hits.
             item = {**item, "name": "MassPlayMedia"}
             return await run_mass(hass, "MassPlayMedia", slots, pack, item, exposed)
     if name in MASS_INTENTS:

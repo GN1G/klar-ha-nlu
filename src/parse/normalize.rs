@@ -123,20 +123,92 @@ fn is_word_mark(c: char) -> bool {
 
 pub fn tokenize(text: &str) -> Vec<String> {
     let folded = fold_latin(text);
-    if folded.chars().any(is_script_unit) {
+    let tokens = if folded.chars().any(is_script_unit) {
         tokenize_script(&folded)
     } else {
-        folded
-            .split(|c: char| !is_word_char(c))
-            .filter(|token| !token.is_empty())
-            .map(|token| {
-                let token =
-                    if token.len() > 2 && (token.ends_with("'s") || token.ends_with("'S")) { &token[..token.len() - 2] } else { token };
-                token.replace('\'', "")
-            })
-            .filter(|token| !token.is_empty())
-            .collect()
+        tokenize_latin(&folded)
+    };
+    expand_media_glues(&tokens)
+}
+
+/// STT often glues play verbs onto the next word: `spielradio`, `spielhaustime`.
+fn expand_media_glues(tokens: &[String]) -> Vec<String> {
+    let mut out = Vec::with_capacity(tokens.len() + 2);
+    for token in tokens {
+        if let Some(parts) = split_glued_play(token) {
+            out.extend(parts);
+        } else {
+            out.push(token.clone());
+        }
     }
+    out
+}
+
+fn split_glued_play(token: &str) -> Option<Vec<String>> {
+    for glued in ["spieleradio", "spielradio", "hoereradio", "hoerradio", "playradio"] {
+        if token == glued {
+            let verb = if glued.starts_with("spiele") {
+                "spiele"
+            } else if glued.starts_with("hoere") {
+                "hoere"
+            } else if glued.starts_with("hoer") {
+                "hoer"
+            } else if glued.starts_with("play") {
+                "play"
+            } else {
+                "spiel"
+            };
+            return Some(vec![verb.into(), "radio".into()]);
+        }
+    }
+    // Only German STT glues here — do not tear apart `playlist` / `playback`.
+    // `spielerhaustime` is STT for "spiele Housetime".
+    for prefix in ["spiele", "spieler", "spiel", "hoere", "hoer"] {
+        if let Some(rest) = token.strip_prefix(prefix) {
+            if rest.len() >= 4 && rest.chars().all(|c| c.is_ascii_alphabetic()) {
+                let verb = if prefix == "spieler" { "spiele" } else { prefix };
+                return Some(vec![verb.into(), rest.to_string()]);
+            }
+        }
+    }
+    None
+}
+
+/// Keep hostname-like dots in one token (`housetime.fm`) so radio/media search keeps the station id.
+fn tokenize_latin(folded: &str) -> Vec<String> {
+    let chars: Vec<char> = folded.chars().collect();
+    let mut tokens = Vec::new();
+    let mut cur = String::new();
+    let mut i = 0;
+    while i < chars.len() {
+        let c = chars[i];
+        if is_word_char(c) {
+            cur.push(c);
+            i += 1;
+            continue;
+        }
+        if c == '.' && !cur.is_empty() && chars.get(i + 1).is_some_and(|next| is_word_char(*next)) {
+            cur.push('.');
+            i += 1;
+            continue;
+        }
+        if !cur.is_empty() {
+            tokens.push(std::mem::take(&mut cur));
+        }
+        i += 1;
+    }
+    if !cur.is_empty() {
+        tokens.push(cur);
+    }
+    tokens
+        .into_iter()
+        .map(|token| {
+            let token =
+                if token.len() > 2 && (token.ends_with("'s") || token.ends_with("'S")) { token[..token.len() - 2].to_string() } else { token };
+            token.replace('\'', "")
+        })
+        .filter(|token| !token.is_empty())
+        .collect()
 }
 
 fn is_cjk(c: char) -> bool {
@@ -275,6 +347,19 @@ mod tests {
     fn latin_tokenize_stays_space_split() {
         assert_eq!(tokenize("Licht im Wohnzimmer an"), vec!["licht", "im", "wohnzimmer", "an"]);
         assert_eq!(tokenize("Turn on the kitchen light"), vec!["turn", "on", "the", "kitchen", "light"]);
+    }
+
+    #[test]
+    fn latin_tokenize_keeps_hostname_dots() {
+        assert_eq!(tokenize("Spiel Radio housetime.fm"), vec!["spiel", "radio", "housetime.fm"]);
+        assert_eq!(tokenize("bbc.co.uk news"), vec!["bbc.co.uk", "news"]);
+    }
+
+    #[test]
+    fn latin_tokenize_splits_stt_play_glues() {
+        assert_eq!(tokenize("spielradio haustime fm"), vec!["spiel", "radio", "haustime", "fm"]);
+        assert_eq!(tokenize("spielhaustime fm"), vec!["spiel", "haustime", "fm"]);
+        assert_eq!(tokenize("playlist chill"), vec!["playlist", "chill"]);
     }
 
     #[test]

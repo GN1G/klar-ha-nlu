@@ -146,6 +146,31 @@ fn radio_mode_uses_mass_play_media() {
 }
 
 #[test]
+fn de_radio_station_keeps_dot_and_media_type() {
+    let intent = one("Spiel Radio housetime.fm", "de");
+    assert_eq!(intent.name, "MassPlayMedia");
+    assert_eq!(slot(&intent, "media_id"), Some("housetime.fm"));
+    assert_eq!(slot(&intent, "media_type"), Some("radio"));
+    assert_eq!(slot(&intent, "media_class"), Some("radio"));
+}
+
+#[test]
+fn de_radio_station_rejoins_spoken_tld() {
+    let intent = one("Spiel Radio housetime fm", "de");
+    assert_eq!(intent.name, "MassPlayMedia");
+    assert_eq!(slot(&intent, "media_id"), Some("housetime.fm"));
+    assert_eq!(slot(&intent, "media_type"), Some("radio"));
+}
+
+#[test]
+fn de_station_dot_fm_infers_radio_without_radio_word() {
+    let intent = one("Spiel housetime.fm", "de");
+    assert_eq!(intent.name, "MassPlayMedia");
+    assert_eq!(slot(&intent, "media_id"), Some("housetime.fm"));
+    assert_eq!(slot(&intent, "media_type"), Some("radio"));
+}
+
+#[test]
 fn musik_an_resumes_ma_player_not_script_alias() {
     let intent = one("Musik an", "de");
     assert_eq!(intent.name, "HassMediaUnpause");
@@ -419,6 +444,26 @@ fn ambiguous_area_player_is_suppressed_without_tie_break() {
     add_living_room_player(&mut home, "media_player.wohnzimmer_box", &["Musik"]);
     let parsed = intents("Spiel Queen im Wohnzimmer", "de", &home, &mut Session::new());
     assert!(parsed.is_empty(), "{parsed:?}");
+}
+
+#[test]
+fn music_assistant_tv_does_not_block_default_speaker() {
+    // MASS often exposes TVs as players; they must not make "Spiel Queen" ambiguous.
+    let mut home = home();
+    home.entities.push(entity(
+        "media_player.wohnzimmer_lg",
+        "LG webOS TV",
+        "media_player",
+        Some("music_assistant"),
+        Some("wohnzimmer"),
+        &["fernseher", "tv"],
+        &[],
+    ));
+    let parsed = intents("Spiel Queen", "de", &home, &mut Session::new());
+    assert_eq!(parsed.len(), 1, "{parsed:?}");
+    assert_eq!(parsed[0].name, "MassPlayMedia");
+    assert_eq!(slot(&parsed[0], "entity_id"), Some("media_player.wohnzimmer_2"));
+    assert_eq!(slot(&parsed[0], "media_id"), Some("queen"));
 }
 
 #[test]

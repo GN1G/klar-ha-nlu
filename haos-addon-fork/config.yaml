@@ -1,8 +1,8 @@
 name: Klar NLU (Fork LLM)
-version: "2026.9.11-fork.1"
+version: "2026.9.30-fork.2"
 slug: klar_nlu_fork
 stage: experimental
-description: Klar-Fork — Weltfragen gehen an das konfigurierte LLM (LM Studio etc.).
+description: Klar-Fork — Weltfragen→LLM, Lern-UI, Radio/MASS-Fixes.
 url: https://github.com/GN1G/klar-ha-nlu
 arch:
   - amd64
@@ -27,13 +27,14 @@ map:
     read_only: true
     path: /config
 options:
-  token: ""
+  token: "klar-local-7f3a9c82e6b14d51"
   support_bundle: false
   ui_locale: ""
 schema:
   token: str?
   support_bundle: bool?
   ui_locale: str?
-# Nach dem GitHub-Actions-Build: Package public machen oder GHCR-Login im Supervisor.
-# Tag fork-llm kommt aus .github/workflows/fork-image.yml
+# HAOS uses config "version" as the image tag:
+#   ghcr.io/gn1g/klar-nlu-amd64:2026.9.30-fork.2
+# Package must be Public (or Supervisor logged into ghcr.io).
 image: ghcr.io/gn1g/klar-nlu-{arch}

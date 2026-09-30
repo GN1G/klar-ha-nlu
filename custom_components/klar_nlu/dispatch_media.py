@@ -88,6 +88,7 @@ async def run_mass(
             )
             if "radio_mode" in data:
                 data["radio_mode"] = str(data["radio_mode"]).lower() == "true"
+            data = await resolve_mass_media(hass, data)
             await hass.services.async_call(
                 "music_assistant", "play_media", data, blocking=True, target={"entity_id": entity_id}
             )
@@ -123,6 +124,182 @@ def clean_service_data(slots: dict[str, Any], names: list[str]) -> dict[str, Any
         if value not in (None, ""):
             data[name] = value
     return data
+
+
+async def resolve_mass_media(hass: HomeAssistant, data: dict[str, Any]) -> dict[str, Any]:
+    """Resolve radio names to MASS URIs so Spotify playlists do not win the search."""
+    media_id = str(data.get("media_id") or "").strip()
+    media_type = str(data.get("media_type") or "").strip().lower()
+    if not media_id or "://" in media_id or media_id.startswith("http"):
+        return data
+
+    want_radio = media_type == "radio" or looks_like_radio_query(media_id)
+    if not want_radio:
+        return data
+
+    query = canonicalize_radio_query(media_id)
+    data["media_type"] = "radio"
+    data.pop("radio_mode", None)
+
+    entry_id = mass_config_entry_id(hass)
+    if not entry_id:
+        data["media_id"] = query
+        return data
+
+    uri = await search_radio_uri(hass, entry_id, query)
+    if uri:
+        _LOGGER.debug("Radio '%s' resolved to %s", query, uri)
+        data["media_id"] = uri
+    else:
+        data["media_id"] = query
+    return data
+
+
+def looks_like_radio_query(media_id: str) -> bool:
+    folded = scrub_player_destination(media_id).casefold().replace(" ", "")
+    return folded.endswith(".fm") or folded.endswith(".am") or folded.endswith("radio") or "housetime" in folded or "haustime" in folded
+
+
+def scrub_player_destination(media_id: str) -> str:
+    """Drop leftover 'im Web' / chrome / browser tokens from STT (no web player path)."""
+    parts = media_id.split()
+    drop = {"web", "chrome", "browser", "webplayer", "im"}
+    keep = [p for p in parts if p.casefold() not in drop]
+    return " ".join(keep).strip(" -,\t") or media_id
+
+
+def canonicalize_radio_query(media_id: str) -> str:
+    media_id = scrub_player_destination(media_id)
+    parts = media_id.casefold().replace(".", " ").split()
+    compact = " ".join(parts)
+    aliases = {
+        "housetime",
+        "housetime fm",
+        "house time",
+        "house time fm",
+        "haustime",
+        "haustime fm",
+        "haus time",
+        "haus time fm",
+        "hostheim",
+        "hostheim fm",
+        "host heim",
+        "host heim fm",
+        "housetime web",
+        "haustime web",
+    }
+    if compact in aliases or compact.removesuffix(" web") in {
+        "housetime",
+        "haustime",
+        "house time",
+        "haus time",
+        "hostheim",
+    }:
+        return "housetime.fm"
+    if len(parts) >= 2 and parts[-1] in {"fm", "am", "radio"} and "." not in media_id:
+        return f"{''.join(parts[:-1])}.{parts[-1]}" if parts[-1] in {"fm", "am"} else media_id
+    return media_id
+
+
+def mass_config_entry_id(hass: HomeAssistant) -> str:
+    try:
+        entries = hass.config_entries.async_entries("music_assistant")
+    except Exception:  # noqa: BLE001 — config entries are a system boundary
+        return ""
+    return str(entries[0].entry_id) if entries else ""
+
+
+async def search_radio_uri(hass: HomeAssistant, entry_id: str, query: str) -> str:
+    response = await call_with_response(
+        hass,
+        "music_assistant",
+        "search",
+        {
+            "config_entry_id": entry_id,
+            "name": query,
+            "media_type": "radio",
+            "limit": 10,
+            "library_only": False,
+        },
+        {},
+    )
+    radios = radio_rows(response)
+    if not radios:
+        response = await call_with_response(
+            hass,
+            "music_assistant",
+            "get_library",
+            {
+                "config_entry_id": entry_id,
+                "media_type": "radio",
+                "search": query,
+                "limit": 20,
+            },
+            {},
+        )
+        radios = radio_rows(response)
+    picked = pick_radio_match(query, radios)
+    return str(picked.get("uri") or picked.get("media_id") or "") if picked else ""
+
+
+def radio_rows(response: Any) -> list[dict[str, Any]]:
+    if not isinstance(response, dict):
+        return []
+    # Service responses are often {entry_id: {...}} or flat.
+    candidates: list[Any] = [response]
+    candidates.extend(response.values())
+    rows: list[dict[str, Any]] = []
+    for blob in candidates:
+        if not isinstance(blob, dict):
+            continue
+        for key in ("radio", "radios", "items"):
+            value = blob.get(key)
+            if isinstance(value, list):
+                rows.extend(item for item in value if isinstance(item, dict))
+        # nested under media type groups
+        for value in blob.values():
+            if isinstance(value, dict):
+                nested = value.get("radio") or value.get("radios") or value.get("items")
+                if isinstance(nested, list):
+                    rows.extend(item for item in nested if isinstance(item, dict))
+    return rows
+
+
+def pick_radio_match(query: str, radios: list[dict[str, Any]]) -> dict[str, Any] | None:
+    if not radios:
+        return None
+    needle = canonicalize_radio_query(query).casefold().replace(" ", "")
+    scored: list[tuple[int, dict[str, Any]]] = []
+    for row in radios:
+        name = str(row.get("name") or row.get("title") or "").casefold()
+        uri = str(row.get("uri") or "").casefold()
+        compact_name = name.replace(" ", "")
+        score = 0
+        if compact_name == needle or name == query.casefold():
+            score += 100
+        elif needle and (needle in compact_name or compact_name in needle):
+            score += 50
+        elif "housetime" in compact_name or "housetime" in uri:
+            score += 40
+        if uri.startswith("library://radio"):
+            score += 20
+        elif "radio" in uri:
+            score += 10
+        if "playlist" in uri or "spotify://playlist" in uri:
+            score -= 100
+        if score > 0:
+            scored.append((score, row))
+    if not scored:
+        # Fall back to first library radio result rather than a playlist.
+        for row in radios:
+            uri = str(row.get("uri") or "")
+            if "playlist" in uri:
+                continue
+            if "radio" in uri or uri.startswith("library://"):
+                return row
+        return None
+    scored.sort(key=lambda item: item[0], reverse=True)
+    return scored[0][1]
 
 
 def media_missing(state: Any) -> bool:

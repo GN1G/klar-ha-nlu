@@ -7,7 +7,7 @@
   --line: #3a3a3a;
   --text: #f4efe6;
   --muted: #9a948a;
-  --accent: #c45c26;
+  --accent: #00ff41;
   --cyan: #3ec1c8;
   --high: #7d9a6a;
   --medium: #d4a04a;
@@ -544,6 +544,46 @@ button.chip { background: transparent; }
   .lab-satellite { max-width: none; }
 }
 
+.learn-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+.learn-layout.has-panel {
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+}
+.learn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+.learn-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.learn-turn.selected {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 45%, transparent);
+}
+.learn-turn.miss {
+  border-left: 3px solid color-mix(in srgb, var(--accent) 70%, transparent);
+}
+.learn-panel {
+  position: sticky;
+  top: 12px;
+}
+@media (max-width: 900px) {
+  .learn-layout.has-panel {
+    grid-template-columns: 1fr;
+  }
+  .learn-panel {
+    position: static;
+  }
+}
+
 [data-theme="light"] {
   color-scheme: light;
   --bg: #f4efe6;
@@ -552,14 +592,13 @@ button.chip { background: transparent; }
   --line: #cfc6b6;
   --text: #1c1c1c;
   --muted: #6b655c;
-  --accent: #c45c26;
+  --accent: #067a28;
   --cyan: #1f7a80;
   --high: #4e6b3d;
   --medium: #9a6e1c;
   --low: #7a4e42;
   --danger: #a44a38;
 }
-[data-theme="light"] .primary { color: #f4efe6; }
 [data-theme="light"] .chip.intent,
 [data-theme="light"] .slot-chip { border-color: #7aa3a6; }
 [data-theme="light"] .drawer-backdrop { background: rgba(28, 28, 28, .35); }
