@@ -1,8 +1,8 @@
 name: Klar NLU (Fork LLM)
-version: "2026.9.30-fork.7"
+version: "2026.9.30-fork.8"
 slug: klar_nlu_fork
 stage: experimental
-description: Klar-Fork — Housetime-STT, Satellite-Volume-Ignore, Domain-Status.
+description: Klar-Fork — Satellite-Lautstärke, Housetime-STT, Domain-Status.
 url: https://github.com/GN1G/klar-ha-nlu
 arch:
   - amd64
@@ -35,6 +35,6 @@ schema:
   support_bundle: bool?
   ui_locale: str?
 # HAOS uses config "version" as the image tag:
-#   ghcr.io/gn1g/klar-nlu-amd64:2026.9.30-fork.7
+#   ghcr.io/gn1g/klar-nlu-amd64:2026.9.30-fork.8
 # Package must be Public (or Supervisor logged into ghcr.io).
 image: ghcr.io/gn1g/klar-nlu-{arch}

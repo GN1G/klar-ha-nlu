@@ -375,7 +375,18 @@ fn target_player<'a>(
         _ => return None,
     }
     if let Some(area) = session.preferred_area.as_deref() {
+        if volume_default {
+            if let Some(sat) = volume_satellite_in_area(home, area) {
+                return Some(sat);
+            }
+        }
         return select_area_player(&players, area, session);
+    }
+    if volume_default {
+        if let Some(sat) = volume_satellite_in_area(home, "") {
+            // Only auto-pick a satellite when the house has exactly one.
+            return Some(sat);
+        }
     }
     if allow_session_media {
         if let Some(entity) = session
@@ -470,6 +481,25 @@ fn looks_like_voice_satellite(entity: &EntityRec) -> bool {
         || blob.contains("assist_satellit")
         || blob.contains("respeaker")
         || blob.contains("xvf3800")
+}
+
+fn volume_satellite_in_area<'a>(home: &'a HomeGraph, area: &str) -> Option<&'a EntityRec> {
+    let sats: Vec<&EntityRec> = home
+        .entities
+        .iter()
+        .filter(|entity| {
+            entity.domain == "media_player"
+                && assist_visible(entity, home)
+                && !is_infra(entity)
+                && looks_like_voice_satellite(entity)
+                && (area.is_empty() || entity.area.as_deref() == Some(area))
+        })
+        .collect();
+    match sats.as_slice() {
+        [only] => Some(*only),
+        many if !area.is_empty() && !many.is_empty() => many.first().copied(),
+        _ => None,
+    }
 }
 
 fn explicitly_named(tokens: &[String], entity: &EntityRec, home: &HomeGraph) -> bool {
