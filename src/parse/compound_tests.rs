@@ -11,6 +11,15 @@ fn fuzzy_split_transposes_room_before_licht() {
 }
 
 #[test]
+fn split_licht_before_room_stt_glue() {
+    let home = default_home();
+    let split = expand_compounds(&["lichtflur".into()], &home);
+    assert!(split.tokens.iter().any(|token| token == "flur"), "{:?}", split.tokens);
+    assert!(split.tokens.iter().any(|token| token == "licht"), "{:?}", split.tokens);
+    assert_eq!(split.light_areas, ["flur"]);
+}
+
+#[test]
 fn fuzzy_split_rejects_unrelated_licht() {
     let home = default_home();
     let split = expand_compounds(&["fensterbanklicht".into()], &home);

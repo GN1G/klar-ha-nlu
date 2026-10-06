@@ -284,7 +284,13 @@ fn has_fan_noun(tokens: &[String]) -> bool {
 }
 
 pub(crate) fn has_light_noun(tokens: &[String]) -> bool {
-    catalog().any(tokens, catalog().light_nouns()) || tokens.iter().any(|token| matches!(token.as_str(), "light" | "lights"))
+    catalog().any(tokens, catalog().light_nouns())
+        || tokens.iter().any(|token| {
+            matches!(token.as_str(), "light" | "lights")
+                || token.contains("licht")
+                || token.contains("lampe")
+                || token.contains("leuchte")
+        })
 }
 
 fn has_climate_noun(tokens: &[String]) -> bool {

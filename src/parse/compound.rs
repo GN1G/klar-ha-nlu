@@ -149,7 +149,9 @@ fn area_prefixes(home: &HomeGraph) -> Vec<(String, String)> {
 }
 
 fn split_area_device(token: &str, prefixes: &[(String, String)]) -> Option<(String, String)> {
-    split_exact_area_device(token, prefixes).or_else(|| split_fuzzy_area_device(token, prefixes))
+    split_exact_area_device(token, prefixes)
+        .or_else(|| split_exact_device_area(token, prefixes))
+        .or_else(|| split_fuzzy_area_device(token, prefixes))
 }
 
 fn split_exact_area_device(token: &str, prefixes: &[(String, String)]) -> Option<(String, String)> {
@@ -160,6 +162,25 @@ fn split_exact_area_device(token: &str, prefixes: &[(String, String)]) -> Option
         let noun = strip_fuge(&token[prefix.len()..]);
         if is_device_noun(noun) {
             return Some((area.clone(), noun.to_string()));
+        }
+    }
+    None
+}
+
+/// STT often glues device-before-room (`lichtflur`) instead of room-before-device (`flurlicht`).
+fn split_exact_device_area(token: &str, prefixes: &[(String, String)]) -> Option<(String, String)> {
+    for noun in compound_heads() {
+        if token.len() <= noun.len() || !token.starts_with(noun) {
+            continue;
+        }
+        let rest = strip_fuge(&token[noun.len()..]);
+        if rest.len() < 3 {
+            continue;
+        }
+        for (prefix, area) in prefixes {
+            if rest == prefix.as_str() {
+                return Some((area.clone(), noun.to_string()));
+            }
         }
     }
     None

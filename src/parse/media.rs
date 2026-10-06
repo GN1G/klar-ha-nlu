@@ -25,7 +25,7 @@ pub(crate) fn media_clause(
     resolved: &Resolved,
 ) -> Option<ClauseOut> {
     let intent = status_intent(tokens)
-        .or_else(|| volume_intent(tokens, session, number))
+        .or_else(|| volume_intent(tokens, session, number, home))
         .or_else(|| transport_intent(tokens, action, home, resolved))
         .or_else(|| favorite_intent(tokens))
         .or_else(|| transfer_intent(tokens, home, session))
@@ -102,7 +102,7 @@ fn status_intent(tokens: &[String]) -> Option<Intent> {
     Some(if status == "queue" { Intent::new("MassGetQueue") } else { Intent::new("HassGetState") }.with("media_status", status))
 }
 
-fn volume_intent(tokens: &[String], session: &Session, number: Option<i32>) -> Option<Intent> {
+fn volume_intent(tokens: &[String], session: &Session, number: Option<i32>, home: &HomeGraph) -> Option<Intent> {
     if catalog().any(tokens, catalog().climate_nouns())
         || crate::parse::action::has_light_noun(tokens)
         || crate::parse::calendar::mentions_calendar(tokens)
@@ -111,7 +111,31 @@ fn volume_intent(tokens: &[String], session: &Session, number: Option<i32>) -> O
     }
     let session_media =
         session.last_domains().any(|d| d == "media_player") || session.last_entities().any(|id| id.starts_with("media_player."));
-    let volume_number = has_volume_word(tokens) || (session_media && !clock_volume_trap(tokens));
+    // After music, bare "flur 15%" / "lichtflur 15%" must not steal brightness as volume.
+    let area_brightness_trap = number.is_some()
+        && !has_volume_word(tokens)
+        && home.areas.iter().any(|area| {
+            tokens.iter().any(|token| {
+                let folded = compact(token);
+                folded == compact(&area.area_id)
+                    || folded == compact(&area.name)
+                    || umlaut_eq(&folded, &compact(&area.area_id))
+                    || umlaut_eq(&folded, &compact(&area.name))
+                    || area.aliases.iter().any(|alias| folded == compact(alias) || umlaut_eq(&folded, &compact(alias)))
+                    || folded.contains(&compact(&area.area_id))
+                    || compact(&area.area_id).len() >= 4 && folded.contains(&compact(&area.area_id))
+            })
+        });
+    if area_brightness_trap {
+        return None;
+    }
+    let named_player = home.entities.iter().any(|entity| {
+        entity.domain == "media_player"
+            && !crate::home::policy::is_infra(entity)
+            && tokens.iter().any(|token| entity_word(token, entity))
+    });
+    let volume_number =
+        has_volume_word(tokens) || named_player || (session_media && !clock_volume_trap(tokens) && !area_brightness_trap);
     let intent = if let Some(n) = number.filter(|_| volume_number) {
         Intent::new("HassSetVolume").with("volume_level", n.clamp(0, 100).to_string())
     } else if any(tokens, &["lauter", "louder", "hoch"]) {
