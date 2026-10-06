@@ -312,6 +312,113 @@ def pick_radio_match(query: str, radios: list[dict[str, Any]]) -> dict[str, Any]
     return scored[0][1]
 
 
+def retarget_satellite_media(
+    hass: HomeAssistant,
+    user_input: Any,
+    name: str,
+    slots: dict[str, Any],
+    item: dict,
+    entity_id: str,
+) -> tuple[dict[str, Any], dict, str]:
+    """When Assist speaks from a voice satellite, keep music on that satellite player.
+
+    Bare play often resolves to a preferred HomePod in the same room. If the
+    conversation carries a satellite/device id, force Music Assistant onto the
+    MASS satellite player (or the ESPHome media_player as last resort).
+    """
+    if name not in {
+        "MassPlayMedia",
+        "HassMediaSearchAndPlay",
+        "MassFavorite",
+        "MassGetQueue",
+        "MassTransferQueue",
+        "HassSetVolume",
+        "HassSetVolumeRelative",
+        "HassMediaPlayerMute",
+        "HassMediaPlayerUnmute",
+        "HassMediaPause",
+        "HassMediaUnpause",
+        "HassMediaNext",
+        "HassMediaPrevious",
+    }:
+        return slots, item, entity_id
+    satellite_id = str(getattr(user_input, "satellite_id", None) or "")
+    device_id = str(getattr(user_input, "device_id", None) or "")
+    if not satellite_id and not device_id:
+        return slots, item, entity_id
+    if "satelit" in entity_id.lower() or "satellite" in entity_id.lower() or "respeaker" in entity_id.lower():
+        return slots, item, entity_id
+
+    volume_like = name in {
+        "HassSetVolume",
+        "HassSetVolumeRelative",
+        "HassMediaPlayerMute",
+        "HassMediaPlayerUnmute",
+    }
+    target = satellite_media_player(hass, satellite_id, device_id, prefer_mass=not volume_like)
+    if not target or target == entity_id:
+        return slots, item, entity_id
+
+    _LOGGER.info("Satellite media retarget %s -> %s (%s)", entity_id or "-", target, name)
+    slots = {**slots, "entity_id": {"value": target}}
+    existing = [slot for slot in (item.get("slots") or []) if not (isinstance(slot, dict) and slot.get("name") == "entity_id")]
+    item = {**item, "slots": [*existing, {"name": "entity_id", "value": target}]}
+    return slots, item, target
+
+
+def satellite_media_player(
+    hass: HomeAssistant, satellite_id: str, device_id: str, *, prefer_mass: bool
+) -> str:
+    """Pick satellite media_player: MASS for play, ESPHome for volume."""
+    registry = entity_registry.async_get(hass)
+    wanted_devices: set[str] = {item for item in (device_id,) if item}
+    for candidate in (satellite_id,):
+        if not candidate:
+            continue
+        if "." in candidate:
+            entry = registry.async_get(candidate)
+            if entry and entry.device_id:
+                wanted_devices.add(entry.device_id)
+        else:
+            wanted_devices.add(candidate)
+
+    mass_hits: list[str] = []
+    esp_hits: list[str] = []
+    for state in hass.states.async_all("media_player"):
+        eid = str(state.entity_id)
+        blob = f"{eid} {getattr(state, 'name', '')}".casefold()
+        if not any(token in blob for token in ("satelit", "satellite", "respeaker", "xvf3800")):
+            continue
+        entry = registry.async_get(eid)
+        platform = str(getattr(entry, "platform", "") or "")
+        same_device = bool(entry and entry.device_id and entry.device_id in wanted_devices)
+        if music_assistant_player(hass, eid):
+            mass_hits.append(eid)
+            if prefer_mass and same_device:
+                return eid
+        else:
+            esp_hits.append(eid)
+            if (not prefer_mass) and same_device:
+                return eid
+            if "esphome" in platform and same_device and not prefer_mass:
+                return eid
+
+    if prefer_mass:
+        for eid in mass_hits:
+            if eid.endswith(".satelite") or eid.endswith(".satellite"):
+                return eid
+        if mass_hits:
+            return mass_hits[0]
+        return esp_hits[0] if esp_hits else ""
+
+    for eid in esp_hits:
+        if "media_player" in eid and "satelit" in eid:
+            return eid
+    if esp_hits:
+        return esp_hits[0]
+    return mass_hits[0] if mass_hits else ""
+
+
 def media_missing(state: Any) -> bool:
     return str(getattr(state, "state", "")).lower() in {"unavailable", "unknown"}
 

@@ -1,5 +1,5 @@
 name: Klar NLU (Fork LLM)
-version: "2026.9.30-fork.11"
+version: "2026.9.30-fork.12"
 slug: klar_nlu_fork
 stage: experimental
 description: Klar-Fork — Satellite-Play/Volume, Housetime-STT, Domain-Status.

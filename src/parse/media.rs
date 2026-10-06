@@ -366,11 +366,15 @@ fn target_player<'a>(
     satellite_default: bool,
 ) -> Option<&'a EntityRec> {
     let players = player_pool(home, tokens, mass_only);
+    let prefer_mass = mass_only || (satellite_default && !volume_default);
     let resolved_ids: Vec<&str> = resolved
         .entities
         .iter()
         .chain(&resolved.ambiguous)
-        .filter(|entity| eligible_media_player(entity, home) && explicitly_named(tokens, entity, home))
+        .filter(|entity| {
+            (eligible_media_player(entity, home) || looks_like_voice_satellite(entity))
+                && explicitly_named(tokens, entity, home)
+        })
         .map(|entity| entity.entity_id.as_str())
         .collect();
     if !resolved_ids.is_empty() && !now_playing_status(tokens) {
@@ -378,27 +382,47 @@ fn target_player<'a>(
             .entities
             .iter()
             .filter(|entity| resolved_ids.contains(&entity.entity_id.as_str()))
-            .filter(|entity| !mass_only || eligible_mass_player(entity, home) || looks_like_voice_satellite(entity))
+            .filter(|entity| {
+                !mass_only || eligible_mass_player(entity, home) || looks_like_voice_satellite(entity)
+            })
             .collect();
+        // Explicit "auf dem Homepod" etc. — keep non-satellite picks first.
+        let non_sat: Vec<&EntityRec> = candidates.iter().copied().filter(|e| !looks_like_voice_satellite(e)).collect();
+        if !non_sat.is_empty() {
+            return select_player(&non_sat, session);
+        }
         return select_player(&candidates, session);
     }
+    // Voice satellite session: bare play/volume hits the satellite before area preferred players.
+    if satellite_default {
+        if let Some(area) = session.preferred_area.as_deref() {
+            if let Some(sat) = satellite_in_area(home, area, prefer_mass) {
+                return Some(sat);
+            }
+        }
+    }
     match resolved.areas.as_slice() {
-        [area] => return music_in_named_area(home, &players, area, session),
+        [area] => {
+            if satellite_default {
+                if let Some(sat) = satellite_in_area(home, area, prefer_mass) {
+                    return Some(sat);
+                }
+            }
+            return music_in_named_area(home, &players, area, session);
+        }
         [] => {
             if let Some(area) = area_from_tokens(tokens, home) {
+                if satellite_default {
+                    if let Some(sat) = satellite_in_area(home, &area, prefer_mass) {
+                        return Some(sat);
+                    }
+                }
                 return music_in_named_area(home, &players, &area, session);
             }
         }
         _ => return None,
     }
     if let Some(area) = session.preferred_area.as_deref() {
-        if satellite_default {
-            // Play intents prefer the MASS satellite player; volume prefers ESPHome.
-            let prefer_mass = mass_only || !volume_default;
-            if let Some(sat) = satellite_in_area(home, area, prefer_mass) {
-                return Some(sat);
-            }
-        }
         return select_area_player(&players, area, session);
     }
     if volume_default {
@@ -552,6 +576,9 @@ fn explicitly_named(tokens: &[String], entity: &EntityRec, home: &HomeGraph) -> 
                     "music"
                         | "musik"
                         | "media"
+                        | "lautsprecher"
+                        | "speaker"
+                        | "box"
                         | "playback"
                         | "song"
                         | "track"

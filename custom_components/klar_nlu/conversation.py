@@ -17,7 +17,7 @@ from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers import intent
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
-from homeassistant.helpers import device_registry
+from homeassistant.helpers import device_registry, entity_registry
 from homeassistant.helpers.device_registry import DeviceInfo
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 
@@ -652,12 +652,24 @@ class KlarConversationEntity(ConversationEntity):
         return None
 
     def _preferred_area(self, device_id: str | None, satellite_id: str | None = None) -> str | None:
-        registry = device_registry.async_get(self.hass)
+        devices = device_registry.async_get(self.hass)
+        entities = entity_registry.async_get(self.hass)
         for candidate in (device_id, satellite_id):
             if not candidate:
                 continue
-            device = registry.async_get(str(candidate))
-            area = str(getattr(device, "area_id", "") or "") if device is not None else ""
+            cand = str(candidate)
+            device = devices.async_get(cand)
+            area = ""
+            if device is None and "." in cand:
+                # Assist satellites often pass entity_id (assist_satellite.*) not device_id.
+                entry = entities.async_get(cand)
+                if entry is not None:
+                    if entry.area_id:
+                        area = str(entry.area_id)
+                    elif entry.device_id:
+                        device = devices.async_get(entry.device_id)
+            if device is not None and not area:
+                area = str(getattr(device, "area_id", "") or "")
             if area:
                 return area
         return None

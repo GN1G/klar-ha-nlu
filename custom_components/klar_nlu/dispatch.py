@@ -16,6 +16,7 @@ from .dispatch_media import (
     MEDIA_SERVICES,
     media_missing,
     music_assistant_player,
+    retarget_satellite_media,
     run_mass,
     start_idle_music,
 )
@@ -75,6 +76,19 @@ async def handle_intent(
         return _ok(speech) if speech else _fail("speech_missing")
     slots = item_slots(item)
     entity_id = str(slots.get("entity_id", {}).get("value") or "")
+    if name in MASS_INTENTS or (
+        name == "HassMediaSearchAndPlay" and music_assistant_player(hass, entity_id)
+    ) or name in {
+        "HassSetVolume",
+        "HassSetVolumeRelative",
+        "HassMediaPlayerMute",
+        "HassMediaPlayerUnmute",
+        "HassMediaPause",
+        "HassMediaUnpause",
+        "HassMediaNext",
+        "HassMediaPrevious",
+    }:
+        slots, item, entity_id = retarget_satellite_media(hass, user_input, name, slots, item, entity_id)
     if name == "HassMediaSearchAndPlay" and music_assistant_player(hass, entity_id):
         query = str(slots.get("media_id", {}).get("value") or slots.get("search_query", {}).get("value") or "")
         if query:
