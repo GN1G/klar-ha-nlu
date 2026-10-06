@@ -75,5 +75,5 @@ jobs:
           docker buildx build --platform "${{ matrix.platform }}" --push \
             -f docker/Dockerfile \
             -t "$image:${IMAGE_TAG}" \
-            -t "$image:2026.9.30-fork.6" \
+            -t "$image:2026.9.30-fork.7" \
             docker/

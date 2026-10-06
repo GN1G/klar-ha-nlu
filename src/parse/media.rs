@@ -260,16 +260,58 @@ fn media_request(raw: &[String], home: &HomeGraph, resolved: &Resolved) -> Optio
 fn looks_like_radio_station(query: &str) -> bool {
     const RADIO_TLDS: &[&str] = &["fm", "am", "radio"];
     let folded = query.trim().to_ascii_lowercase();
-    RADIO_TLDS.iter().any(|tld| folded.ends_with(&format!(".{tld}")))
+    if RADIO_TLDS.iter().any(|tld| folded.ends_with(&format!(".{tld}"))) {
+        return true;
+    }
+    let compact = folded.replace('.', " ").replace("punkt", " ");
+    let compact = compact.split_whitespace().collect::<Vec<_>>().join(" ");
+    matches!(
+        compact.as_str(),
+        "housetime"
+            | "housetime fm"
+            | "house time"
+            | "house time fm"
+            | "haustime"
+            | "haustime fm"
+            | "haus time"
+            | "haus time fm"
+            | "hostime"
+            | "hostime fm"
+            | "host time"
+            | "host time fm"
+            | "hostheim"
+            | "hostheim fm"
+            | "host heim"
+            | "host heim fm"
+    )
 }
 
 fn canonicalize_radio_station(query: &str) -> String {
-    let folded = query.trim().to_ascii_lowercase().replace('.', " ");
+    let folded = query
+        .trim()
+        .to_ascii_lowercase()
+        .replace('.', " ")
+        .replace("punkt", " ");
     let compact = folded.split_whitespace().collect::<Vec<_>>().join(" ");
     match compact.as_str() {
-        "housetime" | "housetime fm" | "house time" | "house time fm" | "haustime" | "haustime fm" | "haus time" | "haus time fm" => {
-            "housetime.fm".into()
-        }
+        "housetime"
+        | "housetime fm"
+        | "house time"
+        | "house time fm"
+        | "haustime"
+        | "haustime fm"
+        | "haus time"
+        | "haus time fm"
+        | "hostime"
+        | "hostime fm"
+        | "host time"
+        | "host time fm"
+        | "hostime punkt fm"
+        | "host time punkt fm"
+        | "hostheim"
+        | "hostheim fm"
+        | "host heim"
+        | "host heim fm" => "housetime.fm".into(),
         _ => query.to_string(),
     }
 }
@@ -401,15 +443,33 @@ fn eligible_music_player(entity: &EntityRec, home: &HomeGraph) -> bool {
     assist_visible(entity, home)
         && !is_infra(entity)
         && !looks_like_tv(entity)
+        && !looks_like_voice_satellite(entity)
         && (is_music_assistant_player(entity) || is_music_player(entity))
 }
 
 fn eligible_mass_player(entity: &EntityRec, home: &HomeGraph) -> bool {
-    assist_visible(entity, home) && !is_infra(entity) && is_music_assistant_player(entity) && !looks_like_tv(entity)
+    assist_visible(entity, home)
+        && !is_infra(entity)
+        && is_music_assistant_player(entity)
+        && !looks_like_tv(entity)
+        && !looks_like_voice_satellite(entity)
 }
 
 fn eligible_media_player(entity: &EntityRec, home: &HomeGraph) -> bool {
-    entity.domain == "media_player" && assist_visible(entity, home) && !is_infra(entity)
+    entity.domain == "media_player"
+        && assist_visible(entity, home)
+        && !is_infra(entity)
+        && !looks_like_voice_satellite(entity)
+        && !crate::home::policy::is_nlu_ignored(entity)
+}
+
+fn looks_like_voice_satellite(entity: &EntityRec) -> bool {
+    let blob = format!("{} {}", entity.entity_id, entity.name).to_ascii_lowercase();
+    blob.contains("satelit")
+        || blob.contains("satellite")
+        || blob.contains("assist_satellit")
+        || blob.contains("respeaker")
+        || blob.contains("xvf3800")
 }
 
 fn explicitly_named(tokens: &[String], entity: &EntityRec, home: &HomeGraph) -> bool {

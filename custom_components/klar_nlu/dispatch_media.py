@@ -155,11 +155,6 @@ async def resolve_mass_media(hass: HomeAssistant, data: dict[str, Any]) -> dict[
     return data
 
 
-def looks_like_radio_query(media_id: str) -> bool:
-    folded = scrub_player_destination(media_id).casefold().replace(" ", "")
-    return folded.endswith(".fm") or folded.endswith(".am") or folded.endswith("radio") or "housetime" in folded or "haustime" in folded
-
-
 def scrub_player_destination(media_id: str) -> str:
     """Drop leftover 'im Web' / chrome / browser tokens from STT (no web player path)."""
     parts = media_id.split()
@@ -170,7 +165,7 @@ def scrub_player_destination(media_id: str) -> str:
 
 def canonicalize_radio_query(media_id: str) -> str:
     media_id = scrub_player_destination(media_id)
-    parts = media_id.casefold().replace(".", " ").split()
+    parts = media_id.casefold().replace(".", " ").replace("punkt", " ").split()
     compact = " ".join(parts)
     aliases = {
         "housetime",
@@ -185,6 +180,10 @@ def canonicalize_radio_query(media_id: str) -> str:
         "hostheim fm",
         "host heim",
         "host heim fm",
+        "hostime",
+        "hostime fm",
+        "host time",
+        "host time fm",
         "housetime web",
         "haustime web",
     }
@@ -194,12 +193,23 @@ def canonicalize_radio_query(media_id: str) -> str:
         "house time",
         "haus time",
         "hostheim",
+        "hostime",
+        "host time",
     }:
         return "housetime.fm"
     if len(parts) >= 2 and parts[-1] in {"fm", "am", "radio"} and "." not in media_id:
         return f"{''.join(parts[:-1])}.{parts[-1]}" if parts[-1] in {"fm", "am"} else media_id
     return media_id
 
+
+def looks_like_radio_query(media_id: str) -> bool:
+    folded = scrub_player_destination(media_id).casefold().replace(" ", "")
+    if folded.endswith(".fm") or folded.endswith(".am") or folded.endswith("radio"):
+        return True
+    return any(
+        token in folded
+        for token in ("housetime", "haustime", "hostime", "hosttime", "hostheim", "housetimefm", "haustimefm", "hostimefm")
+    )
 
 def mass_config_entry_id(hass: HomeAssistant) -> str:
     try:
