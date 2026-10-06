@@ -1,8 +1,8 @@
 name: Klar NLU (Fork LLM)
-version: "2026.9.30-fork.8"
+version: "2026.9.30-fork.9"
 slug: klar_nlu_fork
 stage: experimental
-description: Klar-Fork — Satellite-Lautstärke, Housetime-STT, Domain-Status.
+description: Klar-Fork — Satellite-Play/Volume, Housetime-STT, Domain-Status.
 url: https://github.com/GN1G/klar-ha-nlu
 arch:
   - amd64

@@ -38,7 +38,23 @@ pub(crate) fn media_clause(
     let allow_session_media = !matches!(intent.name.as_str(), "HassMediaSearchAndPlay" | "MassPlayMedia" | "MassTransferQueue");
     let volume_default =
         matches!(intent.name.as_str(), "HassSetVolume" | "HassSetVolumeRelative" | "HassMediaPlayerMute" | "HassMediaPlayerUnmute");
-    let Some(target) = target_player(tokens, home, session, resolved, allow_session_media, mass_only, volume_default) else {
+    // Voice satellite path: bare "spiel …" / "lauter" from Assist should hit that speaker,
+    // not the house preferred HomePod. Explicit "auf dem Homepod" still wins via naming.
+    let satellite_default = volume_default
+        || matches!(
+            intent.name.as_str(),
+            "MassPlayMedia"
+                | "HassMediaSearchAndPlay"
+                | "HassMediaPlay"
+                | "HassMediaPause"
+                | "HassMediaStop"
+                | "HassMediaNext"
+                | "HassMediaPrevious"
+                | "MassFavorite"
+                | "MassGetQueue"
+        );
+    let Some(target) = target_player(tokens, home, session, resolved, allow_session_media, mass_only, volume_default, satellite_default)
+    else {
         let any_player =
             home.entities.iter().any(|entity| entity.domain == "media_player" && assist_visible(entity, home) && !is_infra(entity));
         if any_player {
@@ -347,6 +363,7 @@ fn target_player<'a>(
     allow_session_media: bool,
     mass_only: bool,
     volume_default: bool,
+    satellite_default: bool,
 ) -> Option<&'a EntityRec> {
     let players = player_pool(home, tokens, mass_only);
     let resolved_ids: Vec<&str> = resolved
@@ -361,7 +378,7 @@ fn target_player<'a>(
             .entities
             .iter()
             .filter(|entity| resolved_ids.contains(&entity.entity_id.as_str()))
-            .filter(|entity| !mass_only || eligible_mass_player(entity, home))
+            .filter(|entity| !mass_only || eligible_mass_player(entity, home) || looks_like_voice_satellite(entity))
             .collect();
         return select_player(&candidates, session);
     }
@@ -375,15 +392,15 @@ fn target_player<'a>(
         _ => return None,
     }
     if let Some(area) = session.preferred_area.as_deref() {
-        if volume_default {
-            if let Some(sat) = volume_satellite_in_area(home, area) {
+        if satellite_default {
+            if let Some(sat) = satellite_in_area(home, area, mass_only) {
                 return Some(sat);
             }
         }
         return select_area_player(&players, area, session);
     }
     if volume_default {
-        if let Some(sat) = volume_satellite_in_area(home, "") {
+        if let Some(sat) = satellite_in_area(home, "", false) {
             // Only auto-pick a satellite when the house has exactly one.
             return Some(sat);
         }
@@ -483,7 +500,7 @@ fn looks_like_voice_satellite(entity: &EntityRec) -> bool {
         || blob.contains("xvf3800")
 }
 
-fn volume_satellite_in_area<'a>(home: &'a HomeGraph, area: &str) -> Option<&'a EntityRec> {
+fn satellite_in_area<'a>(home: &'a HomeGraph, area: &str, mass_only: bool) -> Option<&'a EntityRec> {
     let sats: Vec<&EntityRec> = home
         .entities
         .iter()
@@ -492,12 +509,24 @@ fn volume_satellite_in_area<'a>(home: &'a HomeGraph, area: &str) -> Option<&'a E
                 && assist_visible(entity, home)
                 && !is_infra(entity)
                 && looks_like_voice_satellite(entity)
-                && (area.is_empty() || entity.area.as_deref() == Some(area))
+                && !crate::home::policy::is_nlu_ignored(entity)
+                && (!mass_only || is_music_assistant_player(entity))
         })
         .collect();
-    match sats.as_slice() {
+    let area_matched: Vec<&EntityRec> = if area.is_empty() {
+        sats.clone()
+    } else {
+        sats.iter().copied().filter(|entity| entity.area.as_deref() == Some(area)).collect()
+    };
+    // MASS often leaves the satellite player without an area; fall back to the sole house satellite.
+    let pool = if !area_matched.is_empty() { area_matched } else { sats };
+    match pool.as_slice() {
         [only] => Some(*only),
-        many if !area.is_empty() && !many.is_empty() => many.first().copied(),
+        many if !many.is_empty() => many
+            .iter()
+            .copied()
+            .find(|entity| is_music_assistant_player(entity))
+            .or_else(|| many.first().copied()),
         _ => None,
     }
 }
