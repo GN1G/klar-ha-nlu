@@ -522,11 +522,20 @@ fn satellite_in_area<'a>(home: &'a HomeGraph, area: &str, mass_only: bool) -> Op
     let pool = if !area_matched.is_empty() { area_matched } else { sats };
     match pool.as_slice() {
         [only] => Some(*only),
-        many if !many.is_empty() => many
-            .iter()
-            .copied()
-            .find(|entity| is_music_assistant_player(entity))
-            .or_else(|| many.first().copied()),
+        many if !many.is_empty() => {
+            if mass_only {
+                many.iter()
+                    .copied()
+                    .find(|entity| is_music_assistant_player(entity))
+                    .or_else(|| many.first().copied())
+            } else {
+                // Volume / mute: ESPHome speaker on the satellite, not the MASS wrapper.
+                many.iter()
+                    .copied()
+                    .find(|entity| !is_music_assistant_player(entity))
+                    .or_else(|| many.first().copied())
+            }
+        }
         _ => None,
     }
 }
