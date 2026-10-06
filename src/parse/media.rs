@@ -393,7 +393,9 @@ fn target_player<'a>(
     }
     if let Some(area) = session.preferred_area.as_deref() {
         if satellite_default {
-            if let Some(sat) = satellite_in_area(home, area, mass_only) {
+            // Play intents prefer the MASS satellite player; volume prefers ESPHome.
+            let prefer_mass = mass_only || !volume_default;
+            if let Some(sat) = satellite_in_area(home, area, prefer_mass) {
                 return Some(sat);
             }
         }
